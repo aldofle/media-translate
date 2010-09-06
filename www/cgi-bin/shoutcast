@@ -1,4 +1,4 @@
 #!/bin/sh
 
 TRANSLATE=/usr/local/etc/translate
-PATH=$TRANSLATE/bin:$TRANSLATE/sbin:$PATH exec $TRANSLATE/sbin/shoutcast
+PATH=$TRANSLATE/bin:$PATH exec shoutcast
