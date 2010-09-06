@@ -55,7 +55,7 @@ if [ -f $GENRELIST ]; then
   fi
   (
     export CHANNELFILE; 
-    template2rss shoutcast_genrelist.xml
+    template2rss genrelist.xml
     rm -f $CHANNELFILE
   )
 fi
