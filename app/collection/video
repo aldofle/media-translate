@@ -6,7 +6,11 @@ CHANNELFILE=$TMPFILE.channel
 
 echo "Content-type: text/xml"
 echo
-awk -f video.awk "$arg_opt" > $CHANNELFILE
+if [ -x "$XSLTPROC" ]; then
+  $XSLTPROC video.xslt "$arg_opt" | sed '1d' > $CHANNELFILE
+else
+  awk -f video.awk "$arg_opt" > $CHANNELFILE
+fi
 (
   export CHANNELFILE; 
   template2rss video.xml
