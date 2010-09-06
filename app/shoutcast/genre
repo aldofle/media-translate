@@ -34,11 +34,11 @@ if [ -f "$GENRELIST" ]; then
   if [ -x "$XSLTPROC" ]; then
     $XSLTPROC --stringparam title "$TITLE" genre.xslt $GENRELIST | sed '1d' > $CHANNELFILE
   else
-    awk -v title="`escapeXML \"$TITLE\"`" -f shoutcast_genre.awk "$GENRELIST" > $CHANNELFILE
+    awk -v title="`escapeXML \"$TITLE\"`" -f genre.awk "$GENRELIST" > $CHANNELFILE
   fi
   (
     export CHANNELFILE; 
-    template2rss shoutcast_genre.xml
+    template2rss genre.xml
     rm -f $CHANNELFILE
   )
 fi
