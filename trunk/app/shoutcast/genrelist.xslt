@@ -20,7 +20,8 @@
 
 <xsl:template match="genre">
   <item>
-    <title><xsl:value-of select="@name"/></title>
+    <name><xsl:value-of select="@name"/></name>
+    <link>http://127.0.0.1/cgi-bin/translate?app,<xsl:value-of select="translate(string(@name), ' ', '+')" />,shoutcast/genre</link>
   </item>
 </xsl:template>
 
