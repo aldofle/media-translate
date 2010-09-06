@@ -28,10 +28,14 @@ if [ $REFRESHCACHE ]; then
 fi
 
 if [ -f "$GENRELIST" ]; then
-  TITLE="Shoutcast Radio - `escapeXML \"$GENRE\"`"
+  TITLE="Shoutcast Radio - $GENRE"
   echo "Content-type: text/xml"
   echo
-  awk -v title="$TITLE" -f shoutcast_genre.awk "$GENRELIST" > $CHANNELFILE
+  if [ -x "$XSLTPROC" ]; then
+    $XSLTPROC --stringparam title "$TITLE" genre.xslt $GENRELIST | sed '1d' > $CHANNELFILE
+  else
+    awk -v title="`escapeXML \"$TITLE\"`" -f shoutcast_genre.awk "$GENRELIST" > $CHANNELFILE
+  fi
   (
     export CHANNELFILE; 
     template2rss shoutcast_genre.xml
