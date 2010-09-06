@@ -1,0 +1,256 @@
+<?xml version='1.0' ?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<script>
+   content = "http://player/cgi-bin/rdr?,audio/aacp,http://www.d-j.ru/7000/33617ec079dbaf552d85d5dd64c11e76/rmf";    
+   storagePath = getStoragePath("tmp");
+   cachePath = getStoragePath("key");
+   storagePath_genre = storagePath + "shoutcastGenre.dat";
+
+   storagePath_playback = storagePath + "shoutcastPlayURL.dat";
+   storagePath_title = storagePath + "shoutcastPlayTitle.dat";
+   tuneinbasePath = "/tmp/shoutcast.tuneinbase.dat";
+</script>
+
+	<mediaDisplay name=onePartView
+		sideLeftWidthPC = 15
+		sideRightWidthPC = 0
+
+		sideColorRight="0:0:0"
+		sideColorLeft="0:0:0"
+		headerImageWidthPC="0"
+		selectMenuOnRight=no
+		autoSelectMenu=no
+		autoSelectItem=no
+		headerImageXPC="10"
+		headerXPC="10"
+		itemImageXPC="12"
+		itemImageYPC="18"
+		itemImageHeightPC="0"
+		itemImageWidthPC="0"
+		itemXPC="20"
+		itemYPC="18"
+		capXPC="20"
+		capYPC="17"
+		capWidthPC="70"
+		capHeightPC="7"
+		itemBackgroundColor="0:0:0"
+		itemHeightPC="8"
+		itemWidthPC="60"
+		itemPerPage="8"
+		bottomYPC="90"
+		backgroundColor="0:0:0"
+		>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_08.png </idleImage>
+
+		<!--
+		-->
+		<itemDisplay>
+			<image offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100>
+				<script>
+					idx1 = getFocusItemIndex();
+					idx2 = getQueryItemIndex();
+					if (idx1 == idx2)
+					{
+						"image/IMAGE_NEWRSS_MENU_BTFOC.bmp";
+					}
+					else
+					{
+						"image/IMAGE_NEWRSS_MENU_UNFOCUS.bmp";
+					}
+				</script>
+			</image>
+
+			<text offsetXPC=0 offsetYPC=25 widthPC=100 heightPC=50 fontSize=15 backgroundColor=-1:-1:-1 foregroundColor=200:200:200>
+				<script>
+				  br = getStringArrayAt(brArray , -1);
+				  tit = getStringArrayAt(titleArray , -1);
+				  if(br &lt; 100)
+				    br = " " + br;
+				  br + ": "+ tit;
+				</script>
+			</text>
+		</itemDisplay>
+
+<onUserInput>
+<script>
+ret = "false";
+majorContext = getPageInfo("majorContext");
+minorContext = getPageInfo("minorContext");
+userInput = currentUserInput();
+
+if (userInput == "pagedown" || userInput == "pageup")
+{
+  idx = Integer(getFocusItemIndex());
+  if (userInput == "pagedown")
+  {
+    idx -= -8;
+    if(idx &gt;= itemSize)
+      idx = itemSize-1;
+  }
+  else
+  {
+    idx -= 8;
+    if(idx &lt; 0)
+      idx = 0;
+  }
+  setFocusItemIndex(idx);
+	setItemFocus(idx);
+  redrawDisplay();
+  ret = "true";
+}
+else if (majorContext == "items" &amp;&amp; userInput == "enter") {
+     idx = getFocusItemIndex();
+     title = getStringArrayAt(titleArray , idx);
+     id = getStringArrayAt(idArray , idx);
+     url = "http://127.0.0.1/cgi-bin/shoutcast?"+id;
+     print("IDX is ", idx);
+     print("I think title should be ", title);
+     print("I think id should be ", id);
+
+     writeStringToFile(storagePath_title, title);
+     writeStringToFile(storagePath_playback, url);
+} 
+ret;
+</script>
+</onUserInput>
+
+	</mediaDisplay>
+
+	<item_template>	
+<mediaDisplay name=threePartsView
+		sideLeftWidthPC = 0
+		sideRightWidthPC = 0
+    backgroundColor="8:8:8">
+			<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> image/POPUP_LOADING_01.png </idleImage>
+			<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> image/POPUP_LOADING_02.png </idleImage>
+			<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> image/POPUP_LOADING_03.png </idleImage>
+			<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> image/POPUP_LOADING_04.png </idleImage>
+			<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> image/POPUP_LOADING_05.png </idleImage>
+			<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> image/POPUP_LOADING_06.png </idleImage>
+			<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> image/POPUP_LOADING_07.png </idleImage>
+			<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> image/POPUP_LOADING_08.png </idleImage>
+		</mediaDisplay>
+		<link>rss_file://./rss/shoutcast/radio_shoutcastPlay.rss</link>
+	</item_template>
+<!--
+!-->
+	<script>
+  idArray  = null;
+  brArray  = null;
+  genre = readStringFromFile(storagePath_genre);
+  
+  storagePath_itemsize = cachePath + "shoutcast."+genre+".itemsize.cache";
+  storagePath_tuneinurl = cachePath + "shoutcast."+genre+".tuneinbase.cache";
+  storagePath_name = cachePath + "shoutcast."+genre+".name.cache";
+  storagePath_id = cachePath + "shoutcast."+genre+".id.cache";
+  storagePath_br = cachePath + "shoutcast."+genre+".br.cache";
+
+  titleArray = readStringFromFile(storagePath_name);
+
+  print("GENRE: "+genre);
+  currentUrl = convertSpaceInUrl( "http://www.shoutcast.com:80/sbin/newxml.phtml?genre="+genre );
+  print("currentUrl: "+currentUrl);
+  dlok = null;
+  if(titleArray == null)
+    tries = 3;
+  else
+    tries = 1;
+  while(tries &gt; 0 &amp;&amp; dlok == null)
+  {
+    tries -= 1;
+    dlok = loadXMLFile(currentUrl);
+  }
+  if (dlok == null)
+  {
+    print("titleArray=",titleArray);
+    if(titleArray == null)
+    {
+      postMessage("return");
+    }
+    else
+    {
+      itemSize = Integer(readStringFromFile(storagePath_itemsize));
+      tuneinurl = readStringFromFile(storagePath_tuneinurl);
+    	writeStringToFile(tuneinbasePath, tuneinurl);
+      idArray = readStringFromFile(storagePath_id);
+      brArray = readStringFromFile(storagePath_br);
+
+    	setFocusItemIndex(0);
+    	setItemFocus(0);
+    	redrawDisplay();
+    }
+  }
+  else
+  {
+  	itemSize = getXMLElementCount("stationlist","station");
+  	print("Item Size = ", itemSize);
+  	if(itemSize &gt; 1000)
+  	{
+  	  print("Item Size too much!!!!");
+  	  itemSize = 1000;
+  	}
+  	
+  	tuneinurl = getXMLAttribute("stationlist","tunein","base");
+  	writeStringToFile(tuneinbasePath, tuneinurl);
+  
+  	count=0;
+  	while(itemSize != 0)
+  	{
+    		name = getXMLAttribute("stationlist","station",count,"name");
+    		id = getXMLAttribute("stationlist","station",count,"id");
+    		br = getXMLAttribute("stationlist","station",count,"br");
+  
+  	  	titleArray  = pushBackStringArray(titleArray, name);
+  	  	idArray  = pushBackStringArray(idArray, id);
+  	  	brArray  = pushBackStringArray(brArray, br);
+   
+    		count += 1;
+  	  	if (count == itemSize)
+    		{
+  			  break;
+  	  	}
+  	}
+
+  	if(titleArray != "")
+  	{
+  	  writeStringToFile(storagePath_name, titleArray);
+  	  writeStringToFile(storagePath_id, idArray);
+  	  writeStringToFile(storagePath_br, brArray);
+  	  writeStringToFile(storagePath_itemsize, itemSize);
+  	  writeStringToFile(storagePath_tuneinurl, tuneinurl);
+  	}
+
+  	print("title array =", titleArray);
+  	setFocusItemIndex(0);
+  	setItemFocus(0);
+  	redrawDisplay();
+  }
+	</script>
+
+<channel>
+	<title>
+	<script>
+	  tit = "Shoutcast Radio - Genre: " + genre;
+	  tit;
+	</script>
+	</title>
+	<link>./rss/shoutcast/radio_shoutcast.rss</link>
+	<media:thumbnail url="rss/image/shoutcast.png" width="120" height="90" />
+	
+	
+<itemSize>
+	<script>
+		itemSize;
+	</script>
+</itemSize>
+
+</channel>
+</rss>

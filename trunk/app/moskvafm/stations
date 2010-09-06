@@ -1,0 +1,15 @@
+#!/bin/sh
+DATAPATH=$BASEPATH/app/moskvafm
+cd $DATAPATH
+
+CHANNELFILE=$TMPFILE.channel
+
+TITLE="Moskva.FM"
+echo "Content-type: text/xml"
+echo
+awk -v title="$TITLE" -f stations.awk moskva_fm.xspf > $CHANNELFILE
+(
+  export CHANNELFILE; 
+  template2rss msk_stations.xml
+  rm -f $CHANNELFILE
+)

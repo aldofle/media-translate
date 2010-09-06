@@ -1,0 +1,130 @@
+﻿<?xml version='1.0' encoding="UTF8" ?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+	<mediaDisplay name=photoView centerXPC=10 columnCount=4 rowCount=2
+		menuBorderColor="55:55:55"
+		sideColorBottom="0:0:0"
+		sideColorTop="0:0:0"
+		itemImageXPC="10"
+	backgroundColor="0:0:0"
+		imageBorderColor="15:20:230"
+		itemBackgroundColor="0:0:0"
+		centerHeightPC=45
+		centerYPC=30
+		itemGapXPC=3
+		itemGapYPC=3
+		sideTopHeightPC=22
+		bottomYPC=80
+		sliding=no
+		showHeader=no
+		showDefaultInfo=yes
+		>
+		<image offsetXPC=0 offsetYPC=24 widthPC=100 heightPC=1>
+			image/gradient_line.bmp
+		</image>
+		<image offsetXPC=0 offsetYPC=79 widthPC=100 heightPC=1>
+			image/gradient_line.bmp
+		</image>
+		<text offsetXPC=25 offsetYPC=3 widthPC=60 heightPC=20 fontSize=30 backgroundColor=-1:-1:-1 foregroundColor=200:200:200>
+			Дополнительные сервисы
+		</text>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_08.png </idleImage>
+	</mediaDisplay>
+	
+	<item_template>
+		<mediaDisplay  name="onePartView">
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_01.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_02.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_03.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_04.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_05.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_06.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_07.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_08.png </idleImage>
+		</mediaDisplay>
+	</item_template>
+
+	<channel>
+		
+		<title>Дополнительные сервисы</title>
+		<link>./rss/menuEx.rss</link>
+
+		<item>
+			<title>Moskva.FM</title>
+      <link>http://127.0.0.1/cgi-bin/translate?app,,moskvafm/stations</link>
+			<media:thumbnail url="http://img.moskva.fm/img/logo_msk-top.png" width="120" height="90" />
+	    <mediaDisplay name=photoView />
+		</item>
+
+		<item>
+			<title>Test TV</title>
+      <link>http://127.0.0.1/cgi-bin/translate?app,/home/Media/Playlists/XSPF/tv.xspf,collection/video</link>
+			<media:thumbnail url="http://news.cnet.com/i/bto/20080501/google_TV_ad.PNG" width="120" height="90" />
+	    <mediaDisplay name=photoView />
+		</item>
+
+		<item>
+			<title>XSPF Browser</title>
+      <link>rss_file://./rss/xspf/xspfBrowser.rss</link>
+			<media:thumbnail url="rss/image/xspf_browser.png" width="120" height="90" />
+			<mediaDisplay name="threePartsView" />
+		</item>
+
+    <item>
+        <title>Media Stream Renderer</title>
+        <link>rss_file://./rss/xspf/streamRenderer.rss</link>
+        <media:thumbnail url="rss/image/renderer.png" width="120" height="90" />
+        <mediaDisplay name="threePartsView" />
+    </item>
+
+    <item>
+        <title>Shoutcast Radio</title>
+<!--
+        <link>rss_file://./rss/shoutcast/radio_shoutcast.rss</link>
+-->        
+        <link>http://127.0.0.1/cgi-bin/translate?app,,shoutcast/genrelist</link>
+  			<media:thumbnail url="rss/image/shoutcast_radio.png" width="120" height="90" />
+	      <mediaDisplay name=photoView />
+    </item>
+
+		<item>
+			<title>YouTube видео</title>
+			<link>rss_file://./rss/youtube/yt_index.rss</link>
+			<media:thumbnail url="rss/image/youtube.png" width="120" height="90" />
+		</item>
+
+    <item>
+        <title>XSPF Playlists</title>
+        <link>rss_file://./rss/xspf/xspf.rss</link>
+  			<media:thumbnail url="rss/image/xspf.png" width="120" height="90" />
+    </item>
+<!--    
+        <item>
+            <title>Новостные сайты</title>
+            <link>rss_file://./rss/news.rss</link>
+      			<media:thumbnail url="rss/image/news.png" width="120" height="90" />
+			      <mediaDisplay name=photoView />
+        </item>
+-->
+      <item>
+          <title>Services - Router</title>
+          <link>rss_file://./rss/services/services_router.rss</link>
+          <media:thumbnail url="http://www.planete-rp.com/storage/iStock_000011599303XSmall.jpg" width="120" height="90" />
+          
+      </item>
+
+      <item>
+          <title>Services - Player</title>
+          <link>rss_file://./rss/services/services_player.rss</link>
+          <media:thumbnail url="http://www.planete-rp.com/storage/iStock_000011599303XSmall.jpg" width="120" height="90" />
+      </item>
+
+	</channel>
+</rss>
