@@ -30,7 +30,7 @@ if [ -f $GENRELIST ]; then
   echo "Content-type: text/xml"
   echo
   if [ -x "$XSLTPROC" ]; then
-    $XSLTPROC genrelist.xslt $GENRELIST | sed '1d' > $CHANELFILE
+    $XSLTPROC genrelist.xslt $GENRELIST | sed '1d' > $CHANNELFILE
   else
     awk '
       BEGIN {
