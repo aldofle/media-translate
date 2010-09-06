@@ -1,0 +1,45 @@
+#!/bin/sh
+#
+# Translate CGI module
+# 'ivi.ru' plug-in
+#
+# version: 1.0 13.08.2010 16:28
+#
+# http://www.ivi.ru/video/view/?id=2756
+#
+# options:
+#   HD:[0|1]
+#
+# required CURL
+
+stream_type='video/x-flv'
+stream_url=''
+server_type='ivi'
+
+if echo "${arg_url}" | grep -q -s '\(www\.\)*ivi\.ru/video/view/?id=[0-9].*$'; then 
+
+  get_opt "HD"
+  [ -z "$opt" ] && opt=$IVI_HD
+  case $opt in
+    yes|Yes|YES|1)
+      hdc='hi'
+    ;;
+    *)
+      hdc='lo'
+  esac
+  
+  local video_id=`echo "$arg_url" | sed -e 's/.*[?&]id=//;s/&.*//`
+
+  host_response=`$CURL -s -o "${TMPFILE}" --user-agent "${USERAGENT}" --data-ascii "{\"method\":\"da.content.get\",\"params\":[\"${video_id}\",{\"site\":1}]}" --referer "http://www.ivi.ru/images/da/skin1.64.swf?" --header "FlashAuth: Basic Zmxhc2hfcGxheWVyOmZsYXNoX3BsYXllcg=="  http://api.digitalaccess.ru/api/json/ 2>&1`
+  
+  if [ -f ${TMPFILE} ]; then
+    stream_url=`sed "s/.*files\": \[//;s/\].*//;s/}, *{/}\n{/g" ${TMPFILE} | awk "/FLV-${hdc}/"' {match($2, /\"(.*)\".*$/, arr); print arr[1];}'`
+    protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
+    icy_name=`sed 's/.*"title": "//;s/", "cop.*//' ${TMPFILE} | unitohtml | $XCODE -s -l | $TOUTF8`
+    rm -f $TMPFILE
+    return $RC_OK
+  fi
+  
+fi
+
+return $RC_FAIL

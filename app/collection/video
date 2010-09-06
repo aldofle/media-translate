@@ -1,0 +1,14 @@
+#!/bin/sh
+DATAPATH=$BASEPATH/app/collection
+cd $DATAPATH
+
+CHANNELFILE=$TMPFILE.channel
+
+echo "Content-type: text/xml"
+echo
+awk -f video.awk "$arg_opt" > $CHANNELFILE
+(
+  export CHANNELFILE; 
+  template2rss video.xml
+  rm -f $CHANNELFILE
+)

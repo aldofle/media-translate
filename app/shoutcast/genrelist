@@ -1,0 +1,60 @@
+#!/bin/sh
+DATAPATH=$BASEPATH/app/shoutcast
+cd $DATAPATH
+
+GENRELIST="$CACHEPATH/shoutcast.genrelist.cache"
+TEMPDL=$TMPFILE.dl
+
+CHANNELFILE=$TMPFILE.channel
+
+TIMELIFE=3600
+
+let tsttime=`date +%s`-$TIMELIFE
+
+REFRESHCACHE=yes
+if [ -f "$GENRELIST" ]; then
+  if [ `date +%s -r "$GENRELIST"` -gt $tsttime ]; then
+    REFRESHCACHE=
+  fi
+fi
+
+if [ $REFRESHCACHE ]; then
+  rm -f "$GENRELIST"
+  $WGET -q -O "$TEMPDL" http://www.shoutcast.com:80/sbin/newxml.phtml
+  if [ -f "$TEMPDL" ]; then
+    mv -f "$TEMPDL" "$GENRELIST"
+  fi
+fi
+
+if [ -f $GENRELIST ]; then
+  echo "Content-type: text/xml"
+  echo
+  if [ -x "$XSLTPROC" ]; then
+    $XSLTPROC genrelist.xslt $GENRELIST | sed '1d' > $CHANELFILE
+  else
+  awk '
+    BEGIN {
+    	print "<channel>"
+      print "  <title>Shoutcast Radio Genre List</title>"
+    }
+    {
+      if(match($0, /.*<genre *name="(.*)"/, arr))
+      {
+        print "<item>"
+        print "<name>" arr[1] "</name>"
+        genre = arr[1];
+        gsub(" ", "%20", genre)
+        print "<link>http://127.0.0.1/cgi-bin/translate?app," genre ",shoutcast/genre</link>"
+        print "</item>"
+      }
+    }
+    END {
+    	print "</channel>"
+    }
+  ' $GENRELIST > $CHANNELFILE
+  (
+    export CHANNELFILE; 
+    template2rss shoutcast_genrelist.xml
+    rm -f $CHANNELFILE
+  )
+fi
