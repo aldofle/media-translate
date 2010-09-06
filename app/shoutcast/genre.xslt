@@ -27,7 +27,7 @@
 </xsl:template>
 
 <xsl:template match="@*">
-  <xsl:element name="name()">
+  <xsl:element name="{name()}">
     <xsl:value-of select="."/>
   </xsl:element>
 </xsl:template>
