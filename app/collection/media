@@ -1,0 +1,21 @@
+#!/bin/sh
+
+DATAPATH=$BASEPATH/app/collection
+cd $DATAPATH
+
+SUBNAME=media
+
+CHANNELFILE=$TMPFILE.channel
+
+echo "Content-type: text/xml"
+echo
+if [ -x "$XSLTPROC" ]; then
+  $XSLTPROC $SUBNAME.xslt "$arg_opt" | sed '1d' > $CHANNELFILE
+else
+  awk -f $SUBNAME.awk "$arg_opt" > $CHANNELFILE
+fi
+(
+  export CHANNELFILE; 
+  template2rss $SUBNAME.xml
+  rm -f $CHANNELFILE
+)
