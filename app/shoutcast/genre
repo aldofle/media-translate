@@ -32,7 +32,7 @@ if [ -f "$GENRELIST" ]; then
   echo "Content-type: text/xml"
   echo
   if [ -x "$XSLTPROC" ]; then
-    $XSLTPROC --stringparam title "$TITLE" genre.xslt $GENRELIST | sed '1d' > $CHANNELFILE
+    $XSLTPROC --stringparam title "$TITLE" genre.xslt "$GENRELIST" | sed '1d' > $CHANNELFILE
   else
     awk -v title="`escapeXML \"$TITLE\"`" -f genre.awk "$GENRELIST" > $CHANNELFILE
   fi
