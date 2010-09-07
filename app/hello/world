@@ -8,7 +8,7 @@ Content-type: text/xml
 <application title="$TITLE">
 <arg>$arg_opt</arg>
 `echo "<echo/>"`
-<export><![CDATA[`export`]]></export>
+`export | awk '{print "<export>" $2 "</export>"}'`
 <set><![CDATA[`set`]]></set>
 </application>
 EOF

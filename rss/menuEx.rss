@@ -58,7 +58,7 @@
 
 		<item>
 			<title>Bluemars.org</title>
-      <link>http://127.0.0.1/cgi-bin/translate?app,/usr/local/etc/translate/playlist/radio-bluemars.xspf,collection/media</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Column:3;Start:middle;File:/usr/local/etc/translate/playlist/radio-bluemars.xspf,collection/media</link>
 			<media:thumbnail url="http://news.cnet.com/i/bto/20080501/google_TV_ad.PNG" width="120" height="90" />
 	    <mediaDisplay name=photoView />
 		</item>
@@ -72,7 +72,7 @@
 
 		<item>
 			<title>Test TV</title>
-      <link>http://127.0.0.1/cgi-bin/translate?app,/home/Media/Playlists/XSPF/tv.xspf,collection/media</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Start:middle;File:/usr/local/etc/translate/playlist/tv.xspf,collection/media</link>
 			<media:thumbnail url="http://news.cnet.com/i/bto/20080501/google_TV_ad.PNG" width="120" height="90" />
 	    <mediaDisplay name=photoView />
 		</item>
