@@ -23,7 +23,7 @@
 <xsl:template match="genre">
 <item>
 <name><xsl:value-of select="@name"/></name>
-<link>http://127.0.0.1/cgi-bin/translate?app,<xsl:value-of select="str:replace(string(@name), ' ', '%20')" />,shoutcast/genre</link>
+<link>http://127.0.0.1/cgi-bin/translate?app,<xsl:value-of select="str:encode-uri(@name, true())" />,shoutcast/genre</link>
 </item>
 </xsl:template>
 
