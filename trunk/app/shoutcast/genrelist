@@ -26,11 +26,11 @@ if [ $REFRESHCACHE ]; then
   fi
 fi
 
-if [ -f $GENRELIST ]; then
+if [ -f "$GENRELIST" ]; then
   echo "Content-type: text/xml"
   echo
   if [ -x "$XSLTPROC" ]; then
-    $XSLTPROC genrelist.xslt $GENRELIST | sed '1d' > $CHANNELFILE
+    $XSLTPROC genrelist.xslt "$GENRELIST" | sed '1d' > $CHANNELFILE
   else
     awk '
       BEGIN {
@@ -51,7 +51,7 @@ if [ -f $GENRELIST ]; then
       END {
       	print "</channel>"
       }
-    ' $GENRELIST > $CHANNELFILE
+    ' "$GENRELIST" > $CHANNELFILE
   fi
   (
     export CHANNELFILE; 
