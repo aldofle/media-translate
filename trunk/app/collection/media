@@ -7,15 +7,34 @@ SUBNAME=media
 
 CHANNELFILE=$TMPFILE.channel
 
+arg_opt=`urldecode_s "$arg_opt"`
+
+get_opt "File"
+FILE="$opt"
+
+get_opt "Column"
+if [ -z "$opt" ]; then
+  opt=6
+fi
+COLUMNCOUNT="columnCount=$opt"
+
+get_opt "Start"
+if [ -z "$opt" ]; then
+  opt=left
+fi
+STARTITEM="  startitem = \"$opt\";"
+
 echo "Content-type: text/xml"
 echo
 if [ -x "$XSLTPROC" ]; then
-  $XSLTPROC $SUBNAME.xslt "$arg_opt" | sed '1d' > $CHANNELFILE
+  $XSLTPROC $SUBNAME.xslt "$FILE" | sed '1d' > $CHANNELFILE
 else
-  awk -f $SUBNAME.awk "$arg_opt" > $CHANNELFILE
+  awk -f $SUBNAME.awk "$FILE" > $CHANNELFILE
 fi
 (
   export CHANNELFILE; 
+  export COLUMNCOUNT; 
+  export STARTITEM;
   template2rss $SUBNAME.xml
   rm -f $CHANNELFILE
 )

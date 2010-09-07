@@ -11,22 +11,27 @@
 </script>
 
 <onEnter>
+  <!--`echo "$STARTITEM"`-->		
   setRefreshTime(1);
 </onEnter>
 
 <onRefresh>
   setRefreshTime(-1);
   itemCount = getPageInfo("itemCount");
-  middleItem = Integer(itemCount / 2);
-  setFocusItemIndex(middleItem);
+  middleItem = Integer(itemCount / 2) - 1;
+  if(startitem == "middle")
+    setFocusItemIndex(middleItem);
+  else
+  if(startitem == "right")
+    setFocusItemIndex(middleItem);
   redrawDisplay();
 </onRefresh>
 
 	<mediaDisplay name=photoView 
 	  centerXPC=7 
-		centerYPC=30
+		centerYPC=25
 		centerHeightPC=40
-	  columnCount=6 
+    <!--`echo "$COLUMNCOUNT"`-->		
 	  rowCount=1
 		menuBorderColor="55:55:55"
 		sideColorBottom="0:0:0"
@@ -47,12 +52,12 @@
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
-		<text align="center" redraw="yes" lines="2" offsetXPC=20 offsetYPC=70 widthPC=60 heightPC=15 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
-			<script>annotation;</script>
+		<text align="center" redraw="yes" lines="4" offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
+			<script>print(annotation); annotation;</script>
 		</text>
 		
 		<text align="center" redraw="yes" offsetXPC=10 offsetYPC=85 widthPC=80 heightPC=10 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
-			<script>location;</script>
+			<script>print(location); location;</script>
 		</text>
 
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_01.png </idleImage>
@@ -192,6 +197,21 @@
     </script>
   </onUserInput>
 		
+	</mediaDisplay>
+	
+	<item_template>
+		<mediaDisplay  name="threePartsView">
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_01.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_02.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_03.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_04.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_05.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_06.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_07.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_08.png </idleImage>
+		</mediaDisplay>
+	</item_template>
+
   <videoDispatcher>
     streamArray = null;
     streamArray = pushBackStringArray(streamArray, request_url);
@@ -242,7 +262,7 @@
     streamArray = pushBackStringArray(streamArray, "");
     writeStringToFile(storagePath_stream, streamArray);
     doModalRss("rss_file://./rss/xspf/rss_mediaFeed.rss");
-  </DispatcherrssDispatcher>
+  </rssDispatcher>
 
   <unknownDispatcher>
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
@@ -362,21 +382,6 @@
     }
     print("error_info=",error_info);
   </unknownDispatcher>
-
-	</mediaDisplay>
-	
-	<item_template>
-		<mediaDisplay  name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_08.png </idleImage>
-		</mediaDisplay>
-	</item_template>
 
 <!--`cat "$CHANNELFILE"`-->
 

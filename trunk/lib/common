@@ -111,7 +111,7 @@ urlencode_s()
 
 get_opt()
 {
-  opt=`echo -n "${arg_opt}" | grep ";*$1:" | sed "s/^.*$1://;s/;.*//"`
+  opt=`echo "${arg_opt}" | grep ";*$1:" | sed "s/^.*$1://;s/;.*//"`
   return 0
 }
 
