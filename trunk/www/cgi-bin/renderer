@@ -1,4 +1,4 @@
 #!/bin/sh
 
 TRANSLATE=/usr/local/etc/translate
-PATH=$TRANSLATE/bin:$PATH exec renderer
+PATH=$TRANSLATE/bin:$PATH exec renderer.cgi
