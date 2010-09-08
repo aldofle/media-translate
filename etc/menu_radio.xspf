@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<playlist xmlns="http://xspf.org/ns/0/">
+
+  <title>Internet Radio</title>
+
+  <trackList>
+    <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,,shoutcast/genrelist<link>
+      <title>SHOUTcast Radio Directory</title>
+      <annotation>Listing thousands of radio channels worldwide...</annotation>
+      <image>rss/image/menu/shoutcast.png</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Column:3;Start:middle;File:/usr/local/etc/translate/playlist/radio-bluemars.xspf,collection/media<link>
+      <title>Bluemars</title>
+      <annotation>Welcome to Bluemars, we will shortly transition into synchronous orbit around Phobos where you will be able to board a shuttle down the inertial tether.
+
+Upon arrival, please consult the display in the hall for transportation to one of the three continents on the planet.
+
+Thank you for travelling with Bluemars Spaceways.</annotation>
+      <image>rss/image/menu/bluemars.jpg</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+  </trackList>
+
+</playlist>

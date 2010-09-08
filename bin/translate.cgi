@@ -128,6 +128,8 @@ elif echo "$arg_url" | grep -q -s "^rtp://@"; then
   stream_type=${stream_type:-'video/x-msvideo'}
   protocol='http'
   check_stream_flag=no
+elif echo "$arg_url" | grep -q -s "^icyx://"; then
+  arg_url=`echo "${arg_url}" | sed "{s/^icyx:/http:/}"`
 elif echo "$arg_url" | grep -q -s "^rtmp://"; then
   if [ -n "${RTMPGW_URL}" ]; then
     arg_url="${RTMPGW_URL}/?r=${arg_url}"

@@ -57,7 +57,14 @@
 		<link>./rss/menuEx.rss</link>
 
 		<item>
-			<title>Bluemars.org</title>
+			<title>D I G I T A L L Y - I M P O R T E D</title>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Column:5;Start:middle;File:/usr/local/etc/translate/playlist/radio-di.xspf,collection/media</link>
+			<media:thumbnail url="rss/image/di.png" width="120" height="90" />
+	    <mediaDisplay name=photoView />
+		</item>
+
+		<item>
+			<title>BLUEMARS</title>
       <link>http://127.0.0.1/cgi-bin/translate?app,Column:3;Start:middle;File:/usr/local/etc/translate/playlist/radio-bluemars.xspf,collection/media</link>
 			<media:thumbnail url="http://www.bluemars.org/gfx/illus-home.jpg" width="120" height="90" />
 	    <mediaDisplay name=photoView />
