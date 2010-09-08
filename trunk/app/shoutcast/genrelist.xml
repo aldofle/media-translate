@@ -86,7 +86,7 @@
   					idx = getQueryItemIndex();
   					focus = getFocusItemIndex();
   					if(focus==idx) "0:0:0"; else "200:200:200";
-  				</scriptD>
+  				</script>
 			  </foregroundColor>
 			</text>
 		</itemDisplay>
