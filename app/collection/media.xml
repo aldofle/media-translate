@@ -18,7 +18,7 @@
 <onRefresh>
   setRefreshTime(-1);
   itemCount = getPageInfo("itemCount");
-  middleItem = Integer(itemCount / 2) - 1;
+  middleItem = Integer(itemCount / 2);
   if(startitem == "middle")
     setFocusItemIndex(middleItem);
   else
@@ -52,7 +52,7 @@
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
-		<text align="center" redraw="yes" lines="4" offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
+		<text align="center" redraw="yes" lines="5" offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 fontSize=14 backgroundColor=0:0:0 foregroundColor=120:120:120>
 			<script>print(annotation); annotation;</script>
 		</text>
 		
