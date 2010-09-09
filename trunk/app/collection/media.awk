@@ -61,7 +61,14 @@ BEGIN {
             value = XITEM;
             getXML(ARGV[1],1); 
           }
-          print "<" tagname ">" value "</" tagname ">";
+          if(tagname == "mediaDisplay")
+          {
+            print "<" tagname " name=\"" value "\"/>"
+          }
+          else
+          {
+            print "<" tagname ">" value "</" tagname ">";
+          }
         }
       }
     }

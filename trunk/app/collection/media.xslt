@@ -45,9 +45,16 @@
 </xsl:template>
 
 <xsl:template match="xspf:meta">
-  <xsl:element name="{@rel}">
-    <xsl:value-of select="."/>
-  </xsl:element>
+  <xsl:choose>
+    <xsl:when test="@rel = 'mediaDisplay'">
+      <mediaDisplay name="{.}"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:element name="{@rel}">
+        <xsl:value-of select="."/>
+      </xsl:element>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="xspf:*">
