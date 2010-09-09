@@ -17,7 +17,7 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-DATAPATH=$BASEPATH/app/collectionDATAPATH=$BASEPATH/app/collection
+DATAPATH=$BASEPATH/app/collection
 cd $DATAPATH
 
 SUBNAME=menu
