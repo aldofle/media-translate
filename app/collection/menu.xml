@@ -68,10 +68,10 @@
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
-		<image offsetXPC=5 offsetYPC=25 widthPC=5 heightPC=5>
+		<image redraw="yes" offsetXPC=5 offsetYPC=25 widthPC=5 heightPC=5>
 			<script>leftarrow;</script>
 		</image>
-		<image offsetXPC=95 offsetYPC=25 widthPC=5 heightPC=5>
+		<image redraw="yes" offsetXPC=95 offsetYPC=25 widthPC=5 heightPC=5>
 			<script>rigtarrow;</script>
 		</image>
 		
@@ -96,6 +96,14 @@
 					if(focus==idx) 
 					{
 					  annotation = getItemInfo(idx, "annotation");
+					}
+					if(idx == 0)
+					{
+					    leftarrow = "";
+					}
+					if(idx == (itemCount-1))
+					{
+					    rightarrow = "";
 					}
 					getItemInfo(idx, "image");
 				</script>
@@ -153,6 +161,12 @@
       
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
+      
+      if(userInput == "left" || userInput == "right")
+      {
+        leftarrow = "rss/image/arrow_left.png";
+        rightarrow = "rss/image/arrow_right.png";
+      }
       
       ret;
     </script>
