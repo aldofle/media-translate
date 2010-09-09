@@ -27,7 +27,11 @@ CHANNELFILE=$TMPFILE.channel
 arg_opt=`urldecode_s "$arg_opt"`
 
 get_opt "File"
-FILE="$opt"
+FILE="${opt:=`return 0`}"
+
+if ! expr "$FILE" : '/.*' > /dev/null; then
+  FILE="$BASEPATH/$FILE"
+fi
 
 get_opt "Column"
 if [ -z "$opt" ]; then
