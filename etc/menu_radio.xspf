@@ -11,7 +11,7 @@
       <image>rss/image/menu/shoutcast.jpg</image>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Size:3;Start:middle;File:playlist/radio-bluemars.xspf,collection/media</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Size:3;File:playlist/radio-bluemars.xspf,collection/media</link>
       <title>Bluemars</title>
       <annotation>Welcome to Bluemars, we will shortly transition into synchronous orbit around Phobos where you will be able to board a shuttle down the inertial tether.
 Upon arrival, please consult the display in the hall for transportation to one of the three continents on the planet.
@@ -20,21 +20,21 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;Start:middle;File:playlist/radio-di.xspf,collection/media</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:playlist/radio-di.xspf,collection/media</link>
       <title>Digitally Imported</title>
       <annotation>Electronic &amp; Dance Music Radio 24/7</annotation>
       <image>rss/image/menu/di.png</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;Start:middle;File:playlist/radio-skyfm.xspf,collection/media</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:playlist/radio-skyfm.xspf,collection/media</link>
       <title>SKY.fm</title>
       <annotation>Now Serving the Best Free Internet Radio to 33,823 Fans</annotation>
       <image>rss/image/menu/skyfm.png</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;Start:middle;File:playlist/radio-somafm.xspf,collection/media</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:playlist/radio-somafm.xspf,collection/media</link>
       <title>SomaFM</title>
       <annotation>SomaFM is 19 unique channels of listener-supported, commercial-free, underground/alternative radio broadcasting from San Francisco. All music hand-picked by SomaFM's award-winning DJs and music directors.</annotation>
       <image>rss/image/menu/somafm.gif</image>

@@ -28,6 +28,8 @@
   storagePath_stream      = storagePath + "stream.dat";
   
   error_info          = "";
+  leftarrow = "";
+  rightarrow = "";
 </script>
 
 <onEnter>
@@ -72,6 +74,13 @@
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
+		<image redraw="yes" offsetXPC=5 offsetYPC=25 widthPC=5 heightPC=5>
+			<script>leftarrow;</script>
+		</image>
+		<image redraw="yes" offsetXPC=90 offsetYPC=25 widthPC=5 heightPC=5>
+			<script>rigtarrow;</script>
+		</image>
+		
 		<text align="center" redraw="yes" lines="5" offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 fontSize=14 backgroundColor=0:0:0 foregroundColor=120:120:120>
 			<script>print(annotation); annotation;</script>
 		</text>
@@ -98,6 +107,14 @@
 					{
 					  location = getItemInfo(idx, "location");
 					  annotation = getItemInfo(idx, "annotation");
+					}
+					if(idx == 0)
+					{
+					    leftarrow = "";
+					}
+					if(idx == (itemCount-1))
+					{
+					    rightarrow = "";
 					}
 					getItemInfo(idx, "image");
 				</script>
@@ -130,29 +147,6 @@
 			   </script>
 			 </heightPC>
 			</image>
-<!--
-			<text align="center" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=15 fontSize=18>
-				<script>
-					idx = getQueryItemIndex();
-					getItemInfo(idx, "fm");
-				</script>
-			  <backgroundColor>
-  				<script>
-  					idx = getQueryItemIndex();
-  					focus = getFocusItemIndex();
-  			    if(focus==idx) "200:200:200"; else "-1:-1:-1";
-  				</script>
-			  </backgroundColor>
-			  <foregroundColor>
-  				<script>
-  					idx = getQueryItemIndex();
-  					focus = getFocusItemIndex();
-  			    if(focus==idx) "50:50:50"; else "100:100:100";
-  				</script>
-			  </foregroundColor>
-			</text>
-
--->		
 			
 			<text align="center" lines="4" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 fontSize=15 backgroundColor=-1:-1:-1>
 				<script>
@@ -179,6 +173,12 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
       
+      if(userInput == "left" || userInput == "right")
+      {
+        leftarrow = "rss/image/arrow_left.png";
+        rightarrow = "rss/image/arrow_right.png";
+      }
+      else
       if(userInput == "enter")
       {
         showIdle();
