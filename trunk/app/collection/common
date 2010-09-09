@@ -35,13 +35,13 @@ fi
 
 get_opt "Size"
 if [ -z "$opt" ]; then
-  opt=6
+  opt=3
 fi
 COLUMNCOUNT="columnCount=$opt"
 
 get_opt "Start"
 if [ -z "$opt" ]; then
-  opt=left
+  opt=middle
 fi
 STARTITEM="  startitem = \"$opt\";"
 

@@ -22,13 +22,9 @@
 -->
 
 <script>
-  translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
-
-  storagePath             = getStoragePath("tmp");
-  storagePath_stream      = storagePath + "stream.dat";
-  
-  error_info          = "";
-</script>
+  leftarrow = "";
+  rightarrow = "";
+<script>
 
 <onEnter>
   <!--`echo "$STARTITEM"`-->		
@@ -72,6 +68,13 @@
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
+		<image offsetXPC=5 offsetYPC=25 widthPC=5 heightPC=5>
+			<script>leftarrow;</script>
+		</image>
+		<image offsetXPC=95 offsetYPC=25 widthPC=5 heightPC=5>
+			<script>rigtarrow;</script>
+		</image>
+		
 		<text align="center" redraw="yes" lines="3" offsetXPC=10 offsetYPC=80 widthPC=80 heightPC=20 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
 			<script>print(annotation); annotation;</script>
 		</text>
@@ -169,7 +172,7 @@
 			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_08.png </idleImage>
 		</mediaDisplay>
 		<link>
-		  <script>idx = getQueryItemIndex(); print("getQueryItemIndex()",idx); getItemInfo(idx, "location");</script>
+		  <script>getItemInfo(getQueryItemIndex(), "location");</script>
 		</link>
 	</item_template>
 

@@ -8,7 +8,7 @@
       <link>http://127.0.0.1/cgi-bin/translate?app,,shoutcast/genrelist</link>
       <title>SHOUTcast Radio Directory</title>
       <annotation>Listing thousands of radio channels worldwide...</annotation>
-      <image>rss/image/menu/shoutcast.png</image>
+      <image>rss/image/menu/shoutcast.jpg</image>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Size:3;Start:middle;File:playlist/radio-bluemars.xspf,collection/media</link>
@@ -37,7 +37,7 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
       <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;Start:middle;File:playlist/radio-somafm.xspf,collection/media</link>
       <title>SomaFM</title>
       <annotation>SomaFM is 19 unique channels of listener-supported, commercial-free, underground/alternative radio broadcasting from San Francisco. All music hand-picked by SomaFM's award-winning DJs and music directors.</annotation>
-      <image>rss/image/menu/somafm.png</image>
+      <image>rss/image/menu/somafm.gif</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
   </trackList>
