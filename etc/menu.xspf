@@ -5,21 +5,21 @@
 
   <trackList>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu_radio.xspf,collection/menu<link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu_radio.xspf,collection/menu</link>
       <title>Internet radio</title>
       <annotation>SHOUTcast, SKY.fm, Digitally Imported, SomaFM, Bluemars</annotation>
       <image>rss/image/menu/radio.png</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu_video.xspf,collection/menu<link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu_video.xspf,collection/menu</link>
       <title>Internet Video</title>
       <annotation>YouTube</annotation>
       <image>rss/image/menu/video.png</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu_app.xspf,collection/menu<link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu_app.xspf,collection/menu</link>
       <title>Applications</title>
       <annotation>Media Stream Renderer, XSPF Browser</annotation>
       <image>rss/image/menu/app.png</image>
