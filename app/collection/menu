@@ -17,10 +17,10 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-DATAPATH=$BASEPATH/app/collection
+DATAPATH=$BASEPATH/app/collectionDATAPATH=$BASEPATH/app/collection
 cd $DATAPATH
 
-SUBNAME=media
+SUBNAME=menu
 
 [ ! -f "./$SUBNAME.xml" ] && return 0
 
