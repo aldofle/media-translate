@@ -20,8 +20,42 @@
 DATAPATH=$BASEPATH/app/collection
 cd $DATAPATH
 
-SUBNAME=media
+CHANNELFILE=$TMPFILE.channel
 
-[ ! -f "./$SUBNAME.xml" ] && return 0
+arg_opt=`urldecode_s "$arg_opt"`
 
-. ./common
+get_opt "File"
+FILE="$opt"
+
+[ -z "$FILE" ] && return 0
+
+if ! expr "$FILE" : '/.*' > /dev/null; then
+  FILE="$BASEPATH/$FILE"
+fi
+
+get_opt "Size"
+if [ -z "$opt" ]; then
+  opt=6
+fi
+COLUMNCOUNT="columnCount=$opt"
+
+get_opt "Start"
+if [ -z "$opt" ]; then
+  opt=left
+fi
+STARTITEM="  startitem = \"$opt\";"
+
+echo "Content-type: text/xml"
+echo
+if [ -x "$XSLTPROC" ]; then
+  $XSLTPROC channel.xslt "$FILE" | sed '1d' > $CHANNELFILE
+else
+  awk -f channel.awk "$FILE" > $CHANNELFILE
+fi
+(
+  export CHANNELFILE; 
+  export COLUMNCOUNT; 
+  export STARTITEM;
+  template2rss ${SUBNAME-:"$1"}.xml
+  rm -f $CHANNELFILE
+)
