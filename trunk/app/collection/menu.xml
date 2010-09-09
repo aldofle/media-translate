@@ -24,7 +24,7 @@
 <script>
   leftarrow = "";
   rightarrow = "";
-<script>
+</script>
 
 <onEnter>
   <!--`echo "$STARTITEM"`-->		
