@@ -49,8 +49,8 @@
 
 	<mediaDisplay name=photoView 
 	  centerXPC=7 
-		centerYPC=25
-		centerHeightPC=40
+		centerYPC=30
+		centerHeightPC=50
     <!--`echo "$COLUMNCOUNT"`-->		
 	  rowCount=1
 		menuBorderColor="55:55:55"
@@ -72,14 +72,10 @@
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
-		<text align="center" redraw="yes" lines="5" offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 fontSize=14 backgroundColor=0:0:0 foregroundColor=120:120:120>
+		<text align="center" redraw="yes" lines="3" offsetXPC=10 offsetYPC=80 widthPC=80 heightPC=20 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
 			<script>print(annotation); annotation;</script>
 		</text>
 		
-		<text align="center" redraw="yes" offsetXPC=10 offsetYPC=85 widthPC=80 heightPC=10 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
-			<script>print(location); location;</script>
-		</text>
-
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_01.png </idleImage>
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_02.png </idleImage>
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_03.png </idleImage>
@@ -96,7 +92,6 @@
 					focus = getFocusItemIndex();
 					if(focus==idx) 
 					{
-					  location = getItemInfo(idx, "location");
 					  annotation = getItemInfo(idx, "annotation");
 					}
 					getItemInfo(idx, "image");
@@ -130,29 +125,6 @@
 			   </script>
 			 </heightPC>
 			</image>
-<!--
-			<text align="center" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=15 fontSize=18>
-				<script>
-					idx = getQueryItemIndex();
-					getItemInfo(idx, "fm");
-				</script>
-			  <backgroundColor>
-  				<script>
-  					idx = getQueryItemIndex();
-  					focus = getFocusItemIndex();
-  			    if(focus==idx) "200:200:200"; else "-1:-1:-1";
-  				</script>
-			  </backgroundColor>
-			  <foregroundColor>
-  				<script>
-  					idx = getQueryItemIndex();
-  					focus = getFocusItemIndex();
-  			    if(focus==idx) "50:50:50"; else "100:100:100";
-  				</script>
-			  </foregroundColor>
-			</text>
-
--->		
 			
 			<text align="center" lines="4" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 fontSize=15 backgroundColor=-1:-1:-1>
 				<script>
@@ -179,40 +151,6 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
       
-      if(userInput == "enter")
-      {
-        showIdle();
-        focus = getFocusItemIndex();
-
-        request_url = getItemInfo(focus, "location");
-        request_options = getItemInfo(focus, "options");
-        request_protocol = getItemInfo(focus, "protocol");
-        request_soft = getItemInfo(focus, "soft");
-        request_class = getItemInfo(focus, "class");
-        if(request_class == "" || request_class == null)
-          request_class = "unknown";
-
-        stream_url = request_url;
-        if(request_protocol == "file" || (request_protocol == "http" &amp;&amp; stream_soft != "shoutcast"))
-        {
-          url = stream_url;
-        }
-        else
-        {
-          url = translate_base_url + "stream," + request_options + "," + urlEncode(stream_url);
-        }
-        stream_title = getItemInfo(focus, "title");
-        stream_type = getItemInfo(focus, "type");
-        stream_status_url = "";
-        stream_current_song = "";
-        stream_genre = getItemInfo(focus, "genre");
-        stream_bitrate = getItemInfo(focus, "bitrate");
-        
-        executeScript(request_class+"Dispatcher");
-
-        ret = "true";
-      }
-
       ret;
     </script>
   </onUserInput>
@@ -230,178 +168,11 @@
 			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_07.png </idleImage>
 			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_08.png </idleImage>
 		</mediaDisplay>
+		<link>
+		  <script>idx = getQueryItemIndex(); print("getQueryItemIndex()",idx); getItemInfo(idx, "location");</script>
+		</link>
 	</item_template>
 
-  <videoDispatcher>
-    streamArray = null;
-    streamArray = pushBackStringArray(streamArray, request_url);
-    streamArray = pushBackStringArray(streamArray, request_options);
-    streamArray = pushBackStringArray(streamArray, stream_url);
-    streamArray = pushBackStringArray(streamArray, url);
-    streamArray = pushBackStringArray(streamArray, stream_type);
-    streamArray = pushBackStringArray(streamArray, stream_title);
-    streamArray = pushBackStringArray(streamArray, "1");
-    writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/videoRenderer.rss");
-  </videoDispatcher>
-  
-  <audioDispatcher>
-    streamArray = null;
-    streamArray = pushBackStringArray(streamArray, request_url);
-    streamArray = pushBackStringArray(streamArray, request_options);
-    streamArray = pushBackStringArray(streamArray, stream_url);
-    streamArray = pushBackStringArray(streamArray, url);
-    streamArray = pushBackStringArray(streamArray, stream_type);
-    streamArray = pushBackStringArray(streamArray, stream_status_url);
-    streamArray = pushBackStringArray(streamArray, stream_current_song);
-    streamArray = pushBackStringArray(streamArray, stream_genre);
-    streamArray = pushBackStringArray(streamArray, stream_bitrate);
-    streamArray = pushBackStringArray(streamArray, stream_title);
-    streamArray = pushBackStringArray(streamArray, "1");
-    writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/audioRenderer.rss");
-  </audioDispatcher>
-  
-  <playlistDispatcher>
-    streamArray = null;
-    streamArray = pushBackStringArray(streamArray, stream_url);
-    streamArray = pushBackStringArray(streamArray, stream_url);
-    streamArray = pushBackStringArray(streamArray, "");
-    streamArray = pushBackStringArray(streamArray, "");
-    streamArray = pushBackStringArray(streamArray, "playlist");
-    streamArray = pushBackStringArray(streamArray, "1");
-    writeStringToFile(storagePath_playlist, streamArray);
-    doModalRss("rss_file://./rss/xspf/xspfBrowser.rss");
-  </playlistDispatcher>
-  
-  <rssDispatcher>
-    streamArray = null;
-    streamArray = pushBackStringArray(streamArray, stream_url);
-    streamArray = pushBackStringArray(streamArray, stream_url);
-    streamArray = pushBackStringArray(streamArray, "");
-    streamArray = pushBackStringArray(streamArray, "");
-    writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/rss_mediaFeed.rss");
-  </rssDispatcher>
-
-  <unknownDispatcher>
-    info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
-    error_info  = "";
-
-    res = loadXMLFile(info_url);
-    
-    if (res != null)
-    {
-      error = getXMLElementCount("info","error");
-      
-      if(error != 0)
-      {
-  	    value = getXMLText("info","error");
-  	    if(value != null)
-  	    {
-  	     error_info = value;
-  	    }
-      }
-      else
-      {
-  	    value = getXMLAttribute("info","stream","url");
-  	    if(value != null)
-  	     stream_url = value;
-  
-  	    value = getXMLAttribute("info","stream","type");
-  	    if(value != null)
-  	     stream_type = value;
-  	    
-  	    value = getXMLAttribute("info","stream","class");
-  	    if(value != null)
-  	     stream_class = value;
-  
-  	    value = getXMLAttribute("info","stream","protocol");
-  	    if(value != null)
-  	     stream_protocol = value;
-  
-  	    value = getXMLAttribute("info","stream","server");
-  	    if(value != null)
-  	     stream_soft = value;
-  
-        stream_status_url = "";
-        
-  	    value = getXMLAttribute("info","stream","server_url");
-  	    if(value != null)
-  	    {
-  	     stream_server_url = value;
-  	     if((stream_soft == "icecast" || stream_soft == "shoutcast") &amp;&amp; stream_server_url!="")
-  	     {
-    	      stream_status_url = translate_base_url+"status,"+stream_server_url+","+urlEncode(stream_url);
-    	   }
-  	    }
-  	     
-        value = getXMLText("info","status","stream-title");
-  	    if(value != null)
-  	     stream_title = value;
-  
-        stream_current_song = "";
-  	    value = getXMLText("info","status","current-song");
-  	    if(value != null)
-    		  stream_current_song = value;
-    		  
-  	    value = getXMLText("info","status","stream-genre");
-  	    if(value != null)
-  	      stream_genre = value;
-        
-  	    value = getXMLText("info","status","stream-bitrate");
-  	    if(value != null)
-  	      stream_bitrate = value;
-  
-        options = "";
-        
-        if(stream_type != "")
-          options = "Content-type:"+stream_type;
-        
-        if(options == "")
-          options = stream_options;
-        else
-          options = options + ";" + stream_options;
-  
-  	    stream_translate_url = translate_base_url + "stream," + options + "," + urlEncode(stream_url);
-  	    
-  	    url = null;
-  	    
-  	    if(stream_class == "video" || stream_class == "audio")
-    	  {
-          if(stream_protocol == "file" || (stream_protocol == "http" &amp;&amp; stream_soft != "shoutcast"))
-    	      url = stream_url;
-    	    else
-    	      url = stream_translate_url;
-    	  }
-    	  else
-    	  {
-  	      url = stream_url;
-    	  }
-    	     
-    	  if(url != null)
-    	  {
-          if(stream_class == "audio" || stream_class == "video" || stream_class == "playlist" || stream_class == "rss")
-          {
-            executeScript(stream_class+"Dispatcher");
-          }
-          else
-          {
-            error_info = "Unsupported media type: " + stream_type;
-          }
-  	    }
-  	    else
-  	    {
-          error_info = "Empty stream url!";
-  	    }
-      }
-    }
-    else
-    {
-      error_info = "CGI translate module failed!";
-    }
-    print("error_info=",error_info);
-  </unknownDispatcher>
 
 <!--`cat "$CHANNELFILE"`-->
 
