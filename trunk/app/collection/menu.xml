@@ -71,7 +71,7 @@
 		<image redraw="yes" offsetXPC=5 offsetYPC=25 widthPC=5 heightPC=5>
 			<script>leftarrow;</script>
 		</image>
-		<image redraw="yes" offsetXPC=95 offsetYPC=25 widthPC=5 heightPC=5>
+		<image redraw="yes" offsetXPC=90 offsetYPC=25 widthPC=5 heightPC=5>
 			<script>rigtarrow;</script>
 		</image>
 		
