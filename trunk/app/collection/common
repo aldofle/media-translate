@@ -27,6 +27,8 @@ arg_opt=`urldecode_s "$arg_opt"`
 get_opt "File"
 FILE="$opt"
 
+[ -z "$FILE" -a "$SUBNAME" = "menu" ] && FILE="$MAINMENU"
+
 [ -z "$FILE" ] && return 0
 
 if ! expr "$FILE" : '/.*' > /dev/null; then
