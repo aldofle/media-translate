@@ -386,7 +386,7 @@ check_av_stream()
 
         get_icy_meta()
         {
-          echo "$buf" | sed -n "/^$1:/p" | sed -n '$p' | sed "s/^$1://"
+          echo "$buf" | sed -n "/^$1:/p" | sed -n '$p' | sed "s/^$1://" | $TOUTF8
         }
         
         icy_name=`get_icy_meta 'icy-name'`
@@ -514,6 +514,8 @@ check_stream()
     fi
   fi
   
+  [ "$stream_type" == "audio/x-shoutcast-stream" ] && stream_type=audio/x-scpls
+  
   case $stream_type in
     audio/x-cue)
       stream_class='cue'
@@ -591,7 +593,7 @@ command_playlist()
       audio/x-cue)
         ext="cue"
       ;;
-      audio/x-scpls)
+      audio/x-scpls|audio/x-shoutcast-stream)
         ext="pls"
       ;;
       audio/x-mpegurl)

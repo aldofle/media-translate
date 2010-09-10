@@ -28,6 +28,7 @@
 
 function getInfo(url)
 {
+  print "Resolve url: " url > "/dev/stderr"
   HttpService = "/inet/tcp/0/127.0.0.1/80"
   ORS = RS = "\n\n"
   print "GET /cgi-bin/translate?info,," url " HTTP/1.0" |& HttpService
@@ -38,7 +39,8 @@ function getInfo(url)
     printf "%s", $0 >> info_file
   close(HttpService)
   close(info_file)
-  
+
+ ORS="\n"
   while ( getXML(info_file,1) ) 
   {
     if(XTYPE == "TAG")
@@ -92,7 +94,7 @@ BEGIN {
     else
     if(XTYPE == "DAT")
     {
-	      value = XITEM;
+        value = XITEM;
         printf XITEM;
     }
     else
@@ -112,6 +114,7 @@ BEGIN {
         
         if(XITEM == "location")
         {
+	    print "";
             getInfo(value);
         }
     }

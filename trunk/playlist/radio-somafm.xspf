@@ -4,303 +4,325 @@
    <trackList>
       <track>
          <location>http://voxsc1.somafm.com:8700</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8700</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8700</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Cover Me: All covers, all the time. [SomaFM]</meta>
-         <meta rel="stream_genre">Experimental Eclectic</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:8700</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8700</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Cover Me: All covers, all the time. [SomaFM]</meta>
+<meta rel="stream_genre">Experimental Eclectic</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Covers</title>
          <annotation>All covers. All the time. Nothing by the original artists!</annotation>
          <image>rss/image/somafm/covers120.jpg</image>
       </track>
       <track>
-         <location>http://voxsc1.somafm.com:8880</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8880</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8880</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Underground Eighties: UK Synthop and a bit of New Wave. [SomaFM]</meta>
-         <meta rel="stream_genre">80s New Wave Synthpop</meta>
-         <meta rel="stream_bitrate">128</meta>
+         <location>http://voxsc1.somafm.com:8884</location>
+<meta rel="stream_url">http://voxsc1.somafm.com:8884</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8884</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Underground Eighties: UK Synthop and a bit of New Wave. [SomaFM]</meta>
+<meta rel="stream_genre">80s New Wave Synthpop</meta>
+<meta rel="stream_bitrate">192</meta>
+
          <title>Underground 80s</title>
          <annotation>Early 80s UK Synthpop and a bit of New Wave.</annotation>
          <image>rss/image/somafm/u80s-120.png</image>
       </track>
       <track>
-         <location>http://voxsc1.somafm.com:9002</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:9002</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:9002</meta>
-         <meta rel="stream_type">audio/aacp</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Groove Salad from SomaFM [aacPlus] [SomaFM]</meta>
-         <meta rel="stream_genre">Downtempo Ambient Groove</meta>
-         <meta rel="stream_bitrate">64</meta>
+         <location>http://voxsc1.somafm.com:3000</location>
+<meta rel="stream_url">http://voxsc1.somafm.com:3000</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:3000</meta>
+<meta rel="stream_type">audio/aac</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Groove Salad from SomaFM [aac] [SomaFM]</meta>
+<meta rel="stream_genre">Downtempo Ambient Groove</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Groove Salad</title>
          <annotation>A nicely chilled plate of ambient beats and grooves.</annotation>
          <image>rss/image/somafm/groovesalad120.gif</image>
       </track>
       <track>
-         <location>http://voxsc1.somafm.com:9000</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:9000</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:9000</meta>
-         <meta rel="stream_type">audio/aacp</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Secret Agent from SomaFM [SomaFM]</meta>
-         <meta rel="stream_genre">Various</meta>
-         <meta rel="stream_bitrate">48</meta>
+         <location>http://voxsc1.somafm.com:9010</location>
+<meta rel="stream_url">http://voxsc1.somafm.com:9010</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:9010</meta>
+<meta rel="stream_type">audio/aacp</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Secret Agent from SomaFM [SomaFM]</meta>
+<meta rel="stream_genre">Various</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Secret Agent</title>
          <annotation>The soundtrack for your stylish, mysterious, dangerous life. For Spies and PIs too!</annotation>
          <image>rss/image/somafm/secretagent120.jpg</image>
       </track>
       <track>
          <location>http://ice.somafm.com/dronezone</location>
-         <meta rel="stream_url">http://ice.somafm.com/dronezone</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server"/>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Drone Zone: Atmospheric ambient space music. Serve Best Chilled. Safe with most medications. [SomaFM]</meta>
-         <meta rel="stream_genre">Techno Ambient Space</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://ice.somafm.com/dronezone</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Drone Zone: Atmospheric ambient space music. Serve Best Chilled. Safe with most medications. [SomaFM]</meta>
+<meta rel="stream_genre">Techno Ambient Space</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Drone Zone</title>
          <annotation>Served best chilled, safe with most medications. Atmospheric textures with minimal beats.</annotation>
          <image>rss/image/somafm/dronezone120.jpg</image>
       </track>
       <track>
-         <location>http://voxsc1.somafm.com:9004</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:9004</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:9004</meta>
-         <meta rel="stream_type">audio/aacp</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Indie Pop Rocks on SomaFM  [aacPlus] [SomaFM]</meta>
-         <meta rel="stream_genre">College Indie</meta>
-         <meta rel="stream_bitrate">48</meta>
+         <location>http://voxsc1.somafm.com:8070</location>
+<meta rel="stream_url">http://voxsc1.somafm.com:8070</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8070</meta>
+<meta rel="stream_type">audio/aacp</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Indie Pop Rocks on SomaFM  [aac] [SomaFM]</meta>
+<meta rel="stream_genre">College Indie</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Indie Pop Rocks!</title>
          <annotation>New and your favorite classic indie pop tracks.</annotation>
          <image>rss/image/somafm/indychick.jpg</image>
       </track>
       <track>
          <location>http://voxsc1.somafm.com:8062</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8062</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8062</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">blips'n'bleeps backed w/ beats. broadband. [SomaFM]</meta>
-         <meta rel="stream_genre">IDM</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:8062</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8062</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">blips'n'bleeps backed w/ beats. broadband. [SomaFM]</meta>
+<meta rel="stream_genre">IDM</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>cliqhop idm</title>
          <annotation>Blips'n'beeps backed mostly w/beats. Intelligent Dance Music.</annotation>
          <image>rss/image/somafm/cliqhop.gif</image>
       </track>
       <track>
          <location>http://voxsc1.somafm.com:8384</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8384</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8384</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Beat Blender: A late night blend of deep-house &amp; downtempo chill. [SomaFM]</meta>
-         <meta rel="stream_genre">Downtempo House Techno</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:8384</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8384</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Beat Blender: A late night blend of deep-house &amp; downtempo chill. [SomaFM]</meta>
+<meta rel="stream_genre">Downtempo House Techno</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Beat Blender</title>
          <annotation>A late night blend of deep-house and downtempo chill.</annotation>
          <image>rss/image/somafm/blender.gif</image>
       </track>
       <track>
          <location>http://205.188.215.230:8012</location>
-         <meta rel="stream_url">http://205.188.215.230:8012</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://205.188.215.230:8012</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Tag's Trip  [SomaFM]</meta>
-         <meta rel="stream_genre">Dance Trance House</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://205.188.215.230:8012</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://205.188.215.230:8012</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Tag's Trip  [SomaFM]</meta>
+<meta rel="stream_genre">Dance Trance House</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Tag's Trip</title>
          <annotation>Progressive house / trance. Tip top tunes.</annotation>
          <image>rss/image/somafm/tagstrancefract.jpg</image>
       </track>
       <track>
-         <location>http://voxsc1.somafm.com:8506</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8506</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8506</meta>
-         <meta rel="stream_type">audio/aacp</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Ill Street Lounge: Classic bachelor pad, playful exotica and vintage music of tomorrow. [SomaFM]</meta>
-         <meta rel="stream_genre">Exotica Lounge</meta>
-         <meta rel="stream_bitrate">48</meta>
+         <location>http://voxsc1.somafm.com:8504</location>
+<meta rel="stream_url">http://voxsc1.somafm.com:8504</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8504</meta>
+<meta rel="stream_type">audio/aacp</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Ill Street Lounge: Classic bachelor pad, playful exotica and vintage music of tomorrow. [SomaFM]</meta>
+<meta rel="stream_genre">Exotica Lounge</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Illinois Street Lounge</title>
          <annotation>Classic bachelor pad, playful exotica and vintage music of tomorrow.</annotation>
          <image>rss/image/somafm/illstreet.jpg</image>
       </track>
       <track>
-         <location>http://voxsc1.somafm.com:8206</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8206</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8206</meta>
-         <meta rel="stream_type">audio/aacp</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Space Station Soma from SomaFM [SomaFM]</meta>
-         <meta rel="stream_genre">Ambient Electronica</meta>
-         <meta rel="stream_bitrate">48</meta>
+         <location>http://voxsc1.somafm.com:8200</location>
+<meta rel="stream_url">http://voxsc1.somafm.com:8200</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8200</meta>
+<meta rel="stream_type">audio/aacp</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Space Station Soma from SomaFM [SomaFM]</meta>
+<meta rel="stream_genre">Ambient Electronica</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Space Station Soma</title>
          <annotation>Tune in, turn on, space out. Spaced-out ambient and mid-tempo electronica.</annotation>
          <image>rss/image/somafm/sss.jpg</image>
       </track>
       <track>
          <location>http://voxsc1.somafm.com:8300</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8300</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8300</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Doomed: Dark music for tortured souls [SomaFM]</meta>
-         <meta rel="stream_genre">Halloween Dark Industrial</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:8300</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8300</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Doomed: Dark music for tortured souls [SomaFM]</meta>
+<meta rel="stream_genre">Halloween Dark Industrial</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Doomed</title>
          <annotation>Dark music for tortured souls</annotation>
          <image>rss/image/somafm/doomed.gif</image>
       </track>
       <track>
          <location>http://voxsc1.somafm.com:7000</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:7000</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:7000</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Boot Liquor: Americana roots music for Cowhands, Cowpokes and Cowtippers. [SomaFM]</meta>
-         <meta rel="stream_genre">Alt Country Americana</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:7000</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:7000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Boot Liquor: Americana roots music for Cowhands, Cowpokes and Cowtippers. [SomaFM]</meta>
+<meta rel="stream_genre">Alt Country Americana</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Boot Liquor</title>
          <annotation>Americana Roots music for Cowhands, Cowpokes and Cowtippers</annotation>
          <image>rss/image/somafm/bootliquor.gif</image>
       </track>
       <track>
          <location>http://ice.somafm.com/lush</location>
-         <meta rel="stream_url">http://ice.somafm.com/lush</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server"/>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Lush: Mostly female vocals with an electronic influence. [SomaFM]</meta>
-         <meta rel="stream_genre">Female Vocal Electronica</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://ice.somafm.com/lush</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Lush: Mostly female vocals with an electronic influence. [SomaFM]</meta>
+<meta rel="stream_genre">Female Vocal Electronica</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Lush</title>
          <annotation>Sensuous and mellow vocals, mostly female, with an electronic influence.</annotation>
          <image>rss/image/somafm/lush120.jpg</image>
       </track>
       <track>
          <location>http://voxsc1.somafm.com:8900</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8900</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8900</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Digitalis. Analog rock, digitally-affected, to calm the agitated heart. [SomaFM]</meta>
-         <meta rel="stream_genre">Indie Post Rock</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:8900</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8900</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Digitalis. Analog rock, digitally-affected, to calm the agitated heart. [SomaFM]</meta>
+<meta rel="stream_genre">Indie Post Rock</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Digitalis</title>
          <annotation>Digitally affected analog rock to calm the agitated heart.</annotation>
          <image>rss/image/somafm/digitalis120.gif</image>
       </track>
       <track>
          <location>http://voxsc1.somafm.com:8850</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8850</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8850</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Suburbs of Goa: Desi-influenced Asian world beats. [SomaFM]</meta>
-         <meta rel="stream_genre">Indian Asian</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:8850</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8850</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Suburbs of Goa: Desi-influenced Asian world beats. [SomaFM]</meta>
+<meta rel="stream_genre">Indian Asian</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Suburbs of Goa</title>
          <annotation>Desi-influenced Asian world beats.</annotation>
          <image>rss/image/somafm/sog120.jpg</image>
       </track>
       <track>
          <location>http://voxsc1.somafm.com:8600</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8600</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8600</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Sonic Universe. Nu Jazz plus avant-garde Euro Jazz: Transcending the boundaries of jazz with experimental takes on tradition. [SomaFM]</meta>
-         <meta rel="stream_genre">Experimental NuJazz</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:8600</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8600</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Sonic Universe. Nu Jazz plus avant-garde Euro Jazz: Transcending the boundaries of jazz with experimental takes on tradition. [SomaFM]</meta>
+<meta rel="stream_genre">Experimental NuJazz</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Sonic Universe</title>
          <annotation>NuJazz + avant-garde EuroJazz. Transcending the world of jazz with experimental takes on tradition.</annotation>
          <image>rss/image/somafm/sonicuniverse120.jpg</image>
       </track>
       <track>
-         <location>http://temp.somafm.com:2024</location>
-         <meta rel="stream_url">http://temp.somafm.com:2024</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:2024</meta>
-         <meta rel="stream_type">audio/aacp</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">Mission Control: Celebrating NASA and space explorers everywhere. [SomaFM]</meta>
-         <meta rel="stream_genre">Space Electronica</meta>
-         <meta rel="stream_bitrate">64</meta>
+         <location>http://voxsc1.somafm.com:2026</location>
+<meta rel="stream_url">http://voxsc1.somafm.com:2026</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:2026</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Mission Control: Celebrating NASA and space explorers everywhere. [SomaFM]</meta>
+<meta rel="stream_genre">Space Electronica</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Mission Control</title>
          <annotation>Celebrating NASA and Space Explorers everywhere.</annotation>
          <image>rss/image/somafm/missioncontrol120.jpg</image>
       </track>
       <track>
          <location>http://voxsc1.somafm.com:2200</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:2200</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:2200</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">PopTron: Electro-Pop and Indie Dance Rock [SomaFM]</meta>
-         <meta rel="stream_genre">Electro Pop</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:2200</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:2200</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">PopTron: Electro-Pop and Indie Dance Rock [SomaFM]</meta>
+<meta rel="stream_genre">Electro Pop</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>PopTron</title>
          <annotation>Electropop and indie dance rock with sparkle and pop.</annotation>
          <image>rss/image/somafm/poptron120.png</image>
       </track>
       <track>
          <location>http://voxsc1.somafm.com:8040</location>
-         <meta rel="stream_url">http://voxsc1.somafm.com:8040</meta>
-         <meta rel="stream_class">audio</meta>
-         <meta rel="stream_soft">shoutcast</meta>
-         <meta rel="stream_server">http://74.63.47.82:8040</meta>
-         <meta rel="stream_type">audio/mpeg</meta>
-         <meta rel="stream_protocol">http</meta>
-         <meta rel="stream_title">SomaFM Black Rock City: 102.3 FM at the Burningman Festival [SomaFM]</meta>
-         <meta rel="stream_genre">Misc Electronic</meta>
-         <meta rel="stream_bitrate">128</meta>
+<meta rel="stream_url">http://voxsc1.somafm.com:8040</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8040</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">SomaFM Black Rock City: 102.3 FM at the Burningman Festival [SomaFM]</meta>
+<meta rel="stream_genre">Misc Electronic</meta>
+<meta rel="stream_bitrate">128</meta>
+
          <title>Black Rock FM</title>
          <annotation>From the Playa to the world, for the 2010 Burning Man festival.</annotation>
          <image>rss/image/somafm/1023brc.jpg</image>
       </track>
    </trackList>
 </playlist>
+
+
