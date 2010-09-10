@@ -24,10 +24,10 @@
          <image>rss/image/sampo/nashe-ptz.png</image>
          <location>http://radio.sampo.ru/nashe-ptz.mp3</location>
 <meta rel="stream_url">http://radio.sampo.ru:8000/nashe-ptz.mp3</meta>
-<meta rel="stream_class">video</meta>
+<meta rel="stream_class">audio</meta>
 <meta rel="stream_soft"></meta>
 <meta rel="stream_server"></meta>
-<meta rel="stream_type">video/x-msvideo</meta>
+<meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 
       </track>
@@ -100,7 +100,7 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">RockRadio1.Com - Classic Hard Rock & Heavy Metal Mix, 24/7 Live Requests / www.rockradio1.com</meta>
+<meta rel="stream_title">RockRadio1.Com - Classic Hard Rock &amp; Heavy Metal Mix, 24/7 Live Requests / www.rockradio1.com</meta>
 <meta rel="stream_genre">Classic Rock Metal</meta>
 <meta rel="stream_bitrate">192</meta>
 
@@ -180,7 +180,7 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">ChroniX Aggression - Loud & Clear - www.chronixradio.com</meta>
+<meta rel="stream_title">ChroniX Aggression - Loud &amp; Clear - www.chronixradio.com</meta>
 <meta rel="stream_genre">METAL, ROCK, ALTERNATIVE</meta>
 <meta rel="stream_bitrate">128</meta>
 
