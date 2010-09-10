@@ -102,6 +102,8 @@
 					{
 					  location = getItemInfo(idx, "location");
 					  annotation = getItemInfo(idx, "annotation");
+					  if(annotation == "" || annotation == null)
+					    annotation = getItemInfo(idx, "stream_genre");
 					}
 					getItemInfo(idx, "image");
 				</script>
@@ -199,7 +201,7 @@
 
         if(stream_title == "" || stream_title == null)
           stream_title = request_title;
-          
+
         if(stream_protocol == "file" || (stream_protocol == "http" &amp;&amp; stream_soft != "shoutcast"))
         {
           url = stream_url;
