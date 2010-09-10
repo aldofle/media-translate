@@ -28,8 +28,6 @@
   storagePath_stream      = storagePath + "stream.dat";
   
   error_info          = "";
-  leftarrow = "";
-  rightarrow = "";
 </script>
 
 <onEnter>
@@ -74,18 +72,15 @@
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
-		<image redraw="yes" offsetXPC=5 offsetYPC=25 widthPC=5 heightPC=5>
-			<script>leftarrow;</script>
-		</image>
-		<image redraw="yes" offsetXPC=90 offsetYPC=25 widthPC=5 heightPC=5>
-			<script>rigtarrow;</script>
-		</image>
-		
-		<text align="center" redraw="yes" lines="5" offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 fontSize=14 backgroundColor=0:0:0 foregroundColor=120:120:120>
+  	<text redraw="yes" offsetXPC="85" offsetYPC="12" widthPC="10" heightPC="6" fontSize="20" backgroundColor="10:105:150" foregroundColor="60:160:205">
+		  <script>sprintf("%s / ", focus-(-1))+itemCount;</script>
+		</text>
+
+		<text align="center" redraw="yes" lines="5" offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
 			<script>print(annotation); annotation;</script>
 		</text>
 		
-		<text align="center" redraw="yes" offsetXPC=10 offsetYPC=85 widthPC=80 heightPC=10 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
+		<text align="center" redraw="yes" offsetXPC=10 offsetYPC=85 widthPC=80 heightPC=10 fontSize=15 backgroundColor=0:0:0 foregroundColor=75:75:75>
 			<script>print(location); location;</script>
 		</text>
 
@@ -107,14 +102,6 @@
 					{
 					  location = getItemInfo(idx, "location");
 					  annotation = getItemInfo(idx, "annotation");
-					}
-					if(idx == 0)
-					{
-					    leftarrow = "";
-					}
-					if(idx == (itemCount-1))
-					{
-					    rightarrow = "";
 					}
 					getItemInfo(idx, "image");
 				</script>
@@ -148,11 +135,18 @@
 			 </heightPC>
 			</image>
 			
-			<text align="center" lines="4" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 fontSize=15 backgroundColor=-1:-1:-1>
+			<text align="center" lines="4" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
 				</script>
+				<fontSize>
+  				<script>
+  					idx = getQueryItemIndex();
+  					focus = getFocusItemIndex();
+  			    if(focus==idx) "16"; else "14";
+  				</script>
+				</fontSize>
 			  <foregroundColor>
   				<script>
   					idx = getQueryItemIndex();
@@ -173,42 +167,53 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
       
-      if(userInput == "left" || userInput == "right")
-      {
-        leftarrow = "rss/image/arrow_left.png";
-        rightarrow = "rss/image/arrow_right.png";
-      }
-      else
       if(userInput == "enter")
       {
         showIdle();
         focus = getFocusItemIndex();
 
+        request_title = getItemInfo(focus, "title");
         request_url = getItemInfo(focus, "location");
         request_options = getItemInfo(focus, "options");
-        request_protocol = getItemInfo(focus, "protocol");
-        request_soft = getItemInfo(focus, "soft");
-        request_class = getItemInfo(focus, "class");
-        if(request_class == "" || request_class == null)
-          request_class = "unknown";
 
-        stream_url = request_url;
-        if(request_protocol == "file" || (request_protocol == "http" &amp;&amp; stream_soft != "shoutcast"))
+        stream_url = getItemInfo(focus, "stream_url");
+        stream_title = getItemInfo(focus, "stream_title");
+        stream_type = getItemInfo(focus, "stream_type");
+        stream_protocol = getItemInfo(focus, "stream_protocol");
+        stream_soft = getItemInfo(focus, "stream_soft");
+        stream_class = getItemInfo(focus, "stream_class");
+        stream_server = getItemInfo(focus, "stream_server");
+        stream_status_url = "";
+        stream_current_song = "";
+        stream_genre = getItemInfo(focus, "stream_genre");
+        stream_bitrate = getItemInfo(focus, "stream_bitrate");
+        
+        if(stream_class == "" || stream_class == null)
+          stream_class = "unknown";
+
+        if(stream_url == "" || stream_url == null)
+          stream_url = request_url;
+
+        if(stream_server != "" &amp;&amp; stream_server != null)
+          stream_status_url = translate_base_url + "status," + stream_server + ",";
+
+        if(stream_title == "" || stream_title == null)
+          stream_title = request_title;
+          
+        if(stream_protocol == "file" || (stream_protocol == "http" &amp;&amp; stream_soft != "shoutcast"))
         {
           url = stream_url;
         }
         else
         {
+          if(stream_type != null &amp;&amp; stream_type != "")
+          {
+            request_options = "Content-type:"+stream_type+";"+request_options;
+          }
           url = translate_base_url + "stream," + request_options + "," + urlEncode(stream_url);
         }
-        stream_title = getItemInfo(focus, "title");
-        stream_type = getItemInfo(focus, "type");
-        stream_status_url = "";
-        stream_current_song = "";
-        stream_genre = getItemInfo(focus, "genre");
-        stream_bitrate = getItemInfo(focus, "bitrate");
         
-        executeScript(request_class+"Dispatcher");
+        executeScript(stream_class+"Dispatcher");
 
         ret = "true";
       }

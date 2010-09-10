@@ -71,7 +71,7 @@
  if(stream_status_url == "")
     check_info = 5;
   else
-    check_info = check_info_time;
+    check_info = 10;
   cancelIdle();
 </onEnter>
 
