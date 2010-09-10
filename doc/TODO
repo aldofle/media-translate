@@ -1,37 +1,36 @@
 
 MAIN MENU
 
-Collection
-  Internet Radio
-    Digitally Imported
-    SKY.FM
-    SomaFM
-    BLUEMARS
-  Vimeo
-  TV
-Application
-  Shoutcast
-  YouTube
-  Media Stream Renderer
-  XSPF Browser
-  Moskva.FM
-  IVI.ru
-
-MAIN MENU (2)
-
 Internet Radio
-  Shoutcast
-  Digitally Imported
+  Shoutcast Radio Directory (+)
+  Digitally Imported (+)
   Moskva.FM
-  SKY.FM
-  SomaFM
-  BLUEMARS
+  SKY.fm (+)
+  SomaFM (+)
+  Bluemars (+)
+  Rock Radio 1
+  Sampo.ru
 Internet Video
-  YouTube
+  YouTube (+)
   Vimeo
   IVI.ru
   TV-Here
   RuTube TV
 Application
-  Media Stream Renderer
-  XSPF Browser
+  Media Stream Renderer (+)
+  XSPF Browser (+)
+
+
+APPLICATION
+
+collection/media (+)
+collection/menu (+)
+collection/list
+
+REDESIGN
+
+xspf/rss_mediaFeed.rss
+
+TRANSLATE CGI
+
+?stream,,<playlist.url>   choose 1st valid stream to play
