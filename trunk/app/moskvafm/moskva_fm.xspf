@@ -155,9 +155,9 @@
       <meta rel="name">91_6</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>http://govoritmoskva.ru:8000/gm-fm-128</location>
       <title>Говорит Москва</title>
-      <annotation></annotation>
+      <annotation>Радио большого города</annotation>
       <image>http://img.moskva.fm/img/stations/msk/92_0.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_92.0</meta>
       <meta rel="id">4016</meta>
@@ -165,9 +165,9 @@
       <meta rel="name">92_0</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>http://stream.loveradio.ru:8000/radiodacha_high.mp3</location>
       <title>Радио Дача</title>
-      <annotation></annotation>
+      <annotation>Удачное радио!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/92_4.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_92.4</meta>
       <meta rel="id">4017</meta>
@@ -175,9 +175,9 @@
       <meta rel="name">92_4</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>mmsh://online.carnivalfm.ru:1234</location>
       <title>Радио Карнавал</title>
-      <annotation></annotation>
+      <annotation>Мировые хиты</annotation>
       <image>http://img.moskva.fm/img/stations/msk/92_8.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_92.8</meta>
       <meta rel="id">4018</meta>
@@ -185,9 +185,9 @@
       <meta rel="name">92_8</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>http://www.sportfm.ru:8000/sportfm-128</location>
       <title>Радио Спорт</title>
-      <annotation></annotation>
+      <annotation>Главное спортивное радио страны</annotation>
       <image>http://img.moskva.fm/img/stations/msk/93_2.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_93.2</meta>
       <meta rel="id">4019</meta>
@@ -195,9 +195,9 @@
       <meta rel="name">93_2</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>mmsh://stream01.rambler.ru:80/komersant</location>
       <title>КоммерсантъFM</title>
-      <annotation></annotation>
+      <annotation>Все, что происходит сейчас</annotation>
       <image>http://img.moskva.fm/img/stations/msk/93_6.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_93.6</meta>
       <meta rel="id">2020</meta>
@@ -207,7 +207,7 @@
     <track xmlns="">
       <location></location>
       <title>Newtone FM</title>
-      <annotation></annotation>
+      <annotation>Прямо в голову! (закрыто 9 марта 2010)</annotation>
       <image>http://img.moskva.fm/img/stations/msk/93_61.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_93.61</meta>
       <meta rel="id">2021</meta>
@@ -217,7 +217,7 @@
     <track xmlns="">
       <location></location>
       <title>Пионер FM</title>
-      <annotation></annotation>
+      <annotation>Не очень взрослое радио</annotation>
       <image>http://img.moskva.fm/img/stations/msk/94_0.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_94.0</meta>
       <meta rel="id">2110</meta>
@@ -225,19 +225,19 @@
       <meta rel="name">94_0</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>mmsh://broadcast03.station.ru/dobryepesni</location>
       <title>Добрые песни</title>
-      <annotation></annotation>
+      <annotation>Максимально позитивные эмоции</annotation>
       <image>http://img.moskva.fm/img/stations/msk/94_4.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_94.4</meta>
-      <meta rel="id">2105</meta>
+      <meta rel=<input type="password" >"id">2105</meta>
       <meta rel="fm">94.4</meta>
       <meta rel="name">94_4</meta>
     </track>
     <track xmlns="">
       <location></location>
       <title>Моя Семья</title>
-      <annotation></annotation>
+      <annotation>Для тех, кого любим!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/94_8.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_94.8</meta>
       <meta rel="id">4020</meta>
@@ -247,7 +247,7 @@
     <track xmlns="">
       <location></location>
       <title>ROCK FM</title>
-      <annotation></annotation>
+      <annotation>Больше музыки, больше рока!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/95_2.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_95.2</meta>
       <meta rel="id">2011</meta>
@@ -255,9 +255,9 @@
       <meta rel="name">95_2</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>http://89.208.99.16:8088/zvezda_128</location>
       <title>Радио Звезда</title>
-      <annotation></annotation>
+      <annotation>Телерадиокомпания Вооруженных Сил Российской Федерации</annotation>
       <image>http://img.moskva.fm/img/stations/msk/95_6.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_95.6</meta>
       <meta rel="id">4021</meta>
@@ -265,9 +265,9 @@
       <meta rel="name">95_6</meta>
     </track>
     <track xmlns="">
-      <location></location>
-      <title>Вояж FM</title>
-      <annotation></annotation>
+      <location>http://www.dorognoe.ru/dor.m3u</location>
+      <title>Дорожное радио</title>
+      <annotation>Вместе в пути!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/96_0.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_96.0</meta>
       <meta rel="id">2109</meta>
@@ -276,8 +276,18 @@
     </track>
     <track xmlns="">
       <location></location>
+      <title>Вояж FM</title>
+      <annotation>Золотые 90-е (закрыто в июле 2010)</annotation>
+      <image>http://img.moskva.fm/img/stations/msk/96_0.gif</image>
+      <meta rel="url">http://www.moskva.fm/stations/FM_96.0</meta>
+      <meta rel="id">2109</meta>
+      <meta rel="fm">96.01</meta>
+      <meta rel="name">96_01</meta>
+    </track>
+    <track xmlns="">
+      <location>http://stream.mradio.fm:8000/mradio_high.mp3</location>
       <title>X-FM</title>
-      <annotation></annotation>
+      <annotation>Сенсация в прямом эфире</annotation>
       <image>http://img.moskva.fm/img/stations/msk/96_4.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_96.4</meta>
       <meta rel="id">4022</meta>
@@ -285,9 +295,9 @@
       <meta rel="name">96_4</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>http://217.29.51.162:8000/radio-64k.aac</location>
       <title>Детское радио</title>
-      <annotation></annotation>
+      <annotation>Спасибо Газпрому за наше счастливое детство!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/96_8.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_96.8</meta>
       <meta rel="id">2017</meta>
@@ -295,9 +305,9 @@
       <meta rel="name">96_8</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>http://radio.kp.ru:8000/stream</location>
       <title>Комсомольская правда</title>
-      <annotation></annotation>
+      <annotation>Мы делаем мир желтее!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/97_2.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_97.2</meta>
       <meta rel="id">2108</meta>
@@ -305,9 +315,9 @@
       <meta rel="name">97_2</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>mmsh://live.rfn.ru/vesti_fm</location>
       <title>Вести FM</title>
-      <annotation></annotation>
+      <annotation>Государственная радиовещательная компания</annotation>
       <image>http://img.moskva.fm/img/stations/msk/97_6.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_97.6</meta>
       <meta rel="id">4023</meta>
@@ -315,9 +325,9 @@
       <meta rel="name">97_6</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>mmsh://stream03.rambler.ru/kinofm</location>
       <title>Кино FM</title>
-      <annotation></annotation>
+      <annotation>98 FM - 98 хитов</annotation>
       <image>http://img.moskva.fm/img/stations/msk/98_0.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_98.0</meta>
       <meta rel="id">2018</meta>
@@ -325,19 +335,20 @@
       <meta rel="name">98_0</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>http://webcast2.emg.fm:55655/fresh128.mp3</location>
       <title>Свежее радио</title>
-      <annotation></annotation>
+      <annotation>100% МУЗЫКА – 100% СВЕЖЕЕ!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/98_4.gif</image>
+      <meta rel="options">Protocol:http</meta>
       <meta rel="url">http://www.moskva.fm/stations/FM_98.4</meta>
       <meta rel="id">4024</meta>
       <meta rel="fm">98.4</meta>
       <meta rel="name">98_4</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>mmsh://mms.online.ru/v4_1_22</location>
       <title>Радио Алла</title>
-      <annotation></annotation>
+      <annotation>Все звезды на "Радио Алла"!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/98_8.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_98.8</meta>
       <meta rel="id">4011</meta>
@@ -345,9 +356,9 @@
       <meta rel="name">98_8</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>mmsh://live.rfn.ru/orfey/</location>
       <title>Радио Орфей</title>
-      <annotation></annotation>
+      <annotation>Классическая музыка</annotation>
       <image>http://img.moskva.fm/img/stations/msk/99_2.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_99.2</meta>
       <meta rel="id">2101</meta>
@@ -357,7 +368,7 @@
     <track xmlns="">
       <location></location>
       <title>Финам FM</title>
-      <annotation></annotation>
+      <annotation>Живи по своим правилам!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/99_6.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_99.6</meta>
       <meta rel="id">2019</meta>
@@ -365,9 +376,9 @@
       <meta rel="name">99_6</meta>
     </track>
     <track xmlns="">
-      <location></location>
+      <location>http://w01-cn01.akadostream.ru:8000/silverrain128.mp3</location>
       <title>Серебряный дождь</title>
-      <annotation></annotation>
+      <annotation>Всегда есть, что сказать</annotation>
       <image>http://img.moskva.fm/img/stations/msk/100_1.gif</image>
       <meta rel="url">http://www.moskva.fm/stations/FM_100.1</meta>
       <meta rel="id">2000</meta>

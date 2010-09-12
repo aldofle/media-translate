@@ -215,7 +215,10 @@
           url = translate_base_url + "stream," + request_options + "," + urlEncode(stream_url);
         }
         
-        executeScript(stream_class+"Dispatcher");
+        if(stream_url != "" &amp;&amp; stream_url != null)
+        {
+          executeScript(stream_class+"Dispatcher");
+        }
 
         ret = "true";
       }
