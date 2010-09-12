@@ -202,21 +202,21 @@
         if(stream_title == "" || stream_title == null)
           stream_title = request_title;
 
-        if(stream_protocol == "file" || (stream_protocol == "http" &amp;&amp; stream_soft != "shoutcast"))
-        {
-          url = stream_url;
-        }
-        else
-        {
-          if(stream_type != null &amp;&amp; stream_type != "")
-          {
-            request_options = "Content-type:"+stream_type+";"+request_options;
-          }
-          url = translate_base_url + "stream," + request_options + "," + urlEncode(stream_url);
-        }
-        
         if(stream_url != "" &amp;&amp; stream_url != null)
         {
+          if(stream_protocol == "file" || (stream_protocol == "http" &amp;&amp; stream_soft != "shoutcast"))
+          {
+            url = stream_url;
+          }
+          else
+          {
+            if(stream_type != null &amp;&amp; stream_type != "")
+            {
+              request_options = "Content-type:"+stream_type+";"+request_options;
+            }
+            url = translate_base_url + "stream," + request_options + "," + urlEncode(stream_url);
+          }
+        
           executeScript(stream_class+"Dispatcher");
         }
 
