@@ -112,7 +112,7 @@ BEGIN {
     {
         printf "</" XITEM ">";
         
-        if(XITEM == "location")
+        if(XITEM == "location" && value != "")
         {
 	    print "";
             getInfo(value);
