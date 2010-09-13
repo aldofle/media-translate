@@ -28,6 +28,13 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:playlist/moskva_fm.xspf,collection/media</link>
+      <title>Moskva.FM</title>
+      <annotation>Московские радиостанции FM диапазона</annotation>
+      <image>rss/image/menu/moskvafm.png</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:playlist/radio-skyfm.xspf,collection/media</link>
       <title>SKY.fm</title>
       <annotation>Now Serving the Best Free Internet Radio to 33,823 Fans</annotation>

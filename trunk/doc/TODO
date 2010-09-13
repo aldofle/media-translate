@@ -3,17 +3,21 @@ MAIN MENU
 
 Internet Radio
   Shoutcast Radio Directory (+)
-  Digitally Imported (+)
   Moskva.FM
+  Piter.FM
+  Digitally Imported (+)
   SKY.fm (+)
   SomaFM (+)
   Bluemars (+)
   Rock Radio 1
-  Sampo.ru (+)
-  Other radio
+  Other radio/playlists
+    Sampo.ru (+)
     1.FM
     RauteMusik.FM
-    
+    Station.ru
+    audio.rambler.ru/radio
+    radiogrom.ru
+    d-j.ru
 Internet Video
   YouTube (+)
   Vimeo
@@ -38,3 +42,4 @@ xspf/rss_mediaFeed.rss
 TRANSLATE CGI
 
 ?stream,,<playlist.url>   choose 1st valid stream to play
+station.ru  ?status,,     status url support for station.ru

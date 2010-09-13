@@ -219,7 +219,8 @@
         
           executeScript(stream_class+"Dispatcher");
         }
-
+        
+        cancelIdle();
         ret = "true";
       }
 
