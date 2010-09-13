@@ -246,6 +246,8 @@ check_av_stream()
         fi
       elif echo $buf | grep -q -s "invalid redirection url"; then
         buf=`test_stream 15 "-p http $msdlopt" "$arg_url"`
+      elif echo $buf | grep -q -s "MMSH header parse error by http header parse error"; then
+        buf=`test_stream 15 "-p http $msdlopt" "$arg_url"`
       fi
       
       if echo $buf | grep -q -s "cannot establish stream"; then
