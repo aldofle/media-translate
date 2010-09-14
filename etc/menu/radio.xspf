@@ -28,7 +28,7 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:playlist/moskva_fm.xspf,collection/media</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,playlist/moskva_fm.xspf,moskvafm/stations</link>
       <title>Moskva.FM</title>
       <annotation>Московские радиостанции FM диапазона</annotation>
       <image>rss/image/menu/moskvafm.png</image>
