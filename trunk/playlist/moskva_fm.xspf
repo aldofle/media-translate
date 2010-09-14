@@ -79,7 +79,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">BusinessFM</meta>
 <meta rel="stream_genre">radio</meta>
 <meta rel="stream_bitrate">64</meta>
 
@@ -116,7 +115,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Retro FM 128k</meta>
 <meta rel="stream_genre">Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 
@@ -172,7 +170,6 @@
 <meta rel="stream_server">http://217.10.44.210:8108</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">MegapolisFM-Irkutsk HQ Stream</meta>
 <meta rel="stream_genre">Romantic</meta>
 <meta rel="stream_bitrate">128</meta>
 
@@ -192,7 +189,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Keks FM 128k</meta>
 <meta rel="stream_genre">Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 
@@ -282,7 +278,6 @@
 <meta rel="stream_server">http://90.156.211.132:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Radio GOVORIT MOSKVA 92.0 FM</meta>
 <meta rel="stream_genre">KRC</meta>
 <meta rel="stream_bitrate">128</meta>
 
@@ -330,7 +325,6 @@
 <meta rel="stream_server">http://90.156.211.132:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">MOSCOW RADIO SPORT 93.2 FM</meta>
 <meta rel="stream_genre">KRC</meta>
 <meta rel="stream_bitrate">128</meta>
 
@@ -428,7 +422,6 @@
 <meta rel="stream_server">http://89.208.99.16:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Radio ZVEZDA (Moscow) 95.6 FM</meta>
 <meta rel="stream_genre">Live Air</meta>
 <meta rel="stream_bitrate">128</meta>
 
@@ -448,7 +441,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Дорожное радио</meta>
 <meta rel="stream_bitrate">96</meta>
 
       <title>Дорожное радио</title>
@@ -489,7 +481,6 @@
 <meta rel="stream_server">http://217.29.51.162:8000</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">DetiFM (dvb-s) - AACP 64 kb/s</meta>
 <meta rel="stream_genre">For kids</meta>
 <meta rel="stream_bitrate">64</meta>
 
@@ -509,7 +500,6 @@
 <meta rel="stream_server">http://213.208.177.14:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Radio Komsomolskaya Pravda, tel: +7(495)97-00-972 , www.kp.ru</meta>
 <meta rel="stream_genre">Russian</meta>
 <meta rel="stream_bitrate">128</meta>
 
@@ -563,7 +553,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Svezhee Radio 128k</meta>
 <meta rel="stream_genre">Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 
@@ -738,7 +727,6 @@
 <meta rel="stream_server">http://217.10.44.211:8108</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Radio Chanson</meta>
 <meta rel="stream_genre">Chanson</meta>
 <meta rel="stream_bitrate">128</meta>
 
@@ -813,7 +801,7 @@
 <meta rel="stream_bitrate">128</meta>
 
       <title>Радио 7</title>
-      <annotation>Легкая популярная музыка зарубежных исполнителей</annotation>
+      <annotation>Радио на семи холмах</annotation>
       <image>http://img.moskva.fm/img/stations/msk/104_7.gif</image>
       <meta rel="options">Protocol:http</meta>
       <meta rel="url">http://www.moskva.fm/stations/FM_104.7</meta>
@@ -863,7 +851,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Europa Plus 128k</meta>
 <meta rel="stream_genre">Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 

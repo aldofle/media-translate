@@ -22,12 +22,24 @@ cd $DATAPATH
 
 CHANNELFILE=$TMPFILE.channel
 
-TITLE="Moskva.FM"
+arg_opt=`urldecode_s "$arg_opt"`
+
+FILE="$BASEPATH/$arg_opt"
+
+COLUMNCOUNT="columnCount=5"
+STARTITEM="  startitem = \"middle\";"
+
 echo "Content-type: text/xml"
 echo
-awk -v title="$TITLE" -f stations.awk moskva_fm.xspf > $CHANNELFILE
+if [ -x "$XSLTPROC" ]; then
+  $XSLTPROC ../collection/channel.xslt "$FILE" | sed '1d' > $CHANNELFILE
+else
+  awk -f ../collection/channel.awk "$FILE" > $CHANNELFILE
+fi
 (
   export CHANNELFILE; 
-  template2rss msk_stations.xml
+  export COLUMNCOUNT; 
+  export STARTITEM;
+  template2rss stations.xml
   rm -f $CHANNELFILE
 )

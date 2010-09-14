@@ -488,7 +488,7 @@
     <track xmlns="">
       <location>http://webcast.emg.fm:55655/radiosept128.mp3</location>
       <title>Радио 7</title>
-      <annotation>Легкая популярная музыка зарубежных исполнителей</annotation>
+      <annotation>Радио на семи холмах</annotation>
       <image>http://img.moskva.fm/img/stations/msk/104_7.gif</image>
       <meta rel="options">Protocol:http</meta>
       <meta rel="url">http://www.moskva.fm/stations/FM_104.7</meta>
