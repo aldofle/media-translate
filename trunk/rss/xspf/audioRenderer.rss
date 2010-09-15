@@ -189,7 +189,10 @@
       	    }
       	    value = getXMLText("info","status","current-song");
       	    if(value != null)
+      	    {
         		  stream_current_song = value;
+        		  track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage";
+        		}
           }
 		    }
 		    else
@@ -273,6 +276,10 @@
 	</text>
 -->
 
+  <image redraw="yes" offsetXPC="10" offsetYPC="10" widthPC="30" heightPC="35">
+    <script>track_image;</script>
+	</image>
+	
   <image redraw="yes" offsetXPC="55" offsetYPC="10" widthPC="40" heightPC="45">
     <script>stream_image;</script>
 	</image>
