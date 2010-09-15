@@ -50,7 +50,7 @@
 	<mediaDisplay name=photoView 
 	  centerXPC=7 
 		centerYPC=25
-		centerHeightPC=40
+		centerHeightPC=45
     <!--`echo "$COLUMNCOUNT"`-->		
 	  rowCount=1
 		menuBorderColor="55:55:55"
@@ -76,7 +76,7 @@
 		  <script>sprintf("%s / ", focus-(-1))+itemCount;</script>
 		</text>
 
-		<text align="center" redraw="yes" lines="2" offsetXPC=10 offsetYPC=70 widthPC=80 heightPC=12 fontSize=20 backgroundColor=0:0:0 foregroundColor=120:120:120>
+		<text align="center" redraw="yes" lines="2" offsetXPC=10 offsetYPC=73 widthPC=80 heightPC=12 fontSize=20 backgroundColor=0:0:0 foregroundColor=120:120:120>
 			<script>print(annotation); annotation;</script>
 		</text>
 		
