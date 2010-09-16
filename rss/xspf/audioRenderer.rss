@@ -206,6 +206,7 @@
     	    {
       		  stream_current_song = value;
       		  track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage";
+      		  print("track_image=",track_image);
       		}
         }
 		  }

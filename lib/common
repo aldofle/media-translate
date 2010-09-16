@@ -101,8 +101,8 @@ urldecode()
 
 urldecode_s()
 {
-#  echo -n "$1" | urldecode
-  httpd -d "$1"
+  echo -n "$1" | urldecode
+#  httpd -d "$1"
 }
 
 urlencode_s()
