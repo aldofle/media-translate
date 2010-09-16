@@ -166,7 +166,7 @@ get_icecast_item()
 print_status_item()
 {
   local s=`echo -n "$2" | awk '{gsub(/\t/," ");gsub(/\r/,"");print}' | sed 's/^[ \n]*//;s/[ \n]*$//;' | awk '{if(NR >1) printf("%s", " "); printf("%s", $0);}' | sed 's/ *$//'`
-  [ -n "$s" ] && echo "<$1><![CDATA[$s]]></$1>"
+  [ -n "$s" ] && echo "<$1><![CDATA[`unescapeXML \"$s\"`]]></$1>"
   return 0
 }
 
@@ -757,7 +757,7 @@ command_info()
         	fi
         ;;
         station.ru)
-          meta_current_song=`sed 's/<[^<>]*>//g;s/|/-/' "$TMPFILE"`
+          meta_current_song=`echo "$host_response" | sed 's/<[^<>]*>//g;s/|/-/'`
         ;;
       esac
     fi
