@@ -86,6 +86,17 @@ BEGIN {
   {
     if(XTYPE == "TAG")
     {
+      if(XITEM == "track")
+      {
+        location = "";
+        stream = 0;
+        value = "";
+      }
+      else
+      if(XITEM == "meta" && XATTR["rel"] == "stream_url")
+      {
+        stream = 1;
+      }
       printf "<" XITEM;
       for (attrName in XATTR)
         printf " " attrName "=\"" XATTR[attrName] "\"";
@@ -110,13 +121,19 @@ BEGIN {
     else
     if(XTYPE == "END")
     {
-        printf "</" XITEM ">";
+      tagname = XITEM;
+      if(XITEM == "location" && value != "")
+      {
+        location = value;
+      }
+      else
+      if(XITEM == "track" && stream == 0 && location != "")
+      {
+        print "";
+        getInfo(location);
+      }
+      printf "</" tagname ">";
         
-        if(XITEM == "location" && value != "")
-        {
-	    print "";
-            getInfo(value);
-        }
     }
   }
 }

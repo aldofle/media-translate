@@ -35,6 +35,14 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:playlist/radio-stationru.xspf,collection/media</link>
+      <title>Station.ru</title>
+      <annotation>Интернет-станции на Station.ru</annotation>
+      <image>rss/image/menu/station.png</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:playlist/radio-skyfm.xspf,collection/media</link>
       <title>SKY.fm</title>
       <annotation>Now Serving the Best Free Internet Radio to 33,823 Fans</annotation>
