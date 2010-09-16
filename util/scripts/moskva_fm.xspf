@@ -225,7 +225,7 @@
       <meta rel="name">94_0</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/dobryepesni</location>
+      <location>http://station.ru/RadioStation.aspx?id=1745</location>
       <title>Добрые песни</title>
       <annotation>Максимально позитивные эмоции</annotation>
       <image>http://img.moskva.fm/img/stations/msk/94_4.gif</image>
@@ -406,7 +406,7 @@
       <meta rel="name">100_9</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/dfm</location>
+      <location>http://station.ru/RadioStation.aspx?id=1720</location>
       <title>DFM</title>
       <annotation>Everybody dance now!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/101_2.gif</image>
@@ -426,7 +426,7 @@
       <meta rel="name">101_7</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/montecarlo</location>
+      <location>http://station.ru/RadioStation.aspx?id=1721</location>
       <title>Монте-Карло</title>
       <annotation>Радио для искушенных</annotation>
       <image>http://img.moskva.fm/img/stations/msk/102_1.gif</image>
@@ -466,7 +466,7 @@
       <meta rel="name">103_4</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/maximum</location>
+      <location>http://station.ru/RadioStation.aspx?id=1722</location>
       <title>Maximum</title>
       <annotation>Если спросят, что слушаешь - ответь MAXIMUM!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/103_7.gif</image>
@@ -507,7 +507,7 @@
       <meta rel="name">105_2</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/rusradio</location>
+      <location>http://station.ru/RadioStation.aspx?id=1723</location>
       <title>Русское Радио</title>
       <annotation>Музыка для души</annotation>
       <image>http://img.moskva.fm/img/stations/msk/105_7.gif</image>
@@ -538,7 +538,7 @@
       <meta rel="name">106_6</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/rsn</location>
+      <location>http://station.ru/RadioStation.aspx?id=1724</location>
       <title>Русская Служба Новостей</title>
       <annotation>Мы делаем новости</annotation>
       <image>http://img.moskva.fm/img/stations/msk/107_0.gif</image>
@@ -548,7 +548,7 @@
       <meta rel="name">107_0</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/hitfm</location>
+      <location>http://station.ru/RadioStation.aspx?id=1725</location>
       <title>Хит FM</title>
       <annotation>Музыка, с которой легко</annotation>
       <image>http://img.moskva.fm/img/stations/msk/107_4.gif</image>
