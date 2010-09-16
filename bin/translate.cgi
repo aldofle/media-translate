@@ -37,6 +37,8 @@ PLUGINS_DIR=$BASEPATH/plugins/
 RC_OK=0
 RC_FAIL=1
 
+STREAM_TEST_TIMEOUT=15
+
 DEFAULTFILTER="(mp3|mp2|mpga|ogg|wav|wma|wax|m4a|mp4a|avi|mpeg|mpg|mpe|wmv|wvx|wm|wmx|flv|qt|mov|asf|asx|mp4|m4v|mp4v|mpg4|xspf|m3u|pls|cue|txt|flac|jpg|jpeg|jpe|png|gif|bmp)"
 
 UDPXY_URL=${UDPXY_URL:-'http://127.0.0.1:8080'}
@@ -233,7 +235,7 @@ check_av_stream()
 #    if echo "$arg_url" | grep -q -s "^ftp://"; then
 #      protocol='ftp'
 #    else
-      buf=`test_stream 15 "$msdlopt" "$arg_url"`
+      buf=`test_stream $STREAM_TEST_TIMEOUT "$msdlopt" "$arg_url"`
 
       ms_x_wms_contentdesc=`echo "$buf" | sed -n "/^a=pgmpu:data:application\/x\-wms\-contentdesc/p" | sed -n '$p'`
       ms_x_wms_contentdesc=`urldecode_s "$ms_x_wms_contentdesc"`
@@ -242,12 +244,12 @@ check_av_stream()
         if echo "$msdlopt" | grep -q -s "\-p "; then
           :
         else
-          buf=`test_stream 15 "-p mmsh $msdlopt" "$arg_url"`
+          buf=`test_stream $STREAM_TEST_TIMEOUT "-p mmsh $msdlopt" "$arg_url"`
         fi
       elif echo $buf | grep -q -s "invalid redirection url"; then
-        buf=`test_stream 15 "-p http $msdlopt" "$arg_url"`
+        buf=`test_stream $STREAM_TEST_TIMEOUT "-p http $msdlopt" "$arg_url"`
       elif echo $buf | grep -q -s "MMSH header parse error by http header parse error"; then
-        buf=`test_stream 15 "-p http $msdlopt" "$arg_url"`
+        buf=`test_stream $STREAM_TEST_TIMEOUT "-p http $msdlopt" "$arg_url"`
       fi
       
       if echo $buf | grep -q -s "cannot establish stream"; then
