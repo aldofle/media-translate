@@ -10,11 +10,11 @@ Internet Radio
   SomaFM (+)
   Bluemars (+)
   Rock Radio 1
+  Station.ru
   Other radio/playlists
     Sampo.ru (+)
     1.FM
     RauteMusik.FM
-    Station.ru
     audio.rambler.ru/radio
     radiogrom.ru
     d-j.ru
@@ -34,6 +34,7 @@ APPLICATION
 collection/media (+)
 collection/menu (+)
 collection/list
+lastfm/trackimage (+)
 
 REDESIGN
 
@@ -42,4 +43,4 @@ xspf/rss_mediaFeed.rss
 TRANSLATE CGI
 
 ?stream,,<playlist.url>   choose 1st valid stream to play
-station.ru  ?status,,     status url support for station.ru
+station.ru  ?status,,     status url support for station.ru (+)

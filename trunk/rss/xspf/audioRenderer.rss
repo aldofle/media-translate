@@ -206,7 +206,6 @@
     	    {
       		  stream_current_song = value;
       		  track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage";
-      		  print("track_image=",track_image);
       		}
         }
 		  }
@@ -281,7 +280,7 @@
 -->
 
   <image redraw="yes" offsetXPC="15" offsetYPC="15" widthPC="30" heightPC="38">
-    <script>print(track_image); track_image;</script>
+    <script>track_image;</script>
 	</image>
 	
   <image redraw="yes" offsetXPC="55" offsetYPC="10" widthPC="40" heightPC="45">
