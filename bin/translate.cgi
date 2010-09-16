@@ -716,7 +716,7 @@ command_info()
 	  meta_current_song=
 	  meta_stream_description=
 	  
-	  if [ -n "$stream_status_url" ]; then
+	  if [ -n "$stream_status_url" -a -f "$TMPFILE" ]; then
 
       if grep -q -s -i "charset=utf-8" ${TMPFILE}; then
         :
@@ -726,39 +726,38 @@ command_info()
       
       case $server_type in
         shoutcast)
-          if [ -f "$TMPFILE" ]; then
-        	  meta_server_status=`get_shoutcast_item 'Server Status'`
-        	  meta_stream_status=`get_shoutcast_item 'Stream Status'`
-        	  meta_stream_bitrate=`echo "$value" | sed 's/.*is up at //' | awk '{print $1}'`
-        	  meta_stream_title=`get_shoutcast_item 'Stream Title'`
-        	  meta_stream_genre=`get_shoutcast_item 'Stream Genre'`
-        	  meta_content_type=`get_shoutcast_item 'Content Type'`
-        	  meta_listeners=`echo "$value" | sed 's/.*with //' | awk '{print $1}'`
-        	  meta_listener_peak=`get_shoutcast_item 'Listener Peak'`
-        	  meta_average_listener_time=`get_shoutcast_item 'Average Listen Time'`
-        	  meta_current_song=`get_shoutcast_item 'Current Song'`
-        	  meta_stream_description=''
-        	fi
+      	  meta_server_status=`get_shoutcast_item 'Server Status'`
+      	  meta_stream_status=`get_shoutcast_item 'Stream Status'`
+      	  meta_stream_bitrate=`echo "$value" | sed 's/.*is up at //' | awk '{print $1}'`
+      	  meta_stream_title=`get_shoutcast_item 'Stream Title'`
+      	  meta_stream_genre=`get_shoutcast_item 'Stream Genre'`
+      	  meta_content_type=`get_shoutcast_item 'Content Type'`
+      	  meta_listeners=`echo "$value" | sed 's/.*with //' | awk '{print $1}'`
+      	  meta_listener_peak=`get_shoutcast_item 'Listener Peak'`
+      	  meta_average_listener_time=`get_shoutcast_item 'Average Listen Time'`
+      	  meta_current_song=`get_shoutcast_item 'Current Song'`
+      	  meta_stream_description=''
       	;;
         icecast)
-          if [ -f "$TMPFILE" ]; then
-        	  mount_point=`echo "$stream_url" | sed 's/\//\n/g' | sed -n '$p' | sed 's/ *$//'` 
-        	  if grep -q -s "/${mount_point}" ${TMPFILE}; then
-              sed -e 's/<[^<>]*>/\n/g' ${TMPFILE} | sed 's/^ *//' | sed '/^ *$/d' | sed 's/&amp;/&/g;s/&nbsp;/ /g;s/&lt;/</g;s/&gt;/>/g' | sed "1,/[Mm]ount [Pp]oint.*${mount_point}/d" | sed '/[mM]ount [pP]oint/,$d' | sed '/upport icecast development/,$d' > ${TMPFILE}.$$
-        	    mv -f $TMPFILE.$$ $TMPFILE
-          	  meta_server_status=''
-          	  meta_stream_status=`get_icecast_item 'Mount started'`
-          	  meta_stream_bitrate=`get_icecast_item 'Bitrate'`
-          	  meta_stream_title=`get_icecast_item 'Stream Title'`
-          	  meta_stream_genre=`get_icecast_item 'Stream Genre'`
-          	  meta_content_type=`get_icecast_item 'Content Type'`
-          	  meta_listeners=`get_icecast_item 'Current Listeners'`
-          	  meta_listener_peak=`get_icecast_item 'Peak Listeners'`
-          	  meta_average_listener_time=''
-          	  meta_current_song=`get_icecast_item 'Current Song'`
-          	  meta_stream_description=''
-          	fi
-         fi
+      	  mount_point=`echo "$stream_url" | sed 's/\//\n/g' | sed -n '$p' | sed 's/ *$//'` 
+      	  if grep -q -s "/${mount_point}" ${TMPFILE}; then
+            sed -e 's/<[^<>]*>/\n/g' ${TMPFILE} | sed 's/^ *//' | sed '/^ *$/d' | sed 's/&amp;/&/g;s/&nbsp;/ /g;s/&lt;/</g;s/&gt;/>/g' | sed "1,/[Mm]ount [Pp]oint.*${mount_point}/d" | sed '/[mM]ount [pP]oint/,$d' | sed '/upport icecast development/,$d' > ${TMPFILE}.$$
+      	    mv -f $TMPFILE.$$ $TMPFILE
+        	  meta_server_status=''
+        	  meta_stream_status=`get_icecast_item 'Mount started'`
+        	  meta_stream_bitrate=`get_icecast_item 'Bitrate'`
+        	  meta_stream_title=`get_icecast_item 'Stream Title'`
+        	  meta_stream_genre=`get_icecast_item 'Stream Genre'`
+        	  meta_content_type=`get_icecast_item 'Content Type'`
+        	  meta_listeners=`get_icecast_item 'Current Listeners'`
+        	  meta_listener_peak=`get_icecast_item 'Peak Listeners'`
+        	  meta_average_listener_time=''
+        	  meta_current_song=`get_icecast_item 'Current Song'`
+        	  meta_stream_description=''
+        	fi
+        ;;
+        station.ru)
+          meta_current_song=`sed 's/<[^<>]*>//g;s/|/-/' "$TMPFILE"`
         ;;
       esac
     fi
@@ -1093,6 +1092,9 @@ check_server()
       host_response=`cat ${TMPFILE}`
     elif grep -q -s -i "[^a-z]shoutcast[^a-z]" ${TMPFILE}; then
       server_type='shoutcast'
+      host_response=`cat ${TMPFILE}`
+    elif echo "$stream_status_url" | grep -q -s -i "[^a-z]station.ru[^a-z]"; then
+      server_type='station.ru'
       host_response=`cat ${TMPFILE}`
     fi
   fi
