@@ -101,7 +101,8 @@ urldecode()
 
 urldecode_s()
 {
-  echo -n "$1" | urldecode
+#  echo -n "$1" | urldecode
+  httpd -d "$1"
 }
 
 urlencode_s()
@@ -114,15 +115,6 @@ get_opt()
   opt=`echo "${arg_opt}" | grep ";*$1:" | sed "s/^.*$1://;s/;.*//"`
   return 0
 }
-
-#urldecode() 
-#{ 
-#  echo -e "$(sed 'y/+/ /; s/%/\\x/g')"
-#}
-#urldecode()
-#{
-#  echo "$@" | sed 's/^.*$/'"`echo "$@" | sed 'y/+/ /; s/%/\\\\x/g; s/\//\\\\\//g'`"'/'
-#}
 
 from_translit()
 {
