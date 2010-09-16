@@ -57,8 +57,8 @@
       <location>http://streamall.rambler.ru:80/ultra128.mp3</location>
 <meta rel="stream_url">http://streamall.rambler.ru:80/ultra128.mp3</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">http://81.19.80.167:80</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
@@ -148,8 +148,8 @@
       <location>http://streamall.rambler.ru:/jazz128.mp3</location>
 <meta rel="stream_url">http://streamall.rambler.ru:/jazz128.mp3</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">http://81.19.80.165:80</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
@@ -170,8 +170,8 @@
 <meta rel="stream_server">http://217.10.44.210:8108</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">Romantic</meta>
-<meta rel="stream_bitrate">128</meta>
+<meta rel="stream_genre">DANCE</meta>
+<meta rel="stream_bitrate">200</meta>
 
       <title>Мегаполис FM</title>
       <annotation>Радио для современных, активных и обеспеченных людей.</annotation>
@@ -239,8 +239,8 @@
       <location>http://streamall.rambler.ru:80/echo128.mp3</location>
 <meta rel="stream_url">http://streamall.rambler.ru:80/echo128.mp3</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">http://81.19.80.167:80</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
@@ -355,6 +355,12 @@
     </track>
     <track xmlns="">
       <location></location>
+<meta rel="stream_url"></meta>
+<meta rel="stream_class"></meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type"></meta>
+<meta rel="stream_protocol">file</meta>
 
       <title>Newtone FM</title>
       <annotation>Прямо в голову! (закрыто 9 марта 2010)</annotation>
@@ -376,11 +382,11 @@
       <meta rel="name">94_0</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/dobryepesni</location>
+      <location>http://station.ru/RadioStation.aspx?id=1745</location>
 <meta rel="stream_url">mmsh://broadcast03.station.ru/dobryepesni</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=dobryepesni</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 
@@ -464,6 +470,14 @@
     </track>
     <track xmlns="">
       <location>http://stream.mradio.fm:8000/mradio_high.mp3</location>
+<meta rel="stream_url">http://stream.mradio.fm:8000/mradio_high.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Various</meta>
+<meta rel="stream_bitrate">96</meta>
 
       <title>X-FM</title>
       <annotation>Сенсация в прямом эфире</annotation>
@@ -601,6 +615,14 @@
     </track>
     <track xmlns="">
       <location>http://radio.solo.by:8001/finam</location>
+<meta rel="stream_url">http://radio.solo.by:8001/finam</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">CLASSIC ROCK</meta>
+<meta rel="stream_bitrate">128</meta>
 
       <title>Финам FM</title>
       <annotation>Живи по своим правилам!</annotation>
@@ -651,11 +673,11 @@
       <meta rel="name">100_9</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/dfm</location>
+      <location>http://station.ru/RadioStation.aspx?id=1720</location>
 <meta rel="stream_url">mmsh://broadcast03.station.ru/dfm</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=dfm</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 
@@ -671,8 +693,8 @@
       <location>http://streamall.rambler.ru:80/nashe128.mp3</location>
 <meta rel="stream_url">http://streamall.rambler.ru:80/nashe128.mp3</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">http://81.19.80.167:80</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
@@ -686,11 +708,11 @@
       <meta rel="name">101_7</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/montecarlo</location>
+      <location>http://station.ru/RadioStation.aspx?id=1721</location>
 <meta rel="stream_url">mmsh://broadcast03.station.ru/montecarlo</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=montecarlo</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 
@@ -756,11 +778,11 @@
       <meta rel="name">103_4</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/maximum</location>
+      <location>http://station.ru/RadioStation.aspx?id=1722</location>
 <meta rel="stream_url">mmsh://broadcast03.station.ru/maximum</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=maximum</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 
@@ -827,11 +849,11 @@
       <meta rel="name">105_2</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/rusradio</location>
+      <location>http://station.ru/RadioStation.aspx?id=1723</location>
 <meta rel="stream_url">mmsh://broadcast03.station.ru/rusradio</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=rusradio</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 
@@ -882,11 +904,11 @@
       <meta rel="name">106_6</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/rsn</location>
+      <location>http://station.ru/RadioStation.aspx?id=1724</location>
 <meta rel="stream_url">mmsh://broadcast03.station.ru/rsn</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=rsn</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 
@@ -899,11 +921,11 @@
       <meta rel="name">107_0</meta>
     </track>
     <track xmlns="">
-      <location>mmsh://broadcast03.station.ru/hitfm</location>
+      <location>http://station.ru/RadioStation.aspx?id=1725</location>
 <meta rel="stream_url">mmsh://broadcast03.station.ru/hitfm</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=hitfm</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 
