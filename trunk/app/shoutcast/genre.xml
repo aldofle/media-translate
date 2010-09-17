@@ -77,22 +77,6 @@
 		</text>
 
 		<itemDisplay>
-<!--		
-			<image offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100>
-				<script>
-					idx1 = getFocusItemIndex();
-					idx2 = getQueryItemIndex();
-					if (idx1 == idx2)
-					{
-						"image/IMAGE_NEWRSS_MENU_BTFOC.bmp";
-					}
-					else
-					{
-						"";
-					}
-				</script>
-			</image>
--->
 			<text offsetXPC=0 offsetYPC=0 widthPC=79 heightPC=100 fontSize=15>
 				<script>
 					idx = getQueryItemIndex();

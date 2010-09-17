@@ -12,7 +12,7 @@
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Size:3;File:playlist/radio-bluemars.xspf,collection/media</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Font:13;Lines:5;Size:3;File:playlist/radio-bluemars.xspf,collection/media</link>
       <title>Bluemars</title>
       <annotation>Welcome to Bluemars, we will shortly transition into synchronous orbit around Phobos where you will be able to board a shuttle down the inertial tether.
 Upon arrival, please consult the display in the hall for transportation to one of the three continents on the planet.
@@ -56,7 +56,7 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Start:left;Size:5;File:playlist/radio-sampo.xspf,collection/media</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Font:14;Lines:5;Start:left;Size:5;File:playlist/radio-sampo.xspf,collection/media</link>
       <title>Sampo.ru</title>
       <annotation>Городская компьютерная сеть «Сампо.ру» - Петрозаводск.</annotation>
       <image>rss/image/menu/sampo.jpg</image>

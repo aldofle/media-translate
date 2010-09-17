@@ -22,8 +22,6 @@ cd $DATAPATH
 
 CHANNELFILE=$TMPFILE.channel
 
-arg_opt=`urldecode_s "$arg_opt"`
-
 FILE="$BASEPATH/$arg_opt"
 
 COLUMNCOUNT="columnCount=5"

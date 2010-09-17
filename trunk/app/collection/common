@@ -22,8 +22,6 @@ cd $DATAPATH
 
 CHANNELFILE=$TMPFILE.channel
 
-arg_opt=`urldecode_s "$arg_opt"`
-
 get_opt "File"
 FILE="$opt"
 
@@ -47,6 +45,20 @@ if [ -z "$opt" ]; then
 fi
 STARTITEM="  startitem = \"$opt\";"
 
+get_opt "Lines"
+if [ -z "$opt" ]; then
+  opt=3
+fi
+TEXTLINES=$opt
+
+get_opt "Font"
+if [ -z "$opt" ]; then
+  opt=18
+fi
+FONTSIZE=$opt
+
+ANNOTATIONSIZE="  lines=$TEXTLINES fontSize=$FONTSIZE"
+
 echo "Content-type: text/xml"
 echo
 if [ -x "$XSLTPROC" ]; then
@@ -55,6 +67,7 @@ else
   awk -f channel.awk "$FILE" > $CHANNELFILE
 fi
 (
+  export ANNOTATIONSIZE;
   export CHANNELFILE; 
   export COLUMNCOUNT; 
   export STARTITEM;
