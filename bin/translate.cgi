@@ -58,6 +58,7 @@ arg_opt=`echo "${QUERY_STRING}" | awk -F, '{print $2}'`
 arg_url=`echo "$QUERY_STRING" | awk -F, '{for(i=3; i<NF; i++) printf "%s,", $(i); printf "%s", $(NF); }'`
 
 arg_url=`urldecode_s "$arg_url"`
+arg_opt=`urldecode_s "$arg_opt"`
 
 # http://127.0.0.1/translate[?<scan|*>]
 # http://127.0.0.1/translate?stream,[<option1;...optionN>],<url>
@@ -836,7 +837,6 @@ command_scan()
 
 command_ls()
 {
-  arg_opt=`urldecode_s $arg_opt`
   get_opt "Filter"
   filter=${opt:="$DEFAULTFILTER"}
 
@@ -960,7 +960,6 @@ command_ls()
 
 command_lsftp()
 {
-  arg_opt=`urldecode_s $arg_opt`
   get_opt "Charset"
   charset=$opt
   get_opt "Filter"

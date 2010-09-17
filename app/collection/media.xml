@@ -76,7 +76,11 @@
 		  <script>sprintf("%s / ", focus-(-1))+itemCount;</script>
 		</text>
 
-		<text align="center" redraw="yes" lines="5" offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
+		<!--  lines="5" fontSize=15 -->
+		<text align="center" redraw="yes" 
+    <!--`echo "$ANNOTATIONSIZE"`-->		
+		      offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 
+		      backgroundColor=0:0:0 foregroundColor=120:120:120>
 			<script>print(annotation); annotation;</script>
 		</text>
 		
@@ -197,7 +201,7 @@
           stream_url = request_url;
 
         if(stream_server != "" &amp;&amp; stream_server != null)
-          stream_status_url = translate_base_url + "status," + stream_server + ",";
+          stream_status_url = translate_base_url + "status," + urlEncode(stream_server) + "," + urlEncode(stream_url);
 
         if(stream_title == "" || stream_title == null)
           stream_title = request_title;

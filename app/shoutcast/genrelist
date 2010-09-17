@@ -50,26 +50,7 @@ if [ -f "$GENRELIST" ]; then
   if [ -x "$XSLTPROC" ]; then
     $XSLTPROC genrelist.xslt "$GENRELIST" | sed '1d' > $CHANNELFILE
   else
-    awk '
-      BEGIN {
-      	print "<channel>"
-        print "  <title>Shoutcast Radio Genre List</title>"
-      }
-      {
-        if(match($0, /.*<genre *name="(.*)"/, arr))
-        {
-          print "<item>"
-          print "<name>" arr[1] "</name>"
-          genre = arr[1];
-          gsub(" ", "%20", genre)
-          print "<link>http://127.0.0.1/cgi-bin/translate?app," genre ",shoutcast/genre</link>"
-          print "</item>"
-        }
-      }
-      END {
-      	print "</channel>"
-      }
-    ' "$GENRELIST" > $CHANNELFILE
+    awk -f genrelist.awk "$GENRELIST" > $CHANNELFILE
   fi
   (
     export CHANNELFILE; 

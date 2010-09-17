@@ -20,7 +20,6 @@
 DATAPATH=$BASEPATH/app/shoutcast
 cd $DATAPATH
 
-arg_opt=`urldecode_s $arg_opt`
 get_opt "Station-id"
 STATION_ID="$opt"
 get_opt "Station-name"
