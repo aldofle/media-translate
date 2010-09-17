@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="1">
+   <title>Радио - избранное</title>
+   <trackList>
+      <track>
+         <annotation>RTFM-радио — первое в Томске интернет-радио с живыми диджеями, которое не будет подчиняться обычным законам работы российских эфирных радиостанций.</annotation>
+         <title>RTFM</title>
+         <image>http://guzei.com/online_radio/logo/5337.png</image>
+         <location>http://stream.rtfm.fm</location>
+      </track>
+      <track>
+         <location>http://voxsc1.somafm.com:8700</location>
+<meta rel="stream_url">http://voxsc1.somafm.com:8700</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8700</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Cover Me: All covers, all the time. [SomaFM]</meta>
+<meta rel="stream_genre">Experimental Eclectic</meta>
+<meta rel="stream_bitrate">128</meta>
+         <title>Covers</title>
+         <annotation>All covers. All the time. Nothing by the original artists!</annotation>
+         <image>rss/image/somafm/covers120.jpg</image>
+      </track>
+      <track>
+         <location>http://voxsc1.somafm.com:8884</location>
+<meta rel="stream_url">http://voxsc1.somafm.com:8884</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">http://74.63.47.82:8884</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Underground Eighties: UK Synthop and a bit of New Wave. [SomaFM]</meta>
+<meta rel="stream_genre">80s New Wave Synthpop</meta>
+<meta rel="stream_bitrate">192</meta>
+
+         <title>Underground 80s</title>
+         <annotation>Early 80s UK Synthpop and a bit of New Wave.</annotation>
+         <image>rss/image/somafm/u80s-120.png</image>
+      </track>
+      <track>
+         <location>http://u11b.di.fm:80/di_chillout_aacplus</location>
+         <meta rel="stream_url">http://u11b.di.fm:80/di_chillout_aacplus</meta>
+         <meta rel="stream_class">audio</meta>
+         <meta rel="stream_soft">icecast</meta>
+         <meta rel="stream_server">http://72.251.216.162:80</meta>
+         <meta rel="stream_type">audio/aacp</meta>
+         <meta rel="stream_protocol">http</meta>
+         <meta rel="stream_title">Chillout - D I G I T A L L Y - I M P O R T E D - ambient psy chillout, check out our trippy flavors!</meta>
+         <meta rel="stream_genre">Electronic Chillout Ambient</meta>
+         <meta rel="stream_bitrate">40</meta>
+         <title>Chillout</title>
+         <annotation>Ambient psy chillout, check out our trippy flavors!</annotation>
+         <image>rss/image/di/radio_di.gif</image>
+         <meta rel="genre">Electronic Chillout Ambient</meta>
+         <meta rel="url">http://www.di.fm</meta>
+      </track>
+   </trackList>
+</playlist>
+
+
