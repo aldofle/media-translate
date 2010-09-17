@@ -1,0 +1,62 @@
+#!/bin/sh
+#
+#   http://code.google.com/media-translate/
+#   Copyright (C) 2010  Serge A. Timchenko
+#
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+
+DATAPATH=$BASEPATH/app/shoutcast
+cd $DATAPATH
+
+GENRE="$arg_opt"
+
+GENRELIST="$CACHEPATH/shoutcast.`echo -n \"$GENRE\" | sed 's/\//_/g'`.cache"
+TEMPDL=$TMPFILE.dl
+
+CHANNELFILE=$TMPFILE.channel
+
+TIMELIFE=3600
+
+let tsttime=`date +%s`-$TIMELIFE
+
+REFRESHCACHE=yes
+if [ -f "$GENRELIST" ]; then
+  if [ `date +%s -r "$GENRELIST"` -gt $tsttime ]; then
+    REFRESHCACHE=
+  fi
+fi
+
+if [ $REFRESHCACHE ]; then
+  $WGET -q -O "$TEMPDL" "http://www.shoutcast.com:80/sbin/newxml.phtml?genre=`urlencode_s ${arg_opt}`"
+  if [ -f "$TEMPDL" ]; then
+    mv -f "$TEMPDL" "$GENRELIST"
+  fi
+fi
+
+if [ -f "$GENRELIST" ]; then
+  TITLE="Shoutcast Radio - $GENRE"
+  echo "Content-type: text/xml"
+  echo
+  if [ -x "$XSLTPROC" ]; then
+    $XSLTPROC --stringparam title "$TITLE" genre.xslt "$GENRELIST" | sed '1d' > $CHANNELFILE
+  else
+    awk -v title="`escapeXML \"$TITLE\"`" -f genre.awk "$GENRELIST" > $CHANNELFILE
+  fi
+  (
+    export CHANNELFILE; 
+    template2rss genre.xml
+    rm -f $CHANNELFILE
+  )
+fi
