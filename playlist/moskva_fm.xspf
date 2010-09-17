@@ -290,7 +290,7 @@
       <meta rel="name">92_0</meta>
     </track>
     <track xmlns="">
-      <location>http://stream.loveradio.ru:8000/radiodacha_high.mp3</location>
+      <location>http://stream.radiodacha.ru:8000/radiodacha_high.mp3</location>
 
       <title>Радио Дача</title>
       <annotation>Удачное радио!</annotation>
