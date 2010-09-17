@@ -291,6 +291,10 @@
   <previewWindow windowColor="0:0:0" offsetXPC="99" widthPC="1" offsetYPC="99" heightPC="1"></previewWindow>	
   
 	<text redraw="no" offsetXPC="5" offsetYPC="65" widthPC="90" heightPC="25" fontSize="20" backgroundColor="10:105:150" foregroundColor="-1:-1:-1"></text>
+
+  <image redraw="yes" offsetXPC="85" offsetYPC="65" widthPC="10" heightPC="8">
+    <script>if(no_renderer != 1) "rss/image/msr.png";</script>
+	</image>
 	
 	<text redraw="yes" offsetXPC="5" offsetYPC="65" widthPC="90" heightPC="8" fontSize="20" backgroundColor="10:55:100" foregroundColor="255:255:255">
 		<script>stream_title;</script>
