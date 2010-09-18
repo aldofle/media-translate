@@ -292,13 +292,13 @@
   
 	<text redraw="no" offsetXPC="5" offsetYPC="65" widthPC="90" heightPC="25" fontSize="20" backgroundColor="10:105:150" foregroundColor="-1:-1:-1"></text>
 
-  <image redraw="yes" offsetXPC="85" offsetYPC="65" widthPC="10" heightPC="8">
-    <script>if(no_renderer != 1) "rss/image/msr.png";</script>
-	</image>
-	
 	<text redraw="yes" offsetXPC="5" offsetYPC="65" widthPC="90" heightPC="8" fontSize="20" backgroundColor="10:55:100" foregroundColor="255:255:255">
 		<script>stream_title;</script>
 	</text>
+
+  <image redraw="yes" offsetXPC="87" offsetYPC="66" widthPC="7" heightPC="6">
+    <script>if(no_renderer != 1) "rss/image/msr.png";</script>
+	</image>
 
 	<text redraw="yes" offsetXPC="6" offsetYPC="74" widthPC="60" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="255:255:150">
 		<script>stream_current_song;</script>

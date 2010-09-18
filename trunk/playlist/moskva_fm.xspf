@@ -299,7 +299,16 @@
       <meta rel="id">4017</meta>
       <meta rel="fm">92.4</meta>
       <meta rel="name">92_4</meta>
-    </track>
+    
+<meta rel="stream_url">http://stream.radiodacha.ru:8000/radiodacha_high.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">http://82.204.217.140:8000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Various</meta>
+<meta rel="stream_bitrate">96</meta>
+</track>
     <track xmlns="">
       <location>mmsh://online.carnivalfm.ru:1234</location>
 <meta rel="stream_url">mmsh://online.carnivalfm.ru:1234</meta>
@@ -363,6 +372,7 @@
       <meta rel="id">2021</meta>
       <meta rel="fm">93.61</meta>
       <meta rel="name">93_61</meta>
+    
     </track>
     <track xmlns="">
       <location></location>
@@ -374,6 +384,7 @@
       <meta rel="id">2110</meta>
       <meta rel="fm">94.0</meta>
       <meta rel="name">94_0</meta>
+    
     </track>
     <track xmlns="">
       <location>http://station.ru/RadioStation.aspx?id=1745</location>
@@ -402,6 +413,7 @@
       <meta rel="id">4020</meta>
       <meta rel="fm">94.8</meta>
       <meta rel="name">94_8</meta>
+    
     </track>
     <track xmlns="">
       <location></location>
@@ -413,6 +425,7 @@
       <meta rel="id">2011</meta>
       <meta rel="fm">95.2</meta>
       <meta rel="name">95_2</meta>
+    
     </track>
     <track xmlns="">
       <location>http://89.208.99.16:8088/zvezda_128</location>
@@ -461,6 +474,7 @@
       <meta rel="id">2109</meta>
       <meta rel="fm">96.01</meta>
       <meta rel="name">96_01</meta>
+    
     </track>
     <track xmlns="">
       <location>http://stream.mradio.fm:8000/mradio_high.mp3</location>
@@ -654,7 +668,8 @@
       <meta rel="id">2001</meta>
       <meta rel="fm">100.5</meta>
       <meta rel="name">100_5</meta>
-    </track>
+    
+</track>
     <track xmlns="">
       <location>http://s05.radio-tochka.com:6045/listen.pls</location>
 
@@ -665,7 +680,8 @@
       <meta rel="id">4010</meta>
       <meta rel="fm">100.9</meta>
       <meta rel="name">100_9</meta>
-    </track>
+    
+</track>
     <track xmlns="">
       <location>http://station.ru/RadioStation.aspx?id=1720</location>
 <meta rel="stream_url">mmsh://broadcast03.station.ru/dfm</meta>
@@ -941,8 +957,11 @@
       <meta rel="id">4004</meta>
       <meta rel="fm">107.8</meta>
       <meta rel="name">107_8</meta>
-    </track>
+    
+</track>
   </trackList>
 </playlist>
+
+
 
 

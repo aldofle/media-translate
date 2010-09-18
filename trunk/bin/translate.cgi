@@ -766,7 +766,7 @@ command_info()
     fi
 
     case $protocol in
-      http)
+      http|rtmp)
         meta_stream_title=${meta_stream_title:-"$icy_name"}
         meta_stream_genre=${meta_stream_genre:-"$icy_genre"}
         meta_stream_bitrate=${meta_stream_bitrate:-"$icy_br"}
@@ -1149,6 +1149,7 @@ case ${arg_cmd} in
     echo
     if [ "$protocol" == "rtmp" ]; then
       get_opt "Rtmp-options"
+      killall -q $RTMPDUMP 2>&1
       exec nice $RTMPDUMP -q -o - -v -b 60000 -r "$stream_url" $opt
     elif [ "$charset" == "CP1251" ]; then
       $MSDL $msdlopt -q -o - "$stream_url" | $TOUTF8 # | sed 's/windows-125./utf-8/'
