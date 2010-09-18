@@ -230,16 +230,20 @@
 
 	<infoDisplay offsetXPC="0" offsetYPC="0" widthPC="100" heightPC="100">
 
-    <progressBar backgroundColor="10:105:150" offsetXPC="5" offsetYPC="74" widthPC="90" heightPC="16">
+    <progressBar backgroundColor="10:105:150" offsetXPC="5" offsetYPC="70" widthPC="90" heightPC="20">
 
       <!-- background image 
         143:188:139
   		<image redraw="yes" offsetXPC="0" offsetYPC="0" widthPC="100" heightPC="100" backgroundColor="200:200:200" foregroundColor="200:200:200">/usr/local/bin/rss/image/xspf_background.jpg</image>
   		-->
   
-  		<text lines="2" redraw="yes" offsetXPC="2" offsetYPC="0" widthPC="63" heightPC="70" fontSize="18" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
+  		<text lines="2" redraw="yes" offsetXPC="2" offsetYPC="4" widthPC="63" heightPC="66" fontSize="18" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
   			<script>stream_title;</script>
   		</text>
+
+      <image redraw="yes" offsetXPC="93" offsetYPC="2" widthPC="6" heightPC="25">
+        <script>if(no_renderer != 1) "rss/image/msr.png";</script>
+    	</image>
 
   		<text align="right" redraw="yes" offsetXPC="2" offsetYPC="70" widthPC="94" heightPC="15" fontSize="12" backgroundColor="-1:-1:-1" foregroundColor="0:0:0">
   			<script>stream_url;</script>
@@ -247,10 +251,10 @@
   		
   		<bar offsetXPC="2" offsetYPC="88" widthPC="96" heightPC="10" barColor="250:127:0" progressColor="255:210:0" bufferColor="255:210:0"/>
   		
-  		<text redraw="yes" offsetXPC="67" offsetYPC="25" widthPC="18" heightPC="40" fontSize="22" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
+  		<text redraw="yes" offsetXPC="67" offsetYPC="30" widthPC="18" heightPC="40" fontSize="22" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
   			<script>stream_total;</script>
   		</text>
-  		<text redraw="yes" offsetXPC="83" offsetYPC="25" widthPC="15" heightPC="40" fontSize="22" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
+  		<text redraw="yes" offsetXPC="83" offsetYPC="30" widthPC="15" heightPC="40" fontSize="22" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
   			<script>stream_elapsed;</script>
   		</text>
 

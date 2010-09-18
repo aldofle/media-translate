@@ -74,8 +74,8 @@ elif echo "${arg_url}" | grep -q -s '\(www\.\)*guzei\.com/online_tv/watch.php?on
         check_av_stream
       fi
     fi
-#    ms_title="$station_title"
-#    icy_name="$station_title"
+    ms_title="$station_title"
+    icy_name="$station_title"
     return $RC_OK
   fi
 
