@@ -280,7 +280,7 @@
 	</text>
 -->
 
-  <image redraw="yes" offsetXPC="15" offsetYPC="15" widthPC="30" heightPC="38">
+  <image redraw="yes" offsetXPC="15" offsetYPC="12" widthPC="30" heightPC="41">
     <script>track_image;</script>
 	</image>
 	

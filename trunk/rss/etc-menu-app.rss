@@ -22,9 +22,9 @@
 -->
 
 <onEnter>
-  startitem = "middle";
+  startitem = "left";
   setRefreshTime(1);
-columnCount=3
+columnCount=2
 </onEnter>
 
 <onRefresh>
@@ -43,7 +43,7 @@ columnCount=3
 	  centerXPC=7 
 		centerYPC=30
 		centerHeightPC=50
-columnCount=3
+columnCount=2
 	  rowCount=1
 		menuBorderColor="55:55:55"
 		sideColorBottom="0:0:0"
@@ -178,27 +178,18 @@ columnCount=3
 
 
 <channel>
-<title>Дополнительные сервисы</title>
-<item>
-<link>rss/etc-menu-video.rss</link>
-<title>Internet Video</title>
-<annotation>YouTube</annotation>
-<image>rss/image/menu/video.jpg</image>
-<mediaDisplay name="photoView"/>
-</item>
-<item>
-<link>rss/etc-menu-radio.rss</link>
-<title>Internet Radio</title>
-<annotation>SHOUTcast, SKY.fm, Digitally Imported, SomaFM, Bluemars</annotation>
-<image>rss/image/menu/radio.jpg</image>
-<mediaDisplay name="photoView"/>
-</item>
-<item>
-<link>rss/etc-menu-app.rss</link>
 <title>Applications</title>
-<annotation>Media Stream Renderer, XSPF Browser</annotation>
-<image>rss/image/menu/app.jpg</image>
-<mediaDisplay name="photoView"/>
+<item>
+<link>rss/xspf/streamRenderer.rss</link>
+<title>Media Stream Renderer</title>
+<annotation>Play content recieved from a computer, which will find content from an internet browser.</annotation>
+<image>rss/image/menu/msr.png</image>
+</item>
+<item>
+<link>rss/xspf/xspfBrowser.rss</link>
+<title>XSPF Browser</title>
+<annotation>Browse and play multimedia content and playlists from a local and network storage.</annotation>
+<image>rss/image/menu/xspfbrowser.png</image>
 </item>
 </channel>
 

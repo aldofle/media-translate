@@ -7,7 +7,28 @@
          <title>RTFM</title>
          <image>http://guzei.com/online_radio/logo/5337.png</image>
          <location>http://stream.rtfm.fm</location>
-      </track>
+      
+<meta rel="stream_url">http://stream.rtfm.fm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+<track>
+  <location>http://station.ru/RadioStation.aspx?id=1743</location>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station15</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station15</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">Хит FM Italy / station.ru</meta>
+
+  <title>Хит FM Italy</title>
+  <annotation>Итальянская эстрада, поп-музыка</annotation>
+  <image>rss/image/stationru/hit_italy.gif</image>
+</track>
       <track>
          <location>http://voxsc1.somafm.com:8700</location>
 <meta rel="stream_url">http://voxsc1.somafm.com:8700</meta>
@@ -58,5 +79,7 @@
       </track>
    </trackList>
 </playlist>
+
+
 
 

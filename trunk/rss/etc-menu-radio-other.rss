@@ -24,7 +24,6 @@
 <onEnter>
   startitem = "middle";
   setRefreshTime(1);
-columnCount=3
 </onEnter>
 
 <onRefresh>
@@ -39,26 +38,34 @@ columnCount=3
   redrawDisplay();
 </onRefresh>
 
-	<mediaDisplay name=photoView 
-	  centerXPC=7 
-		centerYPC=30
-		centerHeightPC=50
-columnCount=3
-	  rowCount=1
-		menuBorderColor="55:55:55"
-		sideColorBottom="0:0:0"
-		sideColorTop="0:0:0"
-	  backgroundColor="0:0:0"
-		imageBorderColor="0:0:0"
-		itemBackgroundColor="0:0:0"
-		itemGapXPC=0
-		itemGapYPC=1
-		sideTopHeightPC=22
-		bottomYPC=85
-		sliding=yes
-		showHeader=no
-		showDefaultInfo=no
-		>
+<mediaDisplay name="threePartsView"
+	sideLeftWidthPC="0"
+	sideRightWidthPC="0"
+	
+	headerImageWidthPC="0"
+	selectMenuOnRight="no"
+	autoSelectMenu="no"
+	autoSelectItem="no"
+	itemImageHeightPC="0"
+	itemImageWidthPC="0"
+	itemXPC="8"
+	itemYPC="25"
+	itemWidthPC="48"
+	itemHeightPC="8"
+	capXPC="8"
+	capYPC="25"
+	capWidthPC="48"
+	capHeightPC="64"
+	itemBackgroundColor="0:0:0"
+	itemPerPage="8"
+  itemGap="0"
+	bottomYPC="90"
+	backgroundColor="0:0:0"
+	showHeader="no"
+	showDefaultInfo="no"
+	imageFocus=""
+	sliding="no"
+>
 		
   	<text align="center" offsetXPC="0" offsetYPC="0" widthPC="100" heightPC="20" fontSize="30" backgroundColor="10:105:150" foregroundColor="100:200:255">
 		  <script>getPageInfo("pageTitle");</script>
@@ -68,7 +75,10 @@ columnCount=3
 		  <script>sprintf("%s / ", focus-(-1))+itemCount;</script>
 		</text>
 
-		<text align="center" redraw="yes" lines="4" offsetXPC=10 offsetYPC=80 widthPC=75 heightPC=15 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
+		<text align="justify" redraw="yes" 
+          lines="15" fontSize=14
+		      offsetXPC=55 offsetYPC=25 widthPC=40 heightPC=65 
+		      backgroundColor=10:80:120 foregroundColor=200:200:200>
 			<script>print(annotation); annotation;</script>
 		</text>
 		
@@ -82,63 +92,37 @@ columnCount=3
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> image/POPUP_LOADING_08.png </idleImage>
 
 		<itemDisplay>
-			<image>
+			<text align="left" lines="1" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100>
 				<script>
 					idx = getQueryItemIndex();
 					focus = getFocusItemIndex();
 					if(focus==idx) 
 					{
 					  annotation = getItemInfo(idx, "annotation");
+					  if(annotation == "" || annotation == null)
+					    annotation = getItemInfo(idx, "stream_genre");
 					}
-					getItemInfo(idx, "image");
-				</script>
-			 <offsetXPC>
-			   <script>
-					idx = getQueryItemIndex();
-					focus = getFocusItemIndex();
-			    if(focus==idx) 50 * (1 - columnCount/3); else 12 + 37 * (1 - columnCount/3);
-			   </script>
-			 </offsetXPC>
-			 <offsetYPC>
-			   <script>
-					idx = getQueryItemIndex();
-					focus = getFocusItemIndex();
-			    if(focus==idx) 0; else 6;
-			   </script>
-			 </offsetYPC>
-			 <widthPC>
-			   <script>
-					idx = getQueryItemIndex();
-					focus = getFocusItemIndex();
-			    if(focus==idx) 100 * columnCount/3; else 75 * columnCount/3;
-			   </script>
-			 </widthPC>
-			 <heightPC>
-			   <script>
-					idx = getQueryItemIndex();
-					focus = getFocusItemIndex();
-			    if(focus==idx) 50; else 37;
-			   </script>
-			 </heightPC>
-			</image>
-			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
-				<script>
-					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
 				</script>
 				<fontSize>
   				<script>
   					idx = getQueryItemIndex();
   					focus = getFocusItemIndex();
-  			    if(focus==idx) "22"; else "18";
+  			    if(focus==idx) "16"; else "14";
   				</script>
 				</fontSize>
+			  <backgroundColor>
+  				<script>
+  					idx = getQueryItemIndex();
+  					focus = getFocusItemIndex();
+  			    if(focus==idx) "10:80:120"; else "-1:-1:-1";
+  				</script>
+			  </backgroundColor>
 			  <foregroundColor>
   				<script>
   					idx = getQueryItemIndex();
   					focus = getFocusItemIndex();
-  			    if(focus==idx) "255:255:255"; else "75:75:75";
+  			    if(focus==idx) "255:255:255"; else "140:140:140";
   				</script>
 			  </foregroundColor>
 			</text>
@@ -178,27 +162,27 @@ columnCount=3
 
 
 <channel>
-<title>Дополнительные сервисы</title>
+<title>Other Internet Radio Lists</title>
 <item>
-<link>rss/etc-menu-video.rss</link>
-<title>Internet Video</title>
-<annotation>YouTube</annotation>
-<image>rss/image/menu/video.jpg</image>
-<mediaDisplay name="photoView"/>
+<link>rss/playlist-radio-1fm.rss</link>
+<title>1.FM</title>
+<annotation>1.FM is owned and operated by Energy Group Networks. All Rights Reserved.</annotation>
+<image>rss/image/menu/radio-other.png</image>
+<mediaDisplay name="threePartsView"/>
 </item>
 <item>
-<link>rss/etc-menu-radio.rss</link>
-<title>Internet Radio</title>
-<annotation>SHOUTcast, SKY.fm, Digitally Imported, SomaFM, Bluemars</annotation>
-<image>rss/image/menu/radio.jpg</image>
-<mediaDisplay name="photoView"/>
+<link>rss/playlist-radio-rautemusik.rss</link>
+<title>RauteMusik</title>
+<annotation>RauteMusik (также RM или # Musik ) — интернет-радиостанция, расположенная в Германии. RauteMusik был впервые показан в 2003 году - 04-20 с помощью только одного основного потока. В ближайшие четыре года, RauteMusik зарекомендовал себя как один из крупнейших Европе интернет-радиостанций.</annotation>
+<image>rss/image/menu/radio-other.png</image>
+<mediaDisplay name="threePartsView"/>
 </item>
 <item>
-<link>rss/etc-menu-app.rss</link>
-<title>Applications</title>
-<annotation>Media Stream Renderer, XSPF Browser</annotation>
-<image>rss/image/menu/app.jpg</image>
-<mediaDisplay name="photoView"/>
+<link>rss/playlist-radio-my_favorites.rss</link>
+<title>Избранное</title>
+<annotation>Мой список радиостанций</annotation>
+<image>rss/image/menu/radio-other.png</image>
+<mediaDisplay name="threePartsView"/>
 </item>
 </channel>
 
