@@ -52,7 +52,7 @@ if [ -f "$GENRELIST" ]; then
   if [ -x "$XSLTPROC" ]; then
     $XSLTPROC --stringparam title "$TITLE" genre.xslt "$GENRELIST" | sed '1d' > $CHANNELFILE
   else
-    awk -v title="`escapeXML \"$TITLE\"`" -f genre.awk "$GENRELIST" > $CHANNELFILE
+    awk -v title="`escapeXML \"$TITLE\"`" -f getxml.awk -f genre.awk "$GENRELIST" > $CHANNELFILE
   fi
   (
     export CHANNELFILE; 
