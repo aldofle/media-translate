@@ -39,6 +39,7 @@ fi
 if [ $REFRESHCACHE ]; then
   $WGET -q -O "$TEMPDL" "http://www.shoutcast.com:80/sbin/newxml.phtml?genre=`urlencode_s ${arg_opt}`"
   if [ -f "$TEMPDL" ]; then
+    TITLE="Shoutcast Radio - $GENRE"
     if [ -x "$XSLTPROC" ]; then
       $XSLTPROC --stringparam title "$TITLE" genre.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
     else
@@ -49,7 +50,6 @@ if [ $REFRESHCACHE ]; then
 fi
 
 if [ -f "$CHANNELFILE" ]; then
-  TITLE="Shoutcast Radio - $GENRE"
   echo "Content-type: text/xml"
   echo
   (
