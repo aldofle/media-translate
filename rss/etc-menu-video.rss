@@ -22,9 +22,9 @@
 -->
 
 <onEnter>
-  startitem = "middle";
+  startitem = "left";
   setRefreshTime(1);
-columnCount=3
+columnCount=1
 </onEnter>
 
 <onRefresh>
@@ -43,7 +43,7 @@ columnCount=3
 	  centerXPC=7 
 		centerYPC=30
 		centerHeightPC=50
-columnCount=3
+columnCount=1
 	  rowCount=1
 		menuBorderColor="55:55:55"
 		sideColorBottom="0:0:0"
@@ -178,27 +178,13 @@ columnCount=3
 
 
 <channel>
-<title>Дополнительные сервисы</title>
-<item>
-<link>rss/etc-menu-video.rss</link>
 <title>Internet Video</title>
-<annotation>YouTube</annotation>
-<image>rss/image/menu/video.jpg</image>
-<mediaDisplay name="photoView"/>
-</item>
 <item>
-<link>rss/etc-menu-radio.rss</link>
-<title>Internet Radio</title>
-<annotation>SHOUTcast, SKY.fm, Digitally Imported, SomaFM, Bluemars</annotation>
-<image>rss/image/menu/radio.jpg</image>
-<mediaDisplay name="photoView"/>
-</item>
-<item>
-<link>rss/etc-menu-app.rss</link>
-<title>Applications</title>
-<annotation>Media Stream Renderer, XSPF Browser</annotation>
-<image>rss/image/menu/app.jpg</image>
-<mediaDisplay name="photoView"/>
+<link>rss/youtube/yt_index.rss</link>
+<title>YouTube</title>
+<annotation>Founded in February 2005, YouTube is the world's most popular online video community, allowing millions of people to discover, watch and share originally-created videos.</annotation>
+<image>rss/image/menu/youtube.jpg</image>
+<mediaDisplay name="onePartView"/>
 </item>
 </channel>
 
