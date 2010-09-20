@@ -22,7 +22,14 @@ cd $DATAPATH
 
 CHANNELFILE=$TMPFILE.channel
 
-FILE="$BASEPATH/$arg_opt"
+get_opt "File"
+FILE="$opt"
+
+[ -z "$FILE" ] && return 0
+
+if ! expr "$FILE" : '/.*' > /dev/null; then
+  FILE="$BASEPATH/$FILE"
+fi
 
 COLUMNCOUNT="columnCount=5"
 STARTITEM="  startitem = \"middle\";"

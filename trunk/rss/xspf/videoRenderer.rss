@@ -217,14 +217,14 @@
   backgroundColor="0:0:0"
   >
 
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_01.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_02.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_03.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_04.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_05.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_06.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_07.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_08.png </idleImage>
 
   <previewWindow windowColor="0:0:0" offsetXPC="0" widthPC="100" offsetYPC="0" heightPC="100"></previewWindow>	
 
@@ -234,7 +234,7 @@
 
       <!-- background image 
         143:188:139
-  		<image redraw="yes" offsetXPC="0" offsetYPC="0" widthPC="100" heightPC="100" backgroundColor="200:200:200" foregroundColor="200:200:200">/usr/local/bin/rss/image/xspf_background.jpg</image>
+  		<image redraw="yes" offsetXPC="0" offsetYPC="0" widthPC="100" heightPC="100" backgroundColor="200:200:200" foregroundColor="200:200:200">rss/image/xspf_background.jpg</image>
   		-->
   
   		<text lines="2" redraw="yes" offsetXPC="2" offsetYPC="4" widthPC="63" heightPC="66" fontSize="18" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
