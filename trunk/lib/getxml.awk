@@ -6,17 +6,17 @@
 #.P Download from <a href="http://lawker.googlecode.com/svn/fridge/lib/awk/getxml.awk">LAWKER</a>
 #.H2 Example 
 #.PRE
-BEGIN {
-    while ( getXML(ARGV[1],1) ) {
-        print XTYPE, XITEM;
-        for (attrName in XATTR)
-            print "\t" attrName "=" XATTR[attrName];
-    }
-    if (XERROR) {
-        print XERROR;
-        exit 1;
-    }
-}
+#BEGIN {
+#    while ( getXML(ARGV[1],1) ) {
+#        print XTYPE, XITEM;
+#        for (attrName in XATTR)
+#            print "\t" attrName "=" XATTR[attrName];
+#    }
+#    if (XERROR) {
+#        print XERROR;
+#        exit 1;
+#    }
+#}
 #./PRE
 #.H2 Details
 #.P
@@ -173,12 +173,15 @@ function getXML( file, skipData           \
 # Unescape data and attribute values, used by getXML.
 #.PRE
 function unescapeXML( text ) {
+  if(UNESCAPEXML!=0)
+  {
     gsub( "&apos;", "'",  text );
     gsub( "&quot;", "\"", text );
     gsub( "&gt;",   ">",  text );
     gsub( "&lt;",   "<",  text );
     gsub( "&amp;",  "\\&",  text );
-    return text
+  }
+  return text
 }
 #./PRE
 #.P
