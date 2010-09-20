@@ -39,7 +39,7 @@ echo
 if [ -x "$XSLTPROC" ]; then
   $XSLTPROC ../collection/channel.xslt "$FILE" | sed '1d' > $CHANNELFILE
 else
-  awk -f ../collection/channel.awk "$FILE" > $CHANNELFILE
+  awk -f getxml.awk -f ../collection/channel.awk "$FILE" > $CHANNELFILE
 fi
 (
   export CHANNELFILE; 
