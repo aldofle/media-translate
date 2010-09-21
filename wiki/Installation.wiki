@@ -1,4 +1,5 @@
 #summary Установка и настройка
+#sidebar TableOfContents
 
 = Установка =
 
