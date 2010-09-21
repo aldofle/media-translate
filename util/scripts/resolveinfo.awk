@@ -69,7 +69,7 @@ function getInfo(url)
           print "<meta rel=\"stream_bitrate\">" XITEM "</meta>";
       }
       else
-      if(XITEM == "stream-title")
+      if(SKIPTITLE != 1 && XITEM == "stream-title")
       {
         getXML(info_file,0);
         if(XTYPE == "CDA" || XTYPE == "DAT")
@@ -81,37 +81,52 @@ function getInfo(url)
 
 BEGIN {
   UNESCAPEXML = 0;
+  skiptag = 0;
 
   while ( getXML(ARGV[1],0) ) 
   {
     if(XTYPE == "TAG")
     {
+      value = "";
       if(XITEM == "track")
       {
         location = "";
         stream = 0;
-        value = "";
       }
       else
       if(XITEM == "meta" && XATTR["rel"] == "stream_url")
       {
         stream = 1;
       }
-      printf "<" XITEM;
-      for (attrName in XATTR)
-        printf " " attrName "=\"" XATTR[attrName] "\"";
-      printf ">";
+      
+      if(FORCEINFO == 1 && XITEM == "meta" && XATTR["rel"] ~ /stream_/)
+      {
+        skiptag = 1;
+      }
+      else
+      {
+        printf "<" XITEM;
+        for (attrName in XATTR)
+          printf " " attrName "=\"" XATTR[attrName] "\"";
+        printf ">";
+      }
     }
     else
     if(XTYPE == "DAT")
     {
+      if(skiptag == 0)
+      {
         value = XITEM;
         printf XITEM;
+      }
     }
     else
     if(XTYPE == "CDA")
     {
+      if(skiptag == 0)
+      {
         printf "<![CDATA[" XITEM "]]>";
+      }
     }
     else
     if(XTYPE == "PIN")
@@ -121,19 +136,27 @@ BEGIN {
     else
     if(XTYPE == "END")
     {
-      tagname = XITEM;
-      if(XITEM == "location" && value != "")
+      if(skiptag == 0)
       {
-        location = value;
+        tagname = XITEM;
+        if(XITEM == "location")
+        {
+          UNESCAPEXML=1;
+          location = unescapeXML(value);
+          UNESCAPEXML=0;
+        }
+        else
+        if(XITEM == "track" && location != "")
+        {
+          if(stream == 0 || FORCEINFO == 1)
+          {
+            print "";
+            getInfo(location);
+          }
+        }
+        printf "</" tagname ">";
       }
-      else
-      if(XITEM == "track" && stream == 0 && location != "")
-      {
-        print "";
-        getInfo(location);
-      }
-      printf "</" tagname ">";
-        
+      skiptag = 0;
     }
   }
 }

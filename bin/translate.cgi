@@ -477,7 +477,7 @@ check_av_stream()
           host_response=`cat ${TMPFILE}`
         fi
       fi
-      [ "${arg_cmd}" != "info" -a "${arg_cmd}" != "status" ] && rm -f ${TMPFILE}
+      [ "${arg_cmd}" != "info" -a "${arg_cmd}" != "status" -o -z "$server_type" ] && rm -f ${TMPFILE}
     fi
     
     if [ -z "$server_type" ]; then
@@ -485,6 +485,33 @@ check_av_stream()
         server_type='shoutcast'
       fi
     fi
+    
+    local is_icy=`awk -v streamurl="$stream_url" -v statusurl="icyx://${host}" '
+      BEGIN {
+        match(statusurl, /^icyx:\/\/(.*):(.*)$/, arr);
+        host_ip = arr[1];
+        host_port = arr[2];
+        match(streamurl, /^([^:]*):\/\/([^\/]*)(.*)$/, arr);
+        host = arr[2];
+        path = arr[3];
+        
+        if (path == "")  path = "/";
+
+        HttpService = "/inet/tcp/0/" host_ip "/" host_port
+        ORS = "\n\n"
+        print "GET " path " HTTP/1.0" "\nHost: " host "\nAccept: */*" "\nIcy-MetaData: 1" |& HttpService
+        ORS = "\n"
+        RS = "\r?\n\r?\n"
+        HttpService |& getline Header
+        print match(Header, /icy-metaint: *([0-9]*)/, arr)
+        close(HttpService)
+      }
+    '`
+    if [ "$is_icy" != "0" ]; then
+      stream_status_url="icyx://${host}"
+      [ -z "$server_type" ] && server_type='icecast'
+    fi
+
   fi
 }
 
@@ -764,6 +791,47 @@ command_info()
         ;;
       esac
     fi
+
+	  if echo "$stream_status_url" | grep -q -s -i "^icyx://"; then
+	    meta_current_song=`awk -v streamurl="$stream_url" -v statusurl="$stream_status_url" '
+	      BEGIN {
+	        match(statusurl, /^icyx:\/\/(.*):(.*)$/, arr);
+	        host_ip = arr[1];
+	        host_port = arr[2];
+	        match(streamurl, /^([^:]*):\/\/([^\/]*)(.*)$/, arr);
+	        host = arr[2];
+	        path = arr[3];
+
+          if (path == "")  path = "/";
+
+          HttpService = "/inet/tcp/0/" host_ip "/" host_port
+          ORS = "\n\n"
+          print "GET " path " HTTP/1.0" "\nHost: " host "\nAccept: */*" "\nIcy-MetaData: 1" |& HttpService
+          ORS = "\n"
+          RS = "\r?\n\r?\n"
+          HttpService |& getline Header
+          if(match(Header, /icy-metaint: *([0-9]*)/, arr))
+          {
+            metaint = strtonum(arr[1]);
+            RS = "\0"
+            counter = 0;
+            while(counter < metaint)
+            {
+              HttpService |& getline
+              counter = counter + length($0) + 1
+            }
+            if(metaint != counter + 1)
+            {
+              if(match($0, /^.*StreamTitle=\x27([^\x27]*)\x27/, arr))
+              {
+                print arr[1];
+              }
+            }
+          }
+          close(HttpService)
+	      }
+	    ' | $TOUTF8`
+	  fi
 
     case $protocol in
       http|rtmp)
@@ -1085,18 +1153,24 @@ command_random()
 
 check_server()
 {
-  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" --stream-timeout 30 "$stream_status_url" 2>&1`
-  if [ -f ${TMPFILE} ]; then
+  
+  if echo "$stream_status_url" | grep -q -s -i "^icyx://"; then
     stream_class='audio';
-    if grep -q -s -i "[^a-z]icecast[^a-z]" ${TMPFILE}; then
-      server_type='icecast'
-      host_response=`cat ${TMPFILE}`
-    elif grep -q -s -i "[^a-z]shoutcast[^a-z]" ${TMPFILE}; then
-      server_type='shoutcast'
-      host_response=`cat ${TMPFILE}`
-    elif echo "$stream_status_url" | grep -q -s -i "[^a-z]station.ru[^a-z]"; then
-      server_type='station.ru'
-      host_response=`cat ${TMPFILE}`
+    server_type='x-cast';
+  else
+    host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" --stream-timeout 30 "$stream_status_url" 2>&1`
+    if [ -f ${TMPFILE} ]; then
+      stream_class='audio';
+      if grep -q -s -i "[^a-z]icecast[^a-z]" ${TMPFILE}; then
+        server_type='icecast'
+        host_response=`cat ${TMPFILE}`
+      elif grep -q -s -i "[^a-z]shoutcast[^a-z]" ${TMPFILE}; then
+        server_type='shoutcast'
+        host_response=`cat ${TMPFILE}`
+      elif echo "$stream_status_url" | grep -q -s -i "[^a-z]station.ru[^a-z]"; then
+        server_type='station.ru'
+        host_response=`cat ${TMPFILE}`
+      fi
     fi
   fi
 }

@@ -300,5 +300,106 @@
 <meta rel="stream_title">Танцевальный Redbox Петрозаводска</meta>
 <meta rel="stream_bitrate">192</meta>
 </track>
+
+<!--
+      <track>
+         <annotation>Радио Алла позиционируется как первая российская радиостанция, ориентированная на женскую аудиторию.</annotation>
+         <title>Радио Алла</title>
+         <image>rss/image/sampo/alla.png</image>
+         <location>http://radio.sampo.ru/alla.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Наслаждайтесь лучшими представителями металлической музыки всех видов.</annotation>
+         <title>SnakeNet Radio</title>
+         <image>rss/image/sampo/snakenet.png</image>
+         <location>http://radio.sampo.ru/snakenet.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Радиоэфиры с ее бесменным ведущим диджеем Feel'ом, а так же лейблом «Трансмиссия», на котором выпускается большинство российских транс-музыкантов. Трансмиссия это еще и самое популярное российское трансовое радиошоу России, выходящее на Рекорде - главный радио-сборник российской транс-музыки. Радиошоу «Трансмиссия» выходит в ночь с субботы на воскресенье с 0.00 до 5.00. Новинки, суперхиты и гостевые миксы от лучших ди-джеев и артистов мира. Тесное сотрудничество с зарубежными лейблами, а также личное знакомство с западными звездами (Paul van Dyk, Tiesto и др.) даёт ему возможность представлять в своём шоу новые альбомы и композиции задолго до официальных релизов.</annotation>
+         <title>Trancemission</title>
+         <image>rss/image/sampo/trancemission.png</image>
+         <location>http://radio.sampo.ru/trancemission.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Крупнейший drum&amp;bass фестиваль мира. Это нечто большее, чем просто танцевальное событие. Созданный в Санкт-Петербурге, фестиваль с ошеломительным успехом проходит в крупнейших городах России – Москве, Новосибирске, Екатеринбурге, Самаре и т.д., а также в других странах: на Украине и в Эстонии. По оценкам авторитетных западных СМИ, фестиваль ПИРАТСКАЯ СТАНЦИЯ входит в пятёрку ведущих танцевальных событий планеты. Теперь все фестивальные хиты можно услышать на одноименном радио. </annotation>
+         <title>Pirate Station</title>
+         <image>rss/image/sampo/piratestation.png</image>
+         <location>http://radio.sampo.ru/piratestation.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Relax FM дарит своим слушателям возможность отрешиться от суеты, расслабиться, помечтать: Для этого не нужно брать отпуск, отправляться в SPA-салон или уезжать на загородную прогулку. Надо просто настроиться на волну Relax FM.</annotation>
+         <title>Relax FM</title>
+         <image>rss/image/sampo/relax-fm.png</image>
+         <location>http://radio.sampo.ru/relax-fm.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Дорожное радио может стать вашим попутчиком везде, где человеком проложен путь. По дороге на работу или домой, путешествии на корабле или поезде, при передвижении пешком, на автомобиле, вертолете или автобусе.</annotation>
+         <title>Дорожное радио</title>
+         <image>rss/image/sampo/dorozhnoe.png</image>
+         <location>http://radio.sampo.ru/dorozhnoe.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Более чем в 40 городах России слушают музыку на «Милицейской волне»: золотые хиты 80-х и 90-х, ретро в современном звучании, треки из любимых кинофильмов, бардовские песни и классическую ресторанную лирику.</annotation>
+         <title>Милицейская волна</title>
+         <image>rss/image/sampo/miliceyskaya-volna.png</image>
+         <location>http://radio.sampo.ru/miliceyskaya-volna.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Здесь можно не только послушать авторские песни, традиционные и современные романсы, песни из популярных кинофильмов, рок-музыку, джаз, но и выбрать песню недели. Самых активных слушателей ждут призы.</annotation>
+         <title>Радио Шансон</title>
+         <image>rss/image/sampo/shanson.png</image>
+         <location>http://radio.sampo.ru/shanson.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Входящее в так называемую «семью NRJ», русское радио с французским прононсом Энергия-Energy усиленно налаживает на международном рынке взаимовыгодный обмен музыкальными новинками.</annotation>
+         <title>Радио Энергия</title>
+         <image>rss/image/sampo/energy.png</image>
+         <location>http://radio.sampo.ru/energy.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Круглосуточное информационное радио. Работая только с фактами, оперативно передавая проверенную информацию, стремясь наиболее полно отображать различные точки зрения, СИТИ-FM представляет сбалансированную картину событий в Москве, стране и мире.</annotation>
+         <title>СИТИ-FM</title>
+         <image>rss/image/sampo/city-fm.png</image>
+         <location>http://radio.sampo.ru/city-fm.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Каждые 15 минут на частоте 87,5 - обзор текущих событий в стране и мире, новости рынков (обзор котировок ценных бумаг, курсов валют, цен на сырье), информация об отставках и назначениях, погода в финансовых столицах мира. Каждые 30 минут - новости и события ведущих российских и зарубежных компаний и корпораций, мониторинг деловой прессы: газет, журналов, Интернет-изданий, мирового радио и телеэфира.</annotation>
+         <title>Бизнес FM</title>
+         <image>rss/image/sampo/business-fm.png</image>
+         <location>http://radio.sampo.ru/business-fm.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Музыка из кинофильмов, популярные саундтреки и просто спокойная музыка.</annotation>
+         <title>98 FM</title>
+         <image>rss/image/sampo/kino-fm.png</image>
+         <location>http://radio.sampo.ru/kino-fm.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Слушатели радио «Юмор FM» – самые веселые люди на свете. Для них собраны лучшие шутки, анекдоты, афоризмы, забавные истории, пародии, фразы из любимых кинокомедий и школьных сочинений, а великие классики жанра читают свои знаменитые монологи.</annotation>
+         <title>Юмор FM</title>
+         <image>rss/image/sampo/humor-fm.png</image>
+         <location>http://radio.sampo.ru/humor-fm.mp3</location>
+      
+</track>
+      <track>
+         <annotation>Ежедневно 2 миллиона россиян настраиваются на волну «Нашего радио», где играют группы, которых можно смело отнести к «музыкальной энциклопедии русского рока». Радиостанция не боится ставить в эфир и новых, никому неизвестных, но перспективных музыкантов.</annotation>
+         <title>Наше Радио (Москва)</title>
+         <image>rss/image/sampo/nashe.png</image>
+         <location>http://radio.sampo.ru/nashe.mp3</location>
+      
+</track>
+-->
    </trackList>
 </playlist>

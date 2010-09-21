@@ -11,7 +11,14 @@
       <meta rel="id">2106</meta>
       <meta rel="fm">66.44</meta>
       <meta rel="name">66_44</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://live.rfn.ru/radiorussia</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>mmsh://stream03.rambler.ru/svoboda</location>
       <title>Радио Свобода</title>
@@ -21,7 +28,14 @@
       <meta rel="id">2104</meta>
       <meta rel="fm">68.30</meta>
       <meta rel="name">68_30</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://stream03.rambler.ru/svoboda</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>mms://live.rfn.ru/unost/stream.asf</location>
       <title>ЮFM</title>
@@ -31,7 +45,14 @@
       <meta rel="id">2103</meta>
       <meta rel="fm">68.84</meta>
       <meta rel="name">68_84</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://live.rfn.ru/unost/stream.asf</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://streamall.rambler.ru:80/ultra128.mp3</location>
       <title>Ultra</title>
@@ -41,7 +62,15 @@
       <meta rel="id">2102</meta>
       <meta rel="fm">70.19</meta>
       <meta rel="name">70_19</meta>
-    </track>
+    
+<meta rel="stream_url">http://streamall.rambler.ru:80/ultra128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://81.19.80.165:80</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>http://m1.bfm.ru:8000/fm64</location>
       <title>Бизнес FM</title>
@@ -51,7 +80,16 @@
       <meta rel="id">4005</meta>
       <meta rel="fm">87.5</meta>
       <meta rel="name">87_5</meta>
-    </track>
+    
+<meta rel="stream_url">http://m1.bfm.ru:8000/fm64</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://193.106.92.245:8000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">radio</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
     <track xmlns="">
       <location>mms://87.242.72.62/cityfm</location>
       <title>Сити-FM</title>
@@ -61,7 +99,14 @@
       <meta rel="id">4006</meta>
       <meta rel="fm">87.9</meta>
       <meta rel="name">87_9</meta>
-    </track>
+    
+<meta rel="stream_url">mms://87.242.72.62/cityfm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">rtsp</meta>
+</track>
     <track xmlns="">
       <location>http://webcast1.emg.fm:55655/retro128.mp3</location>
       <title>Ретро FM</title>
@@ -72,7 +117,16 @@
       <meta rel="id">4007</meta>
       <meta rel="fm">88.3</meta>
       <meta rel="name">88_3</meta>
-    </track>
+    
+<meta rel="stream_url">http://webcast1.emg.fm:55655/retro128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://77.246.239.18:55655</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Pop</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>mmsh://stream01.rambler.ru:80/umorfm128</location>
       <title>Юмор FM</title>
@@ -82,7 +136,14 @@
       <meta rel="id">4012</meta>
       <meta rel="fm">88.7</meta>
       <meta rel="name">88_7</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://stream01.rambler.ru:80/umorfm128</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://streamall.rambler.ru:/jazz128.mp3</location>
       <title>Радио Jazz</title>
@@ -92,7 +153,15 @@
       <meta rel="id">2012</meta>
       <meta rel="fm">89.1</meta>
       <meta rel="name">89_1</meta>
-    </track>
+    
+<meta rel="stream_url">http://streamall.rambler.ru:/jazz128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://81.19.80.167:80</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>http://w01-cn01.akadostream.ru:8108/megapolisfm128.mp3</location>
       <title>Мегаполис FM</title>
@@ -102,7 +171,16 @@
       <meta rel="id">2013</meta>
       <meta rel="fm">89.5</meta>
       <meta rel="name">89_5</meta>
-    </track>
+    
+<meta rel="stream_url">http://w01-cn01.akadostream.ru:8108/megapolisfm128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://217.10.44.210:8108</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">DANCE</meta>
+<meta rel="stream_bitrate">200</meta>
+</track>
     <track xmlns="">
       <location>http://webcast2.emg.fm:55655/keks128.mp3</location>
       <title>Кекс FM</title>
@@ -113,7 +191,16 @@
       <meta rel="id">2014</meta>
       <meta rel="fm">89.9</meta>
       <meta rel="name">89_9</meta>
-    </track>
+    
+<meta rel="stream_url">http://webcast2.emg.fm:55655/keks128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://77.246.239.18:55655</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Pop</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>mmsh://stream01.rambler.ru:80/autoradio128</location>
       <title>Авторадио</title>
@@ -123,7 +210,14 @@
       <meta rel="id">4013</meta>
       <meta rel="fm">90.3</meta>
       <meta rel="name">90_3</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://stream01.rambler.ru:80/autoradio128</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>mms://87.242.72.62/relaxfm</location>
       <title>Relax FM</title>
@@ -133,7 +227,14 @@
       <meta rel="id">4014</meta>
       <meta rel="fm">90.8</meta>
       <meta rel="name">90_8</meta>
-    </track>
+    
+<meta rel="stream_url">mms://87.242.72.62/relaxfm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">rtsp</meta>
+</track>
     <track xmlns="">
       <location>http://streamall.rambler.ru:80/echo128.mp3</location>
       <title>Эхо Москвы</title>
@@ -143,7 +244,15 @@
       <meta rel="id">4015</meta>
       <meta rel="fm">91.2</meta>
       <meta rel="name">91_2</meta>
-    </track>
+    
+<meta rel="stream_url">http://streamall.rambler.ru:80/echo128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://81.19.80.165:80</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>mmsh://live.rfn.ru/rcult</location>
       <title>Радио Культура</title>
@@ -153,7 +262,14 @@
       <meta rel="id">2015</meta>
       <meta rel="fm">91.6</meta>
       <meta rel="name">91_6</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://live.rfn.ru/rcult</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://govoritmoskva.ru:8000/gm-fm-128</location>
       <title>Говорит Москва</title>
@@ -163,9 +279,18 @@
       <meta rel="id">4016</meta>
       <meta rel="fm">92.0</meta>
       <meta rel="name">92_0</meta>
-    </track>
+    
+<meta rel="stream_url">http://govoritmoskva.ru:8000/gm-fm-128</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://90.156.211.132:8000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">various</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
-      <location>http://stream.loveradio.ru:8000/radiodacha_high.mp3</location>
+      <location>http://stream.radiodacha.ru:8000/radiodacha_high.mp3</location>
       <title>Радио Дача</title>
       <annotation>Удачное радио!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/92_4.gif</image>
@@ -173,7 +298,16 @@
       <meta rel="id">4017</meta>
       <meta rel="fm">92.4</meta>
       <meta rel="name">92_4</meta>
-    </track>
+    
+<meta rel="stream_url">http://stream.radiodacha.ru:8000/radiodacha_high.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://82.204.217.140:8000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Various</meta>
+<meta rel="stream_bitrate">96</meta>
+</track>
     <track xmlns="">
       <location>mmsh://online.carnivalfm.ru:1234</location>
       <title>Радио Карнавал</title>
@@ -183,7 +317,14 @@
       <meta rel="id">4018</meta>
       <meta rel="fm">92.8</meta>
       <meta rel="name">92_8</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://online.carnivalfm.ru:1234</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://www.sportfm.ru:8000/sportfm-128</location>
       <title>Радио Спорт</title>
@@ -193,7 +334,16 @@
       <meta rel="id">4019</meta>
       <meta rel="fm">93.2</meta>
       <meta rel="name">93_2</meta>
-    </track>
+    
+<meta rel="stream_url">http://www.sportfm.ru:8000/sportfm-128</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://90.156.211.132:8000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">various</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>mmsh://stream01.rambler.ru:80/komersant</location>
       <title>КоммерсантъFM</title>
@@ -203,7 +353,14 @@
       <meta rel="id">2020</meta>
       <meta rel="fm">93.6</meta>
       <meta rel="name">93_6</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://stream01.rambler.ru:80/komersant</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location></location>
       <title>Newtone FM</title>
@@ -213,6 +370,7 @@
       <meta rel="id">2021</meta>
       <meta rel="fm">93.61</meta>
       <meta rel="name">93_61</meta>
+    
     </track>
     <track xmlns="">
       <location></location>
@@ -223,6 +381,7 @@
       <meta rel="id">2110</meta>
       <meta rel="fm">94.0</meta>
       <meta rel="name">94_0</meta>
+    
     </track>
     <track xmlns="">
       <location>http://station.ru/RadioStation.aspx?id=1745</location>
@@ -233,7 +392,14 @@
       <meta rel="id">2105</meta>
       <meta rel="fm">94.4</meta>
       <meta rel="name">94_4</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://broadcast03.station.ru/dobryepesni</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=dobryepesni</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location></location>
       <title>Моя Семья</title>
@@ -243,6 +409,7 @@
       <meta rel="id">4020</meta>
       <meta rel="fm">94.8</meta>
       <meta rel="name">94_8</meta>
+    
     </track>
     <track xmlns="">
       <location></location>
@@ -253,6 +420,7 @@
       <meta rel="id">2011</meta>
       <meta rel="fm">95.2</meta>
       <meta rel="name">95_2</meta>
+    
     </track>
     <track xmlns="">
       <location>http://89.208.99.16:8088/zvezda_128</location>
@@ -263,7 +431,16 @@
       <meta rel="id">4021</meta>
       <meta rel="fm">95.6</meta>
       <meta rel="name">95_6</meta>
-    </track>
+    
+<meta rel="stream_url">http://89.208.99.16:8088/zvezda_128</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://89.208.99.16:8088</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Live Air</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>http://www.dorognoe.ru/dor.m3u</location>
       <title>Дорожное радио</title>
@@ -273,7 +450,15 @@
       <meta rel="id">2109</meta>
       <meta rel="fm">96.0</meta>
       <meta rel="name">96_0</meta>
-    </track>
+    
+<meta rel="stream_url">http://online.dorognoe.ru:8080/dorognoe</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://195.182.130.66:8080</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
     <track xmlns="">
       <location></location>
       <title>Вояж FM</title>
@@ -283,9 +468,10 @@
       <meta rel="id">2109</meta>
       <meta rel="fm">96.01</meta>
       <meta rel="name">96_01</meta>
+    
     </track>
     <track xmlns="">
-      <location>http://stream.mradio.fm:8000/mradio_high.mp3</location>
+      <location>http://w01-cn01.akadostream.ru:8108/xfm96.mp3.m3u</location>
       <title>X-FM</title>
       <annotation>Сенсация в прямом эфире</annotation>
       <image>http://img.moskva.fm/img/stations/msk/96_4.gif</image>
@@ -293,7 +479,16 @@
       <meta rel="id">4022</meta>
       <meta rel="fm">96.4</meta>
       <meta rel="name">96_4</meta>
-    </track>
+    
+<meta rel="stream_url">http://w01-cn01.akadostream.ru:8108/xfm96.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://217.10.44.210:8108</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Various</meta>
+<meta rel="stream_bitrate">96</meta>
+</track>
     <track xmlns="">
       <location>http://217.29.51.162:8000/radio-64k.aac</location>
       <title>Детское радио</title>
@@ -303,7 +498,16 @@
       <meta rel="id">2017</meta>
       <meta rel="fm">96.8</meta>
       <meta rel="name">96_8</meta>
-    </track>
+    
+<meta rel="stream_url">http://217.29.51.162:8000/radio-64k.aac</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://217.29.51.162:8000</meta>
+<meta rel="stream_type">audio/aacp</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">For kids</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
     <track xmlns="">
       <location>http://radio.kp.ru:8000/stream</location>
       <title>Комсомольская правда</title>
@@ -313,7 +517,16 @@
       <meta rel="id">2108</meta>
       <meta rel="fm">97.2</meta>
       <meta rel="name">97_2</meta>
-    </track>
+    
+<meta rel="stream_url">http://radio.kp.ru:8000/stream</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://213.208.177.14:8000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Russian</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>mmsh://live.rfn.ru/vesti_fm</location>
       <title>Вести FM</title>
@@ -323,7 +536,14 @@
       <meta rel="id">4023</meta>
       <meta rel="fm">97.6</meta>
       <meta rel="name">97_6</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://live.rfn.ru/vesti_fm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>mmsh://stream03.rambler.ru/kinofm</location>
       <title>Кино FM</title>
@@ -333,7 +553,14 @@
       <meta rel="id">2018</meta>
       <meta rel="fm">98.0</meta>
       <meta rel="name">98_0</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://stream03.rambler.ru/kinofm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://webcast2.emg.fm:55655/fresh128.mp3</location>
       <title>Свежее радио</title>
@@ -344,7 +571,16 @@
       <meta rel="id">4024</meta>
       <meta rel="fm">98.4</meta>
       <meta rel="name">98_4</meta>
-    </track>
+    
+<meta rel="stream_url">http://webcast2.emg.fm:55655/fresh128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://77.246.239.18:55655</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Pop</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>mmsh://mms.online.ru/v4_1_22</location>
       <title>Радио Алла</title>
@@ -354,7 +590,14 @@
       <meta rel="id">4011</meta>
       <meta rel="fm">98.8</meta>
       <meta rel="name">98_8</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://mms.online.ru/v4_1_22</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>mmsh://live.rfn.ru/orfey/</location>
       <title>Радио Орфей</title>
@@ -364,7 +607,14 @@
       <meta rel="id">2101</meta>
       <meta rel="fm">99.2</meta>
       <meta rel="name">99_2</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://live.rfn.ru/orfey/</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://radio.solo.by:8001/finam</location>
       <title>Финам FM</title>
@@ -374,7 +624,16 @@
       <meta rel="id">2019</meta>
       <meta rel="fm">99.6</meta>
       <meta rel="name">99_6</meta>
-    </track>
+    
+<meta rel="stream_url">http://radio.solo.by:8001/finam</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://195.222.70.222:8001</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">CLASSIC ROCK</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>http://w01-cn01.akadostream.ru:8000/silverrain128.mp3</location>
       <title>Серебряный дождь</title>
@@ -384,7 +643,15 @@
       <meta rel="id">2000</meta>
       <meta rel="fm">100.1</meta>
       <meta rel="name">100_1</meta>
-    </track>
+    
+<meta rel="stream_url">http://w01-cn01.akadostream.ru:8000/silverrain128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://217.10.44.210:8000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">various</meta>
+</track>
     <track xmlns="">
       <location>mms://wma.bestfm.ru:80/Best128</location>
       <title>Best FM</title>
@@ -394,7 +661,8 @@
       <meta rel="id">2001</meta>
       <meta rel="fm">100.5</meta>
       <meta rel="name">100_5</meta>
-    </track>
+    
+</track>
     <track xmlns="">
       <location>http://s05.radio-tochka.com:6045/listen.pls</location>
       <title>Радио Classic</title>
@@ -404,7 +672,8 @@
       <meta rel="id">4010</meta>
       <meta rel="fm">100.9</meta>
       <meta rel="name">100_9</meta>
-    </track>
+    
+</track>
     <track xmlns="">
       <location>http://station.ru/RadioStation.aspx?id=1720</location>
       <title>DFM</title>
@@ -414,7 +683,14 @@
       <meta rel="id">2002</meta>
       <meta rel="fm">101.2</meta>
       <meta rel="name">101_2</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://broadcast03.station.ru/dfm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=dfm</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://streamall.rambler.ru:80/nashe128.mp3</location>
       <title>Наше Радио</title>
@@ -424,7 +700,15 @@
       <meta rel="id">2003</meta>
       <meta rel="fm">101.7</meta>
       <meta rel="name">101_7</meta>
-    </track>
+    
+<meta rel="stream_url">http://streamall.rambler.ru:80/nashe128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://81.19.80.167:80</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>http://station.ru/RadioStation.aspx?id=1721</location>
       <title>Монте-Карло</title>
@@ -434,7 +718,14 @@
       <meta rel="id">2004</meta>
       <meta rel="fm">102.1</meta>
       <meta rel="name">102_1</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://broadcast03.station.ru/montecarlo</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=montecarlo</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>mmsh://stream03.rambler.ru/radiopopsa</location>
       <title>Первое Популярное</title>
@@ -444,7 +735,14 @@
       <meta rel="id">2005</meta>
       <meta rel="fm">102.5</meta>
       <meta rel="name">102_5</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://stream03.rambler.ru/radiopopsa</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://w02-cn01.akadostream.ru:8108/shanson128.mp3</location>
       <title>Шансон</title>
@@ -454,7 +752,16 @@
       <meta rel="id">2006</meta>
       <meta rel="fm">103.0</meta>
       <meta rel="name">103_0</meta>
-    </track>
+    
+<meta rel="stream_url">http://w02-cn01.akadostream.ru:8108/shanson128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://217.10.44.211:8108</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Chanson</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>mmsh://stream03.rambler.ru/radiomayak</location>
       <title>Радио Маяк</title>
@@ -464,7 +771,14 @@
       <meta rel="id">4009</meta>
       <meta rel="fm">103.4</meta>
       <meta rel="name">103_4</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://stream03.rambler.ru/radiomayak</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://station.ru/RadioStation.aspx?id=1722</location>
       <title>Maximum</title>
@@ -474,7 +788,14 @@
       <meta rel="id">2007</meta>
       <meta rel="fm">103.7</meta>
       <meta rel="name">103_7</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://broadcast03.station.ru/maximum</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=maximum</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>mmsh://89.20.132.26/v1_1_128</location>
       <title>NRJ</title>
@@ -484,7 +805,14 @@
       <meta rel="id">2008</meta>
       <meta rel="fm">104.2</meta>
       <meta rel="name">104_2</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://89.20.132.26/v1_1_128</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://webcast.emg.fm:55655/radiosept128.mp3</location>
       <title>Радио 7</title>
@@ -495,7 +823,16 @@
       <meta rel="id">2009</meta>
       <meta rel="fm">104.7</meta>
       <meta rel="name">104_7</meta>
-    </track>
+    
+<meta rel="stream_url">http://webcast.emg.fm:55655/radiosept128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://77.246.239.18:55655</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Rock</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>mmsh://stream03.rambler.ru/radionext</location>
       <title>NEXT FM</title>
@@ -505,7 +842,14 @@
       <meta rel="id">2010</meta>
       <meta rel="fm">105.2</meta>
       <meta rel="name">105_2</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://stream03.rambler.ru/radionext</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://station.ru/RadioStation.aspx?id=1723</location>
       <title>Русское Радио</title>
@@ -515,7 +859,14 @@
       <meta rel="id">4000</meta>
       <meta rel="fm">105.7</meta>
       <meta rel="name">105_7</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://broadcast03.station.ru/rusradio</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=rusradio</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://webcast.emg.fm:55655/europaplus128.mp3</location>
       <title>Европа Плюс</title>
@@ -526,7 +877,16 @@
       <meta rel="id">4001</meta>
       <meta rel="fm">106.2</meta>
       <meta rel="name">106_2</meta>
-    </track>
+    
+<meta rel="stream_url">http://webcast.emg.fm:55655/europaplus128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://77.246.239.18:55655</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Pop</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>http://fms05.rambler.ru:80/love128.mp3</location>
       <title>Love Radio</title>
@@ -536,7 +896,15 @@
       <meta rel="id">4002</meta>
       <meta rel="fm">106.6</meta>
       <meta rel="name">106_6</meta>
-    </track>
+    
+<meta rel="stream_url">http://fms05.rambler.ru:80/love128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://81.19.80.168:80</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track xmlns="">
       <location>http://station.ru/RadioStation.aspx?id=1724</location>
       <title>Русская Служба Новостей</title>
@@ -546,7 +914,14 @@
       <meta rel="id">4003</meta>
       <meta rel="fm">107.0</meta>
       <meta rel="name">107_0</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://broadcast03.station.ru/rsn</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=rsn</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://station.ru/RadioStation.aspx?id=1725</location>
       <title>Хит FM</title>
@@ -556,7 +931,14 @@
       <meta rel="id">4008</meta>
       <meta rel="fm">107.4</meta>
       <meta rel="name">107_4</meta>
-    </track>
+    
+<meta rel="stream_url">mmsh://broadcast03.station.ru/hitfm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=hitfm</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+</track>
     <track xmlns="">
       <location>http://83.222.222.88:8080/</location>
       <title>Милицейская волна</title>
@@ -566,6 +948,7 @@
       <meta rel="id">4004</meta>
       <meta rel="fm">107.8</meta>
       <meta rel="name">107_8</meta>
-    </track>
+    
+</track>
   </trackList>
 </playlist>
