@@ -1,4 +1,5 @@
 #summary Media Stream Renderer
+#sidebar TableOfContents
 
 = Media Stream Renderer =
 
