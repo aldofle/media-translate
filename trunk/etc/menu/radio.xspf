@@ -56,17 +56,10 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Font:14;Lines:5;Start:left;Size:5;File:etc/playlists/radio-sampo.xspf,collection/media</link>
-      <title>Sampo.ru</title>
-      <annotation>Городская компьютерная сеть «Сампо.ру» - Петрозаводск.</annotation>
-      <image>rss/image/menu/sampo.jpg</image>
-      <meta rel="mediaDisplay">photoView</meta>
-    </track>
-    <track>
 			<link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radio-other.xspf,collection/menulist</link>
       <title>Other</title>
       <annotation>Разные списки интернет-радиостанций</annotation>
-      <image>rss/image/menu/radio-other.png</image>
+      <image>rss/image/menu/internetradio.png</image>
       <meta rel="mediaDisplay">threePartsView</meta>
     </track>
   </trackList>

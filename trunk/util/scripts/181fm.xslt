@@ -10,10 +10,9 @@
 
 <xsl:template match="/">
 <playlist version="1" xmlns="http://xspf.org/ns/0/">
-<title>1.FM</title>
+<title>181.FM</title>
 <trackList>
-  <xsl:apply-templates select="//table[@class='l']/tbody/tr"/>
-  <xsl:apply-templates select="//table[@class='r']/tbody/tr"/>
+  <xsl:apply-templates select="//table/tr[count(td)=3 and td[2]/a='128k']"/>
 </trackList>
 </playlist>
 
@@ -21,8 +20,8 @@
 
 <xsl:template match="tr">
   <track>
-	<location>http://www.1.fm<xsl:value-of select="td[@class='sc64']/a/@href"/></location>
-  	<title><xsl:value-of select="normalize-space(td[1]/span/a)"/></title>
+	<location><xsl:value-of select="td[2]/a/@href"/></location>
+  	<title><xsl:value-of select="normalize-space(td[1])"/></title>
   </track>
 </xsl:template>
 
