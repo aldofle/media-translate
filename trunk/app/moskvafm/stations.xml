@@ -218,7 +218,7 @@
           stream_url = request_url;
 
         if(stream_server != "" &amp;&amp; stream_server != null)
-          stream_status_url = translate_base_url + "status," + stream_server + ",";
+          stream_status_url = translate_base_url + "status," + urlEncode(stream_server) + "," + urlEncode(stream_url);
 
         if(stream_title == "" || stream_title == null)
           stream_title = getItemInfo(focus, "fm") + "FM / " + request_title;

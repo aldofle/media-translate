@@ -522,7 +522,7 @@
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.ORIENTAL - WWW.RAUTEMUSIK.FM - 24H ORIENTAL AND ARABIC POP MUSIC AND MORE!</stream_title>
-<stream_genre>Ariabic International R&B</stream_genre>
+<stream_genre>Ariabic International R&amp;B</stream_genre>
 <stream_bitrate>48</stream_bitrate>
 </item>
 <item>
@@ -535,7 +535,7 @@
 <stream_server>icyx://91.121.88.186:16100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
-<stream_title>#MUSIK.BIGCITYBEATS - BY BIGCITYBEATS.DE & RAUTEMUSIK.FM - 24H MIXED ELECTRONIC AND HOUSE MUSIC!</stream_title>
+<stream_title>#MUSIK.BIGCITYBEATS - BY BIGCITYBEATS.DE &amp; RAUTEMUSIK.FM - 24H MIXED ELECTRONIC AND HOUSE MUSIC!</stream_title>
 <stream_genre>Electronic House Dance</stream_genre>
 <stream_bitrate>48</stream_bitrate>
 </item>
