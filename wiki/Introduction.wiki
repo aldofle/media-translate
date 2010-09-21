@@ -1,4 +1,5 @@
 #summary Краткое описание
+#sidebar TableOfContents
 
 = Введение =
 
