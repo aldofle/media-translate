@@ -1,0 +1,35 @@
+#summary Краткое описание
+
+= Введение =
+
+Пакет представляет собой набор RSS/CGI-приложений и плейлистов, которые дополняют/расширяют функциональность стандартных интернет сервисов в плеерах построенных на чипсетах Realtek 1073/1283.
+
+= Интегрированные online-сервисы и плейлисты =
+
+  == Internet Video ==
+  * Youtube (http://www.youtube.com)
+
+  == Internet Radio ==
+  * SHOUTcast Directory (http://www.shoutcast.com)
+  * SomaFM (http://somafm.com/)
+  * Digitally Imported (http://www.di.fm/)
+  * SKY.fm (http://www.sky.fm/)
+  * 1.FM (http://www.1.fm/)
+  * 181.FM (http://www.181.fm/)
+  * Bluemars (http://www.bluemars.org/)
+  * RauteMusik (http://www.rautemusik.fm/)
+  * Station.ru (http://station.ru/StationsList.aspx?type=online)
+  * Sampo.ru (http://radio.sampo.ru/)
+  * Nullwave.ru (http://nullwave.ru/)
+
+= Встроенные RSS/CGI-приложения =
+  == Media Stream Renderer ==
+
+    Проигрывание медиа ссылок на плеере с локального компьютера.
+
+  == XSPF Browser ==
+
+    Браузер и проигрыватель медиаконтента с локальных дисков и ftp-серверов.
+
+    
+
