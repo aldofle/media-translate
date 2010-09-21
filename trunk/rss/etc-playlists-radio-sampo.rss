@@ -610,6 +610,15 @@ columnCount=5
 <title>Радио Юность</title>
 <image>rss/image/sampo/unost.png</image>
 <location>http://radio.sampo.ru/unost.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/unost.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>ЮFM ТОМСК УКВ 68.0 MHz</stream_title>
+<stream_genre>live</stream_genre>
+<stream_bitrate>128</stream_bitrate>
 </item>
 <item>
 <annotation>Автолюбителям, а также любителям хорошей музыки «Первое автомобильное радио» предлагает слушать музыку, которую узнают с первых тактов и напевают, развлекательные программы с участием суперзвезд, актуальную, интересную, оперативную информацию, увлекательные, динамичные игры в эфире.</annotation>
