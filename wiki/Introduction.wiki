@@ -23,13 +23,12 @@
   * Nullwave.ru (http://nullwave.ru/)
 
 = Встроенные RSS/CGI-приложения =
-  == Media Stream Renderer ==
+  == [MSR Media Stream Renderer] ==
 
     Проигрывание медиа ссылок на плеере с локального компьютера.
 
-  == XSPF Browser ==
+  == [XSPFBrowser XSPF Browser] ==
 
     Браузер и проигрыватель медиаконтента с локальных дисков и ftp-серверов.
 
     
-
