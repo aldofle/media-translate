@@ -422,632 +422,632 @@ columnCount=5
 <title>Digitally Imported</title>
 <item>
 <location>http://u11b.di.fm:80/di_chillout_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_chillout_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Chillout - D I G I T A L L Y - I M P O R T E D - ambient psy chillout, check out our trippy flavors!</stream_title>
-<stream_genre>Electronic Chillout Ambient</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Chillout</title>
 <annotation>Ambient psy chillout, check out our trippy flavors!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic Chillout Ambient</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11b.di.fm:80/di_chillout_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Chillout - D I G I T A L L Y - I M P O R T E D - ambient psy chillout, check out our trippy flavors!</stream_title>
+<stream_genre>Electronic Chillout Ambient</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_futuresynthpop_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_futuresynthpop_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Future Synthpop - D I G I T A L L Y - I M P O R T E D - Finest selection of futurepop and synthpop!!</stream_title>
-<stream_genre>Electronic Industrial Synthpop</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Future Synthpop</title>
 <annotation>Finest selection of futurepop and synthpop!!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm/futuresynthpop/</url>
+<stream_url>http://u11.di.fm:80/di_futuresynthpop_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Future Synthpop - D I G I T A L L Y - I M P O R T E D - Finest selection of futurepop and synthpop!!</stream_title>
+<stream_genre>Electronic Industrial Synthpop</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u12.di.fm:80/di_liquiddnb_aacplus</location>
-<stream_url>http://u12.di.fm:80/di_liquiddnb_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.217.66:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Liquid DnB  - D I G I T A L L Y - I M P O R T E D - Flowing with the freshest Liquid DnB!!</stream_title>
-<stream_genre>Electronic Liquid Drum N Bass</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Liquid DnB</title>
 <annotation>Flowing with the freshest Liquid DnB!!</annotation>
 <image>rss/image/di/liquiddnb.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u12.di.fm:80/di_liquiddnb_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.217.66:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Liquid DnB  - D I G I T A L L Y - I M P O R T E D - Flowing with the freshest Liquid DnB!!</stream_title>
+<stream_genre>Electronic Liquid Drum N Bass</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u12.di.fm:80/di_oldschoolhouse_aacplus</location>
-<stream_url>http://u12.di.fm:80/di_oldschoolhouse_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.217.66:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Oldschool House - D I G I T A L L Y - I M P O R T E D - The sounds of old school house music!</stream_title>
-<stream_genre>Electronic House Old</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Oldschool House</title>
 <annotation>The sounds of old school house music!</annotation>
 <image>rss/image/di/oldschoolhouse.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u12.di.fm:80/di_oldschoolhouse_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.217.66:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Oldschool House - D I G I T A L L Y - I M P O R T E D - The sounds of old school house music!</stream_title>
+<stream_genre>Electronic House Old</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u12.di.fm:80/di_chiptunes_aacplus</location>
-<stream_url>http://u12.di.fm:80/di_chiptunes_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.217.66:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Chiptunes - D I G I T A L L Y - I M P O R T E D - Playing the best chiptunes and video game music.</stream_title>
-<stream_genre>Chiptunes Video Game</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Chiptunes</title>
 <annotation>Playing the best chiptunes and video game music.</annotation>
 <image>rss/image/di/chiptunes.gif</image>
 <genre>Chiptunes Video Game</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u12.di.fm:80/di_chiptunes_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.217.66:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Chiptunes - D I G I T A L L Y - I M P O R T E D - Playing the best chiptunes and video game music.</stream_title>
+<stream_genre>Chiptunes Video Game</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_trance_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_trance_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Trance Channel - D I G I T A L L Y - I M P O R T E D - we can't define it!</stream_title>
-<stream_genre>Electronic Trance Techno</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Trance Channel</title>
 <annotation>We can't define it!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_trance_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Trance Channel - D I G I T A L L Y - I M P O R T E D - we can't define it!</stream_title>
+<stream_genre>Electronic Trance Techno</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11b.di.fm:80/di_vocaltrance_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_vocaltrance_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Vocal Trance - D I G I T A L L Y - I M P O R T E D - a fusion of trance, dance, and chilling vocals together!</stream_title>
-<stream_genre>Electronic Trance Pop</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Vocal Trance</title>
 <annotation>A fusion of trance, dance, and chilling vocals together!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11b.di.fm:80/di_vocaltrance_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Vocal Trance - D I G I T A L L Y - I M P O R T E D - a fusion of trance, dance, and chilling vocals together!</stream_title>
+<stream_genre>Electronic Trance Pop</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_classictrance_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_classictrance_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Classic Trance - D I G I T A L L Y - I M P O R T E D - relive the classic trance hits!!</stream_title>
-<stream_genre>Electronic Trance Techno</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Classic Trance</title>
 <annotation>Relive the classic trance hits!!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_classictrance_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Classic Trance - D I G I T A L L Y - I M P O R T E D - relive the classic trance hits!!</stream_title>
+<stream_genre>Electronic Trance Techno</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11b.di.fm:80/di_techhouse_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_techhouse_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Tech House - D I G I T A L L Y - I M P O R T E D - a fusion of minimal techno and soulful house music.</stream_title>
-<stream_genre>Electronic Tech House</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Tech House</title>
 <annotation>A fusion of minimal techno and soulful house music.</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11b.di.fm:80/di_techhouse_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Tech House - D I G I T A L L Y - I M P O R T E D - a fusion of minimal techno and soulful house music.</stream_title>
+<stream_genre>Electronic Tech House</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_psychill_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_psychill_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>PsyChill - D I G I T A L L Y - I M P O R T E D - downtempo psychedelic dub grooves, goa ambient, and world beats.</stream_title>
-<stream_genre>Electronic Chillout Psy</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>PsyChill</title>
 <annotation>Downtempo psychedelic dub grooves, goa ambient, and world beats.</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_psychill_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>PsyChill - D I G I T A L L Y - I M P O R T E D - downtempo psychedelic dub grooves, goa ambient, and world beats.</stream_title>
+<stream_genre>Electronic Chillout Psy</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_chilloutdreams_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_chilloutdreams_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Chillout Dreams - D I G I T A L L Y - I M P O R T E D - relax to the sounds of dream and ibiza style chillout</stream_title>
-<stream_genre>Electronic Chillout Dream</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Chillout Dreams</title>
 <annotation>Relax to the sounds of dream and ibiza style chillout</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_chilloutdreams_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Chillout Dreams - D I G I T A L L Y - I M P O R T E D - relax to the sounds of dream and ibiza style chillout</stream_title>
+<stream_genre>Electronic Chillout Dream</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_eurodance_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_eurodance_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>EuroDance - D I G I T A L L Y - I M P O R T E D - the newest and best of Eurodance hits</stream_title>
-<stream_genre>Electronic Eurodance HiNRG Italo</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>EuroDance</title>
 <annotation>The newest and best of Eurodance hits.</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_eurodance_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>EuroDance - D I G I T A L L Y - I M P O R T E D - the newest and best of Eurodance hits</stream_title>
+<stream_genre>Electronic Eurodance HiNRG Italo</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_clubsounds_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_clubsounds_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Club Sounds - D I G I T A L L Y - I M P O R T E D - the hottest club and dance tunes 24/7</stream_title>
-<stream_genre>Electronic Club Dance</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Club Sounds</title>
 <annotation>The hottest club and dance tunes 24/7.</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_clubsounds_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Club Sounds - D I G I T A L L Y - I M P O R T E D - the hottest club and dance tunes 24/7</stream_title>
+<stream_genre>Electronic Club Dance</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_discohouse_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_discohouse_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Disco House - D I G I T A L L Y - I M P O R T E D - Grooviest Disco House hits on the planet!</stream_title>
-<stream_genre>Electronic Disco House</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Disco House</title>
 <annotation>Grooviest Disco House hits on the planet!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_discohouse_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Disco House - D I G I T A L L Y - I M P O R T E D - Grooviest Disco House hits on the planet!</stream_title>
+<stream_genre>Electronic Disco House</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11b.di.fm:80/di_dubstep_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_dubstep_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Dubstep - D I G I T A L L Y - I M P O R T E D - Dubstep hits and mixes!!!!</stream_title>
-<stream_genre>Electronic Dubstep Garage</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Dubstep</title>
 <annotation>Dubstep hits and mixes!!!!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11b.di.fm:80/di_dubstep_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Dubstep - D I G I T A L L Y - I M P O R T E D - Dubstep hits and mixes!!!!</stream_title>
+<stream_genre>Electronic Dubstep Garage</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11b.di.fm:80/di_electrohouse_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_electrohouse_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Electro House - D I G I T A L L Y - I M P O R T E D - an eclectic mix of electro and dirty house</stream_title>
-<stream_genre>Electronic Electro House</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Electro House</title>
 <annotation>An eclectic mix of electro and dirty house.</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm/electro</url>
+<stream_url>http://u11b.di.fm:80/di_electrohouse_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Electro House - D I G I T A L L Y - I M P O R T E D - an eclectic mix of electro and dirty house</stream_title>
+<stream_genre>Electronic Electro House</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_classiceurodance_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_classiceurodance_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Classic EuroDance - D I G I T A L L Y - I M P O R T E D - Finest imported cheese on the net!</stream_title>
-<stream_genre>Electronic Eurodance HiNRG Italo</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Classic EuroDance</title>
 <annotation>Finest imported cheese on the net!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_classiceurodance_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Classic EuroDance - D I G I T A L L Y - I M P O R T E D - Finest imported cheese on the net!</stream_title>
+<stream_genre>Electronic Eurodance HiNRG Italo</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_house_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_house_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>House - D I G I T A L L Y - I M P O R T E D - silky sexy deep house music direct from New York city!</stream_title>
-<stream_genre>Electronic House Deep</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>House</title>
 <annotation>Silky sexy deep house music direct from New York city!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_house_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>House - D I G I T A L L Y - I M P O R T E D - silky sexy deep house music direct from New York city!</stream_title>
+<stream_genre>Electronic House Deep</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_soulfulhouse_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_soulfulhouse_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Soulful House - D I G I T A L L Y - I M P O R T E D - house music selected from Paris with love!</stream_title>
-<stream_genre>Electronic Soulful House Deep</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Soulful House</title>
 <annotation>House music selected from Paris with love!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_soulfulhouse_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Soulful House - D I G I T A L L Y - I M P O R T E D - house music selected from Paris with love!</stream_title>
+<stream_genre>Electronic Soulful House Deep</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_funkyhouse_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_funkyhouse_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Funky House - D I G I T A L L Y - I M P O R T E D - A fine selection of funky house music!!</stream_title>
-<stream_genre>Electronic House Disco</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Funky House</title>
 <annotation>A fine selection of funky house music!!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm/funkyhouse/</url>
+<stream_url>http://u11.di.fm:80/di_funkyhouse_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Funky House - D I G I T A L L Y - I M P O R T E D - A fine selection of funky house music!!</stream_title>
+<stream_genre>Electronic House Disco</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_tribalhouse_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_tribalhouse_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Tribal House - D I G I T A L L Y - I M P O R T E D - Finest selection of tribal and tech house!!</stream_title>
-<stream_genre>Electronic Tribal House</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Tribal House</title>
 <annotation>Finest selection of tribal and tech house!!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm/tribalhouse/</url>
+<stream_url>http://u11.di.fm:80/di_tribalhouse_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Tribal House - D I G I T A L L Y - I M P O R T E D - Finest selection of tribal and tech house!!</stream_title>
+<stream_genre>Electronic Tribal House</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_harddance_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_harddance_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Hard Dance - D I G I T A L L Y - I M P O R T E D - are you ready for this!</stream_title>
-<stream_genre>Electronic Trance Techno</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Hard Dance</title>
 <annotation>Are you ready for this?!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_harddance_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Hard Dance - D I G I T A L L Y - I M P O R T E D - are you ready for this!</stream_title>
+<stream_genre>Electronic Trance Techno</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_minimal_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_minimal_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Minimal - D I G I T A L L Y - I M P O R T E D - Finest selection of Minimal Techno &amp; House!!</stream_title>
-<stream_genre>Electronic Minimal Techno</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Minimal</title>
 <annotation>Finest selection of Minimal Techno &amp; House!!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm/minimal</url>
+<stream_url>http://u11.di.fm:80/di_minimal_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Minimal - D I G I T A L L Y - I M P O R T E D - Finest selection of Minimal Techno &amp; House!!</stream_title>
+<stream_genre>Electronic Minimal Techno</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_techno_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_techno_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Techno - D I G I T A L L Y - I M P O R T E D - From Minimal to Detroit to Schranz &amp; all in between!</stream_title>
-<stream_genre>Electronic Techno EDM</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Techno</title>
 <annotation>From Minimal to Detroit to Schranz &amp; all in between!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_techno_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Techno - D I G I T A L L Y - I M P O R T E D - From Minimal to Detroit to Schranz &amp; all in between!</stream_title>
+<stream_genre>Electronic Techno EDM</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11b.di.fm:80/di_progressive_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_progressive_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Progressive - D I G I T A L L Y - I M P O R T E D - house, techno, and trance beats for your mind!</stream_title>
-<stream_genre>Electronic Progressive House Trance</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Progressive</title>
 <annotation>House, techno, and trance beats for your mind!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11b.di.fm:80/di_progressive_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Progressive - D I G I T A L L Y - I M P O R T E D - house, techno, and trance beats for your mind!</stream_title>
+<stream_genre>Electronic Progressive House Trance</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_goapsy_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_goapsy_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Goa &amp; Psychedelic Trance - D I G I T A L L Y - I M P O R T E D - a voyage out of this world!</stream_title>
-<stream_genre>Electronic Psychedelic Goa Trance</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Goa &amp; Psychedelic Trance</title>
 <annotation>A voyage out of this world!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_goapsy_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Goa &amp; Psychedelic Trance - D I G I T A L L Y - I M P O R T E D - a voyage out of this world!</stream_title>
+<stream_genre>Electronic Psychedelic Goa Trance</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_hardstyle_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_hardstyle_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Hardstyle - D I G I T A L L Y - I M P O R T E D - Banging Hardstyle for your ears!!!</stream_title>
-<stream_genre>Electronic Hardstyle Hard Bass</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Hardstyle</title>
 <annotation>Banging Hardstyle for your ears!!!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm/hardstyle</url>
+<stream_url>http://u11.di.fm:80/di_hardstyle_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Hardstyle - D I G I T A L L Y - I M P O R T E D - Banging Hardstyle for your ears!!!</stream_title>
+<stream_genre>Electronic Hardstyle Hard Bass</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_hardcore_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_hardcore_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Hardcore - D I G I T A L L Y - I M P O R T E D &amp; HappyHardcore.com - DJ mixes, hard dance and NuNRG!</stream_title>
-<stream_genre>Electronic Hardcore Trance</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Hardcore</title>
 <annotation>HappyHardcore.com - DJ mixes, hard dance and NuNRG!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_hardcore_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Hardcore - D I G I T A L L Y - I M P O R T E D &amp; HappyHardcore.com - DJ mixes, hard dance and NuNRG!</stream_title>
+<stream_genre>Electronic Hardcore Trance</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11b.di.fm:80/di_lounge_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_lounge_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Lounge - D I G I T A L L Y - I M P O R T E D - sit back and enjoy the lounge grooves!</stream_title>
-<stream_genre>Electronic Lounge Downtempo</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Lounge</title>
 <annotation>Sit back and enjoy the lounge grooves!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11b.di.fm:80/di_lounge_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Lounge - D I G I T A L L Y - I M P O R T E D - sit back and enjoy the lounge grooves!</stream_title>
+<stream_genre>Electronic Lounge Downtempo</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_exposurenyc_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_exposurenyc_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Exposure NYC - D I G I T A L L Y - I M P O R T E D - A fine selection of New York City sounds!</stream_title>
-<stream_genre>Electronic House Progressive</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Exposure NYC</title>
 <annotation>A fine selection of New York City sounds!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm/exposurenyc/</url>
+<stream_url>http://u11.di.fm:80/di_exposurenyc_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Exposure NYC - D I G I T A L L Y - I M P O R T E D - A fine selection of New York City sounds!</stream_title>
+<stream_genre>Electronic House Progressive</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_djmixes_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_djmixes_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>DJ MIXES - D I G I T A L L Y - I M P O R T E D - non-stop DJ sets featuring various forms of techno &amp; trance!</stream_title>
-<stream_genre>Electronic Trance Techno</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>DJ MIXES</title>
 <annotation>Non-stop DJ sets featuring various forms of techno &amp; trance!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_djmixes_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>DJ MIXES - D I G I T A L L Y - I M P O R T E D - non-stop DJ sets featuring various forms of techno &amp; trance!</stream_title>
+<stream_genre>Electronic Trance Techno</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11b.di.fm:80/di_drumandbass_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_drumandbass_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Drum and Bass - D I G I T A L L Y - I M P O R T E D - tasty assortment to satisfy your drum and bass fix!</stream_title>
-<stream_genre>Electronic Drum and Bass Jungle</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Drum and Bass</title>
 <annotation>Tasty assortment to satisfy your drum and bass fix!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11b.di.fm:80/di_drumandbass_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Drum and Bass - D I G I T A L L Y - I M P O R T E D - tasty assortment to satisfy your drum and bass fix!</stream_title>
+<stream_genre>Electronic Drum and Bass Jungle</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_oldschoolelectronica_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_oldschoolelectronica_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Classic Electronica - D I G I T A L L Y - I M P O R T E D - old school techno, trance &amp; rave!</stream_title>
-<stream_genre>Electronic Techno Trance</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Classic Electronica</title>
 <annotation>Old school techno, trance &amp; rave!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_oldschoolelectronica_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Classic Electronica - D I G I T A L L Y - I M P O R T E D - old school techno, trance &amp; rave!</stream_title>
+<stream_genre>Electronic Techno Trance</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11b.di.fm:80/di_breaks_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_breaks_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Breaks - D I G I T A L L Y - I M P O R T E D - a fine assortment of trance and house breaks</stream_title>
-<stream_genre>Electronic Breaks Trance</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Breaks</title>
 <annotation>A fine assortment of trance and house breaks</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11b.di.fm:80/di_breaks_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Breaks - D I G I T A L L Y - I M P O R T E D - a fine assortment of trance and house breaks</stream_title>
+<stream_genre>Electronic Breaks Trance</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11b.di.fm:80/di_ambient_aacplus</location>
-<stream_url>http://u11b.di.fm:80/di_ambient_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.216.162:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Ambient - D I G I T A L L Y - I M P O R T E D - a blend of ambient, downtempo, and chillout</stream_title>
-<stream_genre>Electronic Ambient Downtempo</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Ambient</title>
 <annotation>A blend of ambient, downtempo, and chillout.</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11b.di.fm:80/di_ambient_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.216.162:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Ambient - D I G I T A L L Y - I M P O R T E D - a blend of ambient, downtempo, and chillout</stream_title>
+<stream_genre>Electronic Ambient Downtempo</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_spacemusic_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_spacemusic_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Space Music - D I G I T A L L Y - I M P O R T E D - ambient space music for expanding minds</stream_title>
-<stream_genre>Electronic Space Music Ambient</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Space Music</title>
 <annotation>Ambient space music for expanding minds.</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm/spacemusic/</url>
+<stream_url>http://u11.di.fm:80/di_spacemusic_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Space Music - D I G I T A L L Y - I M P O R T E D - ambient space music for expanding minds</stream_title>
+<stream_genre>Electronic Space Music Ambient</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 <item>
 <location>http://u11.di.fm:80/di_gabber_aacplus</location>
-<stream_url>http://u11.di.fm:80/di_gabber_aacplus</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>http://72.251.198.34:80</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>Gabber - D I G I T A L L Y - I M P O R T E D - best sounds of this stuff right here for your ears!</stream_title>
-<stream_genre>Electronic Gabber Hardcore</stream_genre>
-<stream_bitrate>40</stream_bitrate>
 <title>Gabber</title>
 <annotation>Best sounds of this stuff right here for your ears!</annotation>
 <image>rss/image/di/radio_di.gif</image>
 <genre>Electronic</genre>
 <url>http://www.di.fm</url>
+<stream_url>http://u11.di.fm:80/di_gabber_aacplus</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://72.251.198.34:80</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Gabber - D I G I T A L L Y - I M P O R T E D - best sounds of this stuff right here for your ears!</stream_title>
+<stream_genre>Electronic Gabber Hardcore</stream_genre>
+<stream_bitrate>40</stream_bitrate>
 </item>
 </channel>
 

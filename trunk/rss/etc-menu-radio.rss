@@ -231,17 +231,10 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
 <mediaDisplay name="photoView"/>
 </item>
 <item>
-<link>rss/etc-playlists-radio-sampo.rss</link>
-<title>Sampo.ru</title>
-<annotation>Городская компьютерная сеть «Сампо.ру» - Петрозаводск.</annotation>
-<image>rss/image/menu/sampo.jpg</image>
-<mediaDisplay name="photoView"/>
-</item>
-<item>
 <link>rss/etc-menu-radio-other.rss</link>
 <title>Other</title>
 <annotation>Разные списки интернет-радиостанций</annotation>
-<image>rss/image/menu/radio-other.png</image>
+<image>rss/image/menu/internetradio.png</image>
 <mediaDisplay name="threePartsView"/>
 </item>
 </channel>

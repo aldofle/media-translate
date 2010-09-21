@@ -7,11 +7,25 @@
   <title>DFM Club</title>
   <annotation>Западная клубная музыка</annotation>
   <image>rss/image/stationru/dfm_club.jpg</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station01</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station01</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">DFM Club / station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1731</location>
   <title>Monte-Carlo Nights</title>
   <annotation>Lounge, downtempo и другая мягкая электронная музыка, которая не мешает отдыхать и работать.</annotation>
   <image>rss/image/stationru/mc_nights.jpg</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station08</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station08</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">Monte-Carlo Nights / station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1732</location>
   <title>Monte-Carlo HED KANDI</title>
@@ -186,6 +200,13 @@
   <title>DFM Fresh</title>
   <annotation>Танцевальная музыка в стиле latino и pop</annotation>
   <image>rss/image/stationru/dfm_fresh.gif</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station02</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station02</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">DFM Fresh / station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1997</location>
   <title>Биология</title>
