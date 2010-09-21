@@ -1,4 +1,5 @@
 #summary Краткое описание
+#labels Featured
 #sidebar TableOfContents
 
 = Краткое описание =
