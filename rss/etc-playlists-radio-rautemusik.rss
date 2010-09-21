@@ -401,143 +401,143 @@
 <title>RauteMisik.FM</title>
 <item>
 <location>http://main-aacp.rautemusik.fm/listen.pls</location>
-<stream_url>http://87.106.71.142:8100/</stream_url>
+<title>Main</title>
+<annotation>80s, Pop, Rock, Charts und mehr neue Hits  </annotation>
+<stream_url>http://91.121.77.64:8100/</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://87.106.71.142:8100</stream_server>
+<stream_server>icyx://91.121.77.64:8100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.MAIN - WWW.RAUTEMUSIK.FM - 24H TOP 40 POP HITS 80S 90S DANCE HOUSE ROCK RNB AND MORE!</stream_title>
 <stream_genre>80S POP ROCK TOP 40 WORLD</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Main</title>
-<annotation>80s, Pop, Rock, Charts und mehr neue Hits  </annotation>
 </item>
 <item>
 <location>http://club-aacp.rautemusik.fm/listen.pls</location>
-<stream_url>http://87.106.71.142:9100/</stream_url>
+<title>Club</title>
+<annotation>Dance, HandsUp, Techno und Trance</annotation>
+<stream_url>http://62.141.54.83:9100/</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://87.106.71.142:9100</stream_server>
+<stream_server>icyx://62.141.54.83:9100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.CLUB - WWW.RAUTEMUSIK.FM - 24H MIXED HANDS UP TRANCE DANCE TECHNO HARDSTYLE HOUSE AND MORE!</stream_title>
 <stream_genre>TECHNO DANCE TRANCE HOUSE</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Club</title>
-<annotation>Dance, HandsUp, Techno und Trance</annotation>
 </item>
 <item>
 <location>http://extreme-aacp.rautemusik.fm/listen.pls</location>
-<stream_url>http://62.141.54.83:10100/</stream_url>
+<title>eXTreMe</title>
+<annotation>Rock, Metal, Punk, Ska, Alternative</annotation>
+<stream_url>http://91.121.77.64:10100/</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://62.141.54.83:10100</stream_server>
+<stream_server>icyx://91.121.77.64:10100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.EXTREME - WWW.RAUTEMUSIK.FM - 24H ROCK METAL PUNK SKA ALTERNATIVE AND MORE!</stream_title>
 <stream_genre>ROCK METAL ALTERNATIVE</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>eXTreMe</title>
-<annotation>Rock, Metal, Punk, Ska, Alternative</annotation>
 </item>
 <item>
 <location>http://jam-aacp.rautemusik.fm/listen.pls</location>
+<title>JaM</title>
+<annotation>HipHop, R.n.B, Rap, Soul, Reggae, Dancehall</annotation>
 <stream_url>http://91.121.77.64:12100/</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://91.121.77.64:12100</stream_server>
+<stream_server>icyx://91.121.77.64:12100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.JAM - WWW.RAUTEMUSIK.FM - 24H HIPHOP RNB RAP SOUL REGGAE DANCEHALL URBAN AND MORE!</stream_title>
 <stream_genre>HIP HOP RNB RAP URBAN POP</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>JaM</title>
-<annotation>HipHop, R.n.B, Rap, Soul, Reggae, Dancehall</annotation>
 </item>
 <item>
 <location>http://funky-aacp.rautemusik.fm/listen.pls</location>
+<title>FunkY</title>
+<annotation>House, Dance, Funk, Electro</annotation>
 <stream_url>http://91.121.77.64:13100/</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://91.121.77.64:13100</stream_server>
+<stream_server>icyx://91.121.77.64:13100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.FUNKY - WWW.RAUTEMUSIK.FM - 24H MIXED HOUSE ELECTRO FUNK DANCE MINIMAL AND MORE!</stream_title>
 <stream_genre>HOUSE ELECTRO FUNK DANCE</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>FunkY</title>
-<annotation>House, Dance, Funk, Electro</annotation>
 </item>
 <item>
 <location>http://lounge-aacp.rautemusik.fm/listen.pls</location>
+<title>Lounge</title>
+<annotation> Ambient, (Nu)Jazz, Downtempo, Latin, Chillout &amp; Music for Lounge-Lovers</annotation>
 <stream_url>http://91.121.77.64:14100/</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://91.121.77.64:14100</stream_server>
+<stream_server>icyx://91.121.77.64:14100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.LOUNGE - WWW.RAUTEMUSIK.FM - 24H CHILLOUT AMBIENT SMOOTH JAZZ DOWNTEMPO LATIN SOUL AND MORE!</stream_title>
 <stream_genre>AMBIENT JAZZ FUNK HOUSE</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Lounge</title>
-<annotation> Ambient, (Nu)Jazz, Downtempo, Latin, Chillout &amp; Music for Lounge-Lovers</annotation>
 </item>
 <item>
 <location>http://goldies-aacp.rautemusik.fm/listen.pls</location>
-<stream_url>http://87.106.71.142:11100/</stream_url>
+<title>Goldies</title>
+<annotation>60s, 70s, 80s, Oldies</annotation>
+<stream_url>http://91.121.77.64:11100/</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://87.106.71.142:11100</stream_server>
+<stream_server>icyx://91.121.77.64:11100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.GOLDIES - WWW.RAUTEMUSIK.FM - 24H OLDIES CLASSIC ROCK 60S 70S 80S POP AND MORE!</stream_title>
 <stream_genre>60S 70S 80S OLDIES POP</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Goldies</title>
-<annotation>60s, 70s, 80s, Oldies</annotation>
 </item>
 <item>
 <location>http://harder-aacp.rautemusik.fm/listen.pls</location>
+<title>HardeR</title>
+<annotation>Hardstyle, Hardcore, Techno, Schranz</annotation>
 <stream_url>http://87.106.71.142:15100/</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://87.106.71.142:15100</stream_server>
+<stream_server>icyx://87.106.71.142:15100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.HARDER - WWW.RAUTEMUSIK.FM - 24 MIXED HARDSTYLE HARDCORE JUMPSTYLE SCHRANZ GABBA AND MORE!</stream_title>
 <stream_genre>Techno Electronic Dance</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>HardeR</title>
-<annotation>Hardstyle, Hardcore, Techno, Schranz</annotation>
 </item>
 <item>
 <location>http://oriental-aacp.rautemusik.fm/listen.pls</location>
+<title>Oriental</title>
+<annotation>Arabische Musik</annotation>
 <stream_url>http://91.121.88.186:17100/</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://91.121.88.186:17100</stream_server>
+<stream_server>icyx://91.121.88.186:17100</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>#MUSIK.ORIENTAL - WWW.RAUTEMUSIK.FM - 24H ORIENTAL AND ARABIC POP MUSIC AND MORE!</stream_title>
-<stream_genre>Ariabic International R&amp;B</stream_genre>
+<stream_genre>Ariabic International R&B</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Oriental</title>
-<annotation>Arabische Musik</annotation>
 </item>
 <item>
 <location>http://bcb-aacp.rautemusik.fm/listen.pls</location>
-<stream_url>http://91.121.77.64:16100/</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>shoutcast</stream_soft>
-<stream_server>http://91.121.77.64:16100</stream_server>
-<stream_type>audio/aacp</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>#MUSIK.BIGCITYBEATS - BY BIGCITYBEATS.DE &amp; RAUTEMUSIK.FM - 24H MIXED ELECTRONIC AND HOUSE MUSIC!</stream_title>
-<stream_genre>Electronic House Dance</stream_genre>
-<stream_bitrate>48</stream_bitrate>
 <title>BigCityBeats</title>
 <annotation>Electronic, House, Dance</annotation>
+<stream_url>http://91.121.88.186:16100/</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://91.121.88.186:16100</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>#MUSIK.BIGCITYBEATS - BY BIGCITYBEATS.DE & RAUTEMUSIK.FM - 24H MIXED ELECTRONIC AND HOUSE MUSIC!</stream_title>
+<stream_genre>Electronic House Dance</stream_genre>
+<stream_bitrate>48</stream_bitrate>
 </item>
 </channel>
 

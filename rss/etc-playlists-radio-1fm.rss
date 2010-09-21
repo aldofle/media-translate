@@ -401,471 +401,471 @@
 <title>1.FM</title>
 <item>
 <location>http://www.1.fm/TuneIn/SC/70s64k/Listen.aspx</location>
+<title>Absolute 70's Pop</title>
 <stream_url>http://tai.egihosting.com:80/70s-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.185:80</stream_server>
+<stream_server>icyx://72.13.80.185:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - 70s</stream_title>
 <stream_genre>70s</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Absolute 70's Pop</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/90s64k/Listen.aspx</location>
+<title>Absolute 90's</title>
 <stream_url>http://tai.egihosting.com:80/90s-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.185:80</stream_server>
+<stream_server>icyx://72.13.80.185:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - The 90's</stream_title>
 <stream_genre>90s pop dance rock</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Absolute 90's</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/blues64k/Listen.aspx</location>
+<title>Absolute Blues Hits</title>
 <stream_url>http://tai-02.egihosting.com/blues-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.186:80</stream_server>
+<stream_server>icyx://72.13.80.186:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Blues</stream_title>
 <stream_genre>blues</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Absolute Blues Hits</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/reggae64k/Listen.aspx</location>
+<title>Absolute ReggaeTrade</title>
 <stream_url>http://tai-02.egihosting.com/reggae-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.186:80</stream_server>
+<stream_server>icyx://72.13.80.186:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - ReggaeTrade</stream_title>
 <stream_genre>Reggae World</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Absolute ReggaeTrade</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/trance64k/Listen.aspx</location>
+<title>Absolute Trance (Euro)</title>
 <stream_url>http://tai-02.egihosting.com:80/trance-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.186:80</stream_server>
+<stream_server>icyx://72.13.80.186:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Trance</stream_title>
 <stream_genre>Trance progressive</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Absolute Trance (Euro)</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/acountry64k/Listen.aspx</location>
+<title>Absolutely Country Hits</title>
 <stream_url>http://tai.egihosting.com:80/countryhits-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.185:80</stream_server>
+<stream_server>icyx://72.13.80.185:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Absolute Country Hits</stream_title>
 <stream_genre>Country</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Absolutely Country Hits</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/acpl64k/Listen.aspx</location>
+<title>Acappella</title>
 <stream_url>http://tai-03.egihosting.com/acappella-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Acappella</stream_title>
 <stream_genre>gospel</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Acappella</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/ajazz64k/Listen.aspx</location>
+<title>Adore Vocal Jazz</title>
 <stream_url>http://tai-03.egihosting.com/adorejazz-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Adore Jazz</stream_title>
 <stream_genre>Vocal Jazz Standards</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Adore Vocal Jazz</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/uac64k/Listen.aspx</location>
+<title>Adult Urban Hits Choice</title>
 <stream_url>http://tai-02.egihosting.com/urbanad-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.186:80</stream_server>
+<stream_server>icyx://72.13.80.186:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Urban Adult Choice</stream_title>
 <stream_genre>r&amp;B</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Adult Urban Hits Choice</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/electronica64k/Listen.aspx</location>
+<title>Afterbeat Electronica</title>
 <stream_url>http://tai.egihosting.com:80/afterbeat-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.185:80</stream_server>
+<stream_server>icyx://72.13.80.185:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Afterbeat Electronica</stream_title>
 <stream_genre>lounge groove electronica</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Afterbeat Electronica</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/80s64k/Listen.aspx</location>
+<title>All Euro 80's</title>
 <stream_url>http://tai.egihosting.com:80/euro80s-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.185:80</stream_server>
+<stream_server>icyx://72.13.80.185:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - 80s Channel</stream_title>
 <stream_genre>80s dance pop</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>All Euro 80's</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/fa64k/Listen.aspx</location>
+<title>All Flashback Alternatives</title>
 <stream_url>http://tai-03.egihosting.com/flashalt-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Flashback Alternatives - Your Home For 80s New-Wave &amp; Classic Alternative Music!</stream_title>
 <stream_genre>80s, New Wave, Classic Alternative</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>All Flashback Alternatives</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/baroque64k/Listen.aspx</location>
+<title>All Otto Baroque Musick</title>
 <stream_url>http://tai-02.egihosting.com:80/obaroque-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.186:80</stream_server>
+<stream_server>icyx://72.13.80.186:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Otto's Baroque Musick</stream_title>
 <stream_genre>classical</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>All Otto Baroque Musick</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/classical64k/Listen.aspx</location>
+<title>All Otto Classical Music</title>
 <stream_url>http://tai-03.egihosting.com/oclassical-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Otto's Classical Musick</stream_title>
 <stream_genre>classical</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>All Otto Classical Music</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/opera64k/Listen.aspx</location>
+<title>All Otto Opera Music</title>
 <stream_url>http://tai-03.egihosting.com/oopera-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Otto's Opera House</stream_title>
 <stream_genre>classical</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>All Otto Opera Music</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/gospel64k/Listen.aspx</location>
+<title>All Times &amp; Urban Gospel</title>
 <stream_url>http://tai-03.egihosting.com/urbangos-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - All Times And Urban Gospel</stream_title>
 <stream_genre>gospel</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>All Times &amp; Urban Gospel</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/x64k/Listen.aspx</location>
+<title>Alternative Rock X Hits</title>
 <stream_url>http://tai.egihosting.com:80/x-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.185:80</stream_server>
+<stream_server>icyx://72.13.80.185:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Channel X</stream_title>
 <stream_genre>alternative</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Alternative Rock X Hits</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/christmas64k/Listen.aspx</location>
+<title>Always-Christmas</title>
 <stream_url>http://tai.egihosting.com:80/christmas-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.185:80</stream_server>
+<stream_server>icyx://72.13.80.185:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Always Christmas</stream_title>
 <stream_genre>christmas</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Always-Christmas</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/60s64k/Listen.aspx</location>
+<title>Back To The 50's &amp; 60's</title>
 <stream_url>http://tai-03.egihosting.com/50s60s-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - 50s and 60s</stream_title>
 <stream_genre>50s 60s</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Back To The 50's &amp; 60's</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/back280s64k/Listen.aspx</location>
+<title>Back To The 80s (US)</title>
 <stream_url>http://tai-03.egihosting.com/back280s-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Back To The 80s</stream_title>
 <stream_genre>80s pop rock top40</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Back To The 80s (US)</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/sjazz64k/Listen.aspx</location>
+<title>Bay Smooth Jazz</title>
 <stream_url>http://tai-02.egihosting.com/smoothjazz-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.186:80</stream_server>
+<stream_server>icyx://72.13.80.186:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Bay Smooth Jazz</stream_title>
 <stream_genre>jazz</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Bay Smooth Jazz</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/bb64k/Listen.aspx</location>
+<title>Bombay Beats India</title>
 <stream_url>http://tai-02.egihosting.com:80/bombayb-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.186:80</stream_server>
+<stream_server>icyx://72.13.80.186:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Bombay Beats</stream_title>
 <stream_genre>world</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Bombay Beats India</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/onelive64k/Listen.aspx</location>
+<title>Channel One Live</title>
 <stream_url>http://tai-03.egihosting.com/onelive-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - One-Live</stream_title>
 <stream_genre>Various</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Channel One Live</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/tcl64k/Listen.aspx</location>
+<title>Chillout Lounge</title>
 <stream_url>http://tai.egihosting.com:80/chillout-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.185:80</stream_server>
+<stream_server>icyx://72.13.80.185:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - The Chillout Lounge</stream_title>
 <stream_genre>Ambient Chill out</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Chillout Lounge</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/cahr64k/Listen.aspx</location>
+<title>Chinamerica Hit Radio</title>
 <stream_url>http://sc7.1.fm:26814</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://64.62.252.132:26814</stream_server>
+<stream_server>icyx://64.62.252.132:26814</stream_server>
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>Chinamerica Hit Radio</stream_title>
 <stream_genre>Chinese Pop Asian</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Chinamerica Hit Radio</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/ccountry64k/Listen.aspx</location>
+<title>Classic Country</title>
 <stream_url>http://tai-03.egihosting.com/clascountry-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Classic Country</stream_title>
 <stream_genre>Country</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Classic Country</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/crock64k/Listen.aspx</location>
+<title>Classic Rock Replay</title>
 <stream_url>http://tai-03.egihosting.com/crr-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Classic Rock Replay</stream_title>
 <stream_genre>Rock</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Classic Rock Replay</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/club164k/Listen.aspx</location>
+<title>Club 1 Radio</title>
 <stream_url>http://tai.egihosting.com:80/club1-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.185:80</stream_server>
+<stream_server>icyx://72.13.80.185:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Club!</stream_title>
 <stream_genre>house techno electro dance</stream_genre>
 <stream_bitrate>48</stream_bitrate>
-<title>Club 1 Radio</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/country64k/Listen.aspx</location>
+<title>Country One</title>
 <stream_url>http://tai-02.egihosting.com/country-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.186:80</stream_server>
+<stream_server>icyx://72.13.80.186:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Country</stream_title>
 <stream_genre>country</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Country One</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/disco64k/Listen.aspx</location>
+<title>Disco Ball 70's-80's</title>
 <stream_url>http://tai-03.egihosting.com/disco-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Disco Ball</stream_title>
 <stream_genre>Disco 70s</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Disco Ball 70's-80's</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/ftv64k/Listen.aspx</location>
+<title>FTV Hit Radio</title>
 <stream_url>http://tai-03.egihosting.com/ftv-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - FTV Radio</stream_title>
 <stream_genre>Dance House Pop</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>FTV Hit Radio</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/gayway64k/Listen.aspx</location>
+<title>GayWay Radio</title>
 <stream_url>http://tai-03.egihosting.com/gayway-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM-GayWay Radio</stream_title>
 <stream_genre>Dance House pop</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>GayWay Radio</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/hv64k/Listen.aspx</location>
+<title>High Voltage</title>
 <stream_url>http://tai-02.egihosting.com:80/highvolt-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.80.186:80</stream_server>
+<stream_server>icyx://72.13.80.186:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - High Voltage</stream_title>
 <stream_genre>Rock</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>High Voltage</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/jamz64k/Listen.aspx</location>
+<title>Jamz Hip Hop R&amp;B Hits</title>
 <stream_url>http://tai-03.egihosting.com/jamz-64k-aac</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>icecast</stream_soft>
-<stream_server>http://72.13.91.71:80</stream_server>
+<stream_server>icyx://72.13.91.71:80</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - Jamz</stream_title>
 <stream_genre>Hip-Hop</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Jamz Hip Hop R&amp;B Hits</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/lux64k/Listen.aspx</location>
+<title>Luxuria Music</title>
 <stream_url>http://sc18.1.fm:5088</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://64.71.144.178:5088</stream_server>
+<stream_server>icyx://64.71.144.178:5088</stream_server>
 <stream_type>audio/aacp</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>1.FM - LuxuriaMusic - Exotica, Lounge, Space Age Bachelor Pad, Bossa, Bollywood, Bubblegum,Soft-Psych, Go-Go, Latin Jazz, Sophisticated Rock and Surf music.</stream_title>
 <stream_genre>Oldies</stream_genre>
 <stream_bitrate>64</stream_bitrate>
-<title>Luxuria Music</title>
 </item>
 <item>
 <location>http://www.1.fm/TuneIn/SC/tx64k/Listen.aspx</location>
+<title>Talk Radio X</title>
 <stream_url>http://sc5.1.fm:9400</stream_url>
 <stream_class>audio</stream_class>
 <stream_soft>shoutcast</stream_soft>
-<stream_server>http://64.62.253.223:9400</stream_server>
+<stream_server>icyx://64.62.253.223:9400</stream_server>
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>TalkRadioX</stream_title>
 <stream_genre>Talk</stream_genre>
 <stream_bitrate>56</stream_bitrate>
-<title>Talk Radio X</title>
 </item>
 </channel>
 

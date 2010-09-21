@@ -207,6 +207,15 @@
          <image>rss/image/sampo/unost.png</image>
          <location>http://radio.sampo.ru/unost.mp3</location>
       
+<meta rel="stream_url">http://radio.sampo.ru:8000/unost.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">ЮFM ТОМСК УКВ 68.0 MHz</meta>
+<meta rel="stream_genre">live</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
       <track>
          <annotation>Автолюбителям, а также любителям хорошей музыки «Первое автомобильное радио» предлагает слушать музыку, которую узнают с первых тактов и напевают, развлекательные программы с участием суперзвезд, актуальную, интересную, оперативную информацию, увлекательные, динамичные игры в эфире.</annotation>
