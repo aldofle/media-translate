@@ -408,8 +408,8 @@
 <stream_server>icyx://216.155.137.148:8068</stream_server>
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
-<stream_title>181.FM - Old School Hip Hop & RNB</stream_title>
-<stream_genre>Hip-Hop Oldies R&B</stream_genre>
+<stream_title>181.FM - Old School Hip Hop &amp; RNB</stream_title>
+<stream_genre>Hip-Hop Oldies R&amp;B</stream_genre>
 <stream_bitrate>128</stream_bitrate>
 </item>
 <item>
@@ -642,8 +642,8 @@
 <stream_server>icyx://216.155.137.148:8068</stream_server>
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
-<stream_title>181.FM - Old School Hip Hop & RNB</stream_title>
-<stream_genre>Hip-Hop Oldies R&B</stream_genre>
+<stream_title>181.FM - Old School Hip Hop &amp; RNB</stream_title>
+<stream_genre>Hip-Hop Oldies R&amp;B</stream_genre>
 <stream_bitrate>128</stream_bitrate>
 </item>
 <item>
@@ -925,7 +925,7 @@
 <stream_server>icyx://216.155.137.148:8054</stream_server>
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
-<stream_title>181.FM - The BEAT * #1 For HipHop and R&B</stream_title>
+<stream_title>181.FM - The BEAT * #1 For HipHop and R&amp;B</stream_title>
 <stream_genre>hip hop urban rap rnb</stream_genre>
 <stream_bitrate>128</stream_bitrate>
 </item>
@@ -938,8 +938,8 @@
 <stream_server>icyx://216.155.137.148:8068</stream_server>
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
-<stream_title>181.FM - Old School Hip Hop & RNB</stream_title>
-<stream_genre>Hip-Hop Oldies R&B</stream_genre>
+<stream_title>181.FM - Old School Hip Hop &amp; RNB</stream_title>
+<stream_genre>Hip-Hop Oldies R&amp;B</stream_genre>
 <stream_bitrate>128</stream_bitrate>
 </item>
 <item>
@@ -951,8 +951,8 @@
 <stream_server>icyx://216.155.137.150:8022</stream_server>
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
-<stream_title>181.fm - True R&B</stream_title>
-<stream_genre>R&B Urban HipHop</stream_genre>
+<stream_title>181.fm - True R&amp;B</stream_title>
+<stream_genre>R&amp;B Urban HipHop</stream_genre>
 <stream_bitrate>128</stream_bitrate>
 </item>
 <item>
@@ -978,7 +978,7 @@
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
 <stream_title>181.FM - Jammin 181</stream_title>
-<stream_genre>R&B Disco Funk</stream_genre>
+<stream_genre>R&amp;B Disco Funk</stream_genre>
 <stream_bitrate>128</stream_bitrate>
 </item>
 <item>
@@ -1115,8 +1115,8 @@
 <stream_server>icyx://216.155.137.148:8088</stream_server>
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
-<stream_title>181.FM - Christmas R&B</stream_title>
-<stream_genre>Christmas R&B Soul</stream_genre>
+<stream_title>181.FM - Christmas R&amp;B</stream_title>
+<stream_genre>Christmas R&amp;B Soul</stream_genre>
 <stream_bitrate>128</stream_bitrate>
 </item>
 <item>

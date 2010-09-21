@@ -536,7 +536,7 @@ columnCount=5
 <stream_server>icyx://74.63.47.82:8384</stream_server>
 <stream_type>audio/mpeg</stream_type>
 <stream_protocol>http</stream_protocol>
-<stream_title>Beat Blender: A late night blend of deep-house & downtempo chill. [SomaFM]</stream_title>
+<stream_title>Beat Blender: A late night blend of deep-house &amp; downtempo chill. [SomaFM]</stream_title>
 <stream_genre>Downtempo House Techno</stream_genre>
 <stream_bitrate>128</stream_bitrate>
 </item>

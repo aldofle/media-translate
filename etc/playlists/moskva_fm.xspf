@@ -888,7 +888,7 @@
 <meta rel="stream_bitrate">128</meta>
 </track>
     <track xmlns="">
-      <location>http://fms05.rambler.ru:80/love128.mp3</location>
+      <location>http://streamall.rambler.ru:80/love128.mp3</location>
       <title>Love Radio</title>
       <annotation>Упругая поп-музыка!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/106_6.gif</image>
@@ -897,10 +897,10 @@
       <meta rel="fm">106.6</meta>
       <meta rel="name">106_6</meta>
     
-<meta rel="stream_url">http://fms05.rambler.ru:80/love128.mp3</meta>
+<meta rel="stream_url">http://streamall.rambler.ru:80/love128.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://81.19.80.168:80</meta>
+<meta rel="stream_server">icyx://81.19.80.167:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
