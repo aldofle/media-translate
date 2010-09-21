@@ -1,6 +1,6 @@
 #summary Media Stream Renderer
 
-= Назначение =
+= Media Stream Renderer =
 
 RSS/CGI-модуль предназначен для управления проигрыванием медиапотоков на плеере с локального компьютера.
 
