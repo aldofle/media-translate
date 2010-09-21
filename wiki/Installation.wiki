@@ -1,0 +1,67 @@
+#summary Установка и настройка
+
+= Установка =
+
+  # Загружаем и распаковываем инсталляционный архив в корень файловой системы на плеере:
+{{{
+cd /
+mount -o remount,rw /
+wget -O /tmp/mt.tar.gz2 http://...
+tar -xjf /tmp/mt.tar.gz2
+reboot
+}}}
+  # Добавляем дополнительный пункт в меню с интернет-сервисами:
+{{{
+<item>
+  <title>Дополнительные сервисы</title>
+  <link>rss_file://./rss/menuEx.rss</link>
+  <media:thumbnail url="rss/image/menuEx.png" width="120" height="90" />
+  <mediaDisplay name=photoView />
+</item>
+}}}
+
+Дополнительно требуется установить [http://curl.haxx.se/ CURL] для работы с некоторыми online-сервисами ([http://ivi.ru IVI.ru]).
+
+= Настройка =
+
+  * Основной конфигурационный файл:
+*/usr/local/etc/translate/etc/translate.conf*
+{{{
+BASEPATH=/usr/local/etc/translate
+export AWKPATH=$BASEPATH/lib:.
+
+WGET=/usr/bin/wget
+CURL=/usr/local/bin/curl
+
+STARTPOINT=$BASEPATH/etc/index.m3u
+XSPFSCAN=$BASEPATH/etc/xspf.scan
+
+MAINMENU=$BASEPATH/etc/menu/main.xspf
+
+CACHEPATH=/tmp/cached
+
+YOUTUBE_HD=yes
+VIMEO_HD=yes
+IVI_HD=yes
+NET_BANDWIDTH=
+
+UDPXY_URL=http://127.0.0.1:8080/
+}}}
+  * Индексный файл для XSPF Browser:
+
+  STARTPOINT
+
+*/usr/local/etc/translate/etc/index.m3u*
+{{{
+#EXTM3U
+#EXTINF:-1,Плеер HDD
+/var/hdd/volumes/
+#EXTINF:-1,Плеер USB
+/var/ramfs/volumes/
+#EXTINF:-1,Плеер Playlists
+/usr/local/etc/playlist/
+#EXTINF:-1,Плеер FTP
+ftp://127.0.0.1/
+}}}
+
+_Замечание._ Все пути к директориям должны заканчиваться слешем '/'.
