@@ -425,12 +425,26 @@ columnCount=5
 <title>DFM Club</title>
 <annotation>Западная клубная музыка</annotation>
 <image>rss/image/stationru/dfm_club.jpg</image>
+<stream_url>mmsh://broadcast03.station.ru/station01</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>station.ru</stream_soft>
+<stream_server>http://station.ru/GetSongJS.aspx?id=station01</stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+<stream_title>DFM Club / station.ru</stream_title>
 </item>
 <item>
 <location>http://station.ru/RadioStation.aspx?id=1731</location>
 <title>Monte-Carlo Nights</title>
 <annotation>Lounge, downtempo и другая мягкая электронная музыка, которая не мешает отдыхать и работать.</annotation>
 <image>rss/image/stationru/mc_nights.jpg</image>
+<stream_url>mmsh://broadcast03.station.ru/station08</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>station.ru</stream_soft>
+<stream_server>http://station.ru/GetSongJS.aspx?id=station08</stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+<stream_title>Monte-Carlo Nights / station.ru</stream_title>
 </item>
 <item>
 <location>http://station.ru/RadioStation.aspx?id=1732</location>
@@ -619,6 +633,13 @@ columnCount=5
 <title>DFM Fresh</title>
 <annotation>Танцевальная музыка в стиле latino и pop</annotation>
 <image>rss/image/stationru/dfm_fresh.gif</image>
+<stream_url>mmsh://broadcast03.station.ru/station02</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>station.ru</stream_soft>
+<stream_server>http://station.ru/GetSongJS.aspx?id=station02</stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+<stream_title>DFM Fresh / station.ru</stream_title>
 </item>
 <item>
 <location>http://station.ru/RadioStation.aspx?id=1997</location>
