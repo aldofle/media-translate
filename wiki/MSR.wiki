@@ -1,5 +1,4 @@
 #summary Media Stream Renderer
-#sidebar TableOfContents
 
 = Назначение =
 
