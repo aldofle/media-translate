@@ -1,5 +1,4 @@
 #summary Краткое описание
-#sidebar TableOfContents
 
 = Назначение =
 
