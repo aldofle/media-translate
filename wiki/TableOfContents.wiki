@@ -3,6 +3,9 @@
 = RSS Ex 2.0 =
 
   * [Introduction Краткое описание]
-    * [MediaStreamRenderer Media Stream Renderer]
-    * [XSPFBrowser XSPF Browser]
   * [Installation Установка и настройка]
+  * Описание RSS-модулей
+    * [ModuleMediaStreamRenderer Media Stream Renderer]
+    * XSPF Browser
+    * [ModuleYouTube YouTube]
+  * Описание GET интерфейса CGI модуля translate
