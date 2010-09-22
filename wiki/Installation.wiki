@@ -3,15 +3,42 @@
 
 = Установка =
 
-  # Загружаем и распаковываем инсталляционный архив в корень файловой системы на плеере:
+_Замечание._ Перед модификацией корневой файловой системы на плеере требуется разрешить запись:
 {{{
-cd /
 mount -o remount,rw /
-wget -O /tmp/mt.tar.gz2 http://...
-tar -xjf /tmp/mt.tar.gz2
-reboot
 }}}
-  # Добавляем дополнительный пункт в меню с интернет-сервисами:
+
+  * Пакет устанавливается в директорию */usr/local/etc/translate*.
+{{{
+mkdir -p /usr/local/etc/translate
+cd /usr/local/etc/translate
+}}}
+
+  Или если объем флеш памяти на плеере не позволяет этого сделать, то можно создать символическую ссылку с именем */usr/local/etc/translate* на реальное расположение файлов:
+{{{
+mkdir -p /home/translate
+cd /home/translate
+ln -s /usr/local/etc/translate /home/translate
+}}}
+
+  * Загружаем и распаковываем текущую версию пакета:
+{{{
+wget -O /tmp/mt.tar.gz2 http://media-translate.googlecode.com/files/rss_ex_2.0.1.tar.bz2
+tar -xjf /tmp/mt.tar.gz2
+}}}
+
+  * Для работы требуется наличие символической ссылки /usr/local/bin/rss, указывающей на /usr/local/etc/translate/rss:
+{{{
+ln -s /usr/local/bin/rss ../etc/translate/rss
+}}}
+
+  * Копируем в домашнюю директорию http-сервера на плеере содержимое директории */usr/local/etc/translate/www*:
+{{{
+cp -rf /usr/local/etc/translate/www /tmp_orig
+cp -rf /usr/local/etc/translate/www /tmp
+}}}
+
+  * В завершении добавляем дополнительный пункт в меню с интернет-сервисами:
 {{{
 <item>
   <title>Дополнительные сервисы</title>
@@ -21,7 +48,7 @@ reboot
 </item>
 }}}
 
-Дополнительно требуется установить [http://curl.haxx.se/ CURL] для работы с некоторыми online-сервисами ([http://ivi.ru IVI.ru]).
+_Замечание._ Для работы с некоторыми online-сервисами ([http://ivi.ru IVI.ru]) дополнительно требуется установить [http://curl.haxx.se/ CURL].
 
 = Настройка =
 
@@ -36,7 +63,6 @@ CURL=/usr/local/bin/curl
 
 STARTPOINT=$BASEPATH/etc/index.m3u
 XSPFSCAN=$BASEPATH/etc/xspf.scan
-
 MAINMENU=$BASEPATH/etc/menu/main.xspf
 
 CACHEPATH=/tmp/cached
@@ -48,9 +74,7 @@ NET_BANDWIDTH=
 
 UDPXY_URL=http://127.0.0.1:8080/
 }}}
-  * Индексный файл для XSPF Browser:
-
-  STARTPOINT
+  * Стартовый файл для XSPF Browser:
 
 */usr/local/etc/translate/etc/index.m3u*
 {{{
