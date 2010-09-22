@@ -2,7 +2,7 @@
 <playlist xmlns="http://xspf.org/ns/0/">
   <title>Moskva.FM</title>
   <trackList>
-    <track xmlns="">
+    <track>
       <location>mms://live.rfn.ru/radiorussia</location>
       <title>Радио России</title>
       <annotation>Государственная радиовещательная компания «Радио России» – главная государственная радиостанция страны</annotation>
@@ -19,7 +19,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://stream03.rambler.ru/svoboda</location>
       <title>Радио Свобода</title>
       <annotation>В эфире с 6:00 до 24:00</annotation>
@@ -36,7 +36,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mms://live.rfn.ru/unost/stream.asf</location>
       <title>ЮFM</title>
       <annotation>Первое молодежное радио</annotation>
@@ -53,7 +53,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://streamall.rambler.ru:80/ultra128.mp3</location>
       <title>Ultra</title>
       <annotation>ULTRA - территория лучшей зарубежной альтернативной музыки!</annotation>
@@ -71,7 +71,7 @@
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://m1.bfm.ru:8000/fm64</location>
       <title>Бизнес FM</title>
       <annotation>Первое деловое радио</annotation>
@@ -90,7 +90,7 @@
 <meta rel="stream_genre">radio</meta>
 <meta rel="stream_bitrate">64</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mms://87.242.72.62/cityfm</location>
       <title>Сити-FM</title>
       <annotation>Московское информационное радио</annotation>
@@ -107,7 +107,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">rtsp</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://webcast1.emg.fm:55655/retro128.mp3</location>
       <title>Ретро FM</title>
       <annotation>Подпевай!</annotation>
@@ -127,7 +127,7 @@
 <meta rel="stream_genre">Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://stream01.rambler.ru:80/umorfm128</location>
       <title>Юмор FM</title>
       <annotation>Радуйся жизни!</annotation>
@@ -144,7 +144,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://streamall.rambler.ru:/jazz128.mp3</location>
       <title>Радио Jazz</title>
       <annotation>Самое стильное радио в городе</annotation>
@@ -162,7 +162,7 @@
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://w01-cn01.akadostream.ru:8108/megapolisfm128.mp3</location>
       <title>Мегаполис FM</title>
       <annotation>Радио для современных, активных и обеспеченных людей.</annotation>
@@ -181,7 +181,7 @@
 <meta rel="stream_genre">DANCE</meta>
 <meta rel="stream_bitrate">200</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://webcast2.emg.fm:55655/keks128.mp3</location>
       <title>Кекс FM</title>
       <annotation>Играем, что хотим!</annotation>
@@ -201,7 +201,7 @@
 <meta rel="stream_genre">Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://stream01.rambler.ru:80/autoradio128</location>
       <title>Авторадио</title>
       <annotation>Первое автомобильное радио</annotation>
@@ -218,7 +218,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mms://87.242.72.62/relaxfm</location>
       <title>Relax FM</title>
       <annotation>Спокойная волна</annotation>
@@ -235,7 +235,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">rtsp</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://streamall.rambler.ru:80/echo128.mp3</location>
       <title>Эхо Москвы</title>
       <annotation>Слушайте радио. Остальное — видимость.</annotation>
@@ -253,7 +253,7 @@
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://live.rfn.ru/rcult</location>
       <title>Радио Культура</title>
       <annotation>Государственная телевизионная и радиовещательная компания</annotation>
@@ -270,7 +270,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://govoritmoskva.ru:8000/gm-fm-128</location>
       <title>Говорит Москва</title>
       <annotation>Радио большого города</annotation>
@@ -289,7 +289,7 @@
 <meta rel="stream_genre">various</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://stream.radiodacha.ru:8000/radiodacha_high.mp3</location>
       <title>Радио Дача</title>
       <annotation>Удачное радио!</annotation>
@@ -308,7 +308,7 @@
 <meta rel="stream_genre">Various</meta>
 <meta rel="stream_bitrate">96</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://online.carnivalfm.ru:1234</location>
       <title>Радио Карнавал</title>
       <annotation>Мировые хиты</annotation>
@@ -325,7 +325,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://www.sportfm.ru:8000/sportfm-128</location>
       <title>Радио Спорт</title>
       <annotation>Главное спортивное радио страны</annotation>
@@ -344,7 +344,7 @@
 <meta rel="stream_genre">various</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://stream01.rambler.ru:80/komersant</location>
       <title>КоммерсантъFM</title>
       <annotation>Все, что происходит сейчас</annotation>
@@ -361,7 +361,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location></location>
       <title>Newtone FM</title>
       <annotation>Прямо в голову! (закрыто 9 марта 2010)</annotation>
@@ -372,7 +372,7 @@
       <meta rel="name">93_61</meta>
     
     </track>
-    <track xmlns="">
+    <track>
       <location></location>
       <title>Пионер FM</title>
       <annotation>Не очень взрослое радио</annotation>
@@ -383,7 +383,7 @@
       <meta rel="name">94_0</meta>
     
     </track>
-    <track xmlns="">
+    <track>
       <location>http://station.ru/RadioStation.aspx?id=1745</location>
       <title>Добрые песни</title>
       <annotation>Максимально позитивные эмоции</annotation>
@@ -400,7 +400,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location></location>
       <title>Моя Семья</title>
       <annotation>Для тех, кого любим!</annotation>
@@ -411,7 +411,7 @@
       <meta rel="name">94_8</meta>
     
     </track>
-    <track xmlns="">
+    <track>
       <location></location>
       <title>ROCK FM</title>
       <annotation>Больше музыки, больше рока!</annotation>
@@ -422,7 +422,7 @@
       <meta rel="name">95_2</meta>
     
     </track>
-    <track xmlns="">
+    <track>
       <location>http://89.208.99.16:8088/zvezda_128</location>
       <title>Радио Звезда</title>
       <annotation>Телерадиокомпания Вооруженных Сил Российской Федерации</annotation>
@@ -441,7 +441,7 @@
 <meta rel="stream_genre">Live Air</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://www.dorognoe.ru/dor.m3u</location>
       <title>Дорожное радио</title>
       <annotation>Вместе в пути!</annotation>
@@ -459,7 +459,7 @@
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">64</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location></location>
       <title>Вояж FM</title>
       <annotation>Золотые 90-е (закрыто в июле 2010)</annotation>
@@ -470,7 +470,7 @@
       <meta rel="name">96_01</meta>
     
     </track>
-    <track xmlns="">
+    <track>
       <location>http://w01-cn01.akadostream.ru:8108/xfm96.mp3.m3u</location>
       <title>X-FM</title>
       <annotation>Сенсация в прямом эфире</annotation>
@@ -489,7 +489,7 @@
 <meta rel="stream_genre">Various</meta>
 <meta rel="stream_bitrate">96</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://217.29.51.162:8000/radio-64k.aac</location>
       <title>Детское радио</title>
       <annotation>Спасибо Газпрому за наше счастливое детство!</annotation>
@@ -508,7 +508,7 @@
 <meta rel="stream_genre">For kids</meta>
 <meta rel="stream_bitrate">64</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://radio.kp.ru:8000/stream</location>
       <title>Комсомольская правда</title>
       <annotation>Мы делаем мир желтее!</annotation>
@@ -527,7 +527,7 @@
 <meta rel="stream_genre">Russian</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://live.rfn.ru/vesti_fm</location>
       <title>Вести FM</title>
       <annotation>Государственная радиовещательная компания</annotation>
@@ -544,7 +544,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://stream03.rambler.ru/kinofm</location>
       <title>Кино FM</title>
       <annotation>98 FM - 98 хитов</annotation>
@@ -561,7 +561,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://webcast2.emg.fm:55655/fresh128.mp3</location>
       <title>Свежее радио</title>
       <annotation>100% МУЗЫКА – 100% СВЕЖЕЕ!</annotation>
@@ -581,7 +581,7 @@
 <meta rel="stream_genre">Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://mms.online.ru/v4_1_22</location>
       <title>Радио Алла</title>
       <annotation>Все звезды на "Радио Алла"!</annotation>
@@ -598,7 +598,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://live.rfn.ru/orfey/</location>
       <title>Радио Орфей</title>
       <annotation>Классическая музыка</annotation>
@@ -615,7 +615,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://radio.solo.by:8001/finam</location>
       <title>Финам FM</title>
       <annotation>Живи по своим правилам!</annotation>
@@ -634,7 +634,7 @@
 <meta rel="stream_genre">CLASSIC ROCK</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://w01-cn01.akadostream.ru:8000/silverrain128.mp3</location>
       <title>Серебряный дождь</title>
       <annotation>Всегда есть, что сказать</annotation>
@@ -652,7 +652,7 @@
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">various</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mms://wma.bestfm.ru:80/Best128</location>
       <title>Best FM</title>
       <annotation>Каждая песня — лучшая</annotation>
@@ -663,7 +663,7 @@
       <meta rel="name">100_5</meta>
     
 </track>
-    <track xmlns="">
+    <track>
       <location>http://s05.radio-tochka.com:6045/listen.pls</location>
       <title>Радио Classic</title>
       <annotation>Красивая музыка красивых людей</annotation>
@@ -674,7 +674,7 @@
       <meta rel="name">100_9</meta>
     
 </track>
-    <track xmlns="">
+    <track>
       <location>http://station.ru/RadioStation.aspx?id=1720</location>
       <title>DFM</title>
       <annotation>Everybody dance now!</annotation>
@@ -691,7 +691,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://streamall.rambler.ru:80/nashe128.mp3</location>
       <title>Наше Радио</title>
       <annotation>Наша музыка</annotation>
@@ -709,7 +709,7 @@
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://station.ru/RadioStation.aspx?id=1721</location>
       <title>Монте-Карло</title>
       <annotation>Радио для искушенных</annotation>
@@ -726,7 +726,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://stream03.rambler.ru/radiopopsa</location>
       <title>Первое Популярное</title>
       <annotation>Лучшее в настоящем!</annotation>
@@ -743,7 +743,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://w02-cn01.akadostream.ru:8108/shanson128.mp3</location>
       <title>Шансон</title>
       <annotation>Это просто песня</annotation>
@@ -762,7 +762,7 @@
 <meta rel="stream_genre">Chanson</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://stream03.rambler.ru/radiomayak</location>
       <title>Радио Маяк</title>
       <annotation>Жизнь продолжается!</annotation>
@@ -779,7 +779,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://station.ru/RadioStation.aspx?id=1722</location>
       <title>Maximum</title>
       <annotation>Если спросят, что слушаешь - ответь MAXIMUM!</annotation>
@@ -796,7 +796,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://89.20.132.26/v1_1_128</location>
       <title>NRJ</title>
       <annotation>Energy — это радио</annotation>
@@ -813,7 +813,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://webcast.emg.fm:55655/radiosept128.mp3</location>
       <title>Радио 7</title>
       <annotation>Радио на семи холмах</annotation>
@@ -833,7 +833,7 @@
 <meta rel="stream_genre">Rock</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>mmsh://stream03.rambler.ru/radionext</location>
       <title>NEXT FM</title>
       <annotation>Время новых героев</annotation>
@@ -850,7 +850,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://station.ru/RadioStation.aspx?id=1723</location>
       <title>Русское Радио</title>
       <annotation>Музыка для души</annotation>
@@ -867,7 +867,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://webcast.emg.fm:55655/europaplus128.mp3</location>
       <title>Европа Плюс</title>
       <annotation>Top Non Stop</annotation>
@@ -887,7 +887,7 @@
 <meta rel="stream_genre">Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://streamall.rambler.ru:80/love128.mp3</location>
       <title>Love Radio</title>
       <annotation>Упругая поп-музыка!</annotation>
@@ -905,7 +905,7 @@
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://station.ru/RadioStation.aspx?id=1724</location>
       <title>Русская Служба Новостей</title>
       <annotation>Мы делаем новости</annotation>
@@ -922,7 +922,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://station.ru/RadioStation.aspx?id=1725</location>
       <title>Хит FM</title>
       <annotation>Музыка, с которой легко</annotation>
@@ -939,7 +939,7 @@
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
-    <track xmlns="">
+    <track>
       <location>http://83.222.222.88:8080/</location>
       <title>Милицейская волна</title>
       <annotation>Радио МВД РФ</annotation>

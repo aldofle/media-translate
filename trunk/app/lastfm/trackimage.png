@@ -41,7 +41,7 @@ case $opt in
 esac
 
 get_opt "Clear-cache"
-local clear=1
+local clear=
 case $opt in
     0|no|No|NO)
         clear=
@@ -55,7 +55,7 @@ $MSDL -q -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$request"
 
 if [ -f "$LASTFMFILE" ]; then
 
-  [ -n "$clear" ] && rm -f /tmp/cached/*_trackimage.png 2>&1 > /dev/null
+#  [ -n "$clear" ] && rm -f /tmp/cached/*_trackimage.png 2>&1 > /dev/null
   
   local imageurl=`grep LFM.set\(\"Par "$LASTFMFILE" | sed "s/.*image\":{//;s/},.*//;s/.*\"$size\":\"//;s/\".*//;" | sed 's/\\\//g'`
   rm -f "$LASTFMFILE"
