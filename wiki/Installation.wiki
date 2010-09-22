@@ -27,7 +27,7 @@ wget -O /tmp/mt.tar.gz2 http://media-translate.googlecode.com/files/rss_ex_2.0.1
 tar -xjf /tmp/mt.tar.gz2
 }}}
 
-  * Для работы требуется наличие символической ссылки /usr/local/bin/rss, указывающей на /usr/local/etc/translate/rss:
+  * Для работы требуется наличие символической ссылки */usr/local/bin/rss*, указывающей на */usr/local/etc/translate/rss*:
 {{{
 ln -s /usr/local/bin/rss ../etc/translate/rss
 }}}
