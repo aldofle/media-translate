@@ -17,7 +17,7 @@ cd /usr/local/etc/translate
 {{{
 mkdir -p /home/translate
 cd /home/translate
-ln -s /usr/local/etc/translate /home/translate
+ln -s /home/translate /usr/local/etc/translate 
 }}}
 
   * Загружаем и распаковываем текущую версию пакета:
@@ -28,7 +28,7 @@ tar -xjf /tmp/mt.tar.gz2
 
   * Для работы требуется наличие символической ссылки */usr/local/bin/rss*, указывающей на */usr/local/etc/translate/rss*:
 {{{
-ln -s /usr/local/bin/rss ../etc/translate/rss
+ln -s ../etc/translate/rss /usr/local/bin/rss
 }}}
 
   * Копируем в домашнюю директорию http-сервера на плеере содержимое директории */usr/local/etc/translate/www*:
