@@ -1,7 +1,7 @@
 #summary Media Stream Renderer
 #sidebar TableOfContents
 
-= Media Stream Renderer =
+= Назначение =
 
 RSS/CGI-модуль предназначен для управления проигрыванием медиапотоков на плеере с локального компьютера.
 
