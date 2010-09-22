@@ -40,17 +40,32 @@ case $opt in
     ;;
 esac
 
+get_opt "Clear-cache"
+local clear=1
+case $opt in
+    0|no|No|NO)
+        clear=
+    ;;
+    1|yes|Yes|YES)
+        clear=1
+    ;;
+esac
+
 $MSDL -q -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$request"
 
 if [ -f "$LASTFMFILE" ]; then
+
+  [ -n "$clear" ] && rm -f /tmp/cached/*_trackimage.png 2>&1 > /dev/null
   
   local imageurl=`grep LFM.set\(\"Par "$LASTFMFILE" | sed "s/.*image\":{//;s/},.*//;s/.*\"$size\":\"//;s/\".*//;" | sed 's/\\\//g'`
-  local buf=`$MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$imageurl" 2>&1`
-  local type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
-  
-  echo "Content-type: $type"
-  echo
-  cat "$LASTFMFILE"
   rm -f "$LASTFMFILE"
+  local buf=`$MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$imageurl" 2>&1`
+  if [ -f "$LASTFMFILE" ]; then
+    local type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
+    echo "Content-type: $type"
+    echo
+    cat "$LASTFMFILE"
+    rm -f "$LASTFMFILE"
+  fi
 fi
 
