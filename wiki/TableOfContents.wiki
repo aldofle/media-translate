@@ -8,4 +8,4 @@
     * [ModuleMediaStreamRenderer Media Stream Renderer]
     * XSPF Browser
     * [ModuleYouTube YouTube]
-  * Описание GET интерфейса CGI модуля translate
+  * Описание GET интерфейса
