@@ -73,6 +73,9 @@ NET_BANDWIDTH=
 UDPXY_URL=http://127.0.0.1:8080/
 }}}
 
+  Управление HD контентом для Youtube, Vimeo и IVI осуществляется с помощью переменных YOUTUBE_HD, VIMEO_HD и IVI_HD соответственно. 
+  По умолчанию используется HD качество.
+
   * Стартовый файл для XSPF Browser */usr/local/etc/translate/etc/index.m3u*:
 {{{
 #EXTM3U
