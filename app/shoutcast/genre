@@ -22,16 +22,18 @@ cd $DATAPATH
 
 GENRE="$arg_opt"
 
-CHANNELFILE="$CACHEPATH/shoutcast.`echo -n \"$GENRE\" | sed 's/\//_/g'`.cache"
+GENRELIST="$CACHEPATH/shoutcast.`echo -n \"$GENRE\" | sed 's/\//_/g'`.cache"
 TEMPDL=$TMPFILE.dl
+
+CHANNELFILE=$TMPFILE.channel
 
 TIMELIFE=3600
 
 let tsttime=`date +%s`-$TIMELIFE
 
 REFRESHCACHE=yes
-if [ -f "$CHANNELFILE" ]; then
-  if [ `date +%s -r "$CHANNELFILE"` -gt $tsttime ]; then
+if [ -f "$GENRELIST" ]; then
+  if [ `date +%s -r "$GENRELIST"` -gt $tsttime ]; then
     REFRESHCACHE=
   fi
 fi
@@ -39,21 +41,22 @@ fi
 if [ $REFRESHCACHE ]; then
   $WGET -q -O "$TEMPDL" "http://www.shoutcast.com:80/sbin/newxml.phtml?genre=`urlencode_s ${arg_opt}`"
   if [ -f "$TEMPDL" ]; then
-    TITLE="Shoutcast Radio - $GENRE"
-    if [ -x "$XSLTPROC" ]; then
-      $XSLTPROC --stringparam title "$TITLE" genre.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
-    else
-      awk -v title="`escapeXML \"$TITLE\"`" -f getxml.awk -f genre.awk "$TEMPDL" > $CHANNELFILE
-    fi
-    rm -f "$TEMPDL"
+    mv -f "$TEMPDL" "$GENRELIST"
   fi
 fi
 
-if [ -f "$CHANNELFILE" ]; then
+if [ -f "$GENRELIST" ]; then
+  TITLE="Shoutcast Radio - $GENRE"
   echo "Content-type: text/xml"
   echo
+  if [ -x "$XSLTPROC" ]; then
+    $XSLTPROC --stringparam title "$TITLE" genre.xslt "$GENRELIST" | sed '1d' > $CHANNELFILE
+  else
+    awk -v title="`escapeXML \"$TITLE\"`" -f genre.awk "$GENRELIST" > $CHANNELFILE
+  fi
   (
     export CHANNELFILE; 
     template2rss genre.xml
+    rm -f $CHANNELFILE
   )
 fi

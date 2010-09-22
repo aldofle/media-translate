@@ -10,7 +10,6 @@
 
 <xsl:template match="/">
 <playlist version="1" xmlns="http://xspf.org/ns/0/">
-<title>1.FM</title>
 <trackList>
   <xsl:apply-templates select="//table[@class='l']/tbody/tr"/>
   <xsl:apply-templates select="//table[@class='r']/tbody/tr"/>

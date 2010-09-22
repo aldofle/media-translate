@@ -44,7 +44,3 @@ TRANSLATE CGI
 
 ?stream,,<playlist.url>   choose 1st valid stream to play
 station.ru  ?status,,     status url support for station.ru (+)
-
-AUDIO/VIDEO PLAYER
-
-multiple source (up to 10) support (asx,asf,pls,m3u)

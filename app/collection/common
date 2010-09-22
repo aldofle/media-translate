@@ -64,7 +64,7 @@ echo
 if [ -x "$XSLTPROC" ]; then
   $XSLTPROC channel.xslt "$FILE" | sed '1d' > $CHANNELFILE
 else
-  awk -f getxml.awk -f channel.awk "$FILE" > $CHANNELFILE
+  awk -f channel.awk "$FILE" > $CHANNELFILE
 fi
 (
   export ANNOTATIONSIZE;

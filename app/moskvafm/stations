@@ -22,14 +22,7 @@ cd $DATAPATH
 
 CHANNELFILE=$TMPFILE.channel
 
-get_opt "File"
-FILE="$opt"
-
-[ -z "$FILE" ] && return 0
-
-if ! expr "$FILE" : '/.*' > /dev/null; then
-  FILE="$BASEPATH/$FILE"
-fi
+FILE="$BASEPATH/$arg_opt"
 
 COLUMNCOUNT="columnCount=5"
 STARTITEM="  startitem = \"middle\";"
@@ -39,7 +32,7 @@ echo
 if [ -x "$XSLTPROC" ]; then
   $XSLTPROC ../collection/channel.xslt "$FILE" | sed '1d' > $CHANNELFILE
 else
-  awk -f getxml.awk -f ../collection/channel.awk "$FILE" > $CHANNELFILE
+  awk -f ../collection/channel.awk "$FILE" > $CHANNELFILE
 fi
 (
   export CHANNELFILE; 

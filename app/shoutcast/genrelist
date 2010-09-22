@@ -20,37 +20,41 @@
 DATAPATH=$BASEPATH/app/shoutcast
 cd $DATAPATH
 
-CHANNELFILE="$CACHEPATH/shoutcast.genrelist.cache"
+GENRELIST="$CACHEPATH/shoutcast.genrelist.cache"
 TEMPDL=$TMPFILE.dl
+
+CHANNELFILE=$TMPFILE.channel
 
 TIMELIFE=3600
 
 let tsttime=`date +%s`-$TIMELIFE
 
 REFRESHCACHE=yes
-if [ -f "$CHANNELFILE" ]; then
-  if [ `date +%s -r "$CHANNELFILE"` -gt $tsttime ]; then
+if [ -f "$GENRELIST" ]; then
+  if [ `date +%s -r "$GENRELIST"` -gt $tsttime ]; then
     REFRESHCACHE=
   fi
 fi
 
 if [ $REFRESHCACHE ]; then
+  rm -f "$GENRELIST"
   $WGET -q -O "$TEMPDL" http://www.shoutcast.com:80/sbin/newxml.phtml
   if [ -f "$TEMPDL" ]; then
-    if [ -x "$XSLTPROC" ]; then
-      $XSLTPROC genrelist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
-    else
-      awk -f genrelist.awk "$TEMPDL" > $CHANNELFILE
-    fi
-    rm -f "$TEMPDL"
+    mv -f "$TEMPDL" "$GENRELIST"
   fi
 fi
 
-if [ -f "$CHANNELFILE" ]; then
+if [ -f "$GENRELIST" ]; then
   echo "Content-type: text/xml"
   echo
+  if [ -x "$XSLTPROC" ]; then
+    $XSLTPROC genrelist.xslt "$GENRELIST" | sed '1d' > $CHANNELFILE
+  else
+    awk -f genrelist.awk "$GENRELIST" > $CHANNELFILE
+  fi
   (
-    export CHANNELFILE;
+    export CHANNELFILE; 
     template2rss genrelist.xml
+    rm -f $CHANNELFILE
   )
 fi

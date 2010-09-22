@@ -179,7 +179,7 @@
       	    if(value != null)
       	    {
       	     stream_server_url = value;
-      	     if(stream_server_url != "")
+      	     if((stream_soft == "icecast" || stream_soft == "shoutcast") &amp;&amp; stream_server_url !="")
       	     {
         	     stream_status_url = translate_base_url+"status,"+urlEncode(stream_server_url)+","+urlEncode(stream_url);
         	   }
@@ -265,14 +265,14 @@
   backgroundColor="0:0:0"
   >
 
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_01.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_02.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_03.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_04.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_05.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_06.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_07.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> image/POPUP_LOADING_08.png </idleImage>
 
 <!--
 	<text align="center" redraw="no" offsetXPC="5" offsetYPC="5" widthPC="90" heightPC="15" fontSize="34" backgroundColor="10:105:150" foregroundColor="100:200:255">
@@ -280,7 +280,7 @@
 	</text>
 -->
 
-  <image redraw="yes" offsetXPC="15" offsetYPC="12" widthPC="30" heightPC="41">
+  <image redraw="yes" offsetXPC="15" offsetYPC="15" widthPC="30" heightPC="38">
     <script>track_image;</script>
 	</image>
 	
@@ -291,14 +291,10 @@
   <previewWindow windowColor="0:0:0" offsetXPC="99" widthPC="1" offsetYPC="99" heightPC="1"></previewWindow>	
   
 	<text redraw="no" offsetXPC="5" offsetYPC="65" widthPC="90" heightPC="25" fontSize="20" backgroundColor="10:105:150" foregroundColor="-1:-1:-1"></text>
-
+	
 	<text redraw="yes" offsetXPC="5" offsetYPC="65" widthPC="90" heightPC="8" fontSize="20" backgroundColor="10:55:100" foregroundColor="255:255:255">
 		<script>stream_title;</script>
 	</text>
-
-  <image redraw="yes" offsetXPC="87" offsetYPC="66" widthPC="7" heightPC="6">
-    <script>if(no_renderer != 1) "rss/image/msr.png";</script>
-	</image>
 
 	<text redraw="yes" offsetXPC="6" offsetYPC="74" widthPC="60" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="255:255:150">
 		<script>stream_current_song;</script>

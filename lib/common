@@ -4,19 +4,18 @@
 
 TRANSLATE=${TRANSLATE:-/usr/local/etc/translate}
 
-if [ -f $TRANSLATE/etc/translate.conf ]; then
-  . $TRANSLATE/etc/translate.conf
+if [ -f $TRANSLATE/etc/xspf.conf ]; then
+  . $TRANSLATE/etc/xspf.conf
 fi
 
 BASEPATH=${BASEPATH:-$TRANSLATE}
 FLAC=${FLAC:-$BASEPATH/bin/flac}
 MSDL=${MSDL:-$BASEPATH/bin/msdl}
+WGET=${WGET:-/opt/bin/wget}
+CURL=${CURL:-/opt/bin/curl}
+RTMPDUMP=${RTMPDUMP:-$BASEPATH/bin/rtmpdump}
 TOUTF8=${TOUTF8:-$BASEPATH/bin/toutf8}
 XCODE=${XCODE:-$BASEPATH/bin/xcode}
-RTMPDUMP=${RTMPDUMP:-$BASEPATH/bin/flvstreamer}
-
-WGET=${WGET:-/usr/bin/wget}
-CURL=${CURL:-/usr/local/bin/curl}
 
 RC_OK=0
 RC_FAIL=1
