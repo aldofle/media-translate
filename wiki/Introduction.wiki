@@ -36,7 +36,7 @@
 Сетевые протоколы: 
   * HTTP, FTP, MMS, MMSH, RTSP ([http://msdl.sourceforge.net/ msdl]);
   * RTMP ([http://flvstreamer.sourcearchive.com/ flvstreamer]);
-  * UDP, RTP (через [http://sourceforge.net/projects/udpxy/ udpxy]
+  * UDP, RTP (через [http://sourceforge.net/projects/udpxy/ udpxy]);
   * ICY - для получения информации о текущем проигрываемом треке.
 
 Контент провайдеры:
