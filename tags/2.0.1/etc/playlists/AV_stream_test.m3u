@@ -1,0 +1,42 @@
+#EXTM3U
+#EXTINF:-1,M3U: Тестовые ссылки на различный медиаконтент
+http://timhome.homedns.org/share/media/test_Stream.m3u
+http://media.artistserver.com/x/pls/7/439/261/2/playlist.m3u
+#EXTINF:-1,XSPF: Synerdata.Net Radio: Harvest #79 (www.artistserver.com)
+http://media.artistserver.com/x/pls/7/425/257/2/playlist.xspf
+#EXTINF:-1,XSPF: Kylozone (www.artistserver.com)
+http://media.artistserver.com/x/pls/7/155/102/2/playlist.xspf
+#EXTINF:-1,M3U: Artemis (magnatune.com)
+http://magnatune.com/artists/albums/artemis-gravity/hifi.m3u
+#EXTINF:-1,XSPF: *** Burning Babylon *** Knives To The Treble (magnatune.com)
+http://magnatune.com/artists/albums/babylon-knives/hifi.xspf
+#EXTINF:-1,PLS: 181.FM - Chilled (shoutcast.com)
+http://www.shoutcast.com:80/sbin/tunein-station.pls?id=155
+http://w02-sw01.akadostream.ru:8000/aone128.mp3
+http://w02-sw01.akadostream.ru:8000/avtoradio128.mp3
+http://w02-sw01.akadostream.ru:8000/dinamitfm128.mp3
+http://w02-sw01.akadostream.ru:8000/europaplus128.mp3
+#EXTINF:-1,Радио Маяк
+http://w02-sw01.akadostream.ru:8000/mayak128.mp3
+http://w02-sw01.akadostream.ru:8000/moscowecho128.mp3
+http://w02-sw01.akadostream.ru:8000/orfey128.mp3
+http://w02-sw01.akadostream.ru:8000/radiomir128.mp3
+http://w02-sw01.akadostream.ru:8000/radioretro128.mp3
+http://w02-sw01.akadostream.ru:8000/radiorussia128.mp3
+http://w02-sw01.akadostream.ru:8000/radioyunost128.mp3
+http://w02-sw01.akadostream.ru:8000/russianradio128.mp3
+http://w02-sw01.akadostream.ru:8000/silverrain128.mp3
+http://slon.mezon.ru:9000/eldoradio128
+http://slon.mezon.ru:9000/europa128
+#EXTINF:-1,M3U: KeksFM (http; Icecast)
+http://slon.mezon.ru:9000/keks128.m3u
+#EXTINF:-1,Наше Радио
+http://mp3.nashe.ru/nashe-128
+http://mp3.nashe.ru/ultra-128
+#EXTINF:-1,Беларусь ТВ
+mms://bcast.tvr.by/video
+#EXTINF:-1,Мир ТВ
+mms://213.232.226.11/MIRTV_300
+#EXTINF:-1,Europa+ (M3U; http)
+http://slon.mezon.ru:9000/europa128.m3u
+
