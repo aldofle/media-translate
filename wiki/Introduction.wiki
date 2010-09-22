@@ -59,7 +59,6 @@ http://yp.shoutcast.com/sbin/tunein-station.pls?id=1116397
 {{{
 http://www.ivi.ru/video/view/?id=2756
 }}}
-
   * [http://rutube.ru/channels.html Трансляции Rutube.ru]
 {{{
 http://rutube.ru/tv/o2tv.html
@@ -77,3 +76,5 @@ http://station.ru/RadioStation.aspx?id=1743
 http://guzei.com/online_radio/listen.php?online_radio_id=5325
 http://guzei.com/online_tv/watch.php?online_tv_id=1781
 }}}
+  * [http://www.last.fm/api Last.FM]
+  Получение картинки с исполнителем для текущего проигрываемого трека.
