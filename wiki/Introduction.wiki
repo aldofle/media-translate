@@ -31,4 +31,49 @@
 
     Браузер и проигрыватель медиаконтента с локальных дисков и ftp-серверов.
 
-    
+= Поддерживаемый контент =
+
+Сетевые протоколы: 
+  * HTTP, FTP, MMS, MMSH, RTSP ([http://msdl.sourceforge.net/ msdl]);
+  * RTMP ([http://flvstreamer.sourcearchive.com/ flvstreamer]);
+  * UDP, RTP (через [http://sourceforge.net/projects/udpxy/ udpxy]
+  * ICY - для получения информации о текущем проигрываемом треке.
+
+Контент провайдеры:
+  * [http://www.youtube.com/ Youtube]
+{{{
+http://www.youtube.com/v/JZtcw6GIxTY
+http://www.youtube.com/watch?v=JZtcw6GIxTY
+}}}
+  * [http://vimeo.com/ Vimeo]
+{{{
+http://vimeo.com/13768695
+http://vimeo.com/moogaloop.swf?clip_id=13199616
+http://vimeo.com/channels/timelapseinhd/videos/rss
+}}}
+  * [http://www.shoutcast.com/ SHOUTcast]
+{{{
+http://yp.shoutcast.com/sbin/tunein-station.pls?id=1116397
+}}}
+  * [http://ivi.ru/ IVI] (_Замечание._ Требуется наличие CURL.)
+{{{
+http://www.ivi.ru/video/view/?id=2756
+}}}
+
+  * [http://rutube.ru/channels.html Трансляции Rutube.ru]
+{{{
+http://rutube.ru/tv/o2tv.html
+}}}
+  * [http://rutube.ru/ RuTube] (_Замечание._ Проигрывается только контент, который отдается в виде video/x-flv)
+{{{
+http://rutube.ru/tracks/1088305.html?v=1c21315933044e39fdd57808ac5e3958
+}}}
+  * [http://station.ru/StationsList.aspx?type=online Интернет радиостанции Station.ru]
+{{{
+http://station.ru/RadioStation.aspx?id=1743
+}}}
+  * [http://guzei.com/ Медиа-каталог Игоря Гузей]
+{{{
+http://guzei.com/online_radio/listen.php?online_radio_id=5325
+http://guzei.com/online_tv/watch.php?online_tv_id=1781
+}}}
