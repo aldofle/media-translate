@@ -6,6 +6,6 @@
   * [Installation Установка и настройка]
   * Описание RSS-модулей
     * [ModuleMediaStreamRenderer Media Stream Renderer]
-    * XSPF Browser
+    * [ModuleXSPFBrowser XSPF Browser]
     * [ModuleYouTube YouTube]
   * Описание GET интерфейса
