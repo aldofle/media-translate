@@ -149,13 +149,13 @@ stream_url=${arg_url}
 out_error_info()
 {
   echo "Content-type: text/xml"
-  echo
+  echo 
   echo "<?xml version='1.0' encoding='UTF-8'?>"
   echo "<info><error>$1</error><log><![CDATA["
   echo "$2"
   echo "]]></log></info>"
 }
-  
+
 get_shoutcast_item()
 {
   sed -e "s/.*$1: <\/font><\/td><td><font class=default><b>//" $TMPFILE | sed 's/<\/b>.*//' | sed 's/<.*>//g;s/&amp;/&/g;s/&nbsp;/ /g;s/&lt;/</g;s/&gt;/>/g'

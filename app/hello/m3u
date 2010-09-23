@@ -17,18 +17,18 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-DATAPATH=$BASEPATH/app/hello
+local DATAPATH=$BASEPATH/app/hello
 cd $DATAPATH
 
-FILE="$arg_opt"
+local FILE="$arg_opt"
 if ! expr "$FILE" : '/.*' > /dev/null; then
   FILE="$BASEPATH/$FILE"
 fi
 
-echo "Content-type: audio/x-mpegurl"
-echo
-if [ -x "$XSLTPROC" ]; then
-  $XSLTPROC m3u.xslt "$FILE"
-else
-  awk -f getxml.awk -f m3u.awk "$FILE"
-fi
+(
+  if [ -x "$XSLTPROC" ]; then
+    $XSLTPROC m3u.xslt "$FILE" 
+  else
+    awk -f getxml.awk -f m3u.awk "$FILE" 
+  fi
+) | printContent "audio/x-mpegurl"

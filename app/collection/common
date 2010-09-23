@@ -17,13 +17,13 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-DATAPATH=$BASEPATH/app/collection
+local DATAPATH=$BASEPATH/app/collection
 cd $DATAPATH
 
-CHANNELFILE=$TMPFILE.channel
+local CHANNELFILE=$TMPFILE.channel
 
 get_opt "File"
-FILE="$opt"
+local FILE="$opt"
 
 [ -z "$FILE" -a "$SUBNAME" = "menu" ] && FILE="$MAINMENU"
 
@@ -59,18 +59,17 @@ FONTSIZE=$opt
 
 ANNOTATIONSIZE="  lines=$TEXTLINES fontSize=$FONTSIZE"
 
-echo "Content-type: text/xml"
-echo
 if [ -x "$XSLTPROC" ]; then
   $XSLTPROC channel.xslt "$FILE" | sed '1d' > $CHANNELFILE
 else
   awk -f getxml.awk -f channel.awk "$FILE" > $CHANNELFILE
 fi
+
 (
   export ANNOTATIONSIZE;
   export CHANNELFILE; 
   export COLUMNCOUNT; 
   export STARTITEM;
-  template2rss ${SUBNAME-:"$1"}.xml
+  template2rss $SUBNAME.xml | printContent "application/rss+xml"
   rm -f $CHANNELFILE
 )

@@ -67,6 +67,7 @@ if [ -f "$STATION_PLS" ]; then
       stream_url=`sed -ne "/File$index=/p" $STATION_PLS | sed -e "s/File$index=//"`
   fi
   
+  mkdir -p /tmp/cached
   STREAMDAT=/tmp/cached/stream.dat
   echo "$stream_url" > $STREAMDAT       # request_url
   echo "" >> $STREAMDAT                 # request_options
@@ -80,7 +81,5 @@ if [ -f "$STATION_PLS" ]; then
   echo "$STATION_NAME" >> $STREAMDAT    # stream_title
   echo "1" >> $STREAMDAT                # no_renderer_control
   
-  echo "Content-type: text/xml"
-  echo
-  cat $BASEPATH/rss/xspf/audioRenderer.rss
+  cat $BASEPATH/rss/xspf/audioRenderer.rss | printContent "application/rss+xml"
 fi

@@ -20,10 +20,10 @@
 # Title: artist_title - track_title
 # Size: small|smallsquare|medium|mediumsquare|large|largesquare|mega|original
 
-DATAPATH=$BASEPATH/app/lastfm
+local DATAPATH=$BASEPATH/app/lastfm
 cd $DATAPATH
 
-LASTFMFILE=$TMPFILE.lastfm
+local LASTFMFILE=$TMPFILE.lastfm
 
 get_opt "Title"
 local tracktitle="$opt"
@@ -62,10 +62,7 @@ if [ -f "$LASTFMFILE" ]; then
   local buf=`$MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$imageurl" 2>&1`
   if [ -f "$LASTFMFILE" ]; then
     local type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
-    echo "Content-type: $type"
-    echo
-    cat "$LASTFMFILE"
-    rm -f "$LASTFMFILE"
+    printContent "$type" "$LASTFMFILE"
   fi
 fi
 

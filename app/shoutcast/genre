@@ -50,10 +50,8 @@ if [ $REFRESHCACHE ]; then
 fi
 
 if [ -f "$CHANNELFILE" ]; then
-  echo "Content-type: text/xml"
-  echo
   (
     export CHANNELFILE; 
-    template2rss genre.xml
+    template2rss genre.xml | printContent "application/rss+xml"
   )
 fi
