@@ -34,8 +34,8 @@
 = Поддерживаемый контент =
 
 Сетевые протоколы: 
-  * HTTP, FTP, MMS, MMSH, RTSP (используя [http://msdl.sourceforge.net/ msdl]);
-  * RTMP (используя [http://flvstreamer.sourcearchive.com/ flvstreamer]);
+  * HTTP, FTP, MMS, MMSH, RTSP (используется [http://msdl.sourceforge.net/ msdl]);
+  * RTMP (используется [http://flvstreamer.sourcearchive.com/ flvstreamer]);
   * UDP, RTP (через [http://sourceforge.net/projects/udpxy/ udpxy]);
   * ICY - для получения информации о текущем проигрываемом треке.
 
