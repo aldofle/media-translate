@@ -17,13 +17,13 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-DATAPATH=$BASEPATH/app/moskvafm
+local DATAPATH=$BASEPATH/app/moskvafm
 cd $DATAPATH
 
-CHANNELFILE=$TMPFILE.channel
+local CHANNELFILE=$TMPFILE.channel
 
 get_opt "File"
-FILE="$opt"
+local FILE="$opt"
 
 [ -z "$FILE" ] && return 0
 
@@ -31,20 +31,19 @@ if ! expr "$FILE" : '/.*' > /dev/null; then
   FILE="$BASEPATH/$FILE"
 fi
 
-COLUMNCOUNT="columnCount=5"
-STARTITEM="  startitem = \"middle\";"
+local COLUMNCOUNT="columnCount=5"
+local STARTITEM="  startitem = \"middle\";"
 
-echo "Content-type: text/xml"
-echo
 if [ -x "$XSLTPROC" ]; then
   $XSLTPROC ../collection/channel.xslt "$FILE" | sed '1d' > $CHANNELFILE
 else
   awk -f getxml.awk -f ../collection/channel.awk "$FILE" > $CHANNELFILE
 fi
+
 (
   export CHANNELFILE; 
   export COLUMNCOUNT; 
   export STARTITEM;
-  template2rss stations.xml
+  template2rss stations.xml  | printContent "application/rss+xml"
   rm -f $CHANNELFILE
 )

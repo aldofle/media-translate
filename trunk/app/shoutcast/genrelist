@@ -17,17 +17,17 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-DATAPATH=$BASEPATH/app/shoutcast
+local DATAPATH=$BASEPATH/app/shoutcast
 cd $DATAPATH
 
-CHANNELFILE="$CACHEPATH/shoutcast.genrelist.cache"
-TEMPDL=$TMPFILE.dl
+local CHANNELFILE="$CACHEPATH/shoutcast.genrelist.cache"
+local TEMPDL=$TMPFILE.dl
 
-TIMELIFE=3600
+local TIMELIFE=3600
 
 let tsttime=`date +%s`-$TIMELIFE
 
-REFRESHCACHE=yes
+local REFRESHCACHE=yes
 if [ -f "$CHANNELFILE" ]; then
   if [ `date +%s -r "$CHANNELFILE"` -gt $tsttime ]; then
     REFRESHCACHE=
@@ -47,10 +47,8 @@ if [ $REFRESHCACHE ]; then
 fi
 
 if [ -f "$CHANNELFILE" ]; then
-  echo "Content-type: text/xml"
-  echo
   (
     export CHANNELFILE;
-    template2rss genrelist.xml
+    template2rss genrelist.xml | printContent "application/rss+xml"
   )
 fi

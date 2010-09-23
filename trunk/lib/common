@@ -206,3 +206,16 @@ unescapeXML()
 {
   echo -n "$1" | sed 's/&gt;/>/g;s/&lt;/</g;s/&quot;/"/g;s/&amp;/&/g;'
 }
+
+printContent()
+{
+  local OUTFILE="$2"
+  if [ -z "$OUTFILE" ]; then 
+    OUTFILE="$TMPFILE.content"
+    sed '' > $OUTFILE 
+  fi
+  echo "Content-Type: $1"
+  echo "Content-Length: `wc -c $OUTFILE | awk '{print $1}'`"
+  echo
+  cat $OUTFILE && rm -f $OUTFILE
+}

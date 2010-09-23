@@ -31,17 +31,21 @@
   <xsl:apply-templates select="xspf:playlist"/>
 </xsl:template>
 
-<xsl:template match="xspf:playlist">
-#EXTM3U
-    <xsl:apply-templates select="xspf:trackList/xspf:track"/>
+<xsl:template match="xspf:playlist">#EXTM3U<xsl:apply-templates select="xspf:trackList/xspf:track"/>
 </xsl:template>
 
 <xsl:template match="xspf:track">
-#EXTINF:-1,<xsl:value-of select="xspf:title"/>
-<xsl:choose>
-  <xsl:when test="meta[@rel='stream_url']"><xsl:value-of select="xspf:meta[@rel='stream_url']"/></xsl:when>
-  <xsl:otherwise><xsl:value-of select="xspf:location" /></xsl:otherwise>
-</xsl:choose>
+<xsl:variable name="url">
+  <xsl:choose>
+    <xsl:when test="boolean(string(xspf:meta[@rel='stream_url']))"><xsl:value-of select="xspf:meta[@rel='stream_url']"/></xsl:when>
+    <xsl:otherwise><xsl:value-of select="xspf:location" /></xsl:otherwise>
+  </xsl:choose>
+</xsl:variable>
+  <xsl:if test="boolean(string($url))">
+#EXTINF:-1,<xsl:value-of select="xspf:title"/><xsl:text>
+</xsl:text>
+    <xsl:value-of select="$url" />
+</xsl:if>
 </xsl:template>
 
 <xsl:template match="*" />
