@@ -830,7 +830,7 @@ command_info()
           }
           close(HttpService)
 	      }
-	    ' | $TOUTF8`
+	    ' | $XCODE | $TOUTF8`
 	  fi
 
     case $protocol in
