@@ -63,6 +63,12 @@ if [ -f "$LASTFMFILE" ]; then
   if [ -f "$LASTFMFILE" ]; then
     local type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
     printContent "$type" "$LASTFMFILE"
+  else
+    cat empty.png | printContent "image/png"
   fi
+else
+  cat empty.png | printContent "image/png"
 fi
+
+
 
