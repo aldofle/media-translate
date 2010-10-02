@@ -53,6 +53,8 @@ esac
 
 $MSDL -q -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$request"
 
+local type=
+
 if [ -f "$LASTFMFILE" ]; then
 
 #  [ -n "$clear" ] && rm -f /tmp/cached/*_trackimage.png 2>&1 > /dev/null
@@ -61,14 +63,17 @@ if [ -f "$LASTFMFILE" ]; then
   rm -f "$LASTFMFILE"
   local buf=`$MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$imageurl" 2>&1`
   if [ -f "$LASTFMFILE" ]; then
-    local type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
-    printContent "$type" "$LASTFMFILE"
+    type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
   else
-    cat empty.png | printContent "image/png"
+    type="image/png"
+    cp "empty.png" "$LASTFMFILE"
   fi
 else
-  cat empty.png | printContent "image/png"
+  type="image/png"
+  cp "empty.png" "$LASTFMFILE"
 fi
+
+printContent "$type" "$LASTFMFILE"
 
 
 
