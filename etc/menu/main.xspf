@@ -5,9 +5,9 @@
 
   <trackList>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Start:left;Size:1;File:etc/menu/video.xspf,collection/menu</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Start:left;Size:2;File:etc/menu/video.xspf,collection/menu</link>
       <title>Internet Video</title>
-      <annotation>YouTube</annotation>
+      <annotation>YouTube, Internet TV</annotation>
       <image>rss/image/menu/video.jpg</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
