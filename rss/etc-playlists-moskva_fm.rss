@@ -1068,6 +1068,14 @@ columnCount=5
     <id>4010</id>
     <fm>100.9</fm>
     <name>100_9</name>
+    <stream_url>http://s05.radio-tochka.com:6045/</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>shoutcast</stream_soft>
+    <stream_server>icyx://78.159.102.100:6045</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>Classic</stream_genre>
+    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://station.ru/RadioStation.aspx?id=1720</location>

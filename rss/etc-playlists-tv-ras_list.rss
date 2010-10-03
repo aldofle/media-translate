@@ -398,7 +398,7 @@
   </unknownDispatcher>
 
 <channel>
-  <title>tv.m3u</title>
+  <title>ras playlist</title>
   <item>
     <title>Russia 24</title>
     <ext>sdp</ext>
@@ -581,7 +581,6 @@
     <stream_server/>
     <stream_type>video/x-msvideo</stream_type>
     <stream_protocol>rtsp</stream_protocol>
-    <stream_title>300</stream_title>
   </item>
   <item>
     <title>Music Box</title>
@@ -624,7 +623,6 @@
     <stream_server/>
     <stream_type>video/x-msvideo</stream_type>
     <stream_protocol>rtsp</stream_protocol>
-    <stream_title>Дашаватар - Десять воплощений Господа Вишну (2008)</stream_title>
   </item>
   <item>
     <title>1 kanal bisnesa</title>
@@ -662,7 +660,6 @@
     <stream_server/>
     <stream_type>video/x-msvideo</stream_type>
     <stream_protocol>rtsp</stream_protocol>
-    <stream_title>Whan you next to me</stream_title>
   </item>
   <item>
     <title>Rain TV</title>
@@ -682,7 +679,6 @@
     <stream_server/>
     <stream_type>video/x-msvideo</stream_type>
     <stream_protocol>rtsp</stream_protocol>
-    <stream_title>RBC TV from SOVINTEL</stream_title>
   </item>
   <item>
     <title>HipHop TV</title>

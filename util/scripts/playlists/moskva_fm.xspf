@@ -673,6 +673,14 @@
       <meta rel="fm">100.9</meta>
       <meta rel="name">100_9</meta>
     
+<meta rel="stream_url">http://s05.radio-tochka.com:6045/</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://78.159.102.100:6045</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Classic</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
     <track>
       <location>http://station.ru/RadioStation.aspx?id=1720</location>
