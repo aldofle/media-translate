@@ -182,7 +182,7 @@ columnCount=3
   <item>
 <link>rss/etc-menu-video.rss</link>
     <title>Internet Video</title>
-    <annotation>YouTube</annotation>
+    <annotation>YouTube, Internet TV</annotation>
     <image>rss/image/menu/video.jpg</image>
     <mediaDisplay name="photoView"/>
   </item>
