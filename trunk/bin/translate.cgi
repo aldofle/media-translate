@@ -831,8 +831,8 @@ command_info()
           close(HttpService)
 	      }
 	    '`
-	    if echo "$meta_current_song" | $TOUTF8 -t > /dev/null; then
-		meta_current_song=`echo "$meta_current_song" | $XCODE | $TOUTF8`
+	    if echo "$meta_current_song" | $TOUTF8 -t; then
+		meta_current_song=`echo "$meta_current_song" | $XCODE -s | $TOUTF8`
 	    fi
 	  fi
 
@@ -855,8 +855,18 @@ command_info()
         fi
       ;;
     esac
+
+    if echo "$meta_stream_title" | $TOUTF8 -t; then
+	meta_stream_title=`echo "$meta_stream_title" | $XCODE -s | $TOUTF8`
+    fi
+    if echo "$meta_stream_genre" | $TOUTF8 -t; then
+	meta_stream_genre=`echo "$meta_stream_genre" | $XCODE -s | $TOUTF8`
+    fi
+    if echo "$meta_stream_description" | $TOUTF8 -t; then
+	meta_stream_description=`echo "$meta_stream_description" | $XCODE -s | $TOUTF8`
+    fi
     
-	  print_status_item 'server-status' "${meta_server_status}"
+    	  print_status_item 'server-status' "${meta_server_status}"
 	  print_status_item 'stream-status' "$meta_stream_status"
 	  print_status_item 'listener-peak' "$meta_listener_peak"
 	  print_status_item 'average-listener-time' "$meta_average_listener_time"
