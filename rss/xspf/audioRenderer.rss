@@ -202,7 +202,7 @@
 		    if(res != null) 
 		    {
     	    value = getXMLText("info","status","current-song");
-    	    if(value != null)
+    	    if(value != null &amp;&amp; stream_current_song != value)
     	    {
       		  stream_current_song = value;
       		  track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage.png";

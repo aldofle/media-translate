@@ -830,7 +830,10 @@ command_info()
           }
           close(HttpService)
 	      }
-	    ' | $XCODE | $TOUTF8`
+	    '`
+	    if echo "$meta_current_song" | $TOUTF8 -t > /dev/null; then
+		meta_current_song=`echo "$meta_current_song" | $XCODE | $TOUTF8`
+	    fi
 	  fi
 
     case $protocol in
