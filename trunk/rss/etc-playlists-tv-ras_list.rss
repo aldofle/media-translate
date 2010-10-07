@@ -667,6 +667,12 @@
     <ext>98</ext>
     <protocol>mms</protocol>
     <location>mms://83.102.146.98/live092</location>
+    <stream_url>mms://83.102.146.98/live092</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
   </item>
   <item>
     <title>RBC</title>

@@ -164,6 +164,13 @@
 <channel>
   <title>Other Internet Radio Lists</title>
   <item>
+<link>rss/etc-playlists-radio-bbc.rss</link>
+    <title>BBC Radio</title>
+    <annotation>BBC Radio Online</annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radio-1fm.rss</link>
     <title>1.FM</title>
     <annotation>1.FM is owned and operated by Energy Group Networks. All Rights Reserved.</annotation>
