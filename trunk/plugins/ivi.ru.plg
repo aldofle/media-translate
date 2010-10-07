@@ -20,7 +20,7 @@
 # Translate CGI module
 # 'ivi.ru' plug-in
 #
-# version: 1.0 13.08.2010 16:28
+# version: 1.1 07.10.2010 13:42:21
 #
 # http://www.ivi.ru/video/view/?id=2756
 #
@@ -52,7 +52,7 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*ivi\.ru/video/view/?id=[0-9].*$'; t
   if [ -f ${TMPFILE} ]; then
     stream_url=`sed "s/.*files\": \[//;s/\].*//;s/}, *{/}\n{/g" ${TMPFILE} | awk "/FLV-${hdc}/"' {match($2, /\"(.*)\".*$/, arr); print arr[1];}'`
     protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
-    icy_name=`sed 's/.*"title": "//;s/", "cop.*//' ${TMPFILE} | unitohtml | $XCODE -s -l | $TOUTF8`
+    icy_name=`sed 's/.*"title": "//;s/".*//g' ${TMPFILE} | unitohtml | $XCODE -s -l | $TOUTF8`
     rm -f $TMPFILE
     return $RC_OK
   fi
