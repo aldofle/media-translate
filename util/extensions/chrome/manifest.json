@@ -1,19 +1,20 @@
 {
-  "name": "Play on Player",
+  "name": "__MSG_playOnPlayer__",
   "version": "1.0",
-  "description": "Play media stream from the current page on the player",
+  "description": "__MSG_extensionDescripion__",
   "browser_action": {
-    "default_icon": "mediarenderer.ico"
+    "default_icon": "mediarenderer.ico",
+    "default_title": "__MSG_playOnPlayer__"
+  },
+  "icons": {
+    "16": "mediarenderer.ico"
   },
   "permissions": [
     "http://*/",
-    "contextMenus"
+    "contextMenus",
+    "notifications"
    ],
-  "content_scripts": [
-    {
-      "matches": ["http://*/"],
-      "js": ["playonplayer.js"]
-    }
-  ],
-  "background_page": "playonplayer.htm"
+  "options_page": "options.htm",
+  "background_page": "playonplayer.htm",
+  "default_locale": "en"
 }
