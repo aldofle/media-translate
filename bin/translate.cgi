@@ -121,27 +121,10 @@ stream_type=$opt
 
 check_stream_flag=yes
 
-if echo "$arg_url" | grep -q -s "^udp://@"; then
-  arg_url=`echo "${arg_url}" | sed "{s/^udp:\/\/@/${UDPXY_URL}\/udp\//}"`
-  stream_type=${stream_type:-'video/x-msvideo'}
-  protocol='http'
-  check_stream_flag=no
-elif echo "$arg_url" | grep -q -s "^rtp://@"; then
-  arg_url=`echo "${arg_url}" | sed "{s/^rtp:\/\/@/${UDPXY_URL}\/rtp\//}"`
-  stream_type=${stream_type:-'video/x-msvideo'}
-  protocol='http'
-  check_stream_flag=no
-elif echo "$arg_url" | grep -q -s "^icyx://"; then
-  arg_url=`echo "${arg_url}" | sed "{s/^icyx:/http:/}"`
-elif echo "$arg_url" | grep -q -s "^rtmp://"; then
-  if [ -n "${RTMPGW_URL}" ]; then
-    arg_url="${RTMPGW_URL}/?r=${arg_url}"
-    protocol='http'
-  else
-    protocol='rtmp'
-  fi
-  stream_type=${stream_type:-'video/x-flv'}
-  check_stream_flag=no
+local url_plugin=''
+find_protocol_plugin $arg_url url_plugin
+if [ -n "$url_plugin" ]; then
+  . $PLUGINS_DIR"$url_plugin" "$arg_url"
 fi
 
 stream_url=${arg_url}
@@ -525,6 +508,13 @@ find_plugin()
 {
   local server=$(echo $1 | sed 's/.*\/\///;s/.*www.//;s/\/.*//')
   local plugin="$(ls -1 "$PLUGINS_DIR" | grep -iF "${server}.plg")"
+  eval $2="'$plugin'"
+}
+
+find_protocol_plugin()
+{
+  local protocol=$(echo $1 | sed 's/:\/\/.*//')
+  local plugin="$(ls -1 "$PLUGINS_DIR" | grep -iF "protocol.${protocol}.plg")"
   eval $2="'$plugin'"
 }
 
