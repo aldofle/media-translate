@@ -498,26 +498,6 @@ check_av_stream()
   fi
 }
 
-get_xml_text()
-{
-  sed -n "/$1/p" $TMPFILE | sed -n '1p' | sed "s/.*<$1>\(.*\)<\/$1>.*/\1/"
-  return 0
-}
-
-find_plugin()
-{
-  local server=$(echo $1 | sed 's/.*\/\///;s/.*www.//;s/\/.*//')
-  local plugin="$(ls -1 "$PLUGINS_DIR" | grep -iF "${server}.plg")"
-  eval $2="'$plugin'"
-}
-
-find_protocol_plugin()
-{
-  local protocol=$(echo $1 | sed 's/:\/\/.*//')
-  local plugin="$(ls -1 "$PLUGINS_DIR" | grep -iF "protocol.${protocol}.plg")"
-  eval $2="'$plugin'"
-}
-
 check_stream()
 {
   if echo "${arg_url}" | grep -q -s "^ftp:\/\/.*\/$"; then 
