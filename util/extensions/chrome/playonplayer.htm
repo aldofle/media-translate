@@ -1,0 +1,86 @@
+<!--
+#   http://code.google.com/media-translate/
+#   Copyright (C) 2010  Serge A. Timchenko
+#
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<script language="javascript">
+
+var sendToPlayer = function() {
+  
+  var makeRequest = function(url) {
+    var http_request = false;
+    if (window.XMLHttpRequest) { // Mozilla, Safari, ...
+      http_request = new XMLHttpRequest();
+      if (http_request.overrideMimeType) {
+              http_request.overrideMimeType('text/xml');
+      }
+    } else if (window.ActiveXObject) { // IE
+      try {
+        http_request = new ActiveXObject("Msxml2.XMLHTTP");
+      } catch (e) {
+        try {
+          http_request = new ActiveXObject("Microsoft.XMLHTTP");
+        } catch (e) {}
+      }
+    }
+    if (!http_request) {
+      alert('errorXMLHTTP');
+      return null;
+    }
+    http_request.open('get', url, false);
+    http_request.setRequestHeader("If-Modified-Since", "Thu, 1 Jan 1970 00:00:00 GMT");
+    http_request.setRequestHeader("Cache-Control", "no-cache");    
+    http_request.send(null);
+    return http_request.status;
+  }
+  
+  return {
+    run : function(streamUrl, tab) {
+      var playerName = 'player';
+    
+      try {
+        var url = "http://"+playerName+"/cgi-bin/translate?renderer,," + encodeURIComponent(streamUrl);
+        var res = makeRequest(url);
+        if(res)
+        {
+          var msg = "Сcылка '"+streamUrl+"' отправлена на плеер '"+playerName+"'";
+          //w.status = msg;
+          //alert("("+res+") "+msg);
+          chrome.tabs.sendRequest(tab.id, {"status": msg});
+        }
+      }
+      catch(exception) { alert("ERROR: "+exception.description); }
+    }
+  };
+}();
+
+// An onclick callback function.
+function onClick(info, tab) {
+  chrome.tabs.sendRequest(tab.id, {}, function(response) {
+    sendToPlayer.run(response.href, tab);
+  });
+}
+
+// Create one test item for each context type.
+var contexts = ["page","selection","link"];
+for (var i = 0; i < contexts.length; i++) {
+  var context = contexts[i];
+  var title = "Play on Player";
+  var id = chrome.contextMenus.create({"title": title, "contexts":[context],
+                                       "onclick": onClick});
+}
+  
+</script>

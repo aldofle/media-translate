@@ -1,0 +1,19 @@
+{
+  "name": "Play on Player",
+  "version": "1.0",
+  "description": "Play media stream from the current page on the player",
+  "browser_action": {
+    "default_icon": "mediarenderer.ico"
+  },
+  "permissions": [
+    "http://*/",
+    "contextMenus"
+   ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/"],
+      "js": ["playonplayer.js"]
+    }
+  ],
+  "background_page": "playonplayer.htm"
+}
