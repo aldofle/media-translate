@@ -140,6 +140,7 @@ echo "</table>"
 echo "<h3>Internet browser extensions</h3><ul>"
 echo "<li><a href="/bin/playonplayer.xpi">Firefox</a></li>"
 echo "<li><a href="/bin/playonplayer.exe">Internet Explorer</a></li>"
+echo "<li><a href="/bin/playonplayer.crx">Google Chrome</a></li>"
 echo "</ul>"
 
 echo "</body>"
