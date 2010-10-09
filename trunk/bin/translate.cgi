@@ -792,7 +792,8 @@ command_info()
             }
             if(metaint != counter + 1)
             {
-              if(match($0, /^.*StreamTitle=\x27([^\x27]*)\x27/, arr))
+              split($0, a, "\x27;"); 
+              if(match(a[1], /^.*StreamTitle=\x27(.*)/, arr))
               {
                 print arr[1];
               }
