@@ -113,7 +113,9 @@ Content-type: text/html
       if (http_request.status == 200) {
         var data = eval(http_request.responseText);
         document.getElementById('status').innerHTML = data.status;
-        document.getElementById('url').value = data.url;
+        var textElement = document.getElementById('url');
+        if(document.activeElement != textElement)
+    	    textElement.value = data.url;
       } 
       //else { alert('request trouble'); }
     }
