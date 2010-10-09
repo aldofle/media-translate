@@ -122,7 +122,7 @@ stream_type=$opt
 check_stream_flag=yes
 
 local url_plugin=''
-find_protocol_plugin $arg_url url_plugin
+find_protocol_plugin "$arg_url" url_plugin
 if [ -n "$url_plugin" ]; then
   . $PLUGINS_DIR"$url_plugin" "$arg_url"
 fi
