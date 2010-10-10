@@ -20,12 +20,6 @@
       <title>Радио BBC Radio 3</title>
       <annotation>Одна из самых популярных радиостанций Великобритании, вещающая классическую музыку. Формат BBC Radio 3: классическая музыка, джаз, драматическая музыка и национальная музыка мира.</annotation>
     
-<meta rel="stream_url">http://www.bbc.co.uk/radio/listen/live/r3.asx</meta>
-<meta rel="stream_class">playlist</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
-<meta rel="stream_type">video/x-ms-asf</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_wqxr_fm_online.html</location>
@@ -71,12 +65,6 @@
       <title>Радио Pop Classical Music</title>
       <annotation>Pop Classical Music - это лучшее из классической музыки от ведущего российского радиохолдинга "Вещательная корпорация «Проф-Медиа»" и интернет-портала 101.ru.</annotation>
     
-<meta rel="stream_url">http://radiogrom.com/online/classic/radio_pop_classc_radio_101.asx</meta>
-<meta rel="stream_class"></meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
-<meta rel="stream_type"></meta>
-<meta rel="stream_protocol">http</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_RMF_Classic_online.html</location>
