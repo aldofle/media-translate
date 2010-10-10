@@ -206,6 +206,13 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
+<link>rss/etc-menu-radiogrom-index.rss</link>
+    <title>Radiogrom.com</title>
+    <annotation>Radiogrom - о РАДИО ГРОМко! Сборник ссылок на online радиостанции на radiogrom.com</annotation>
+    <image>rss/image/menu/radiogrom.gif</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radio-my_favorites.rss</link>
     <title>Избранное</title>
     <annotation>Мой список радиостанций</annotation>
