@@ -5,7 +5,7 @@
 
   <trackList>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/radio-bbc.xspf,collection/medialist</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radio-bbc-index.xspf,collection/menulist</link>
       <title>BBC Radio</title>
       <annotation>BBC Radio Online</annotation>
       <image>rss/image/menu/internetradio.png</image>
