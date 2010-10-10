@@ -28,8 +28,10 @@ local LASTFMFILE=$TMPFILE.lastfm
 get_opt "Title"
 local tracktitle="$opt"
 
-local artist=`expr "$tracktitle" : '\(.*\) - .*' \| "$tracktitle" | sed 's/ /+/g'` 
-local track=`expr "$tracktitle" : '.* - \(.*\)' \| "$tracktitle" | sed 's/ /+/g'` 
+local artist=`expr "$tracktitle" : '\(.*\) - .*' \| ""`
+[ -z "$artist" ] && artist=`expr "$tracktitle" : '\([^-]*\)-.*' \| "$tracktitle" | sed 's/ /+/g'`
+local track=`expr "$tracktitle" : '.* - \(.*\)' \| ""`
+[ -z "$track" ] && track=`expr "$tracktitle" : '.*-\([^-]*\)$' \| "_" | sed 's/ /+/g'` 
 local request="http://www.last.fm/music/$artist/_/$track"
 
 get_opt "Size"
