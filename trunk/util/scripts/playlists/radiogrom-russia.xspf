@@ -163,12 +163,6 @@
       <location>http://www.radiogrom.com/online/russia/ac_fm_radio_online.html</location>
       <title>- 106,0 FM - АС-FM. Иркутск </title>
     
-<meta rel="stream_url">http://as.baikal.tv/e-radio/!system/m3u/asfm-hq.m3u</meta>
-<meta rel="stream_class">playlist</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
-<meta rel="stream_type">audio/x-mpegurl</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_borneo_online.html</location>
