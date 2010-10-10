@@ -41,6 +41,12 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*radiogrom\.com/online/.*$'; then
     local station_title=`grep "<title>" "$TMPFILE" | sed 's/.*<title>//;s/<\/title>.*//'`;
     rm -f "$TMPFILE"
     check_playlist
+    local prev=
+    while [ "$prev" != "$stream_url" -a "$stream_class" == "playlist" ];
+    do
+      prev=$stream_url
+      check_playlist
+    done
     [ -z "$ms_title" ] && ms_title="$station_title"
     [ -z "$icy_name" ] && icy_name="$station_title"
     [ -z "$icy_description" ] && icy_description="$station_title"
