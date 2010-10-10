@@ -13,7 +13,7 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">orfey_online.m3u</meta>
+
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_bbc_3_online.html</location>
@@ -38,7 +38,7 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">windows.asx / www.wnyc.org</meta>
+
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_classic_fm_praha_online.html</location>
@@ -51,7 +51,7 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">rtsp</meta>
-<meta rel="stream_title">Classic FM - 128 kbps stereo / Classic FM</meta>
+
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_Suisse_Classique_online.html</location>
@@ -64,7 +64,7 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-asx</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">radio_Suisse_Classique_online.m3u</meta>
+
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_Pop_Classical_Music_online.html</location>
@@ -89,7 +89,7 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wax</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">radio_RMF_Classic_online.m3u</meta>
+
 </track>
   </trackList>
 </playlist>
