@@ -12,7 +12,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/u_fm_online.html</location>
@@ -24,7 +23,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/radio_ultra_online.html</location>
@@ -41,7 +39,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/city_fm_online.html</location>
@@ -74,7 +71,6 @@
 <meta rel="stream_server">icyx://81.19.85.199:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_bitrate">64</meta>
 </track>
     <track>
@@ -87,7 +83,6 @@
 <meta rel="stream_server">icyx://89.108.123.69:8010</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">DANCE</meta>
 <meta rel="stream_bitrate">200</meta>
 </track>
@@ -105,6 +100,12 @@
       <location>http://www.radiogrom.com/online/moskva_fm/avtoradio_online.html</location>
       <title>- 90,3 FM - Авторадио </title>
     
+<meta rel="stream_url">mmsh://94.23.194.126/v3_1_22?st=043245100125266732820090917</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/relax_fm_online.html</location>
@@ -126,7 +127,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/govorit_moskva_fm_online.html</location>
@@ -138,7 +138,6 @@
 <meta rel="stream_server">icyx://90.156.211.132:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">various</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -152,7 +151,6 @@
 <meta rel="stream_server">icyx://82.204.217.140:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Various</meta>
 <meta rel="stream_bitrate">96</meta>
 </track>
@@ -166,7 +164,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/sport_fm_online.html</location>
@@ -178,7 +175,6 @@
 <meta rel="stream_server">icyx://90.156.211.132:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">various</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -192,7 +188,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/dobrie_pesni_online.html</location>
@@ -204,7 +199,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/moya_semya_fm_online.html</location>
@@ -238,7 +232,6 @@
 <meta rel="stream_server">icyx://89.208.99.16:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Live Air</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -252,7 +245,6 @@
 <meta rel="stream_server">icyx://82.204.217.140:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Various</meta>
 <meta rel="stream_bitrate">96</meta>
 </track>
@@ -266,7 +258,6 @@
 <meta rel="stream_server">icyx://217.29.51.162:8000</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">For kids</meta>
 <meta rel="stream_bitrate">32</meta>
 </track>
@@ -280,7 +271,6 @@
 <meta rel="stream_server">icyx://213.208.177.14:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Russian</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -294,7 +284,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/98_8_fm_online.html</location>
@@ -306,7 +295,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/sveghee_fm_online.html</location>
@@ -317,6 +305,12 @@
       <location>http://www.radiogrom.com/online/moskva_fm/radio_alla_online.html</location>
       <title>- 98,8 FM - Радио Алла </title>
     
+<meta rel="stream_url">mmsh://mms.online.ru/v4_1_22?st=018489700123667805420090310</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/orfey_online.html</location>
@@ -328,7 +322,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/finam_fm_online.html</location>
@@ -345,7 +338,6 @@
 <meta rel="stream_server">icyx://85.21.192.13:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">various</meta>
 <meta rel="stream_bitrate">48</meta>
 </track>
@@ -364,7 +356,6 @@
 <meta rel="stream_server">icyx://78.159.102.100:6045</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Classic</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -378,7 +369,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/nashe_fm_online.html</location>
@@ -390,7 +380,6 @@
 <meta rel="stream_server">icyx://81.19.85.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Rock</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -404,7 +393,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/popsa_online.html</location>
@@ -416,7 +404,6 @@
 <meta rel="stream_server">icyx://81.19.85.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_bitrate">64</meta>
 </track>
     <track>
@@ -429,7 +416,6 @@
 <meta rel="stream_server">icyx://83.222.4.42:8800</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Chanson</meta>
 <meta rel="stream_bitrate">96</meta>
 </track>
@@ -443,7 +429,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/maximum_online.html</location>
@@ -455,7 +440,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/energy_fm_online.html</location>
@@ -467,7 +451,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/radio_7_online.html</location>
@@ -484,7 +467,6 @@
 <meta rel="stream_server">icyx://81.19.85.199:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_bitrate">64</meta>
 </track>
     <track>
@@ -497,7 +479,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/europa_plus_online.html</location>
@@ -514,7 +495,6 @@
 <meta rel="stream_server">icyx://81.19.85.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_bitrate">128</meta>
 </track>
     <track>
@@ -527,7 +507,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/hit_fm_online.html</location>
@@ -539,7 +518,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/mvolna_online.html</location>

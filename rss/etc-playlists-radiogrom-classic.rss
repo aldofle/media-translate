@@ -95,6 +95,10 @@
 			<script>print(location); location;</script>
 		</text>
 
+		<text align="center" redraw="yes" offsetXPC=55 offsetYPC=90 widthPC=40 heightPC=5 fontSize=13 backgroundColor=0:0:0 foregroundColor=200:80:80>
+			<script>if(streamurl==""||streamurl==null) "WARNING! No stream url."; else "";</script>
+		</text>
+
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
@@ -115,6 +119,7 @@
 					  annotation = getItemInfo(idx, "annotation");
 					  if(annotation == "" || annotation == null)
 					    annotation = getItemInfo(idx, "stream_genre");
+					  streamurl = getItemInfo(idx, "stream_url");
 					}
 					getItemInfo(idx, "title");
 				</script>
@@ -414,12 +419,12 @@
     <location>http://www.radiogrom.com/online/classic/radio_bbc_3_online.html</location>
     <title>Радио BBC Radio 3</title>
     <annotation>Одна из самых популярных радиостанций Великобритании, вещающая классическую музыку. Формат BBC Radio 3: классическая музыка, джаз, драматическая музыка и национальная музыка мира.</annotation>
-    <stream_url>http://www.bbc.co.uk/radio/listen/live/r3.asx</stream_url>
-    <stream_class>playlist</stream_class>
+    <stream_url>mmsh://wmlive.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_eq1_sl0?BBC-UID=241ccbd10cb0fecfb57679811137bfdb15b4168a20903114a4ef09279c222aa1&amp;amp;SSO2-UID=</stream_url>
+    <stream_class>audio</stream_class>
     <stream_soft/>
     <stream_server/>
-    <stream_type>video/x-ms-asf</stream_type>
-    <stream_protocol>http</stream_protocol>
+    <stream_type>audio/x-ms-wma</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/classic/radio_wqxr_fm_online.html</location>
@@ -458,12 +463,6 @@
     <location>http://www.radiogrom.com/online/classic/radio_Pop_Classical_Music_online.html</location>
     <title>Радио Pop Classical Music</title>
     <annotation>Pop Classical Music - это лучшее из классической музыки от ведущего российского радиохолдинга "Вещательная корпорация «Проф-Медиа»" и интернет-портала 101.ru.</annotation>
-    <stream_url>http://radiogrom.com/online/classic/radio_pop_classc_radio_101.asx</stream_url>
-    <stream_class/>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type/>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/classic/radio_RMF_Classic_online.html</location>

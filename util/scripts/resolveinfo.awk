@@ -31,7 +31,7 @@ function getInfo(url)
   print "Resolve url: " url > "/dev/stderr"
   HttpService = "/inet/tcp/0/127.0.0.1/80"
   ORS = RS = "\n\n"
-  print "GET /cgi-bin/translate?info,," url " HTTP/1.0" |& HttpService
+  print "GET /cgi-bin/translate?info,Resolve-playlist:1," url " HTTP/1.0" |& HttpService
   HttpService |& getline Header
   info_file = "/tmp/info.xml"
   printf "" > info_file

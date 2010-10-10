@@ -32,15 +32,15 @@ stream_type=''
 stream_url=''
 server_type=''
 
-if echo "${arg_url}" | grep -q -s '\(www\.\)*radiogrom\.com/online/.*$'; then 
+if echo "${arg_url}" | grep -q -s '\(www\.\)*radiogrom\.com/online/.*\.html$'; then 
 
   local host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
   
   if [ -f ${TMPFILE} ]; then
-    stream_url=`grep 'var file = ' "$TMPFILE" | sed 's/.*= "//;s/".*//'`;
+    arg_url=`grep 'var file = ' "$TMPFILE" | sed 's/.*= "//;s/".*//'`;
     local station_title=`grep "<title>" "$TMPFILE" | sed 's/.*<title>//;s/<\/title>.*//'`;
     rm -f "$TMPFILE"
-    check_playlist
+    check_av_stream
     local prev=
     while [ "$prev" != "$stream_url" -a "$stream_class" == "playlist" ];
     do
@@ -52,6 +52,8 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*radiogrom\.com/online/.*$'; then
     [ -z "$icy_description" ] && icy_description="$station_title"
     return $RC_OK
   fi
+else
+  check_av_stream
 fi
 
 return $RC_FAIL

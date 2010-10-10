@@ -5,7 +5,7 @@
 
   <trackList>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/radio-bbc-world.xspf,collection/medialist</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Start:left;File:etc/playlists/radio-bbc-world.xspf,collection/medialist</link>
       <title>BBC World Service</title>
       <annotation></annotation>
       <image>rss/image/menu/internetradio.png</image>

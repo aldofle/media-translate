@@ -95,6 +95,10 @@
 			<script>print(location); location;</script>
 		</text>
 
+		<text align="center" redraw="yes" offsetXPC=55 offsetYPC=90 widthPC=40 heightPC=5 fontSize=13 backgroundColor=0:0:0 foregroundColor=200:80:80>
+			<script>if(streamurl==""||streamurl==null) "WARNING! No stream url."; else "";</script>
+		</text>
+
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
@@ -115,6 +119,7 @@
 					  annotation = getItemInfo(idx, "annotation");
 					  if(annotation == "" || annotation == null)
 					    annotation = getItemInfo(idx, "stream_genre");
+					  streamurl = getItemInfo(idx, "stream_url");
 					}
 					getItemInfo(idx, "title");
 				</script>
@@ -423,12 +428,6 @@
   <item>
     <location>http://www.radiogrom.com/online/radio_france/one_station_fr_online.html</location>
     <title>- Радио One Station </title>
-    <stream_url>http://www.onestation.fr/play/hautdebit/windowsmedia-onestation.asx</stream_url>
-    <stream_class>playlist</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>video/x-ms-asf</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/maxx_france_online.html</location>

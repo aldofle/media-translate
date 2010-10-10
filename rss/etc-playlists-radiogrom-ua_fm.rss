@@ -95,6 +95,10 @@
 			<script>print(location); location;</script>
 		</text>
 
+		<text align="center" redraw="yes" offsetXPC=55 offsetYPC=90 widthPC=40 heightPC=5 fontSize=13 backgroundColor=0:0:0 foregroundColor=200:80:80>
+			<script>if(streamurl==""||streamurl==null) "WARNING! No stream url."; else "";</script>
+		</text>
+
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
 		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
@@ -115,6 +119,7 @@
 					  annotation = getItemInfo(idx, "annotation");
 					  if(annotation == "" || annotation == null)
 					    annotation = getItemInfo(idx, "stream_genre");
+					  streamurl = getItemInfo(idx, "stream_url");
 					}
 					getItemInfo(idx, "title");
 				</script>
@@ -474,6 +479,14 @@
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/hitfm_fm_radio_online.html</location>
     <title>- 96.4 FM - Радио ХIT FM 96.4 FM </title>
+    <stream_url>http://online-hitfm.tavrmedia.ua/HitFM_256</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://195.95.206.12:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>Only Hits!</stream_genre>
+    <stream_bitrate>256</stream_bitrate>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_dj_fm_kiev_online.html</location>

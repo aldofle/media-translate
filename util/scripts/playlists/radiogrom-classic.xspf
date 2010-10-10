@@ -13,13 +13,18 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_bbc_3_online.html</location>
       <title>Радио BBC Radio 3</title>
       <annotation>Одна из самых популярных радиостанций Великобритании, вещающая классическую музыку. Формат BBC Radio 3: классическая музыка, джаз, драматическая музыка и национальная музыка мира.</annotation>
     
+<meta rel="stream_url">mmsh://wmlive.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_eq1_sl0?BBC-UID=241ccbd10cb0fecfb57679811137bfdb15b4168a20903114a4ef09279c222aa1&amp;amp;SSO2-UID=</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft"></meta>
+<meta rel="stream_server"></meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_wqxr_fm_online.html</location>
@@ -32,7 +37,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_classic_fm_praha_online.html</location>
@@ -45,7 +49,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">rtsp</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_Suisse_Classique_online.html</location>
@@ -58,7 +61,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-asx</meta>
 <meta rel="stream_protocol">http</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_Pop_Classical_Music_online.html</location>
@@ -77,7 +79,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wax</meta>
 <meta rel="stream_protocol">http</meta>
-
 </track>
   </trackList>
 </playlist>
