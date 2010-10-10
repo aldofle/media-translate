@@ -12,7 +12,6 @@
 <meta rel="stream_server">icyx://78.111.92.26:8100</meta>
 <meta rel="stream_type">audio/aac</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Drum and Bass</meta>
 <meta rel="stream_bitrate">32</meta>
 </track>
@@ -20,6 +19,14 @@
       <location>http://www.radiogrom.com/online/russia/radio_priboy_online.html</location>
       <title>- 100,7 FM - Радио Прибой Махачкала </title>
     
+<meta rel="stream_url">http://stream6.radiostyle.ru:8006/priboyfm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://62.122.213.3:8006</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Various</meta>
+<meta rel="stream_bitrate">96</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_vatan_online.html</location>
@@ -31,7 +38,6 @@
 <meta rel="stream_server">icyx://62.122.213.3:8001</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Various</meta>
 <meta rel="stream_bitrate">96</meta>
 </track>
@@ -45,7 +51,6 @@
 <meta rel="stream_server">icyx://77.106.212.106:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">MaksFM</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -59,7 +64,6 @@
 <meta rel="stream_server">icyx://80.85.150.67:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">CHR</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -73,7 +77,6 @@
 <meta rel="stream_server">icyx://90.156.211.132:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">various</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -87,7 +90,6 @@
 <meta rel="stream_server">icyx://89.108.75.162:9000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Dance, House, Trance, R&amp;B, Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -101,7 +103,6 @@
 <meta rel="stream_server">icyx://62.183.34.109:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Pop</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -115,7 +116,6 @@
 <meta rel="stream_server">icyx://173.193.9.67:10000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Dance</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -129,7 +129,6 @@
 <meta rel="stream_server">icyx://79.137.234.183:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Talk</meta>
 <meta rel="stream_bitrate">64</meta>
 </track>
@@ -143,7 +142,6 @@
 <meta rel="stream_server">icyx://74.53.243.162:8004</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Religious</meta>
 <meta rel="stream_bitrate">48</meta>
 </track>
@@ -157,7 +155,6 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/ac_fm_radio_online.html</location>
@@ -174,7 +171,6 @@
 <meta rel="stream_server">icyx://93.88.137.53:8888</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">radio</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -193,7 +189,6 @@
 <meta rel="stream_server">icyx://213.183.101.101:8090</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Hot Adult Contemporary</meta>
 <meta rel="stream_bitrate">192</meta>
 </track>
@@ -207,7 +202,6 @@
 <meta rel="stream_server">icyx://81.176.214.10:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Pop music</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -221,7 +215,6 @@
 <meta rel="stream_server">icyx://188.128.120.226:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">live</meta>
 <meta rel="stream_bitrate">32</meta>
 </track>
@@ -235,7 +228,6 @@
 <meta rel="stream_server">icyx://83.246.143.25:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">various</meta>
 <meta rel="stream_bitrate">64</meta>
 </track>
@@ -249,7 +241,6 @@
 <meta rel="stream_server">icyx://195.206.51.178:8004</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-
 <meta rel="stream_genre">Romantic</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>

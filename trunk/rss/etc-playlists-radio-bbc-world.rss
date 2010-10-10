@@ -31,7 +31,7 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+  startitem = "left";
   setRefreshTime(1);
 </onEnter>
 
@@ -403,113 +403,54 @@
   </unknownDispatcher>
 
 <channel>
-  <title>Radiogrom.com - piter_fm</title>
+  <title>BBC World Service</title>
   <item>
-    <location>http://www.radiogrom.com/online/piter_fm/dorozhnoe_radio_online.html</location>
-    <title>- 87,5 FM - Дорожное радио </title>
-    <stream_url>http://radio.mv.ru:8080/Dorojnoe_Radio</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://89.239.131.142:8080</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_bitrate>64</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/piter_fm/avtoradio_online.html</location>
-    <title>- 88,4 FM - Авторадио </title>
-    <stream_url>mmsh://213.172.6.133:8844/</stream_url>
+    <title>English (UK Schedule)</title>
+    <annotation>BBC World Service - English (UK Schedule). / BBC World Service</annotation>
+    <location>http://www.bbc.co.uk/worldservice/meta/tx/nb/live_infent_au_nb.asx</location>
+    <stream_url>mmsh://a1022.l3944043021.c39440.g.lm.akamaistream.net/D/1022/39440/v0001/reflector:43021</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft/>
     <stream_server/>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
+    <stream_title>BBC World Service - English (UK Schedule). / BBC World Service</stream_title>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_zenit_online.html</location>
-    <title>- 89,7 FM - Радио Зенит </title>
-    <stream_url>mms://217.170.65.66/zenit</stream_url>
+    <title>English News</title>
+    <annotation>BBC World Service - 24 Hour News Stream. / BBC World Service</annotation>
+    <location>http://www.bbc.co.uk/worldservice/meta/tx/nb/live_news_au_nb.asx</location>
+    <stream_url>mmsh://a279.l3944048278.c39440.g.lm.akamaistream.net/D/279/39440/v0001/reflector:48278</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft/>
     <stream_server/>
     <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>rtsp</stream_protocol>
+    <stream_protocol>mmsh</stream_protocol>
+    <stream_title>BBC World Service - 24 Hour News Stream. / BBC World Service</stream_title>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_ermitazh_online.html</location>
-    <title>- 90,1 FM - Радио Эрмитаж </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_hit_online.html</location>
-    <title>- 90,6 FM - Радио Хит </title>
-    <stream_url>http://217.170.67.77/radiohit</stream_url>
+    <title>BBC Arabic</title>
+    <annotation>BBC World Service - bbcarabic.com. / BBC World Service</annotation>
+    <location>http://www.bbc.co.uk/arabic/meta/tx/nb/arabic_live_au_nb.asx</location>
+    <stream_url>mmsh://a294.l3944042293.c39440.g.lm.akamaistream.net/D/294/39440/v0001/reflector:42293</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft/>
     <stream_server/>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>RadioHit 90.6 FM</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
+    <stream_type>audio/x-ms-wma</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
+    <stream_title>BBC World Service - bbcarabic.com. / BBC World Service</stream_title>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_vanya_online.html</location>
-    <title>- 100,1 FM - Радио Ваня </title>
-    <stream_url>http://online.radiovanya.ru/radiovanya</stream_url>
+    <title>BBC Russian</title>
+    <annotation>BBC World Service - bbcrussian.com. / BBC World Service</annotation>
+    <location>http://www.bbc.co.uk/russian/meta/tx/nb/russian_live_au_nb.asx</location>
+    <stream_url>mmsh://a89.l3944044088.c39440.g.lm.akamaistream.net/D/89/39440/v0001/reflector:44088</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.170.67.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Radio Vanya</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_eldoradio_online.html</location>
-    <title>- 101,4 FM - Радио Эльдорадио </title>
-    <stream_url>http://onair.eltel.net/eldoradio-128k</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.9.96.34:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_roks_online.html</location>
-    <title>- 102,0 FM - Радио Рокс </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_metro_online.html</location>
-    <title>- 102,4 FM - Радио Metro </title>
-    <stream_url>http://195.182.132.18:8230/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>http://195.182.132.18:8230</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Pop Hit Dance</stream_genre>
-    <stream_bitrate>96</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_baltika_online.html</location>
-    <title>- 104,8 FM - Радио Балтика </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/piter_fm/monte_carlo_online.html</location>
-    <title>- 105,9 FM - Радио Монте-Карло </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_record_online.html</location>
-    <title>- 106,3 FM - Радио Рекорд </title>
-    <stream_url>http://radio.11one.ru:8000/record192.mp3?u=6SQsq8V9</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://82.138.14.67:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Dance</stream_genre>
-    <stream_bitrate>192</stream_bitrate>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>audio/x-ms-wma</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
+    <stream_title>BBC World Service - bbcrussian.com. / BBC World Service</stream_title>
   </item>
 </channel>
 
