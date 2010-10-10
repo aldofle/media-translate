@@ -12,9 +12,14 @@ case $1 in
     ;;
 esac
 
-for f in radio*.xspf
+for f in radio-*.xspf
     do
 	awk -v FORCEINFO=$FORCE -v SKIPTITLE=0 -f ../resolveinfo.awk $f | sed '/^$/d' > ../../../etc/playlists/$f
+    done
+    
+for f in radiogrom*.xspf
+    do
+	awk -v FORCEINFO=$FORCE -v SKIPTITLE=1 -f ../resolveinfo.awk $f | sed '/^$/d' > ../../../etc/playlists/$f
     done
     
 for f in tv*.xspf
