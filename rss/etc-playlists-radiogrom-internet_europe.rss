@@ -401,11 +401,11 @@
   <title>Radiogrom.com - internet_europe</title>
   <item>
     <location>http://www.radiogrom.com/online/internet_europe/radio_ru_fm_online.html</location>
-    <title>- Радио RU-fm слушать онлайн через интернет</title>
+    <title>- Радио RU-fm </title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/internet_europe/star_fm_bulgaria_online.html</location>
-    <title>- Радио Star FM слушать онлайн через интернет</title>
+    <title>- Радио Star FM </title>
     <stream_url>http://inforadio.atlantis.bg:8000/inforadio.ogg</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft/>
@@ -417,7 +417,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/internet_europe/ministry_of_sound_online.html</location>
-    <title>- Радио Ministry Of Sound Radio слушать онлайн через интернет</title>
+    <title>- Радио Ministry Of Sound Radio </title>
     <stream_url>mmsh://wms.ministryofsound.com/MinistryLive</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft/>
@@ -428,7 +428,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/internet_europe/russkoe_berlin_online.html</location>
-    <title>- Русское Радио Берлин. Russkoe Radio Berlin слушать онлайн через интернет</title>
+    <title>- Русское Радио Берлин. Russkoe Radio Berlin </title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/great_britain/capital_fm_london_95_8_online.html</location>

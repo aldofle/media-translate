@@ -47,7 +47,7 @@
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radiogrom-index.xspf,collection/medialist</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radiogrom-index.xspf,collection/menulist</link>
       <title>Radiogrom.com</title>
       <annotation>Radiogrom - о РАДИО ГРОМко! Сборник ссылок на online радиостанции на radiogrom.com</annotation>
       <image>rss/image/menu/radiogrom.gif</image>

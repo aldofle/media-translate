@@ -401,7 +401,7 @@
   <title>Radiogrom.com - radio_france</title>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/radio_maxlaradio_fr_online.html</location>
-    <title> - Радио MAXLARADIO слушать онлайн через интернет</title>
+    <title> - Радио MAXLARADIO </title>
     <stream_url>http://91.121.62.121:9410</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -414,15 +414,15 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/radio_48fm_fr_online.html</location>
-    <title> - Радио 48FM слушать онлайн через интернет</title>
+    <title> - Радио 48FM </title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/radio_pulsar_fr_online.html</location>
-    <title>- Радио Pulsar слушать онлайн через интернет</title>
+    <title>- Радио Pulsar </title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/one_station_fr_online.html</location>
-    <title>- Радио One Station слушать онлайн через интернет</title>
+    <title>- Радио One Station </title>
     <stream_url>http://www.onestation.fr/play/hautdebit/windowsmedia-onestation.asx</stream_url>
     <stream_class>playlist</stream_class>
     <stream_soft/>
@@ -432,11 +432,11 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/maxx_france_online.html</location>
-    <title>- Радио MaxxHits слушать онлайн через интернет</title>
+    <title>- Радио MaxxHits </title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/virgin_radio_france_online.html</location>
-    <title>- Радио Virgin Radio - Scene Francaise слушать онлайн через интернет</title>
+    <title>- Радио Virgin Radio - Scene Francaise </title>
   </item>
 </channel>
 

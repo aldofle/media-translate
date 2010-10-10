@@ -401,7 +401,7 @@
   <title>Radiogrom.com - belarus_fm</title>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/russkoe_radio_minsk_online.html</location>
-    <title>- Русское радио Минск слушать онлайн через интернет</title>
+    <title>- Русское радио Минск </title>
     <stream_url>http://live.rusradio.by:8000/live</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -414,7 +414,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/radio_gomel_online.html</location>
-    <title>- Радио Гомель слушать онлайн через интернет</title>
+    <title>- Радио Гомель </title>
     <stream_url>http://skycast.su:2007/998</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -427,7 +427,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/pilot_fm_online.html</location>
-    <title>- Пилот FM слушать онлайн через интернет</title>
+    <title>- Пилот FM </title>
     <stream_url>http://radio.solo.by:8002/pilotfm</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -439,7 +439,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/evroradio_online.html</location>
-    <title>- Еврорадио слушать онлайн через интернет</title>
+    <title>- Еврорадио </title>
     <stream_url>http://212.69.72.6:8100/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -452,7 +452,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/radius_fm_online.html</location>
-    <title>- Радиус FM слушать онлайн через интернет</title>
+    <title>- Радиус FM </title>
     <stream_url>mms://livecast.tvr.by/radio4</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft/>
@@ -463,7 +463,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/unistar_fm_online.html</location>
-    <title>- Радио Unistar слушать онлайн через интернет</title>
+    <title>- Радио Unistar </title>
     <stream_url>http://213.184.232.36:8000/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -476,7 +476,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/alfa_radio_online.html</location>
-    <title>- Альфа Радио слушать онлайн через интернет</title>
+    <title>- Альфа Радио </title>
     <stream_url>http://86.57.151.4:8009/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -489,11 +489,11 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/novoe_radio_online.html</location>
-    <title>- Новое Радио слушать онлайн через интернет</title>
+    <title>- Новое Радио </title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/ba_radio_online.html</location>
-    <title>- Радио Би Эй слушать онлайн через интернет</title>
+    <title>- Радио Би Эй </title>
     <stream_url>http://radio.solo.by:8002/radioba</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
