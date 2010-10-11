@@ -78,5 +78,10 @@ http://station.ru/RadioStation.aspx?id=1743
 http://guzei.com/online_radio/listen.php?online_radio_id=5325
 http://guzei.com/online_tv/watch.php?online_tv_id=1781
 }}}
+  * [http://www.radiogrom.com/online/ Радио-каталог Radiogrom.com]
+{{{
+http://www.radiogrom.com/online/russia/radio_priboy_online.html
+http://www.radiogrom.com/online/belarus_fm/evroradio_online.html
+}}}
   * [http://www.last.fm/api Last.FM]
   Получение картинки с исполнителем для текущего проигрываемого трека.
