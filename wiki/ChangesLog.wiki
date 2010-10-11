@@ -6,6 +6,7 @@
   * добавлен add-on *Play on Player* для Google Chrome (см. [ModuleMediaStreamRenderer Media Stream Renderer]);
   * добавлен протокол *rtmpe://* (обработка протоколов вынесена в отдельные плагины);
   * исправлены ошибка при обработке StreamTitle (символ ' внутри текста);
+  * подправлено распознавание пары артист/название_трека в StreamTitle;
   * добавлены радио-плейлисты от *radiogrom.com* и *BBC Radio*.
 
 == 2.0.2 ==
