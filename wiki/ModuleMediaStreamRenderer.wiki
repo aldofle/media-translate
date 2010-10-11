@@ -20,6 +20,8 @@ http://player/cgi-bin/translate?renderer-play,,
 
 Для удобства работы можно загрузить и установить расширение *Play on Player* для интернет браузера, которые добавляют кнопки в popup-меню и тулбар браузера.
 
+=== Firefox ===
+
 Установка для Firefox:
   # cкачиваем http://player/bin/playonplayer.xpi;
   # кидаем xpi в окно Firefox для установки расширения;
@@ -28,12 +30,16 @@ http://player/cgi-bin/translate?renderer-play,,
 Удаление для Firefox:
   # Стандартным способом из диалога Инструменты/Дополнения.
 
+=== Google Chrome ===
+
 Установка для Google Chrome:
   # cкачиваем http://player/bin/playonplayer.crx;
   # В настройках add-on следует выставить IP адрес или имя плеера (по умолчанию player).
 
 Удаление для Google Chrome:
   # Стандартным способом из диалога Инструменты/Дополнения.
+
+=== Internet Explorer ===
 
 Установка для Internet Explorer:
   # cкачиваем http://player/bin/playonplayer.exe;
