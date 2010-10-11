@@ -160,6 +160,7 @@
       <location>http://www.radiogrom.com/online/russia/ac_fm_radio_online.html</location>
       <title>- 106,0 FM - АС-FM. Иркутск </title>
     
+<meta rel="stream_protocol">file</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_borneo_online.html</location>
