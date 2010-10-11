@@ -28,6 +28,13 @@ http://player/cgi-bin/translate?renderer-play,,
 Удаление для Firefox:
   # Стандартным способом из диалога Инструменты/Дополнения.
 
+Установка для Google Chrome:
+  # cкачиваем http://player/bin/playonplayer.crx;
+  # В настройках add-on следует выставить IP адрес или имя плеера (по умолчанию player).
+
+Удаление для Google Chrome:
+  # Стандартным способом из диалога Инструменты/Дополнения.
+
 Установка для Internet Explorer:
   # cкачиваем http://player/bin/playonplayer.exe;
   # запускаем его для установки расширения;
