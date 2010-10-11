@@ -21,6 +21,7 @@
   * Station.ru (http://station.ru/StationsList.aspx?type=online)
   * Sampo.ru (http://radio.sampo.ru/)
   * Nullwave.ru (http://nullwave.ru/)
+  * BBC Radio (http://http://www.bbc.co.uk/radio/)
 
 = Встроенные RSS/CGI-приложения =
   == Media Stream Renderer ==
