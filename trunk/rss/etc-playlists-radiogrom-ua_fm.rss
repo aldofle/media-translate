@@ -639,6 +639,14 @@
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_sharmanka_kiev_online.html</location>
     <title> - 104.0 FM - Радио Шарманка 104.0 FM </title>
+    <stream_url>http://media.wnet.ua:8000/sharmanka128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://217.20.164.161:8000</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>various</stream_genre>
+    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_energy_kiev_online.html</location>

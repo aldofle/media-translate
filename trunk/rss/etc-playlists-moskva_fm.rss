@@ -1336,6 +1336,13 @@ columnCount=5
     <id>4004</id>
     <fm>107.8</fm>
     <name>107_8</name>
+    <stream_url>http://83.222.222.88:8080/</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>shoutcast</stream_soft>
+    <stream_server>icyx://83.222.222.88:8080</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_bitrate>48</stream_bitrate>
   </item>
 </channel>
 

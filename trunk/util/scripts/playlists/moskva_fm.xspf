@@ -957,6 +957,13 @@
       <meta rel="fm">107.8</meta>
       <meta rel="name">107_8</meta>
     
+<meta rel="stream_url">http://83.222.222.88:8080/</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://83.222.222.88:8080</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_bitrate">48</meta>
 </track>
   </trackList>
 </playlist>

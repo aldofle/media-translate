@@ -438,6 +438,7 @@
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_ermitazh_online.html</location>
     <title>- 90,1 FM - Радио Эрмитаж </title>
+    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_hit_online.html</location>

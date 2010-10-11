@@ -47,12 +47,12 @@ function getInfo(url)
     {
       if(XITEM == "stream")
       {
-        print "<meta rel=\"stream_url\">" XATTR["url"] "</meta>";
-        print "<meta rel=\"stream_class\">" XATTR["class"] "</meta>";
-        print "<meta rel=\"stream_soft\">" XATTR["server"] "</meta>";
-        print "<meta rel=\"stream_server\">" XATTR["server_url"] "</meta>";
-        print "<meta rel=\"stream_type\">" XATTR["type"] "</meta>";
-        print "<meta rel=\"stream_protocol\">" XATTR["protocol"] "</meta>";
+        if(XATTR["url"] != "") print "<meta rel=\"stream_url\">" XATTR["url"] "</meta>";
+        if(XATTR["class"] != "") print "<meta rel=\"stream_class\">" XATTR["class"] "</meta>";
+        if(XATTR["server"] != "") print "<meta rel=\"stream_soft\">" XATTR["server"] "</meta>";
+        if(XATTR["server_url"] != "") print "<meta rel=\"stream_server\">" XATTR["server_url"] "</meta>";
+        if(XATTR["type"] != "") print "<meta rel=\"stream_type\">" XATTR["type"] "</meta>";
+        if(XATTR["protocol"] != "") print "<meta rel=\"stream_protocol\">" XATTR["protocol"] "</meta>";
       }
       else
       if(XITEM == "stream-genre")

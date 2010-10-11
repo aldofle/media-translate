@@ -428,6 +428,7 @@
   <item>
     <location>http://www.radiogrom.com/online/radio_france/one_station_fr_online.html</location>
     <title>- Радио One Station </title>
+    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/maxx_france_online.html</location>
