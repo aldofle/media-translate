@@ -34,7 +34,7 @@ http://player/cgi-bin/translate?renderer-play,,
 
 Установка для Google Chrome:
   # cкачиваем http://player/bin/playonplayer.crx;
-  # В настройках add-on следует выставить IP адрес или имя плеера (по умолчанию player).
+  # в настройках add-on следует выставить IP адрес или имя плеера (по умолчанию player).
 
 Удаление для Google Chrome:
   # Стандартным способом из диалога Инструменты/Дополнения.
