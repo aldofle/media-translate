@@ -1,0 +1,54 @@
+#!/bin/sh
+#
+#   http://code.google.com/media-translate/
+#   Copyright (C) 2010  Serge A. Timchenko
+#
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+
+local DATAPATH=$BASEPATH/app/shoutcast
+cd $DATAPATH
+
+local CHANNELFILE="$CACHEPATH/shoutcast.genrelist.cache"
+local TEMPDL=$TMPFILE.dl
+
+local TIMELIFE=3600
+
+let tsttime=`date +%s`-$TIMELIFE
+
+local REFRESHCACHE=yes
+if [ -f "$CHANNELFILE" ]; then
+  if [ `date +%s -r "$CHANNELFILE"` -gt $tsttime ]; then
+    REFRESHCACHE=
+  fi
+fi
+
+if [ $REFRESHCACHE ]; then
+  $WGET -q -O "$TEMPDL" http://www.shoutcast.com:80/sbin/newxml.phtml
+  if [ -f "$TEMPDL" ]; then
+    if [ -x "$XSLTPROC" ]; then
+      $XSLTPROC genrelist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
+    else
+      awk -f genrelist.awk "$TEMPDL" > $CHANNELFILE
+    fi
+    rm -f "$TEMPDL"
+  fi
+fi
+
+if [ -f "$CHANNELFILE" ]; then
+  (
+    export CHANNELFILE;
+    template2rss genrelist.xml | printContent "application/rss+xml"
+  )
+fi
