@@ -122,9 +122,9 @@ stream_type=$opt
 check_stream_flag=yes
 
 local url_plugin=''
-find_protocol_plugin "$arg_url" url_plugin
+find_protocol_plugin "'$arg_url'" url_plugin
 if [ -n "$url_plugin" ]; then
-  . $PLUGINS_DIR"$url_plugin" "$arg_url"
+  . $PLUGINS_DIR"$url_plugin" "'$arg_url'"
 fi
 
 stream_url=${arg_url}
@@ -508,11 +508,11 @@ check_stream()
     stream_type=application/x-file-browser
   else
     local url_plugin=''
-    find_plugin $arg_url url_plugin
+    find_plugin "'$arg_url'" url_plugin
     if [ -z "$url_plugin" ]; then
       check_av_stream
     else
-      . $PLUGINS_DIR"$url_plugin" "$arg_url"
+      . $PLUGINS_DIR"$url_plugin" "'$arg_url'"
     fi
   fi
   
