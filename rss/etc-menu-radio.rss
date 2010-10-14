@@ -179,12 +179,21 @@ columnCount=3
 
 <channel>
   <title>Internet Radio</title>
+<!--  
   <item>
     <link>http://127.0.0.1/cgi-bin/translate?app,,shoutcast/genrelist</link>
     <title>SHOUTcast Radio Directory</title>
     <annotation>Listing thousands of radio channels worldwide...</annotation>
     <image>rss/image/menu/shoutcast.jpg</image>
     <mediaDisplay name="photoView"/>
+  </item>
+  -->
+  <item>
+    <link>rss/shoutcast_index.rss</link>
+    <title>SHOUTcast Radio Directory</title>
+    <annotation>Listing thousands of radio channels worldwide...</annotation>
+    <image>rss/image/menu/shoutcast.jpg</image>
+    <mediaDisplay name="onePartView"/>
   </item>
   <item>
 <link>rss/etc-playlists-radio-bluemars.rss</link>
@@ -229,6 +238,13 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
     <annotation>SomaFM is 20 unique channels of listener-supported, commercial-free, underground/alternative radio broadcasting from San Francisco. All music hand-picked by SomaFM's award-winning DJs and music directors.</annotation>
     <image>rss/image/menu/somafm.gif</image>
     <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+    <link>http://127.0.0.1/cgi-bin/translate?app,radioio,shoutcast/search</link>
+    <title>RadioIO</title>
+    <annotation>It's all about the music</annotation>
+    <image>http://radioio.com/images/radioio_logo.jpg</image>
+    <mediaDisplay name="onePartView"/>
   </item>
   <item>
 <link>rss/etc-menu-radio-other.rss</link>

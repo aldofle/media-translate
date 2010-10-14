@@ -56,6 +56,13 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,radioio,shoutcast/search</link>
+      <title>RadioIO</title>
+      <annotation>It's all about the music</annotation>
+      <image>http://radioio.com/images/radioio_logo.jpg</image>
+      <meta rel="mediaDisplay">onePartView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radio-other.xspf,collection/menulist</link>
       <title>Other</title>
       <annotation>Разные списки интернет-радиостанций</annotation>

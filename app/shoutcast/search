@@ -20,9 +20,9 @@
 DATAPATH=$BASEPATH/app/shoutcast
 cd $DATAPATH
 
-GENRE="$arg_opt"
+SEARCH="$arg_opt"
 
-CHANNELFILE="$CACHEPATH/shoutcast.`echo -n \"$GENRE\" | sed 's/\//_/g'`.cache"
+CHANNELFILE="$CACHEPATH/shoutcast.search.`echo -n \"$SEARCH\" | sed 's/[^a-zA-z0-9_\-]/_/g'`.cache"
 TEMPDL=$TMPFILE.dl
 
 TIMELIFE=3600
@@ -36,11 +36,13 @@ if [ -f "$CHANNELFILE" ]; then
   fi
 fi
 
+local TITLE="Shoutcast Radio - '$SEARCH'"
+[ ! -f "$CHANNELFILE" ] && echo "<channel><title>`escapeXML "$TITLE"`</title></channel>" > "$CHANNELFILE"
+
 if [ $REFRESHCACHE ]; then
-  $WGET -q -O "$TEMPDL" "http://www.shoutcast.com:80/sbin/newxml.phtml?genre=`urlencode_s "$GENRE"`"
+  $WGET -q -O "$TEMPDL" "http://www.shoutcast.com:80/sbin/newxml.phtml?search=`urlencode_s "$SEARCH"`"
   if [ -f "$TEMPDL" ]; then
     if [ "`ls -s "$TEMPDL" | awk '{print $1}'`" != "0" ]; then
-      TITLE="Shoutcast Radio - $GENRE"
       if [ -x "$XSLTPROC" ]; then
         $XSLTPROC --stringparam title "$TITLE" genre.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
       else
@@ -51,9 +53,7 @@ if [ $REFRESHCACHE ]; then
   fi
 fi
 
-if [ -f "$CHANNELFILE" ]; then
-  (
-    export CHANNELFILE; 
-    template2rss genre.xml | printContent "application/rss+xml"
-  )
-fi
+(
+  export CHANNELFILE; 
+  template2rss genre.xml | printContent "application/rss+xml"
+)
