@@ -162,14 +162,14 @@
 
 
 <channel>
-  <title>Other Internet TV Lists</title>
-  <item>
+<title>Other Internet TV Lists</title>
+<item>
 <link>rss/etc-playlists-tv-ras_list.rss</link>
-    <title>ras playlist</title>
-    <annotation>Небольшой список в основном с российскими интернет-телевизионными каналами от пользователя ras@forum.iconbit.ru</annotation>
-    <image>rss/image/menu/internettv.png</image>
-    <mediaDisplay name="threePartsView"/>
-  </item>
+<title>ras playlist</title>
+<annotation>Небольшой список в основном с российскими интернет-телевизионными каналами от пользователя ras@forum.iconbit.ru</annotation>
+<image>rss/image/menu/internettv.png</image>
+<mediaDisplay name="threePartsView"/>
+</item>
 </channel>
 
 </rss>

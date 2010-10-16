@@ -162,28 +162,28 @@
 
 
 <channel>
-  <title>BBC Radio</title>
-  <item>
+<title>BBC Radio</title>
+<item>
 <link>rss/etc-playlists-radio-bbc-world.rss</link>
-    <title>BBC World Service</title>
-    <annotation/>
-    <image>rss/image/menu/internetradio.png</image>
-    <mediaDisplay name="threePartsView"/>
-  </item>
-  <item>
+<title>BBC World Service</title>
+<annotation></annotation>
+<image>rss/image/menu/internetradio.png</image>
+<mediaDisplay name="threePartsView"/>
+</item>
+<item>
 <link>rss/etc-playlists-radio-bbc.rss</link>
-    <title>BBC Radio</title>
-    <annotation>Other BBC Radio Stations</annotation>
-    <image>rss/image/menu/internetradio.png</image>
-    <mediaDisplay name="threePartsView"/>
-  </item>
-  <item>
+<title>BBC Radio</title>
+<annotation>Other BBC Radio Stations</annotation>
+<image>rss/image/menu/internetradio.png</image>
+<mediaDisplay name="threePartsView"/>
+</item>
+<item>
 <link>rss/etc-playlists-radio-bbc-local.rss</link>
-    <title>BBC Radio Nations &amp; Local</title>
-    <annotation>Local news, entertainment and debate</annotation>
-    <image>rss/image/menu/internetradio.png</image>
-    <mediaDisplay name="threePartsView"/>
-  </item>
+<title>BBC Radio Nations &amp; Local</title>
+<annotation>Local news, entertainment and debate</annotation>
+<image>rss/image/menu/internetradio.png</image>
+<mediaDisplay name="threePartsView"/>
+</item>
 </channel>
 
 </rss>

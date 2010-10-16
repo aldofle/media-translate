@@ -228,14 +228,16 @@ get_xml_text()
 
 find_plugin()
 {
-  local server=$(echo $1 | sed 's/.*\/\///;s/.*www.//;s/\/.*//')
+  eval local url=$1
+  local server=$(echo "$url" | sed 's/.*\/\///;s/.*www.//;s/\/.*//')
   local plugin="$(ls -1 "$PLUGINS_DIR" | grep -iF "${server}.plg")"
   eval $2="'$plugin'"
 }
 
 find_protocol_plugin()
 {
-  local protocol=$(echo $1 | sed 's/:\/\/.*//')
+  eval local url=$1
+  local protocol=$(echo "$url" | sed 's/:\/\/.*//')
   local plugin="$(ls -1 "$PLUGINS_DIR" | grep -iF "protocol.${protocol}.plg")"
   eval $2="'$plugin'"
 }

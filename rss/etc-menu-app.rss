@@ -178,19 +178,19 @@ columnCount=2
 
 
 <channel>
-  <title>Applications</title>
-  <item>
-    <link>rss/xspf/streamRenderer.rss</link>
-    <title>Media Stream Renderer</title>
-    <annotation>Play content recieved from a computer, which will find content from an internet browser.</annotation>
-    <image>rss/image/menu/msr.png</image>
-  </item>
-  <item>
-    <link>rss/xspf/xspfBrowser.rss</link>
-    <title>XSPF Browser</title>
-    <annotation>Browse and play multimedia content and playlists from a local and network storage.</annotation>
-    <image>rss/image/menu/xspfbrowser.png</image>
-  </item>
+<title>Applications</title>
+<item>
+<link>rss/xspf/streamRenderer.rss</link>
+<title>Media Stream Renderer</title>
+<annotation>Play content recieved from a computer, which will find content from an internet browser.</annotation>
+<image>rss/image/menu/msr.png</image>
+</item>
+<item>
+<link>rss/xspf/xspfBrowser.rss</link>
+<title>XSPF Browser</title>
+<annotation>Browse and play multimedia content and playlists from a local and network storage.</annotation>
+<image>rss/image/menu/xspfbrowser.png</image>
+</item>
 </channel>
 
 </rss>

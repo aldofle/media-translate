@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+  <title>radioio</title>
+  <trackList>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1273712</location>
+      <title>radioio.com : Ambient</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8874</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8874</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Ambient</meta>
+<meta rel="stream_genre">Ambient</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1276970</location>
+      <title>radioio.com : 70s Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8018</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8018</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : 70s Rock</meta>
+<meta rel="stream_genre">70s Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1276885</location>
+      <title>radioio.com : Accoustic Cafe</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8880</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8880</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Accoustic Cafe</meta>
+<meta rel="stream_genre">Accoustic Cafe</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1278494</location>
+      <title>radioio.com : Blues</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8034</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8034</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Blues</meta>
+<meta rel="stream_genre">Blues</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1280100</location>
+      <title>radioio.com : Soundtracks</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8322</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8322</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Soundtracks</meta>
+<meta rel="stream_genre">Soundtracks</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275841</location>
+      <title>radioio.com : 70s Pop</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8250</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8250</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : 70s Pop</meta>
+<meta rel="stream_genre">70s Pop</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1269943</location>
+      <title>radioio.com : 80s New Wave</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8658</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8658</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : 80s New Wave</meta>
+<meta rel="stream_genre">80s New Wave</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1279433</location>
+      <title>radioio.com : Love Songs</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8650</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8650</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Love Songs</meta>
+<meta rel="stream_genre">Love Songs</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=8021</location>
+      <title>radioio.com : Classic Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8674</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8674</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Classic Rock</meta>
+<meta rel="stream_genre">Classic Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=526477</location>
+      <title>radioio.com : Classic Acoustic Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8058</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8058</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Classic Acoustic Rock</meta>
+<meta rel="stream_genre">Classic Acoustic Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1279768</location>
+      <title>radioio.com : Classic Country</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8666</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8666</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Classic Country</meta>
+<meta rel="stream_genre">Classic Country</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1272477</location>
+      <title>radioio.com : Vocal Jazz</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8010</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8010</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Vocal Jazz</meta>
+<meta rel="stream_genre">Vocal Jazz</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=2781</location>
+      <title>radioio.com : Classical Favorites</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8442</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8442</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Classical Favorites</meta>
+<meta rel="stream_genre">Classical Favorites</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1273127</location>
+      <title>radioio.com : Standards</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8458</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8458</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Standards</meta>
+<meta rel="stream_genre">Standards</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1271569</location>
+      <title>radioio.com : Eclectic</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8466</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8466</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Eclectic</meta>
+<meta rel="stream_genre">Eclectic</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1276074</location>
+      <title>radioio.com : Real Jazz</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8886</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8886</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Real Jazz</meta>
+<meta rel="stream_genre">Real Jazz</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1271468</location>
+      <title>radioio.com : Smooth Jazz</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8866</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8866</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Smooth Jazz</meta>
+<meta rel="stream_genre">Smooth Jazz</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1267130</location>
+      <title>radioio.com : 90s Pop</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8074</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8074</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : 90s Pop</meta>
+<meta rel="stream_genre">90s Pop</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1280405</location>
+      <title>radioio.com : Classic RnB</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8474</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8474</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Classic RnB</meta>
+<meta rel="stream_genre">Classic RnB</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1274888</location>
+      <title>radioio.com : Dead</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8682</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8682</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Dead</meta>
+<meta rel="stream_genre">Dead</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=22661</location>
+      <title>radioio.com : Alt Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8898</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8898</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Alt Rock</meta>
+<meta rel="stream_genre">Alt Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=535</location>
+      <title>radioio.com : Classical</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8234</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8234</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Classical</meta>
+<meta rel="stream_genre">Classical</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275328</location>
+      <title>radioio.com : Grunge</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8714</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8714</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Grunge</meta>
+<meta rel="stream_genre">Grunge</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1267760</location>
+      <title>radioio.com : Todays Pop</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8450</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8450</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Todays Pop</meta>
+<meta rel="stream_genre">Todays Pop</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1279644</location>
+      <title>radioio.com : Indie Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8314</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8314</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Indie Rock</meta>
+<meta rel="stream_genre">Indie Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1272807</location>
+      <title>radioio.com : 80s Pop</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8266</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8266</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : 80s Pop</meta>
+<meta rel="stream_genre">80s Pop</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1280589</location>
+      <title>radioio.com : 80s Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8698</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8698</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : 80s Rock</meta>
+<meta rel="stream_genre">80s Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1267510</location>
+      <title>radioio.com : Progressive Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8706</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8706</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Progressive Rock</meta>
+<meta rel="stream_genre">Progressive Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1278130</location>
+      <title>radioio.com : 50s 60s Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8506</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8506</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : 50s 60s Rock</meta>
+<meta rel="stream_genre">50s 60s Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1272635</location>
+      <title>radioio.com : Todays Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8042</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8042</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Todays Rock</meta>
+<meta rel="stream_genre">Todays Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1273016</location>
+      <title>radioio.com : Todays Country</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8482</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8482</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Todays Country</meta>
+<meta rel="stream_genre">Todays Country</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1268190</location>
+      <title>radioio.com : 90s Rock</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8722</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8722</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : 90s Rock</meta>
+<meta rel="stream_genre">90s Rock</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1271762</location>
+      <title>radioio.com : Bluegrass</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8522</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8522</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Bluegrass</meta>
+<meta rel="stream_genre">Bluegrass</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1272772</location>
+      <title>radioio.com : Alt Rock Classics</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8306</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8306</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Alt Rock Classics</meta>
+<meta rel="stream_genre">Alt Rock Classics</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1266618</location>
+      <title>radioio.com : Rock Mix</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8890</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8890</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Rock Mix</meta>
+<meta rel="stream_genre">Rock Mix</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1279770</location>
+      <title>radioio.com : RnB Mix</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8690</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8690</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : RnB Mix</meta>
+<meta rel="stream_genre">RnB Mix</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1268635</location>
+      <title>radioio.com : Country Mix</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8082</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8082</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Country Mix</meta>
+<meta rel="stream_genre">Country Mix</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1269983</location>
+      <title>radioio.com : Alt Country</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8282</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8282</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Alt Country</meta>
+<meta rel="stream_genre">Alt Country</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1272707</location>
+      <title>radioio.com : Chill</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8258</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8258</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Chill</meta>
+<meta rel="stream_genre">Chill</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275916</location>
+      <title>radioio.com : Classic Hip-Hop</title>
+    
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_url">http://76.76.18.101:8050</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8050</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Classic Hip-Hop</meta>
+<meta rel="stream_genre">Classic Hip-Hop</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1274633</location>
+      <title>radioio.com : Hair Bands</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8290</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8290</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Hair Bands</meta>
+<meta rel="stream_genre">Hair Bands</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1279468</location>
+      <title>radioio.com : Disco Hits</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8242</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8242</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Disco Hits</meta>
+<meta rel="stream_genre">Disco Hits</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275583</location>
+      <title>radioio.com : Guitar Heroes</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8066</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8066</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Guitar Heroes</meta>
+<meta rel="stream_genre">Guitar Heroes</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1268815</location>
+      <title>radioio.com : Big Band</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8026</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8026</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Big Band</meta>
+<meta rel="stream_genre">Big Band</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1278490</location>
+      <title>radioio.com : Jam Bands</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8514</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8514</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Jam Bands</meta>
+<meta rel="stream_genre">Jam Bands</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1274886</location>
+      <title>radioio.com : Pop Mix</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8498</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8498</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Pop Mix</meta>
+<meta rel="stream_genre">Pop Mix</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1266278</location>
+      <title>radioio.com : Todays RnB</title>
+    
+<meta rel="stream_url">http://76.76.18.107:8490</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.107:8490</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Todays RnB</meta>
+<meta rel="stream_genre">Todays RnB</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1269766</location>
+      <title>radioio.com : Praise and Worship</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8098</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8098</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Praise and Worship</meta>
+<meta rel="stream_genre">Praise and Worship</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=803816</location>
+      <title>radioio.com : Dance Hits</title>
+    
+<meta rel="stream_url">http://76.76.18.101:8090</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.101:8090</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Dance Hits</meta>
+<meta rel="stream_genre">Dance Hits</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275815</location>
+      <title>radioio.com : 60s Pop</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8754</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8754</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : 60s Pop</meta>
+<meta rel="stream_genre">60s Pop</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1274835</location>
+      <title>radioio.com : NuSoul</title>
+    
+<meta rel="stream_url">http://76.76.18.103:8298</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.103:8298</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : NuSoul</meta>
+<meta rel="stream_genre">NuSoul</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+    <track>
+      <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275544</location>
+      <title>radioio.com : Idols</title>
+    
+<meta rel="stream_url">http://76.76.18.109:8730</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://76.76.18.109:8730</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Idols</meta>
+<meta rel="stream_genre">Idols</meta>
+<meta rel="stream_bitrate">64</meta>
+</track>
+  </trackList>
+</playlist>

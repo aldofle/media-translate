@@ -41,6 +41,9 @@
       <title>- 90,1 FM - Радио Эрмитаж </title>
     
 <meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/piter_fm/radio_hit_online.html</location>
@@ -108,6 +111,14 @@
       <location>http://www.radiogrom.com/online/piter_fm/monte_carlo_online.html</location>
       <title>- 105,9 FM - Радио Монте-Карло </title>
     
+<meta rel="stream_url">http://radio-tochka.com:6760/</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">icyx://89.111.189.3:6760</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">House</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/piter_fm/radio_record_online.html</location>

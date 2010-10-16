@@ -12,6 +12,13 @@
       <meta rel="mediaDisplay">threePartsView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radio-cbc-index.xspf,collection/menulist</link>
+      <title>CBC Radio</title>
+      <annotation>CBC Radio Online - Канадская радиовещательная корпорация</annotation>
+      <image>rss/image/menu/internetradio.png</image>
+      <meta rel="mediaDisplay">threePartsView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/radio-1fm.xspf,collection/medialist</link>
       <title>1.FM</title>
       <annotation>1.FM is owned and operated by Energy Group Networks. All Rights Reserved.</annotation>
