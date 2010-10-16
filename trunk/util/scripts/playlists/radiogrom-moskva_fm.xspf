@@ -28,6 +28,14 @@
       <location>http://www.radiogrom.com/online/moskva_fm/radio_ultra_online.html</location>
       <title>- 70,19 FM - Радио Ультра </title>
     
+<meta rel="stream_url">http://81.19.80.165:80/ultra128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://81.19.80.165:80</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Rock</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/biznes_fm_online.html</location>
@@ -49,6 +57,9 @@
       <location>http://www.radiogrom.com/online/moskva_fm/retro_fm_online.html</location>
       <title>- 88,3 FM - Ретро FM </title>
     
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
 <meta rel="stream_protocol">file</meta>
 </track>
     <track>
@@ -96,6 +107,9 @@
       <location>http://www.radiogrom.com/online/moskva_fm/keks_fm_online.html</location>
       <title>- 89,9 FM - КЕКС FM </title>
     
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
 <meta rel="stream_protocol">file</meta>
 </track>
     <track>
@@ -310,6 +324,9 @@
       <title>- 98,4 FM - Свежее Радио </title>
     
 <meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/radio_alla_online.html</location>
@@ -467,6 +484,9 @@
       <title>- 104,7 FM - Радио 7 </title>
     
 <meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/radio_next_online.html</location>
@@ -495,6 +515,9 @@
       <location>http://www.radiogrom.com/online/moskva_fm/europa_plus_online.html</location>
       <title>- 106,2 FM - Европа Плюс </title>
     
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
+<meta rel="stream_protocol">file</meta>
 <meta rel="stream_protocol">file</meta>
 </track>
     <track>

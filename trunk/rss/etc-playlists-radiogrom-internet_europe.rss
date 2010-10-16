@@ -403,49 +403,49 @@
   </unknownDispatcher>
 
 <channel>
-  <title>Radiogrom.com - internet_europe</title>
-  <item>
-    <location>http://www.radiogrom.com/online/internet_europe/radio_ru_fm_online.html</location>
-    <title>- Радио RU-fm </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/internet_europe/star_fm_bulgaria_online.html</location>
-    <title>- Радио Star FM </title>
-    <stream_url>http://inforadio.atlantis.bg:8000/inforadio.ogg</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>application/ogg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>STAR FM</stream_title>
-    <stream_genre>ROCK</stream_genre>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/internet_europe/ministry_of_sound_online.html</location>
-    <title>- Радио Ministry Of Sound Radio </title>
-    <stream_url>mmsh://wms.ministryofsound.com/MinistryLive</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-    <stream_title>Ministry of Sound Radio</stream_title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/internet_europe/russkoe_berlin_online.html</location>
-    <title>- Русское Радио Берлин. Russkoe Radio Berlin </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/great_britain/capital_fm_london_95_8_online.html</location>
-    <title>- 95,8 FM - Радио Capital FM 95.8 London (UK)</title>
-    <stream_url>mmsh://mediasrv-the.musicradio.com/CapitalRadio</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-    <stream_title>95.8 Capital FM</stream_title>
-  </item>
+<title>Radiogrom.com - internet_europe</title>
+<item>
+<location>http://www.radiogrom.com/online/internet_europe/radio_ru_fm_online.html</location>
+<title>- Радио RU-fm </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/internet_europe/star_fm_bulgaria_online.html</location>
+<title>- Радио Star FM </title>
+<stream_url>http://inforadio.atlantis.bg:8000/inforadio.ogg</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>application/ogg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>STAR FM</stream_title>
+<stream_genre>ROCK</stream_genre>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/internet_europe/ministry_of_sound_online.html</location>
+<title>- Радио Ministry Of Sound Radio </title>
+<stream_url>mmsh://wms.ministryofsound.com/MinistryLive</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+<stream_title>Ministry of Sound Radio</stream_title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/internet_europe/russkoe_berlin_online.html</location>
+<title>- Русское Радио Берлин. Russkoe Radio Berlin </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/great_britain/capital_fm_london_95_8_online.html</location>
+<title>- 95,8 FM - Радио Capital FM 95.8 London (UK)</title>
+<stream_url>mmsh://mediasrv-the.musicradio.com/CapitalRadio</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+<stream_title>95.8 Capital FM</stream_title>
+</item>
 </channel>
 
 </rss>

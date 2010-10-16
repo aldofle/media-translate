@@ -101,6 +101,14 @@
       <location>http://www.radiogrom.com/online/belarus_fm/novoe_radio_online.html</location>
       <title>- Новое Радио </title>
     
+<meta rel="stream_url">http://streaming.telecom.by:8001/novoeradio-128kb</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://213.184.225.54:8001</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Dance</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/belarus_fm/ba_radio_online.html</location>
