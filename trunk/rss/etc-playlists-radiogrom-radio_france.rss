@@ -26,7 +26,8 @@
 
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
-  
+  storagePath_playlist    = storagePath + "playlist.dat";
+    
   error_info          = "";
 </script>
 
@@ -403,44 +404,44 @@
   </unknownDispatcher>
 
 <channel>
-<title>Radiogrom.com - radio_france</title>
-<item>
-<location>http://www.radiogrom.com/online/radio_france/radio_maxlaradio_fr_online.html</location>
-<title> - Радио MAXLARADIO </title>
-<stream_url>http://91.121.62.121:9410</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>shoutcast</stream_soft>
-<stream_server>icyx://91.121.62.121:9410</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>MAXLARADIO SI SENIOR</stream_title>
-<stream_genre>GOLD FRANCE OLDIES ROCK NOSTALGIE POP</stream_genre>
-<stream_bitrate>128</stream_bitrate>
-</item>
-<item>
-<location>http://www.radiogrom.com/online/radio_france/radio_48fm_fr_online.html</location>
-<title> - Радио 48FM </title>
-</item>
-<item>
-<location>http://www.radiogrom.com/online/radio_france/radio_pulsar_fr_online.html</location>
-<title>- Радио Pulsar </title>
-</item>
-<item>
-<location>http://www.radiogrom.com/online/radio_france/one_station_fr_online.html</location>
-<title>- Радио One Station </title>
-<stream_protocol>file</stream_protocol>
-<stream_protocol>file</stream_protocol>
-<stream_protocol>file</stream_protocol>
-<stream_protocol>file</stream_protocol>
-</item>
-<item>
-<location>http://www.radiogrom.com/online/radio_france/maxx_france_online.html</location>
-<title>- Радио MaxxHits </title>
-</item>
-<item>
-<location>http://www.radiogrom.com/online/radio_france/virgin_radio_france_online.html</location>
-<title>- Радио Virgin Radio - Scene Francaise </title>
-</item>
+  <title>Radiogrom.com - radio_france</title>
+  <item>
+    <location>http://www.radiogrom.com/online/radio_france/radio_maxlaradio_fr_online.html</location>
+    <title> - Радио MAXLARADIO </title>
+    <stream_url>http://91.121.62.121:9410</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>shoutcast</stream_soft>
+    <stream_server>icyx://91.121.62.121:9410</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>MAXLARADIO SI SENIOR</stream_title>
+    <stream_genre>GOLD FRANCE OLDIES ROCK NOSTALGIE POP</stream_genre>
+    <stream_bitrate>128</stream_bitrate>
+  </item>
+  <item>
+    <location>http://www.radiogrom.com/online/radio_france/radio_48fm_fr_online.html</location>
+    <title> - Радио 48FM </title>
+  </item>
+  <item>
+    <location>http://www.radiogrom.com/online/radio_france/radio_pulsar_fr_online.html</location>
+    <title>- Радио Pulsar </title>
+  </item>
+  <item>
+    <location>http://www.radiogrom.com/online/radio_france/one_station_fr_online.html</location>
+    <title>- Радио One Station </title>
+    <stream_protocol>file</stream_protocol>
+    <stream_protocol>file</stream_protocol>
+    <stream_protocol>file</stream_protocol>
+    <stream_protocol>file</stream_protocol>
+  </item>
+  <item>
+    <location>http://www.radiogrom.com/online/radio_france/maxx_france_online.html</location>
+    <title>- Радио MaxxHits </title>
+  </item>
+  <item>
+    <location>http://www.radiogrom.com/online/radio_france/virgin_radio_france_online.html</location>
+    <title>- Радио Virgin Radio - Scene Francaise </title>
+  </item>
 </channel>
 
 </rss>
