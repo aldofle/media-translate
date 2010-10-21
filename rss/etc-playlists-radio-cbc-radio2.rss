@@ -26,7 +26,8 @@
 
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
-  
+  storagePath_playlist    = storagePath + "playlist.dat";
+    
   error_info          = "";
 </script>
 
@@ -403,124 +404,124 @@
   </unknownDispatcher>
 
 <channel>
-<title>CBC Radio 2</title>
-<item>
-<title>Mountain</title>
-<location>http://radiostreams.cbc.ca/cbc-cbcr2edm-128.m3u</location>
-<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2edm-128</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>icyx://64.62.164.198:80</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>CBC Radio 2 MT - hi</stream_title>
-<stream_genre>CBC Radio 2 Mountain</stream_genre>
-<stream_bitrate>160</stream_bitrate>
-</item>
-<item>
-<title>Atlantic</title>
-<location>http://radiostreams.cbc.ca/cbc-cbcr2hfx-128.m3u</location>
-<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2hfx-128</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>icyx://64.62.210.77:80</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>CBC Radio 2 AT | hi</stream_title>
-<stream_genre>CBC Radio 2 Atlantic</stream_genre>
-<stream_bitrate>160</stream_bitrate>
-</item>
-<item>
-<title>Central</title>
-<location>http://radiostreams.cbc.ca/cbc-cbcr2wpg-128.m3u</location>
-<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2wpg-128</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>icyx://64.62.164.198:80</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>CBC Radio 2 CT - hi</stream_title>
-<stream_genre>CBC Radio 2 Central</stream_genre>
-<stream_bitrate>160</stream_bitrate>
-</item>
-<item>
-<title>Eastern</title>
-<location>http://radiostreams.cbc.ca/cbc-cbcr2tor-128.m3u</location>
-<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2tor-128</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>icyx://64.62.210.77:80</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>CBC Radio 2 ET - hi</stream_title>
-<stream_genre>CBC Radio 2 Eastern</stream_genre>
-<stream_bitrate>120</stream_bitrate>
-</item>
-<item>
-<title>Pacific</title>
-<location>http://radiostreams.cbc.ca/cbc-cbcr2vcr-128.m3u</location>
-<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2vcr-128</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>icyx://64.62.164.198:80</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>CBC Radio 2 PT - hi</stream_title>
-<stream_genre>CBC Radio 2 Pacific</stream_genre>
-<stream_bitrate>160</stream_bitrate>
-</item>
-<item>
-<title>CBC Classical</title>
-<location>http://radiostreams.cbc.ca/cbc-cbcw3tor-128.m3u</location>
-<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw3tor-128</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>icyx://64.62.210.77:80</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>CBC Radio Classical</stream_title>
-<stream_genre>Classical</stream_genre>
-<stream_bitrate>120</stream_bitrate>
-</item>
-<item>
-<title>CBC Jazz</title>
-<location>http://radiostreams.cbc.ca/cbc-cbcw1tor-128.m3u</location>
-<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw1tor-128</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>icyx://64.62.164.198:80</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>CBC Radio Jazz</stream_title>
-<stream_genre>Jazz</stream_genre>
-<stream_bitrate>120</stream_bitrate>
-</item>
-<item>
-<title>CBC Canadian Songwriters</title>
-<location>http://radiostreams.cbc.ca/cbc-cbcw2tor-128.m3u</location>
-<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw2tor-128</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>icyx://64.62.210.77:80</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>CBC Radio Songwriter</stream_title>
-<stream_genre>Singer/Songwriter</stream_genre>
-<stream_bitrate>120</stream_bitrate>
-</item>
-<item>
-<title>CBC Canadian Composers</title>
-<location>http://radiostreams.cbc.ca/cbc-cbcw4tor-128.m3u</location>
-<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw4tor-128</stream_url>
-<stream_class>audio</stream_class>
-<stream_soft>icecast</stream_soft>
-<stream_server>icyx://64.62.164.198:80</stream_server>
-<stream_type>audio/mpeg</stream_type>
-<stream_protocol>http</stream_protocol>
-<stream_title>CBC Can Composers</stream_title>
-<stream_genre>Canadian Composers</stream_genre>
-<stream_bitrate>120</stream_bitrate>
-</item>
+  <title>CBC Radio 2</title>
+  <item>
+    <title>Mountain</title>
+    <location>http://radiostreams.cbc.ca/cbc-cbcr2edm-128.m3u</location>
+    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2edm-128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://64.62.164.198:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>CBC Radio 2 MT - hi</stream_title>
+    <stream_genre>CBC Radio 2 Mountain</stream_genre>
+    <stream_bitrate>160</stream_bitrate>
+  </item>
+  <item>
+    <title>Atlantic</title>
+    <location>http://radiostreams.cbc.ca/cbc-cbcr2hfx-128.m3u</location>
+    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2hfx-128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://64.62.210.77:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>CBC Radio 2 AT | hi</stream_title>
+    <stream_genre>CBC Radio 2 Atlantic</stream_genre>
+    <stream_bitrate>160</stream_bitrate>
+  </item>
+  <item>
+    <title>Central</title>
+    <location>http://radiostreams.cbc.ca/cbc-cbcr2wpg-128.m3u</location>
+    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2wpg-128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://64.62.164.198:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>CBC Radio 2 CT - hi</stream_title>
+    <stream_genre>CBC Radio 2 Central</stream_genre>
+    <stream_bitrate>160</stream_bitrate>
+  </item>
+  <item>
+    <title>Eastern</title>
+    <location>http://radiostreams.cbc.ca/cbc-cbcr2tor-128.m3u</location>
+    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2tor-128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://64.62.210.77:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>CBC Radio 2 ET - hi</stream_title>
+    <stream_genre>CBC Radio 2 Eastern</stream_genre>
+    <stream_bitrate>120</stream_bitrate>
+  </item>
+  <item>
+    <title>Pacific</title>
+    <location>http://radiostreams.cbc.ca/cbc-cbcr2vcr-128.m3u</location>
+    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2vcr-128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://64.62.164.198:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>CBC Radio 2 PT - hi</stream_title>
+    <stream_genre>CBC Radio 2 Pacific</stream_genre>
+    <stream_bitrate>160</stream_bitrate>
+  </item>
+  <item>
+    <title>CBC Classical</title>
+    <location>http://radiostreams.cbc.ca/cbc-cbcw3tor-128.m3u</location>
+    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw3tor-128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://64.62.210.77:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>CBC Radio Classical</stream_title>
+    <stream_genre>Classical</stream_genre>
+    <stream_bitrate>120</stream_bitrate>
+  </item>
+  <item>
+    <title>CBC Jazz</title>
+    <location>http://radiostreams.cbc.ca/cbc-cbcw1tor-128.m3u</location>
+    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw1tor-128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://64.62.164.198:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>CBC Radio Jazz</stream_title>
+    <stream_genre>Jazz</stream_genre>
+    <stream_bitrate>120</stream_bitrate>
+  </item>
+  <item>
+    <title>CBC Canadian Songwriters</title>
+    <location>http://radiostreams.cbc.ca/cbc-cbcw2tor-128.m3u</location>
+    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw2tor-128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://64.62.210.77:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>CBC Radio Songwriter</stream_title>
+    <stream_genre>Singer/Songwriter</stream_genre>
+    <stream_bitrate>120</stream_bitrate>
+  </item>
+  <item>
+    <title>CBC Canadian Composers</title>
+    <location>http://radiostreams.cbc.ca/cbc-cbcw4tor-128.m3u</location>
+    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw4tor-128</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://64.62.164.198:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>CBC Can Composers</stream_title>
+    <stream_genre>Canadian Composers</stream_genre>
+    <stream_bitrate>120</stream_bitrate>
+  </item>
 </channel>
 
 </rss>
