@@ -79,6 +79,7 @@ Content-type: text/html
 <title>Media Stream Renderer - Control</title>
 <style>
   .btn { width:60px; }
+  li { padding-top:5px; }
 </style>
 <script type="text/javascript" language="javascript">
   var makeRequest = function(para) {
@@ -139,10 +140,29 @@ echo "<form action=\"$SCRIPT_NAME\" method=get><input class=btn type=button name
 echo "</tr>"
 echo "<tr><td colspan=2 align=center><hr></td></tr>"
 echo "</table>"
-echo "<h3>Internet browser extensions</h3><ul>"
+echo "<h3>Internet browser extensions <a href="http://code.google.com/p/media-translate/wiki/ModuleMediaStreamRenderer#Add-on_%D0%B4%D0%BB%D1%8F_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82_%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%BE%D0%B2"><sup>[?]</sup></a></h3>"
+echo "<ul>"
 echo "<li><a href="/bin/playonplayer.xpi">Firefox</a></li>"
 echo "<li><a href="/bin/playonplayer.exe">Internet Explorer</a></li>"
 echo "<li><a href="/bin/playonplayer.crx">Google Chrome</a></li>"
+echo "<br><li>Opera Custom Buttons: "
+echo "<a id="operaplayonplayer" style=\"border:1px grey solid; background-color:lightgrey; color:black; padding:0px 5px 0px 5px ; text-decoration:none !important; \" href=\"\">Play on Player</a>"
+echo "<a id="operapagetoplayer" style=\"border:1px grey solid; background-color:lightgrey; color:black; padding:0px 5px 0px 5px ; text-decoration:none !important; \" href=\"\">Page to Player</a>"
+echo "<span style=\"margin-left:10px; \"><label>Player IP or name: <label><input type=\"text\" id=\"playertext\" size=\"20\" value=\"player\"><button onclick=\"refreshOperaButtons()\">Ok</button></span>"
+echo "<ul>"
+echo "<script language=\"javascript\">"
+cat <<EOF
+function refreshOperaButtons() 
+{ 
+  var player = playertext.value;
+  var syntax = "opera:/button/Go to page, \"javascript: var stp = function() { var mr = function(url) { var hr = false; if (window.XMLHttpRequest) { hr = new XMLHttpRequest(); if (hr.overrideMimeType) { hr.overrideMimeType('text/xml'); } } if (!hr) alert('errorXMLHTTP'); hr.open('get', url, false); hr.setRequestHeader('If-Modified-Since', 'Thu, 1 Jan 1970 00:00:00 GMT'); hr.setRequestHeader('Cache-Control', 'no-cache'); hr.send(); return hr.status; }; return { run : function(s) { var p = '"+player+"'; try { var u = 'http://'+p+'/cgi-bin/translate?renderer,,' + encodeURIComponent(s); var r = mr(u); window.status = 'Link <'+s+'> sent to player <'+p+'> ('+r+')'; } catch(e) { alert('ERROR: '+e.description); } } }; }(); var b=new Array(); var c=1; var o=((document.onkeydown==null)||(o==2))?0:1; document.onkeydown=ck; z=document.getElementsByTagName('A'); for(i=0;i<z.length;i++) { z[i].onclick=function(e){t=this;if(window.event) e=window.event;if((t==e.target)||(window.event)) { stp.run(t.href); } if(window.opera) e.stopPropagation();return false;}; z[i].onmouseover=function(){if(!c)return;c=0;t=this;b[t]=t.style.backgroundColor;t.style.background='#FF9999';}; void(z[i].onmouseout=function(){t=this;t.style.backgroundColor=b[t];c=1;}); } function ck(e) { k=window.event?window.event.keyCode:e.keyCode; if((k==27)||o) { o=2; document.onkeydown=null; for(i=0;i<z.length;i++) { z[i].onclick=null; z[i].onmouseover=null; z[i].onmouseout=null; z[i].style.backgroundColor=b[t]; } } } if(o==1) ck(1); \",1,,\"Play on Player\"";
+  document.getElementById('operaplayonplayer').href = syntax;
+  var syntax = "opera:/button/Go to page, \"javascript: var stp = function() { var mr = function(url) { var hr = false; if (window.XMLHttpRequest) { hr = new XMLHttpRequest(); if (hr.overrideMimeType) { hr.overrideMimeType('text/xml'); } } if (!hr) alert('errorXMLHTTP'); hr.open('get', url, false); hr.setRequestHeader('If-Modified-Since', 'Thu, 1 Jan 1970 00:00:00 GMT'); hr.setRequestHeader('Cache-Control', 'no-cache'); hr.send(); return hr.status; }; return { run : function(s) { var p = '"+player+"'; try { var u = 'http://'+p+'/cgi-bin/translate?renderer,,' + encodeURIComponent(s); var r = mr(u); window.status = 'Link <'+s+'> sent to player <'+p+'> ('+r+')'; } catch(e) { alert('ERROR: '+e.description); } } }; }(); stp.run(document.URL);\",1,,\"Play on Player\"";
+  document.getElementById('operapagetoplayer').href = syntax;
+}
+refreshOperaButtons();
+EOF
+echo "</script>"
 echo "</ul>"
 
 echo "</body>"
