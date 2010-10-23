@@ -5,11 +5,11 @@
 
   <trackList>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,,shoutcast/genrelist</link>
+      <link>rss/shoutcast_index.rss</link>
       <title>SHOUTcast Radio Directory</title>
       <annotation>Listing thousands of radio channels worldwide...</annotation>
       <image>rss/image/menu/shoutcast.jpg</image>
-      <meta rel="mediaDisplay">photoView</meta>
+      <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Font:13;Lines:5;Size:3;File:etc/playlists/radio-bluemars.xspf,collection/media</link>

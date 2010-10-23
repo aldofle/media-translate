@@ -180,11 +180,11 @@ columnCount=3
 <channel>
   <title>Internet Radio</title>
   <item>
-    <link>http://127.0.0.1/cgi-bin/translate?app,,shoutcast/genrelist</link>
+    <link>rss/shoutcast_index.rss</link>
     <title>SHOUTcast Radio Directory</title>
     <annotation>Listing thousands of radio channels worldwide...</annotation>
     <image>rss/image/menu/shoutcast.jpg</image>
-    <mediaDisplay name="photoView"/>
+    <mediaDisplay name="onePartView"/>
   </item>
   <item>
 <link>rss/etc-playlists-radio-bluemars.rss</link>
