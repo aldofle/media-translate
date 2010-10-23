@@ -22,7 +22,6 @@
 -->
 
 <script>
-  storagePath = getStoragePath("tmp") + "youtubeRSS.dat";
   pageTitle = "Free Internet Radio Stations";
 </script>
 
@@ -63,8 +62,8 @@
   <image offsetXPC=0 offsetYPC=15 widthPC=100 heightPC=1>
 		rss/image/gradient_line.bmp
 	</image>
-  <image offsetXPC=80 offsetYPC=1 widthPC=16 heightPC=12>
-    rss/image/menu/shoutcast.jpg
+  <image offsetXPC=65 offsetYPC=1 widthPC=30 heightPC=12>
+    rss/image/menu/shoutcast.gif
 	</image>
 	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
 	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
