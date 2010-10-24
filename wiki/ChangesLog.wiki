@@ -2,6 +2,11 @@
 
 = История версий =
 
+== 2.0.4 ==
+  * добавлен поиск в SHOUTcast;
+  * добавлены радио-плейлисты *radioio.com* и *CBC Radio*;
+  * исправлена работа с плагинами протоколов.
+
 == 2.0.3 ==
   * добавлен add-on *Play on Player* для Google Chrome (см. [ModuleMediaStreamRenderer Media Stream Renderer]);
   * добавлен протокол *rtmpe://* (обработка протоколов вынесена в отдельные плагины);
