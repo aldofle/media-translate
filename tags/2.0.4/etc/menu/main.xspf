@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<playlist xmlns="http://xspf.org/ns/0/">
+
+  <title>Дополнительные сервисы</title>
+
+  <trackList>
+    <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Start:left;Size:2;File:etc/menu/video.xspf,collection/menu</link>
+      <title>Internet Video</title>
+      <annotation>YouTube, Internet TV</annotation>
+      <image>rss/image/menu/video.jpg</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radio.xspf,collection/menu</link>
+      <title>Internet Radio</title>
+      <annotation>SHOUTcast, SKY.fm, Digitally Imported, SomaFM, Bluemars, 1.FM, Moskva.FM, Station.ru and other</annotation>
+      <image>rss/image/menu/radio.jpg</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Start:left;Size:2;File:etc/menu/app.xspf,collection/menu</link>
+      <title>Applications</title>
+      <annotation>Media Stream Renderer, XSPF Browser</annotation>
+      <image>rss/image/menu/app.jpg</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+  </trackList>
+
+</playlist>
