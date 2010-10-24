@@ -454,10 +454,6 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/retro_fm_online.html</location>
     <title>- 88,3 FM - Ретро FM </title>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/umor_fm_online.html</location>
@@ -499,10 +495,6 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/keks_fm_online.html</location>
     <title>- 89,9 FM - КЕКС FM </title>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/avtoradio_online.html</location>
@@ -696,10 +688,6 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/sveghee_fm_online.html</location>
     <title>- 98,4 FM - Свежее Радио </title>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/radio_alla_online.html</location>
@@ -841,10 +829,6 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/radio_7_online.html</location>
     <title>- 104,7 FM - Радио 7 </title>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/radio_next_online.html</location>
@@ -870,10 +854,6 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/europa_plus_online.html</location>
     <title>- 106,2 FM - Европа Плюс </title>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/love_radio_online.html</location>
