@@ -23,6 +23,8 @@
   * Sampo.ru (http://radio.sampo.ru/)
   * Nullwave.ru (http://nullwave.ru/)
   * BBC Radio (http://http://www.bbc.co.uk/radio/)
+  * CBC Radio (http://www.cbc.ca/radio/)
+  * Radioio (http://radioio.com/)
 
 = Встроенные RSS/CGI-приложения =
   == Media Stream Renderer ==
