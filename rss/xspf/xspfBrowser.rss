@@ -578,6 +578,10 @@
       	  {
       	    protocol = meta;  
       	  }
+      	  else if(rel == "streamer")
+      	  {
+      	    url = meta + location;
+      	  }
       	  metaSize = metaSize - 1;
       	}
       	
