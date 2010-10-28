@@ -283,7 +283,7 @@ check_av_stream()
             fi
           fi
         fi
-        if [ -z "$type" -o "$type" == "text/plain" ]; then
+        if [ -z "$type" -o "$type" == "text/plain" -o "$type" == "text/html" ]; then
           ext=`echo "${stream_url}" | sed 's/\./\n/g' | sed -n '$p'`
           case $ext in
             flv|FLV)
@@ -593,7 +593,7 @@ command_playlist()
     protocol=`echo "$arg_url" | sed -e 's/:\/\/.*$//`
     buf="`$MSDL --debug --useragent "${USERAGENT}" -o "$playlist_file" -p "$protocol" --no-treat-metafile "${arg_url}" 2>&1`"
 #    type=`echo "$buf" | sed -n '/^content type/p' | sed -n '$p' | awk '{print $3}'`
-    type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
+    type=${stream_type:-`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`}
     case $type in
       audio/x-cue)
         ext="cue"
