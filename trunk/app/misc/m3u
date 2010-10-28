@@ -17,7 +17,7 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-local DATAPATH=$BASEPATH/app/hello
+local DATAPATH=$BASEPATH/app/misc
 cd $DATAPATH
 
 local FILE="$arg_opt"
