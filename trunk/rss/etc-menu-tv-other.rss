@@ -170,6 +170,13 @@
     <image>rss/image/menu/internettv.png</image>
     <mediaDisplay name="threePartsView"/>
   </item>
+  <item>
+<link>rss/etc-playlists-tv-my_favorites.rss</link>
+    <title>my favorites</title>
+    <annotation/>
+    <image>rss/image/menu/internettv.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
 </channel>
 
 </rss>

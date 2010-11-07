@@ -44,6 +44,9 @@
     stream_title    = getStringArrayAt(arr, 9);
     no_renderer     = getStringArrayAt(arr, 10);
     
+    if(stream_current_song != "" &amp;&amp; stream_current_song != null)
+      track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
+    
     stream_soft     = "";
   }
   else
