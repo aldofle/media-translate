@@ -404,492 +404,492 @@
   </unknownDispatcher>
 
 <channel>
-  <title>Radiogrom.com - moskva_fm</title>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/radio_rossii_online.html</location>
-    <title>- 66,44 FM - Радио России </title>
-    <stream_url>mmsh://live.rfn.ru/radiorussia</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/u_fm_online.html</location>
-    <title>b&gt;- 68,84 FM - Ю FM </title>
-    <stream_url>mmsh://live.rfn.ru/unost/stream.asf</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/radio_ultra_online.html</location>
-    <title>- 70,19 FM - Радио Ультра </title>
-    <stream_url>http://81.19.80.165:80/ultra128.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.80.165:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Rock</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/biznes_fm_online.html</location>
-    <title>- 87,5 FM - Бизнес ФМ </title>
-    <stream_url>mmsh://stream03.rambler.ru/bizz?WMContentBitrate=80000</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/city_fm_online.html</location>
-    <title>- 87,9 FM - Сити-FM </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/retro_fm_online.html</location>
-    <title>- 88,3 FM - Ретро FM </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/umor_fm_online.html</location>
-    <title>- 88,7 FM - Юмор FM </title>
-    <stream_url>http://radiogrom.com/online/moskva_fm/umor_fm_online_2.asx</stream_url>
-    <stream_class/>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type/>
-    <stream_protocol>http</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/radio_jazz_fm_online.html</location>
-    <title>- 89,1 FM - Радио Джаз </title>
-    <stream_url>http://streamall.rambler.ru:80/jazz64.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.85.199:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_bitrate>64</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/megapolis_fm_online.html</location>
-    <title>- 89,5 FM - Мегаполис FM </title>
-    <stream_url>http://89.108.123.69:8010</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://89.108.123.69:8010</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>DANCE</stream_genre>
-    <stream_bitrate>200</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/radio_zachet_online.html</location>
-    <title>- 89,5 FM - Радио Зачет </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/keks_fm_online.html</location>
-    <title>- 89,9 FM - КЕКС FM </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/avtoradio_online.html</location>
-    <title>- 90,3 FM - Авторадио </title>
-    <stream_url>mmsh://94.23.194.126/v3_1_22?st=043245100125266732820090917</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/relax_fm_online.html</location>
-    <title> - 90,8 FM - Релакс ФМ онлайн</title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/echo_fm_online.html</location>
-    <title>- 91,2 FM - Эхо Москвы </title>
-    <stream_url>http://streamall.rambler.ru:80/echo64.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.85.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_bitrate>64</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/cultura_fm_online.html</location>
-    <title>- 91,6 FM - Радио Культура </title>
-    <stream_url>mmsh://stream03.rambler.ru/cultura?WMContentBitrate=80000</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/govorit_moskva_fm_online.html</location>
-    <title>- 92,0 FM - Говорит Москва </title>
-    <stream_url>http://www.govoritmoskva.ru:8000/gm-fm-128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://90.156.211.132:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/dacha_fm_online.html</location>
-    <title>- 92,4 FM - Радио Дача </title>
-    <stream_url>http://stream.loveradio.ru:8000/radiodacha_high.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://82.204.217.140:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>96</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/karnaval_fm_online.html</location>
-    <title>- 92,8 FM - Радио Карнавал </title>
-    <stream_url>mmsh://stream03.rambler.ru/karnaval?WMContentBitrate=80000</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/sport_fm_online.html</location>
-    <title>- 93,2 FM - Радио Спорт </title>
-    <stream_url>http://www.sportfm.ru:8000/sportfm-128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://90.156.211.132:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/kommersant_fm_moskva_online.html</location>
-    <title>b&gt;93,6 FM - Радио Коммерсант ФМ </title>
-    <stream_url>mmsh://stream01.rambler.ru:80/komersant?WMContentBitrate=150000</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/dobrie_pesni_online.html</location>
-    <title>- 94,4 FM - Радио Добрые Песни </title>
-    <stream_url>mmsh://broadcast03.station.ru/dobryepesni</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/moya_semya_fm_online.html</location>
-    <title>- 94,8 FM - Моя семья </title>
-    <stream_url>http://radiogrom.com/online/moskva_fm/moya_semya_fm_online.m3u</stream_url>
-    <stream_class/>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type/>
-    <stream_protocol>http</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/95_2_fm_online.html</location>
-    <title>- 95,2 FM - Рок НА Радио 95.2 FM </title>
-    <stream_url>http://radiogrom.com/online/moskva_fm/95_2_fm_online.m3u</stream_url>
-    <stream_class/>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type/>
-    <stream_protocol>http</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/radio_zvezda_online.html</location>
-    <title>- 95,6 FM - Радио Звезда </title>
-    <stream_url>http://89.208.99.16:8088/zvezda_128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://89.208.99.16:8088</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Live Air</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/xfm_online.html</location>
-    <title>- 96,4 FM - Радио X-FM </title>
-    <stream_url>http://stream.mradio.fm:8000/mradio_high.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://82.204.217.140:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>96</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/detskoe_online.html</location>
-    <title>- 96,8 FM - Детское Радио </title>
-    <stream_url>http://217.29.51.162:8000/radio-32k.aac</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.29.51.162:8000</stream_server>
-    <stream_type>audio/aacp</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>For kids</stream_genre>
-    <stream_bitrate>32</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/radio_kp_online.html</location>
-    <title>- 97,2 FM - Комсомольская правда Радио </title>
-    <stream_url>http://radio.kp.ru:8000/stream</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://213.208.177.14:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Russian</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/vesti_fm_online.html</location>
-    <title>- 97,6 FM - Вести FM </title>
-    <stream_url>mmsh://live.rfn.ru/vesti_fm</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/98_8_fm_online.html</location>
-    <title>- 98,8 FM - 98 и 8 хитов на 98,8 FM </title>
-    <stream_url>mmsh://stream03.rambler.ru/kinofm?WMContentBitrate=80000</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/sveghee_fm_online.html</location>
-    <title>- 98,4 FM - Свежее Радио </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/radio_alla_online.html</location>
-    <title>- 98,8 FM - Радио Алла </title>
-    <stream_url>mmsh://mms.online.ru/v4_1_22?st=018489700123667805420090310</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/orfey_online.html</location>
-    <title>- 99,2 FM - Радио Орфей </title>
-    <stream_url>mmsh://live.rfn.ru/orfey/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/finam_fm_online.html</location>
-    <title>- 99,6 FM - Финам FM </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/silver_rain_online.html</location>
-    <title>- 100,1 FM - Серебряный дождь </title>
-    <stream_url>http://radiosilver.corbina.net:8000/silver48.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://85.21.192.13:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
-    <stream_bitrate>48</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/best_fm_online.html</location>
-    <title>- 100,5 FM - Best FM </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/classic_fm_online.html</location>
-    <title>- 100,9 FM - Радио Классик </title>
-    <stream_url>http://s05.radio-tochka.com:6045/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://78.159.102.100:6045</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Classic</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/dfm_online.html</location>
-    <title>- 101,2 FM - Ди ФМ </title>
-    <stream_url>mmsh://broadcast03.station.ru/dfm</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/nashe_fm_online.html</location>
-    <title>- 101,7 FM - Наше радио </title>
-    <stream_url>http://81.19.85.198:80/nashe128.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.85.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Rock</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/monte_carlo_online.html</location>
-    <title> - 102,1 FM - Радио Монте-Карло </title>
-    <stream_url>mmsh://broadcast03.station.ru/montecarlo</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/popsa_online.html</location>
-    <title>- 102,5 FM - Первое популярное радио </title>
-    <stream_url>http://streamall.rambler.ru:80/popsa64.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.85.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_bitrate>64</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/shanson_fm_online.html</location>
-    <title>- 103,0 FM - Радио Шансон </title>
-    <stream_url>http://83.222.4.42:8800</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://83.222.4.42:8800</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Chanson</stream_genre>
-    <stream_bitrate>96</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/mayak_online.html</location>
-    <title>- 103,4 FM - Радио Маяк </title>
-    <stream_url>mmsh://stream03.rambler.ru/radiomayak?WMContentBitrate=80000</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/maximum_online.html</location>
-    <title>- 103,7 FM - Радио Максимум </title>
-    <stream_url>mmsh://broadcast03.station.ru/maximum</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/energy_fm_online.html</location>
-    <title>- 104,2 FM - Радио Энерджи онлайн</title>
-    <stream_url>mmsh://89.20.132.26/v1_1_128?st=064107800122941225920090829</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/radio_7_online.html</location>
-    <title>- 104,7 FM - Радио 7 </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/radio_next_online.html</location>
-    <title>- 105,2 FM - Радио Некст онлайн</title>
-    <stream_url>http://streamall.rambler.ru:80/next64.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.85.199:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_bitrate>64</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/russkoe_online.html</location>
-    <title>- 105,7 FM - Русское радио </title>
-    <stream_url>mmsh://broadcast03.station.ru/rusradio</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/europa_plus_online.html</location>
-    <title>- 106,2 FM - Европа Плюс </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/love_radio_online.html</location>
-    <title>- 106,6 FM - Love Радио </title>
-    <stream_url>http://streamall.rambler.ru:80/love128.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.85.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/rsn_online.html</location>
-    <title>- 107,0 FM - Русская служба новостей </title>
-    <stream_url>mmsh://broadcast03.station.ru/rsn</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/hit_fm_online.html</location>
-    <title>- 107,4 FM - Хит-FM </title>
-    <stream_url>mmsh://broadcast03.station.ru/hitfm</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/moskva_fm/mvolna_online.html</location>
-    <title>- 107,8 FM - Милицейская Волна </title>
-  </item>
+<title>Radiogrom.com - moskva_fm</title>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/radio_rossii_online.html</location>
+<title>- 66,44 FM - Радио России </title>
+<stream_url>mmsh://live.rfn.ru/radiorussia</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/u_fm_online.html</location>
+<title>b>- 68,84 FM - Ю FM </title>
+<stream_url>mmsh://live.rfn.ru/unost/stream.asf</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/radio_ultra_online.html</location>
+<title>- 70,19 FM - Радио Ультра </title>
+<stream_url>http://81.19.80.165:80/ultra128.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://81.19.80.165:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>Rock</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/biznes_fm_online.html</location>
+<title>- 87,5 FM - Бизнес ФМ </title>
+<stream_url>mmsh://stream03.rambler.ru/bizz?WMContentBitrate=80000</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/city_fm_online.html</location>
+<title>- 87,9 FM - Сити-FM </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/retro_fm_online.html</location>
+<title>- 88,3 FM - Ретро FM </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/umor_fm_online.html</location>
+<title>- 88,7 FM - Юмор FM </title>
+<stream_url>http://radiogrom.com/online/moskva_fm/umor_fm_online_2.asx</stream_url>
+<stream_class></stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type></stream_type>
+<stream_protocol>http</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/radio_jazz_fm_online.html</location>
+<title>- 89,1 FM - Радио Джаз </title>
+<stream_url>http://streamall.rambler.ru:80/jazz64.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://81.19.85.199:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_bitrate>64</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/megapolis_fm_online.html</location>
+<title>- 89,5 FM - Мегаполис FM </title>
+<stream_url>http://89.108.123.69:8010</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://89.108.123.69:8010</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>DANCE</stream_genre>
+<stream_bitrate>200</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/radio_zachet_online.html</location>
+<title>- 89,5 FM - Радио Зачет </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/keks_fm_online.html</location>
+<title>- 89,9 FM - КЕКС FM </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/avtoradio_online.html</location>
+<title>- 90,3 FM - Авторадио </title>
+<stream_url>mmsh://94.23.194.126/v3_1_22?st=043245100125266732820090917</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/relax_fm_online.html</location>
+<title> - 90,8 FM - Релакс ФМ онлайн</title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/echo_fm_online.html</location>
+<title>- 91,2 FM - Эхо Москвы </title>
+<stream_url>http://streamall.rambler.ru:80/echo64.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://81.19.85.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_bitrate>64</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/cultura_fm_online.html</location>
+<title>- 91,6 FM - Радио Культура </title>
+<stream_url>mmsh://stream03.rambler.ru/cultura?WMContentBitrate=80000</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/govorit_moskva_fm_online.html</location>
+<title>- 92,0 FM - Говорит Москва </title>
+<stream_url>http://www.govoritmoskva.ru:8000/gm-fm-128</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://90.156.211.132:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>various</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/dacha_fm_online.html</location>
+<title>- 92,4 FM - Радио Дача </title>
+<stream_url>http://stream.loveradio.ru:8000/radiodacha_high.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://82.204.217.140:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>Various</stream_genre>
+<stream_bitrate>96</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/karnaval_fm_online.html</location>
+<title>- 92,8 FM - Радио Карнавал </title>
+<stream_url>mmsh://stream03.rambler.ru/karnaval?WMContentBitrate=80000</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/sport_fm_online.html</location>
+<title>- 93,2 FM - Радио Спорт </title>
+<stream_url>http://www.sportfm.ru:8000/sportfm-128</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://90.156.211.132:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>various</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/kommersant_fm_moskva_online.html</location>
+<title>b>93,6 FM - Радио Коммерсант ФМ </title>
+<stream_url>mmsh://stream01.rambler.ru:80/komersant?WMContentBitrate=150000</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/dobrie_pesni_online.html</location>
+<title>- 94,4 FM - Радио Добрые Песни </title>
+<stream_url>mmsh://broadcast03.station.ru/dobryepesni</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/moya_semya_fm_online.html</location>
+<title>- 94,8 FM - Моя семья </title>
+<stream_url>http://radiogrom.com/online/moskva_fm/moya_semya_fm_online.m3u</stream_url>
+<stream_class></stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type></stream_type>
+<stream_protocol>http</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/95_2_fm_online.html</location>
+<title>- 95,2 FM - Рок НА Радио 95.2 FM </title>
+<stream_url>http://radiogrom.com/online/moskva_fm/95_2_fm_online.m3u</stream_url>
+<stream_class></stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type></stream_type>
+<stream_protocol>http</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/radio_zvezda_online.html</location>
+<title>- 95,6 FM - Радио Звезда </title>
+<stream_url>http://89.208.99.16:8088/zvezda_128</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://89.208.99.16:8088</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>Live Air</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/xfm_online.html</location>
+<title>- 96,4 FM - Радио X-FM </title>
+<stream_url>http://stream.mradio.fm:8000/mradio_high.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://82.204.217.140:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>Various</stream_genre>
+<stream_bitrate>96</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/detskoe_online.html</location>
+<title>- 96,8 FM - Детское Радио </title>
+<stream_url>http://217.29.51.162:8000/radio-32k.aac</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.29.51.162:8000</stream_server>
+<stream_type>audio/aacp</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>For kids</stream_genre>
+<stream_bitrate>32</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/radio_kp_online.html</location>
+<title>- 97,2 FM - Комсомольская правда Радио </title>
+<stream_url>http://radio.kp.ru:8000/stream</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://213.208.177.14:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>Russian</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/vesti_fm_online.html</location>
+<title>- 97,6 FM - Вести FM </title>
+<stream_url>mmsh://live.rfn.ru/vesti_fm</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/98_8_fm_online.html</location>
+<title>- 98,8 FM - 98 и 8 хитов на 98,8 FM </title>
+<stream_url>mmsh://stream03.rambler.ru/kinofm?WMContentBitrate=80000</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/sveghee_fm_online.html</location>
+<title>- 98,4 FM - Свежее Радио </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/radio_alla_online.html</location>
+<title>- 98,8 FM - Радио Алла </title>
+<stream_url>mmsh://mms.online.ru/v4_1_22?st=018489700123667805420090310</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/orfey_online.html</location>
+<title>- 99,2 FM - Радио Орфей </title>
+<stream_url>mmsh://live.rfn.ru/orfey/</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/finam_fm_online.html</location>
+<title>- 99,6 FM - Финам FM </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/silver_rain_online.html</location>
+<title>- 100,1 FM - Серебряный дождь </title>
+<stream_url>http://radiosilver.corbina.net:8000/silver48.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://85.21.192.13:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>various</stream_genre>
+<stream_bitrate>48</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/best_fm_online.html</location>
+<title>- 100,5 FM - Best FM </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/classic_fm_online.html</location>
+<title>- 100,9 FM - Радио Классик </title>
+<stream_url>http://s05.radio-tochka.com:6045/</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://78.159.102.100:6045</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>Classic</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/dfm_online.html</location>
+<title>- 101,2 FM - Ди ФМ </title>
+<stream_url>mmsh://broadcast03.station.ru/dfm</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/nashe_fm_online.html</location>
+<title>- 101,7 FM - Наше радио </title>
+<stream_url>http://81.19.85.198:80/nashe128.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://81.19.85.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>Rock</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/monte_carlo_online.html</location>
+<title> - 102,1 FM - Радио Монте-Карло </title>
+<stream_url>mmsh://broadcast03.station.ru/montecarlo</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/popsa_online.html</location>
+<title>- 102,5 FM - Первое популярное радио </title>
+<stream_url>http://streamall.rambler.ru:80/popsa64.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://81.19.85.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_bitrate>64</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/shanson_fm_online.html</location>
+<title>- 103,0 FM - Радио Шансон </title>
+<stream_url>http://83.222.4.42:8800</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://83.222.4.42:8800</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_genre>Chanson</stream_genre>
+<stream_bitrate>96</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/mayak_online.html</location>
+<title>- 103,4 FM - Радио Маяк </title>
+<stream_url>mmsh://stream03.rambler.ru/radiomayak?WMContentBitrate=80000</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/maximum_online.html</location>
+<title>- 103,7 FM - Радио Максимум </title>
+<stream_url>mmsh://broadcast03.station.ru/maximum</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/energy_fm_online.html</location>
+<title>- 104,2 FM - Радио Энерджи онлайн</title>
+<stream_url>mmsh://89.20.132.26/v1_1_128?st=064107800122941225920090829</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/radio_7_online.html</location>
+<title>- 104,7 FM - Радио 7 </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/radio_next_online.html</location>
+<title>- 105,2 FM - Радио Некст онлайн</title>
+<stream_url>http://streamall.rambler.ru:80/next64.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://81.19.85.199:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_bitrate>64</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/russkoe_online.html</location>
+<title>- 105,7 FM - Русское радио </title>
+<stream_url>mmsh://broadcast03.station.ru/rusradio</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/europa_plus_online.html</location>
+<title>- 106,2 FM - Европа Плюс </title>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/love_radio_online.html</location>
+<title>- 106,6 FM - Love Радио </title>
+<stream_url>http://streamall.rambler.ru:80/love128.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://81.19.85.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/rsn_online.html</location>
+<title>- 107,0 FM - Русская служба новостей </title>
+<stream_url>mmsh://broadcast03.station.ru/rsn</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/hit_fm_online.html</location>
+<title>- 107,4 FM - Хит-FM </title>
+<stream_url>mmsh://broadcast03.station.ru/hitfm</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>audio/x-ms-wma</stream_type>
+<stream_protocol>mmsh</stream_protocol>
+</item>
+<item>
+<location>http://www.radiogrom.com/online/moskva_fm/mvolna_online.html</location>
+<title>- 107,8 FM - Милицейская Волна </title>
+</item>
 </channel>
 
 </rss>

@@ -178,28 +178,28 @@ columnCount=3
 
 
 <channel>
-  <title>Дополнительные сервисы</title>
-  <item>
+<title>Дополнительные сервисы</title>
+<item>
 <link>rss/etc-menu-video.rss</link>
-    <title>Internet Video</title>
-    <annotation>YouTube, Internet TV</annotation>
-    <image>rss/image/menu/video.jpg</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
+<title>Internet Video</title>
+<annotation>YouTube, Internet TV</annotation>
+<image>rss/image/menu/video.jpg</image>
+<mediaDisplay name="photoView"/>
+</item>
+<item>
 <link>rss/etc-menu-radio.rss</link>
-    <title>Internet Radio</title>
-    <annotation>SHOUTcast, SKY.fm, Digitally Imported, SomaFM, Bluemars, 1.FM, Moskva.FM, Station.ru and other</annotation>
-    <image>rss/image/menu/radio.jpg</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
+<title>Internet Radio</title>
+<annotation>SHOUTcast, SKY.fm, Digitally Imported, SomaFM, Bluemars, 1.FM, Moskva.FM, Station.ru and other</annotation>
+<image>rss/image/menu/radio.jpg</image>
+<mediaDisplay name="photoView"/>
+</item>
+<item>
 <link>rss/etc-menu-app.rss</link>
-    <title>Applications</title>
-    <annotation>Media Stream Renderer, XSPF Browser</annotation>
-    <image>rss/image/menu/app.jpg</image>
-    <mediaDisplay name="photoView"/>
-  </item>
+<title>Applications</title>
+<annotation>Media Stream Renderer, XSPF Browser</annotation>
+<image>rss/image/menu/app.jpg</image>
+<mediaDisplay name="photoView"/>
+</item>
 </channel>
 
 </rss>
