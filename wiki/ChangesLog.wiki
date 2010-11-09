@@ -1,4 +1,5 @@
 #summary История версий
+#labels Featured
 
 = История версий =
 
