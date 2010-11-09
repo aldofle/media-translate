@@ -12,6 +12,7 @@
 
   == Internet Radio ==
   * SHOUTcast Directory (http://www.shoutcast.com)
+  * RadioTime (http://radiotime.com/)
   * SomaFM (http://somafm.com/)
   * Digitally Imported (http://www.di.fm/)
   * SKY.fm (http://www.sky.fm/)
@@ -60,6 +61,10 @@ http://vimeo.com/channels/timelapseinhd/videos/rss
   * [http://www.shoutcast.com/ SHOUTcast]
 {{{
 http://yp.shoutcast.com/sbin/tunein-station.pls?id=1116397
+}}}
+  * [http://radiotime.com/ RadioTime]
+{{{
+http://opml.radiotime.com/Tune.ashx?id=s29667&sid=p30125
 }}}
   * [http://ivi.ru/ IVI] (_Замечание._ Требуется наличие CURL.)
 {{{
