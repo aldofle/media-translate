@@ -162,63 +162,63 @@
 
 
 <channel>
-<title>Radiogrom.com</title>
-<item>
+  <title>Radiogrom.com</title>
+  <item>
 <link>rss/etc-playlists-radiogrom-classic.rss</link>
-<title>Классическая музыка</title>
-<annotation>РадиоГром (www.radiogrom.com) предоставляет на ваш выбор лучшие радиостанции для тех, кто ценит и понимает инструментальную и классическую музыку. Здесь вы также найдете радиостанции, вещающие оперную музыку онлайн, симфоническую музыку, а также всё то, что относится к классике. Другими словами - это Classical Music Online Radio!</annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
-<item>
+    <title>Классическая музыка</title>
+    <annotation>РадиоГром (www.radiogrom.com) предоставляет на ваш выбор лучшие радиостанции для тех, кто ценит и понимает инструментальную и классическую музыку. Здесь вы также найдете радиостанции, вещающие оперную музыку онлайн, симфоническую музыку, а также всё то, что относится к классике. Другими словами - это Classical Music Online Radio!</annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radiogrom-moskva_fm.rss</link>
-<title>Москва FM</title>
-<annotation>FM радиостанции Москвы. Вещание через интернет. Онлайн радио он лайн слушать</annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
-<item>
+    <title>Москва FM</title>
+    <annotation>FM радиостанции Москвы. Вещание через интернет. Онлайн радио он лайн слушать</annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radiogrom-piter_fm.rss</link>
-<title>Питер FM</title>
-<annotation>FM-радиостанции Санкт-Петербурга. Онлайн Радио. Слушать радио онлайн через интернет </annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
-<item>
+    <title>Питер FM</title>
+    <annotation>FM-радиостанции Санкт-Петербурга. Онлайн Радио. Слушать радио онлайн через интернет </annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radiogrom-russia.rss</link>
-<title>Россия AM-FM</title>
-<annotation>AM-FM Радиостанции России. Вещание через интернет слушать онлайн Радио онлайн</annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
-<item>
+    <title>Россия AM-FM</title>
+    <annotation>AM-FM Радиостанции России. Вещание через интернет слушать онлайн Радио онлайн</annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radiogrom-belarus_fm.rss</link>
-<title>Беларусь FM</title>
-<annotation>FM-радиостанции Беларуси. Вещание через интернет. Слушать Радио онлайн</annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
-<item>
+    <title>Беларусь FM</title>
+    <annotation>FM-радиостанции Беларуси. Вещание через интернет. Слушать Радио онлайн</annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radiogrom-ua_fm.rss</link>
-<title>Киев FM</title>
-<annotation>FМ радиостанции г. Киев и Украины. Вещание через интернет. Радио онлайн</annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
-<item>
+    <title>Киев FM</title>
+    <annotation>FМ радиостанции г. Киев и Украины. Вещание через интернет. Радио онлайн</annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radiogrom-radio_france.rss</link>
-<title>Радио Франции</title>
-<annotation>Французские радиостанции. Вещание через интернет. Радио Франции слушать онлайн online</annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
-<item>
+    <title>Радио Франции</title>
+    <annotation>Французские радиостанции. Вещание через интернет. Радио Франции слушать онлайн online</annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radiogrom-internet_europe.rss</link>
-<title>Радио Европы</title>
-<annotation>Зарубежные интернет радиостанции. Вещание через интернет. Радио онлайн</annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
+    <title>Радио Европы</title>
+    <annotation>Зарубежные интернет радиостанции. Вещание через интернет. Радио онлайн</annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
 </channel>
 
 </rss>
