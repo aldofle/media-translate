@@ -2,6 +2,10 @@
 
 = История версий =
 
+== 2.0.5 ==
+  * добавлен сервис *[http://radiotime.com RadioTime]*;
+  * поддержка `<meta rel="streamer">` в xspf-плейлистах.
+
 == 2.0.4 ==
   * добавлен поиск в SHOUTcast;
   * добавлены радио-плейлисты *radioio.com* и *CBC Radio*;
