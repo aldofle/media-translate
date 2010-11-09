@@ -420,293 +420,293 @@ columnCount=5
   </unknownDispatcher>
 
 <channel>
-  <title>Sampo.ru</title>
-  <item>
-    <annotation>Радио хорошего настроения. Современная музыка способная поднять настроение.</annotation>
-    <title>Радио Импульс</title>
-    <image>rss/image/sampo/impulse.png</image>
-    <location>http://radio.sampo.ru/impulse.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/impulse.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Radio Impulse 192kb/s</stream_title>
-    <stream_bitrate>192</stream_bitrate>
-  </item>
-  <item>
-    <annotation>НАШЕ радио – Петрозаводск это не только «самая полная коллекция рок-н-ролла», но и разнообразные программы местного производства. Только на 105,7 fm можно услышать дневную и вечернюю программы по заявкам «Вперед и с песней!», подборку лучших образцов нашей музыки в программе «Главные Песни», ночной проект «Экспертиза», а также карельские новости и погоду.</annotation>
-    <title>НАШЕ радио - Петрозаводск</title>
-    <image>rss/image/sampo/nashe-ptz.png</image>
-    <location>http://radio.sampo.ru/nashe-ptz.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/nashe-ptz.mp3</stream_url>
-    <stream_class>video</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
-  </item>
-  <item>
-    <annotation>Транслирует музыку в стиле Hardstyle. Стиль Hardstyle возник в конце 90-х годов из направления Techno, как подвид этого стиля. В дальнейшем утяжелённое Techno смешивается с басовой и синт (синтезаторной, где сама мелодия) линией Hard-trance, вследствие чего получался более жёсткий звук, который звучал уже почти как Hardcore Techno. Более широкое распространение этот стиль получил после выпуска многочисленных ремиксов на различные популярные композиции других исполнителей (музыкантов). Прародителем этого стиля принято считать девушку-диджея DJ Dana van Dreven, ныне известную как Lady Dana, DJ Isaac, The Prophet и другие. Станция является частью семейства онлайн станций вещающих под маркой "Рекорд".</annotation>
-    <title>Teodor</title>
-    <image>rss/image/sampo/teodor.png</image>
-    <location>http://radio.sampo.ru/teodor.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/teodor-radio.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Teodor radio</stream_title>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <annotation>Петрозаводское интернет радио community popjoy про популярную музыку, рассчитано на широкую публику с разносторонними музыкальными вкусами. На радио вы можете услышать лучших российских и зарубежных ди-джеев и музыкантов новой волны, музыкальные стили которых - движение к эклектизму - это и диско 70х-80х, техно 90х, мелодичный френч-хаус, элитная поп-музыка, электро - поп - панк, хип - хаус, винтаж, а также самые интересные поп- и рок-хиты на все времена! </annotation>
-    <title>PopJoy radio</title>
-    <image>rss/image/sampo/popjoy.png</image>
-    <location>http://radio.sampo.ru/popjoy.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/popjoy.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Radioimperia</stream_title>
-    <stream_genre>Pop Haus Rep Hip-hop</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <annotation>Государственная радиовещательная компания "Маяк". В прямом эфире вы можете слышать голоса Сергея Стиллавина, Антона Комолова и Ольги Шелест, Романа Трахтенберга, Леры Кудрявцевой, Тутты Ларсен и бесменного ведущего автомобильного радио-шоу "Право руля" Виктора Травина, а так же многих других известных людей.</annotation>
-    <title>Радио Маяк</title>
-    <image>rss/image/sampo/mayak.png</image>
-    <location>http://radio.sampo.ru/mayak.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/mayak.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-  </item>
-  <item>
-    <annotation>NETRA - молодежное Online радио, вещающее все разновидности и течения музыкальных движений House, Electro-House, Trance. Это музыка от любимых DJ'ев, новые релизы, а также живые выступления DJ и музыкантов нашего города! Мы всегда открыты для новых идей и сотрудничества, будь вы DJ или просто слушатель, мы всегда будем рады узнать ваше мнение, ведь именно вы выбираете то, что хотите слушать!</annotation>
-    <title>Netra</title>
-    <image>rss/image/sampo/netra.png</image>
-    <location>http://radio.sampo.ru/netra.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/netra.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-  </item>
-  <item>
-    <annotation>Rock Radio1 предлагает вашему вниманию лучшие образцы классического хард-рока и тяжелого металла 60-х, 70-х, 80-х и 90-х годов.</annotation>
-    <title>Rock Radio 1</title>
-    <image>rss/image/sampo/rockradio1.png</image>
-    <location>http://radio.sampo.ru/rockradio1.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/rockradio1.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>RockRadio1.Com - Classic Hard Rock &amp; Heavy Metal Mix, 24/7 Live Requests / www.rockradio1.com</stream_title>
-    <stream_genre>Classic Rock Metal</stream_genre>
-    <stream_bitrate>192</stream_bitrate>
-  </item>
-  <item>
-    <annotation>BassDrive is a 24/7 drum and bass radio station featuring live shows with guest DJs, as well as broadcasts from venues all over the world representing the best of drum and bass &amp; jungle music. BassDrive is also a new record label promoting US drum and bass. BassDrive internet radio offers superior sound quality in comparison to other online drum n bass and techno radio stations. Please tune in by clicking one of the tune-in buttons in the top right corner. Please refer to our help section if you experience problems listening to our online radio.</annotation>
-    <title>Bassdrive radio</title>
-    <image>rss/image/sampo/bassdrive.png</image>
-    <location>http://radio.sampo.ru/bassdrive.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/bassdrive.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Bassdrive - Worldwide Drum and Bass Radio</stream_title>
-    <stream_genre>Techno</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <annotation>24/7 drum and bass radio with daily LIVE shows. </annotation>
-    <title>Jungletrain radio</title>
-    <image>rss/image/sampo/jungletrain.png</image>
-    <location>http://radio.sampo.ru/jungletrain.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/jungletrain.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>jungletrain.net - 24/7 drum and bass</stream_title>
-    <stream_genre>Jungle, Drum and Bass, Electronic</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <annotation>It's a new Underground Music Radio featuring the sounds of Drum and Bass, Dubstep and all that bizzle. </annotation>
-    <title>DeepBassNine</title>
-    <image>rss/image/sampo/deepbassnine.png</image>
-    <location>http://radio.sampo.ru/deepbassnine.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/deepbassnine.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>DB9 Radio - db9radio.com</stream_title>
-    <stream_genre>Electronic, Drum and Bass, Breaks, Dubstep, Oldschool Hardcore</stream_genre>
-    <stream_bitrate>160</stream_bitrate>
-  </item>
-  <item>
-    <annotation>Европа Плюс - это современное радио для молодых и активных людей! Первая коммерческая радиостанция в российском эфире начала вещание 30 апреля 1990 года в Москве на частоте 106,2 FM. Входит в Европейскую медиа группу. Европа Плюс - это лучшая популярная музыка в актуальном стиле в исполнении отечественных и зарубежных звезд.</annotation>
-    <title>Европа Плюс</title>
-    <image>rss/image/sampo/europaplus.png</image>
-    <location>http://radio.sampo.ru/europaplus.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/europaplus.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Europaplus Saint-Peterburg</stream_title>
-    <stream_genre>Varios</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <annotation>chroniXradio.com - Hard Rock Radio and Metal Radio</annotation>
-    <title>Aggression</title>
-    <image>rss/image/sampo/chronix_aggression.png</image>
-    <location>http://radio.sampo.ru/chronix_aggression.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/chronix_aggression.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>ChroniX Aggression - Loud &amp; Clear - www.chronixradio.com</stream_title>
-    <stream_genre>METAL, ROCK, ALTERNATIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <annotation>Радио Ваня – музыкально-информационная радиостанция, впервые появившаяся в эфире в июле 2007 года. Частота радио Ваня Санкт-Петербург – 68,66 УКВ. Руководство радио Ваня описывает его как «потешное, разудалое, простецкое, свое в доску радио» для слушателей до 40 лет. Песни радио Ваня – веселые и озорные, исключительно русскоязычные (поскольку народное радио), иногда эпатажные, иногда разухабистые, но всегда для хорошего настроения – заметно отличают радиостанцию от всех других.</annotation>
-    <title>Радио Ваня</title>
-    <image>rss/image/sampo/vanya.png</image>
-    <location>http://radio.sampo.ru/vanya.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/vanya.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Radio Vanya</stream_title>
-    <stream_genre>Radio Vanya</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
-  </item>
-  <item>
-    <annotation>Радио «Юность» - «Ю-FM»!!! Круглосуточное молодёжное радио с акцентом на танцевальную музыку! Клубные хиты и новинки в исполнении отечественных и зарубежных джедаев! Авторские программы мастеров танцпола, ежедневные dj’s live-сеты! Звёздные гости, новости, фирменная двадцатка лучших треков недели!</annotation>
-    <title>Радио Юность</title>
-    <image>rss/image/sampo/unost.png</image>
-    <location>http://radio.sampo.ru/unost.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/unost.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>ЮFM ТОМСК УКВ 68.0 MHz</stream_title>
-    <stream_genre>live</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <annotation>Автолюбителям, а также любителям хорошей музыки «Первое автомобильное радио» предлагает слушать музыку, которую узнают с первых тактов и напевают, развлекательные программы с участием суперзвезд, актуальную, интересную, оперативную информацию, увлекательные, динамичные игры в эфире.</annotation>
-    <title>Авторадио</title>
-    <image>rss/image/sampo/avtoradio.png</image>
-    <location>http://radio.sampo.ru/avtoradio.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/avtoradio.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Avtoradio</stream_title>
-    <stream_genre>misc</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <annotation>Легендарная питерская станция "Модерн" - уникальное актерское радио с актуальным музыкальным форматом - покинула fm-диапазон в 2001 году. Спустя 9 лет после закрытия, "Модерн" возвращается к своему слушателю. Основа Интернет-версии - музыкальное наполнение того времени, которое мы попытались воссоздать в оригинальном виде. В ближайших планах - появление специальных программ, отвечающих главному - духу и настроению этого "очень странного места"...</annotation>
-    <title>Радио Модерн</title>
-    <image>rss/image/sampo/modern.png</image>
-    <location>http://radio.sampo.ru/modern.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/modern.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>РАDИО МОDЕРН</stream_title>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>160</stream_bitrate>
-  </item>
-  <item>
-    <annotation>«Эхо Москвы» информирует обо всем, что делается в мире. Круглые сутки в его эфире - новости политики и культуры, обзоры прессы, беседы с гостями, интерактивное общение со слушателями, авторские программы на различные, интересующие москвичей и жителей других городов, темы.</annotation>
-    <title>Радио Эхо Москвы</title>
-    <image>rss/image/sampo/echo-moskvy.png</image>
-    <location>http://radio.sampo.ru/echo-moskvy.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/echo-moskvy.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-  </item>
-  <item>
-    <annotation>Радио Рекорд — первая танцевальная радиостанция России с самой развитой структурой: помимо радио, это одна из крупнейших в Европе event-компаний с собственным record-лейблом.</annotation>
-    <title>Радио Рекорд</title>
-    <image>rss/image/sampo/record.png</image>
-    <location>http://radio.sampo.ru/record.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/record.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Radio Record 106.3 FM</stream_title>
-    <stream_genre>Dance</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <annotation>Все, кто любит и любим – вот слушатели LOVE RADIO. Песни, звучащие на этой волне на разных языках – только о любви. В программах этой волнующей радиостанции - признания и любовные истории обычных людей, а также романтические воспоминания знаменитых артистов. </annotation>
-    <title>Love Радио</title>
-    <image>rss/image/sampo/loveradio.png</image>
-    <location>http://radio.sampo.ru/loveradio.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/loveradio.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Love Radio 106.6 FM MSK</stream_title>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>96</stream_bitrate>
-  </item>
-  <item>
-    <annotation>Redbox - круглосуточная петрозаводская танцевальная интернет-радиостанция, в создании эфира которой участвуют сами пользователи. Программы для начинающих (и не только) диджеев, регулярные прямые эфиры из Петрозаводска, голосование за проигрываемые композиции, еженедельный хит-парад и многое другое - всё это Redbox. </annotation>
-    <title>Redbox</title>
-    <image>rss/image/sampo/redbox.png</image>
-    <location>http://radio.sampo.ru/redbox.mp3</location>
-    <stream_url>http://radio.sampo.ru:8000/redbox.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Танцевальный Redbox Петрозаводска</stream_title>
-    <stream_bitrate>192</stream_bitrate>
-  </item>
+<title>Sampo.ru</title>
+<item>
+<annotation>Радио хорошего настроения. Современная музыка способная поднять настроение.</annotation>
+<title>Радио Импульс</title>
+<image>rss/image/sampo/impulse.png</image>
+<location>http://radio.sampo.ru/impulse.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/impulse.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Radio Impulse 192kb/s</stream_title>
+<stream_bitrate>192</stream_bitrate>
+</item>
+<item>
+<annotation>НАШЕ радио – Петрозаводск это не только «самая полная коллекция рок-н-ролла», но и разнообразные программы местного производства. Только на 105,7 fm можно услышать дневную и вечернюю программы по заявкам «Вперед и с песней!», подборку лучших образцов нашей музыки в программе «Главные Песни», ночной проект «Экспертиза», а также карельские новости и погоду.</annotation>
+<title>НАШЕ радио - Петрозаводск</title>
+<image>rss/image/sampo/nashe-ptz.png</image>
+<location>http://radio.sampo.ru/nashe-ptz.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/nashe-ptz.mp3</stream_url>
+<stream_class>video</stream_class>
+<stream_soft></stream_soft>
+<stream_server></stream_server>
+<stream_type>video/x-msvideo</stream_type>
+<stream_protocol>http</stream_protocol>
+</item>
+<item>
+<annotation>Транслирует музыку в стиле Hardstyle. Стиль Hardstyle возник в конце 90-х годов из направления Techno, как подвид этого стиля. В дальнейшем утяжелённое Techno смешивается с басовой и синт (синтезаторной, где сама мелодия) линией Hard-trance, вследствие чего получался более жёсткий звук, который звучал уже почти как Hardcore Techno. Более широкое распространение этот стиль получил после выпуска многочисленных ремиксов на различные популярные композиции других исполнителей (музыкантов). Прародителем этого стиля принято считать девушку-диджея DJ Dana van Dreven, ныне известную как Lady Dana, DJ Isaac, The Prophet и другие. Станция является частью семейства онлайн станций вещающих под маркой "Рекорд".</annotation>
+<title>Teodor</title>
+<image>rss/image/sampo/teodor.png</image>
+<location>http://radio.sampo.ru/teodor.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/teodor-radio.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Teodor radio</stream_title>
+<stream_genre>Various</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<annotation>Петрозаводское интернет радио community popjoy про популярную музыку, рассчитано на широкую публику с разносторонними музыкальными вкусами. На радио вы можете услышать лучших российских и зарубежных ди-джеев и музыкантов новой волны, музыкальные стили которых - движение к эклектизму - это и диско 70х-80х, техно 90х, мелодичный френч-хаус, элитная поп-музыка, электро - поп - панк, хип - хаус, винтаж, а также самые интересные поп- и рок-хиты на все времена! </annotation>
+<title>PopJoy radio</title>
+<image>rss/image/sampo/popjoy.png</image>
+<location>http://radio.sampo.ru/popjoy.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/popjoy.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Radioimperia</stream_title>
+<stream_genre>Pop Haus Rep Hip-hop</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<annotation>Государственная радиовещательная компания "Маяк". В прямом эфире вы можете слышать голоса Сергея Стиллавина, Антона Комолова и Ольги Шелест, Романа Трахтенберга, Леры Кудрявцевой, Тутты Ларсен и бесменного ведущего автомобильного радио-шоу "Право руля" Виктора Травина, а так же многих других известных людей.</annotation>
+<title>Радио Маяк</title>
+<image>rss/image/sampo/mayak.png</image>
+<location>http://radio.sampo.ru/mayak.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/mayak.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+</item>
+<item>
+<annotation>NETRA - молодежное Online радио, вещающее все разновидности и течения музыкальных движений House, Electro-House, Trance. Это музыка от любимых DJ'ев, новые релизы, а также живые выступления DJ и музыкантов нашего города! Мы всегда открыты для новых идей и сотрудничества, будь вы DJ или просто слушатель, мы всегда будем рады узнать ваше мнение, ведь именно вы выбираете то, что хотите слушать!</annotation>
+<title>Netra</title>
+<image>rss/image/sampo/netra.png</image>
+<location>http://radio.sampo.ru/netra.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/netra.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+</item>
+<item>
+<annotation>Rock Radio1 предлагает вашему вниманию лучшие образцы классического хард-рока и тяжелого металла 60-х, 70-х, 80-х и 90-х годов.</annotation>
+<title>Rock Radio 1</title>
+<image>rss/image/sampo/rockradio1.png</image>
+<location>http://radio.sampo.ru/rockradio1.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/rockradio1.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>RockRadio1.Com - Classic Hard Rock &amp; Heavy Metal Mix, 24/7 Live Requests / www.rockradio1.com</stream_title>
+<stream_genre>Classic Rock Metal</stream_genre>
+<stream_bitrate>192</stream_bitrate>
+</item>
+<item>
+<annotation>BassDrive is a 24/7 drum and bass radio station featuring live shows with guest DJs, as well as broadcasts from venues all over the world representing the best of drum and bass &amp; jungle music. BassDrive is also a new record label promoting US drum and bass. BassDrive internet radio offers superior sound quality in comparison to other online drum n bass and techno radio stations. Please tune in by clicking one of the tune-in buttons in the top right corner. Please refer to our help section if you experience problems listening to our online radio.</annotation>
+<title>Bassdrive radio</title>
+<image>rss/image/sampo/bassdrive.png</image>
+<location>http://radio.sampo.ru/bassdrive.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/bassdrive.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Bassdrive - Worldwide Drum and Bass Radio</stream_title>
+<stream_genre>Techno</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<annotation>24/7 drum and bass radio with daily LIVE shows. </annotation>
+<title>Jungletrain radio</title>
+<image>rss/image/sampo/jungletrain.png</image>
+<location>http://radio.sampo.ru/jungletrain.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/jungletrain.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>jungletrain.net - 24/7 drum and bass</stream_title>
+<stream_genre>Jungle, Drum and Bass, Electronic</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<annotation>It's a new Underground Music Radio featuring the sounds of Drum and Bass, Dubstep and all that bizzle. </annotation>
+<title>DeepBassNine</title>
+<image>rss/image/sampo/deepbassnine.png</image>
+<location>http://radio.sampo.ru/deepbassnine.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/deepbassnine.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>DB9 Radio - db9radio.com</stream_title>
+<stream_genre>Electronic, Drum and Bass, Breaks, Dubstep, Oldschool Hardcore</stream_genre>
+<stream_bitrate>160</stream_bitrate>
+</item>
+<item>
+<annotation>Европа Плюс - это современное радио для молодых и активных людей! Первая коммерческая радиостанция в российском эфире начала вещание 30 апреля 1990 года в Москве на частоте 106,2 FM. Входит в Европейскую медиа группу. Европа Плюс - это лучшая популярная музыка в актуальном стиле в исполнении отечественных и зарубежных звезд.</annotation>
+<title>Европа Плюс</title>
+<image>rss/image/sampo/europaplus.png</image>
+<location>http://radio.sampo.ru/europaplus.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/europaplus.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Europaplus Saint-Peterburg</stream_title>
+<stream_genre>Varios</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<annotation>chroniXradio.com - Hard Rock Radio and Metal Radio</annotation>
+<title>Aggression</title>
+<image>rss/image/sampo/chronix_aggression.png</image>
+<location>http://radio.sampo.ru/chronix_aggression.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/chronix_aggression.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>shoutcast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>ChroniX Aggression - Loud &amp; Clear - www.chronixradio.com</stream_title>
+<stream_genre>METAL, ROCK, ALTERNATIVE</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<annotation>Радио Ваня – музыкально-информационная радиостанция, впервые появившаяся в эфире в июле 2007 года. Частота радио Ваня Санкт-Петербург – 68,66 УКВ. Руководство радио Ваня описывает его как «потешное, разудалое, простецкое, свое в доску радио» для слушателей до 40 лет. Песни радио Ваня – веселые и озорные, исключительно русскоязычные (поскольку народное радио), иногда эпатажные, иногда разухабистые, но всегда для хорошего настроения – заметно отличают радиостанцию от всех других.</annotation>
+<title>Радио Ваня</title>
+<image>rss/image/sampo/vanya.png</image>
+<location>http://radio.sampo.ru/vanya.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/vanya.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Radio Vanya</stream_title>
+<stream_genre>Radio Vanya</stream_genre>
+<stream_bitrate>64</stream_bitrate>
+</item>
+<item>
+<annotation>Радио «Юность» - «Ю-FM»!!! Круглосуточное молодёжное радио с акцентом на танцевальную музыку! Клубные хиты и новинки в исполнении отечественных и зарубежных джедаев! Авторские программы мастеров танцпола, ежедневные dj’s live-сеты! Звёздные гости, новости, фирменная двадцатка лучших треков недели!</annotation>
+<title>Радио Юность</title>
+<image>rss/image/sampo/unost.png</image>
+<location>http://radio.sampo.ru/unost.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/unost.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>ЮFM ТОМСК УКВ 68.0 MHz</stream_title>
+<stream_genre>live</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<annotation>Автолюбителям, а также любителям хорошей музыки «Первое автомобильное радио» предлагает слушать музыку, которую узнают с первых тактов и напевают, развлекательные программы с участием суперзвезд, актуальную, интересную, оперативную информацию, увлекательные, динамичные игры в эфире.</annotation>
+<title>Авторадио</title>
+<image>rss/image/sampo/avtoradio.png</image>
+<location>http://radio.sampo.ru/avtoradio.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/avtoradio.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Avtoradio</stream_title>
+<stream_genre>misc</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<annotation>Легендарная питерская станция "Модерн" - уникальное актерское радио с актуальным музыкальным форматом - покинула fm-диапазон в 2001 году. Спустя 9 лет после закрытия, "Модерн" возвращается к своему слушателю. Основа Интернет-версии - музыкальное наполнение того времени, которое мы попытались воссоздать в оригинальном виде. В ближайших планах - появление специальных программ, отвечающих главному - духу и настроению этого "очень странного места"...</annotation>
+<title>Радио Модерн</title>
+<image>rss/image/sampo/modern.png</image>
+<location>http://radio.sampo.ru/modern.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/modern.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>РАDИО МОDЕРН</stream_title>
+<stream_genre>Various</stream_genre>
+<stream_bitrate>160</stream_bitrate>
+</item>
+<item>
+<annotation>«Эхо Москвы» информирует обо всем, что делается в мире. Круглые сутки в его эфире - новости политики и культуры, обзоры прессы, беседы с гостями, интерактивное общение со слушателями, авторские программы на различные, интересующие москвичей и жителей других городов, темы.</annotation>
+<title>Радио Эхо Москвы</title>
+<image>rss/image/sampo/echo-moskvy.png</image>
+<location>http://radio.sampo.ru/echo-moskvy.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/echo-moskvy.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+</item>
+<item>
+<annotation>Радио Рекорд — первая танцевальная радиостанция России с самой развитой структурой: помимо радио, это одна из крупнейших в Европе event-компаний с собственным record-лейблом.</annotation>
+<title>Радио Рекорд</title>
+<image>rss/image/sampo/record.png</image>
+<location>http://radio.sampo.ru/record.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/record.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Radio Record 106.3 FM</stream_title>
+<stream_genre>Dance</stream_genre>
+<stream_bitrate>128</stream_bitrate>
+</item>
+<item>
+<annotation>Все, кто любит и любим – вот слушатели LOVE RADIO. Песни, звучащие на этой волне на разных языках – только о любви. В программах этой волнующей радиостанции - признания и любовные истории обычных людей, а также романтические воспоминания знаменитых артистов. </annotation>
+<title>Love Радио</title>
+<image>rss/image/sampo/loveradio.png</image>
+<location>http://radio.sampo.ru/loveradio.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/loveradio.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Love Radio 106.6 FM MSK</stream_title>
+<stream_genre>Various</stream_genre>
+<stream_bitrate>96</stream_bitrate>
+</item>
+<item>
+<annotation>Redbox - круглосуточная петрозаводская танцевальная интернет-радиостанция, в создании эфира которой участвуют сами пользователи. Программы для начинающих (и не только) диджеев, регулярные прямые эфиры из Петрозаводска, голосование за проигрываемые композиции, еженедельный хит-парад и многое другое - всё это Redbox. </annotation>
+<title>Redbox</title>
+<image>rss/image/sampo/redbox.png</image>
+<location>http://radio.sampo.ru/redbox.mp3</location>
+<stream_url>http://radio.sampo.ru:8000/redbox.mp3</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://217.77.60.217:8000</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>Танцевальный Redbox Петрозаводска</stream_title>
+<stream_bitrate>192</stream_bitrate>
+</item>
 </channel>
 
 </rss>

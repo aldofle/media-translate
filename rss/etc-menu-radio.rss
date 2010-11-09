@@ -178,79 +178,79 @@ columnCount=3
 
 
 <channel>
-  <title>Internet Radio</title>
-  <item>
-    <link>rss/shoutcast_index.rss</link>
-    <title>SHOUTcast Radio Directory</title>
-    <annotation>Listing thousands of radio channels worldwide...</annotation>
-    <image>rss/image/menu/shoutcast.jpg</image>
-    <mediaDisplay name="onePartView"/>
-  </item>
-  <item>
+<title>Internet Radio</title>
+<item>
+<link>rss/shoutcast_index.rss</link>
+<title>SHOUTcast Radio Directory</title>
+<annotation>Listing thousands of radio channels worldwide...</annotation>
+<image>rss/image/menu/shoutcast.jpg</image>
+<mediaDisplay name="onePartView"/>
+</item>
+<item>
 <link>rss/etc-playlists-radio-bluemars.rss</link>
-    <title>Bluemars</title>
-    <annotation>Welcome to Bluemars, we will shortly transition into synchronous orbit around Phobos where you will be able to board a shuttle down the inertial tether.
+<title>Bluemars</title>
+<annotation>Welcome to Bluemars, we will shortly transition into synchronous orbit around Phobos where you will be able to board a shuttle down the inertial tether.
 Upon arrival, please consult the display in the hall for transportation to one of the three continents on the planet.
 Thank you for travelling with Bluemars Spaceways.</annotation>
-    <image>rss/image/menu/bluemars.jpg</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
+<image>rss/image/menu/bluemars.jpg</image>
+<mediaDisplay name="photoView"/>
+</item>
+<item>
 <link>rss/etc-playlists-radio-di.rss</link>
-    <title>Digitally Imported</title>
-    <annotation>Electronic &amp; Dance Music Radio 24/7</annotation>
-    <image>rss/image/menu/di.png</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
+<title>Digitally Imported</title>
+<annotation>Electronic &amp; Dance Music Radio 24/7</annotation>
+<image>rss/image/menu/di.png</image>
+<mediaDisplay name="photoView"/>
+</item>
+<item>
 <link>rss/etc-playlists-moskva_fm.rss</link>
-    <title>Moskva.FM</title>
-    <annotation>Московские радиостанции FM диапазона</annotation>
-    <image>rss/image/menu/moskvafm.png</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
-    <link>http://127.0.0.1/cgi-bin/translate?app,,radiotime/index</link>
-    <title>RadioTime</title>
-    <annotation>RadioTime, a privately held Dallas-based company, focuses on providing complete radio content and tools to help listeners quickly and easily find their favorite radio stations and personalities plus discover new ones.</annotation>
-    <image>rss/image/menu/radiotime.png</image>
-    <mediaDisplay name="threePartsView"/>
-  </item>
-  <item>
+<title>Moskva.FM</title>
+<annotation>Московские радиостанции FM диапазона</annotation>
+<image>rss/image/menu/moskvafm.png</image>
+<mediaDisplay name="photoView"/>
+</item>
+<item>
+<link>http://127.0.0.1/cgi-bin/translate?app,,radiotime/index</link>
+<title>RadioTime</title>
+<annotation>RadioTime, a privately held Dallas-based company, focuses on providing complete radio content and tools to help listeners quickly and easily find their favorite radio stations and personalities plus discover new ones.</annotation>
+<image>rss/image/menu/radiotime.png</image>
+<mediaDisplay name="threePartsView"/>
+</item>
+<item>
 <link>rss/etc-playlists-radio-stationru.rss</link>
-    <title>Station.ru</title>
-    <annotation>Интернет-станции на Station.ru</annotation>
-    <image>rss/image/menu/stationru.png</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
+<title>Station.ru</title>
+<annotation>Интернет-станции на Station.ru</annotation>
+<image>rss/image/menu/stationru.png</image>
+<mediaDisplay name="photoView"/>
+</item>
+<item>
 <link>rss/etc-playlists-radio-skyfm.rss</link>
-    <title>SKY.fm</title>
-    <annotation>Now Serving the Best Free Internet Radio to 33,823 Fans</annotation>
-    <image>rss/image/menu/skyfm.png</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
+<title>SKY.fm</title>
+<annotation>Now Serving the Best Free Internet Radio to 33,823 Fans</annotation>
+<image>rss/image/menu/skyfm.png</image>
+<mediaDisplay name="photoView"/>
+</item>
+<item>
 <link>rss/etc-playlists-radio-somafm.rss</link>
-    <title>SomaFM</title>
-    <annotation>SomaFM is 20 unique channels of listener-supported, commercial-free, underground/alternative radio broadcasting from San Francisco. All music hand-picked by SomaFM's award-winning DJs and music directors.</annotation>
-    <image>rss/image/menu/somafm.gif</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
+<title>SomaFM</title>
+<annotation>SomaFM is 20 unique channels of listener-supported, commercial-free, underground/alternative radio broadcasting from San Francisco. All music hand-picked by SomaFM's award-winning DJs and music directors.</annotation>
+<image>rss/image/menu/somafm.gif</image>
+<mediaDisplay name="photoView"/>
+</item>
+<item>
 <link>rss/etc-playlists-radio-radioio.rss</link>
-    <title>RadioIO</title>
-    <annotation>It's all about the music</annotation>
-    <image>rss/image/menu/radioio.jpg</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
+<title>RadioIO</title>
+<annotation>It's all about the music</annotation>
+<image>rss/image/menu/radioio.jpg</image>
+<mediaDisplay name="photoView"/>
+</item>
+<item>
 <link>rss/etc-menu-radio-other.rss</link>
-    <title>Other</title>
-    <annotation>Разные списки интернет-радиостанций</annotation>
-    <image>rss/image/menu/internetradio.png</image>
-    <mediaDisplay name="threePartsView"/>
-  </item>
+<title>Other</title>
+<annotation>Разные списки интернет-радиостанций</annotation>
+<image>rss/image/menu/internetradio.png</image>
+<mediaDisplay name="threePartsView"/>
+</item>
 </channel>
 
 </rss>

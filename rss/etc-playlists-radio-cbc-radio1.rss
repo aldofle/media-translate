@@ -404,410 +404,410 @@
   </unknownDispatcher>
 
 <channel>
-  <title>CBC Radio One</title>
-  <item>
-    <title>Calgary</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1cgy-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1cgy-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Calgary - H</stream_title>
-    <stream_genre>CBC Radio 1 Calgary</stream_genre>
-    <stream_bitrate>75</stream_bitrate>
-  </item>
-  <item>
-    <title>Charlottetown</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1chr-32.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1chr-32</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Charlottetown</stream_title>
-    <stream_genre>CBC Radio 1 Charlottetown</stream_genre>
-    <stream_bitrate>54</stream_bitrate>
-  </item>
-  <item>
-    <title>Corner Brook</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1cor-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1cor-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Corner Brook -</stream_title>
-    <stream_genre>CBC Radio 1 Cornerbrook</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Edmonton</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1edm-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1edm-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Edmonton - H</stream_title>
-    <stream_genre>CBC Radio 1 Edmonton</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Fredericton</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1frd-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1frd-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Fredericton -</stream_title>
-    <stream_genre>CBC Radio 1 Fredericton</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Grand Falls</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1gfa-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1gfa-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Grand Falls -</stream_title>
-    <stream_genre>CBC Radio 1 Grand Falls</stream_genre>
-    <stream_bitrate>75</stream_bitrate>
-  </item>
-  <item>
-    <title>Halifax</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1hfx-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1hfx-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Halifax - H</stream_title>
-    <stream_genre>CBC Radio 1 Halifax</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Inuvik</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1ink-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1ink-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 - H</stream_title>
-    <stream_genre>CBC Radio 1</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Iqaluit</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1iqa-32.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1iqa-32</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 - L</stream_title>
-    <stream_genre>CBC Radio 1</stream_genre>
-    <stream_bitrate>54</stream_bitrate>
-  </item>
-  <item>
-    <title>Kelowna</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1kel-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1kel-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Moncton - H</stream_title>
-    <stream_genre>CBC Radio 1</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Labrador/Goose Bay</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1gba-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1gba-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Goose Bay- H</stream_title>
-    <stream_genre>CBC Radio 1 Goose Bay</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>London</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1ldn-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1ldn-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 London - H</stream_title>
-    <stream_genre>CBC Radio 1 London</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Moncton</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1mct-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1mct-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 - H</stream_title>
-    <stream_genre>CBC Radio 1</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Montreal</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1mtl-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1mtl-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Montreal - H</stream_title>
-    <stream_genre>CBC Radio 1 Montreal</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Ottawa</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1ott-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1ott-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Ottawa - H</stream_title>
-    <stream_genre>CBC Radio 1 Ottawa</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Prince George</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1prg-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1prg-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 - H</stream_title>
-    <stream_genre>CBC Radio 1</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Quebec City</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1qqu-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1qqu-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 - H</stream_title>
-    <stream_genre>CBC Radio 1</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Regina</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1reg-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1reg-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Regina - H</stream_title>
-    <stream_genre>CBC Radio 1 Regina</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Saint John</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1snb-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1snb-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 - H</stream_title>
-    <stream_genre>CBC Radio 1</stream_genre>
-    <stream_bitrate>75</stream_bitrate>
-  </item>
-  <item>
-    <title>Saskatoon</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1reg-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1reg-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Regina - H</stream_title>
-    <stream_genre>CBC Radio 1 Regina</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>St. John's</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1snf-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1snf-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 - H</stream_title>
-    <stream_genre>CBC Radio 1</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Sudbury</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1sud-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1sud-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Sudbury - H</stream_title>
-    <stream_genre>CBC Radio 1 Sudbury</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Sydney</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1syd-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1syd-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 - H</stream_title>
-    <stream_genre>CBC Radio 1</stream_genre>
-    <stream_bitrate>54</stream_bitrate>
-  </item>
-  <item>
-    <title>Thunder Bay</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1tba-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1tba-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Thunder Bay -</stream_title>
-    <stream_genre>CBC Radio 1 Thunder bay</stream_genre>
-    <stream_bitrate>54</stream_bitrate>
-  </item>
-  <item>
-    <title>Toronto</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1tor-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1tor-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Toronto - H</stream_title>
-    <stream_genre>CBC Radio 1 Toronto</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Vancouver</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1vcr-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1vcr-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Vancouver - H</stream_title>
-    <stream_genre>CBC Radio 1 Vancouver</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Victoria</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1vic-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1vic-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Victoria - H</stream_title>
-    <stream_genre>CBC Radio 1 Victoria</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Whitehorse</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1whs-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1whs-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Whitehorse - H</stream_title>
-    <stream_genre>CBC Radio 1 Whitehose</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Windsor</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1wdr-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1wdr-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Windsor - H</stream_title>
-    <stream_genre>CBC Radio 1 Windsor</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Winnipeg</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1wpg-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1wpg-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Winnipeg - H</stream_title>
-    <stream_genre>CBC Radio 1 Winnipeg</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
-  <item>
-    <title>Yellowknife</title>
-    <location>http://radiostreams.cbc.ca/cbc-cbcr1ykn-96.m3u</location>
-    <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1ykn-96</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>CBC R1 Yellowknife -</stream_title>
-    <stream_genre>CBC Radio 1 Yellowknife</stream_genre>
-    <stream_bitrate>120</stream_bitrate>
-  </item>
+<title>CBC Radio One</title>
+<item>
+<title>Calgary</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1cgy-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1cgy-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Calgary - H</stream_title>
+<stream_genre>CBC Radio 1 Calgary</stream_genre>
+<stream_bitrate>75</stream_bitrate>
+</item>
+<item>
+<title>Charlottetown</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1chr-32.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1chr-32</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Charlottetown</stream_title>
+<stream_genre>CBC Radio 1 Charlottetown</stream_genre>
+<stream_bitrate>54</stream_bitrate>
+</item>
+<item>
+<title>Corner Brook</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1cor-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1cor-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Corner Brook -</stream_title>
+<stream_genre>CBC Radio 1 Cornerbrook</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Edmonton</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1edm-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1edm-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Edmonton - H</stream_title>
+<stream_genre>CBC Radio 1 Edmonton</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Fredericton</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1frd-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1frd-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Fredericton -</stream_title>
+<stream_genre>CBC Radio 1 Fredericton</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Grand Falls</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1gfa-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1gfa-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Grand Falls -</stream_title>
+<stream_genre>CBC Radio 1 Grand Falls</stream_genre>
+<stream_bitrate>75</stream_bitrate>
+</item>
+<item>
+<title>Halifax</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1hfx-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1hfx-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Halifax - H</stream_title>
+<stream_genre>CBC Radio 1 Halifax</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Inuvik</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1ink-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1ink-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 - H</stream_title>
+<stream_genre>CBC Radio 1</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Iqaluit</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1iqa-32.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1iqa-32</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 - L</stream_title>
+<stream_genre>CBC Radio 1</stream_genre>
+<stream_bitrate>54</stream_bitrate>
+</item>
+<item>
+<title>Kelowna</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1kel-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1kel-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Moncton - H</stream_title>
+<stream_genre>CBC Radio 1</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Labrador/Goose Bay</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1gba-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1gba-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Goose Bay- H</stream_title>
+<stream_genre>CBC Radio 1 Goose Bay</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>London</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1ldn-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1ldn-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 London - H</stream_title>
+<stream_genre>CBC Radio 1 London</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Moncton</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1mct-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1mct-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 - H</stream_title>
+<stream_genre>CBC Radio 1</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Montreal</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1mtl-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1mtl-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Montreal - H</stream_title>
+<stream_genre>CBC Radio 1 Montreal</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Ottawa</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1ott-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1ott-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Ottawa - H</stream_title>
+<stream_genre>CBC Radio 1 Ottawa</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Prince George</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1prg-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1prg-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 - H</stream_title>
+<stream_genre>CBC Radio 1</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Quebec City</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1qqu-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1qqu-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 - H</stream_title>
+<stream_genre>CBC Radio 1</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Regina</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1reg-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1reg-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Regina - H</stream_title>
+<stream_genre>CBC Radio 1 Regina</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Saint John</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1snb-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1snb-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 - H</stream_title>
+<stream_genre>CBC Radio 1</stream_genre>
+<stream_bitrate>75</stream_bitrate>
+</item>
+<item>
+<title>Saskatoon</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1reg-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1reg-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Regina - H</stream_title>
+<stream_genre>CBC Radio 1 Regina</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>St. John's</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1snf-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1snf-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 - H</stream_title>
+<stream_genre>CBC Radio 1</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Sudbury</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1sud-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1sud-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Sudbury - H</stream_title>
+<stream_genre>CBC Radio 1 Sudbury</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Sydney</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1syd-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1syd-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 - H</stream_title>
+<stream_genre>CBC Radio 1</stream_genre>
+<stream_bitrate>54</stream_bitrate>
+</item>
+<item>
+<title>Thunder Bay</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1tba-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1tba-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Thunder Bay -</stream_title>
+<stream_genre>CBC Radio 1 Thunder bay</stream_genre>
+<stream_bitrate>54</stream_bitrate>
+</item>
+<item>
+<title>Toronto</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1tor-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1tor-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Toronto - H</stream_title>
+<stream_genre>CBC Radio 1 Toronto</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Vancouver</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1vcr-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1vcr-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Vancouver - H</stream_title>
+<stream_genre>CBC Radio 1 Vancouver</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Victoria</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1vic-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1vic-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Victoria - H</stream_title>
+<stream_genre>CBC Radio 1 Victoria</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Whitehorse</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1whs-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1whs-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Whitehorse - H</stream_title>
+<stream_genre>CBC Radio 1 Whitehose</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Windsor</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1wdr-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1wdr-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Windsor - H</stream_title>
+<stream_genre>CBC Radio 1 Windsor</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Winnipeg</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1wpg-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1wpg-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.164.198:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Winnipeg - H</stream_title>
+<stream_genre>CBC Radio 1 Winnipeg</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
+<item>
+<title>Yellowknife</title>
+<location>http://radiostreams.cbc.ca/cbc-cbcr1ykn-96.m3u</location>
+<stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr1ykn-96</stream_url>
+<stream_class>audio</stream_class>
+<stream_soft>icecast</stream_soft>
+<stream_server>icyx://64.62.210.77:80</stream_server>
+<stream_type>audio/mpeg</stream_type>
+<stream_protocol>http</stream_protocol>
+<stream_title>CBC R1 Yellowknife -</stream_title>
+<stream_genre>CBC Radio 1 Yellowknife</stream_genre>
+<stream_bitrate>120</stream_bitrate>
+</item>
 </channel>
 
 </rss>
