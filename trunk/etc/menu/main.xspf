@@ -14,7 +14,7 @@
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radio.xspf,collection/menu</link>
       <title>Internet Radio</title>
-      <annotation>SHOUTcast, SKY.fm, Digitally Imported, SomaFM, Bluemars, 1.FM, Moskva.FM, Station.ru and other</annotation>
+      <annotation>SHOUTcast, RadioTime, SKY.fm, Digitally Imported, SomaFM, Radioio, Bluemars, 1.FM, Moskva.FM, Station.ru and other</annotation>
       <image>rss/image/menu/radio.jpg</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
