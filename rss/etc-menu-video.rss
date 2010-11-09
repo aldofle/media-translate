@@ -178,21 +178,21 @@ columnCount=2
 
 
 <channel>
-<title>Internet Video</title>
-<item>
-<link>rss/youtube/yt_index.rss</link>
-<title>YouTube</title>
-<annotation>Founded in February 2005, YouTube is the world's most popular online video community, allowing millions of people to discover, watch and share originally-created videos.</annotation>
-<image>rss/image/menu/youtube.jpg</image>
-<mediaDisplay name="onePartView"/>
-</item>
-<item>
+  <title>Internet Video</title>
+  <item>
+    <link>rss/youtube/yt_index.rss</link>
+    <title>YouTube</title>
+    <annotation>Founded in February 2005, YouTube is the world's most popular online video community, allowing millions of people to discover, watch and share originally-created videos.</annotation>
+    <image>rss/image/menu/youtube.jpg</image>
+    <mediaDisplay name="onePartView"/>
+  </item>
+  <item>
 <link>rss/etc-menu-tv-other.rss</link>
-<title>Other</title>
-<annotation>Разные списки интернет-телевидения</annotation>
-<image>rss/image/menu/internettv.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
+    <title>Other</title>
+    <annotation>Разные списки интернет-телевидения</annotation>
+    <image>rss/image/menu/internettv.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
 </channel>
 
 </rss>

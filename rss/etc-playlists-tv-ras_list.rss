@@ -404,410 +404,410 @@
   </unknownDispatcher>
 
 <channel>
-<title>ras playlist</title>
-<item>
-<title>Russia 24</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/russia24/russia24.sdp</location>
-<stream_url>rtmp://213.21.0.16/russia24/russia24.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>24doc</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/24dok/24dok.sdp</location>
-<stream_url>rtmp://213.21.0.16/24dok/24dok.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>MusicBox</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/musicbox/musicbox.sdp</location>
-<stream_url>rtmp://213.21.0.16/musicbox/musicbox.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>NTV</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/ntv/ntv.sdp</location>
-<stream_url>rtmp://213.21.0.16/ntv/ntv.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>2x2</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/2x2/2x2.sdp</location>
-<stream_url>rtmp://213.21.0.16/2x2/2x2.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>russia 2 sport</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/russia2/russia2.sdp</location>
-<stream_url>rtmp://213.21.0.16/russia2/russia2.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>RTR</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/russia1/russia1.sdp</location>
-<stream_url>rtmp://213.21.0.16/russia1/russia1.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>TNT</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/tnt/tnt.sdp</location>
-<stream_url>rtmp://213.21.0.16/tnt/tnt.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>STS</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/sts/sts.sdp</location>
-<stream_url>rtmp://213.21.0.16/sts/sts.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>Comedy TV</title>
-<translate>Content-type:video/x-msvideo</translate>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/comedy/comedy.sdp</location>
-<stream_url>rtmp://213.21.0.16/comedy/comedy.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>Disney</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/jetix/jetix.sdp</location>
-<stream_url>rtmp://213.21.0.16/jetix/jetix.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>DTV</title>
-<ext>sdp</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://213.21.0.16/dtv/dtv.sdp</location>
-<stream_url>rtmp://213.21.0.16/dtv/dtv.sdp</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>Russia 24 low</title>
-<ext>ru</ext>
-<protocol>mms</protocol>
-<location>mms://live.rfn.ru/vesti_24</location>
-<stream_url>mmsh://live.rfn.ru/vesti_24</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>mmsh</stream_protocol>
-</item>
-<item>
-<title>Ulibka rebenka</title>
-<ext>tv</ext>
-<protocol>mms</protocol>
-<location>mms://mms.rrsat-internet.tv/smile</location>
-<stream_url>mms://mms.rrsat-internet.tv/smile</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-<stream_title>Smile of a child</stream_title>
-</item>
-<item>
-<title>MIR TV</title>
-<translate>Content-type:video/x-msvideo</translate>
-<ext>11</ext>
-<protocol>mms</protocol>
-<location>mms://213.232.226.11/MIRTV_300</location>
-<stream_url>mms://213.232.226.11/MIRTV_300</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>Music Box</title>
-<ext>asf</ext>
-<protocol>mms</protocol>
-<location>mms://81.89.49.210:80/musicbox?.wma&amp;MSWMExt=.asf</location>
-<stream_url>mmsh://81.89.49.210:80/musicbox?.wma&amp;MSWMExt=.asf</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>mmsh</stream_protocol>
-</item>
-<item>
-<title>1 Baltic Muz</title>
-<ext>207:81</ext>
-<protocol>mms</protocol>
-<location>mms://195.244.137.207:81/</location>
-</item>
-<item>
-<title>RTR Planeta</title>
-<ext>ru</ext>
-<protocol>mms</protocol>
-<location>mms://live.rfn.ru/rtr-planeta</location>
-<stream_url>mmsh://live.rfn.ru/rtr-planeta</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>mmsh</stream_protocol>
-</item>
-<item>
-<title>Zolotoy Vek</title>
-<ext>asx</ext>
-<protocol>http</protocol>
-<location>http://195.62.63.238/tv_zolotoy_vek.asx</location>
-<stream_url>mms://195.62.63.238/tv_zolotoy_vek</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>1 kanal bisnesa</title>
-<ext>asx</ext>
-<protocol>http</protocol>
-<location>http://tvsme.ru/channels/low_r_1.asx</location>
-<stream_url>mms://mms.amtv.ru/BizOne</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-<stream_title>Первый канал бизнеса</stream_title>
-</item>
-<item>
-<title>STS Murmansk</title>
-<ext>flv</ext>
-<protocol>http</protocol>
-<location>http://213.168.42.243:8085/stream.flv</location>
-<stream_url>http://213.168.42.243:8085/stream.flv</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>http</stream_protocol>
-</item>
-<item>
-<title>Corbina Music</title>
-<ext>210</ext>
-<protocol>mms</protocol>
-<location>mms://85.21.138.210/mclips4</location>
-<stream_url>mms://85.21.138.210/mclips4</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>Rain TV</title>
-<translate>Content-type:video/x-msvideo</translate>
-<ext>98</ext>
-<protocol>mms</protocol>
-<location>mms://83.102.146.98/live092</location>
-<stream_url>mms://83.102.146.98/live092</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>RBC</title>
-<ext>net</ext>
-<protocol>mms</protocol>
-<location>mms://tv.gldn.net/rbc</location>
-<stream_url>mms://tv.gldn.net/rbc</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>HipHop TV</title>
-<translate>Content-type:video/x-msvideo</translate>
-<ext>asf</ext>
-<protocol>mms</protocol>
-<location>mms://broadcast02.station.ru/hiphophit?MSWMExt=.asf</location>
-<stream_url>mmsh://broadcast02.station.ru/hiphophit?MSWMExt=.asf</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>mmsh</stream_protocol>
-<stream_title>XXX / Хип Хоп Хит</stream_title>
-</item>
-<item>
-<title>Dance TV HD</title>
-<ext>hu</ext>
-<protocol>mms</protocol>
-<location>mms://stream02.gtk.hu/dance_tvd</location>
-<stream_url>mmsh://stream02.gtk.hu/dance_tvd</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>mmsh</stream_protocol>
-</item>
-<item>
-<title>Tvoy Stroy Animation</title>
-<ext>70</ext>
-<protocol>mms</protocol>
-<location>mms://212.1.238.70/ts_tv10</location>
-<stream_url>mms://212.1.238.70/ts_tv10</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>Tvoy Stroy Documental</title>
-<ext>70</ext>
-<protocol>mms</protocol>
-<location>mms://212.1.238.70/ts_tv6</location>
-<stream_url>mms://212.1.238.70/ts_tv6</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>Tvoy Stroy Music</title>
-<ext>70</ext>
-<protocol>mms</protocol>
-<location>mms://212.1.238.70/ts_tv9</location>
-<stream_url>mms://212.1.238.70/ts_tv9</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>Tvoy Stroy Tema</title>
-<ext>70</ext>
-<protocol>mms</protocol>
-<location>mms://212.1.238.70/ts_tv7</location>
-<stream_url>mms://212.1.238.70/ts_tv7</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>Tvoy Stroy film</title>
-<ext>70</ext>
-<protocol>mms</protocol>
-<location>mms://212.1.238.70/ts_tv8</location>
-<stream_url>mms://212.1.238.70/ts_tv8</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>rtsp</stream_protocol>
-</item>
-<item>
-<title>EuroSpport</title>
-<ext>net</ext>
-<protocol>mms</protocol>
-<location>mms://a1439.l3192233438.c31922.g.lm.akamaistream.net/D/1439/31922/v0001/reflector:33438</location>
-<stream_url>mmsh://a1439.l3192233438.c31922.g.lm.akamaistream.net/D/1439/31922/v0001/reflector:33438</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-msvideo</stream_type>
-<stream_protocol>mmsh</stream_protocol>
-</item>
-<item>
-<title>HD TV (-)</title>
-<ext>ru:1935</ext>
-<protocol>rtmp</protocol>
-<location>rtmp://1nitv.ru:1935/live/livestream1</location>
-<stream_url>rtmp://1nitv.ru:1935/live/livestream1</stream_url>
-<stream_class>video</stream_class>
-<stream_soft></stream_soft>
-<stream_server></stream_server>
-<stream_type>video/x-flv</stream_type>
-<stream_protocol>rtmp</stream_protocol>
-</item>
-<item>
-<title>ORT+2 (700) (-)</title>
-<ext>sdp</ext>
-<protocol>rtsp</protocol>
-<location>rtsp://iptv.karelia.ru/ort.sdp</location>
-</item>
+  <title>ras playlist</title>
+  <item>
+    <title>Russia 24</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/russia24/russia24.sdp</location>
+    <stream_url>rtmp://213.21.0.16/russia24/russia24.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>24doc</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/24dok/24dok.sdp</location>
+    <stream_url>rtmp://213.21.0.16/24dok/24dok.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>MusicBox</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/musicbox/musicbox.sdp</location>
+    <stream_url>rtmp://213.21.0.16/musicbox/musicbox.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>NTV</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/ntv/ntv.sdp</location>
+    <stream_url>rtmp://213.21.0.16/ntv/ntv.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>2x2</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/2x2/2x2.sdp</location>
+    <stream_url>rtmp://213.21.0.16/2x2/2x2.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>russia 2 sport</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/russia2/russia2.sdp</location>
+    <stream_url>rtmp://213.21.0.16/russia2/russia2.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>RTR</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/russia1/russia1.sdp</location>
+    <stream_url>rtmp://213.21.0.16/russia1/russia1.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>TNT</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/tnt/tnt.sdp</location>
+    <stream_url>rtmp://213.21.0.16/tnt/tnt.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>STS</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/sts/sts.sdp</location>
+    <stream_url>rtmp://213.21.0.16/sts/sts.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>Comedy TV</title>
+    <translate>Content-type:video/x-msvideo</translate>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/comedy/comedy.sdp</location>
+    <stream_url>rtmp://213.21.0.16/comedy/comedy.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>Disney</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/jetix/jetix.sdp</location>
+    <stream_url>rtmp://213.21.0.16/jetix/jetix.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>DTV</title>
+    <ext>sdp</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://213.21.0.16/dtv/dtv.sdp</location>
+    <stream_url>rtmp://213.21.0.16/dtv/dtv.sdp</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>Russia 24 low</title>
+    <ext>ru</ext>
+    <protocol>mms</protocol>
+    <location>mms://live.rfn.ru/vesti_24</location>
+    <stream_url>mmsh://live.rfn.ru/vesti_24</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
+  </item>
+  <item>
+    <title>Ulibka rebenka</title>
+    <ext>tv</ext>
+    <protocol>mms</protocol>
+    <location>mms://mms.rrsat-internet.tv/smile</location>
+    <stream_url>mms://mms.rrsat-internet.tv/smile</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+    <stream_title>Smile of a child</stream_title>
+  </item>
+  <item>
+    <title>MIR TV</title>
+    <translate>Content-type:video/x-msvideo</translate>
+    <ext>11</ext>
+    <protocol>mms</protocol>
+    <location>mms://213.232.226.11/MIRTV_300</location>
+    <stream_url>mms://213.232.226.11/MIRTV_300</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>Music Box</title>
+    <ext>asf</ext>
+    <protocol>mms</protocol>
+    <location>mms://81.89.49.210:80/musicbox?.wma&amp;MSWMExt=.asf</location>
+    <stream_url>mmsh://81.89.49.210:80/musicbox?.wma&amp;MSWMExt=.asf</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
+  </item>
+  <item>
+    <title>1 Baltic Muz</title>
+    <ext>207:81</ext>
+    <protocol>mms</protocol>
+    <location>mms://195.244.137.207:81/</location>
+  </item>
+  <item>
+    <title>RTR Planeta</title>
+    <ext>ru</ext>
+    <protocol>mms</protocol>
+    <location>mms://live.rfn.ru/rtr-planeta</location>
+    <stream_url>mmsh://live.rfn.ru/rtr-planeta</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
+  </item>
+  <item>
+    <title>Zolotoy Vek</title>
+    <ext>asx</ext>
+    <protocol>http</protocol>
+    <location>http://195.62.63.238/tv_zolotoy_vek.asx</location>
+    <stream_url>mms://195.62.63.238/tv_zolotoy_vek</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>1 kanal bisnesa</title>
+    <ext>asx</ext>
+    <protocol>http</protocol>
+    <location>http://tvsme.ru/channels/low_r_1.asx</location>
+    <stream_url>mms://mms.amtv.ru/BizOne</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+    <stream_title>Первый канал бизнеса</stream_title>
+  </item>
+  <item>
+    <title>STS Murmansk</title>
+    <ext>flv</ext>
+    <protocol>http</protocol>
+    <location>http://213.168.42.243:8085/stream.flv</location>
+    <stream_url>http://213.168.42.243:8085/stream.flv</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>http</stream_protocol>
+  </item>
+  <item>
+    <title>Corbina Music</title>
+    <ext>210</ext>
+    <protocol>mms</protocol>
+    <location>mms://85.21.138.210/mclips4</location>
+    <stream_url>mms://85.21.138.210/mclips4</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>Rain TV</title>
+    <translate>Content-type:video/x-msvideo</translate>
+    <ext>98</ext>
+    <protocol>mms</protocol>
+    <location>mms://83.102.146.98/live092</location>
+    <stream_url>mms://83.102.146.98/live092</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>RBC</title>
+    <ext>net</ext>
+    <protocol>mms</protocol>
+    <location>mms://tv.gldn.net/rbc</location>
+    <stream_url>mms://tv.gldn.net/rbc</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>HipHop TV</title>
+    <translate>Content-type:video/x-msvideo</translate>
+    <ext>asf</ext>
+    <protocol>mms</protocol>
+    <location>mms://broadcast02.station.ru/hiphophit?MSWMExt=.asf</location>
+    <stream_url>mmsh://broadcast02.station.ru/hiphophit?MSWMExt=.asf</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
+    <stream_title>XXX / Хип Хоп Хит</stream_title>
+  </item>
+  <item>
+    <title>Dance TV HD</title>
+    <ext>hu</ext>
+    <protocol>mms</protocol>
+    <location>mms://stream02.gtk.hu/dance_tvd</location>
+    <stream_url>mmsh://stream02.gtk.hu/dance_tvd</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
+  </item>
+  <item>
+    <title>Tvoy Stroy Animation</title>
+    <ext>70</ext>
+    <protocol>mms</protocol>
+    <location>mms://212.1.238.70/ts_tv10</location>
+    <stream_url>mms://212.1.238.70/ts_tv10</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>Tvoy Stroy Documental</title>
+    <ext>70</ext>
+    <protocol>mms</protocol>
+    <location>mms://212.1.238.70/ts_tv6</location>
+    <stream_url>mms://212.1.238.70/ts_tv6</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>Tvoy Stroy Music</title>
+    <ext>70</ext>
+    <protocol>mms</protocol>
+    <location>mms://212.1.238.70/ts_tv9</location>
+    <stream_url>mms://212.1.238.70/ts_tv9</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>Tvoy Stroy Tema</title>
+    <ext>70</ext>
+    <protocol>mms</protocol>
+    <location>mms://212.1.238.70/ts_tv7</location>
+    <stream_url>mms://212.1.238.70/ts_tv7</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>Tvoy Stroy film</title>
+    <ext>70</ext>
+    <protocol>mms</protocol>
+    <location>mms://212.1.238.70/ts_tv8</location>
+    <stream_url>mms://212.1.238.70/ts_tv8</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
+  </item>
+  <item>
+    <title>EuroSpport</title>
+    <ext>net</ext>
+    <protocol>mms</protocol>
+    <location>mms://a1439.l3192233438.c31922.g.lm.akamaistream.net/D/1439/31922/v0001/reflector:33438</location>
+    <stream_url>mmsh://a1439.l3192233438.c31922.g.lm.akamaistream.net/D/1439/31922/v0001/reflector:33438</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
+  </item>
+  <item>
+    <title>HD TV (-)</title>
+    <ext>ru:1935</ext>
+    <protocol>rtmp</protocol>
+    <location>rtmp://1nitv.ru:1935/live/livestream1</location>
+    <stream_url>rtmp://1nitv.ru:1935/live/livestream1</stream_url>
+    <stream_class>video</stream_class>
+    <stream_soft/>
+    <stream_server/>
+    <stream_type>video/x-flv</stream_type>
+    <stream_protocol>rtmp</stream_protocol>
+  </item>
+  <item>
+    <title>ORT+2 (700) (-)</title>
+    <ext>sdp</ext>
+    <protocol>rtsp</protocol>
+    <location>rtsp://iptv.karelia.ru/ort.sdp</location>
+  </item>
 </channel>
 
 </rss>

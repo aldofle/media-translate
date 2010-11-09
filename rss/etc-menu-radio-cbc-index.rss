@@ -162,21 +162,21 @@
 
 
 <channel>
-<title>BBC Radio</title>
-<item>
+  <title>BBC Radio</title>
+  <item>
 <link>rss/etc-playlists-radio-cbc-radio1.rss</link>
-<title>CBC Radio One</title>
-<annotation></annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
-<item>
+    <title>CBC Radio One</title>
+    <annotation/>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss/etc-playlists-radio-cbc-radio2.rss</link>
-<title>CBC Radio 2</title>
-<annotation>Live Streams, Online Music Channels</annotation>
-<image>rss/image/menu/internetradio.png</image>
-<mediaDisplay name="threePartsView"/>
-</item>
+    <title>CBC Radio 2</title>
+    <annotation>Live Streams, Online Music Channels</annotation>
+    <image>rss/image/menu/internetradio.png</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
 </channel>
 
 </rss>
