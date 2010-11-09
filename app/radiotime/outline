@@ -38,9 +38,9 @@ $WGET -q -O "$OPML" "$LINK"
 
 if [ -f "$OPML" ]; then
   if [ -x "$XSLTPROC" ]; then
-    $XSLTPROC --stringparam self "$LINK" --stringparam key "$KEY" --stringparam text "$TEXT" outline.xslt "$OPML" | printContent "text/xml"
+    $XSLTPROC --stringparam key "$KEY" --stringparam text "$TEXT" outline.xslt "$OPML" | printContent "text/xml"
   else
-    awk -f outline.awk "$OPML" | printContent "text/xml"
+    awk -v optKEY="$KEY" -v optTEXT="`escapeXML \"$TEXT\"`" -f getxml.awk -f outline.awk "$OPML" | printContent "text/xml"
   fi
   rm -f "$OPML"
 fi

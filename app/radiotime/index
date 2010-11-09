@@ -31,7 +31,7 @@ if [ -f "$OPML" ]; then
   if [ -x "$XSLTPROC" ]; then
     $XSLTPROC index.xslt "$OPML" | sed '1d' > $CHANNELFILE
   else
-    awk -f index.awk "$OPML" > $CHANNELFILE
+    awk -f getxml.awk -f index.awk "$OPML" > $CHANNELFILE
   fi
 
   (

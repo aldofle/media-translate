@@ -61,6 +61,13 @@
       <meta rel="mediaDisplay">threePartsView</meta>
     </track>
     <track>
+      <link>rss/radio-profm.rss</link>
+      <title>ProFM</title>
+      <annotation>http://www.profm.ro - Romania</annotation>
+      <image>rss/image/menu/internetradio.png</image>
+      <meta rel="mediaDisplay">threePartsView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/radio-my_favorites.xspf,collection/medialist</link>
       <title>Избранное</title>
       <annotation>Мой список радиостанций</annotation>
