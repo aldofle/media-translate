@@ -131,7 +131,7 @@ EOF
 echo "<table border=0 cellpadding=10>"
 echo "<tr><td colspan=2><table border=0 width=100%><td><h1><a href=\"$SCRIPT_NAME\">Media Stream Renderer</h1></a></td><td align=right>"
 cat <<EOF
-<img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAALUAAAByCAYAAAAVvpClAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHBy
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALUAAAByCAYAAAAVvpClAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHBy
 b2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8ig
 iAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIe
 EeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH/w/qQplcAYCE
