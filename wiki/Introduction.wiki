@@ -11,21 +11,23 @@
   * Youtube (http://www.youtube.com)
 
   == Internet Radio ==
+  === Сервисы ===
   * SHOUTcast Directory (http://www.shoutcast.com)
   * RadioTime (http://radiotime.com/)
+  === Интернет радиостанции ===
   * SomaFM (http://somafm.com/)
   * Digitally Imported (http://www.di.fm/)
   * SKY.fm (http://www.sky.fm/)
   * 1.FM (http://www.1.fm/)
   * 181.FM (http://www.181.fm/)
+  * Radioio (http://radioio.com/)
   * Bluemars (http://www.bluemars.org/)
   * RauteMusik (http://www.rautemusik.fm/)
   * Station.ru (http://station.ru/StationsList.aspx?type=online)
-  * Sampo.ru (http://radio.sampo.ru/)
   * Nullwave.ru (http://nullwave.ru/)
+  * Sampo.ru (http://radio.sampo.ru/)
   * BBC Radio (http://http://www.bbc.co.uk/radio/)
   * CBC Radio (http://www.cbc.ca/radio/)
-  * Radioio (http://radioio.com/)
 
 = Встроенные RSS/CGI-приложения =
   == Media Stream Renderer ==
