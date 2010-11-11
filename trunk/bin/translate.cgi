@@ -522,7 +522,7 @@ check_stream()
     audio/x-cue)
       stream_class='cue'
     ;;
-    audio/x-mpegurl|application/xspf*|audio/x-scpls|video/x-ms-asf)
+    audio/x-mpegurl|application/xspf*|audio/x-scpls|*/x-ms-asf)
       stream_class='playlist'
     ;;
     application/ogg)
@@ -607,7 +607,7 @@ command_playlist()
       application/xspf*)
         ext="xspf"
       ;;
-      video/x-ms-asf)
+      */x-ms-asf)
         ext="asx"
       ;;
     esac
