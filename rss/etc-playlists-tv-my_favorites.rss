@@ -178,6 +178,10 @@
         stream_current_song = "";
         stream_genre = getItemInfo(focus, "stream_genre");
         stream_bitrate = getItemInfo(focus, "stream_bitrate");
+        playlist_autoplay = getItemInfo(focus, "autoplay");
+
+        if(playlist_autoplay == "" || playlist_autoplay == null)
+          playlist_autoplay = 1;
         
         if(stream_class == "" || stream_class == null)
           stream_class = "unknown";
@@ -269,7 +273,7 @@
     streamArray = pushBackStringArray(streamArray, "");
     streamArray = pushBackStringArray(streamArray, "");
     streamArray = pushBackStringArray(streamArray, "playlist");
-    streamArray = pushBackStringArray(streamArray, "1");
+    streamArray = pushBackStringArray(streamArray, playlist_autoplay);
     writeStringToFile(storagePath_playlist, streamArray);
     doModalRss("rss_file://./rss/xspf/xspfBrowser.rss");
   </playlistDispatcher>
@@ -416,6 +420,7 @@
     <stream_server/>
     <stream_type>application/xspf+xml</stream_type>
     <stream_protocol>http</stream_protocol>
+    <autoplay>0</autoplay>
   </item>
 </channel>
 
