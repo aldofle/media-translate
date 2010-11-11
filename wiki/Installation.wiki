@@ -16,7 +16,7 @@ mkdir -p /usr/local/etc/translate
 cd /usr/local/etc/translate
 }}}
 
-  _Или_, если объем флеш памяти на плеере не позволяет этого сделать, то можно создать символическую ссылку с именем */usr/local/etc/translate* на реальное расположение файлов:
+  _Или_, если объем флеш памяти на плеере не позволяет этого сделать, то можно создать символическую ссылку с именем */usr/local/etc/translate* на реальное расположение файлов (/home ext3 раздел диска):
 {{{
 mkdir -p /home/translate
 cd /home/translate
@@ -25,7 +25,7 @@ ln -s /home/translate /usr/local/etc/translate
 
   * Загружаем и распаковываем текущую версию пакета:
 {{{
-wget -O /tmp/mt.tar.bz2 http://media-translate.googlecode.com/files/rss_ex_2.0.3.tar.bz2
+wget -O /tmp/mt.tar.bz2 http://media-translate.googlecode.com/files/rss_ex_2.0.5.tar.bz2
 tar -xjf /tmp/mt.tar.bz2
 rm /tmp/mt.tar.bz2
 }}}
