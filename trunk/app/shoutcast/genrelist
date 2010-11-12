@@ -20,6 +20,8 @@
 local DATAPATH=$BASEPATH/app/shoutcast
 cd $DATAPATH
 
+. ./settings
+
 local CHANNELFILE="$CACHEPATH/shoutcast.genrelist.cache"
 local TEMPDL=$TMPFILE.dl
 
@@ -35,7 +37,7 @@ if [ -f "$CHANNELFILE" ]; then
 fi
 
 if [ $REFRESHCACHE ]; then
-  $WGET -q -O "$TEMPDL" http://www.shoutcast.com:80/sbin/newxml.phtml
+  $WGET -q -O "$TEMPDL" --header "User-Agent: $USERAGENT" ${SHOUTCAST_U}genrelist${SHOUTCAST_K}
   if [ -f "$TEMPDL" ]; then
     if [ -x "$XSLTPROC" ]; then
       $XSLTPROC genrelist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE

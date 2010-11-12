@@ -20,6 +20,8 @@
 DATAPATH=$BASEPATH/app/shoutcast
 cd $DATAPATH
 
+. ./settings
+
 SEARCH="$arg_opt"
 
 CHANNELFILE="$CACHEPATH/shoutcast.search.`echo -n \"$SEARCH\" | sed 's/[^a-zA-z0-9_\-]/_/g'`.cache"
@@ -40,13 +42,13 @@ local TITLE="Shoutcast Radio - '$SEARCH'"
 [ ! -f "$CHANNELFILE" ] && echo "<channel><title>`escapeXML "$TITLE"`</title></channel>" > "$CHANNELFILE"
 
 if [ $REFRESHCACHE ]; then
-  $WGET -q -O "$TEMPDL" "http://www.shoutcast.com:80/sbin/newxml.phtml?search=`urlencode_s "$SEARCH"`"
+  $WGET -q -O "$TEMPDL" --header "User-Agent: $USERAGENT" "${SHOUTCAST_U}stationsearch${SHOUTCAST_K}&search=`urlencode_s "$SEARCH"`"
   if [ -f "$TEMPDL" ]; then
     if [ "`ls -s "$TEMPDL" | awk '{print $1}'`" != "0" ]; then
       if [ -x "$XSLTPROC" ]; then
-        $XSLTPROC --stringparam title "$TITLE" genre.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
+        $XSLTPROC --stringparam title "$TITLE" stationlist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
       else
-        awk -v title="`escapeXML \"$TITLE\"`" -f getxml.awk -f genre.awk "$TEMPDL" > $CHANNELFILE
+        awk -v title="`escapeXML \"$TITLE\"`" -f getxml.awk -f stationlist.awk "$TEMPDL" > $CHANNELFILE
       fi
     fi
     rm -f "$TEMPDL"
@@ -55,5 +57,5 @@ fi
 
 (
   export CHANNELFILE; 
-  template2rss genre.xml | printContent "application/rss+xml"
+  template2rss stationlist.xml | printContent "application/rss+xml"
 )
