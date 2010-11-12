@@ -22,9 +22,10 @@ cd $DATAPATH
 
 . ./settings
 
-GENRE="$arg_opt"
+LIMIT="$arg_opt"
+[ -n "$LIMIT" ] && LIMIT="&limit=`urlencode_s "$LIMIT"`"
 
-CHANNELFILE="$CACHEPATH/shoutcast.`echo -n \"$GENRE\" | sed 's/\//_/g'`.cache"
+CHANNELFILE="$CACHEPATH/shoutcast.`echo -n \"$LIMIT\" | sed 's/\//_/g'`.cache"
 TEMPDL=$TMPFILE.dl
 
 TIMELIFE=3600
@@ -39,10 +40,10 @@ if [ -f "$CHANNELFILE" ]; then
 fi
 
 if [ $REFRESHCACHE ]; then
-  $WGET -q -O "$TEMPDL" --header "User-Agent: $USERAGENT" "${SHOUTCAST_U}genresearch${SHOUTCAST_K}&genre=`urlencode_s "$GENRE"`"
+  $WGET -q -O "$TEMPDL" --header "User-Agent: $USERAGENT" "${SHOUTCAST_U}Top500${SHOUTCAST_K}${LIMIT}"
   if [ -f "$TEMPDL" ]; then
     if [ "`ls -s "$TEMPDL" | awk '{print $1}'`" != "0" ]; then
-      TITLE="Shoutcast Radio - $GENRE"
+      TITLE="Shoutcast Radio - Top$LIMIT"
       if [ -x "$XSLTPROC" ]; then
         $XSLTPROC --stringparam title "$TITLE" stationlist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
       else
