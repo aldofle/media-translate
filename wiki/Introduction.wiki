@@ -94,5 +94,9 @@ http://guzei.com/online_tv/watch.php?online_tv_id=1781
 http://www.radiogrom.com/online/russia/radio_priboy_online.html
 http://www.radiogrom.com/online/belarus_fm/evroradio_online.html
 }}}
+  * [http://www.live-online-tv.com/ live-online-tv.com]
+{{{
+http://www.live-online-tv.com/tv/planeteinsolite.html
+}}}
   * [http://www.last.fm/api Last.FM]
   Получение картинки с исполнителем для текущего проигрываемого трека.
