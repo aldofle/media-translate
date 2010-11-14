@@ -22,8 +22,9 @@ cd $DATAPATH
 
 . ./settings
 
-LIMIT="$arg_opt"
-[ -n "$LIMIT" ] && LIMIT="&limit=`urlencode_s "$LIMIT"`"
+local LIMIT_PARA=
+local LIMIT="$arg_opt"
+[ -n "$LIMIT" ] && LIMIT_PARA="&limit=`urlencode_s "$LIMIT"`"
 
 CHANNELFILE="$CACHEPATH/shoutcast.`echo -n \"$LIMIT\" | sed 's/\//_/g'`.cache"
 TEMPDL=$TMPFILE.dl
@@ -40,7 +41,7 @@ if [ -f "$CHANNELFILE" ]; then
 fi
 
 if [ $REFRESHCACHE ]; then
-  $WGET -q -O "$TEMPDL" --header "User-Agent: $USERAGENT" "${SHOUTCAST_U}Top500${SHOUTCAST_K}${LIMIT}"
+  $WGET -q -O "$TEMPDL" --header "User-Agent: $USERAGENT" "${SHOUTCAST_U}Top500${SHOUTCAST_K}${LIMIT_PARA}"
   if [ -f "$TEMPDL" ]; then
     if [ "`ls -s "$TEMPDL" | awk '{print $1}'`" != "0" ]; then
       TITLE="Shoutcast Radio - Top$LIMIT"
