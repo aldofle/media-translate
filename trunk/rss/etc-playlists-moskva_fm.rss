@@ -23,6 +23,16 @@
 
 <script>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
 
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
@@ -84,14 +94,14 @@ columnCount=5
 			<script>print(location); location;</script>
 		</text>
 
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
 		<itemDisplay>
 			<image>
@@ -105,7 +115,7 @@ columnCount=5
 					  if(annotation == "" || annotation == null)
 					    annotation = getItemInfo(idx, "stream_genre");
 					}
-				  "rss/image/moskvafm/msk/"+getItemInfo(idx, "name")+".png";
+				  "../etc/translate/rss/image/moskvafm/msk/"+getItemInfo(idx, "name")+".png";
 				</script>
 			 <offsetXPC>
 			   <script>
@@ -274,7 +284,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/videoRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/videoRenderer.rss");
   </videoDispatcher>
   
   <audioDispatcher>
@@ -291,7 +301,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/audioRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
   </audioDispatcher>
   
   <playlistDispatcher>
@@ -303,7 +313,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, "playlist");
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_playlist, streamArray);
-    doModalRss("rss_file://./rss/xspf/xspfBrowser.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
   </playlistDispatcher>
   
   <rssDispatcher>
@@ -313,7 +323,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, "");
     streamArray = pushBackStringArray(streamArray, "");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/rss_mediaFeed.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/rss_mediaFeed.rss");
   </rssDispatcher>
 
   <unknownDispatcher>
@@ -787,7 +797,7 @@ columnCount=5
     <name>93_61</name>
   </item>
   <item>
-    <location/>
+    <location>http://online.pionerfm.ru:8000/pionerfm</location>
     <title>Пионер FM</title>
     <annotation>Не очень взрослое радио</annotation>
     <image>http://img.moskva.fm/img/stations/msk/94_0.gif</image>
@@ -795,6 +805,14 @@ columnCount=5
     <id>2110</id>
     <fm>94.0</fm>
     <name>94_0</name>
+    <stream_url>http://online.pionerfm.ru:8000/pionerfm</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://91.217.137.2:8000</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>MUSIC</stream_genre>
+    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://station.ru/RadioStation.aspx?id=1745</location>
@@ -823,7 +841,7 @@ columnCount=5
     <name>94_8</name>
   </item>
   <item>
-    <location/>
+    <location>http://188.127.243.169:80/rock-192</location>
     <title>ROCK FM</title>
     <annotation>Больше музыки, больше рока!</annotation>
     <image>http://img.moskva.fm/img/stations/msk/95_2.gif</image>
@@ -831,6 +849,14 @@ columnCount=5
     <id>2011</id>
     <fm>95.2</fm>
     <name>95_2</name>
+    <stream_url>http://188.127.243.169:80/rock-192</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://188.127.243.169:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>various</stream_genre>
+    <stream_bitrate>192</stream_bitrate>
   </item>
   <item>
     <location>http://89.208.99.16:8088/zvezda_128</location>

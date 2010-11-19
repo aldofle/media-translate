@@ -21,6 +21,20 @@
 #
 -->
 
+<script>
+  translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
+</script>
+
 <onEnter>
   startitem = "middle";
   setRefreshTime(1);
@@ -82,14 +96,14 @@
 			<script>print(annotation); annotation;</script>
 		</text>
 		
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
 		<itemDisplay>
 			<text align="left" lines="1" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100>
@@ -146,14 +160,14 @@
 	
 	<item_template>
 		<mediaDisplay  name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 		</mediaDisplay>
 		<link>
 		  <script>getItemInfo(getQueryItemIndex(), "location");</script>
@@ -164,73 +178,73 @@
 <channel>
   <title>Other Internet Radio Lists</title>
   <item>
-<link>rss/etc-menu-radio-bbc-index.rss</link>
+<link>rss_file://../etc/translate/rss/etc-menu-radio-bbc-index.rss</link>
     <title>BBC Radio</title>
     <annotation>BBC Radio Online</annotation>
-    <image>rss/image/menu/internetradio.png</image>
+    <image>../etc/translate/rss/image/menu/internetradio.png</image>
     <mediaDisplay name="threePartsView"/>
   </item>
   <item>
-<link>rss/etc-menu-radio-cbc-index.rss</link>
+<link>rss_file://../etc/translate/rss/etc-menu-radio-cbc-index.rss</link>
     <title>CBC Radio</title>
     <annotation>CBC Radio Online - Канадская радиовещательная корпорация</annotation>
-    <image>rss/image/menu/internetradio.png</image>
+    <image>../etc/translate/rss/image/menu/internetradio.png</image>
     <mediaDisplay name="threePartsView"/>
   </item>
   <item>
-<link>rss/etc-playlists-radio-1fm.rss</link>
+<link>rss_file://../etc/translate/rss/etc-playlists-radio-1fm.rss</link>
     <title>1.FM</title>
     <annotation>1.FM is owned and operated by Energy Group Networks. All Rights Reserved.</annotation>
-    <image>rss/image/menu/internetradio.png</image>
+    <image>../etc/translate/rss/image/menu/internetradio.png</image>
     <mediaDisplay name="threePartsView"/>
   </item>
   <item>
-<link>rss/etc-playlists-radio-181fm.rss</link>
+<link>rss_file://../etc/translate/rss/etc-playlists-radio-181fm.rss</link>
     <title>181.FM</title>
     <annotation>181.FM - Your Lifestyle... Your Music! ~ Free Internet Radio ~ </annotation>
-    <image>rss/image/menu/internetradio.png</image>
+    <image>../etc/translate/rss/image/menu/internetradio.png</image>
     <mediaDisplay name="threePartsView"/>
   </item>
   <item>
-<link>rss/etc-playlists-radio-rautemusik.rss</link>
+<link>rss_file://../etc/translate/rss/etc-playlists-radio-rautemusik.rss</link>
     <title>RauteMusik</title>
     <annotation>RauteMusik (также RM или # Musik ) — интернет-радиостанция, расположенная в Германии. RauteMusik был впервые показан в 2003 году - 04-20 с помощью только одного основного потока. В ближайшие четыре года, RauteMusik зарекомендовал себя как один из крупнейших Европе интернет-радиостанций.</annotation>
-    <image>rss/image/menu/internetradio.png</image>
+    <image>../etc/translate/rss/image/menu/internetradio.png</image>
     <mediaDisplay name="threePartsView"/>
   </item>
   <item>
-<link>rss/etc-playlists-radio-nullwave.rss</link>
+<link>rss_file://../etc/translate/rss/etc-playlists-radio-nullwave.rss</link>
     <title>Nullwave.ru</title>
     <annotation>Nullwave.ru единственное в своем роде радио в Новосибирске. Тут есть, что послушать.</annotation>
-    <image>rss/image/menu/nulwave.gif</image>
+    <image>../etc/translate/rss/image/menu/nulwave.gif</image>
     <mediaDisplay name="threePartsView"/>
   </item>
   <item>
-<link>rss/etc-playlists-radio-sampo.rss</link>
+<link>rss_file://../etc/translate/rss/etc-playlists-radio-sampo.rss</link>
     <title>Sampo.ru</title>
     <annotation>Городская компьютерная сеть «Сампо.ру» - Петрозаводск.</annotation>
-    <image>rss/image/menu/sampo.jpg</image>
+    <image>../etc/translate/rss/image/menu/sampo.jpg</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link>rss/etc-menu-radiogrom-index.rss</link>
+<link>rss_file://../etc/translate/rss/etc-menu-radiogrom-index.rss</link>
     <title>Radiogrom.com</title>
     <annotation>Radiogrom - о РАДИО ГРОМко! Сборник ссылок на онлайн радиостанции от radiogrom.com</annotation>
-    <image>rss/image/menu/radiogrom.gif</image>
+    <image>../etc/translate/rss/image/menu/radiogrom.gif</image>
     <mediaDisplay name="threePartsView"/>
   </item>
   <item>
     <link>rss/radio-profm.rss</link>
     <title>ProFM</title>
     <annotation>http://www.profm.ro - Romania</annotation>
-    <image>rss/image/menu/internetradio.png</image>
+    <image>../etc/translate/rss/image/menu/internetradio.png</image>
     <mediaDisplay name="threePartsView"/>
   </item>
   <item>
-<link>rss/etc-playlists-radio-my_favorites.rss</link>
+<link>rss_file://../etc/translate/rss/etc-playlists-radio-my_favorites.rss</link>
     <title>Избранное</title>
     <annotation>Мой список радиостанций</annotation>
-    <image>rss/image/menu/internetradio.png</image>
+    <image>../etc/translate/rss/image/menu/internetradio.png</image>
     <mediaDisplay name="threePartsView"/>
   </item>
 </channel>

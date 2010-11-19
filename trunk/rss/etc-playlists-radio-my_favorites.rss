@@ -23,6 +23,16 @@
 
 <script>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
 
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
@@ -100,14 +110,14 @@
 			<script>if(streamurl==""||streamurl==null) "WARNING! No stream url."; else "";</script>
 		</text>
 
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
 		<itemDisplay>
 			<text align="left" lines="1" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100>
@@ -225,14 +235,14 @@
 	
 	<item_template>
 		<mediaDisplay  name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 		</mediaDisplay>
 	</item_template>
 
@@ -246,7 +256,7 @@
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/videoRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/videoRenderer.rss");
   </videoDispatcher>
   
   <audioDispatcher>
@@ -263,7 +273,7 @@
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/audioRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
   </audioDispatcher>
   
   <playlistDispatcher>
@@ -275,7 +285,7 @@
     streamArray = pushBackStringArray(streamArray, "playlist");
     streamArray = pushBackStringArray(streamArray, playlist_autoplay);
     writeStringToFile(storagePath_playlist, streamArray);
-    doModalRss("rss_file://./rss/xspf/xspfBrowser.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
   </playlistDispatcher>
   
   <rssDispatcher>
@@ -285,7 +295,7 @@
     streamArray = pushBackStringArray(streamArray, "");
     streamArray = pushBackStringArray(streamArray, "");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/rss_mediaFeed.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/rss_mediaFeed.rss");
   </rssDispatcher>
 
   <unknownDispatcher>
@@ -425,7 +435,7 @@
     <location>http://station.ru/RadioStation.aspx?id=1743</location>
     <title>Хит FM Italy</title>
     <annotation>Итальянская эстрада, поп-музыка</annotation>
-    <image>rss/image/stationru/hit_italy.gif</image>
+    <image>../etc/translate/rss/image/stationru/hit_italy.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station15</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -438,7 +448,7 @@
     <location>http://voxsc1.somafm.com:8700</location>
     <title>Covers</title>
     <annotation>All covers. All the time. Nothing by the original artists!</annotation>
-    <image>rss/image/somafm/covers120.jpg</image>
+    <image>../etc/translate/rss/image/somafm/covers120.jpg</image>
     <stream_url>http://voxsc1.somafm.com:8700</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -453,7 +463,7 @@
     <location>http://voxsc1.somafm.com:8884</location>
     <title>Underground 80s</title>
     <annotation>Early 80s UK Synthpop and a bit of New Wave.</annotation>
-    <image>rss/image/somafm/u80s-120.png</image>
+    <image>../etc/translate/rss/image/somafm/u80s-120.png</image>
     <stream_url>http://voxsc1.somafm.com:8884</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -468,7 +478,7 @@
     <location>http://u11b.di.fm:80/di_chillout_aacplus</location>
     <title>Chillout</title>
     <annotation>Ambient psy chillout, check out our trippy flavors!</annotation>
-    <image>rss/image/di/radio_di.gif</image>
+    <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic Chillout Ambient</genre>
     <url>http://www.di.fm</url>
     <stream_url>http://u11b.di.fm:80/di_chillout_aacplus</stream_url>

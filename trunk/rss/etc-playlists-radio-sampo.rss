@@ -23,6 +23,16 @@
 
 <script>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
 
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
@@ -89,14 +99,14 @@ columnCount=5
 			<script>print(location); location;</script>
 		</text>
 
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
 		<itemDisplay>
 			<image>
@@ -241,14 +251,14 @@ columnCount=5
 	
 	<item_template>
 		<mediaDisplay  name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 		</mediaDisplay>
 	</item_template>
 
@@ -262,7 +272,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/videoRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/videoRenderer.rss");
   </videoDispatcher>
   
   <audioDispatcher>
@@ -279,7 +289,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/audioRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
   </audioDispatcher>
   
   <playlistDispatcher>
@@ -291,7 +301,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, "playlist");
     streamArray = pushBackStringArray(streamArray, playlist_autoplay);
     writeStringToFile(storagePath_playlist, streamArray);
-    doModalRss("rss_file://./rss/xspf/xspfBrowser.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
   </playlistDispatcher>
   
   <rssDispatcher>
@@ -301,7 +311,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, "");
     streamArray = pushBackStringArray(streamArray, "");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/rss_mediaFeed.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/rss_mediaFeed.rss");
   </rssDispatcher>
 
   <unknownDispatcher>
@@ -428,7 +438,7 @@ columnCount=5
   <item>
     <annotation>Радио хорошего настроения. Современная музыка способная поднять настроение.</annotation>
     <title>Радио Импульс</title>
-    <image>rss/image/sampo/impulse.png</image>
+    <image>../etc/translate/rss/image/sampo/impulse.png</image>
     <location>http://radio.sampo.ru/impulse.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/impulse.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -442,7 +452,7 @@ columnCount=5
   <item>
     <annotation>НАШЕ радио – Петрозаводск это не только «самая полная коллекция рок-н-ролла», но и разнообразные программы местного производства. Только на 105,7 fm можно услышать дневную и вечернюю программы по заявкам «Вперед и с песней!», подборку лучших образцов нашей музыки в программе «Главные Песни», ночной проект «Экспертиза», а также карельские новости и погоду.</annotation>
     <title>НАШЕ радио - Петрозаводск</title>
-    <image>rss/image/sampo/nashe-ptz.png</image>
+    <image>../etc/translate/rss/image/sampo/nashe-ptz.png</image>
     <location>http://radio.sampo.ru/nashe-ptz.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/nashe-ptz.mp3</stream_url>
     <stream_class>video</stream_class>
@@ -454,7 +464,7 @@ columnCount=5
   <item>
     <annotation>Транслирует музыку в стиле Hardstyle. Стиль Hardstyle возник в конце 90-х годов из направления Techno, как подвид этого стиля. В дальнейшем утяжелённое Techno смешивается с басовой и синт (синтезаторной, где сама мелодия) линией Hard-trance, вследствие чего получался более жёсткий звук, который звучал уже почти как Hardcore Techno. Более широкое распространение этот стиль получил после выпуска многочисленных ремиксов на различные популярные композиции других исполнителей (музыкантов). Прародителем этого стиля принято считать девушку-диджея DJ Dana van Dreven, ныне известную как Lady Dana, DJ Isaac, The Prophet и другие. Станция является частью семейства онлайн станций вещающих под маркой "Рекорд".</annotation>
     <title>Teodor</title>
-    <image>rss/image/sampo/teodor.png</image>
+    <image>../etc/translate/rss/image/sampo/teodor.png</image>
     <location>http://radio.sampo.ru/teodor.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/teodor-radio.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -469,7 +479,7 @@ columnCount=5
   <item>
     <annotation>Петрозаводское интернет радио community popjoy про популярную музыку, рассчитано на широкую публику с разносторонними музыкальными вкусами. На радио вы можете услышать лучших российских и зарубежных ди-джеев и музыкантов новой волны, музыкальные стили которых - движение к эклектизму - это и диско 70х-80х, техно 90х, мелодичный френч-хаус, элитная поп-музыка, электро - поп - панк, хип - хаус, винтаж, а также самые интересные поп- и рок-хиты на все времена! </annotation>
     <title>PopJoy radio</title>
-    <image>rss/image/sampo/popjoy.png</image>
+    <image>../etc/translate/rss/image/sampo/popjoy.png</image>
     <location>http://radio.sampo.ru/popjoy.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/popjoy.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -484,7 +494,7 @@ columnCount=5
   <item>
     <annotation>Государственная радиовещательная компания "Маяк". В прямом эфире вы можете слышать голоса Сергея Стиллавина, Антона Комолова и Ольги Шелест, Романа Трахтенберга, Леры Кудрявцевой, Тутты Ларсен и бесменного ведущего автомобильного радио-шоу "Право руля" Виктора Травина, а так же многих других известных людей.</annotation>
     <title>Радио Маяк</title>
-    <image>rss/image/sampo/mayak.png</image>
+    <image>../etc/translate/rss/image/sampo/mayak.png</image>
     <location>http://radio.sampo.ru/mayak.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/mayak.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -496,7 +506,7 @@ columnCount=5
   <item>
     <annotation>NETRA - молодежное Online радио, вещающее все разновидности и течения музыкальных движений House, Electro-House, Trance. Это музыка от любимых DJ'ев, новые релизы, а также живые выступления DJ и музыкантов нашего города! Мы всегда открыты для новых идей и сотрудничества, будь вы DJ или просто слушатель, мы всегда будем рады узнать ваше мнение, ведь именно вы выбираете то, что хотите слушать!</annotation>
     <title>Netra</title>
-    <image>rss/image/sampo/netra.png</image>
+    <image>../etc/translate/rss/image/sampo/netra.png</image>
     <location>http://radio.sampo.ru/netra.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/netra.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -508,7 +518,7 @@ columnCount=5
   <item>
     <annotation>Rock Radio1 предлагает вашему вниманию лучшие образцы классического хард-рока и тяжелого металла 60-х, 70-х, 80-х и 90-х годов.</annotation>
     <title>Rock Radio 1</title>
-    <image>rss/image/sampo/rockradio1.png</image>
+    <image>../etc/translate/rss/image/sampo/rockradio1.png</image>
     <location>http://radio.sampo.ru/rockradio1.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/rockradio1.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -523,7 +533,7 @@ columnCount=5
   <item>
     <annotation>BassDrive is a 24/7 drum and bass radio station featuring live shows with guest DJs, as well as broadcasts from venues all over the world representing the best of drum and bass &amp; jungle music. BassDrive is also a new record label promoting US drum and bass. BassDrive internet radio offers superior sound quality in comparison to other online drum n bass and techno radio stations. Please tune in by clicking one of the tune-in buttons in the top right corner. Please refer to our help section if you experience problems listening to our online radio.</annotation>
     <title>Bassdrive radio</title>
-    <image>rss/image/sampo/bassdrive.png</image>
+    <image>../etc/translate/rss/image/sampo/bassdrive.png</image>
     <location>http://radio.sampo.ru/bassdrive.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/bassdrive.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -538,7 +548,7 @@ columnCount=5
   <item>
     <annotation>24/7 drum and bass radio with daily LIVE shows. </annotation>
     <title>Jungletrain radio</title>
-    <image>rss/image/sampo/jungletrain.png</image>
+    <image>../etc/translate/rss/image/sampo/jungletrain.png</image>
     <location>http://radio.sampo.ru/jungletrain.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/jungletrain.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -553,7 +563,7 @@ columnCount=5
   <item>
     <annotation>It's a new Underground Music Radio featuring the sounds of Drum and Bass, Dubstep and all that bizzle. </annotation>
     <title>DeepBassNine</title>
-    <image>rss/image/sampo/deepbassnine.png</image>
+    <image>../etc/translate/rss/image/sampo/deepbassnine.png</image>
     <location>http://radio.sampo.ru/deepbassnine.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/deepbassnine.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -568,7 +578,7 @@ columnCount=5
   <item>
     <annotation>Европа Плюс - это современное радио для молодых и активных людей! Первая коммерческая радиостанция в российском эфире начала вещание 30 апреля 1990 года в Москве на частоте 106,2 FM. Входит в Европейскую медиа группу. Европа Плюс - это лучшая популярная музыка в актуальном стиле в исполнении отечественных и зарубежных звезд.</annotation>
     <title>Европа Плюс</title>
-    <image>rss/image/sampo/europaplus.png</image>
+    <image>../etc/translate/rss/image/sampo/europaplus.png</image>
     <location>http://radio.sampo.ru/europaplus.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/europaplus.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -583,7 +593,7 @@ columnCount=5
   <item>
     <annotation>chroniXradio.com - Hard Rock Radio and Metal Radio</annotation>
     <title>Aggression</title>
-    <image>rss/image/sampo/chronix_aggression.png</image>
+    <image>../etc/translate/rss/image/sampo/chronix_aggression.png</image>
     <location>http://radio.sampo.ru/chronix_aggression.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/chronix_aggression.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -598,7 +608,7 @@ columnCount=5
   <item>
     <annotation>Радио Ваня – музыкально-информационная радиостанция, впервые появившаяся в эфире в июле 2007 года. Частота радио Ваня Санкт-Петербург – 68,66 УКВ. Руководство радио Ваня описывает его как «потешное, разудалое, простецкое, свое в доску радио» для слушателей до 40 лет. Песни радио Ваня – веселые и озорные, исключительно русскоязычные (поскольку народное радио), иногда эпатажные, иногда разухабистые, но всегда для хорошего настроения – заметно отличают радиостанцию от всех других.</annotation>
     <title>Радио Ваня</title>
-    <image>rss/image/sampo/vanya.png</image>
+    <image>../etc/translate/rss/image/sampo/vanya.png</image>
     <location>http://radio.sampo.ru/vanya.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/vanya.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -613,7 +623,7 @@ columnCount=5
   <item>
     <annotation>Радио «Юность» - «Ю-FM»!!! Круглосуточное молодёжное радио с акцентом на танцевальную музыку! Клубные хиты и новинки в исполнении отечественных и зарубежных джедаев! Авторские программы мастеров танцпола, ежедневные dj’s live-сеты! Звёздные гости, новости, фирменная двадцатка лучших треков недели!</annotation>
     <title>Радио Юность</title>
-    <image>rss/image/sampo/unost.png</image>
+    <image>../etc/translate/rss/image/sampo/unost.png</image>
     <location>http://radio.sampo.ru/unost.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/unost.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -628,7 +638,7 @@ columnCount=5
   <item>
     <annotation>Автолюбителям, а также любителям хорошей музыки «Первое автомобильное радио» предлагает слушать музыку, которую узнают с первых тактов и напевают, развлекательные программы с участием суперзвезд, актуальную, интересную, оперативную информацию, увлекательные, динамичные игры в эфире.</annotation>
     <title>Авторадио</title>
-    <image>rss/image/sampo/avtoradio.png</image>
+    <image>../etc/translate/rss/image/sampo/avtoradio.png</image>
     <location>http://radio.sampo.ru/avtoradio.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/avtoradio.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -643,7 +653,7 @@ columnCount=5
   <item>
     <annotation>Легендарная питерская станция "Модерн" - уникальное актерское радио с актуальным музыкальным форматом - покинула fm-диапазон в 2001 году. Спустя 9 лет после закрытия, "Модерн" возвращается к своему слушателю. Основа Интернет-версии - музыкальное наполнение того времени, которое мы попытались воссоздать в оригинальном виде. В ближайших планах - появление специальных программ, отвечающих главному - духу и настроению этого "очень странного места"...</annotation>
     <title>Радио Модерн</title>
-    <image>rss/image/sampo/modern.png</image>
+    <image>../etc/translate/rss/image/sampo/modern.png</image>
     <location>http://radio.sampo.ru/modern.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/modern.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -658,7 +668,7 @@ columnCount=5
   <item>
     <annotation>«Эхо Москвы» информирует обо всем, что делается в мире. Круглые сутки в его эфире - новости политики и культуры, обзоры прессы, беседы с гостями, интерактивное общение со слушателями, авторские программы на различные, интересующие москвичей и жителей других городов, темы.</annotation>
     <title>Радио Эхо Москвы</title>
-    <image>rss/image/sampo/echo-moskvy.png</image>
+    <image>../etc/translate/rss/image/sampo/echo-moskvy.png</image>
     <location>http://radio.sampo.ru/echo-moskvy.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/echo-moskvy.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -670,7 +680,7 @@ columnCount=5
   <item>
     <annotation>Радио Рекорд — первая танцевальная радиостанция России с самой развитой структурой: помимо радио, это одна из крупнейших в Европе event-компаний с собственным record-лейблом.</annotation>
     <title>Радио Рекорд</title>
-    <image>rss/image/sampo/record.png</image>
+    <image>../etc/translate/rss/image/sampo/record.png</image>
     <location>http://radio.sampo.ru/record.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/record.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -685,7 +695,7 @@ columnCount=5
   <item>
     <annotation>Все, кто любит и любим – вот слушатели LOVE RADIO. Песни, звучащие на этой волне на разных языках – только о любви. В программах этой волнующей радиостанции - признания и любовные истории обычных людей, а также романтические воспоминания знаменитых артистов. </annotation>
     <title>Love Радио</title>
-    <image>rss/image/sampo/loveradio.png</image>
+    <image>../etc/translate/rss/image/sampo/loveradio.png</image>
     <location>http://radio.sampo.ru/loveradio.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/loveradio.mp3</stream_url>
     <stream_class>audio</stream_class>
@@ -700,7 +710,7 @@ columnCount=5
   <item>
     <annotation>Redbox - круглосуточная петрозаводская танцевальная интернет-радиостанция, в создании эфира которой участвуют сами пользователи. Программы для начинающих (и не только) диджеев, регулярные прямые эфиры из Петрозаводска, голосование за проигрываемые композиции, еженедельный хит-парад и многое другое - всё это Redbox. </annotation>
     <title>Redbox</title>
-    <image>rss/image/sampo/redbox.png</image>
+    <image>../etc/translate/rss/image/sampo/redbox.png</image>
     <location>http://radio.sampo.ru/redbox.mp3</location>
     <stream_url>http://radio.sampo.ru:8000/redbox.mp3</stream_url>
     <stream_class>audio</stream_class>

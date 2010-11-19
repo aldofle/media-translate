@@ -373,7 +373,7 @@
     
     </track>
     <track>
-      <location></location>
+      <location>http://online.pionerfm.ru:8000/pionerfm</location>
       <title>Пионер FM</title>
       <annotation>Не очень взрослое радио</annotation>
       <image>http://img.moskva.fm/img/stations/msk/94_0.gif</image>
@@ -382,7 +382,16 @@
       <meta rel="fm">94.0</meta>
       <meta rel="name">94_0</meta>
     
-    </track>
+    
+<meta rel="stream_url">http://online.pionerfm.ru:8000/pionerfm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://91.217.137.2:8000</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">MUSIC</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
     <track>
       <location>http://station.ru/RadioStation.aspx?id=1745</location>
       <title>Добрые песни</title>
@@ -412,7 +421,7 @@
     
     </track>
     <track>
-      <location></location>
+      <location>http://188.127.243.169:80/rock-192</location>
       <title>ROCK FM</title>
       <annotation>Больше музыки, больше рока!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/95_2.gif</image>
@@ -421,7 +430,16 @@
       <meta rel="fm">95.2</meta>
       <meta rel="name">95_2</meta>
     
-    </track>
+    
+<meta rel="stream_url">http://188.127.243.169:80/rock-192</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">icyx://188.127.243.169:80</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">various</meta>
+<meta rel="stream_bitrate">192</meta>
+</track>
     <track>
       <location>http://89.208.99.16:8088/zvezda_128</location>
       <title>Радио Звезда</title>

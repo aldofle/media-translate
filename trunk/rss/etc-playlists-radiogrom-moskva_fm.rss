@@ -23,6 +23,16 @@
 
 <script>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
 
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
@@ -100,14 +110,14 @@
 			<script>if(streamurl==""||streamurl==null) "WARNING! No stream url."; else "";</script>
 		</text>
 
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
 		<itemDisplay>
 			<text align="left" lines="1" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100>
@@ -225,14 +235,14 @@
 	
 	<item_template>
 		<mediaDisplay  name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 		</mediaDisplay>
 	</item_template>
 
@@ -246,7 +256,7 @@
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/videoRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/videoRenderer.rss");
   </videoDispatcher>
   
   <audioDispatcher>
@@ -263,7 +273,7 @@
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/audioRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
   </audioDispatcher>
   
   <playlistDispatcher>
@@ -275,7 +285,7 @@
     streamArray = pushBackStringArray(streamArray, "playlist");
     streamArray = pushBackStringArray(streamArray, playlist_autoplay);
     writeStringToFile(storagePath_playlist, streamArray);
-    doModalRss("rss_file://./rss/xspf/xspfBrowser.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
   </playlistDispatcher>
   
   <rssDispatcher>
@@ -285,7 +295,7 @@
     streamArray = pushBackStringArray(streamArray, "");
     streamArray = pushBackStringArray(streamArray, "");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/rss_mediaFeed.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/rss_mediaFeed.rss");
   </rssDispatcher>
 
   <unknownDispatcher>
@@ -458,6 +468,7 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/retro_fm_online.html</location>
     <title>- 88,3 FM - Ретро FM </title>
+    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/umor_fm_online.html</location>
@@ -499,6 +510,7 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/keks_fm_online.html</location>
     <title>- 89,9 FM - КЕКС FM </title>
+    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/avtoradio_online.html</location>
@@ -692,6 +704,7 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/sveghee_fm_online.html</location>
     <title>- 98,4 FM - Свежее Радио </title>
+    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/radio_alla_online.html</location>
@@ -732,6 +745,14 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/best_fm_online.html</location>
     <title>- 100,5 FM - Best FM </title>
+    <stream_url>http://188.127.243.169:80/best-192</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_server>icyx://188.127.243.169:80</stream_server>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>various</stream_genre>
+    <stream_bitrate>192</stream_bitrate>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/classic_fm_online.html</location>
@@ -833,6 +854,7 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/radio_7_online.html</location>
     <title>- 104,7 FM - Радио 7 </title>
+    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/radio_next_online.html</location>
@@ -858,6 +880,7 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/europa_plus_online.html</location>
     <title>- 106,2 FM - Европа Плюс </title>
+    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/love_radio_online.html</location>

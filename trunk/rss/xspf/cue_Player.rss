@@ -23,6 +23,17 @@
 
 <script>
   translateBaseURL = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
+
   storagePath = getStoragePath("tmp");
   storagePath  = storagePath + "stream.dat";
   arr = readStringFromFile(storagePath);
@@ -78,14 +89,14 @@
 	showHeader="no"
 	showDefaultInfo="no"
 >
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
   <text redraw="no" offsetXPC="5" offsetYPC="0" widthPC="80" heightPC="15" fontSize="20" backgroundColor="8:8:16" foregroundColor="200:200:200">
     <script>pageTitle;</script>
@@ -94,7 +105,7 @@
     <script>pageDate;</script>
   </text>
   <image redraw="no" offsetXPC="0" offsetYPC="12" widthPC="100" heightPC="1">
-		rss/image/gradient_line.bmp
+		../etc/translate/rss/image/gradient_line.bmp
 	</image>
 
   <image redraw="no" offsetXPC="72" offsetYPC="15" widthPC="23" heightPC="30">
@@ -123,7 +134,7 @@
 					idx2 = getQueryItemIndex();
 					if (idx1 == idx2)
 					{
-						"rss/image/Play-1-Pressed-256x256.png";
+						"../etc/translate/rss/image/Play-1-Pressed-256x256.png";
 					}
 					else
 					{

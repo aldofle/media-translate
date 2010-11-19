@@ -22,6 +22,18 @@
 -->
 
 <script>
+  translate_base_url    = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
+
   pageTitle = "Free Internet Radio Stations";
 </script>
 
@@ -60,19 +72,19 @@
     <script>pageTitle;</script>
   </text>
   <image offsetXPC=0 offsetYPC=15 widthPC=100 heightPC=1>
-		rss/image/gradient_line.bmp
+		../etc/translate/rss/image/gradient_line.bmp
 	</image>
   <image offsetXPC=65 offsetYPC=1 widthPC=30 heightPC=12>
-    rss/image/menu/shoutcast.gif
+    ../etc/translate/rss/image/menu/shoutcast.gif
 	</image>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
 		<itemDisplay>
 			<text align="center" lines="1" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100>
@@ -116,7 +128,7 @@
 
 	<searchLink>
 	  <link>
-	    <script>"http://127.0.0.1/cgi-bin/translate?app," + urlEncode(keyword) + ",shoutcast/search";</script>
+	    <script>translate_base_url + "app," + urlEncode(keyword) + ",shoutcast/search";</script>
 	  </link>
 	</searchLink>
 
@@ -125,13 +137,14 @@
 
 		<item>
 			<title>Радиостанции по жанрам</title>
-			<link>http://127.0.0.1/cgi-bin/translate?app,,shoutcast/genrelist</link>
+			<link>
+			 <script>translate_base_url+"app,,shoutcast/genrelist";</script></link>
 			<mediaDisplay name="photoView"/>
 		</item>
 
 		<item>
 			<title>Top100 радиостанций</title>
-			<link>http://127.0.0.1/cgi-bin/translate?app,100,shoutcast/top500</link>
+			<link><script>translate_base_url+"app,100,shoutcast/top500";</script></link>
 		</item>
 
 		<item>
