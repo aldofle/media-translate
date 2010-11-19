@@ -230,7 +230,7 @@ find_plugin()
 {
   eval local url=$1
   local server=$(echo "$url" | sed 's/.*\/\///;s/.*www.//;s/\/.*//')
-  local plugin="$(ls -1 "$PLUGINS_DIR" | grep -iF "${server}.plg")"
+  local plugin="$(ls -1 "$PLUGINS_DIR" | sed -n "/^${server}.plg\$/p")"
   eval $2="'$plugin'"
 }
 

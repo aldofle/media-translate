@@ -67,6 +67,10 @@
       <title>Радио Pop Classical Music</title>
       <annotation>Pop Classical Music - это лучшее из классической музыки от ведущего российского радиохолдинга "Вещательная корпорация «Проф-Медиа»" и интернет-портала 101.ru.</annotation>
     
+<meta rel="stream_url">mmsh://mos2.101.ru/c16_4_128?st=</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_RMF_Classic_online.html</location>

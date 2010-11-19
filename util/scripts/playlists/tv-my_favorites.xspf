@@ -5,7 +5,7 @@
       <track>
          <annotation></annotation>
          <title>Live! Concert</title>
-         <image>rss/image/menu/internettv.png</image>
+         <image>../etc/translate/rss/image/menu/internettv.png</image>
          <location>http://live.prahovahd.ro/playlist.php?ext=.xspf</location>
 <meta rel="stream_url">http://live.prahovahd.ro/playlist.php?ext=.xspf</meta>
 <meta rel="stream_class">playlist</meta>
@@ -13,6 +13,7 @@
 <meta rel="stream_server"></meta>
 <meta rel="stream_type">application/xspf+xml</meta>
 <meta rel="stream_protocol">http</meta>
+<meta rel="autoplay">0</meta>
       </track>
    </trackList>
 </playlist>

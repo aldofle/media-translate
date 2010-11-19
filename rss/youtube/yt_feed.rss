@@ -52,23 +52,23 @@
 	showDefaultInfo=yes
 	infoYPC=90
 >
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
   <text offsetXPC=5 offsetYPC=0 widthPC=100 heightPC=15 fontSize=20 backgroundColor=8:8:16 foregroundColor=200:200:200>
     <script>pageTitle;</script>
   </text>
   <image offsetXPC=0 offsetYPC=12 widthPC=100 heightPC=1>
-		rss/image/gradient_line.bmp
+		../etc/translate/rss/image/gradient_line.bmp
 	</image>
   <image offsetXPC=80 offsetYPC=1 widthPC=15 heightPC=10>
-    rss/image/YouTubeLogo.jpg
+    ../etc/translate/rss/image/YouTubeLogo.jpg
 	</image>
 
   <text offsetXPC=85 offsetYPC=90 widthPC=11 heightPC=5 fontSize=14 backgroundColor=8:8:16 foregroundColor=100:100:100>
@@ -127,7 +127,7 @@
         print("storagePath=",storagePath);
         
         writeStringToFile(storagePath, arr);
-        act = doModalRss("./rss/youtube/yt_entry.rss");
+        act = doModalRss("rss_file://../etc/translate/rss/youtube/yt_entry.rss");
         print("********** doModalRss=",act);
         if(act != null)
         {
@@ -160,7 +160,19 @@
   
   page = 1;
   maxResults = 20;
+
   translateBaseURL = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translateBaseURL = value;
+      print("cgi.conf=",value);
+    }
+  }
+
   storagePath = getStoragePath("tmp");
   storagePath = storagePath + "youtubeRSS.dat";
   arr = readStringFromFile(storagePath);
@@ -348,14 +360,14 @@
 	    sideLeftWidthPC = 0
 	    sideRightWidthPC = 0
       backgroundColor="8:8:8">
-		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> rss/image/POPUP_LOADING_01.png </idleImage>
-		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> rss/image/POPUP_LOADING_02.png </idleImage>
-		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> rss/image/POPUP_LOADING_03.png </idleImage>
-		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> rss/image/POPUP_LOADING_04.png </idleImage>
-		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> rss/image/POPUP_LOADING_05.png </idleImage>
-		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> rss/image/POPUP_LOADING_06.png </idleImage>
-		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> rss/image/POPUP_LOADING_07.png </idleImage>
-		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> rss/image/POPUP_LOADING_08.png </idleImage>
+		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageXPC=80 idleImageYPC=80 idleImageWidthPC=5 idleImageHeightPC=5> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 	</mediaDisplay>
 
 	<onClick>
@@ -387,23 +399,23 @@
 
 	<searchLink>
   	<mediaDisplay name="threePartsView">
-  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+  		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
   	</mediaDisplay>
-    <link>./rss/youtube/yt_search_feed.rss</link>
+    <link>rss_file://../etc/translate/rss/youtube/yt_search_feed.rss</link>
 	</searchLink>
 
 <channel>
 	<title>
 	  <script>"Youtube: " + pageTitle;</script>
 	</title>
-	<link>./rss/yt_feed.rss</link>
+	<link>../etc/translate/rss/yt_feed.rss</link>
 	
 <itemSize>
 	<script>itemSize;</script>

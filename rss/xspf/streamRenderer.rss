@@ -23,6 +23,17 @@
 
 <script>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
+
   renderer_cmd_file   = "/tmp/xspf_renderer.dat";
   renderer_status_file= "/tmp/xspf_renderer.status";
 
@@ -256,7 +267,7 @@
   streamArray = pushBackStringArray(streamArray, "playlist");
   streamArray = pushBackStringArray(streamArray, "1");
   writeStringToFile(storagePath_playlist, streamArray);
-  doModalRss("rss_file://./rss/xspf/xspfBrowser.rss");
+  doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
 </sub_Load_playlist>
 
 <sub_Load_rss>
@@ -266,7 +277,7 @@
   streamArray = pushBackStringArray(streamArray, "");
   streamArray = pushBackStringArray(streamArray, "");
   writeStringToFile(storagePath_stream, streamArray);
-  doModalRss("rss_file://./rss/xspf/rss_mediaFeed.rss");
+  doModalRss("rss_file://../etc/translate/rss/xspf/rss_mediaFeed.rss");
 </sub_Load_rss>
 
 <sub_Load_video>
@@ -278,7 +289,7 @@
   streamArray = pushBackStringArray(streamArray, stream_type);
   streamArray = pushBackStringArray(streamArray, stream_title);
   writeStringToFile(storagePath_stream, streamArray);
-  doModalRss("rss_file://./rss/xspf/videoRenderer.rss");
+  doModalRss("rss_file://../etc/translate/rss/xspf/videoRenderer.rss");
 </sub_Load_video>
 
 <sub_Load_audio>
@@ -297,7 +308,7 @@
   streamArray = pushBackStringArray(streamArray, stream_bitrate);
   streamArray = pushBackStringArray(streamArray, stream_title);
   writeStringToFile(storagePath_stream, streamArray);
-  doModalRss("rss_file://./rss/xspf/audioRenderer.rss");
+  doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
 </sub_Load_audio>
 
 <mediaDisplay name="threePartsView" 
@@ -309,14 +320,14 @@
 	bottomYPC="65"
   >
 
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> rss/image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
 	<text align="center" redraw="no" offsetXPC="5" offsetYPC="5" widthPC="90" heightPC="15" fontSize="34" backgroundColor="10:105:150" foregroundColor="100:200:255">
 		Media Stream Renderer
@@ -331,7 +342,7 @@
 	</text>
 
   <image redraw="yes" offsetXPC="35" offsetYPC="37" widthPC="30" heightPC="26">
-    rss/image/msr.png
+    ../etc/translate/rss/image/msr.png
 	</image>
 
 	<onUserInput>

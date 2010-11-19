@@ -5,17 +5,17 @@
 
   <trackList>
     <track>
-      <link>rss/youtube/yt_index.rss</link>
+      <link>rss_file://../etc/translate/rss/youtube/yt_index.rss</link>
       <title>YouTube</title>
       <annotation>Founded in February 2005, YouTube is the world's most popular online video community, allowing millions of people to discover, watch and share originally-created videos.</annotation>
-      <image>rss/image/menu/youtube.jpg</image>
+      <image>../etc/translate/rss/image/menu/youtube.jpg</image>
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/tv-other.xspf,collection/menulist</link>
       <title>Other</title>
       <annotation>Разные списки интернет-телевидения</annotation>
-      <image>rss/image/menu/internettv.png</image>
+      <image>../etc/translate/rss/image/menu/internettv.png</image>
       <meta rel="mediaDisplay">threePartsView</meta>
     </track>
   </trackList>

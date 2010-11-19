@@ -23,6 +23,16 @@
 
 <script>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
 
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
@@ -89,14 +99,14 @@ columnCount=5
 			<script>print(location); location;</script>
 		</text>
 
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
 		<itemDisplay>
 			<image>
@@ -241,14 +251,14 @@ columnCount=5
 	
 	<item_template>
 		<mediaDisplay  name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 		</mediaDisplay>
 	</item_template>
 
@@ -262,7 +272,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/videoRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/videoRenderer.rss");
   </videoDispatcher>
   
   <audioDispatcher>
@@ -279,7 +289,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/audioRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
   </audioDispatcher>
   
   <playlistDispatcher>
@@ -291,7 +301,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, "playlist");
     streamArray = pushBackStringArray(streamArray, playlist_autoplay);
     writeStringToFile(storagePath_playlist, streamArray);
-    doModalRss("rss_file://./rss/xspf/xspfBrowser.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
   </playlistDispatcher>
   
   <rssDispatcher>
@@ -301,7 +311,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, "");
     streamArray = pushBackStringArray(streamArray, "");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/rss_mediaFeed.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/rss_mediaFeed.rss");
   </rssDispatcher>
 
   <unknownDispatcher>
@@ -429,7 +439,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8700</location>
     <title>Covers</title>
     <annotation>All covers. All the time. Nothing by the original artists!</annotation>
-    <image>rss/image/somafm/covers120.jpg</image>
+    <image>../etc/translate/rss/image/somafm/covers120.jpg</image>
     <stream_url>http://voxsc1.somafm.com:8700</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -444,7 +454,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8884</location>
     <title>Underground 80s</title>
     <annotation>Early 80s UK Synthpop and a bit of New Wave.</annotation>
-    <image>rss/image/somafm/u80s-120.png</image>
+    <image>../etc/translate/rss/image/somafm/u80s-120.png</image>
     <stream_url>http://voxsc1.somafm.com:8884</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -459,7 +469,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:3000</location>
     <title>Groove Salad</title>
     <annotation>A nicely chilled plate of ambient beats and grooves.</annotation>
-    <image>rss/image/somafm/groovesalad120.gif</image>
+    <image>../etc/translate/rss/image/somafm/groovesalad120.gif</image>
     <stream_url>http://voxsc1.somafm.com:3000</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -474,7 +484,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:9010</location>
     <title>Secret Agent</title>
     <annotation>The soundtrack for your stylish, mysterious, dangerous life. For Spies and PIs too!</annotation>
-    <image>rss/image/somafm/secretagent120.jpg</image>
+    <image>../etc/translate/rss/image/somafm/secretagent120.jpg</image>
     <stream_url>http://voxsc1.somafm.com:9010</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -489,7 +499,7 @@ columnCount=5
     <location>http://ice.somafm.com/dronezone</location>
     <title>Drone Zone</title>
     <annotation>Served best chilled, safe with most medications. Atmospheric textures with minimal beats.</annotation>
-    <image>rss/image/somafm/dronezone120.jpg</image>
+    <image>../etc/translate/rss/image/somafm/dronezone120.jpg</image>
     <stream_url>http://ice.somafm.com/dronezone</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -504,7 +514,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8070</location>
     <title>Indie Pop Rocks!</title>
     <annotation>New and your favorite classic indie pop tracks.</annotation>
-    <image>rss/image/somafm/indychick.jpg</image>
+    <image>../etc/translate/rss/image/somafm/indychick.jpg</image>
     <stream_url>http://voxsc1.somafm.com:8070</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -519,7 +529,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8062</location>
     <title>cliqhop idm</title>
     <annotation>Blips'n'beeps backed mostly w/beats. Intelligent Dance Music.</annotation>
-    <image>rss/image/somafm/cliqhop.gif</image>
+    <image>../etc/translate/rss/image/somafm/cliqhop.gif</image>
     <stream_url>http://voxsc1.somafm.com:8062</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -534,7 +544,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8384</location>
     <title>Beat Blender</title>
     <annotation>A late night blend of deep-house and downtempo chill.</annotation>
-    <image>rss/image/somafm/blender.gif</image>
+    <image>../etc/translate/rss/image/somafm/blender.gif</image>
     <stream_url>http://voxsc1.somafm.com:8384</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -549,7 +559,7 @@ columnCount=5
     <location>http://205.188.215.230:8012</location>
     <title>Tag's Trip</title>
     <annotation>Progressive house / trance. Tip top tunes.</annotation>
-    <image>rss/image/somafm/tagstrancefract.jpg</image>
+    <image>../etc/translate/rss/image/somafm/tagstrancefract.jpg</image>
     <stream_url>http://205.188.215.230:8012</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -564,7 +574,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8504</location>
     <title>Illinois Street Lounge</title>
     <annotation>Classic bachelor pad, playful exotica and vintage music of tomorrow.</annotation>
-    <image>rss/image/somafm/illstreet.jpg</image>
+    <image>../etc/translate/rss/image/somafm/illstreet.jpg</image>
     <stream_url>http://voxsc1.somafm.com:8504</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -579,7 +589,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8200</location>
     <title>Space Station Soma</title>
     <annotation>Tune in, turn on, space out. Spaced-out ambient and mid-tempo electronica.</annotation>
-    <image>rss/image/somafm/sss.jpg</image>
+    <image>../etc/translate/rss/image/somafm/sss.jpg</image>
     <stream_url>http://voxsc1.somafm.com:8200</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -594,7 +604,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8300</location>
     <title>Doomed</title>
     <annotation>Dark music for tortured souls</annotation>
-    <image>rss/image/somafm/doomed.gif</image>
+    <image>../etc/translate/rss/image/somafm/doomed.gif</image>
     <stream_url>http://voxsc1.somafm.com:8300</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -609,7 +619,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:7000</location>
     <title>Boot Liquor</title>
     <annotation>Americana Roots music for Cowhands, Cowpokes and Cowtippers</annotation>
-    <image>rss/image/somafm/bootliquor.gif</image>
+    <image>../etc/translate/rss/image/somafm/bootliquor.gif</image>
     <stream_url>http://voxsc1.somafm.com:7000</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -624,7 +634,7 @@ columnCount=5
     <location>http://ice.somafm.com/lush</location>
     <title>Lush</title>
     <annotation>Sensuous and mellow vocals, mostly female, with an electronic influence.</annotation>
-    <image>rss/image/somafm/lush120.jpg</image>
+    <image>../etc/translate/rss/image/somafm/lush120.jpg</image>
     <stream_url>http://ice.somafm.com/lush</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -639,7 +649,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8900</location>
     <title>Digitalis</title>
     <annotation>Digitally affected analog rock to calm the agitated heart.</annotation>
-    <image>rss/image/somafm/digitalis120.gif</image>
+    <image>../etc/translate/rss/image/somafm/digitalis120.gif</image>
     <stream_url>http://voxsc1.somafm.com:8900</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -654,7 +664,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8850</location>
     <title>Suburbs of Goa</title>
     <annotation>Desi-influenced Asian world beats.</annotation>
-    <image>rss/image/somafm/sog120.jpg</image>
+    <image>../etc/translate/rss/image/somafm/sog120.jpg</image>
     <stream_url>http://voxsc1.somafm.com:8850</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -669,7 +679,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8600</location>
     <title>Sonic Universe</title>
     <annotation>NuJazz + avant-garde EuroJazz. Transcending the world of jazz with experimental takes on tradition.</annotation>
-    <image>rss/image/somafm/sonicuniverse120.jpg</image>
+    <image>../etc/translate/rss/image/somafm/sonicuniverse120.jpg</image>
     <stream_url>http://voxsc1.somafm.com:8600</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -684,7 +694,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:2026</location>
     <title>Mission Control</title>
     <annotation>Celebrating NASA and Space Explorers everywhere.</annotation>
-    <image>rss/image/somafm/missioncontrol120.jpg</image>
+    <image>../etc/translate/rss/image/somafm/missioncontrol120.jpg</image>
     <stream_url>http://voxsc1.somafm.com:2026</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -699,7 +709,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:2200</location>
     <title>PopTron</title>
     <annotation>Electropop and indie dance rock with sparkle and pop.</annotation>
-    <image>rss/image/somafm/poptron120.png</image>
+    <image>../etc/translate/rss/image/somafm/poptron120.png</image>
     <stream_url>http://voxsc1.somafm.com:2200</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -714,7 +724,7 @@ columnCount=5
     <location>http://voxsc1.somafm.com:8040</location>
     <title>Black Rock FM</title>
     <annotation>From the Playa to the world, for the 2010 Burning Man festival.</annotation>
-    <image>rss/image/somafm/1023brc.jpg</image>
+    <image>../etc/translate/rss/image/somafm/1023brc.jpg</image>
     <stream_url>http://voxsc1.somafm.com:8040</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>

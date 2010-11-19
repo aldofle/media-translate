@@ -8,14 +8,14 @@
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/tv-ras_list.xspf,collection/medialist</link>
       <title>ras playlist</title>
       <annotation>Небольшой список в основном с российскими интернет-телевизионными каналами от пользователя ras@forum.iconbit.ru</annotation>
-      <image>rss/image/menu/internettv.png</image>
+      <image>../etc/translate/rss/image/menu/internettv.png</image>
       <meta rel="mediaDisplay">threePartsView</meta>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/tv-my_favorites.xspf,collection/medialist</link>
       <title>my favorites</title>
       <annotation></annotation>
-      <image>rss/image/menu/internettv.png</image>
+      <image>../etc/translate/rss/image/menu/internettv.png</image>
       <meta rel="mediaDisplay">threePartsView</meta>
     </track>
   </trackList>

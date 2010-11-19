@@ -23,6 +23,16 @@
 
 <script>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
 
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
@@ -89,14 +99,14 @@ columnCount=5
 			<script>print(location); location;</script>
 		</text>
 
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
 		<itemDisplay>
 			<image>
@@ -241,14 +251,14 @@ columnCount=5
 	
 	<item_template>
 		<mediaDisplay  name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> rss/image/POPUP_LOADING_08.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
+			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 		</mediaDisplay>
 	</item_template>
 
@@ -262,7 +272,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/videoRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/videoRenderer.rss");
   </videoDispatcher>
   
   <audioDispatcher>
@@ -279,7 +289,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, stream_title);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/audioRenderer.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
   </audioDispatcher>
   
   <playlistDispatcher>
@@ -291,7 +301,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, "playlist");
     streamArray = pushBackStringArray(streamArray, playlist_autoplay);
     writeStringToFile(storagePath_playlist, streamArray);
-    doModalRss("rss_file://./rss/xspf/xspfBrowser.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
   </playlistDispatcher>
   
   <rssDispatcher>
@@ -301,7 +311,7 @@ columnCount=5
     streamArray = pushBackStringArray(streamArray, "");
     streamArray = pushBackStringArray(streamArray, "");
     writeStringToFile(storagePath_stream, streamArray);
-    doModalRss("rss_file://./rss/xspf/rss_mediaFeed.rss");
+    doModalRss("rss_file://../etc/translate/rss/xspf/rss_mediaFeed.rss");
   </rssDispatcher>
 
   <unknownDispatcher>
@@ -429,7 +439,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1734</location>
     <title>DFM Club</title>
     <annotation>Западная клубная музыка</annotation>
-    <image>rss/image/stationru/dfm_club.jpg</image>
+    <image>../etc/translate/rss/image/stationru/dfm_club.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/station01</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -442,7 +452,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1731</location>
     <title>Monte-Carlo Nights</title>
     <annotation>Lounge, downtempo и другая мягкая электронная музыка, которая не мешает отдыхать и работать.</annotation>
-    <image>rss/image/stationru/mc_nights.jpg</image>
+    <image>../etc/translate/rss/image/stationru/mc_nights.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/station08</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -455,7 +465,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1732</location>
     <title>Monte-Carlo HED KANDI</title>
     <annotation>Самая модная клубная музыка в стиле house.</annotation>
-    <image>rss/image/stationru/mc_hedkandi.jpg</image>
+    <image>../etc/translate/rss/image/stationru/mc_hedkandi.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/hadkandi</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -468,7 +478,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1733</location>
     <title>Monte-Carlo Sweet</title>
     <annotation>Изысканные зарубежные мелодичные хиты.</annotation>
-    <image>rss/image/stationru/mc_sweet.jpg</image>
+    <image>../etc/translate/rss/image/stationru/mc_sweet.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/mksweet</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -481,7 +491,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1736</location>
     <title>DFM Russian Dance</title>
     <annotation>Русскоязычная танцевальная музыка</annotation>
-    <image>rss/image/stationru/dfm_rd.gif</image>
+    <image>../etc/translate/rss/image/stationru/dfm_rd.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station03</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -494,7 +504,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=2466</location>
     <title>FM Cafe</title>
     <annotation>Lounge, Acid-jazz, New Age, NU-jazz в авторском проекте Александра Нуждина.</annotation>
-    <image>rss/image/stationru/maxfmcafe_logo_100x100.jpg</image>
+    <image>../etc/translate/rss/image/stationru/maxfmcafe_logo_100x100.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/fmcafe</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -507,7 +517,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1730</location>
     <title>Станция 2000</title>
     <annotation>Клубная музыка 1990-х годов: House, Ambient, Jungle, Trance, Drum-n-base</annotation>
-    <image>rss/image/stationru/mc_station_2000.jpg</image>
+    <image>../etc/translate/rss/image/stationru/mc_station_2000.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/station2000</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -520,7 +530,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1742</location>
     <title>Хит FM Романтика</title>
     <annotation>Романтическая поп-музыка</annotation>
-    <image>rss/image/stationru/hit_romantika.jpg</image>
+    <image>../etc/translate/rss/image/stationru/hit_romantika.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/station14</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -533,7 +543,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1996</location>
     <title>Золотой Граммофон</title>
     <annotation>Главные хиты современной российской эстрады</annotation>
-    <image>rss/image/stationru/rr_zg.jpg</image>
+    <image>../etc/translate/rss/image/stationru/rr_zg.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/zg</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -546,7 +556,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=7629</location>
     <title>Mixer</title>
     <annotation>Качественный клубный хаус от DJ Кирилоff - проверенные хиты и перспективные новинки танцевальной музыки.</annotation>
-    <image>rss/image/stationru/max-mixer.gif</image>
+    <image>../etc/translate/rss/image/stationru/max-mixer.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/mixer</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -559,7 +569,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1739</location>
     <title>DFM Динамит</title>
     <annotation>Танцевальные хиты первой половины 2000-х годов.</annotation>
-    <image>rss/image/stationru/dfm_dinamit.gif</image>
+    <image>../etc/translate/rss/image/stationru/dfm_dinamit.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station16</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -572,7 +582,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1737</location>
     <title>DFM Urban</title>
     <annotation>Музыка в стиле рэп, хип-хоп, r'n'b</annotation>
-    <image>rss/image/stationru/dfm_urban.gif</image>
+    <image>../etc/translate/rss/image/stationru/dfm_urban.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station04</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -585,7 +595,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1729</location>
     <title>Monte-Carlo Rainbow</title>
     <annotation>Жизнерадостные танцевальные ремиксы поп-хитов</annotation>
-    <image>rss/image/stationru/mc_gayrario.jpg</image>
+    <image>../etc/translate/rss/image/stationru/mc_gayrario.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/rainbow</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -598,7 +608,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1738</location>
     <title>DFM Love</title>
     <annotation>Романтическая поп-музыка</annotation>
-    <image>rss/image/stationru/dfm_love.jpg</image>
+    <image>../etc/translate/rss/image/stationru/dfm_love.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/station10</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -611,7 +621,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1740</location>
     <title>Хит FM 2000-е</title>
     <annotation>Европейская танцевальная и поп-музыка</annotation>
-    <image>rss/image/stationru/hit_2000.gif</image>
+    <image>../etc/translate/rss/image/stationru/hit_2000.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station12</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -624,7 +634,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1741</location>
     <title>Хит FM 90-e</title>
     <annotation>Евродэнс и поп-хиты 1990-х.</annotation>
-    <image>rss/image/stationru/hit_90.gif</image>
+    <image>../etc/translate/rss/image/stationru/hit_90.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station13</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -637,7 +647,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1735</location>
     <title>DFM Fresh</title>
     <annotation>Танцевальная музыка в стиле latino и pop</annotation>
-    <image>rss/image/stationru/dfm_fresh.gif</image>
+    <image>../etc/translate/rss/image/stationru/dfm_fresh.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station02</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -650,7 +660,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1997</location>
     <title>Биология</title>
     <annotation>Рок-музыка в авторской программе Шуры и Левы БИ-2.</annotation>
-    <image>rss/image/stationru/max_biologia.gif</image>
+    <image>../etc/translate/rss/image/stationru/max_biologia.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/biologia</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -663,7 +673,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1726</location>
     <title>Проверено электроникой</title>
     <annotation>New-wave и рок-хиты 80-х в only-music версии одноименной авторской программы Александра Нуждина</annotation>
-    <image>rss/image/stationru/max_provelect.gif</image>
+    <image>../etc/translate/rss/image/stationru/max_provelect.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station06</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -676,7 +686,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1744</location>
     <title>Хит FM Кино</title>
     <annotation>Музыка из зарубежных фильмов</annotation>
-    <image>rss/image/stationru/hit_kino.gif</image>
+    <image>../etc/translate/rss/image/stationru/hit_kino.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station17</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -689,7 +699,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1743</location>
     <title>Хит FM Italy</title>
     <annotation>Итальянская эстрада, поп-музыка</annotation>
-    <image>rss/image/stationru/hit_italy.gif</image>
+    <image>../etc/translate/rss/image/stationru/hit_italy.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station15</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -702,7 +712,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=1998</location>
     <title>Уроки Русского</title>
     <annotation>Качественная отечественная музыка - от хитов до новинок - с комментариями музыкального критика Андрея Бухарина</annotation>
-    <image>rss/image/stationru/max_uroki.gif</image>
+    <image>../etc/translate/rss/image/stationru/max_uroki.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/uroki_russkogo</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -715,7 +725,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=11369</location>
     <title>DFM Восток</title>
     <annotation>Самая яркая музыка от лучших представителей Востока.</annotation>
-    <image>rss/image/stationru/Dfm_vostok.jpg</image>
+    <image>../etc/translate/rss/image/stationru/Dfm_vostok.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/station05</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -728,7 +738,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=17729</location>
     <title>Утренние жаворонки Da Best</title>
     <annotation>Лучшее из утреннего шоу Пашкова и Кириллова</annotation>
-    <image>rss/image/stationru/max_utro_100x100_1.jpg</image>
+    <image>../etc/translate/rss/image/stationru/max_utro_100x100_1.jpg</image>
     <stream_url>mmsh://broadcast03.station.ru/utrennie_zhavoronki</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
@@ -741,7 +751,7 @@ columnCount=5
     <location>http://station.ru/RadioStation.aspx?id=56002</location>
     <title>DFM D-скач 90</title>
     <annotation>Euro Dance</annotation>
-    <image>rss/image/stationru/dfm_Dskach90_100x100.gif</image>
+    <image>../etc/translate/rss/image/stationru/dfm_Dskach90_100x100.gif</image>
     <stream_url>mmsh://broadcast03.station.ru/station07</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
