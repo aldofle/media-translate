@@ -1216,8 +1216,7 @@ case ${arg_cmd} in
     elif [ "$charset" == "CP1251" ]; then
       $MSDL $msdlopt -q -o - "$stream_url" | $TOUTF8 # | sed 's/windows-125./utf-8/'
     else
-      #exec $MSDL $msdlopt -q -o - "$stream_url"
-      exec $WGET -q -O - --header "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.8.1.12)" --header "Accept-Language: 	ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3" "$stream_url"
+      exec $MSDL $msdlopt -q -o - "$stream_url"
     fi
   ;;
   random)
@@ -1288,4 +1287,3 @@ case ${arg_cmd} in
     command_scan
   ;;
 esac
-
