@@ -290,7 +290,7 @@
     
           if(youtubeRegion == "RU")
           {
-ё            dlok = loadXMLFile(translateBaseURL+"translit,,"+urlEncode(keyword));
+            dlok = loadXMLFile(translateBaseURL+"translit,,"+urlEncode(keyword));
             if (dlok != null)
             {
               value = getXMLText("string");

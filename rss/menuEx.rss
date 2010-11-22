@@ -208,6 +208,12 @@ columnCount=3
     <mediaDisplay name="photoView"/>
   </item>
   <item>
+<link>rss_file://../etc/translate/rss/_test_moskvafm.rss</link>
+    <title>MoskvaFM Test</title>
+    <annotation>Test</annotation>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss_file://../etc/translate/rss/etc-menu-app.rss</link>
     <title>Applications</title>
     <annotation>Media Stream Renderer, XSPF Browser</annotation>
