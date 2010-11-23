@@ -42,7 +42,8 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+    startitem = "middle";
+		
   setRefreshTime(1);
 </onEnter>
 
@@ -823,5 +824,6 @@
     <location>rtsp://iptv.karelia.ru/ort.sdp</location>
   </item>
 </channel>
+
 
 </rss>

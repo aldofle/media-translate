@@ -42,7 +42,8 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+    startitem = "middle";
+		
   setRefreshTime(1);
 </onEnter>
 
@@ -918,5 +919,6 @@
     <title>- 107,8 FM - Милицейская Волна </title>
   </item>
 </channel>
+
 
 </rss>

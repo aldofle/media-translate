@@ -42,7 +42,8 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+    startitem = "middle";
+		
   setRefreshTime(1);
 </onEnter>
 
@@ -533,5 +534,6 @@
     <stream_bitrate>48</stream_bitrate>
   </item>
 </channel>
+
 
 </rss>

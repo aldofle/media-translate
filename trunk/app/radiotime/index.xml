@@ -247,7 +247,7 @@
 	<menuLink>
     <link>
       <script>
-        "http://127.0.0.1/cgi-bin/translate?app,Type:link;Link:"+urlEncode(URL)+",radiotime/browse";
+        translate_base_url + "app,Type:link;Link:"+urlEncode(URL)+",radiotime/browse";
       </script>
     </link>
 	</menuLink>
@@ -464,7 +464,7 @@
     <link>
       <script>
 				URL = getItemInfo(focus, "URL");
-        "http://127.0.0.1/cgi-bin/translate?app,Type:link;Link:"+urlEncode(URL)+",radiotime/browse";
+        translate_base_url + "app,Type:link;Link:"+urlEncode(URL)+",radiotime/browse";
       </script>
     </link>
 	</itemLink>

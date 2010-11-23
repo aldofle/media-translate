@@ -42,7 +42,8 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+    startitem = "middle";
+		
   setRefreshTime(1);
 </onEnter>
 
@@ -433,5 +434,6 @@
     <autoplay>0</autoplay>
   </item>
 </channel>
+
 
 </rss>

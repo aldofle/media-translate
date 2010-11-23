@@ -36,9 +36,10 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+    startitem = "middle";
+		
   setRefreshTime(1);
-columnCount=3
+  columnCount=3;
 </onEnter>
 
 <onRefresh>
@@ -57,7 +58,8 @@ columnCount=3
 	  centerXPC=7 
 		centerYPC=30
 		centerHeightPC=50
-columnCount=3
+    columnCount=3
+		
 	  rowCount=1
 		menuBorderColor="55:55:55"
 		sideColorBottom="0:0:0"
@@ -215,5 +217,6 @@ columnCount=3
     <mediaDisplay name="photoView"/>
   </item>
 </channel>
+
 
 </rss>

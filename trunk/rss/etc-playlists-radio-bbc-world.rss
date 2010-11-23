@@ -42,7 +42,8 @@
 </script>
 
 <onEnter>
-  startitem = "left";
+    startitem = "left";
+		
   setRefreshTime(1);
 </onEnter>
 
@@ -468,5 +469,6 @@
     <stream_title>BBC World Service - bbcrussian.com. / BBC World Service</stream_title>
   </item>
 </channel>
+
 
 </rss>

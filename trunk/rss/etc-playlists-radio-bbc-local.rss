@@ -42,7 +42,8 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+    startitem = "middle";
+		
   setRefreshTime(1);
 </onEnter>
 
@@ -972,5 +973,6 @@
     <stream_title>BBC York</stream_title>
   </item>
 </channel>
+
 
 </rss>

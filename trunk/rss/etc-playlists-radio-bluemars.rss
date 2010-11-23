@@ -42,7 +42,8 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+    startitem = "middle";
+		
   setRefreshTime(1);
 </onEnter>
 
@@ -62,7 +63,8 @@
 	  centerXPC=7 
 		centerYPC=25
 		centerHeightPC=40
-columnCount=3
+    columnCount=3
+		
 	  rowCount=1
 		menuBorderColor="55:55:55"
 		sideColorBottom="0:0:0"
@@ -89,7 +91,8 @@ columnCount=3
 
 		<!--  lines="5" fontSize=15 -->
 		<text align="center" redraw="yes" 
-  lines=5 fontSize=13
+      lines=5 fontSize=13
+		
 		      offsetXPC=10 offsetYPC=65 widthPC=80 heightPC=20 
 		      backgroundColor=0:0:0 foregroundColor=120:120:120>
 			<script>print(annotation); annotation;</script>
@@ -491,5 +494,6 @@ This melody is one that is made of hopes... It is sang with the voice of nostalg
     <stream_bitrate>128</stream_bitrate>
   </item>
 </channel>
+
 
 </rss>
