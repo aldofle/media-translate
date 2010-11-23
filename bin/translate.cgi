@@ -53,13 +53,12 @@ TMPFILE=$TEMP/$$.tmp
 
 [ ! -d $CACHEPATH ] && CACHEPATH=$TEMP
 
-local qs=`urldecode_s "$QUERY_STRING"`
-arg_cmd=`echo "$qs" | awk -F, '{print $1}'`
-arg_opt=`echo "$qs" | awk -F, '{print $2}'`
-arg_url=`echo "$qs" | awk -F, '{for(i=3; i<NF; i++) printf "%s,", $(i); printf "%s", $(NF); }'`
+arg_cmd=`echo "$QUERY_STRING" | awk -F, '{print $1}'`
+arg_opt=`echo "$QUERY_STRING" | awk -F, '{print $2}'`
+arg_url=`echo "$QUERY_STRING" | awk -F, '{for(i=3; i<NF; i++) printf "%s,", $(i); printf "%s", $(NF); }'`
 
-#arg_url=`urldecode_s "$arg_url"`
-#arg_opt=`urldecode_s "$arg_opt"`
+arg_url=`urldecode_s "$arg_url"`
+arg_opt=`urldecode_s "$arg_opt"`
 
 # http://127.0.0.1/translate[?<scan|*>]
 # http://127.0.0.1/translate?stream,[<option1;...optionN>],<url>

@@ -38,7 +38,7 @@
 <onEnter>
   <!--`echo "$STARTITEM"`-->		
   setRefreshTime(1);
-  <!--`echo "$COLUMNCOUNT"`-->;
+  <!--`echo -n "$COLUMNCOUNT"`-->;
 </onEnter>
 
 <onRefresh>

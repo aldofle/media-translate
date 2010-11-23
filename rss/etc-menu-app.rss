@@ -36,9 +36,10 @@
 </script>
 
 <onEnter>
-  startitem = "left";
+    startitem = "left";
+		
   setRefreshTime(1);
-columnCount=2
+  columnCount=2;
 </onEnter>
 
 <onRefresh>
@@ -57,7 +58,8 @@ columnCount=2
 	  centerXPC=7 
 		centerYPC=30
 		centerHeightPC=50
-columnCount=2
+    columnCount=2
+		
 	  rowCount=1
 		menuBorderColor="55:55:55"
 		sideColorBottom="0:0:0"
@@ -206,5 +208,6 @@ columnCount=2
     <image>../etc/translate/rss/image/menu/xspfbrowser.png</image>
   </item>
 </channel>
+
 
 </rss>

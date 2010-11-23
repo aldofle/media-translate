@@ -36,7 +36,8 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+    startitem = "middle";
+		
   setRefreshTime(1);
 </onEnter>
 
@@ -248,5 +249,6 @@
     <mediaDisplay name="threePartsView"/>
   </item>
 </channel>
+
 
 </rss>

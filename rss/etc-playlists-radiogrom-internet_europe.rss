@@ -42,7 +42,8 @@
 </script>
 
 <onEnter>
-  startitem = "middle";
+    startitem = "middle";
+		
   setRefreshTime(1);
 </onEnter>
 
@@ -462,5 +463,6 @@
     <stream_title>95.8 Capital FM</stream_title>
   </item>
 </channel>
+
 
 </rss>

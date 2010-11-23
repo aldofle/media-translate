@@ -183,9 +183,11 @@ template2rss()
 {
   awk '
     {
-        if(match($0, /<!--`(.*)`-->/, arr))
+        if(match($0, /(.*)<!--`(.*)`-->(.*)/, arr))
         {
-          system(arr[1]);
+          printf "%s", arr[1];
+          system(arr[2]);
+          print arr[3];
         }
         else
         {
