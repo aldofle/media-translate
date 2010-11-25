@@ -66,9 +66,11 @@ fi
 if [ -z "$t_param" ]; then   
     host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" http://www.youtube.com/watch?v=$video_id 2>&1`
     if [ -f ${TMPFILE} ]; then
-      t_param=`sed -ne '/[0-9]*&t=/p' ${TMPFILE} | sed -e 's/.*[0-9]*&t=//;s/&.*$//'`
+      t_param=`sed -ne '/[0-9]+&t=/p' ${TMPFILE} | sed -e 's/.*[0-9]+&t=//;s/&.*$//g'`
       hd_param=`sed -ne "/'IS_HD_AVAILABLE': /p" ${TMPFILE} | sed -e "s/.*'IS_HD_AVAILABLE': //;s/,.*//"`
       icy_name=`grep 'meta name="title"' ${TMPFILE} | sed 's/.*t="//;s/".*//'`
+      icy_name=`unescapeXML "$icy_name"`
+      icy_name=`unescapeXML "$icy_name"`
       echo $t_param > $CACHEFILE
       echo $hd_param >> $CACHEFILE
       echo $icy_name >> $CACHEFILE
