@@ -206,7 +206,7 @@ escapeXML()
 
 unescapeXML()
 {
-  echo -n "$1" | sed 's/&gt;/>/g;s/&lt;/</g;s/&quot;/"/g;s/&amp;/&/g;'
+  echo -n "$1" | sed 's/&gt;/>/g;s/&lt;/</g;s/&quot;/"/g;s/&amp;/\&/g;'
 }
 
 printContent()
