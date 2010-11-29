@@ -265,7 +265,7 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
     <title>Other</title>
     <annotation>Разные списки интернет-радиостанций</annotation>
     <image>../etc/translate/rss/image/menu/internetradio.png</image>
-    <mediaDisplay name="threePartsView"/>
+    <mediaDisplay name="onePartView"/>
   </item>
 </channel>
 

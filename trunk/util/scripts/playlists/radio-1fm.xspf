@@ -336,7 +336,7 @@
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - The Chillout Lounge</meta>
 <meta rel="stream_genre">Ambient Chill out</meta>
-<meta rel="stream_bitrate">48</meta>
+<meta rel="stream_bitrate">64</meta>
 </track>
     <track>
       <location>http://www.1.fm/TuneIn/SC/cahr64k/Listen.aspx</location>
@@ -496,15 +496,6 @@
       <location>http://www.1.fm/TuneIn/SC/tx64k/Listen.aspx</location>
       <title>Talk Radio X</title>
     
-<meta rel="stream_url">http://sc5.1.fm:9400</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://64.62.253.223:9400</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">TalkRadioX</meta>
-<meta rel="stream_genre">Talk</meta>
-<meta rel="stream_bitrate">56</meta>
 </track>
   </trackList>
 </playlist>

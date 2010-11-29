@@ -207,7 +207,7 @@
     <title>Other</title>
     <annotation>Разные списки интернет-телевидения</annotation>
     <image>../etc/translate/rss/image/menu/internettv.png</image>
-    <mediaDisplay name="threePartsView"/>
+    <mediaDisplay name="onePartView"/>
   </item>
 </channel>
 

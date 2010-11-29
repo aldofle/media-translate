@@ -8,14 +8,13 @@
          <title>Радио Импульс</title>
          <image>../etc/translate/rss/image/sampo/impulse.png</image>
          <location>http://radio.sampo.ru/impulse.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/impulse.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/impulse.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Radio Impulse 192kb/s</meta>
+<meta rel="stream_title">Radio Impulse</meta>
 <meta rel="stream_bitrate">192</meta>
 </track>
       <track>
@@ -23,12 +22,9 @@
          <title>НАШЕ радио - Петрозаводск</title>
          <image>../etc/translate/rss/image/sampo/nashe-ptz.png</image>
          <location>http://radio.sampo.ru/nashe-ptz.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/nashe-ptz.mp3</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
-<meta rel="stream_type">video/x-msvideo</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/nashe-ptz.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
       <track>
@@ -36,11 +32,10 @@
          <title>Teodor</title>
          <image>../etc/translate/rss/image/sampo/teodor.png</image>
          <location>http://radio.sampo.ru/teodor.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/teodor-radio.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/teodor-radio.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">Teodor radio</meta>
@@ -52,53 +47,28 @@
          <title>PopJoy radio</title>
          <image>../etc/translate/rss/image/sampo/popjoy.png</image>
          <location>http://radio.sampo.ru/popjoy.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/popjoy.mp3</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Radioimperia</meta>
-<meta rel="stream_genre">Pop Haus Rep Hip-hop</meta>
-<meta rel="stream_bitrate">128</meta>
 </track>
       <track>
          <annotation>Государственная радиовещательная компания "Маяк". В прямом эфире вы можете слышать голоса Сергея Стиллавина, Антона Комолова и Ольги Шелест, Романа Трахтенберга, Леры Кудрявцевой, Тутты Ларсен и бесменного ведущего автомобильного радио-шоу "Право руля" Виктора Травина, а так же многих других известных людей.</annotation>
          <title>Радио Маяк</title>
          <image>../etc/translate/rss/image/sampo/mayak.png</image>
          <location>http://radio.sampo.ru/mayak.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/mayak.mp3</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <annotation>NETRA - молодежное Online радио, вещающее все разновидности и течения музыкальных движений House, Electro-House, Trance. Это музыка от любимых DJ'ев, новые релизы, а также живые выступления DJ и музыкантов нашего города! Мы всегда открыты для новых идей и сотрудничества, будь вы DJ или просто слушатель, мы всегда будем рады узнать ваше мнение, ведь именно вы выбираете то, что хотите слушать!</annotation>
          <title>Netra</title>
          <image>../etc/translate/rss/image/sampo/netra.png</image>
          <location>http://radio.sampo.ru/netra.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/netra.mp3</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <annotation>Rock Radio1 предлагает вашему вниманию лучшие образцы классического хард-рока и тяжелого металла 60-х, 70-х, 80-х и 90-х годов.</annotation>
          <title>Rock Radio 1</title>
          <image>../etc/translate/rss/image/sampo/rockradio1.png</image>
          <location>http://radio.sampo.ru/rockradio1.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/rockradio1.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/rockradio1.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">RockRadio1.Com - Classic Hard Rock &amp; Heavy Metal Mix, 24/7 Live Requests / www.rockradio1.com</meta>
@@ -110,11 +80,10 @@
          <title>Bassdrive radio</title>
          <image>../etc/translate/rss/image/sampo/bassdrive.png</image>
          <location>http://radio.sampo.ru/bassdrive.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/bassdrive.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/bassdrive.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">Bassdrive - Worldwide Drum and Bass Radio</meta>
@@ -126,11 +95,10 @@
          <title>Jungletrain radio</title>
          <image>../etc/translate/rss/image/sampo/jungletrain.png</image>
          <location>http://radio.sampo.ru/jungletrain.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/jungletrain.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/jungletrain.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">jungletrain.net - 24/7 drum and bass</meta>
@@ -142,11 +110,10 @@
          <title>DeepBassNine</title>
          <image>../etc/translate/rss/image/sampo/deepbassnine.png</image>
          <location>http://radio.sampo.ru/deepbassnine.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/deepbassnine.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/deepbassnine.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">DB9 Radio - db9radio.com</meta>
@@ -158,11 +125,10 @@
          <title>Европа Плюс</title>
          <image>../etc/translate/rss/image/sampo/europaplus.png</image>
          <location>http://radio.sampo.ru/europaplus.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/europaplus.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/europaplus.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">Europaplus Saint-Peterburg</meta>
@@ -174,11 +140,10 @@
          <title>Aggression</title>
          <image>../etc/translate/rss/image/sampo/chronix_aggression.png</image>
          <location>http://radio.sampo.ru/chronix_aggression.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/chronix_aggression.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/chronix_aggression.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">ChroniX Aggression - Loud &amp; Clear - www.chronixradio.com</meta>
@@ -190,11 +155,10 @@
          <title>Радио Ваня</title>
          <image>../etc/translate/rss/image/sampo/vanya.png</image>
          <location>http://radio.sampo.ru/vanya.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/vanya.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/vanya.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">Radio Vanya</meta>
@@ -206,27 +170,25 @@
          <title>Радио Юность</title>
          <image>../etc/translate/rss/image/sampo/unost.png</image>
          <location>http://radio.sampo.ru/unost.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/unost.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/unost.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">ЮFM ТОМСК УКВ 68.0 MHz</meta>
 <meta rel="stream_genre">live</meta>
-<meta rel="stream_bitrate">128</meta>
+<meta rel="stream_bitrate">192</meta>
 </track>
       <track>
          <annotation>Автолюбителям, а также любителям хорошей музыки «Первое автомобильное радио» предлагает слушать музыку, которую узнают с первых тактов и напевают, развлекательные программы с участием суперзвезд, актуальную, интересную, оперативную информацию, увлекательные, динамичные игры в эфире.</annotation>
          <title>Авторадио</title>
          <image>../etc/translate/rss/image/sampo/avtoradio.png</image>
          <location>http://radio.sampo.ru/avtoradio.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/avtoradio.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/avtoradio.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">Avtoradio</meta>
@@ -238,11 +200,10 @@
          <title>Радио Модерн</title>
          <image>../etc/translate/rss/image/sampo/modern.png</image>
          <location>http://radio.sampo.ru/modern.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/modern.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/modern.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">РАDИО МОDЕРН</meta>
@@ -254,11 +215,10 @@
          <title>Радио Эхо Москвы</title>
          <image>../etc/translate/rss/image/sampo/echo-moskvy.png</image>
          <location>http://radio.sampo.ru/echo-moskvy.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/echo-moskvy.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/echo-moskvy.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
@@ -267,27 +227,25 @@
          <title>Радио Рекорд</title>
          <image>../etc/translate/rss/image/sampo/record.png</image>
          <location>http://radio.sampo.ru/record.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/record.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/record.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
-<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
+<meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Radio Record 106.3 FM</meta>
+<meta rel="stream_title">Radio Record</meta>
 <meta rel="stream_genre">Dance</meta>
-<meta rel="stream_bitrate">128</meta>
+<meta rel="stream_bitrate">32</meta>
 </track>
       <track>
          <annotation>Все, кто любит и любим – вот слушатели LOVE RADIO. Песни, звучащие на этой волне на разных языках – только о любви. В программах этой волнующей радиостанции - признания и любовные истории обычных людей, а также романтические воспоминания знаменитых артистов. </annotation>
          <title>Love Радио</title>
          <image>../etc/translate/rss/image/sampo/loveradio.png</image>
          <location>http://radio.sampo.ru/loveradio.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/loveradio.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/loveradio.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">Love Radio 106.6 FM MSK</meta>
@@ -299,14 +257,13 @@
          <title>Redbox</title>
          <image>../etc/translate/rss/image/sampo/redbox.png</image>
          <location>http://radio.sampo.ru/redbox.mp3</location>
-      
-<meta rel="stream_url">http://radio.sampo.ru:8000/redbox.mp3</meta>
+<meta rel="stream_url">http://radio.sampo.ru:8088/redbox.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.77.60.217:8000</meta>
+<meta rel="stream_server">icyx://217.77.60.217:8088</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Танцевальный Redbox Петрозаводска</meta>
+<meta rel="stream_title">Redbox</meta>
 <meta rel="stream_bitrate">192</meta>
 </track>
    </trackList>

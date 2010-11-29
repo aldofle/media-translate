@@ -79,6 +79,7 @@ if [ -f "$STATION_PLS" ]; then
   echo "$STATION_GENRE" >> $STREAMDAT   # stream_genre
   echo "$STATION_BR" >> $STREAMDAT      # stream_bitrate
   echo "$STATION_NAME" >> $STREAMDAT    # stream_title
+  echo "" >> $STREAMDAT                 # request_image
   echo "1" >> $STREAMDAT                # no_renderer_control
   
   cat $BASEPATH/rss/xspf/audioRenderer.rss | printContent "application/rss+xml"

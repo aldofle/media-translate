@@ -264,6 +264,8 @@
         request_title = getItemInfo(focus, "text");
         request_url = getItemInfo(focus, "URL");
         request_options = "";
+				request_image = getItemInfo(focus, "image");
+
 
         stream_url = request_url;
         stream_title = request_title;
@@ -314,6 +316,7 @@
     streamArray = pushBackStringArray(streamArray, stream_genre);
     streamArray = pushBackStringArray(streamArray, stream_bitrate);
     streamArray = pushBackStringArray(streamArray, stream_title);
+    streamArray = pushBackStringArray(streamArray, request_image); 
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
     doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
