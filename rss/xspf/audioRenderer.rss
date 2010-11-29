@@ -53,10 +53,14 @@
     stream_genre    = getStringArrayAt(arr, 7);
     stream_bitrate  = getStringArrayAt(arr, 8);
     stream_title    = getStringArrayAt(arr, 9);
-    no_renderer     = getStringArrayAt(arr, 10);
+    request_image   = getStringArrayAt(arr, 10);
+    no_renderer     = getStringArrayAt(arr, 11);
     
     if(stream_current_song != "" &amp;&amp; stream_current_song != null)
       track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
+      
+    if(stream_status_url == "_empty_")
+      track_image = request_image;
     
     stream_soft     = "";
   }
@@ -134,6 +138,11 @@
          stream_image = "../etc/translate/rss/image/radio_online.jpg";
     	   redrawDisplay();
     	}
+    	else
+    	{
+    	 stream_status_url = "_empty_";
+    	 track_image = request_image;
+    	}
 	  }
 		
     arg_time = play_elapsed;
@@ -200,15 +209,20 @@
         	   else
         	   {
         	     stream_status_url = "_empty_";
+        	     track_image = request_image;
         	   }
       	    }
       	    value = getXMLText("info","status","current-song");
       	    if(value != null)
       	    {
         		  stream_current_song = value;
-          		  track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
-	  		  print("track_image=",track_image);
+          		track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
         		}
+        		else
+        		{
+        		  track_image = request_image;
+        		}
+  		      print("track_image=",track_image);
           }
 		    }
 		    else
@@ -218,12 +232,19 @@
 		    if(res != null) 
 		    {
     	    value = getXMLText("info","status","current-song");
-    	    if(value != null &amp;&amp; stream_current_song != value)
+    	    if(value != null)
     	    {
-      		  stream_current_song = value;
-      		  track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
-      		  print("track_image=",track_image);
+    	      if(stream_current_song != value)
+    	      {
+        		  stream_current_song = value;
+        		  track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
+        		}
       		}
+      		else
+      		{
+      		  track_image = request_image;
+      		}
+    		  print("track_image=",track_image);
         }
 		  }
 		}

@@ -22,6 +22,11 @@ for f in radiogrom*.xspf
 	awk -v FORCEINFO=$FORCE -v SKIPTITLE=1 -f ../resolveinfo.awk $f | sed '/^$/d' > ../../../etc/playlists/$f
     done
     
+for f in audio-*.xspf
+    do
+	awk -v FORCEINFO=$FORCE -v SKIPTITLE=1 -f ../resolveinfo.awk $f | sed '/^$/d' > ../../../etc/playlists/$f
+    done
+
 for f in tv*.xspf
     do
 	awk -v FORCEINFO=$FORCE -v SKIPTITLE=1 -f ../resolveinfo.awk $f | sed '/^$/d' > ../../../etc/playlists/$f

@@ -210,6 +210,7 @@
         request_title = getItemInfo(focus, "title");
         request_url = getItemInfo(focus, "location");
         request_options = getItemInfo(focus, "options");
+        request_image = "../etc/translate/rss/image/moskvafm/msk/"+getItemInfo(focus, "name")+".png";
 
         stream_url = getItemInfo(focus, "stream_url");
         stream_title = getItemInfo(focus, "stream_title");
@@ -301,6 +302,7 @@
     streamArray = pushBackStringArray(streamArray, stream_genre);
     streamArray = pushBackStringArray(streamArray, stream_bitrate);
     streamArray = pushBackStringArray(streamArray, stream_title);
+    streamArray = pushBackStringArray(streamArray, request_image);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
     doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");

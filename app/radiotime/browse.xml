@@ -293,7 +293,7 @@
   				<script>
   					idx = getQueryItemIndex();
   					focus = getFocusItemIndex();
-  					if(focus==idx) "150:150:150"; else "-1:-1:-1";
+  					if(focus==idx) "150:150:150"; else "0:0:0";
   				</script>
 			  </backgroundColor>
 			  <foregroundColor>
@@ -321,6 +321,8 @@
         request_title = text;
         request_url = getStringArrayAt(opmlArrayURL, focus);
         request_options = "";
+        request_image = getStringArrayAt(opmlArrayImage, focus);
+
 
         stream_url = request_url;
         stream_title = request_title;
@@ -386,6 +388,7 @@
     streamArray = pushBackStringArray(streamArray, stream_genre);
     streamArray = pushBackStringArray(streamArray, stream_bitrate);
     streamArray = pushBackStringArray(streamArray, stream_title);
+    streamArray = pushBackStringArray(streamArray, request_image); 
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
     doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");

@@ -9,14 +9,14 @@
       <title>CBC Radio One</title>
       <annotation></annotation>
       <image>../etc/translate/rss/image/menu/internetradio.png</image>
-      <meta rel="mediaDisplay">threePartsView</meta>
+      <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/radio-cbc-radio2.xspf,collection/medialist</link>
       <title>CBC Radio 2</title>
       <annotation>Live Streams, Online Music Channels</annotation>
       <image>../etc/translate/rss/image/menu/internetradio.png</image>
-      <meta rel="mediaDisplay">threePartsView</meta>
+      <meta rel="mediaDisplay">onePartView</meta>
     </track>
 <!--
     <track>
@@ -24,7 +24,7 @@
       <title>CBC Radio 3</title>
       <annotation>Live Stream</annotation>
       <image>../etc/translate/rss/image/menu/internetradio.png</image>
-      <meta rel="mediaDisplay">threePartsView</meta>
+      <meta rel="mediaDisplay">onePartView</meta>
     </track>
 -->
   </trackList>

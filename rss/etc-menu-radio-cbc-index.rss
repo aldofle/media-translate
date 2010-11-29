@@ -53,7 +53,7 @@
   redrawDisplay();
 </onRefresh>
 
-<mediaDisplay name="threePartsView"
+<mediaDisplay name="onePartView"
 	sideLeftWidthPC="0"
 	sideRightWidthPC="0"
 	
@@ -159,23 +159,6 @@
 		
 	</mediaDisplay>
 	
-	<item_template>
-		<mediaDisplay  name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
-		</mediaDisplay>
-		<link>
-		  <script>getItemInfo(getQueryItemIndex(), "location");</script>
-		</link>
-	</item_template>
-
-
 <channel>
   <title>BBC Radio</title>
   <item>
@@ -183,14 +166,14 @@
     <title>CBC Radio One</title>
     <annotation/>
     <image>../etc/translate/rss/image/menu/internetradio.png</image>
-    <mediaDisplay name="threePartsView"/>
+    <mediaDisplay name="onePartView"/>
   </item>
   <item>
 <link>rss_file://../etc/translate/rss/etc-playlists-radio-cbc-radio2.rss</link>
     <title>CBC Radio 2</title>
     <annotation>Live Streams, Online Music Channels</annotation>
     <image>../etc/translate/rss/image/menu/internetradio.png</image>
-    <mediaDisplay name="threePartsView"/>
+    <mediaDisplay name="onePartView"/>
   </item>
 </channel>
 

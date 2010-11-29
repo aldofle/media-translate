@@ -59,7 +59,7 @@
   redrawDisplay();
 </onRefresh>
 
-<mediaDisplay name="threePartsView"
+<mediaDisplay name="onePartView"
 	sideLeftWidthPC="0"
 	sideRightWidthPC="0"
 	
@@ -177,6 +177,7 @@
         request_title = getItemInfo(focus, "title");
         request_url = getItemInfo(focus, "location");
         request_options = getItemInfo(focus, "options");
+        request_image = getItemInfo(focus, "image");
 
         stream_url = getItemInfo(focus, "stream_url");
         stream_title = getItemInfo(focus, "stream_title");
@@ -272,6 +273,7 @@
     streamArray = pushBackStringArray(streamArray, stream_genre);
     streamArray = pushBackStringArray(streamArray, stream_bitrate);
     streamArray = pushBackStringArray(streamArray, stream_title);
+    streamArray = pushBackStringArray(streamArray, request_image);
     streamArray = pushBackStringArray(streamArray, "1");
     writeStringToFile(storagePath_stream, streamArray);
     doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
@@ -730,7 +732,7 @@
     <stream_protocol>http</stream_protocol>
     <stream_title>1.FM - The Chillout Lounge</stream_title>
     <stream_genre>Ambient Chill out</stream_genre>
-    <stream_bitrate>48</stream_bitrate>
+    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://www.1.fm/TuneIn/SC/cahr64k/Listen.aspx</location>
@@ -878,15 +880,6 @@
   <item>
     <location>http://www.1.fm/TuneIn/SC/tx64k/Listen.aspx</location>
     <title>Talk Radio X</title>
-    <stream_url>http://sc5.1.fm:9400</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://64.62.253.223:9400</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>TalkRadioX</stream_title>
-    <stream_genre>Talk</stream_genre>
-    <stream_bitrate>56</stream_bitrate>
   </item>
 </channel>
 

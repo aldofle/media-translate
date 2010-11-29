@@ -421,380 +421,262 @@
   </unknownDispatcher>
 
 <channel>
-  <title>Radiogrom.com - ua_fm</title>
+  <title>Народныя казкі для дзетак</title>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_retro_fm_kiev_online.html</location>
-    <title>- 92.4 FM - Радио Ретро FM Киев 92.4 FM </title>
-    <stream_url>http://glob.radiogroup.com.ua:8000/retro</stream_url>
+    <title>Аб каралевічу-чараўніку</title>
+    <location>http://kazki.unicef.by/files/kazki/1_Ab_karalevichu_charauniku.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/1_Ab_karalevichu_charauniku.jpg</image>
+    <annotation>Быў сабе адзін бедны чалавек. Меў ён сына, але не мог яго пры сабе трымаць, бо быў дастаткова бедны. Так аднаго разу і кажа:
+– Хадзем, сынку, дзе ў свет. Мо, аддам я цябе на навуку да якога майстра.
+– А што рабіць... Добра, татку!
+Вось і пайшлі яны. Ідуць яны так, ідуць, ажно недзе ў лесе спатыкае іх нейкі стары чалавек ды пытае...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/1_Ab_karalevichu_charauniku.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_europa_plus_kiev_online.html</location>
-    <title>- 92.8 FM - Радио Европа Плюс Киев 92.8 FM </title>
-    <stream_url>http://glob.radiogroup.com.ua:8000/europaplus</stream_url>
+    <title>Аб ведзьме, якая cына жаніла</title>
+    <location>http://kazki.unicef.by/files/kazki/2_Ab_vedzme_jak_syna_zhanila.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/2_Ab_vedzme_jak_syna_zhanila.jpg</image>
+    <annotation>У адным двары было надта многа пшаніцы, а тую пшаніцу вазілі ўвесь час да нейкага месца. Адзін жа чалавек не меў каго выправіць з тою пшаніцаю. Дык ён прыбраў сваю дачку па-мужчынску і выправіў яе ў дарогу. Павезла яна тую пшаніцу. Вязе-вязе, ажно пачаў у яе воз ламацца. Астатнія фурманкі паехалі і паехалі, а яна адстала. А ўсё ж прыязджае на трачастую дарогу і не ведае, па каторай ёй ехаць. Нарэшце ўехала ў нейкі лес, а ўсё ж пачало і вечарэць...</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/2_Ab_vedzme_jak_syna_zhanila.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>pop</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_biznes_radio_kiev_online.html</location>
-    <title>- 93.8 FM - Бізнес Радіо Киев 93.8 FM </title>
-    <stream_url>http://media.wnet.ua:8000/businessfm64</stream_url>
+    <title>Асцярожны пасланец</title>
+    <location>http://kazki.unicef.by/files/kazki/3_Asciarozhny_paslanec.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/3_Asciarozhny_paslanec.jpg</image>
+    <annotation>Быў сабе адзін пан, ды такі паганы, злосны, што проста бяда. Ніхто не мог яму дагадзіць. Усе яго баяліся, як чорта. Бывала, як прыйдзе да яго хто што-небудзь папрасіць, а ён раптоўна як крыкне:
+– Што скажаш!
+Дый той кажа:
+– Усё добра, паночку, – а сам дрыжыць, бы асіна...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/3_Asciarozhny_paslanec.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.20.164.161:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_kontinent_kiev_online.html</location>
-    <title>- 94.2 FM - Радио Континент Киев 94.2 FM </title>
-    <stream_url>http://217.20.164.163:8014/</stream_url>
+    <title>Бык і ваўкі</title>
+    <location>http://kazki.unicef.by/files/kazki/4_Byk_i_vauki.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/4_Byk_i_vauki.jpg</image>
+    <annotation>Насіў бык па горадзе косы, прадаваў, каму трэба. Тады на быка, якога звалі, дарэчы, Быска, гавораць:
+– Нашто табе косы?
+А бык адказвае:
+– Буду касіць!
+Пайшоў у двор, выкляпаў касу ды падаўся касіць. Косіць бык, ідзе да быка воўк і гаворыць...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/4_Byk_i_vauki.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.20.164.163:8014</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Jazz</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_lradio_kiev_online.html</location>
-    <title>- 95.2 FM - Радио L'Radio 95.2 FM </title>
-    <stream_url>mmsh://212.26.146.32:80/wmtencoder/lr.wma</stream_url>
+    <title>Дурныя людзі</title>
+    <location>http://kazki.unicef.by/files/kazki/5_Durnyja_ludzi.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/5_Durnyja_ludzi.jpg</image>
+    <annotation>Жыў сабе дзед з бабай. І была ў іх дачка. Кажа дзед бабе:
+– А што, баба, прымем мы зяця да дачкі? 
+А баба кажа:
+– Прымем! 
+І прынялі яны зяця-салдата...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/5_Durnyja_ludzi.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_jem_kiev_online.html</location>
-    <title>- 95.6 FM - Радио Джем FM 95.6 FM </title>
-    <stream_url>http://glob.radiogroup.com.ua:8000/jamfm</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>rock</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_era_kiev_online.html</location>
-    <title>- 96.0 FM - Радио Радіо Ерa-FM 96.0 FM </title>
-    <stream_url>mmsh://212.26.146.47:8080/wmtencoder/era.wma</stream_url>
+    <title>Ілля і Пятро</title>
+    <location>http://kazki.unicef.by/files/kazki/6_Ilja_i_Piatro.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/6_Ilja_i_Piatro.jpg</image>
+    <annotation>Даўно тое было – яшчэ як сам Бог па зямлі хадзіў. Аддаў Бог увесь свет Іллі і Пятру. Але, ведама, дзе два паны, там ніколі ладу няма. Як адзін думае, што трэба дождж пасылаць, то другі абавязкова захоча наадварот – пагоду. Плачуць хмары, не ведаюць, што рабіць, каго слухацца. Пойдзе дождж, дык Пятро бяжыць лаецца, на чым свет стаіць:
+– Што вы робіце, нашто мочыце сена? Цяпер жа ж людзі косяць!
+– Нам, – кажуць хмары, – Ілля загадаў...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/6_Ilja_i_Piatro.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/hitfm_fm_radio_online.html</location>
-    <title>- 96.4 FM - Радио ХIT FM 96.4 FM </title>
-    <stream_url>http://online-hitfm.tavrmedia.ua/HitFM_256</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://195.95.206.12:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Only Hits!</stream_genre>
-    <stream_bitrate>256</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_dj_fm_kiev_online.html</location>
-    <title>- 96.8 FM - Радио DJ FM 96.8 FM </title>
-    <stream_url>http://media.wnet.ua:8000/djfm128</stream_url>
+    <title>Іван Іванавіч царэвіч</title>
+    <location>http://kazki.unicef.by/files/kazki/7_Ivan_Ivanavich_carevich.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/7_Ivan_Ivanavich_carevich.jpg</image>
+    <annotation>Жыў сабе цар у якімсьці гасударстве, у якімсьці царстве, і быў у яго сын, Іван Іванавіч – царэвіч. Цар яго не пускаў нікуды гадоў да васемнаццаці, каб не заглядаўся ні на што, не балаваўся. А сын ужо давай прасіцца:
+– Бацюхна родны, пусціце свету пабачыць.
+Цар яму даў роту салдат, даў каня, збрую, меч і ружжо. Ездзіў-ездзіў царэвіч...</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/7_Ivan_Ivanavich_carevich.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.20.164.161:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Dance</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_kiev_online.html</location>
-    <title>- 98.0 FM - Радио Радіо Київ 98.0 FM </title>
-    <stream_url>http://217.76.201.26:8000</stream_url>
+    <title>Іван Прыўкрасны і князь Ладымір</title>
+    <location>http://kazki.unicef.by/files/kazki/8_Ivan_Prakrasny_i_kniaz_Ladymiar.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/8_Ivan_Prakrasny_i_kniaz_Ladymiar.jpg</image>
+    <annotation>Жыў-быў сабе Іван Прыўкрасны, сірата няшчасны, і служыў ён па князях, па панах і па ўсіх багатырах. Не меў ён сабе ні адзення багатага, ні слова добрага. Наняўся ён да князя Ладыміра, кіеўскага самадзержца мнагалітасцівага. Праслужыў ён у князя тры гады – ды ўсё так сама не меў ні адзення батага, ні слова добрага.
+Даждалі Вялікадня...</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/8_Ivan_Prakrasny_i_kniaz_Ladymiar.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.76.201.26:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Kiev news &amp; Ukraine songs</stream_genre>
-    <stream_bitrate>96</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_russkoe_kiev_online.html</location>
-    <title>- 98.5 FM - Русское Радио 98.5 FM </title>
-    <stream_url>http://91.201.37.43:8000/rusradio-128</stream_url>
+    <title>Каваль і аднавокае гора</title>
+    <location>http://kazki.unicef.by/files/kazki/9_Kaval_i_adnavokaje_gora.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/9_Kaval_i_adnavokaje_gora.jpg</image>
+    <annotation>Быў сабе каваль, а ў яго былі тры сыны. Адзін шавец, другі кравец, а трэці – каваль. Доўга яны ўжо жылі, а ніколі не бачылі гора. Вось і пайшлі шукаць ды пытацца: што гэта за гора такое? Прыходзяць яны ў адну карчму. А ў карчме ўгледзелі яны многа людзей, якія бедавалі ды гаравалі... Адзін з тых людзей кажа:
+– Бяда, хлеба нямашака...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/9_Kaval_i_adnavokaje_gora.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://91.201.37.43:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Russian</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_Nostalgie_kiev_online.html</location>
-    <title>- 99.0 FM - Радио Nostalgie 99.0 FM </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_Alla_kiev_online.html</location>
-    <title>- 99.4 FM - Радио Алла 99.4 FM </title>
-    <stream_url>http://glob.radiogroup.com.ua:8000/radioalla</stream_url>
+    <title>Каза ў арэхах</title>
+    <location>http://kazki.unicef.by/files/kazki/10_Kaza_u_arexax.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/10_Kaza_u_arexax.jpg</image>
+    <annotation>Пайшоў казёл з казой у арэхі – казёл шчыпле, каза есць. Нашчыпалі тры мяхі, а чацвёрты – шалухі!
+– Каза-каза, хадзем дадому!
+– Не, не пайду!
+Няма казы з арэхамі, няма казы з калёнымі...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/10_Kaza_u_arexax.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/gala_radio_online.html</location>
-    <title>- 100.0 FM - Гала Радио 100.0 FM </title>
-    <stream_url>http://live.galaradio.com:8000/kiev</stream_url>
+    <title>Кот і дурань</title>
+    <location>http://kazki.unicef.by/files/kazki/11_Kot_i_duran.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/11_Kot_i_duran.jpg</image>
+    <annotation>Было ў аднаго чалавека тры сыны. Два разумныя, а трэці – дурань. Захварэў іх бацька моцна і выжыць ужо не спадзяваўся. Перад смерцю раздзяліў ён сваю гаспадарку папалам двум разумным сынам. Дурань, бачачы, што яго бацька нічым не надзяліў, стаў тужыць і плакаць. 
+– Што ты, татка, мне пакідаеш? – кажа ён бацьку.
+Падумаў-падумаў бацька ды кажа яму...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/11_Kot_i_duran.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://80.91.181.136:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Live</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_narodnoe_kiev_online.html</location>
-    <title>- 100.5 FM - Народное Радио 100.5 FM </title>
-    <stream_url>http://62.80.190.247:8001/NRK128</stream_url>
+    <title>Мал-Малышок</title>
+    <location>http://kazki.unicef.by/files/kazki/12_Mal_malyshok.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/12_Mal_malyshok.jpg</image>
+    <annotation>Жыў дзед з бабай, і не было ў іх дзяцей. Неяк дзеду саснілася, што пайшоў ён у лес, назбіраў яек птушыных і вывеў дзяцей сабе. Расказаў ён сон бабе, а баба так яму сказала:
+– Ну што ж, ідзі, дзед, у лес, назбірай яек птушыных, пакладзём у рэшата, я сяду і дзяцей выведу...</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/12_Mal_malyshok.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://62.80.190.247:8001</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Narodnoe Radio</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_melodiya_kiev_online.html</location>
-    <title>- 101.1 FM - Радіо Мелодія 101.1 FM </title>
-    <stream_url>http://radio.melodiya.ua:8080/radio-melodia</stream_url>
+    <title>Падчарыца і чорт</title>
+    <location>http://kazki.unicef.by/files/kazki/13_Padcharyca_i_chort.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/13_Padcharyca_i_chort.jpg</image>
+    <annotation>Жыла-была сабе адна мачаха. Была ў яе свая дачка і падчарка. Сваю дачку яна дужа любіла, а падчарку біла-пабівала, на цяжкую работу пасылала. Прачнулася раз мачаха апоўначы ды піць захацела. І давай падчарку біць-будзіць...</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/13_Padcharyca_i_chort.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.194:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_music_kiev_online.html</location>
-    <title>- 101.5 FM - Music Радіо 101.5 FM </title>
-    <stream_url>http://play.musicradio.kiev.ua:8080/listen128</stream_url>
+    <title>Сястра-бязручка</title>
+    <location>http://kazki.unicef.by/files/kazki/14_Siastra-biazruchka.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/14_Siastra-biazruchka.jpg</image>
+    <annotation>Жылі-былі дзед і баба. І былі ў іх сын і дачка. Памерла матка, памірае ўжо і бацька, а сын пытае:
+– Што, тата, нам з сястрою рабіць?
+А бацька:
+– Ну што, мой сын, рабіць. Жывіце дружна, добра, адзін аднаго слухайце...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/14_Siastra-biazruchka.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.120.96.143:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Pop Rock</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_chanson_kiev_online.html</location>
-    <title>- 101.9 FM - Радио Шансон 101.9 FM </title>
-    <stream_url>http://217.20.164.163:8002/</stream_url>
+    <title>Свіны кажушок</title>
+    <location>http://kazki.unicef.by/files/kazki/15_Sviny_kazhushok.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/15_Sviny_kazhushok.jpg</image>
+    <annotation>Быў сабе дзед з бабаю. Была ў дзеда дачка і ў бабы дачка. Баба сваю дачку надта песціла, а з падчаркі збыткавалася. Сваю дачку – па фэстах, кірмашах, вяселлях – усюдачкі вадзіла. А дзедавай – са свіной скуры зрабіла кажушок, ды тая ў ім у хаце ў цёмглі і сядзела. 
+Было гэта аднаго разу, якраз на Каляды...</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/15_Sviny_kazhushok.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.20.164.163:8002</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/prosto_radio_kiev_online.html</location>
-    <title>- 102.5 FM - Радио Просто Ради.О 102.5 FM </title>
-    <stream_url>http://62.80.190.246:8000/PRK128</stream_url>
+    <title>Сынок з кулачок</title>
+    <location>http://kazki.unicef.by/files/kazki/16_Synok_z_kulachok.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/16_Synok_z_kulachok.jpg</image>
+    <annotation>Быў сабе дзед і баба. Доўга яны жылі, ды дзяцей не мелі. Раз пайшла баба ваду браць у калодзежы. Зачарпнула вядром дый паглядзела, ці поўна зачарпнула. Паглядзеўшы, бачыць: каліва гароху на дне ляжыць. Баба дастала ды з’ела. Вось яна ад гэтага гароху і затаўсцела-зацяжарыла. Панасіла колькі і нарадзіла сына маленькага – з кулачок...</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/16_Synok_z_kulachok.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://62.80.190.246:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Prosto Radio</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/lux_fm_radio_online.html</location>
-    <title>- 103.1 FM - Радио Люкс FM 103.1 FM </title>
-    <stream_url>http://77.120.104.251:8088</stream_url>
+    <title>Воўк, змітрок, кабыла і баран</title>
+    <location>http://kazki.unicef.by/files/kazki/17_Vouk_zmitrok_kabyla_i_baran.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/17_Vouk_zmitrok_kabyla_i_baran.jpg</image>
+    <annotation>Ішоў воўк з-пад Міра, сустрэў Змітрака, той Змітрок быў кравец. Ішоў ён з палкаю, што раней мералі, як што пашыць. Воўк кажа:
+– Зміцер-Змітрок, я цябе з’ем.
+А Змітрок адказвае:
+– З’ясі дык з’ясі, але перад смерцю дай я табе змераю камізэльку...
+</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/17_Vouk_zmitrok_kabyla_i_baran.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://77.120.104.251:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Pop</stream_genre>
-    <stream_bitrate>96</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_roks_kiev_online.html</location>
-    <title> - 103.6 FM - Радіо Рокс 103.6 FM </title>
-    <stream_url>http://online.radioroks.com.ua:8000/RadioROKS</stream_url>
+    <title>З рога ўсяго многа</title>
+    <location>http://kazki.unicef.by/files/kazki/18_Z_roga_usiago_mnoga.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/18_Z_roga_usiago_mnoga.jpg</image>
+    <annotation>Жыў сабе дзед з бабай. І ў іх не было нічога, толькі адна лубачка жыта. Дзед і кажа:
+– Бабка-бабка, што будзем рабіць з гэтым жытам?
+А баба кажа:
+– А ты ідзі на млын, змялі там жыта – хлебца спячом!
+Пайшоў тады дзед на вадзяны млын...</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/18_Z_roga_usiago_mnoga.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://195.95.206.13:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Rock</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_sharmanka_kiev_online.html</location>
-    <title> - 104.0 FM - Радио Шарманка 104.0 FM </title>
-    <stream_url>http://media.wnet.ua:8000/sharmanka128</stream_url>
+    <title>Зайкiна хатка</title>
+    <location>http://kazki.unicef.by/files/kazki/19_Zajkina_hatka.mp3</location>
+    <image>http://kazki.unicef.by/files/kazki/19_Zajkina_hatka.jpg</image>
+    <annotation>Жылі-былі ў адным лесе лісіца і заяц. Жылі яны адзін каля другога блізка. Прыйшла восень, стала холадна, уздумалі яны сабе хаткі збудаваць. Вось лісіца узвяла сабе хатку са сняжку, а заяц – з пяску. Пражылі зімку, дачакаліся вясны. У лісіцы хатка растала, а зайчыкава – выстаяла. Прыйшла лісіца, выгнала зайчыка, стала сама там жыць у яго хатцы. Сядзіць зайка пад бярозай і плача. Ідзе воўк...</annotation>
+    <translate>Content-type:audio/mpeg</translate>
+    <stream_url>http://kazki.unicef.by/files/kazki/19_Zajkina_hatka.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.20.164.161:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_energy_kiev_online.html</location>
-    <title> - 104.6 FM - Радио NRJ 104.6 FM </title>
-    <stream_url>http://212.26.129.2:8080</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.2:8080</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_nrku_kiev_online.html</location>
-    <title> - 105.0 FM - Радио НРКУ 2 - Радіо Промінь 105.0 FM </title>
-    <stream_url>mmsh://89.187.1.165/NRCU2?MSWMExt=.asf</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_stilnoe_kiev_online.html</location>
-    <title> - 105.5 FM - Стильное радио Перец FM 105.5 FM </title>
-    <stream_url>http://radio.stilnoe.fm:8080/radio-stilnoe</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.194:8080</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_dinamo_kiev_online.html</location>
-    <title> - 106.0 FM - Радио Динамо 106.0 FM </title>
-    <stream_url>http://glob.radiogroup.com.ua:8000/106fm</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Rock</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/kiss_fm_radio_online.html</location>
-    <title> - 106.5 FM - Радио Kiss FM 106.5 FM </title>
-    <stream_url>http://91.201.37.42:8000/kiss</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://91.201.37.42:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Dance</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_evropa_107_fm_kiev_online.html</location>
-    <title> - 107.0 FM - Радио Европа FM 107.0 FM </title>
-    <stream_url>http://212.26.129.197:8080/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://212.26.129.197:8080</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_avtoradio_fm_kiev_online.html</location>
-    <title> - 107.4 FM - Авторадио 107.4 FM </title>
-    <stream_url>http://glob.radiogroup.com.ua:8000/avtoradio</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>80s</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/radio_nashe_fm_kiev_online.html</location>
-    <title> - 107.9 FM - Наше Радіо 107.9 FM </title>
-    <stream_url>http://212.26.129.222:8001</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.222:8001</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/visokiy_val_online.html</location>
-    <title>- Радио Высокий Вал </title>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/prosto_radio_odessa_online.html</location>
-    <title>- Просто Радио Одесса </title>
-    <stream_url>http://62.80.190.246:8000/ProstoRadiO128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://62.80.190.246:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Prosto Radio</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
-  </item>
-  <item>
-    <location>http://www.radiogrom.com/online/ua_fm/mfm_fm_radio_online.html</location>
-    <title>- Радио MFM </title>
-    <stream_url>http://radio.mfm.ua:8080/online128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.194:8080</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Dance</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
 </channel>
 

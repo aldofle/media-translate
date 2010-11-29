@@ -16,7 +16,7 @@
       <title>Other</title>
       <annotation>Разные списки интернет-телевидения</annotation>
       <image>../etc/translate/rss/image/menu/internettv.png</image>
-      <meta rel="mediaDisplay">threePartsView</meta>
+      <meta rel="mediaDisplay">onePartView</meta>
     </track>
   </trackList>
 
