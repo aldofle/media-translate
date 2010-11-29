@@ -307,6 +307,7 @@
   streamArray = pushBackStringArray(streamArray, stream_genre);
   streamArray = pushBackStringArray(streamArray, stream_bitrate);
   streamArray = pushBackStringArray(streamArray, stream_title);
+  streamArray = pushBackStringArray(streamArray, "../etc/translate/app/lastfm/empty.png");
   writeStringToFile(storagePath_stream, streamArray);
   doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
 </sub_Load_audio>
