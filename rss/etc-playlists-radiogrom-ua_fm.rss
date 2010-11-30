@@ -425,13 +425,12 @@
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_retro_fm_kiev_online.html</location>
     <title>- 92.4 FM - Радио Ретро FM Киев 92.4 FM </title>
-    <stream_url>http://glob.radiogroup.com.ua:8000/retro</stream_url>
+    <stream_url>http://webcast1.emg.fm:55655/retro128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
+    <stream_genre>Pop</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
@@ -440,7 +439,6 @@
     <stream_url>http://glob.radiogroup.com.ua:8000/europaplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>pop</stream_genre>
@@ -452,7 +450,6 @@
     <stream_url>http://media.wnet.ua:8000/businessfm64</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.20.164.161:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Various</stream_genre>
@@ -464,7 +461,6 @@
     <stream_url>http://217.20.164.163:8014/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.20.164.163:8014</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Jazz</stream_genre>
@@ -475,8 +471,7 @@
     <title>- 95.2 FM - Радио L'Radio 95.2 FM </title>
     <stream_url>mmsh://212.26.146.32:80/wmtencoder/lr.wma</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -486,7 +481,6 @@
     <stream_url>http://glob.radiogroup.com.ua:8000/jamfm</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>rock</stream_genre>
@@ -497,8 +491,7 @@
     <title>- 96.0 FM - Радио Радіо Ерa-FM 96.0 FM </title>
     <stream_url>mmsh://212.26.146.47:8080/wmtencoder/era.wma</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -508,7 +501,6 @@
     <stream_url>http://online-hitfm.tavrmedia.ua/HitFM_256</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://195.95.206.12:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Only Hits!</stream_genre>
@@ -517,14 +509,6 @@
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_dj_fm_kiev_online.html</location>
     <title>- 96.8 FM - Радио DJ FM 96.8 FM </title>
-    <stream_url>http://media.wnet.ua:8000/djfm128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.20.164.161:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Dance</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_kiev_online.html</location>
@@ -532,7 +516,6 @@
     <stream_url>http://217.76.201.26:8000</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.76.201.26:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Kiev news &amp; Ukraine songs</stream_genre>
@@ -541,14 +524,6 @@
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_russkoe_kiev_online.html</location>
     <title>- 98.5 FM - Русское Радио 98.5 FM </title>
-    <stream_url>http://91.201.37.43:8000/rusradio-128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://91.201.37.43:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Russian</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_Nostalgie_kiev_online.html</location>
@@ -560,7 +535,6 @@
     <stream_url>http://glob.radiogroup.com.ua:8000/radioalla</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Various</stream_genre>
@@ -571,8 +545,6 @@
     <title>- 100.0 FM - Гала Радио 100.0 FM </title>
     <stream_url>http://live.galaradio.com:8000/kiev</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://80.91.181.136:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Live</stream_genre>
@@ -584,7 +556,6 @@
     <stream_url>http://62.80.190.247:8001/NRK128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://62.80.190.247:8001</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Narodnoe Radio</stream_genre>
@@ -596,7 +567,6 @@
     <stream_url>http://radio.melodiya.ua:8080/radio-melodia</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.194:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>various</stream_genre>
@@ -608,7 +578,6 @@
     <stream_url>http://play.musicradio.kiev.ua:8080/listen128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.120.96.143:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Pop Rock</stream_genre>
@@ -620,7 +589,6 @@
     <stream_url>http://217.20.164.163:8002/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.20.164.163:8002</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Various</stream_genre>
@@ -632,7 +600,6 @@
     <stream_url>http://62.80.190.246:8000/PRK128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://62.80.190.246:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Prosto Radio</stream_genre>
@@ -644,7 +611,6 @@
     <stream_url>http://77.120.104.251:8088</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://77.120.104.251:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Pop</stream_genre>
@@ -656,7 +622,6 @@
     <stream_url>http://online.radioroks.com.ua:8000/RadioROKS</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://195.95.206.13:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Rock</stream_genre>
@@ -665,14 +630,6 @@
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_sharmanka_kiev_online.html</location>
     <title> - 104.0 FM - Радио Шарманка 104.0 FM </title>
-    <stream_url>http://media.wnet.ua:8000/sharmanka128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.20.164.161:8000</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/ua_fm/radio_energy_kiev_online.html</location>
@@ -680,7 +637,6 @@
     <stream_url>http://212.26.129.2:8080</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.2:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Various</stream_genre>
@@ -691,8 +647,7 @@
     <title> - 105.0 FM - Радио НРКУ 2 - Радіо Промінь 105.0 FM </title>
     <stream_url>mmsh://89.187.1.165/NRCU2?MSWMExt=.asf</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -702,10 +657,9 @@
     <stream_url>http://radio.stilnoe.fm:8080/radio-stilnoe</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.194:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
+    <stream_genre>Humor Pop</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
@@ -714,7 +668,6 @@
     <stream_url>http://glob.radiogroup.com.ua:8000/106fm</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Rock</stream_genre>
@@ -726,7 +679,6 @@
     <stream_url>http://91.201.37.42:8000/kiss</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://91.201.37.42:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Dance</stream_genre>
@@ -738,7 +690,6 @@
     <stream_url>http://212.26.129.197:8080/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://212.26.129.197:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Various</stream_genre>
@@ -750,7 +701,6 @@
     <stream_url>http://glob.radiogroup.com.ua:8000/avtoradio</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.88.252.68:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>80s</stream_genre>
@@ -762,7 +712,6 @@
     <stream_url>http://212.26.129.222:8001</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.222:8001</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Various</stream_genre>
@@ -778,7 +727,6 @@
     <stream_url>http://62.80.190.246:8000/ProstoRadiO128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://62.80.190.246:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Prosto Radio</stream_genre>
@@ -790,7 +738,6 @@
     <stream_url>http://radio.mfm.ua:8080/online128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://212.26.129.194:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Dance</stream_genre>

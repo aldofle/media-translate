@@ -448,7 +448,6 @@
     <stream_url>http://radio.sampo.ru:8088/impulse.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Radio Impulse</stream_title>
@@ -472,7 +471,6 @@
     <stream_url>http://radio.sampo.ru:8088/teodor-radio.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Teodor radio</stream_title>
@@ -505,7 +503,6 @@
     <stream_url>http://radio.sampo.ru:8088/rockradio1.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>RockRadio1.Com - Classic Hard Rock &amp; Heavy Metal Mix, 24/7 Live Requests / www.rockradio1.com</stream_title>
@@ -520,7 +517,6 @@
     <stream_url>http://radio.sampo.ru:8088/bassdrive.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Bassdrive - Worldwide Drum and Bass Radio</stream_title>
@@ -535,7 +531,6 @@
     <stream_url>http://radio.sampo.ru:8088/jungletrain.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>jungletrain.net - 24/7 drum and bass</stream_title>
@@ -550,7 +545,6 @@
     <stream_url>http://radio.sampo.ru:8088/deepbassnine.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>DB9 Radio - db9radio.com</stream_title>
@@ -565,7 +559,6 @@
     <stream_url>http://radio.sampo.ru:8088/europaplus.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Europaplus Saint-Peterburg</stream_title>
@@ -580,7 +573,6 @@
     <stream_url>http://radio.sampo.ru:8088/chronix_aggression.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ChroniX Aggression - Loud &amp; Clear - www.chronixradio.com</stream_title>
@@ -595,7 +587,6 @@
     <stream_url>http://radio.sampo.ru:8088/vanya.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Radio Vanya</stream_title>
@@ -610,7 +601,6 @@
     <stream_url>http://radio.sampo.ru:8088/unost.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ЮFM ТОМСК УКВ 68.0 MHz</stream_title>
@@ -625,7 +615,6 @@
     <stream_url>http://radio.sampo.ru:8088/avtoradio.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Avtoradio</stream_title>
@@ -640,7 +629,6 @@
     <stream_url>http://radio.sampo.ru:8088/modern.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>РАDИО МОDЕРН</stream_title>
@@ -655,7 +643,6 @@
     <stream_url>http://radio.sampo.ru:8088/echo-moskvy.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
@@ -664,15 +651,6 @@
     <title>Радио Рекорд</title>
     <image>../etc/translate/rss/image/sampo/record.png</image>
     <location>http://radio.sampo.ru/record.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/record.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
-    <stream_type>audio/aacp</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Radio Record</stream_title>
-    <stream_genre>Dance</stream_genre>
-    <stream_bitrate>32</stream_bitrate>
   </item>
   <item>
     <annotation>Все, кто любит и любим – вот слушатели LOVE RADIO. Песни, звучащие на этой волне на разных языках – только о любви. В программах этой волнующей радиостанции - признания и любовные истории обычных людей, а также романтические воспоминания знаменитых артистов. </annotation>
@@ -682,7 +660,6 @@
     <stream_url>http://radio.sampo.ru:8088/loveradio.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Love Radio 106.6 FM MSK</stream_title>
@@ -697,7 +674,6 @@
     <stream_url>http://radio.sampo.ru:8088/redbox.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.77.60.217:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Redbox</stream_title>

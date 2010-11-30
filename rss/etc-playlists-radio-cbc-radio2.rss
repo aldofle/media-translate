@@ -428,7 +428,6 @@
     <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2edm-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>CBC Radio 2 MT - hi</stream_title>
@@ -441,7 +440,6 @@
     <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2hfx-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>CBC Radio 2 AT | hi</stream_title>
@@ -454,7 +452,6 @@
     <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2wpg-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>CBC Radio 2 CT - hi</stream_title>
@@ -467,7 +464,6 @@
     <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2tor-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>CBC Radio 2 ET - hi</stream_title>
@@ -480,7 +476,6 @@
     <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcr2vcr-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>CBC Radio 2 PT - hi</stream_title>
@@ -493,7 +488,6 @@
     <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw3tor-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>CBC Radio Classical</stream_title>
@@ -506,7 +500,6 @@
     <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw1tor-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>CBC Radio Jazz</stream_title>
@@ -519,7 +512,6 @@
     <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw2tor-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.210.77:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>CBC Radio Songwriter</stream_title>
@@ -532,7 +524,6 @@
     <stream_url>http://radiostreams.cbc.ca:80/cbc-cbcw4tor-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://64.62.164.198:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>CBC Can Composers</stream_title>

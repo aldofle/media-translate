@@ -428,8 +428,7 @@
     <annotation>Основу вещания радиостанции «Орфей» составляет классическая музыка. Программы «Орфея» включают русскую и зарубежную классику, духовную музыку, фольклор и джаз, классическую оперетту</annotation>
     <stream_url>mmsh://live.rfn.ru/orfey/</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -437,10 +436,9 @@
     <location>http://www.radiogrom.com/online/classic/radio_bbc_3_online.html</location>
     <title>Радио BBC Radio 3</title>
     <annotation>Одна из самых популярных радиостанций Великобритании, вещающая классическую музыку. Формат BBC Radio 3: классическая музыка, джаз, драматическая музыка и национальная музыка мира.</annotation>
-    <stream_url>mmsh://wmlive.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_eq1_sl0?BBC-UID=241ccbd10cb0fecfb57679811137bfdb15b4168a20903114a4ef09279c222aa1&amp;amp;SSO2-UID=</stream_url>
+    <stream_url>mmsh://wmlive.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_eq1_sl0</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -450,8 +448,7 @@
     <annotation>WQXR FM - это старейшая радиостанция США (работает с 1939 года), вещающая классическую музыку. </annotation>
     <stream_url>mmsh://wnyc.streamguys.com/wqxr</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -461,8 +458,7 @@
     <annotation>Classic FM - одна из самых популярных чешких радиостанций, вещающих так называемый classic music. Classic FM вещает в Праге на частоте 98.7FM, а также по всему миру через компьютерную сеть интернет.</annotation>
     <stream_url>mms://netshow4.play.cz/classic128</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>rtsp</stream_protocol>
   </item>
@@ -472,8 +468,6 @@
     <annotation>Radio Suisse Classique - швейцарская радиостанция, передающая классическую музыку без перерыва с анонсами на французском языке. В плейлисте Radio Suisse Classique чаще всего встречаются такие имена как Giuseppe Verdi, Vincenzo Bellini, Edvard Grieg, Wolfgang Amadeus Mozart, Niccolo Paganini.</annotation>
     <stream_url>http://stream.srg-ssr.ch/rsc_fr/mp3_128.asx</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
     <stream_type>audio/x-ms-asx</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
@@ -483,6 +477,7 @@
     <annotation>Pop Classical Music - это лучшее из классической музыки от ведущего российского радиохолдинга "Вещательная корпорация «Проф-Медиа»" и интернет-портала 101.ru.</annotation>
     <stream_url>mmsh://mos2.101.ru/c16_4_128?st=</stream_url>
     <stream_class>audio</stream_class>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -492,8 +487,6 @@
     <annotation>Слоган польской радиостанции RMF Classic - "RMF Classic - Muzyka z Klasa". Он полностью совпадает с музыкальным и программным наполнением эфира. На RMF Classic вы услышите как классическую музыку, так и оперу, музыку из фильмов, а также концерты современных исполнителей классики.</annotation>
     <stream_url>http://www.miastomuzyki.pl/wpl/mmsrc.asx?id=7&amp;n=0&amp;m=0</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
     <stream_type>audio/x-ms-wax</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>

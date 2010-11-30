@@ -428,7 +428,6 @@
     <stream_url>http://uplink.duplexfx.com:8068/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8068</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Old School Hip Hop &amp; RNB</stream_title>
@@ -441,7 +440,6 @@
     <stream_url>http://uplink.duplexfx.com:8094/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8094</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Smooth AC</stream_title>
@@ -454,7 +452,6 @@
     <stream_url>http://uplink.duplexfx.com:8070/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8070</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - UK Top 40</stream_title>
@@ -467,7 +464,6 @@
     <stream_url>http://uplink.duplexfx.com:8062/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8062</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - The Beatles Channel</stream_title>
@@ -480,7 +476,6 @@
     <stream_url>http://uplink.duplexfx.com:8066/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8066</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - 70's</stream_title>
@@ -493,7 +488,6 @@
     <stream_url>http://uplink.duplexfx.com:8062/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8062</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - The Beatles Channel</stream_title>
@@ -503,10 +497,9 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-soul&amp;style=mp3&amp;description=Soul</location>
     <title>Soul</title>
-    <stream_url>http://uplink.duplexfx.com:8058/</stream_url>
+    <stream_url>http://216.155.137.150:8058</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8058</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Soul</stream_title>
@@ -519,7 +512,6 @@
     <stream_url>http://uplink.duplexfx.com:8060/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8060</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Mellow Gold</stream_title>
@@ -532,7 +524,6 @@
     <stream_url>http://sc-rly.181.fm:80/stream/1094</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://205.188.234.5:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Classic Hits --- Home of The 60's and 70's</stream_title>
@@ -545,7 +536,6 @@
     <stream_url>http://uplink.duplexfx.com:8046/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8046</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Good Time Oldies</stream_title>
@@ -558,7 +548,6 @@
     <stream_url>http://uplink.duplexfx.com:8066/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8066</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - 70's</stream_title>
@@ -571,7 +560,6 @@
     <stream_url>http://uplink.duplexfx.com:8000/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.fm - Awesome 80's</stream_title>
@@ -584,7 +572,6 @@
     <stream_url>http://uplink.duplexfx.com:8040/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8040</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Lite 80's</stream_title>
@@ -597,7 +584,6 @@
     <stream_url>http://uplink.duplexfx.com:8012/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8012</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Star 90's</stream_title>
@@ -607,15 +593,6 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-90scountry&amp;style=&amp;description=90's Country</location>
     <title>90's Country</title>
-    <stream_url>http://uplink.duplexfx.com:8050/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8050</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>181.FM - 90's Country</stream_title>
-    <stream_genre>90s Country</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-lite90s&amp;style=&amp;description=Lite 90's</location>
@@ -623,7 +600,6 @@
     <stream_url>http://uplink.duplexfx.com:8048/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8048</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Lite 90's</stream_title>
@@ -633,15 +609,6 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-90salt&amp;style=&amp;description=90's Alternative</location>
     <title>90's Alternative</title>
-    <stream_url>http://uplink.duplexfx.com:8052/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8052</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>181.FM - 90's Alternative</stream_title>
-    <stream_genre>90s Alternative</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-power&amp;style=mp3&amp;description=Power 181 (Top 40)</location>
@@ -649,7 +616,6 @@
     <stream_url>http://sc-rly.181.fm:80/stream/1023</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://205.188.234.6:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - POWER 181 -=[: The Hitz Channel :]=- www.181.fm</stream_title>
@@ -662,7 +628,6 @@
     <stream_url>http://uplink.duplexfx.com:8068/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8068</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Old School Hip Hop &amp; RNB</stream_title>
@@ -675,7 +640,6 @@
     <stream_url>http://uplink.duplexfx.com:8070/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8070</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - UK Top 40</stream_title>
@@ -688,7 +652,6 @@
     <stream_url>http://uplink.duplexfx.com:8006/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8006</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.fm - The Heart (All Love Songs)</stream_title>
@@ -701,7 +664,6 @@
     <stream_url>http://uplink.duplexfx.com:8094/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8094</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Smooth AC</stream_title>
@@ -714,7 +676,6 @@
     <stream_url>http://uplink.duplexfx.com:8002/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>http://216.155.137.148:8002</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.fm - The Office : Your Office Friendly Station!</stream_title>
@@ -724,10 +685,9 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-themix&amp;style=&amp;description=The Mix</location>
     <title>The Mix</title>
-    <stream_url>http://uplink.duplexfx.com:8032/</stream_url>
+    <stream_url>http://216.155.137.149:8032</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>http://216.155.137.148:8032</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.fm - The Mix Channel (70s, 80s, 90s and Today's Best Music)</stream_title>
@@ -740,7 +700,6 @@
     <stream_url>http://uplink.duplexfx.com:8010/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8010</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - The Point -=( Your Hit Music Alternative )=-</stream_title>
@@ -753,7 +712,6 @@
     <stream_url>http://uplink.duplexfx.com:8036/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8036</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - PARTY 181 -=- Your Official Party Station!</stream_title>
@@ -763,12 +721,14 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-buzz&amp;style=mp3&amp;description=The Buzz (Alt. Rock)</location>
     <title>The Buzz (Alt. Rock)</title>
-    <stream_url>http://www.181.fm/winamp.pls?station=181-buzz&amp;style=mp3&amp;description=The</stream_url>
-    <stream_class>playlist</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-scpls</stream_type>
+    <stream_url>http://sc-rly.181.fm:80/stream/1022</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>shoutcast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
+    <stream_title>181.FM - The Buzz (Your Alternative Station!)</stream_title>
+    <stream_genre>Alternative Rock</stream_genre>
+    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-classicbuzz&amp;style=&amp;description=Classic Buzz (Alt)</location>
@@ -776,7 +736,6 @@
     <stream_url>http://uplink.duplexfx.com:8038/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8038</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Classic Buzz -=- Classic Alternative Rock</stream_title>
@@ -789,7 +748,6 @@
     <stream_url>http://uplink.duplexfx.com:8008/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8008</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.fm - Rock 181 (Active Rock)</stream_title>
@@ -799,15 +757,14 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-eagle&amp;style=&amp;description=The Eagle (Classic)</location>
     <title>The Eagle (Classic)</title>
-    <stream_url>http://uplink.duplexfx.com:8030/</stream_url>
+    <stream_url>http://uplink.duplexfx.com:10030/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>http://216.155.137.148:8030</stream_server>
-    <stream_type>audio/mpeg</stream_type>
+    <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>181.fm - The Eagle (Your Home For REAL Classic Rock!)</stream_title>
+    <stream_title>181.FM - The Eagle (Your Home For REAL Classic Rock!)</stream_title>
     <stream_genre>Classic Rock</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-rock40&amp;style=&amp;description=Rock 40 (Rock &amp; Roll)</location>
@@ -815,7 +772,6 @@
     <stream_url>http://uplink.duplexfx.com:8028/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8028</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.fm - Rock 40</stream_title>
@@ -828,7 +784,6 @@
     <stream_url>http://uplink.duplexfx.com:8010/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8010</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - The Point -=( Your Hit Music Alternative )=-</stream_title>
@@ -838,15 +793,6 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-hairband&amp;style=&amp;description=80's Hairband</location>
     <title>80's Hairband</title>
-    <stream_url>http://uplink.duplexfx.com:8014/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8014</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>181.FM - 80's Hairband Channel</stream_title>
-    <stream_genre>80s Rock Hair</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-punk&amp;style=mp3&amp;description=Punk | Hardcore</location>
@@ -854,7 +800,6 @@
     <stream_url>http://205.188.215.227:8094</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://205.188.215.227:8094</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>killedbydeath.org -- only the finest raw punk crap you've not heard of. if they're famous, they won't be here.</stream_title>
@@ -864,15 +809,6 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-kickincountry&amp;style=mp3&amp;description=Kickin' Country</location>
     <title>Kickin' Country</title>
-    <stream_url>http://sc-rly.181.fm:80/stream/1075</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://205.188.234.5:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>181.FM - Kickin' Country - Today's BEST Country!</stream_title>
-    <stream_genre>Country, Rock, Pop</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-realcountry&amp;style=&amp;description=Real Country</location>
@@ -880,7 +816,6 @@
     <stream_url>http://uplink.duplexfx.com:8034/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8034</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.fm - Real Country</stream_title>
@@ -890,15 +825,6 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-90scountry&amp;style=&amp;description=90's Country</location>
     <title>90's Country</title>
-    <stream_url>http://uplink.duplexfx.com:8050/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8050</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>181.FM - 90's Country</stream_title>
-    <stream_genre>90s Country</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-us181&amp;style=&amp;description=US 181</location>
@@ -906,7 +832,6 @@
     <stream_url>http://uplink.duplexfx.com:8056/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8056</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - U-S 181 +++(Hot Country) +++</stream_title>
@@ -919,7 +844,6 @@
     <stream_url>http://uplink.duplexfx.com:8018/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8018</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Highway 181 (Classic Country)</stream_title>
@@ -932,7 +856,6 @@
     <stream_url>http://uplink.duplexfx.com:8016/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8016</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - The FrontPorch * Bluegrass From The FrontPorch</stream_title>
@@ -945,7 +868,6 @@
     <stream_url>http://uplink.duplexfx.com:8054/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8054</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - The BEAT * #1 For HipHop and R&amp;B</stream_title>
@@ -958,7 +880,6 @@
     <stream_url>http://uplink.duplexfx.com:8068/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8068</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Old School Hip Hop &amp; RNB</stream_title>
@@ -968,10 +889,9 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-rnb&amp;style=&amp;description=True R&amp;B</location>
     <title>True R&amp;B</title>
-    <stream_url>http://216.155.137.150:8022</stream_url>
+    <stream_url>http://uplink.duplexfx.com:8022/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.150:8022</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.fm - True R&amp;B</stream_title>
@@ -984,7 +904,6 @@
     <stream_url>http://216.155.137.149:8024</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.149:8024</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - The BOX - #1 For Hip-Hop</stream_title>
@@ -997,7 +916,6 @@
     <stream_url>http://uplink.duplexfx.com:8042/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8042</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Jammin 181</stream_title>
@@ -1007,10 +925,9 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-soul&amp;style=mp3&amp;description=Soul</location>
     <title>Soul</title>
-    <stream_url>http://216.155.137.149:8058</stream_url>
+    <stream_url>http://uplink.duplexfx.com:8058/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.149:8058</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Soul</stream_title>
@@ -1023,7 +940,6 @@
     <stream_url>http://sc-rly.181.fm:80/stream/1093</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://205.188.234.3:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Energy 98 - Dance Hits</stream_title>
@@ -1036,7 +952,6 @@
     <stream_url>http://uplink.duplexfx.com:8044/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8044</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Energy 93 - Euro Dance</stream_title>
@@ -1049,7 +964,6 @@
     <stream_url>http://sc-rly.181.fm:80/stream/1092</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://207.200.96.138:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Chilled</stream_title>
@@ -1059,10 +973,9 @@
   <item>
     <location>http://www.181.fm/winamp.pls?station=181-breeze&amp;style=&amp;description=The Breeze</location>
     <title>The Breeze</title>
-    <stream_url>http://216.155.137.150:8004</stream_url>
+    <stream_url>http://uplink.duplexfx.com:8004/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.150:8004</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.fm - The Breeze</stream_title>
@@ -1075,7 +988,6 @@
     <stream_url>http://uplink.duplexfx.com:8020/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8020</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Classical Guitar</stream_title>
@@ -1088,7 +1000,6 @@
     <stream_url>http://uplink.duplexfx.com:8026/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8026</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Comedy Club (*Explicit Content*)</stream_title>
@@ -1109,7 +1020,6 @@
     <stream_url>http://uplink.duplexfx.com:8084/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8084</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Kristmas Kountry (Hot Country Christmas)</stream_title>
@@ -1122,7 +1032,6 @@
     <stream_url>http://uplink.duplexfx.com:8086/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8086</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Christmas Power (Top 40 Christmas Hits)</stream_title>
@@ -1135,7 +1044,6 @@
     <stream_url>http://uplink.duplexfx.com:8088/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Christmas R&amp;B</stream_title>
@@ -1148,7 +1056,6 @@
     <stream_url>http://uplink.duplexfx.com:8090/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8090</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Christmas Rock</stream_title>
@@ -1161,7 +1068,6 @@
     <stream_url>http://uplink.duplexfx.com:8082/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8082</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Christmas Mix</stream_title>
@@ -1174,7 +1080,6 @@
     <stream_url>http://uplink.duplexfx.com:8092/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://216.155.137.148:8092</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>181.FM - Christmas Smooth Jazz</stream_title>

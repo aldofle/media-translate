@@ -47,10 +47,26 @@ function getInfo(url)
     {
       if(XITEM == "stream")
       {
+        server_url = XATTR["server_url"];
+        if(XATTR["protocol"] ~ /^http/)
+        {
+          if(server_url ~ /^icyx:/)
+          {
+            server_url = "";
+          }
+        }
+        else
+        {
+          if(server_url == "")
+          {
+            server_url = "_empty_";
+          }
+        }
+        
         if(XATTR["url"] != "") print "<meta rel=\"stream_url\">" XATTR["url"] "</meta>";
         if(XATTR["class"] != "") print "<meta rel=\"stream_class\">" XATTR["class"] "</meta>";
         if(XATTR["server"] != "") print "<meta rel=\"stream_soft\">" XATTR["server"] "</meta>";
-        if(XATTR["server_url"] != "") print "<meta rel=\"stream_server\">" XATTR["server_url"] "</meta>";
+        if(server_url != "") print "<meta rel=\"stream_server\">" server_url "</meta>";
         if(XATTR["type"] != "") print "<meta rel=\"stream_type\">" XATTR["type"] "</meta>";
         if(XATTR["protocol"] != "") print "<meta rel=\"stream_protocol\">" XATTR["protocol"] "</meta>";
       }

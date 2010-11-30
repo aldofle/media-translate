@@ -462,13 +462,12 @@
     <name>66_44</name>
     <stream_url>mmsh://live.rfn.ru/radiorussia</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
-    <location>mmsh://stream03.rambler.ru/svoboda</location>
+    <location>http://streamall.rambler.ru/svoboda32.mp3</location>
     <title>Радио Свобода</title>
     <annotation>В эфире с 6:00 до 24:00</annotation>
     <image>http://img.moskva.fm/img/stations/msk/68_30.gif</image>
@@ -476,12 +475,13 @@
     <id>2104</id>
     <fm>68.30</fm>
     <name>68_30</name>
-    <stream_url>mmsh://stream03.rambler.ru/svoboda</stream_url>
+    <stream_url>http://streamall.rambler.ru/svoboda32.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
+    <stream_soft>shoutcast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>News</stream_genre>
+    <stream_bitrate>32</stream_bitrate>
   </item>
   <item>
     <location>mms://live.rfn.ru/unost/stream.asf</location>
@@ -494,8 +494,7 @@
     <name>68_84</name>
     <stream_url>mmsh://live.rfn.ru/unost/stream.asf</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -511,9 +510,9 @@
     <stream_url>http://streamall.rambler.ru:80/ultra128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.80.165:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
+    <stream_genre>Rock</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
@@ -528,7 +527,6 @@
     <stream_url>http://m1.bfm.ru:8000/fm64</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://193.106.92.245:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>radio</stream_genre>
@@ -545,8 +543,7 @@
     <name>87_9</name>
     <stream_url>mms://87.242.72.62/cityfm</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>rtsp</stream_protocol>
   </item>
@@ -563,7 +560,6 @@
     <stream_url>http://webcast1.emg.fm:55655/retro128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.246.239.18:55655</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Pop</stream_genre>
@@ -580,8 +576,7 @@
     <name>88_7</name>
     <stream_url>mmsh://stream01.rambler.ru:80/umorfm128</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -597,7 +592,6 @@
     <stream_url>http://streamall.rambler.ru:/jazz128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.80.167:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_bitrate>128</stream_bitrate>
@@ -614,7 +608,6 @@
     <stream_url>http://w01-cn01.akadostream.ru:8108/megapolisfm128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.10.44.210:8108</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>DANCE</stream_genre>
@@ -633,14 +626,13 @@
     <stream_url>http://webcast2.emg.fm:55655/keks128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.246.239.18:55655</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Pop</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>mmsh://stream01.rambler.ru:80/autoradio128</location>
+    <location>mmsh://stream03.rambler.ru:80/autoradio128?WMContentBitrate=180000</location>
     <title>Авторадио</title>
     <annotation>Первое автомобильное радио</annotation>
     <image>http://img.moskva.fm/img/stations/msk/90_3.gif</image>
@@ -648,10 +640,9 @@
     <id>4013</id>
     <fm>90.3</fm>
     <name>90_3</name>
-    <stream_url>mmsh://stream01.rambler.ru:80/autoradio128</stream_url>
+    <stream_url>mmsh://stream03.rambler.ru:80/autoradio128?WMContentBitrate=180000</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -666,8 +657,7 @@
     <name>90_8</name>
     <stream_url>mms://87.242.72.62/relaxfm</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>rtsp</stream_protocol>
   </item>
@@ -683,7 +673,6 @@
     <stream_url>http://streamall.rambler.ru:80/echo128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.80.165:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_bitrate>128</stream_bitrate>
@@ -699,8 +688,7 @@
     <name>91_6</name>
     <stream_url>mmsh://live.rfn.ru/rcult</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -716,14 +704,13 @@
     <stream_url>http://govoritmoskva.ru:8000/gm-fm-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://90.156.211.132:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>various</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>http://stream.radiodacha.ru:8000/radiodacha_high.mp3</location>
+    <location>http://radiogrom.com/online/moskva_fm/dacha_fm_online.m3u</location>
     <title>Радио Дача</title>
     <annotation>Удачное радио!</annotation>
     <image>http://img.moskva.fm/img/stations/msk/92_4.gif</image>
@@ -731,10 +718,9 @@
     <id>4017</id>
     <fm>92.4</fm>
     <name>92_4</name>
-    <stream_url>http://stream.radiodacha.ru:8000/radiodacha_high.mp3</stream_url>
+    <stream_url>http://stream.loveradio.ru:8000/radiodacha_high.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://82.204.217.140:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Various</stream_genre>
@@ -751,8 +737,7 @@
     <name>92_8</name>
     <stream_url>mmsh://online.carnivalfm.ru:1234</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -768,7 +753,6 @@
     <stream_url>http://www.sportfm.ru:8000/sportfm-128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://90.156.211.132:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>various</stream_genre>
@@ -785,8 +769,7 @@
     <name>93_6</name>
     <stream_url>mmsh://stream01.rambler.ru:80/komersant</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -812,7 +795,6 @@
     <stream_url>http://online.pionerfm.ru:8000/pionerfm</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://91.217.137.2:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>MUSIC</stream_genre>
@@ -835,14 +817,31 @@
     <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
-    <location/>
-    <title>Моя Семья</title>
-    <annotation>Для тех, кого любим!</annotation>
-    <image>http://img.moskva.fm/img/stations/msk/94_8.gif</image>
+    <location>http://radiogrom.com/online/moskva_fm/radio-ru.fm-online.m3u</location>
+    <title>RU.FM</title>
+    <annotation>Рунет плюс радио</annotation>
+    <image>http://css.moskva.fm/img/stations/msk/94_8_85x85.png</image>
     <url>http://www.moskva.fm/stations/FM_94.8</url>
     <id>4020</id>
     <fm>94.8</fm>
     <name>94_8</name>
+    <stream_url>http://ru.fm:8000/promo</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>various</stream_genre>
+    <stream_bitrate>192</stream_bitrate>
+  </item>
+  <item>
+    <location/>
+    <title>Моя Семья</title>
+    <annotation>Для тех, кого любим! (закрыто 15 ноября 2010)</annotation>
+    <image>http://css.moskva.fm/img/stations/msk/moya-semya_85x85.png</image>
+    <url>http://www.moskva.fm/stations/FM_94.8</url>
+    <id>4020</id>
+    <fm>94.8</fm>
+    <name>94_81</name>
   </item>
   <item>
     <location>http://188.127.243.169:80/rock-192</location>
@@ -853,14 +852,6 @@
     <id>2011</id>
     <fm>95.2</fm>
     <name>95_2</name>
-    <stream_url>http://188.127.243.169:80/rock-192</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://188.127.243.169:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
-    <stream_bitrate>192</stream_bitrate>
   </item>
   <item>
     <location>http://89.208.99.16:8088/zvezda_128</location>
@@ -874,7 +865,6 @@
     <stream_url>http://89.208.99.16:8088/zvezda_128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://89.208.99.16:8088</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Live Air</stream_genre>
@@ -892,7 +882,6 @@
     <stream_url>http://online.dorognoe.ru:8080/dorognoe</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://195.182.130.66:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_bitrate>64</stream_bitrate>
@@ -908,7 +897,7 @@
     <name>96_01</name>
   </item>
   <item>
-    <location>http://w01-cn01.akadostream.ru:8108/xfm96.mp3.m3u</location>
+    <location>http://radiogrom.com/online/moskva_fm/xfm_online.m3u</location>
     <title>X-FM</title>
     <annotation>Сенсация в прямом эфире</annotation>
     <image>http://img.moskva.fm/img/stations/msk/96_4.gif</image>
@@ -916,10 +905,9 @@
     <id>4022</id>
     <fm>96.4</fm>
     <name>96_4</name>
-    <stream_url>http://w01-cn01.akadostream.ru:8108/xfm96.mp3</stream_url>
+    <stream_url>http://stream.mradio.fm:8000/mradio_high.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.10.44.210:8108</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Various</stream_genre>
@@ -937,7 +925,6 @@
     <stream_url>http://217.29.51.162:8000/radio-64k.aac</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.29.51.162:8000</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>For kids</stream_genre>
@@ -955,11 +942,10 @@
     <stream_url>http://radio.kp.ru:8000/stream</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://213.208.177.14:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Russian</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>192</stream_bitrate>
   </item>
   <item>
     <location>mmsh://live.rfn.ru/vesti_fm</location>
@@ -972,8 +958,7 @@
     <name>97_6</name>
     <stream_url>mmsh://live.rfn.ru/vesti_fm</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -988,8 +973,7 @@
     <name>98_0</name>
     <stream_url>mmsh://stream03.rambler.ru/kinofm</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -1006,7 +990,6 @@
     <stream_url>http://webcast2.emg.fm:55655/fresh128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.246.239.18:55655</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Pop</stream_genre>
@@ -1023,8 +1006,7 @@
     <name>98_8</name>
     <stream_url>mmsh://mms.online.ru/v4_1_22</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -1039,8 +1021,7 @@
     <name>99_2</name>
     <stream_url>mmsh://live.rfn.ru/orfey/</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -1056,14 +1037,13 @@
     <stream_url>http://radio.solo.by:8001/finam</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://195.222.70.222:8001</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>CLASSIC ROCK</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
-    <location>http://w01-cn01.akadostream.ru:8000/silverrain128.mp3</location>
+    <location>http://radiogrom.com/online/moskva_fm/silver_rain_online_2.m3u</location>
     <title>Серебряный дождь</title>
     <annotation>Всегда есть, что сказать</annotation>
     <image>http://img.moskva.fm/img/stations/msk/100_1.gif</image>
@@ -1074,13 +1054,12 @@
     <stream_url>http://w01-cn01.akadostream.ru:8000/silverrain128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.10.44.210:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>various</stream_genre>
   </item>
   <item>
-    <location>mms://wma.bestfm.ru:80/Best128</location>
+    <location>http://www.radiogrom.com/online/moskva_fm/best_fm_online.m3u</location>
     <title>Best FM</title>
     <annotation>Каждая песня — лучшая</annotation>
     <image>http://img.moskva.fm/img/stations/msk/100_5.gif</image>
@@ -1090,7 +1069,7 @@
     <name>100_5</name>
   </item>
   <item>
-    <location>http://s05.radio-tochka.com:6045/listen.pls</location>
+    <location>http://radiogrom.com/online/moskva_fm/classic_fm_online.m3u</location>
     <title>Радио Classic</title>
     <annotation>Красивая музыка красивых людей</annotation>
     <image>http://img.moskva.fm/img/stations/msk/100_9.gif</image>
@@ -1098,14 +1077,6 @@
     <id>4010</id>
     <fm>100.9</fm>
     <name>100_9</name>
-    <stream_url>http://s05.radio-tochka.com:6045/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://78.159.102.100:6045</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Classic</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://station.ru/RadioStation.aspx?id=1720</location>
@@ -1116,12 +1087,6 @@
     <id>2002</id>
     <fm>101.2</fm>
     <name>101_2</name>
-    <stream_url>mmsh://broadcast03.station.ru/dfm</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>station.ru</stream_soft>
-    <stream_server>http://station.ru/GetSongJS.aspx?id=dfm</stream_server>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>http://streamall.rambler.ru:80/nashe128.mp3</location>
@@ -1132,13 +1097,6 @@
     <id>2003</id>
     <fm>101.7</fm>
     <name>101_7</name>
-    <stream_url>http://streamall.rambler.ru:80/nashe128.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.80.167:80</stream_server>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://station.ru/RadioStation.aspx?id=1721</location>
@@ -1157,7 +1115,7 @@
     <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
-    <location>mmsh://stream03.rambler.ru/radiopopsa</location>
+    <location>http://radiogrom.com/online/moskva_fm/popsa_online.m3u</location>
     <title>Первое Популярное</title>
     <annotation>Лучшее в настоящем!</annotation>
     <image>http://img.moskva.fm/img/stations/msk/102_5.gif</image>
@@ -1165,12 +1123,12 @@
     <id>2005</id>
     <fm>102.5</fm>
     <name>102_5</name>
-    <stream_url>mmsh://stream03.rambler.ru/radiopopsa</stream_url>
+    <stream_url>http://streamall.rambler.ru:80/popsa64.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://w02-cn01.akadostream.ru:8108/shanson128.mp3</location>
@@ -1184,7 +1142,6 @@
     <stream_url>http://w02-cn01.akadostream.ru:8108/shanson128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://217.10.44.211:8108</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Chanson</stream_genre>
@@ -1201,8 +1158,7 @@
     <name>103_4</name>
     <stream_url>mmsh://stream03.rambler.ru/radiomayak</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
   </item>
@@ -1215,12 +1171,6 @@
     <id>2007</id>
     <fm>103.7</fm>
     <name>103_7</name>
-    <stream_url>mmsh://broadcast03.station.ru/maximum</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>station.ru</stream_soft>
-    <stream_server>http://station.ru/GetSongJS.aspx?id=maximum</stream_server>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>mmsh://89.20.132.26/v1_1_128</location>
@@ -1231,12 +1181,6 @@
     <id>2008</id>
     <fm>104.2</fm>
     <name>104_2</name>
-    <stream_url>mmsh://89.20.132.26/v1_1_128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>http://webcast.emg.fm:55655/radiosept128.mp3</location>
@@ -1251,14 +1195,13 @@
     <stream_url>http://webcast.emg.fm:55655/radiosept128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.246.239.18:55655</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Rock</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
-    <location>mmsh://stream03.rambler.ru/radionext</location>
+    <location>http://radiogrom.com/online/moskva_fm/radio_next_online.m3u</location>
     <title>NEXT FM</title>
     <annotation>Время новых героев</annotation>
     <image>http://img.moskva.fm/img/stations/msk/105_2.gif</image>
@@ -1266,12 +1209,12 @@
     <id>2010</id>
     <fm>105.2</fm>
     <name>105_2</name>
-    <stream_url>mmsh://stream03.rambler.ru/radionext</stream_url>
+    <stream_url>http://streamall.rambler.ru:80/next64.mp3</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://station.ru/RadioStation.aspx?id=1723</location>
@@ -1302,7 +1245,6 @@
     <stream_url>http://webcast.emg.fm:55655/europaplus128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://77.246.239.18:55655</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Pop</stream_genre>
@@ -1320,7 +1262,6 @@
     <stream_url>http://streamall.rambler.ru:80/love128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://81.19.80.167:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_bitrate>128</stream_bitrate>
@@ -1358,7 +1299,7 @@
     <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
-    <location>http://83.222.222.88:8080/</location>
+    <location>http://streamall.rambler.ru/mv128.mp3</location>
     <title>Милицейская волна</title>
     <annotation>Радио МВД РФ</annotation>
     <image>http://img.moskva.fm/img/stations/msk/107_8.gif</image>
@@ -1366,13 +1307,12 @@
     <id>4004</id>
     <fm>107.8</fm>
     <name>107_8</name>
-    <stream_url>http://83.222.222.88:8080/</stream_url>
+    <stream_url>http://streamall.rambler.ru/mv128.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://83.222.222.88:8080</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_bitrate>48</stream_bitrate>
+    <stream_bitrate>128</stream_bitrate>
   </item>
 </channel>
 

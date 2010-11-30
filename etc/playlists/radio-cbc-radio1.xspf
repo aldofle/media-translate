@@ -9,7 +9,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1cgy-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Calgary - H</meta>
@@ -22,7 +21,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1chr-32</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Charlottetown</meta>
@@ -35,7 +33,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1cor-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Corner Brook -</meta>
@@ -48,7 +45,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1edm-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Edmonton - H</meta>
@@ -61,7 +57,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1frd-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Fredericton -</meta>
@@ -74,7 +69,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1gfa-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Grand Falls -</meta>
@@ -87,7 +81,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1hfx-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Halifax - H</meta>
@@ -100,7 +93,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1ink-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 - H</meta>
@@ -113,7 +105,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1iqa-32</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 - L</meta>
@@ -126,7 +117,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1kel-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Moncton - H</meta>
@@ -139,7 +129,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1gba-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Goose Bay- H</meta>
@@ -152,7 +141,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1ldn-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 London - H</meta>
@@ -165,7 +153,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1mct-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 - H</meta>
@@ -178,7 +165,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1mtl-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Montreal - H</meta>
@@ -191,7 +177,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1ott-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Ottawa - H</meta>
@@ -204,7 +189,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1prg-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 - H</meta>
@@ -217,7 +201,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1qqu-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 - H</meta>
@@ -230,7 +213,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1reg-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Regina - H</meta>
@@ -243,7 +225,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1snb-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 - H</meta>
@@ -256,7 +237,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1reg-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Regina - H</meta>
@@ -269,7 +249,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1snf-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 - H</meta>
@@ -282,7 +261,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1sud-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Sudbury - H</meta>
@@ -295,7 +273,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1syd-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 - H</meta>
@@ -308,7 +285,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1tba-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Thunder Bay -</meta>
@@ -321,7 +297,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1tor-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Toronto - H</meta>
@@ -334,7 +309,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1vcr-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Vancouver - H</meta>
@@ -347,7 +321,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1vic-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Victoria - H</meta>
@@ -360,7 +333,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1whs-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Whitehorse - H</meta>
@@ -373,7 +345,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1wdr-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Windsor - H</meta>
@@ -386,7 +357,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1wpg-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.164.198:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Winnipeg - H</meta>
@@ -399,7 +369,6 @@
 <meta rel="stream_url">http://radiostreams.cbc.ca:80/cbc-cbcr1ykn-96</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://64.62.210.77:80</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">CBC R1 Yellowknife -</meta>

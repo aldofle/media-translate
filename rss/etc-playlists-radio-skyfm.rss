@@ -450,7 +450,6 @@
     <stream_url>http://u12.sky.fm:80/sky_dreamscapes_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.217.70:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Dreamscapes - S K Y . F M - relax to the sounds of dream and ibiza style chillout</stream_title>
@@ -467,7 +466,6 @@
     <stream_url>http://u12.sky.fm:80/sky_vocalsmoothjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.217.70:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Vocal Smooth Jazz - S K Y . F M - The best of vocal smooth jazz!!</stream_title>
@@ -484,7 +482,6 @@
     <stream_url>http://u12.sky.fm:80/sky_romantica_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.217.70:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Romantica - S K Y . F M - Timeless pop classical voices!</stream_title>
@@ -501,7 +498,6 @@
     <stream_url>http://u11.sky.fm:80/sky_indierock_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Indie Rock - S K Y . F M - Indie, Alternative, and Underground Rock!</stream_title>
@@ -518,7 +514,6 @@
     <stream_url>http://u12.sky.fm:80/sky_poppunk_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.217.70:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Pop Punk - S K Y . F M - A fusion of Punk and Pop!</stream_title>
@@ -535,7 +530,6 @@
     <stream_url>http://u12.sky.fm:80/sky_jpop_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.217.70:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Jpop - S K Y . F M - A fine assortment of fresh Jpop hits!!</stream_title>
@@ -552,7 +546,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_smoothjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Absolutely Smooth Jazz - S K Y . F M - the world's smoothest jazz 24 hours a day</stream_title>
@@ -569,7 +562,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_uptemposmoothjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Uptempo Smooth Jazz - S K Y . F M - the world's smoothest jazz, grooving 24 hours a day</stream_title>
@@ -586,7 +578,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_tophits_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Top Hits Music - S K Y . F M - who cares about the chart order, less rap &amp; more hits!</stream_title>
@@ -603,7 +594,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_the80s_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>80s, 80s, 80s! - S K Y . F M - Hear your classic favorites right here! (www.sky.fm)</stream_title>
@@ -620,7 +610,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_hit70s_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>All Hit 70s - S K Y . F M - All Hits, All The Time!</stream_title>
@@ -637,7 +626,6 @@
     <stream_url>http://u11.sky.fm:80/sky_oldies_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Oldies - The 50s, 60s, &amp; 70s - S K Y . F M - three decades of great oldies on www.sky.fm</stream_title>
@@ -654,7 +642,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_classical_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Mostly Classical - S K Y . F M - Listen and Relax, it's good for you! www.sky.fm</stream_title>
@@ -671,7 +658,6 @@
     <stream_url>http://u11.sky.fm:80/sky_guitar_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Classical &amp; Flamenco Guitar - S K Y . F M - a mix of classical, spanish, and flamenco guitar</stream_title>
@@ -688,7 +674,6 @@
     <stream_url>http://u11.sky.fm:80/sky_solopiano_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Solo Piano - S K Y . F M - Musical journeys with piano masters and talented undiscovered pianists</stream_title>
@@ -705,7 +690,6 @@
     <stream_url>http://u11.sky.fm:80/sky_newage_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>New Age - S K Y . F M - soothing sounds of new age and world music!</stream_title>
@@ -722,7 +706,6 @@
     <stream_url>http://u11.sky.fm:80/sky_world_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>World Music - S K Y . F M - thanks for listening, visit us at www.sky.fm!</stream_title>
@@ -739,7 +722,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_rootsreggae_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Roots Reggae - S K Y . F M - the best of classic and modern Roots Reggae with DJ Bahilman</stream_title>
@@ -756,7 +738,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_datempolounge_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Datempo Lounge - S K Y . F M - amazing combination of jazz, lounge, bossa, and much more!</stream_title>
@@ -773,7 +754,6 @@
     <stream_url>http://u11.sky.fm:80/sky_pianojazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Piano Jazz - S K Y . F M - Enjoy the sounds of piano jazz from historic and modern masters.</stream_title>
@@ -790,7 +770,6 @@
     <stream_url>http://u11.sky.fm:80/sky_country_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Country - S K Y . F M - today's Hit Country with a mix of your favorites</stream_title>
@@ -807,7 +786,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_bossanova_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Bossa Nova Jazz - S K Y . F M - 100% pure bossa nova channel, enjoy the sweet flavors of Brazil!</stream_title>
@@ -824,7 +802,6 @@
     <stream_url>http://u11.sky.fm:80/sky_altrock_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Alternative Rock - S K Y . F M - Alternative rock hits You want to hear!!</stream_title>
@@ -841,7 +818,6 @@
     <stream_url>http://u11.sky.fm:80/sky_classicrock_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Classic Rock - S K Y . F M - relive the classic rock sounds of the 70s and 80s</stream_title>
@@ -858,7 +834,6 @@
     <stream_url>http://u11.sky.fm:80/sky_bebop_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Bebop - S K Y . F M - swinging to the sounds of bebop and straight ahead jazz</stream_title>
@@ -875,7 +850,6 @@
     <stream_url>http://u11.sky.fm:80/sky_soundtracks_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Simply Soundtracks - S K Y . F M - a wide variety of Soundtracks from Movies, show themes, &amp; more!</stream_title>
@@ -892,7 +866,6 @@
     <stream_url>http://u11.sky.fm:80/sky_christian_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Contemporary Christian - S K Y . F M - today's Christian favorites and undiscovered hits</stream_title>
@@ -909,7 +882,6 @@
     <stream_url>http://u11.sky.fm:80/sky_classicrap_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Classic Rap &amp; Hip Hop - S K Y . F M - thanks for listening, check us out at www.sky.fm</stream_title>
@@ -926,7 +898,6 @@
     <stream_url>http://u11.sky.fm:80/sky_salsa_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.35:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>SALSASTREAM - S K Y . F M - Best Salsa Collection now on www.sky.fm</stream_title>
@@ -943,7 +914,6 @@
     <stream_url>http://u11b.sky.fm:80/sky_dancehits_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.163:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Dance Hits - S K Y . F M - the hottest dance tunes 24/7</stream_title>
@@ -960,7 +930,6 @@
     <stream_url>http://u10.sky.fm:80/sky_urbanjamz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.26.204.36:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Urban Jamz - S K Y . F M - Kickin' with the baddest beats on the 'net (www.sky.fm)</stream_title>

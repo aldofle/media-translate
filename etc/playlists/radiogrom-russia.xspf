@@ -9,7 +9,6 @@
 <meta rel="stream_url">http://stream.radiorecord.ru:8100/ps_aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://78.111.92.26:8100</meta>
 <meta rel="stream_type">audio/aac</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">Drum and Bass</meta>
@@ -22,7 +21,6 @@
 <meta rel="stream_url">http://stream6.radiostyle.ru:8006/priboyfm</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://62.122.213.3:8006</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">Various</meta>
@@ -32,27 +30,11 @@
       <location>http://www.radiogrom.com/online/russia/radio_vatan_online.html</location>
       <title>- 104,8 FM - Радио Ватан Махачкала </title>
     
-<meta rel="stream_url">http://stream1.radiostyle.ru:8001/radiovatan</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://62.122.213.3:8001</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">Various</meta>
-<meta rel="stream_bitrate">96</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_maks_fm_online.html</location>
       <title>- 107,4 FM - Радио Макс FM </title>
     
-<meta rel="stream_url">http://radio.maks-fm.ru:8000/maksfm128</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://77.106.212.106:8000</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">MaksFM</meta>
-<meta rel="stream_bitrate">128</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_intervolna_online.html</location>
@@ -61,7 +43,6 @@
 <meta rel="stream_url">http://online.intervolna.ru:8000</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://80.85.150.67:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">CHR</meta>
@@ -74,7 +55,6 @@
 <meta rel="stream_url">http://www.orrfm.ru:8000/orr-128</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://90.156.211.132:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">various</meta>
@@ -87,7 +67,6 @@
 <meta rel="stream_url">http://listen.rpfm.ru:9000/premium128</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://89.108.75.162:9000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">Dance, House, Trance, R&amp;B, Pop</meta>
@@ -100,7 +79,6 @@
 <meta rel="stream_url">http://62.183.34.109:8000/radio107.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://62.183.34.109:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">Pop</meta>
@@ -110,14 +88,6 @@
       <location>http://www.radiogrom.com/online/russia/dfm_vladivostok_online.html</location>
       <title>- 105,3 FM - DFM Владивосток </title>
     
-<meta rel="stream_url">http://dfm.listen.moeradio.ru:10000/dfm</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://173.193.9.67:10000</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">Dance</meta>
-<meta rel="stream_bitrate">128</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_literaturnoe_online.html</location>
@@ -126,7 +96,6 @@
 <meta rel="stream_url">http://79.137.234.183:8000</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://79.137.234.183:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">Talk</meta>
@@ -139,11 +108,10 @@
 <meta rel="stream_url">http://radioteos.ru:8004/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://74.53.243.162:8004</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">Religious</meta>
-<meta rel="stream_bitrate">48</meta>
+<meta rel="stream_bitrate">64</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_svoboda_online.html</location>
@@ -151,8 +119,7 @@
     
 <meta rel="stream_url">mmsh://a1075.l1062331074.c10623.g.lm.akamaistream.net/D/1075/10623/v0001/reflector:31074</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
@@ -160,10 +127,7 @@
       <location>http://www.radiogrom.com/online/russia/ac_fm_radio_online.html</location>
       <title>- 106,0 FM - АС-FM. Иркутск </title>
     
-<meta rel="stream_protocol">file</meta>
-<meta rel="stream_protocol">file</meta>
-<meta rel="stream_protocol">file</meta>
-<meta rel="stream_protocol">file</meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_protocol">file</meta>
 </track>
     <track>
@@ -173,7 +137,6 @@
 <meta rel="stream_url">http://live.borneo.ru:8888/128</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://93.88.137.53:8888</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">radio</meta>
@@ -191,7 +154,6 @@
 <meta rel="stream_url">http://radiosibir.ru:8090/HQ</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://213.183.101.101:8090</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">Hot Adult Contemporary</meta>
@@ -201,14 +163,6 @@
       <location>http://www.radiogrom.com/online/russia/radio_uniton_online.html</location>
       <title>- 100,7 FM - Радио Юнитон Новосибирск </title>
     
-<meta rel="stream_url">http://www.r-uniton.ru:8000</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://81.176.214.10:8000</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">Pop music</meta>
-<meta rel="stream_bitrate">128</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_vbc_online.html</location>
@@ -217,7 +171,6 @@
 <meta rel="stream_url">http://radiovbc.ru:8000/Radio32</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://188.128.120.226:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">live</meta>
@@ -230,7 +183,6 @@
 <meta rel="stream_url">http://83.246.143.25:8000/HFMLow</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://83.246.143.25:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">various</meta>
@@ -243,7 +195,6 @@
 <meta rel="stream_url">http://as.baikal.tv:8004</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://195.206.51.178:8004</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_genre">Romantic</meta>

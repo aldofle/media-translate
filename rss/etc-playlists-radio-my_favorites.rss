@@ -430,7 +430,6 @@
     <stream_url>http://stream.rtfm.fm</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://88.204.110.50:80</stream_server>
     <stream_type>audio/x-mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
@@ -439,13 +438,6 @@
     <title>Хит FM Italy</title>
     <annotation>Итальянская эстрада, поп-музыка</annotation>
     <image>../etc/translate/rss/image/stationru/hit_italy.gif</image>
-    <stream_url>mmsh://broadcast03.station.ru/station15</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>station.ru</stream_soft>
-    <stream_server>http://station.ru/GetSongJS.aspx?id=station15</stream_server>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
-    <stream_title>Хит FM Italy / station.ru</stream_title>
   </item>
   <item>
     <location>http://voxsc1.somafm.com:8700</location>
@@ -455,7 +447,6 @@
     <stream_url>http://voxsc1.somafm.com:8700</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8700</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Cover Me: All covers, all the time. [SomaFM]</stream_title>
@@ -470,7 +461,6 @@
     <stream_url>http://voxsc1.somafm.com:8884</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8884</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Underground Eighties: UK Synthop and a bit of New Wave. [SomaFM]</stream_title>
@@ -487,7 +477,6 @@
     <stream_url>http://u11b.di.fm:80/di_chillout_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Chillout - D I G I T A L L Y - I M P O R T E D - ambient psy chillout, check out our trippy flavors!</stream_title>

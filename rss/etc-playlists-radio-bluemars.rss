@@ -451,7 +451,6 @@ Thus, Voices from Within tries to prepare cosmonauts for the experience by focus
     <stream_url>http://207.200.96.225:8024/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://207.200.96.225:8024</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Voices From Within</stream_title>
@@ -470,7 +469,6 @@ It may be possible that chemicals used in the cryosleep process alter the outer 
     <stream_url>http://207.200.96.225:8022/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://207.200.96.225:8022</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Cryosleep - Zero Beat Guaranteed</stream_title>
@@ -488,7 +486,6 @@ This melody is one that is made of hopes... It is sang with the voice of nostalg
     <stream_url>http://207.200.96.225:8020/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://207.200.96.225:8020</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Bluemars - Music for the Space Traveler</stream_title>

@@ -7,10 +7,9 @@
       <title>Main</title>
       <annotation>80s, Pop, Rock, Charts und mehr neue Hits  </annotation>
     
-<meta rel="stream_url">http://91.121.77.64:8100/</meta>
+<meta rel="stream_url">http://91.121.88.186:8100/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://91.121.77.64:8100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.MAIN - WWW.RAUTEMUSIK.FM - 24H TOP 40 POP HITS 80S 90S DANCE HOUSE ROCK RNB AND MORE!</meta>
@@ -22,10 +21,9 @@
       <title>Club</title>
       <annotation>Dance, HandsUp, Techno und Trance</annotation>
     
-<meta rel="stream_url">http://62.141.54.83:9100/</meta>
+<meta rel="stream_url">http://80.237.157.12:7000/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://62.141.54.83:9100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.CLUB - WWW.RAUTEMUSIK.FM - 24H MIXED HANDS UP TRANCE DANCE TECHNO HARDSTYLE HOUSE AND MORE!</meta>
@@ -37,10 +35,9 @@
       <title>eXTreMe</title>
       <annotation>Rock, Metal, Punk, Ska, Alternative</annotation>
     
-<meta rel="stream_url">http://91.121.77.64:10100/</meta>
+<meta rel="stream_url">http://80.237.157.12:7100/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://91.121.77.64:10100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.EXTREME - WWW.RAUTEMUSIK.FM - 24H ROCK METAL PUNK SKA ALTERNATIVE AND MORE!</meta>
@@ -52,10 +49,9 @@
       <title>JaM</title>
       <annotation>HipHop, R.n.B, Rap, Soul, Reggae, Dancehall</annotation>
     
-<meta rel="stream_url">http://91.121.77.64:12100/</meta>
+<meta rel="stream_url">http://80.237.157.12:7300/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://91.121.77.64:12100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.JAM - WWW.RAUTEMUSIK.FM - 24H HIPHOP RNB RAP SOUL REGGAE DANCEHALL URBAN AND MORE!</meta>
@@ -67,10 +63,9 @@
       <title>FunkY</title>
       <annotation>House, Dance, Funk, Electro</annotation>
     
-<meta rel="stream_url">http://91.121.77.64:13100/</meta>
+<meta rel="stream_url">http://80.237.157.12:7200/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://91.121.77.64:13100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.FUNKY - WWW.RAUTEMUSIK.FM - 24H MIXED HOUSE ELECTRO FUNK DANCE MINIMAL AND MORE!</meta>
@@ -85,7 +80,6 @@
 <meta rel="stream_url">http://91.121.77.64:14100/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://91.121.77.64:14100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.LOUNGE - WWW.RAUTEMUSIK.FM - 24H CHILLOUT AMBIENT SMOOTH JAZZ DOWNTEMPO LATIN SOUL AND MORE!</meta>
@@ -100,7 +94,6 @@
 <meta rel="stream_url">http://91.121.77.64:11100/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://91.121.77.64:11100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.GOLDIES - WWW.RAUTEMUSIK.FM - 24H OLDIES CLASSIC ROCK 60S 70S 80S POP AND MORE!</meta>
@@ -115,7 +108,6 @@
 <meta rel="stream_url">http://87.106.71.142:15100/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://87.106.71.142:15100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.HARDER - WWW.RAUTEMUSIK.FM - 24 MIXED HARDSTYLE HARDCORE JUMPSTYLE SCHRANZ GABBA AND MORE!</meta>
@@ -127,10 +119,9 @@
       <title>Oriental</title>
       <annotation>Arabische Musik</annotation>
     
-<meta rel="stream_url">http://91.121.88.186:17100/</meta>
+<meta rel="stream_url">http://91.121.77.64:17100/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://91.121.88.186:17100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.ORIENTAL - WWW.RAUTEMUSIK.FM - 24H ORIENTAL AND ARABIC POP MUSIC AND MORE!</meta>
@@ -142,10 +133,9 @@
       <title>BigCityBeats</title>
       <annotation>Electronic, House, Dance</annotation>
     
-<meta rel="stream_url">http://91.121.88.186:16100/</meta>
+<meta rel="stream_url">http://80.237.157.30:11000/</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://91.121.88.186:16100</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">#MUSIK.BIGCITYBEATS - BY BIGCITYBEATS.DE &amp; RAUTEMUSIK.FM - 24H MIXED ELECTRONIC AND HOUSE MUSIC!</meta>

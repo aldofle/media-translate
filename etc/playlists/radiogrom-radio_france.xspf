@@ -9,10 +9,8 @@
 <meta rel="stream_url">http://91.121.62.121:9410</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://91.121.62.121:9410</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">MAXLARADIO SI SENIOR</meta>
 <meta rel="stream_genre">GOLD FRANCE OLDIES ROCK NOSTALGIE POP</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
@@ -30,10 +28,7 @@
       <location>http://www.radiogrom.com/online/radio_france/one_station_fr_online.html</location>
       <title>- Радио One Station </title>
     
-<meta rel="stream_protocol">file</meta>
-<meta rel="stream_protocol">file</meta>
-<meta rel="stream_protocol">file</meta>
-<meta rel="stream_protocol">file</meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_protocol">file</meta>
 </track>
     <track>
