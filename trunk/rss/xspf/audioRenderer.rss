@@ -57,7 +57,7 @@
     no_renderer     = getStringArrayAt(arr, 11);
     
     if(stream_current_song != "" &amp;&amp; stream_current_song != null)
-      track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
+      track_image = translate_base_url + "app,Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
       
     if(stream_status_url == "_empty_")
       track_image = request_image;
@@ -216,7 +216,7 @@
       	    if(value != null)
       	    {
         		  stream_current_song = value;
-          		track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
+          		track_image = translate_base_url + "app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
         		}
         		else
         		{
@@ -237,7 +237,7 @@
     	      if(stream_current_song != value)
     	      {
         		  stream_current_song = value;
-        		  track_image = "http://127.0.0.1/cgi-bin/translate?app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
+        		  track_image = translate_base_url + "app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
         		}
       		}
       		else

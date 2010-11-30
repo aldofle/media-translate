@@ -13,24 +13,16 @@
     
 <meta rel="stream_url">http://inforadio.atlantis.bg:8000/inforadio.ogg</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_server">http://193.108.24.6:8000</meta>
 <meta rel="stream_type">application/ogg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">STAR FM</meta>
 <meta rel="stream_genre">ROCK</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/internet_europe/ministry_of_sound_online.html</location>
       <title>- Радио Ministry Of Sound Radio </title>
     
-<meta rel="stream_url">mmsh://wms.ministryofsound.com/MinistryLive</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
-<meta rel="stream_type">audio/x-ms-wma</meta>
-<meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Ministry of Sound Radio</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/internet_europe/russkoe_berlin_online.html</location>
@@ -41,13 +33,11 @@
       <location>http://www.radiogrom.com/online/great_britain/capital_fm_london_95_8_online.html</location>
       <title>- 95,8 FM - Радио Capital FM 95.8 London (UK)</title>
     
-<meta rel="stream_url">mmsh://mediasrv-the.musicradio.com/CapitalRadio</meta>
+<meta rel="stream_url">mmsh://mediasrv-sov.musicradio.com/CapitalRadio</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">95.8 Capital FM</meta>
 </track>
   </trackList>
 </playlist>

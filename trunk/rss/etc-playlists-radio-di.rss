@@ -450,7 +450,6 @@
     <stream_url>http://u11b.di.fm:80/di_chillout_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Chillout - D I G I T A L L Y - I M P O R T E D - ambient psy chillout, check out our trippy flavors!</stream_title>
@@ -467,7 +466,6 @@
     <stream_url>http://u11.di.fm:80/di_futuresynthpop_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Future Synthpop - D I G I T A L L Y - I M P O R T E D - Finest selection of futurepop and synthpop!!</stream_title>
@@ -484,7 +482,6 @@
     <stream_url>http://u12.di.fm:80/di_liquiddnb_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.217.66:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Liquid DnB  - D I G I T A L L Y - I M P O R T E D - Flowing with the freshest Liquid DnB!!</stream_title>
@@ -501,7 +498,6 @@
     <stream_url>http://u12.di.fm:80/di_oldschoolhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.217.66:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Oldschool House - D I G I T A L L Y - I M P O R T E D - The sounds of old school house music!</stream_title>
@@ -518,7 +514,6 @@
     <stream_url>http://u12.di.fm:80/di_chiptunes_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.217.66:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Chiptunes - D I G I T A L L Y - I M P O R T E D - Playing the best chiptunes and video game music.</stream_title>
@@ -535,7 +530,6 @@
     <stream_url>http://u11.di.fm:80/di_trance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Trance Channel - D I G I T A L L Y - I M P O R T E D - we can't define it!</stream_title>
@@ -552,7 +546,6 @@
     <stream_url>http://u11b.di.fm:80/di_vocaltrance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Vocal Trance - D I G I T A L L Y - I M P O R T E D - a fusion of trance, dance, and chilling vocals together!</stream_title>
@@ -569,7 +562,6 @@
     <stream_url>http://u11.di.fm:80/di_classictrance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Classic Trance - D I G I T A L L Y - I M P O R T E D - relive the classic trance hits!!</stream_title>
@@ -586,7 +578,6 @@
     <stream_url>http://u11b.di.fm:80/di_techhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Tech House - D I G I T A L L Y - I M P O R T E D - a fusion of minimal techno and soulful house music.</stream_title>
@@ -603,7 +594,6 @@
     <stream_url>http://u11.di.fm:80/di_psychill_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>PsyChill - D I G I T A L L Y - I M P O R T E D - downtempo psychedelic dub grooves, goa ambient, and world beats.</stream_title>
@@ -620,7 +610,6 @@
     <stream_url>http://u11.di.fm:80/di_chilloutdreams_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Chillout Dreams - D I G I T A L L Y - I M P O R T E D - relax to the sounds of dream and ibiza style chillout</stream_title>
@@ -637,7 +626,6 @@
     <stream_url>http://u11.di.fm:80/di_eurodance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>EuroDance - D I G I T A L L Y - I M P O R T E D - the newest and best of Eurodance hits</stream_title>
@@ -654,7 +642,6 @@
     <stream_url>http://u11.di.fm:80/di_clubsounds_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Club Sounds - D I G I T A L L Y - I M P O R T E D - the hottest club and dance tunes 24/7</stream_title>
@@ -671,7 +658,6 @@
     <stream_url>http://u11.di.fm:80/di_discohouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Disco House - D I G I T A L L Y - I M P O R T E D - Grooviest Disco House hits on the planet!</stream_title>
@@ -688,7 +674,6 @@
     <stream_url>http://u11b.di.fm:80/di_dubstep_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Dubstep - D I G I T A L L Y - I M P O R T E D - Dubstep hits and mixes!!!!</stream_title>
@@ -705,7 +690,6 @@
     <stream_url>http://u11b.di.fm:80/di_electrohouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Electro House - D I G I T A L L Y - I M P O R T E D - an eclectic mix of electro and dirty house</stream_title>
@@ -722,7 +706,6 @@
     <stream_url>http://u11.di.fm:80/di_classiceurodance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Classic EuroDance - D I G I T A L L Y - I M P O R T E D - Finest imported cheese on the net!</stream_title>
@@ -739,7 +722,6 @@
     <stream_url>http://u11.di.fm:80/di_house_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>House - D I G I T A L L Y - I M P O R T E D - silky sexy deep house music direct from New York city!</stream_title>
@@ -756,7 +738,6 @@
     <stream_url>http://u11.di.fm:80/di_soulfulhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Soulful House - D I G I T A L L Y - I M P O R T E D - house music selected from Paris with love!</stream_title>
@@ -773,7 +754,6 @@
     <stream_url>http://u11.di.fm:80/di_funkyhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Funky House - D I G I T A L L Y - I M P O R T E D - A fine selection of funky house music!!</stream_title>
@@ -790,7 +770,6 @@
     <stream_url>http://u11.di.fm:80/di_tribalhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Tribal House - D I G I T A L L Y - I M P O R T E D - Finest selection of tribal and tech house!!</stream_title>
@@ -807,7 +786,6 @@
     <stream_url>http://u11.di.fm:80/di_harddance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Hard Dance - D I G I T A L L Y - I M P O R T E D - are you ready for this!</stream_title>
@@ -824,7 +802,6 @@
     <stream_url>http://u11.di.fm:80/di_minimal_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Minimal - D I G I T A L L Y - I M P O R T E D - Finest selection of Minimal Techno &amp; House!!</stream_title>
@@ -841,7 +818,6 @@
     <stream_url>http://u11.di.fm:80/di_techno_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Techno - D I G I T A L L Y - I M P O R T E D - From Minimal to Detroit to Schranz &amp; all in between!</stream_title>
@@ -858,7 +834,6 @@
     <stream_url>http://u11b.di.fm:80/di_progressive_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Progressive - D I G I T A L L Y - I M P O R T E D - house, techno, and trance beats for your mind!</stream_title>
@@ -875,7 +850,6 @@
     <stream_url>http://u11.di.fm:80/di_goapsy_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Goa &amp; Psychedelic Trance - D I G I T A L L Y - I M P O R T E D - a voyage out of this world!</stream_title>
@@ -892,7 +866,6 @@
     <stream_url>http://u11.di.fm:80/di_hardstyle_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Hardstyle - D I G I T A L L Y - I M P O R T E D - Banging Hardstyle for your ears!!!</stream_title>
@@ -909,7 +882,6 @@
     <stream_url>http://u11.di.fm:80/di_hardcore_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Hardcore - D I G I T A L L Y - I M P O R T E D &amp; HappyHardcore.com - DJ mixes, hard dance and NuNRG!</stream_title>
@@ -926,7 +898,6 @@
     <stream_url>http://u11b.di.fm:80/di_lounge_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Lounge - D I G I T A L L Y - I M P O R T E D - sit back and enjoy the lounge grooves!</stream_title>
@@ -943,7 +914,6 @@
     <stream_url>http://u11.di.fm:80/di_exposurenyc_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Exposure NYC - D I G I T A L L Y - I M P O R T E D - A fine selection of New York City sounds!</stream_title>
@@ -960,7 +930,6 @@
     <stream_url>http://u11.di.fm:80/di_djmixes_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>DJ MIXES - D I G I T A L L Y - I M P O R T E D - non-stop DJ sets featuring various forms of techno &amp; trance!</stream_title>
@@ -977,7 +946,6 @@
     <stream_url>http://u11b.di.fm:80/di_drumandbass_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Drum and Bass - D I G I T A L L Y - I M P O R T E D - tasty assortment to satisfy your drum and bass fix!</stream_title>
@@ -994,7 +962,6 @@
     <stream_url>http://u11.di.fm:80/di_oldschoolelectronica_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Classic Electronica - D I G I T A L L Y - I M P O R T E D - old school techno, trance &amp; rave!</stream_title>
@@ -1011,7 +978,6 @@
     <stream_url>http://u11b.di.fm:80/di_breaks_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Breaks - D I G I T A L L Y - I M P O R T E D - a fine assortment of trance and house breaks</stream_title>
@@ -1028,7 +994,6 @@
     <stream_url>http://u11b.di.fm:80/di_ambient_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.216.162:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Ambient - D I G I T A L L Y - I M P O R T E D - a blend of ambient, downtempo, and chillout</stream_title>
@@ -1045,7 +1010,6 @@
     <stream_url>http://u11.di.fm:80/di_spacemusic_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Space Music - D I G I T A L L Y - I M P O R T E D - ambient space music for expanding minds</stream_title>
@@ -1062,7 +1026,6 @@
     <stream_url>http://u11.di.fm:80/di_gabber_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://72.251.198.34:80</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Gabber - D I G I T A L L Y - I M P O R T E D - best sounds of this stuff right here for your ears!</stream_title>

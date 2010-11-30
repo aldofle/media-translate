@@ -428,10 +428,8 @@
     <stream_url>http://live.rusradio.by:8000/live</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://93.125.53.102:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>Russian Radio - Minsk</stream_title>
     <stream_genre>Russian Pop</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
@@ -441,10 +439,8 @@
     <stream_url>http://skycast.su:2007/998</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://78.108.89.120:2007</stream_server>
     <stream_type>audio/aac</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>Radio 107,4 FM</stream_title>
     <stream_genre>Various</stream_genre>
     <stream_bitrate>64</stream_bitrate>
   </item>
@@ -454,10 +450,8 @@
     <stream_url>http://radio.solo.by:8002/pilotfm</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://195.222.70.222:8002</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>пилот</stream_title>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
@@ -466,10 +460,8 @@
     <stream_url>http://212.69.72.6:8100/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://212.69.72.6:8100</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>European Radio for Belarus</stream_title>
     <stream_genre>Modern Rock</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
@@ -478,11 +470,9 @@
     <title>- Радиус FM </title>
     <stream_url>mms://livecast.tvr.by/radio4</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft/>
-    <stream_server/>
+    <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>rtsp</stream_protocol>
-    <stream_title>Radius Fm / Belteleradiocompany</stream_title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/unistar_fm_online.html</location>
@@ -490,10 +480,8 @@
     <stream_url>http://213.184.232.36:8000/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://213.184.232.36:8000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>UNISTAR Radio /live! 128 kbps/</stream_title>
     <stream_genre>radio</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
@@ -503,10 +491,8 @@
     <stream_url>http://86.57.151.4:8009/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://86.57.151.4:8009</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>Alpha Radio Belarus</stream_title>
     <stream_genre>Various</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
@@ -516,7 +502,6 @@
     <stream_url>http://streaming.telecom.by:8001/novoeradio-128kb</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://213.184.225.54:8001</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_genre>Dance</stream_genre>
@@ -525,15 +510,6 @@
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/ba_radio_online.html</location>
     <title>- Радио Би Эй </title>
-    <stream_url>http://radio.solo.by:8002/radioba</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_server>icyx://195.222.70.222:8002</stream_server>
-    <stream_type>audio/aacp</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Radio BA Minsk 104.6 FM First FM Radiostation in Belarus 48 kbps AAC+</stream_title>
-    <stream_genre>Radio BA</stream_genre>
-    <stream_bitrate>48</stream_bitrate>
   </item>
 </channel>
 

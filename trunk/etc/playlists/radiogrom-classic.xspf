@@ -9,8 +9,7 @@
     
 <meta rel="stream_url">mmsh://live.rfn.ru/orfey/</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
@@ -19,10 +18,9 @@
       <title>Радио BBC Radio 3</title>
       <annotation>Одна из самых популярных радиостанций Великобритании, вещающая классическую музыку. Формат BBC Radio 3: классическая музыка, джаз, драматическая музыка и национальная музыка мира.</annotation>
     
-<meta rel="stream_url">mmsh://wmlive.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_eq1_sl0?BBC-UID=241ccbd10cb0fecfb57679811137bfdb15b4168a20903114a4ef09279c222aa1&amp;amp;SSO2-UID=</meta>
+<meta rel="stream_url">mmsh://wmlive.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_eq1_sl0</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
@@ -33,8 +31,7 @@
     
 <meta rel="stream_url">mmsh://wnyc.streamguys.com/wqxr</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
@@ -45,8 +42,7 @@
     
 <meta rel="stream_url">mms://netshow4.play.cz/classic128</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">rtsp</meta>
 </track>
@@ -57,8 +53,6 @@
     
 <meta rel="stream_url">http://stream.srg-ssr.ch/rsc_fr/mp3_128.asx</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-asx</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
@@ -69,6 +63,7 @@
     
 <meta rel="stream_url">mmsh://mos2.101.ru/c16_4_128?st=</meta>
 <meta rel="stream_class">audio</meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
 </track>
@@ -79,8 +74,6 @@
     
 <meta rel="stream_url">http://www.miastomuzyki.pl/wpl/mmsrc.asx?id=7&amp;n=0&amp;m=0</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
 <meta rel="stream_type">audio/x-ms-wax</meta>
 <meta rel="stream_protocol">http</meta>
 </track>

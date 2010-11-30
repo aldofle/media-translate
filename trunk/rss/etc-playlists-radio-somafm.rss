@@ -448,7 +448,6 @@
     <stream_url>http://voxsc1.somafm.com:8700</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8700</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Cover Me: All covers, all the time. [SomaFM]</stream_title>
@@ -463,7 +462,6 @@
     <stream_url>http://voxsc1.somafm.com:8884</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8884</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Underground Eighties: UK Synthop and a bit of New Wave. [SomaFM]</stream_title>
@@ -478,7 +476,6 @@
     <stream_url>http://voxsc1.somafm.com:3000</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:3000</stream_server>
     <stream_type>audio/aac</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Groove Salad from SomaFM [aac] [SomaFM]</stream_title>
@@ -493,7 +490,6 @@
     <stream_url>http://voxsc1.somafm.com:9010</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:9010</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Secret Agent from SomaFM [SomaFM]</stream_title>
@@ -508,7 +504,6 @@
     <stream_url>http://ice.somafm.com/dronezone</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Drone Zone: Atmospheric ambient space music. Serve Best Chilled. Safe with most medications. [SomaFM]</stream_title>
@@ -523,7 +518,6 @@
     <stream_url>http://voxsc1.somafm.com:8070</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8070</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Indie Pop Rocks on SomaFM  [aac] [SomaFM]</stream_title>
@@ -538,7 +532,6 @@
     <stream_url>http://voxsc1.somafm.com:8062</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8062</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>blips'n'bleeps backed w/ beats. broadband. [SomaFM]</stream_title>
@@ -553,7 +546,6 @@
     <stream_url>http://voxsc1.somafm.com:8384</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8384</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Beat Blender: A late night blend of deep-house &amp; downtempo chill. [SomaFM]</stream_title>
@@ -568,7 +560,6 @@
     <stream_url>http://205.188.215.230:8012</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://205.188.215.230:8012</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Tag's Trip  [SomaFM]</stream_title>
@@ -583,7 +574,6 @@
     <stream_url>http://voxsc1.somafm.com:8504</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8504</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Ill Street Lounge: Classic bachelor pad, playful exotica and vintage music of tomorrow. [SomaFM]</stream_title>
@@ -598,7 +588,6 @@
     <stream_url>http://voxsc1.somafm.com:8200</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8200</stream_server>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Space Station Soma from SomaFM [SomaFM]</stream_title>
@@ -613,7 +602,6 @@
     <stream_url>http://voxsc1.somafm.com:8300</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8300</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Doomed: Dark music for tortured souls [SomaFM]</stream_title>
@@ -628,7 +616,6 @@
     <stream_url>http://voxsc1.somafm.com:7000</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:7000</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Boot Liquor: Americana roots music for Cowhands, Cowpokes and Cowtippers. [SomaFM]</stream_title>
@@ -643,7 +630,6 @@
     <stream_url>http://ice.somafm.com/lush</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:80</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Lush: Mostly female vocals with an electronic influence. [SomaFM]</stream_title>
@@ -658,7 +644,6 @@
     <stream_url>http://voxsc1.somafm.com:8900</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8900</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Digitalis. Analog rock, digitally-affected, to calm the agitated heart. [SomaFM]</stream_title>
@@ -673,7 +658,6 @@
     <stream_url>http://voxsc1.somafm.com:8850</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8850</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Suburbs of Goa: Desi-influenced Asian world beats. [SomaFM]</stream_title>
@@ -688,7 +672,6 @@
     <stream_url>http://voxsc1.somafm.com:8600</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8600</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Sonic Universe. Nu Jazz plus avant-garde Euro Jazz: Transcending the boundaries of jazz with experimental takes on tradition. [SomaFM]</stream_title>
@@ -703,7 +686,6 @@
     <stream_url>http://voxsc1.somafm.com:2026</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:2026</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Mission Control: Celebrating NASA and space explorers everywhere. [SomaFM]</stream_title>
@@ -718,7 +700,6 @@
     <stream_url>http://voxsc1.somafm.com:2200</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:2200</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>PopTron: Electro-Pop and Indie Dance Rock [SomaFM]</stream_title>
@@ -733,7 +714,6 @@
     <stream_url>http://voxsc1.somafm.com:8040</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
-    <stream_server>icyx://74.63.47.82:8040</stream_server>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>SomaFM Black Rock City: 102.3 FM at the Burningman Festival [SomaFM]</stream_title>

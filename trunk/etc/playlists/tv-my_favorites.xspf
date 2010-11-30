@@ -7,13 +7,10 @@
          <title>Live! Concert</title>
          <image>../etc/translate/rss/image/menu/internettv.png</image>
          <location>http://live.prahovahd.ro/playlist.php?ext=.xspf</location>
-<meta rel="stream_url">http://live.prahovahd.ro/playlist.php?ext=.xspf</meta>
-<meta rel="stream_class">playlist</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
-<meta rel="stream_type">application/xspf+xml</meta>
-<meta rel="stream_protocol">http</meta>
 <meta rel="autoplay">0</meta>
-      </track>
+      
+<meta rel="stream_server">_empty_</meta>
+<meta rel="stream_protocol">file</meta>
+</track>
    </trackList>
 </playlist>
