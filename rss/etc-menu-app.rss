@@ -80,7 +80,11 @@
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
-  	<text redraw="yes" offsetXPC="85" offsetYPC="12" widthPC="10" heightPC="6" fontSize="20" backgroundColor="10:105:150" foregroundColor="60:160:205">
+		<image offsetXPC=5 offsetYPC=2 widthPC=20 heightPC=16>
+		  <script>channelImage;</script>
+		</image>
+
+  	<text redraw="yes" offsetXPC="82" offsetYPC="12" widthPC="13" heightPC="6" fontSize="20" backgroundColor="10:105:150" foregroundColor="60:160:205">
 		  <script>sprintf("%s / ", focus-(-1))+itemCount;</script>
 		</text>
 
@@ -193,19 +197,23 @@
 	</item_template>
 
 
-<channel>
+<script>
+    channelImage = "";
+  </script><channel>
   <title>Applications</title>
   <item>
     <link>rss_file://../etc/translate/rss/xspf/streamRenderer.rss</link>
     <title>Media Stream Renderer</title>
     <annotation>Play content recieved from a computer, which will find content from an internet browser.</annotation>
     <image>../etc/translate/rss/image/menu/msr.png</image>
+    <mediaDisplay name="onePartView"/>
   </item>
   <item>
     <link>rss_file://../etc/translate/rss/xspf/xspfBrowser.rss</link>
     <title>XSPF Browser</title>
     <annotation>Browse and play multimedia content and playlists from a local and network storage.</annotation>
     <image>../etc/translate/rss/image/menu/xspfbrowser.png</image>
+    <mediaDisplay name="threePartsView"/>
   </item>
 </channel>
 

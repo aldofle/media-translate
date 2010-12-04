@@ -12,6 +12,13 @@
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/tvigle-index.xspf,collection/simplemenu</link>
+      <title>Tvigle</title>
+      <annotation>Tvigle Media — медиакомпания нового поколения, производитель и дистрибьютор профессионального развлекательного видеоконтента для New Media: интернета, мобильных сетей, цифровых телеканалов.</annotation>
+      <image>../etc/translate/rss/image/tvigle.png</image>
+      <meta rel="mediaDisplay">onePartView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/tv-other.xspf,collection/menulist</link>
       <title>Other</title>
       <annotation>Разные списки интернет-телевидения</annotation>

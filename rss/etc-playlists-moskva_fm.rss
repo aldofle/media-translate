@@ -449,7 +449,9 @@
     print("error_info=",error_info);
   </unknownDispatcher>
 
-<channel>
+<script>
+    channelImage = "";
+  </script><channel>
   <title>Moskva.FM</title>
   <item>
     <location>mms://live.rfn.ru/radiorussia</location>

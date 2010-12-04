@@ -9,12 +9,14 @@
       <title>Media Stream Renderer</title>
       <annotation>Play content recieved from a computer, which will find content from an internet browser.</annotation>
       <image>../etc/translate/rss/image/menu/msr.png</image>
+      <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
       <link>rss_file://../etc/translate/rss/xspf/xspfBrowser.rss</link>
       <title>XSPF Browser</title>
       <annotation>Browse and play multimedia content and playlists from a local and network storage.</annotation>
       <image>../etc/translate/rss/image/menu/xspfbrowser.png</image>
+      <meta rel="mediaDisplay">threePartsView</meta>
     </track>
   </trackList>
 

@@ -92,7 +92,11 @@
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
-  	<text redraw="yes" offsetXPC="85" offsetYPC="12" widthPC="10" heightPC="6" fontSize="20" backgroundColor="10:105:150" foregroundColor="60:160:205">
+		<image offsetXPC=5 offsetYPC=2 widthPC=20 heightPC=16>
+		  <script>channelImage;</script>
+		</image>
+
+  	<text redraw="yes" offsetXPC="82" offsetYPC="12" widthPC="13" heightPC="6" fontSize="20" backgroundColor="10:105:150" foregroundColor="60:160:205">
 		  <script>sprintf("%s / ", focus-(-1))+itemCount;</script>
 		</text>
 
@@ -420,7 +424,9 @@
     print("error_info=",error_info);
   </unknownDispatcher>
 
-<channel>
+<script>
+    channelImage = "";
+  </script><channel>
   <title>Radiogrom.com - internet_europe</title>
   <item>
     <location>http://www.radiogrom.com/online/internet_europe/radio_ru_fm_online.html</location>
