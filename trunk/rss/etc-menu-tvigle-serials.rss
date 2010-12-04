@@ -39,7 +39,7 @@
     startitem = "middle";
 		
   setRefreshTime(1);
-  columnCount=3;
+  columnCount=5;
 </onEnter>
 
 <onRefresh>
@@ -58,7 +58,7 @@
 	  centerXPC=7 
 		centerYPC=30
 		centerHeightPC=50
-    columnCount=3
+    columnCount=5
 		
 	  rowCount=1
 		menuBorderColor="55:55:55"
@@ -198,29 +198,43 @@
 
 
 <script>
-    channelImage = "";
+    channelImage = "../etc/translate/rss/image/tvigle.png";
   </script><channel>
-  <title>Internet Video</title>
+  <title>Tvigle - Сериалы</title>
   <item>
-    <link>rss_file://../etc/translate/rss/youtube/yt_index.rss</link>
-    <title>YouTube</title>
-    <annotation>Founded in February 2005, YouTube is the world's most popular online video community, allowing millions of people to discover, watch and share originally-created videos.</annotation>
-    <image>../etc/translate/rss/image/menu/youtube.jpg</image>
-    <mediaDisplay name="onePartView"/>
+<link><script>translate_base_url+"app,Channel:2151,tvigle/multi";</script></link>
+    <title>Отчаянные домохозяйки. Первый сезон</title>
+    <annotation>Первый сезон многосерийной комедийной драмы о жизни подруг-домохозяек, проживающих на улице Вистерия-Лэйн в выдуманном американском городе Фэйрвью.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2151/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link>rss_file://../etc/translate/rss/etc-menu-tvigle-index.rss</link>
-    <title>Tvigle</title>
-    <annotation>Tvigle Media — медиакомпания нового поколения, производитель и дистрибьютор профессионального развлекательного видеоконтента для New Media: интернета, мобильных сетей, цифровых телеканалов.</annotation>
-    <image>../etc/translate/rss/image/tvigle.png</image>
-    <mediaDisplay name="onePartView"/>
+<link><script>translate_base_url+"app,Channel:2158,tvigle/multi";</script></link>
+    <title>Отчаянные домохозяйки. Второй сезон</title>
+    <annotation>Второй сезон многосерийной комедийной драмы о жизни подруг-домохозяек, проживающих на улице Вистерия-Лэйн в выдуманном американском городе Фэйрвью.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2158/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link>rss_file://../etc/translate/rss/etc-menu-tv-other.rss</link>
-    <title>Other</title>
-    <annotation>Разные списки интернет-телевидения</annotation>
-    <image>../etc/translate/rss/image/menu/internettv.png</image>
-    <mediaDisplay name="onePartView"/>
+<link><script>translate_base_url+"app,Channel:2103,tvigle/multi";</script></link>
+    <title>Antiсказка</title>
+    <annotation>Герои детских сказок преследуют тебя на улицах Москвы!</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2103/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1828,tvigle/multi";</script></link>
+    <title>Вся правда о Еве</title>
+    <annotation>Новый модный интернет–сериал в духе черной комедии, снятый специально для женщин.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1828/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1685,tvigle/multi";</script></link>
+    <title>Тридцатилетние</title>
+    <annotation>Жизнь поколения 30-летних в историях из жизни четырех семейных пар и их друзей.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1685/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
   </item>
 </channel>
 

@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-  xmlns:xspf="http://xspf.org/ns/0/"
-  exclude-result-prefixes="xspf"
+  xmlns:str="http://exslt.org/strings"
 >
 
 <!--
@@ -27,45 +26,43 @@
 
 <xsl:output method="xml" encoding="utf-8" indent="yes"/>
 
-<xsl:template match="/">
-  <xsl:apply-templates select="xspf:playlist"/>
-</xsl:template>
+<xsl:param name="title" select="'/top_video/@lnk'"/>
 
-<xsl:template match="xspf:playlist">
-  <script>
-    channelImage = "<xsl:value-of select="xspf:image"/>";
-  </script>
+
+<xsl:template match="/">
 	<channel>
-		<title><xsl:value-of select="xspf:title"/></title>
-    <xsl:apply-templates select="xspf:trackList/xspf:track"/>
+		<title><xsl:value-of select="$title"/></title>
+  <xsl:apply-templates select="//video"/>
 	</channel>
 </xsl:template>
 
-<xsl:template match="xspf:track">
+<xsl:template match="video">
   <item>
-    <xsl:apply-templates select="xspf:*"/>
+    <xsl:apply-templates select="@*"/>
   </item>
 </xsl:template>
 
-<xsl:template match="xspf:meta">
-  <xsl:choose>
-    <xsl:when test="@rel = 'mediaDisplay'">
-      <mediaDisplay name="{.}"/>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:element name="{@rel}">
-        <xsl:value-of select="."/>
-      </xsl:element>
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:template>
-
-<xsl:template match="xspf:*">
-  <xsl:element name="{name()}">
+<xsl:template match="@name">
+  <title>
     <xsl:value-of select="."/>
-  </xsl:element>
+  </title>
 </xsl:template>
 
-<xsl:template match="*" />
+<xsl:template match="@img">
+  <image>
+    <xsl:value-of select="."/>
+  </image>
+  <cover>
+    <xsl:value-of select="str:replace(string(.),'list','bg_img')"/>
+  </cover>
+</xsl:template>
+
+<xsl:template match="@www">
+  <location>
+    <xsl:value-of select="concat('http://www.tvigle.ru',.)"/>
+  </location>
+</xsl:template>
+
+<xsl:template match="@*" />
 
 </xsl:stylesheet>

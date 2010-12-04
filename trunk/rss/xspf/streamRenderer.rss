@@ -312,7 +312,7 @@
   doModalRss("rss_file://../etc/translate/rss/xspf/audioRenderer.rss");
 </sub_Load_audio>
 
-<mediaDisplay name="threePartsView" 
+<mediaDisplay name="onePartView" 
   showDefaultInfo="no" 
   showHeader="no" 
   sideLeftWidthPC="0" 
