@@ -9,6 +9,7 @@
 
   == Internet Video ==
   * Youtube (http://www.youtube.com)
+  * Tvigle (http://www.tvigle.ru)
 
   == Internet Radio ==
   === Сервисы ===
@@ -71,6 +72,11 @@ http://opml.radiotime.com/Tune.ashx?id=s29667&sid=p30125
   * [http://ivi.ru/ IVI] (_Замечание._ Требуется наличие CURL.)
 {{{
 http://www.ivi.ru/video/view/?id=2756
+http://france.ivi.ru/movie.php?id=2490
+}}}
+  * [http://tvigle.ru/ Tvigle]
+{{{
+http://www.tvigle.ru/category/cinema/1882?video=483307
 }}}
   * [http://rutube.ru/channels.html Трансляции Rutube.ru]
 {{{
