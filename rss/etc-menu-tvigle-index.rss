@@ -36,7 +36,7 @@
 </script>
 
 <onEnter>
-    startitem = "middle";
+    startitem = "left";
 		
   setRefreshTime(1);
 </onEnter>
@@ -162,8 +162,120 @@
     <mediaDisplay name="onePartView"/>
   </item>
   <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-animation.rss</link>
+    <title>Мультики</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-babies.rss</link>
+    <title>Для детей</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link>rss_file://../etc/translate/rss/etc-menu-tvigle-serials.rss</link>
     <title>Сериалы</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-comedy.rss</link>
+    <title>Юмор</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-music.rss</link>
+    <title>Музыка</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-Stars.rss</link>
+    <title>Звезды</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-formen.rss</link>
+    <title>Для мужчин</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-auto.rss</link>
+    <title>Авто / Мото</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-extrim.rss</link>
+    <title>Спорт</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-travel.rss</link>
+    <title>Путешествия</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-games.rss</link>
+    <title>Компьютерные игры</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-kitchen.rss</link>
+    <title>Еда</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-lifestyle.rss</link>
+    <title>Lifestyle</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-videolessons.rss</link>
+    <title>Видеоуроки</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-videoblog.rss</link>
+    <title>Персоны, блоги</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-spec-project.rss</link>
+    <title>Другое</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-menu-tvigle-autors.rss</link>
+    <title>Авторское видео</title>
     <annotation/>
     <image>../etc/translate/rss/image/tvigle.png</image>
     <mediaDisplay name="photoView"/>

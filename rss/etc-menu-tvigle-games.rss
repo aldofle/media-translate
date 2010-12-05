@@ -39,7 +39,7 @@
     startitem = "middle";
 		
   setRefreshTime(1);
-  columnCount=2;
+  columnCount=3;
 </onEnter>
 
 <onRefresh>
@@ -58,7 +58,7 @@
 	  centerXPC=7 
 		centerYPC=30
 		centerHeightPC=50
-    columnCount=2
+    columnCount=3
 		
 	  rowCount=1
 		menuBorderColor="55:55:55"
@@ -198,22 +198,85 @@
 
 
 <script>
-    channelImage = "";
+    channelImage = "../etc/translate/rss/image/tvigle.png";
   </script><channel>
-  <title>Applications</title>
+  <title>Tvigle - Компьютерные игры</title>
   <item>
-    <link>rss_file://../etc/translate/rss/xspf/streamRenderer.rss</link>
-    <title>Media Stream Renderer</title>
-    <annotation>Play content recieved from a computer, which will find content from an internet browser.</annotation>
-    <image>../etc/translate/rss/image/menu/msr.png</image>
-    <mediaDisplay name="onePartView"/>
+<link><script>translate_base_url+"app,Channel:2094,tvigle/multi";</script></link>
+    <title>Охрустенный квест</title>
+    <annotation>Мега-охрустенный квест от создателей мульта  Тетрис против Контры . Зажигай вместе с популярными героями охрустенного сериала Versus! Играй бесплатно прямо сейчас!</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2094/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
   </item>
   <item>
-    <link>rss_file://../etc/translate/rss/xspf/xspfBrowser.rss</link>
-    <title>XSPF Browser</title>
-    <annotation>Browse and play multimedia content and playlists from a local and network storage.</annotation>
-    <image>../etc/translate/rss/image/menu/xspfbrowser.png</image>
-    <mediaDisplay name="threePartsView"/>
+<link><script>translate_base_url+"app,Channel:1590,tvigle/multi";</script></link>
+    <title>ОтжЫг</title>
+    <annotation>Видеоряд из различных игр, в сопровождении музыкальной темы.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1590/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1510,tvigle/multi";</script></link>
+    <title>Игротека</title>
+    <annotation>Все лучшее из мира компьютерных и видеоигр.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1510/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1593,tvigle/multi";</script></link>
+    <title>Скороходы</title>
+    <annotation>Самые быстрые прохождения лучших игр.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1593/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1507,tvigle/multi";</script></link>
+    <title>Без винта</title>
+    <annotation>Без пафоса о новых играх.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1507/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1509,tvigle/multi";</script></link>
+    <title>Проходняк</title>
+    <annotation>Самые интересные моменты из игр.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1509/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1598,tvigle/multi";</script></link>
+    <title>Техно</title>
+    <annotation>Новости мира высоких технологий и гаджетов.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1598/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1508,tvigle/multi";</script></link>
+    <title>1й уровень</title>
+    <annotation>Гости из будущего.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1508/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1600,tvigle/multi";</script></link>
+    <title>В фокусе</title>
+    <annotation>Главное событие недели или новая игра через призму геймерского микроскопа. </annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1600/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1591,tvigle/multi";</script></link>
+    <title>Темы</title>
+    <annotation>Новости игрового мира и технологий.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1591/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1512,tvigle/multi";</script></link>
+    <title>Игровой невод</title>
+    <annotation>Программа о новых и ожидаемых играх.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1512/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
   </item>
 </channel>
 
