@@ -26,55 +26,32 @@ BEGIN {
   {
     if(XTYPE == "TAG")
     {
-      if(XITEM == "playlist")
+      if(XITEM == "top_video")
       {
-        print "<channel>";
+        print "<channel>"
+        print "<title>" title "</title>"
       }
       else
-      if(XITEM == "track")
+      if(XITEM == "video")
       {
-        print "<item>";
-      }
-      else
-      {
-        if(XITEM == "meta")
-        {
-          tagname = XATTR["rel"];
-        }
-        else
-        {
-          tagname = XITEM;
-        }
-        
-        if(XPATH ~ /^\/playlist\/trackList\/track\// || XPATH == "/playlist/title")
-        {
-          value = "";
-          getXML(ARGV[1],0); 
-          if(XTYPE == "DAT")
-          {
-            value = XITEM;
-            getXML(ARGV[1],1); 
-          }
-          if(tagname == "mediaDisplay")
-          {
-            print "<" tagname " name=\"" value "\"/>"
-          }
-          else
-          {
-            print "<" tagname ">" value "</" tagname ">";
-          }
-        }
+        print "<item>"
+        print "<title>" XATTR["name"] "</title>"
+        print "<image>" XATTR["img"] "</image>"
+        cover = XATTR["img"];
+        sub(/list/, "bg_img", cover);
+        print "<cover>" cover "</cover>"
+        print "<location>http://www.tvigle.ru" XATTR["www"] "</location>"
       }
     }
     else
     if(XTYPE == "END")
     {
-      if(XITEM == "track")
+      if(XITEM == "video")
       {
         print "</item>"
       }
       else
-      if(XITEM == "playlist")
+      if(XITEM == "top_video")
       {
         print "</channel>"
       }

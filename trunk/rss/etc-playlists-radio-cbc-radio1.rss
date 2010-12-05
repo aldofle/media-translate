@@ -42,7 +42,7 @@
 </script>
 
 <onEnter>
-    startitem = "left";
+    startitem = "middle";
 		
   setRefreshTime(1);
 </onEnter>

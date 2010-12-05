@@ -6,13 +6,6 @@
 
   <trackList>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2083,tvigle/multi</link>
-      <title>Все жанры</title>
-      <annotation></annotation>
-      <image>../etc/translate/rss/image/tvigle.png</image>
-      <meta rel="mediaDisplay">photoView</meta>
-    </track>
-    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1882,tvigle/multi</link>
       <title>Новые фильмы (2006-2010)</title>
       <annotation></annotation>
@@ -83,7 +76,7 @@
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1613,tvigle/multi</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Title:Эротика;Channel:1613,tvigle/multi</link>
       <title>Эротика</title>
       <annotation></annotation>
       <image>../etc/translate/rss/image/tvigle.png</image>
@@ -127,6 +120,13 @@
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2059,tvigle/multi</link>
       <title>Опера / Балет / Театр</title>
+      <annotation></annotation>
+      <image>../etc/translate/rss/image/tvigle.png</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2083,tvigle/multi</link>
+      <title>Все жанры (*)</title>
       <annotation></annotation>
       <image>../etc/translate/rss/image/tvigle.png</image>
       <meta rel="mediaDisplay">photoView</meta>

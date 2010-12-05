@@ -25,10 +25,13 @@ local CHANNEL="$opt"
 
 [ -z "$CHANNEL" ] && return 0
 
+get_opt "Title"
+local TITLE="$opt"
+
 local CHANNELFILE="$CACHEPATH/tvigle.$CHANNEL.cache"
 local CHANNELXML=$TMPFILE.xml
 
-TIMELIFE=3600
+TIMELIFE=21600
 
 let tsttime=`date +%s`-$TIMELIFE
 
@@ -43,7 +46,7 @@ if [ $REFRESHCACHE ]; then
   $MSDL -q -o "$CHANNELXML" -p http --useragent "$USERAGENT" "http://www.tvigle.ru/xml/multi.php?cnl=${CHANNEL}"
   if [ -f "$CHANNELXML" ]; then
     if [ "`ls -s "$CHANNELXML" | awk '{print $1}'`" != "0" ]; then
-      TITLE="TViGLE Channel: $CHANNEL"
+    [ -z "$TITLE" ] && TITLE="TViGLE Channel: $CHANNEL"
       if [ -x "$XSLTPROC" ]; then
         $XSLTPROC --stringparam title "$TITLE" multi.xslt "$CHANNELXML" | sed '1d' > $CHANNELFILE
       else

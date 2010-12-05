@@ -39,7 +39,7 @@
     startitem = "middle";
 		
   setRefreshTime(1);
-  columnCount=2;
+  columnCount=3;
 </onEnter>
 
 <onRefresh>
@@ -58,7 +58,7 @@
 	  centerXPC=7 
 		centerYPC=30
 		centerHeightPC=50
-    columnCount=2
+    columnCount=3
 		
 	  rowCount=1
 		menuBorderColor="55:55:55"
@@ -198,22 +198,50 @@
 
 
 <script>
-    channelImage = "";
+    channelImage = "../etc/translate/rss/image/tvigle.png";
   </script><channel>
-  <title>Applications</title>
+  <title>Tvigle - Путешествия</title>
   <item>
-    <link>rss_file://../etc/translate/rss/xspf/streamRenderer.rss</link>
-    <title>Media Stream Renderer</title>
-    <annotation>Play content recieved from a computer, which will find content from an internet browser.</annotation>
-    <image>../etc/translate/rss/image/menu/msr.png</image>
-    <mediaDisplay name="onePartView"/>
+<link><script>translate_base_url+"app,Channel:1493,tvigle/multi";</script></link>
+    <title>Первый туристический канал</title>
+    <annotation>Виртуальное путешествие по миру: всё о зарубежных странах, городах, музеях, гостиницах.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1493/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
   </item>
   <item>
-    <link>rss_file://../etc/translate/rss/xspf/xspfBrowser.rss</link>
-    <title>XSPF Browser</title>
-    <annotation>Browse and play multimedia content and playlists from a local and network storage.</annotation>
-    <image>../etc/translate/rss/image/menu/xspfbrowser.png</image>
-    <mediaDisplay name="threePartsView"/>
+<link><script>translate_base_url+"app,Channel:76,tvigle/multi";</script></link>
+    <title>Diving</title>
+    <annotation>Тайны подводных глубин.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/76/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1370,tvigle/multi";</script></link>
+    <title>Trip по жизни</title>
+    <annotation>Города и страны мира.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1370/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:77,tvigle/multi";</script></link>
+    <title>Затонувшие корабли</title>
+    <annotation>Подводные съемки затонувших кораблей.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/77/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:78,tvigle/multi";</script></link>
+    <title>manta</title>
+    <annotation>Подводное видео.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/78/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:618,tvigle/multi";</script></link>
+    <title>andynelf</title>
+    <annotation>Программы о подводном мире.</annotation>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/618/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
   </item>
 </channel>
 

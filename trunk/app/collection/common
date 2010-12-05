@@ -40,9 +40,17 @@ fi
 COLUMNCOUNT="columnCount=$opt"
 
 get_opt "Start"
-if [ -z "$opt" ]; then
-  opt=middle
-fi
+case $opt in
+  first)
+    opt=left
+    ;;
+  last)
+    opt=right
+    ;;
+  *)
+    opt=middle
+  ;;
+esac
 STARTITEM="  startitem = \"$opt\";"
 
 get_opt "Lines"

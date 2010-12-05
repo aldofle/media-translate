@@ -155,13 +155,6 @@
   </script><channel>
   <title>Tvigle - Фильмы</title>
   <item>
-<link><script>translate_base_url+"app,Channel:2083,tvigle/multi";</script></link>
-    <title>Все жанры</title>
-    <annotation/>
-    <image>../etc/translate/rss/image/tvigle.png</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
 <link><script>translate_base_url+"app,Channel:1882,tvigle/multi";</script></link>
     <title>Новые фильмы (2006-2010)</title>
     <annotation/>
@@ -232,7 +225,7 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link><script>translate_base_url+"app,Channel:1613,tvigle/multi";</script></link>
+<link><script>translate_base_url+"app,Title:Эротика;Channel:1613,tvigle/multi";</script></link>
     <title>Эротика</title>
     <annotation/>
     <image>../etc/translate/rss/image/tvigle.png</image>
@@ -276,6 +269,13 @@
   <item>
 <link><script>translate_base_url+"app,Channel:2059,tvigle/multi";</script></link>
     <title>Опера / Балет / Театр</title>
+    <annotation/>
+    <image>../etc/translate/rss/image/tvigle.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2083,tvigle/multi";</script></link>
+    <title>Все жанры (*)</title>
     <annotation/>
     <image>../etc/translate/rss/image/tvigle.png</image>
     <mediaDisplay name="photoView"/>
