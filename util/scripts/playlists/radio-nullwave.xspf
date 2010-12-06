@@ -10,7 +10,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/club</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/club</meta>
@@ -24,7 +23,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/trance</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/trance</meta>
@@ -38,7 +36,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/house</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/house</meta>
@@ -52,7 +49,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/drumnbass</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/drumnbass</meta>
@@ -66,7 +62,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/breakbeat</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/breakbeat</meta>
@@ -80,7 +75,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/jazz</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/jazz</meta>
@@ -94,7 +88,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/light</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/light</meta>
@@ -108,7 +101,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/lounge</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/lounge</meta>
@@ -127,7 +119,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/russian_pop</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/russian_pop</meta>
@@ -141,7 +132,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/international_pop</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/international_pop</meta>
@@ -155,7 +145,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/eurodance</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/eurodance</meta>
@@ -169,7 +158,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/hits_of_pop</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/hits_of_pop</meta>
@@ -183,7 +171,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/rap</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/rap</meta>
@@ -197,7 +184,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/russian_rap</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/russian_rap</meta>
@@ -211,7 +197,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/rock</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/rock</meta>
@@ -225,7 +210,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/classic_rock</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/classic_rock</meta>
@@ -239,7 +223,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/modern_rock</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/modern_rock</meta>
@@ -253,7 +236,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/russian_rock</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/russian_rock</meta>
@@ -267,7 +249,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/dark</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/dark</meta>
@@ -280,8 +261,7 @@
       
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/tin</meta>
 <meta rel="stream_class">audio</meta>
-<meta rel="stream_soft"></meta>
-<meta rel="stream_server"></meta>
+<meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/tin</meta>
@@ -295,7 +275,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/fury</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/fury</meta>
@@ -309,7 +288,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/metal</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/metal</meta>
@@ -323,7 +301,6 @@
 <meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/balkana</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://217.70.119.252:8000</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">nullwave.ru/balkana</meta>

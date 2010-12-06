@@ -30,11 +30,25 @@
       <location>http://www.radiogrom.com/online/russia/radio_vatan_online.html</location>
       <title>- 104,8 FM - Радио Ватан Махачкала </title>
     
+<meta rel="stream_url">http://stream1.radiostyle.ru:8001/radiovatan</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Various</meta>
+<meta rel="stream_bitrate">96</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_maks_fm_online.html</location>
       <title>- 107,4 FM - Радио Макс FM </title>
     
+<meta rel="stream_url">http://radio.maks-fm.ru:8000/maksfm128</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">MaksFM</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_intervolna_online.html</location>
@@ -127,8 +141,6 @@
       <location>http://www.radiogrom.com/online/russia/ac_fm_radio_online.html</location>
       <title>- 106,0 FM - АС-FM. Иркутск </title>
     
-<meta rel="stream_server">_empty_</meta>
-<meta rel="stream_protocol">file</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/russia/radio_borneo_online.html</location>

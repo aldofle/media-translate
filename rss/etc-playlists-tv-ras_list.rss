@@ -665,6 +665,11 @@
     <ext>210</ext>
     <protocol>mms</protocol>
     <location>mms://85.21.138.210/mclips4</location>
+    <stream_url>mms://85.21.138.210/mclips4</stream_url>
+    <stream_class>video</stream_class>
+    <stream_server>_empty_</stream_server>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
   </item>
   <item>
     <title>Rain TV</title>
@@ -678,6 +683,11 @@
     <ext>net</ext>
     <protocol>mms</protocol>
     <location>mms://tv.gldn.net/rbc</location>
+    <stream_url>mms://tv.gldn.net/rbc</stream_url>
+    <stream_class>video</stream_class>
+    <stream_server>_empty_</stream_server>
+    <stream_type>video/x-msvideo</stream_type>
+    <stream_protocol>rtsp</stream_protocol>
   </item>
   <item>
     <title>HipHop TV</title>

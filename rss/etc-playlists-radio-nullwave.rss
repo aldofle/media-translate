@@ -663,6 +663,14 @@
   <item>
     <title>Tin channel</title>
     <location>http://nsk-ru.l.nullwave.fm:8000/tin</location>
+    <stream_url>http://nsk-ru.l.nullwave.fm:8000/tin</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>nullwave.ru/tin</stream_title>
+    <stream_genre>Metal, gothic</stream_genre>
+    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <title>Fury channel</title>

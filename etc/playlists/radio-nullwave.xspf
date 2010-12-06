@@ -259,6 +259,14 @@
          <title>Tin channel</title>
          <location>http://nsk-ru.l.nullwave.fm:8000/tin</location>
       
+<meta rel="stream_url">http://nsk-ru.l.nullwave.fm:8000/tin</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">nullwave.ru/tin</meta>
+<meta rel="stream_genre">Metal, gothic</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
       <track>
          <title>Fury channel</title>

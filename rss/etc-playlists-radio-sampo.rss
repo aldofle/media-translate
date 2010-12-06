@@ -657,6 +657,14 @@
     <title>Радио Рекорд</title>
     <image>../etc/translate/rss/image/sampo/record.png</image>
     <location>http://radio.sampo.ru/record.mp3</location>
+    <stream_url>http://radio.sampo.ru:8088/record.mp3</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/aacp</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>Radio Record</stream_title>
+    <stream_genre>Dance</stream_genre>
+    <stream_bitrate>32</stream_bitrate>
   </item>
   <item>
     <annotation>Все, кто любит и любим – вот слушатели LOVE RADIO. Песни, звучащие на этой волне на разных языках – только о любви. В программах этой волнующей радиостанции - признания и любовные истории обычных людей, а также романтические воспоминания знаменитых артистов. </annotation>

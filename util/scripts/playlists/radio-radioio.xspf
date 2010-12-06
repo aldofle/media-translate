@@ -8,10 +8,9 @@
    
       <annotation>No syrupy new age or head-banging techno here - just sets of audio art for the mind. Exotic, refreshing, hypnotic electronica, from artists and producers who do it best.</annotation>
       <image>../etc/translate/rss/image/radioio/ambient_thumb.jpg</image>
-<meta rel="stream_url">http://76.76.18.109:8874</meta>
+<meta rel="stream_url">http://76.76.18.103:8870</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8874</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Ambient</meta>
@@ -27,7 +26,6 @@
 <meta rel="stream_url">http://76.76.18.101:8018</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8018</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : 70s Rock</meta>
@@ -44,7 +42,6 @@
 <meta rel="stream_url">http://76.76.18.109:8880</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8880</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Accoustic Cafe</meta>
@@ -61,7 +58,6 @@
 <meta rel="stream_url">http://76.76.18.101:8034</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8034</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Blues</meta>
@@ -78,7 +74,6 @@
 <meta rel="stream_url">http://76.76.18.103:8322</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8322</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Soundtracks</meta>
@@ -95,7 +90,6 @@
 <meta rel="stream_url">http://76.76.18.103:8250</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8250</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : 70s Pop</meta>
@@ -112,7 +106,6 @@
 <meta rel="stream_url">http://76.76.18.109:8658</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8658</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : 80s New Wave</meta>
@@ -129,7 +122,6 @@
 <meta rel="stream_url">http://76.76.18.109:8650</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8650</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Love Songs</meta>
@@ -146,7 +138,6 @@
 <meta rel="stream_url">http://76.76.18.109:8674</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8674</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Classic Rock</meta>
@@ -163,7 +154,6 @@
 <meta rel="stream_url">http://76.76.18.101:8058</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8058</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Classic Acoustic Rock</meta>
@@ -180,7 +170,6 @@
 <meta rel="stream_url">http://76.76.18.109:8666</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8666</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Classic Country</meta>
@@ -197,7 +186,6 @@
 <meta rel="stream_url">http://76.76.18.101:8010</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8010</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Vocal Jazz</meta>
@@ -214,7 +202,6 @@
 <meta rel="stream_url">http://76.76.18.107:8442</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8442</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Classical Favorites</meta>
@@ -231,7 +218,6 @@
 <meta rel="stream_url">http://76.76.18.107:8458</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8458</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Standards</meta>
@@ -248,7 +234,6 @@
 <meta rel="stream_url">http://76.76.18.107:8466</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8466</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Eclectic</meta>
@@ -262,10 +247,9 @@
       <annotation>A balanced blend of the artists and styles that comprise contemporary jazz today: bop, standards, fusion and swing, along with some classics from the past.</annotation>
       <image>../etc/translate/rss/image/radioio/real_jazz_thumb.jpg</image>
     
-<meta rel="stream_url">http://76.76.18.109:8886</meta>
+<meta rel="stream_url">http://76.76.18.107:8884</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8886</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Real Jazz</meta>
@@ -282,7 +266,6 @@
 <meta rel="stream_url">http://76.76.18.107:8866</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8866</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Smooth Jazz</meta>
@@ -299,7 +282,6 @@
 <meta rel="stream_url">http://76.76.18.101:8074</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8074</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : 90s Pop</meta>
@@ -316,7 +298,6 @@
 <meta rel="stream_url">http://76.76.18.107:8474</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8474</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Classic RnB</meta>
@@ -333,7 +314,6 @@
 <meta rel="stream_url">http://76.76.18.109:8682</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8682</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Dead</meta>
@@ -350,7 +330,6 @@
 <meta rel="stream_url">http://76.76.18.109:8898</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8898</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Alt Rock</meta>
@@ -367,7 +346,6 @@
 <meta rel="stream_url">http://76.76.18.103:8234</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8234</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Classical</meta>
@@ -384,7 +362,6 @@
 <meta rel="stream_url">http://76.76.18.109:8714</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8714</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Grunge</meta>
@@ -401,7 +378,6 @@
 <meta rel="stream_url">http://76.76.18.107:8450</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8450</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Todays Pop</meta>
@@ -418,7 +394,6 @@
 <meta rel="stream_url">http://76.76.18.103:8314</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8314</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Indie Rock</meta>
@@ -435,7 +410,6 @@
 <meta rel="stream_url">http://76.76.18.103:8266</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8266</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : 80s Pop</meta>
@@ -452,7 +426,6 @@
 <meta rel="stream_url">http://76.76.18.109:8698</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8698</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : 80s Rock</meta>
@@ -469,7 +442,6 @@
 <meta rel="stream_url">http://76.76.18.109:8706</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8706</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Progressive Rock</meta>
@@ -486,7 +458,6 @@
 <meta rel="stream_url">http://76.76.18.107:8506</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8506</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : 50s 60s Rock</meta>
@@ -503,7 +474,6 @@
 <meta rel="stream_url">http://76.76.18.101:8042</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8042</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Todays Rock</meta>
@@ -520,7 +490,6 @@
 <meta rel="stream_url">http://76.76.18.107:8482</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8482</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Todays Country</meta>
@@ -537,7 +506,6 @@
 <meta rel="stream_url">http://76.76.18.109:8722</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8722</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : 90s Rock</meta>
@@ -554,7 +522,6 @@
 <meta rel="stream_url">http://76.76.18.107:8522</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8522</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Bluegrass</meta>
@@ -571,7 +538,6 @@
 <meta rel="stream_url">http://76.76.18.103:8306</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8306</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Alt Rock Classics</meta>
@@ -588,7 +554,6 @@
 <meta rel="stream_url">http://76.76.18.109:8890</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8890</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Rock Mix</meta>
@@ -602,10 +567,11 @@
       <annotation>Continuous RnB mix featuring music from the early 1980s to today, and all the hit-making RnB artists and songs from then and now. Perfect for listening to at work or at home.</annotation>
       <image>../etc/translate/rss/image/radioio/rnb_mix_thumb.jpg</image>
     
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_url">http://76.76.18.109:8690</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8690</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : RnB Mix</meta>
@@ -619,10 +585,11 @@
       <annotation>The ultimate country music radio station, covering the best from the 70s right up to today. Classics, career-spanning hits, and current favorites from top country artists.</annotation>
       <image>../etc/translate/rss/image/radioio/country_mix_thumb.jpg</image>
     
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_url">http://76.76.18.101:8082</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8082</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Country Mix</meta>
@@ -639,7 +606,6 @@
 <meta rel="stream_url">http://76.76.18.103:8282</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8282</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Alt Country</meta>
@@ -653,10 +619,11 @@
       <annotation>Unique and soothing mix of down-tempo electronica, lazy trip-hop, smooth vocals and deep grooves produces the ultimate chillout.</annotation>
       <image>../etc/translate/rss/image/radioio/chill_thumb.jpg</image>
     
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_server">_empty_</meta>
 <meta rel="stream_url">http://76.76.18.103:8258</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8258</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Chill</meta>
@@ -670,11 +637,9 @@
       <annotation>Historical survey of the funky roots and evolution of hip hop from its emergence in the 70s through its growing influence on RnB in the 80s to the pre-gangsta rap of the 90s.</annotation>
       <image>../etc/translate/rss/image/radioio/classic_hip_hop_thumb.jpg</image>
     
-<meta rel="stream_soft">shoutcast</meta>
 <meta rel="stream_url">http://76.76.18.101:8050</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8050</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Classic Hip-Hop</meta>
@@ -691,7 +656,6 @@
 <meta rel="stream_url">http://76.76.18.103:8290</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8290</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Hair Bands</meta>
@@ -708,7 +672,6 @@
 <meta rel="stream_url">http://76.76.18.103:8242</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8242</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Disco Hits</meta>
@@ -725,7 +688,6 @@
 <meta rel="stream_url">http://76.76.18.101:8066</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8066</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Guitar Heroes</meta>
@@ -742,7 +704,6 @@
 <meta rel="stream_url">http://76.76.18.101:8026</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8026</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Big Band</meta>
@@ -759,7 +720,6 @@
 <meta rel="stream_url">http://76.76.18.107:8514</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8514</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Jam Bands</meta>
@@ -776,7 +736,6 @@
 <meta rel="stream_url">http://76.76.18.107:8498</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8498</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Pop Mix</meta>
@@ -793,7 +752,6 @@
 <meta rel="stream_url">http://76.76.18.107:8490</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.107:8490</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Todays RnB</meta>
@@ -810,7 +768,6 @@
 <meta rel="stream_url">http://76.76.18.101:8098</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8098</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Praise and Worship</meta>
@@ -827,7 +784,6 @@
 <meta rel="stream_url">http://76.76.18.101:8090</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.101:8090</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Dance Hits</meta>
@@ -844,7 +800,6 @@
 <meta rel="stream_url">http://76.76.18.109:8754</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8754</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : 60s Pop</meta>
@@ -861,7 +816,6 @@
 <meta rel="stream_url">http://76.76.18.103:8298</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.103:8298</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : NuSoul</meta>
@@ -878,7 +832,6 @@
 <meta rel="stream_url">http://76.76.18.109:8730</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://76.76.18.109:8730</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">radioio.com : Idols</meta>

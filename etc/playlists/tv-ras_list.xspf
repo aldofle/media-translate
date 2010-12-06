@@ -239,6 +239,11 @@
 <meta rel="ext">210</meta>
 <meta rel="protocol">mms</meta>
 <location>mms://85.21.138.210/mclips4</location>
+<meta rel="stream_url">mms://85.21.138.210/mclips4</meta>
+<meta rel="stream_class">video</meta>
+<meta rel="stream_server">_empty_</meta>
+<meta rel="stream_type">video/x-msvideo</meta>
+<meta rel="stream_protocol">rtsp</meta>
 </track>
 <track>
 <title>Rain TV</title>
@@ -252,6 +257,11 @@
 <meta rel="ext">net</meta>
 <meta rel="protocol">mms</meta>
 <location>mms://tv.gldn.net/rbc</location>
+<meta rel="stream_url">mms://tv.gldn.net/rbc</meta>
+<meta rel="stream_class">video</meta>
+<meta rel="stream_server">_empty_</meta>
+<meta rel="stream_type">video/x-msvideo</meta>
+<meta rel="stream_protocol">rtsp</meta>
 </track>
 <track>
 <title>HipHop TV</title>

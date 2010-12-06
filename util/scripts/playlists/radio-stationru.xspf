@@ -13,7 +13,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station01</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">DFM Club / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1731</location>
   <title>Monte-Carlo Nights</title>
@@ -25,7 +25,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station08</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Monte-Carlo Nights / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1732</location>
   <title>Monte-Carlo HED KANDI</title>
@@ -37,7 +37,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=hadkandi</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Monte-Carlo HED KANDI / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1733</location>
   <title>Monte-Carlo Sweet</title>
@@ -49,7 +49,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=mksweet</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Monte-Carlo Sweet / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1736</location>
   <title>DFM Russian Dance</title>
@@ -61,7 +61,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station03</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">DFM Russian Dance / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=2466</location>
   <title>FM Cafe</title>
@@ -73,7 +73,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=fmcafe</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">FM Cafe / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1730</location>
   <title>Станция 2000</title>
@@ -85,7 +85,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station2000</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Станция 2000 / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1742</location>
   <title>Хит FM Романтика</title>
@@ -97,7 +97,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station14</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Хит FM Романтика / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1996</location>
   <title>Золотой Граммофон</title>
@@ -109,7 +109,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=zg</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Золотой Граммофон / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=7629</location>
   <title>Mixer</title>
@@ -121,7 +121,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=mixer</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Mixer / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track>
 <track>
   <location>http://station.ru/RadioStation.aspx?id=1739</location>
@@ -134,7 +134,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station16</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">DFM Динамит / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1737</location>
   <title>DFM Urban</title>
@@ -146,7 +146,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station04</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">DFM Urban / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1729</location>
   <title>Monte-Carlo Rainbow</title>
@@ -158,7 +158,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=rainbow</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Monte-Carlo Rainbow / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1738</location>
   <title>DFM Love</title>
@@ -170,7 +170,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station10</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">DFM Love / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1740</location>
   <title>Хит FM 2000-е</title>
@@ -182,7 +182,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station12</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Хит FM 2000-е / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1741</location>
   <title>Хит FM 90-e</title>
@@ -194,7 +194,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station13</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Хит FM 90-e / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1735</location>
   <title>DFM Fresh</title>
@@ -206,7 +206,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station02</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">DFM Fresh / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1997</location>
   <title>Биология</title>
@@ -218,7 +218,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=biologia</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Биология / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1726</location>
   <title>Проверено электроникой</title>
@@ -230,19 +230,19 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station06</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Проверено электроникой / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1744</location>
   <title>Хит FM Кино</title>
   <annotation>Музыка из зарубежных фильмов</annotation>
   <image>../etc/translate/rss/image/stationru/hit_kino.gif</image>
-<meta rel="stream_url">mmsh://broadcast03.station.ru/station17</meta>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station09</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">station.ru</meta>
-<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station17</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station09</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Хит FM Кино / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track>
 <track>
   <location>http://station.ru/RadioStation.aspx?id=1743</location>
@@ -255,7 +255,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station15</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Хит FM Italy / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1998</location>
   <title>Уроки Русского</title>
@@ -267,7 +267,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=uroki_russkogo</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Уроки Русского / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=11369</location>
   <title>DFM Восток</title>
@@ -279,7 +279,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station05</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">DFM Восток / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=17729</location>
   <title>Утренние жаворонки Da Best</title>
@@ -291,7 +291,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=utrennie_zhavoronki</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">Утренние жаворонки Da Best / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=56002</location>
   <title>DFM D-скач 90</title>
@@ -303,7 +303,7 @@
 <meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station07</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">DFM D-скач 90 / station.ru</meta>
+<meta rel="stream_title">station.ru</meta>
 </track>
   </trackList>
 </playlist>

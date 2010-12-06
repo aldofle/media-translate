@@ -450,8 +450,6 @@
   <item>
     <location>http://www.radiogrom.com/online/radio_france/one_station_fr_online.html</location>
     <title>- Радио One Station </title>
-    <stream_server>_empty_</stream_server>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/maxx_france_online.html</location>
@@ -460,10 +458,6 @@
   <item>
     <location>http://www.radiogrom.com/online/radio_france/virgin_radio_france_online.html</location>
     <title>- Радио Virgin Radio - Scene Francaise </title>
-    <stream_url>http://www.virginradio.fr/</stream_url>
-    <stream_class>text</stream_class>
-    <stream_type>text/html</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
 </channel>
 

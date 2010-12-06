@@ -943,6 +943,14 @@
     <image>../etc/translate/rss/image/radioio/rnb_mix_thumb.jpg</image>
     <stream_soft>shoutcast</stream_soft>
     <stream_server>_empty_</stream_server>
+    <stream_url>http://76.76.18.109:8690</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>shoutcast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>radioio.com : RnB Mix</stream_title>
+    <stream_genre>RnB Mix</stream_genre>
+    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1268635</location>
@@ -951,6 +959,14 @@
     <image>../etc/translate/rss/image/radioio/country_mix_thumb.jpg</image>
     <stream_soft>shoutcast</stream_soft>
     <stream_server>_empty_</stream_server>
+    <stream_url>http://76.76.18.101:8082</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>shoutcast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>radioio.com : Country Mix</stream_title>
+    <stream_genre>Country Mix</stream_genre>
+    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1269983</location>
@@ -973,6 +989,14 @@
     <image>../etc/translate/rss/image/radioio/chill_thumb.jpg</image>
     <stream_soft>shoutcast</stream_soft>
     <stream_server>_empty_</stream_server>
+    <stream_url>http://76.76.18.103:8258</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>shoutcast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_title>radioio.com : Chill</stream_title>
+    <stream_genre>Chill</stream_genre>
+    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275916</location>

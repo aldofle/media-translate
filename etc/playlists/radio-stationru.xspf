@@ -19,16 +19,37 @@
   <title>Monte-Carlo Nights</title>
   <annotation>Lounge, downtempo и другая мягкая электронная музыка, которая не мешает отдыхать и работать.</annotation>
   <image>../etc/translate/rss/image/stationru/mc_nights.jpg</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station08</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station08</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1732</location>
   <title>Monte-Carlo HED KANDI</title>
   <annotation>Самая модная клубная музыка в стиле house.</annotation>
   <image>../etc/translate/rss/image/stationru/mc_hedkandi.jpg</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/hadkandi</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=hadkandi</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1733</location>
   <title>Monte-Carlo Sweet</title>
   <annotation>Изысканные зарубежные мелодичные хиты.</annotation>
   <image>../etc/translate/rss/image/stationru/mc_sweet.jpg</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/mksweet</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=mksweet</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1736</location>
   <title>DFM Russian Dance</title>
@@ -94,6 +115,13 @@
   <title>Mixer</title>
   <annotation>Качественный клубный хаус от DJ Кирилоff - проверенные хиты и перспективные новинки танцевальной музыки.</annotation>
   <image>../etc/translate/rss/image/stationru/max-mixer.gif</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/mixer</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=mixer</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track>
 <track>
   <location>http://station.ru/RadioStation.aspx?id=1739</location>
@@ -112,6 +140,13 @@
   <title>DFM Urban</title>
   <annotation>Музыка в стиле рэп, хип-хоп, r'n'b</annotation>
   <image>../etc/translate/rss/image/stationru/dfm_urban.gif</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station04</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station04</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1729</location>
   <title>Monte-Carlo Rainbow</title>
@@ -153,6 +188,13 @@
   <title>Хит FM 90-e</title>
   <annotation>Евродэнс и поп-хиты 1990-х.</annotation>
   <image>../etc/translate/rss/image/stationru/hit_90.gif</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station13</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station13</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1735</location>
   <title>DFM Fresh</title>
@@ -170,6 +212,13 @@
   <title>Биология</title>
   <annotation>Рок-музыка в авторской программе Шуры и Левы БИ-2.</annotation>
   <image>../etc/translate/rss/image/stationru/max_biologia.gif</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/biologia</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=biologia</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=1726</location>
   <title>Проверено электроникой</title>
@@ -212,11 +261,25 @@
   <title>Уроки Русского</title>
   <annotation>Качественная отечественная музыка - от хитов до новинок - с комментариями музыкального критика Андрея Бухарина</annotation>
   <image>../etc/translate/rss/image/stationru/max_uroki.gif</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/uroki_russkogo</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=uroki_russkogo</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=11369</location>
   <title>DFM Восток</title>
   <annotation>Самая яркая музыка от лучших представителей Востока.</annotation>
   <image>../etc/translate/rss/image/stationru/Dfm_vostok.jpg</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station05</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station05</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track><track>
   <location>http://station.ru/RadioStation.aspx?id=17729</location>
   <title>Утренние жаворонки Da Best</title>

@@ -466,8 +466,6 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/retro_fm_online.html</location>
     <title>- 88,3 FM - Ретро FM </title>
-    <stream_server>_empty_</stream_server>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/umor_fm_online.html</location>
@@ -506,8 +504,6 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/keks_fm_online.html</location>
     <title>- 89,9 FM - КЕКС FM </title>
-    <stream_server>_empty_</stream_server>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/avtoradio_online.html</location>
@@ -680,8 +676,6 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/sveghee_fm_online.html</location>
     <title>- 98,4 FM - Свежее Радио </title>
-    <stream_server>_empty_</stream_server>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/radio_alla_online.html</location>
@@ -754,6 +748,11 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/monte_carlo_online.html</location>
     <title> - 102,1 FM - Радио Монте-Карло </title>
+    <stream_url>mmsh://broadcast03.station.ru/montecarlo</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_server>_empty_</stream_server>
+    <stream_type>audio/x-ms-wma</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/popsa_online.html</location>
@@ -788,6 +787,11 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/maximum_online.html</location>
     <title>- 103,7 FM - Радио Максимум </title>
+    <stream_url>mmsh://broadcast03.station.ru/maximum</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_server>_empty_</stream_server>
+    <stream_type>audio/x-ms-wma</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/energy_fm_online.html</location>
@@ -801,8 +805,6 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/radio_7_online.html</location>
     <title>- 104,7 FM - Радио 7 </title>
-    <stream_server>_empty_</stream_server>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/radio_next_online.html</location>
@@ -817,12 +819,15 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/russkoe_online.html</location>
     <title>- 105,7 FM - Русское радио </title>
+    <stream_url>mmsh://broadcast03.station.ru/rusradio</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_server>_empty_</stream_server>
+    <stream_type>audio/x-ms-wma</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/europa_plus_online.html</location>
     <title>- 106,2 FM - Европа Плюс </title>
-    <stream_server>_empty_</stream_server>
-    <stream_protocol>file</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/love_radio_online.html</location>
@@ -846,10 +851,21 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/hit_fm_online.html</location>
     <title>- 107,4 FM - Хит-FM </title>
+    <stream_url>mmsh://broadcast03.station.ru/hitfm</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_server>_empty_</stream_server>
+    <stream_type>audio/x-ms-wma</stream_type>
+    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/mvolna_online.html</location>
     <title>- 107,8 FM - Милицейская Волна </title>
+    <stream_url>http://streamall.rambler.ru:80/mv128.mp3</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>shoutcast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_bitrate>128</stream_bitrate>
   </item>
 </channel>
 
