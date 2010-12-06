@@ -2,21 +2,13 @@
 
 = Установка =
 
-_Замечание._ Инструкция справедлива для прошивок, в которых используется не защищенная от записи корневая файловая система.
-
- 
-_Замечание._ Перед модификацией, на плеере требуется разрешить запись в корень файловой системы:
-{{{
-mount -o remount,rw /
-}}}
-
   * Пакет устанавливается в директорию */usr/local/etc/translate*:
 {{{
 mkdir -p /usr/local/etc/translate
 cd /usr/local/etc/translate
 }}}
 
-  _Или_, если объем флеш памяти на плеере не позволяет этого сделать, то можно создать символическую ссылку с именем */usr/local/etc/translate* на реальное расположение файлов (/home ext3 раздел диска):
+  _Или_, если объем доступного места в */usr/local/etc* на плеере не позволяет этого сделать, то можно создать символическую ссылку с именем */usr/local/etc/translate* на реальное расположение файлов (например, если /home это ext3 раздел диска):
 {{{
 mkdir -p /home/translate
 cd /home/translate
@@ -25,14 +17,9 @@ ln -s /home/translate /usr/local/etc/translate
 
   * Загружаем и распаковываем текущую версию пакета:
 {{{
-wget -O /tmp/mt.tar.bz2 http://media-translate.googlecode.com/files/rss_ex_2.0.5.tar.bz2
+wget -O /tmp/mt.tar.bz2 http://media-translate.googlecode.com/files/rss_ex_2.0.6.tar.bz2
 tar -xjf /tmp/mt.tar.bz2
 rm /tmp/mt.tar.bz2
-}}}
-
-  * Для работы требуется наличие символической ссылки */usr/local/bin/rss*, указывающей на */usr/local/etc/translate/rss*:
-{{{
-ln -s ../etc/translate/rss /usr/local/bin/rss
 }}}
 
   * Копируем в домашнюю директорию http-сервера на плеере содержимое директории */usr/local/etc/translate/www*:
@@ -40,6 +27,13 @@ ln -s ../etc/translate/rss /usr/local/bin/rss
 cp -rf /usr/local/etc/translate/www /tmp_orig
 cp -rf /usr/local/etc/translate/www /tmp
 }}}
+
+  _Замечание._ Перед модификацией */tmp_orig*, на плеере требуется разрешить запись в корень файловой системы (этот способ подходит только для прошивок с незащищенным от записи корневым разделом):
+{{{
+mount -o remount,rw /
+}}}
+
+  _Замечание_. На некоторых прошивках домашняя директория встроенного http-сервера может находится в */usr/local/etc/www/*.
 
   * В завершении добавляем дополнительный пункт в меню с интернет-сервисами:
 {{{
@@ -49,6 +43,12 @@ cp -rf /usr/local/etc/translate/www /tmp
   <media:thumbnail url="rss/image/menuEx.png" width="120" height="90" />
   <mediaDisplay name=photoView />
 </item>
+}}}
+
+  Пункт меню следует добавить в файл */usr/local/etc/dvdplayer/savedrss/scripts/menu.rss*, если такого файла не существует, то его следует скопировать из */usr/local/bin/script/menu.rss*:
+{{{
+mkdir -p /usr/local/etc/dvdplayer/savedrss/scripts
+cp -n /usr/local/bin/script/menu.rss /usr/local/etc/dvdplayer/savedrss/scripts/menu.rss
 }}}
 
 _Замечание._ Для работы с некоторыми online-сервисами ([http://ivi.ru IVI.ru]) дополнительно требуется установить [http://curl.haxx.se/ CURL].
@@ -72,13 +72,23 @@ CACHEPATH=/tmp/cached
 YOUTUBE_HD=yes
 VIMEO_HD=yes
 IVI_HD=yes
+TVIGLE_HD=yes
 NET_BANDWIDTH=
 
 UDPXY_URL=http://127.0.0.1:8080/
+
+TRANSLATE_CGI=`sed -n '1p' $BASEPATH/etc/cgi.conf`
 }}}
 
-  Управление HD контентом для Youtube, Vimeo и IVI осуществляется с помощью переменных YOUTUBE_HD, VIMEO_HD и IVI_HD соответственно. 
+  Управление HD контентом для Youtube, Vimeo, Tvigle и IVI осуществляется с помощью переменных YOUTUBE_HD, VIMEO_HD, TVIGLE_HD и IVI_HD соответственно. 
   По умолчанию используется HD качество.
+
+  TRANSLATE_CGI содержит путь к CGI-модулю translate. По умолчанию берется из файла cgi.conf.
+
+  * Файл с настройкой пути к CGI-модулю translate */usr/local/etc/translate/etc/cgi.conf* для RSS-модулей:
+{{{
+http://127.0.0.1/cgi-bin/translate?
+}}}
 
   * Стартовый файл для XSPF Browser */usr/local/etc/translate/etc/index.m3u*:
 {{{
@@ -93,4 +103,4 @@ UDPXY_URL=http://127.0.0.1:8080/
 ftp://127.0.0.1/
 }}}
 
-_Замечание._ Все пути к директориям в плейлистах должны заканчиваться слешем '/'.
+_Замечание._ Все пути к директориям в плейлистах должны заканчиваться символом '/'.
