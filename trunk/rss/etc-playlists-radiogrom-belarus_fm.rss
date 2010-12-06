@@ -516,6 +516,13 @@
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/ba_radio_online.html</location>
     <title>- Радио Би Эй </title>
+    <stream_url>http://radio.solo.by:8002/radioba</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/aacp</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>BA</stream_genre>
+    <stream_bitrate>48</stream_bitrate>
   </item>
 </channel>
 

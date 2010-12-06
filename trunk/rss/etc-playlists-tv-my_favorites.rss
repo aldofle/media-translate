@@ -434,8 +434,10 @@
     <image>../etc/translate/rss/image/menu/internettv.png</image>
     <location>http://live.prahovahd.ro/playlist.php?ext=.xspf</location>
     <autoplay>0</autoplay>
-    <stream_server>_empty_</stream_server>
-    <stream_protocol>file</stream_protocol>
+    <stream_url>http://live.prahovahd.ro/playlist.php?ext=.xspf</stream_url>
+    <stream_class>playlist</stream_class>
+    <stream_type>application/xspf+xml</stream_type>
+    <stream_protocol>http</stream_protocol>
   </item>
 </channel>
 

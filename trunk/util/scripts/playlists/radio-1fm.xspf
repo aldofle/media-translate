@@ -9,7 +9,6 @@
 <meta rel="stream_url">http://tai.egihosting.com:80/70s-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.185:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - 70s</meta>
@@ -23,7 +22,6 @@
 <meta rel="stream_url">http://tai.egihosting.com:80/90s-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.185:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - The 90's</meta>
@@ -37,7 +35,6 @@
 <meta rel="stream_url">http://tai-02.egihosting.com/blues-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.186:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Blues</meta>
@@ -51,7 +48,6 @@
 <meta rel="stream_url">http://tai-02.egihosting.com/reggae-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.186:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - ReggaeTrade</meta>
@@ -65,7 +61,6 @@
 <meta rel="stream_url">http://tai-02.egihosting.com:80/trance-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.186:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Trance</meta>
@@ -79,7 +74,6 @@
 <meta rel="stream_url">http://tai.egihosting.com:80/countryhits-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.185:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Absolute Country Hits</meta>
@@ -93,7 +87,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/acappella-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Acappella</meta>
@@ -107,7 +100,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/adorejazz-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Adore Jazz</meta>
@@ -121,7 +113,6 @@
 <meta rel="stream_url">http://tai-02.egihosting.com/urbanad-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.186:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Urban Adult Choice</meta>
@@ -135,7 +126,6 @@
 <meta rel="stream_url">http://tai.egihosting.com:80/afterbeat-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.185:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Afterbeat Electronica</meta>
@@ -149,7 +139,6 @@
 <meta rel="stream_url">http://tai.egihosting.com:80/euro80s-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.185:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - 80s Channel</meta>
@@ -163,7 +152,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/flashalt-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Flashback Alternatives - Your Home For 80s New-Wave &amp; Classic Alternative Music!</meta>
@@ -177,7 +165,6 @@
 <meta rel="stream_url">http://tai-02.egihosting.com:80/obaroque-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.186:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Otto's Baroque Musick</meta>
@@ -191,7 +178,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/oclassical-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Otto's Classical Musick</meta>
@@ -205,7 +191,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/oopera-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Otto's Opera House</meta>
@@ -219,7 +204,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/urbangos-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - All Times And Urban Gospel</meta>
@@ -233,7 +217,6 @@
 <meta rel="stream_url">http://tai.egihosting.com:80/x-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.185:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Channel X</meta>
@@ -247,7 +230,6 @@
 <meta rel="stream_url">http://tai.egihosting.com:80/christmas-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.185:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Always Christmas</meta>
@@ -261,7 +243,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/50s60s-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - 50s and 60s</meta>
@@ -275,7 +256,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/back280s-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Back To The 80s</meta>
@@ -289,7 +269,6 @@
 <meta rel="stream_url">http://tai-02.egihosting.com/smoothjazz-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.186:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Bay Smooth Jazz</meta>
@@ -303,7 +282,6 @@
 <meta rel="stream_url">http://tai-02.egihosting.com:80/bombayb-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.186:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Bombay Beats</meta>
@@ -317,7 +295,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/onelive-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - One-Live</meta>
@@ -331,7 +308,6 @@
 <meta rel="stream_url">http://tai.egihosting.com:80/chillout-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.185:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - The Chillout Lounge</meta>
@@ -345,7 +321,6 @@
 <meta rel="stream_url">http://sc7.1.fm:26814</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://64.62.252.132:26814</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">Chinamerica Hit Radio</meta>
@@ -359,7 +334,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/clascountry-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Classic Country</meta>
@@ -373,7 +347,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/crr-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Classic Rock Replay</meta>
@@ -387,7 +360,6 @@
 <meta rel="stream_url">http://tai.egihosting.com:80/club1-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.185:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Club!</meta>
@@ -401,7 +373,6 @@
 <meta rel="stream_url">http://tai-02.egihosting.com/country-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.186:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Country</meta>
@@ -415,7 +386,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/disco-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Disco Ball</meta>
@@ -429,7 +399,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/ftv-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - FTV Radio</meta>
@@ -443,7 +412,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/gayway-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM-GayWay Radio</meta>
@@ -457,7 +425,6 @@
 <meta rel="stream_url">http://tai-02.egihosting.com:80/highvolt-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.80.186:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - High Voltage</meta>
@@ -471,7 +438,6 @@
 <meta rel="stream_url">http://tai-03.egihosting.com/jamz-64k-aac</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_server">icyx://72.13.91.71:80</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - Jamz</meta>
@@ -485,7 +451,6 @@
 <meta rel="stream_url">http://sc18.1.fm:5088</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">shoutcast</meta>
-<meta rel="stream_server">icyx://64.71.144.178:5088</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
 <meta rel="stream_title">1.FM - LuxuriaMusic - Exotica, Lounge, Space Age Bachelor Pad, Bossa, Bollywood, Bubblegum,Soft-Psych, Go-Go, Latin Jazz, Sophisticated Rock and Surf music.</meta>
@@ -496,6 +461,14 @@
       <location>http://www.1.fm/TuneIn/SC/tx64k/Listen.aspx</location>
       <title>Talk Radio X</title>
     
+<meta rel="stream_url">http://sc5.1.fm:9400</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">TalkRadioX</meta>
+<meta rel="stream_genre">Talk</meta>
+<meta rel="stream_bitrate">56</meta>
 </track>
   </trackList>
 </playlist>

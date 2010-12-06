@@ -19,6 +19,13 @@
   <title>Хит FM Italy</title>
   <annotation>Итальянская эстрада, поп-музыка</annotation>
   <image>../etc/translate/rss/image/stationru/hit_italy.gif</image>
+<meta rel="stream_url">mmsh://broadcast03.station.ru/station15</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station15</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
+<meta rel="stream_title">station.ru</meta>
 </track>
       <track>
          <location>http://voxsc1.somafm.com:8700</location>

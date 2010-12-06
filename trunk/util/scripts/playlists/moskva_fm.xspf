@@ -407,8 +407,8 @@
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">Promo</meta>
-<meta rel="stream_bitrate">128</meta>
+<meta rel="stream_genre">various</meta>
+<meta rel="stream_bitrate">192</meta>
 </track>
     <track>
       <location></location>
@@ -496,6 +496,13 @@
       <meta rel="fm">96.4</meta>
       <meta rel="name">96_4</meta>
     
+<meta rel="stream_url">http://stream.mradio.fm:8000/mradio_high.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Various</meta>
+<meta rel="stream_bitrate">96</meta>
 </track>
     <track>
       <location>http://217.29.51.162:8000/radio-64k.aac</location>
@@ -949,6 +956,12 @@
       <meta rel="fm">107.8</meta>
       <meta rel="name">107_8</meta>
     
+<meta rel="stream_url">http://streamall.rambler.ru/mv128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
   </trackList>
 </playlist>

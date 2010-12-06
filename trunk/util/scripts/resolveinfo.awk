@@ -45,7 +45,7 @@ function getInfo(url)
   {
     if(XTYPE == "TAG")
     {
-      if(XITEM == "stream")
+      if(XITEM == "stream" && XATTR["url"] != "" && XATTR["class"] != "text")
       {
         server_url = XATTR["server_url"];
         if(XATTR["protocol"] ~ /^http/)

@@ -432,6 +432,13 @@
       <meta rel="name">95_2</meta>
     
     
+<meta rel="stream_url">http://188.127.243.169:80/rock-192</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">various</meta>
+<meta rel="stream_bitrate">192</meta>
 </track>
     <track>
       <location>http://89.208.99.16:8088/zvezda_128</location>
@@ -661,6 +668,13 @@
       <meta rel="fm">100.5</meta>
       <meta rel="name">100_5</meta>
     
+<meta rel="stream_url">http://188.127.243.169:80/best-192</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">various</meta>
+<meta rel="stream_bitrate">192</meta>
 </track>
     <track>
       <location>http://radiogrom.com/online/moskva_fm/classic_fm_online.m3u</location>
@@ -683,6 +697,12 @@
       <meta rel="fm">101.2</meta>
       <meta rel="name">101_2</meta>
     
+<meta rel="stream_url">mmsh://broadcast03.station.ru/dfm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=dfm</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>http://streamall.rambler.ru:80/nashe128.mp3</location>
@@ -694,6 +714,13 @@
       <meta rel="fm">101.7</meta>
       <meta rel="name">101_7</meta>
     
+<meta rel="stream_url">http://streamall.rambler.ru:80/nashe128.mp3</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">Rock</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
     <track>
       <location>http://station.ru/RadioStation.aspx?id=1721</location>
@@ -773,6 +800,12 @@
       <meta rel="fm">103.7</meta>
       <meta rel="name">103_7</meta>
     
+<meta rel="stream_url">mmsh://broadcast03.station.ru/maximum</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">station.ru</meta>
+<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=maximum</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>mmsh://89.20.132.26/v1_1_128</location>
@@ -784,6 +817,11 @@
       <meta rel="fm">104.2</meta>
       <meta rel="name">104_2</meta>
     
+<meta rel="stream_url">mmsh://89.20.132.26/v1_1_128</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_server">_empty_</meta>
+<meta rel="stream_type">audio/x-ms-wma</meta>
+<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>http://webcast.emg.fm:55655/radiosept128.mp3</location>

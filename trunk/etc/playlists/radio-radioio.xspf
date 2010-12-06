@@ -569,6 +569,14 @@
     
 <meta rel="stream_soft">shoutcast</meta>
 <meta rel="stream_server">_empty_</meta>
+<meta rel="stream_url">http://76.76.18.109:8690</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : RnB Mix</meta>
+<meta rel="stream_genre">RnB Mix</meta>
+<meta rel="stream_bitrate">64</meta>
 </track>
     <track>
       <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1268635</location>
@@ -579,6 +587,14 @@
     
 <meta rel="stream_soft">shoutcast</meta>
 <meta rel="stream_server">_empty_</meta>
+<meta rel="stream_url">http://76.76.18.101:8082</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Country Mix</meta>
+<meta rel="stream_genre">Country Mix</meta>
+<meta rel="stream_bitrate">64</meta>
 </track>
     <track>
       <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1269983</location>
@@ -605,6 +621,14 @@
     
 <meta rel="stream_soft">shoutcast</meta>
 <meta rel="stream_server">_empty_</meta>
+<meta rel="stream_url">http://76.76.18.103:8258</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">radioio.com : Chill</meta>
+<meta rel="stream_genre">Chill</meta>
+<meta rel="stream_bitrate">64</meta>
 </track>
     <track>
       <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275916</location>
