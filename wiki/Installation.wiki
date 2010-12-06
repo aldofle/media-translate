@@ -45,10 +45,10 @@ mount -o remount,rw /
 </item>
 }}}
 
-  Пункт меню следует добавить в файл */usr/local/etc/dvdplayer/savedrss/scripts/menu.rss*, если такого файла не существует, то его следует скопировать из */usr/local/bin/script/menu.rss*:
+  Пункт меню следует добавить в файл */usr/local/etc/dvdplayer/savedrss/scripts/menu.rss*, если такого файла не существует, то его следует скопировать из */usr/local/bin/scripts/menu.rss*:
 {{{
 mkdir -p /usr/local/etc/dvdplayer/savedrss/scripts
-cp -n /usr/local/bin/script/menu.rss /usr/local/etc/dvdplayer/savedrss/scripts/menu.rss
+cp -n /usr/local/bin/scripts/menu.rss /usr/local/etc/dvdplayer/savedrss/scripts/menu.rss
 }}}
 
 _Замечание._ Для работы с некоторыми online-сервисами ([http://ivi.ru IVI.ru]) дополнительно требуется установить [http://curl.haxx.se/ CURL].
