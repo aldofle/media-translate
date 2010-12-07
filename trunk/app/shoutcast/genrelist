@@ -43,7 +43,7 @@ if [ $REFRESHCACHE ]; then
       if [ -x "$XSLTPROC" ]; then
         $XSLTPROC genrelist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
       else
-        awk -f genrelist.awk "$TEMPDL" > $CHANNELFILE
+        awk -f getxml.awk  -f genrelist.awk "$TEMPDL" > $CHANNELFILE
       fi
     fi
     rm -f "$TEMPDL"

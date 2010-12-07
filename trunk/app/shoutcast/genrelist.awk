@@ -17,23 +17,27 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
+# @include getxml.awk
+
 BEGIN {
+  UNESCAPEXML = 0;
 	print "<channel>"
-  print "  <title>Shoutcast Radio Genre List</title>"
-}
-
-{
-  if(match($0, /.*<genre *name="(.*)"/, arr))
+  print "<title>Shoutcast Radio Genre List</title>"
+  while ( getXML(ARGV[1],1) ) 
   {
-    print "<item>"
-    print "<name>" arr[1] "</name>"
-    genre = arr[1];
-    gsub(" ", "%20", genre)
-    print "<link>http://127.0.0.1/cgi-bin/translate?app," genre ",shoutcast/genre</link>"
-    print "</item>"
+    if(XTYPE == "TAG")
+    {
+      if(XITEM == "genre")
+      {
+        print "<item>"
+        for (attrName in XATTR)
+          print "<" attrName ">" XATTR[attrName] "</" attrName ">"
+        genre = XATTR["name"];
+        gsub(" ", "%20", genre)
+        print "<link>http://127.0.0.1/cgi-bin/translate?app," genre ",shoutcast/genre</link>"
+        print "</item>"
+      }
+    }
   }
-}
-
-END {
 	print "</channel>"
 }
