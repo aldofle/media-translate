@@ -39,10 +39,12 @@ fi
 if [ $REFRESHCACHE ]; then
   $WGET -q -O "$TEMPDL" --header "User-Agent: $USERAGENT" ${SHOUTCAST_U}genrelist${SHOUTCAST_K}
   if [ -f "$TEMPDL" ]; then
-    if [ -x "$XSLTPROC" ]; then
-      $XSLTPROC genrelist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
-    else
-      awk -f genrelist.awk "$TEMPDL" > $CHANNELFILE
+    if [ "`ls -s "$TEMPDL" | awk '{print $1}'`" != "0" ]; then
+      if [ -x "$XSLTPROC" ]; then
+        $XSLTPROC genrelist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
+      else
+        awk -f genrelist.awk "$TEMPDL" > $CHANNELFILE
+      fi
     fi
     rm -f "$TEMPDL"
   fi
