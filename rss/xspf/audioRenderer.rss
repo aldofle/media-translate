@@ -56,11 +56,11 @@
     request_image   = getStringArrayAt(arr, 10);
     no_renderer     = getStringArrayAt(arr, 11);
     
+    track_image = request_image;
+  
     if(stream_current_song != "" &amp;&amp; stream_current_song != null)
       track_image = translate_base_url + "app,Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
       
-      track_image = request_image;
-    
     stream_soft     = "";
   }
   else
