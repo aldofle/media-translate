@@ -59,7 +59,6 @@
     if(stream_current_song != "" &amp;&amp; stream_current_song != null)
       track_image = translate_base_url + "app,Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
       
-    if(stream_status_url == "_empty_")
       track_image = request_image;
     
     stream_soft     = "";
