@@ -76,7 +76,7 @@
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Title:Эротика;Channel:1613,tvigle/multi</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1613,tvigle/multi</link>
       <title>Эротика</title>
       <annotation></annotation>
       <image>../etc/translate/rss/image/tvigle.png</image>
