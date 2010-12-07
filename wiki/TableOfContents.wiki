@@ -11,4 +11,5 @@
     * [ModuleMediaStreamRenderer Media Stream Renderer]
     * [ModuleXSPFBrowser XSPF Browser]
     * [ModuleYouTube YouTube]
+    * [ModuleTvigle Tvigle]
   * [ChangesLog История версий]
