@@ -15,7 +15,7 @@
 {{{
 XSLTPROC=/opt/bin/xsltproc
 }}}
-  _Или_, можно воспользоваться статически слинкованной утилитой [http://media-translate.googlecode.com/files/xsltproc.tar.bz2 xsltproc]. Пример установки в /usr/local/etc/translate/bin:
+  _Или_, можно воспользоваться статически слинкованной утилитой *[http://media-translate.googlecode.com/files/xsltproc.tar.bz2 xsltproc]*. Пример установки в */usr/local/etc/translate/bin*:
 {{{
 cd /usr/local/etc/translate/bin
 wget -O - http://media-translate.googlecode.com/files/xsltproc.tar.bz2 | tar -xj
