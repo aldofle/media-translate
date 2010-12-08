@@ -10,7 +10,14 @@
 
   * часть контента на Tvigle представлена в виде не поддерживаемых .swf и.flv файлов (однако, в некоторых каналах, видео низкого качества, все же доступно в mp4 формате);
 
-  * некоторые каналы содержат большое количество видеороликов, что может привести к ошибке при обработке таких каналов. В этом случае, если на плеере установлен *[http://www.nslu2-linux.org/wiki/Optware/HomePage optware]*, рекомендуется дополнительно установить *libxslt* и добавить переменную XSLTPROC в *translate.conf*:
+  * некоторые каналы содержат большое количество видеороликов, что может привести к ошибке при обработке таких каналов. 
+  В этом случае, если на плеере установлен *[http://www.nslu2-linux.org/wiki/Optware/HomePage optware]*, рекомендуется дополнительно установить *libxslt* и добавить переменную XSLTPROC в *translate.conf*:
 {{{
 XSLTPROC=/opt/bin/xsltproc
+}}}
+  _Или_, можно воспользоваться статически слинкованной утилитой [http://media-translate.googlecode.com/files/xsltproc.tar.bz2 xsltproc]. Пример установки в /usr/local/etc/translate/bin:
+{{{
+cd /usr/local/etc/translate/bin
+wget -O - http://media-translate.googlecode.com/files/xsltproc.tar.bz2 | tar -xj
+echo -e '\nXSLTPROC=/usr/local/etc/translate/bin/xsltproc' >> ../etc/translate.conf
 }}}
