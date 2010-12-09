@@ -107,7 +107,7 @@ BASEPATH=/usr/local/etc/translate
 export AWKPATH=$BASEPATH/lib:.
 
 WGET=/usr/bin/wget
-CURL=/usr/local/bin/curl
+CURL=/opt/bin/curl
 XSLTPROC=/opt/bin/xsltproc
 
 STARTPOINT=$BASEPATH/etc/index.m3u
