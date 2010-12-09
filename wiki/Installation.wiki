@@ -130,16 +130,16 @@ TRANSLATE_CGI=`sed -n '1p' $BASEPATH/etc/cgi.conf`
   Управление HD контентом для Youtube, Vimeo, Tvigle и IVI осуществляется с помощью переменных YOUTUBE_HD, VIMEO_HD, TVIGLE_HD и IVI_HD соответственно. 
   По умолчанию используется HD качество.
 
-  TRANSLATE_CGI содержит путь к CGI-модулю translate. По умолчанию берется из файла cgi.conf.
+  TRANSLATE_CGI содержит путь к CGI-модулю *translate*. По умолчанию берется из файла *cgi.conf*.
 
-  STARTPOINT - содержит путь к стартовому файлу XSPF Browser.
+  STARTPOINT - содержит путь к стартовому файлу [ModuleXSPFBrowser XSPF Browser].
 
-  * Файл с настройкой пути к CGI-модулю translate */usr/local/etc/translate/etc/cgi.conf* для RSS-модулей:
+  * Файл с настройкой пути к CGI-модулю *translate* для RSS-модулей */usr/local/etc/translate/etc/cgi.conf*:
 {{{
 http://127.0.0.1/cgi-bin/translate?
 }}}
 
-  * Стартовый файл для XSPF Browser */usr/local/etc/translate/etc/index.m3u*:
+  * Стартовый файл для [ModuleXSPFBrowser XSPF Browser] */usr/local/etc/translate/etc/index.m3u*:
 {{{
 #EXTM3U
 #EXTINF:-1,Плеер HDD
