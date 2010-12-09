@@ -51,7 +51,53 @@ mkdir -p /usr/local/etc/dvdplayer/savedrss/scripts
 cp -n /usr/local/bin/scripts/menu.rss /usr/local/etc/dvdplayer/savedrss/scripts/menu.rss
 }}}
 
-_Замечание._ Для работы с некоторыми online-сервисами ([http://ivi.ru IVI.ru]) дополнительно требуется установить [http://curl.haxx.se/ CURL].
+== Вспомогательные утилиты ==
+
+  Для полной работоспособности пакета дополнительно требуются следующие утилиты:
+
+=== [http://curl.haxx.se/ CURL] ===
+
+  Необходима для работы с некоторыми online-сервисами, в частности [http://ivi.ru IVI.ru].
+
+  Входит в состав пакета *libcurl* для *[http://www.nslu2-linux.org/wiki/Optware/HomePage optware]*.
+{{{
+ipkg install libcurl
+}}}
+
+  Путь к утилите *curl* прописывается в переменной CURL в *translate.conf*:
+{{{
+CURL=/opt/bin/curl
+}}}
+
+  Можно также воспользоваться статически слинкованной утилитой *[http://media-translate.googlecode.com/files/curl.tar.bz2 curl]*. Пример установки в */usr/local/etc/translate/bin*:
+{{{
+cd /usr/local/etc/translate/bin
+wget -O - http://media-translate.googlecode.com/files/curl.tar.bz2 | tar -xj
+sed -i '/^CURL=/d' ../etc/translate.conf
+echo -e '\nCURL=$BASEPATH/bin/curl' >> ../etc/translate.conf
+}}}
+
+=== [http://xmlsoft.org/XSLT/ XSLTPROC] ===
+
+  Требуется для быстрой обработки больших xml-файлов.
+
+  Входит в состав пакета *xsltlib* для *[http://www.nslu2-linux.org/wiki/Optware/HomePage optware]*.
+{{{
+ipkg install xsltlib
+}}}
+
+  Путь к утилите *xsltproc* прописывается в переменной XSLTPROC в *translate.conf*:
+{{{
+XSLTPROC=/opt/bin/xsltproc
+}}}
+
+  Можно также воспользоваться статически слинкованной утилитой *[http://media-translate.googlecode.com/files/xsltproc.tar.bz2 xsltproc]*. Пример установки в */usr/local/etc/translate/bin*:
+{{{
+cd /usr/local/etc/translate/bin
+wget -O - http://media-translate.googlecode.com/files/xsltproc.tar.bz2 | tar -xj
+sed -i '/^XSLTPROC=/d' ../etc/translate.conf
+echo -e '\nXSLTPROC=$BASEPATH/bin/xsltproc' >> ../etc/translate.conf
+}}}
 
 = Настройка =
 
@@ -62,6 +108,7 @@ export AWKPATH=$BASEPATH/lib:.
 
 WGET=/usr/bin/wget
 CURL=/usr/local/bin/curl
+XSLTPROC=/opt/bin/xsltproc
 
 STARTPOINT=$BASEPATH/etc/index.m3u
 XSPFSCAN=$BASEPATH/etc/xspf.scan
@@ -84,6 +131,8 @@ TRANSLATE_CGI=`sed -n '1p' $BASEPATH/etc/cgi.conf`
   По умолчанию используется HD качество.
 
   TRANSLATE_CGI содержит путь к CGI-модулю translate. По умолчанию берется из файла cgi.conf.
+
+  STARTPOINT - содержит путь к стартовому файлу XSPF Browser.
 
   * Файл с настройкой пути к CGI-модулю translate */usr/local/etc/translate/etc/cgi.conf* для RSS-модулей:
 {{{
