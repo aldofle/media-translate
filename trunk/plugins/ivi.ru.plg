@@ -20,7 +20,7 @@
 # Translate CGI module
 # 'ivi.ru' plug-in
 #
-# version: 1.1 07.10.2010 13:42:21
+# version: 1.2 10.12.2010 21:21
 #
 # http://www.ivi.ru/video/view/?id=2756
 # http://france.ivi.ru/movie.php?id=2490
@@ -34,7 +34,7 @@ stream_type='video/x-flv'
 stream_url=''
 server_type='ivi'
 
-if echo "${arg_url}" | grep -q -s '\(www\.\|france\.\)*ivi\.ru/\(video/view/\|movie\.php\)?id=[0-9].*$'; then 
+if echo "${arg_url}" | grep -q -s '\(www\.\|france\.\)*ivi\.ru/\(video/view/\|movie\.php\)?id=.*$'; then 
 
   get_opt "HD"
   [ -z "$opt" ] && opt=$IVI_HD
@@ -46,18 +46,21 @@ if echo "${arg_url}" | grep -q -s '\(www\.\|france\.\)*ivi\.ru/\(video/view/\|mo
       hdc='lo'
   esac
   
-  local video_id=`echo "$arg_url" | sed -e 's/.*[?&]id=//;s/&.*//`
-  
-  host_response=`$CURL -s -o "${TMPFILE}" --user-agent "${USERAGENT}" --data-ascii "{\"method\":\"da.content.get\",\"params\":[\"${video_id}\",{\"site\":1}]}" --referer "http://www.ivi.ru/images/da/skin1.64.swf?" --header "FlashAuth: Basic Zmxhc2hfcGxheWVyOmZsYXNoX3BsYXllcg=="  http://api.digitalaccess.ru/api/json/ 2>&1`
-  
+  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
   if [ -f ${TMPFILE} ]; then
-    stream_url=`sed "s/.*files\": \[//;s/\].*//;s/}, *{/}\n{/g" ${TMPFILE} | awk "/FLV-${hdc}/"' {match($2, /\"(.*)\".*$/, arr); print arr[1];}'`
-    protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
-    icy_name=`sed 's/.*"title": "//;s/".*//g' ${TMPFILE} | unitohtml | $XCODE -s -l | $TOUTF8`
+    local video_id=`grep -i "'flashvars':" ${TMPFILE} | awk '{match($0, /"videoId": *([0-9]+)/, arr);print arr[1];}' | urldecode`
     rm -f $TMPFILE
-    return $RC_OK
-  fi
-  
+    
+    host_response=`$CURL -s -o "${TMPFILE}" --user-agent "${USERAGENT}" --data-ascii "{\"method\":\"da.content.get\",\"params\":[\"${video_id}\",{\"site\":1}]}" --referer "http://www.ivi.ru/images/da/skin1.64.swf?" --header "FlashAuth: Basic Zmxhc2hfcGxheWVyOmZsYXNoX3BsYXllcg=="  http://api.digitalaccess.ru/api/json/ 2>&1`
+    
+    if [ -f ${TMPFILE} ]; then
+      stream_url=`sed "s/.*files\": \[//;s/\].*//;s/}, *{/}\n{/g" ${TMPFILE} | awk "/FLV-${hdc}/"' {match($2, /\"(.*)\".*$/, arr); print arr[1];}'`
+      protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
+      icy_name=`sed 's/.*"title": "//;s/".*//g' ${TMPFILE} | unitohtml | $XCODE -s -l | $TOUTF8`
+      rm -f $TMPFILE
+      return $RC_OK
+    fi
+  fi  
 fi
 
 return $RC_FAIL

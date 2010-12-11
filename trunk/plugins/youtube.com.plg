@@ -44,7 +44,7 @@ esac
 local video_id=`echo "$arg_url" | sed -e 's/.*v=//;s/.*\///;s/&.*//'`
 local CACHEFILE=$CACHEPATH/yt.$video_id
 
-stream_type='video/x-flv'
+stream_type='video/mp4'
 stream_url=''
 server_type='youtube'
 protocol='http'
