@@ -104,5 +104,9 @@ http://www.radiogrom.com/online/belarus_fm/evroradio_online.html
 {{{
 http://www.live-online-tv.com/tv/planeteinsolite.html
 }}}
+  * [http://mults.spb.ru/ mults.spb.ru]
+{{{
+http://mults.spb.ru/mults/?id=696
+}}}
   * [http://www.last.fm/api Last.FM]
   Получение картинки с исполнителем для текущего проигрываемого трека.
