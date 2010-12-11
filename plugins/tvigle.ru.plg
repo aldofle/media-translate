@@ -31,7 +31,7 @@
 
 if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; then 
 
-  stream_type='video/x-flv'
+  stream_type='video/mp4'
   stream_url=''
   server_type='tvigle'
 
@@ -61,13 +61,15 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; t
       ;;
       *)
         if grep -qs 'bigmp4="' ${TMPFILE}; then
-          stream_type='video/mp4'
           stream_url=`grep "bigmp4=" ${TMPFILE} | sed "s/.* bigmp4=\"//;s/\".*//g"`
         elif grep -qs ' file="' ${TMPFILE}; then
           stream_url=`grep " file=" ${TMPFILE} | sed "s/.* file=\"//;s/\".*//g"`
         fi
       ;;
     esac
+    if echo $stream_url | grep -qs ".flv$"; then
+      stream_type='video/x-flv'
+    fi
     protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
     icy_name=`grep "name=" ${TMPFILE} | sed 's/.* name="//;s/".*//g'`
     rm -f $TMPFILE
