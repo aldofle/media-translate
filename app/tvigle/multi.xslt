@@ -59,7 +59,7 @@
 
 <xsl:template match="@www">
   <location>
-    <xsl:value-of select="concat('http://www.tvigle.ru',.)"/>
+    <xsl:value-of select="concat('http://www.tvigle.ru',str:replace(string(.), 'http://www.tvigle.ru', ''))"/>
   </location>
 </xsl:template>
 

@@ -40,7 +40,9 @@ BEGIN {
         cover = XATTR["img"];
         sub(/list/, "bg_img", cover);
         print "<cover>" cover "</cover>"
-        print "<location>http://www.tvigle.ru" XATTR["www"] "</location>"
+        location = XATTR["www"];
+        sub(/^http:\/\/www\.tvigle\.ru/, "", location);
+        print "<location>http://www.tvigle.ru" location "</location>"
       }
     }
     else
