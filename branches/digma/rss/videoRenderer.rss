@@ -273,7 +273,7 @@
   		</text>
 
       <image redraw="yes" offsetXPC="93" offsetYPC="2" widthPC="6" heightPC="25">
-        <script>if(no_renderer != 1) "../etc/translate/rss/image/msr.png";</script>
+        <script>if(no_renderer != 1) "../etc/translate/rss/image/msr.png"; else "../etc/translate/app/lastfm/empty.png";</script>
     	</image>
 
   		<text align="right" redraw="yes" offsetXPC="2" offsetYPC="70" widthPC="94" heightPC="15" fontSize="12" backgroundColor="-1:-1:-1" foregroundColor="0:0:0">
