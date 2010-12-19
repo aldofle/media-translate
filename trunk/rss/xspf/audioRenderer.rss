@@ -333,7 +333,7 @@
 	</text>
 
   <image redraw="yes" offsetXPC="87" offsetYPC="66" widthPC="7" heightPC="6">
-    <script>if(no_renderer != 1) "../etc/translate/rss/image/msr.png";</script>
+    <script>if(no_renderer != 1) "../etc/translate/rss/image/msr.png"; else "../etc/translate/rss/image/empty.png";</script>
 	</image>
 
 	<text redraw="yes" offsetXPC="6" offsetYPC="74" widthPC="60" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="255:255:150">
