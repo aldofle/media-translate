@@ -18,49 +18,48 @@
 #
 
 # Translate CGI module
-# 'ivi.ru' plug-in
+# 'mults.spb.ru' plug-in
 #
-# version: 1.2 10.12.2010 21:21
+# version: 1.0 18.12.2010 16:03
 #
-# http://www.ivi.ru/video/view/?id=2756
-# http://france.ivi.ru/movie.php?id=2490
+# http://www.zoomby.ru/watch/4396-kamenskaya-3
 #
 # options:
 #   HD:[0|1]
-#
-# required CURL
 
-stream_type='video/x-flv'
+stream_type='video/mp4'
 stream_url=''
-server_type='ivi'
+server_type='zoomby'
 
-if echo "${arg_url}" | grep -q -s '\(www\.\|france\.\)*ivi\.ru/\(video/view/\|movie\.php\)?id=.*$'; then 
+local SMILINFO=$TMPFILE.smilinfo
+
+if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/watch/.*$'; then 
 
   get_opt "HD"
-  [ -z "$opt" ] && opt=$IVI_HD
+  [ -z "$opt" ] && opt=$ZOOMBY_HD
   case $opt in
     yes|Yes|YES|1)
-      hdc='hi'
+      hdc='hd'
     ;;
     *)
-      hdc='lo'
+      hdc='sd'
     ;;
   esac
-  
+
   host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
+
   if [ -f ${TMPFILE} ]; then
-    local video_id=`grep -i "'flashvars':" ${TMPFILE} | awk '{match($0, /"videoId": *([0-9]+)/, arr);print arr[1];}' | urldecode`
-    rm -f $TMPFILE
-    
-    host_response=`$CURL -s -o "${TMPFILE}" --user-agent "${USERAGENT}" --data-ascii "{\"method\":\"da.content.get\",\"params\":[\"${video_id}\",{\"site\":1}]}" --referer "http://www.ivi.ru/images/da/skin1.64.swf?" --header "FlashAuth: Basic Zmxhc2hfcGxheWVyOmZsYXNoX3BsYXllcg=="  http://api.digitalaccess.ru/api/json/ 2>&1`
-    
+    local smil_file="http://www.zoomby.ru`grep -i "video=/get/playlist" ${TMPFILE} | sed -n '1p' | awk '{match($0,/=(\/get\/playlist\/[^&]+)&/,arr);print arr[1];}'`"
+    host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${smil_file}" 2>&1`
     if [ -f ${TMPFILE} ]; then
-      stream_url=`sed "s/.*files\": \[//;s/\].*//;s/}, *{/}\n{/g" ${TMPFILE} | awk "/FLV-${hdc}/"' {match($2, /\"(.*)\".*$/, arr); print arr[1];}'`
+      awk -f getxml.awk -f ${PLUGINS_DIR}zoomby.ru.smil.awk "$TMPFILE" > $SMILINFO
+      stream_url="`sed -n '2p' $SMILINFO | awk -v hdc=$hdc '{url=$2; a="_" hdc ".f4v"; gsub(/_.d\.f4v/, a, url); print url;}'`"
       protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
-      icy_name=`sed 's/.*"title": "//;s/".*//g' ${TMPFILE} | unitohtml | $XCODE -s -l | $TOUTF8`
+      icy_name=`sed -n '1p' $SMILINFO`
+      rm -f $SMILINFO
       rm -f $TMPFILE
-      return $RC_OK
     fi
+    return $RC_OK
   fi  
 fi
 

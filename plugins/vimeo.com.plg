@@ -48,6 +48,7 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*vimeo\.com.*/\(moogaloop.swf?clip_i
     ;;
     *)
       hdc=''
+    ;;
   esac
   
   local video_id=`echo "$arg_url" | sed -e 's/.*\///;s/&.*//;s/.*=//'`
