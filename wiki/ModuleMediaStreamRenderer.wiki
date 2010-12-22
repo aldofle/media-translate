@@ -4,7 +4,7 @@
 
 RSS/CGI-модуль предназначен для управления проигрыванием медиапотоков на плеере с локального компьютера.
 
-Адрес web-интерфейса: http://player/cgi-bin/renderer
+Адрес web-интерфейса: http://<player_ip>/cgi-bin/renderer
 
 = Детали =
 
@@ -23,7 +23,7 @@ http://player/cgi-bin/translate?renderer-play,,
 === Firefox ===
 
 Установка для Firefox:
-  # cкачиваем http://player/bin/playonplayer.xpi;
+  # cкачиваем http://<player_ip>/bin/playonplayer.xpi;
   # кидаем xpi в окно Firefox для установки расширения;
   # после перезагрузки браузера следует выставить IP адрес или имя плеера в опциях расширения (по умолчанию player).
 
@@ -33,7 +33,7 @@ http://player/cgi-bin/translate?renderer-play,,
 === Google Chrome ===
 
 Установка для Google Chrome:
-  # cкачиваем http://player/bin/playonplayer.crx;
+  # cкачиваем http://<player_ip>/bin/playonplayer.crx;
   # в настройках add-on следует выставить IP адрес или имя плеера (по умолчанию player).
 
 Удаление для Google Chrome:
@@ -42,7 +42,7 @@ http://player/cgi-bin/translate?renderer-play,,
 === Internet Explorer ===
 
 Установка для Internet Explorer:
-  # cкачиваем http://player/bin/playonplayer.exe;
+  # cкачиваем http://<player_ip>/bin/playonplayer.exe;
   # запускаем его для установки расширения;
   # IP адрес или имя плеера надо будет поменять в реестре HKEY_LOCAL_MACHINE\SOFTWARE\RSSEx\PlayerIP.
 
