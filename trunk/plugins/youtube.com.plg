@@ -39,6 +39,7 @@ case $opt in
   ;;
   *)
     hdc=''
+  ;;
 esac
 
 local video_id=`echo "$arg_url" | sed -e 's/.*v=//;s/.*\///;s/&.*//'`

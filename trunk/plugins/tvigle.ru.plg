@@ -43,6 +43,7 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; t
     ;;
     *)
       hdc='lo'
+    ;;
   esac
   
   local video_id=`echo "$arg_url" | sed -e 's/.*[?&]video=//;s/&.*//`
