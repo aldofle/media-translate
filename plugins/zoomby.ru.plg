@@ -41,8 +41,11 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/watch/.*$'; then
     yes|Yes|YES|1)
       hdc='hd'
     ;;
-    *)
+    no|No|NO|0)
       hdc='sd'
+    ;;
+    *)
+      hdc='md'
     ;;
   esac
 
@@ -53,7 +56,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/watch/.*$'; then
     host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${smil_file}" 2>&1`
     if [ -f ${TMPFILE} ]; then
       awk -f getxml.awk -f ${PLUGINS_DIR}zoomby.ru.smil.awk "$TMPFILE" > $SMILINFO
-      stream_url="`sed -n '2p' $SMILINFO | awk -v hdc=$hdc '{url=$2; a="_" hdc ".f4v"; gsub(/_.d\.f4v/, a, url); print url;}'`"
+      stream_url="`sed -n '2p' $SMILINFO | awk -v hdc=$hdc '{url=$2; a="_" hdc ".f4v.f4v"; gsub(/_.d\.f4v/, a, url); print url;}'`"
       protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
       icy_name=`sed -n '1p' $SMILINFO`
       rm -f $SMILINFO

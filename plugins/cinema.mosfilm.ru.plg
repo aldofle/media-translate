@@ -29,21 +29,24 @@ stream_type='video/x-msvideo'
 stream_url=''
 server_type='_translate_'
 
-if echo "${arg_url}" | grep -q -s 'www\.cinema\.mosfilm\.ru/PrivateVideo.aspx?id=.*$'; then 
+if echo "${arg_url}" | grep -q -s '\(www\.\)*cinema\.mosfilm\.ru/PrivateVideo.aspx?id=.*$'; then 
 
   local video_id=`echo "$arg_url" | sed -e 's/.*[&?]id=//;s/&.*//'`
 
-  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
+  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://www.cinema.mosfilm.ru/GetMovieCode.ashx?purchaseID=${video_id}" 2>&1`
   if [ -f ${TMPFILE} ]; then
-    local film_title=`grep 'class="movieName"' ${TMPFILE} | sed 's/.*class=[^>]*>//;s/<\/.*//g'`
-    host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://www.cinema.mosfilm.ru/GetMovieCode.ashx?purchaseID=${video_id}" 2>&1`
+    local code=`sed -n '1p' ${TMPFILE}`
+    host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
+    local film_title=
     if [ -f ${TMPFILE} ]; then
-      stream_url="http://www.cinema.mosfilm.ru/MovieWithOutSessionState.ashx?code=`sed -n '1p' ${TMPFILE}`"
-      protocol='http'
-      icy_name="$film_title"
-      rm -f $TMPFILE
-      return $RC_OK
+      film_title=`grep 'class="movieName"' ${TMPFILE} | sed 's/.*class=[^>]*>//;s/<\/.*//g'`
     fi
+    stream_url="http://www.cinema.mosfilm.ru/MovieWithOutSessionState.ashx?code=${code}"
+    #stream_url="http://81.29.132.170/DataStorageService.asmx/GetOnline?code=${code}"
+    protocol='http'
+    icy_name="$film_title"
+    rm -f $TMPFILE
+    return $RC_OK
   fi  
 fi
 
