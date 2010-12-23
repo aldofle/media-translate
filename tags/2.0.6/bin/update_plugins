@@ -1,4 +1,0 @@
-#!/bin/sh
-
-DOWNLOAD_URL="http://media-translate.googlecode.com/files/rss_ex_plugins.tar.bz2"
-wget -O - $DOWNLOAD_URL | tar -xjC ../plugins
