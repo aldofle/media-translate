@@ -192,7 +192,7 @@
 	    
 	    if(stream_class == "video" || stream_class == "audio")
   	  {
-        if(stream_protocol == "file" || (stream_protocol == "http" &amp;&amp; stream_soft != "shoutcast" &amp;&amp; stream_soft != "_translate_"))
+        if(stream_protocol == "file" || (stream_protocol == "http" &amp;&amp; stream_soft != "shoutcast"))
   	      url = stream_url;
   	    else
   	      url = stream_translate_url;

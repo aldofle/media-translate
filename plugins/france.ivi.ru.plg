@@ -44,7 +44,6 @@ if echo "${arg_url}" | grep -q -s '\(www\.\|france\.\)*ivi\.ru/\(video/view/\|mo
     ;;
     *)
       hdc='lo'
-    ;;
   esac
   
   local video_id=`echo "$arg_url" | sed -e 's/.*[?&]id=//;s/&.*//`

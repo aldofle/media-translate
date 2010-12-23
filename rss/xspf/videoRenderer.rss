@@ -96,15 +96,13 @@
 <onRefresh>
 	stream_progress  = getPlaybackStatus();
 	buffer_progress  = getCachedStreamDataSize(0, 262144);
-	buffer           = getStringArrayAt(buffer_progress, 0);
 	play_elapsed     = getStringArrayAt(stream_progress, 0);
 	play_total       = getStringArrayAt(stream_progress, 1);
-	play_rest        = play_total - play_elapsed;
 	play_status      = getStringArrayAt(stream_progress, 3);
-	
+
   check_counter -= 1;
 	
-	print(buffer, stream_progress);
+	print(stream_progress);
 	
 	if (play_elapsed != 0)
 	{
@@ -115,7 +113,6 @@
 	  }
     if(renderer_status != "playing")
 	  {
-	    stream_status = 1;
 	    updatePlaybackProgress("delete", "mediaDisplay", "infoDisplay", "progressBar");
 	    renderer_status = "playing";
       if(no_renderer != 1)
@@ -191,19 +188,16 @@
         {
           writeStringToFile(renderer_cmd_file, "");
           postMessage("video_stop");
-          stream_status = 0;
         }
         else if(arr_url == "{renderer-pause}")
         {
           writeStringToFile(renderer_cmd_file, "");
           postMessage("video_pause");
-          stream_status = 2;
         }
         else if(arr_url == "{renderer-play}")
         {
           writeStringToFile(renderer_cmd_file, "");
           postMessage("video_play");
-          stream_status = 1;
         }
         else if(request_url != arr_url || request_options != arr_options)
         {
@@ -211,22 +205,7 @@
         }
       }
     }
-    if(stream_status == 2)
-    {
-      if(buffer == 100)
-      {
-        postMessage("video_play");
-        stream_status = 1;
-      }
-    }
-    else if(stream_status == 1)
-    {
-      if(buffer &lt; 15 &amp;&amp; play_rest &gt; 5)
-      {
-        postMessage("video_pause");
-        stream_status = 2;
-      }
-    }
+    
 	}
 	else if (play_status == 0)
 	{
@@ -274,7 +253,7 @@
   		</text>
 
       <image redraw="yes" offsetXPC="93" offsetYPC="2" widthPC="6" heightPC="25">
-        <script>if(no_renderer != 1) "../etc/translate/rss/image/msr.png"; else "../etc/translate/rss/image/empty.png";</script>
+        <script>if(no_renderer != 1) "../etc/translate/rss/image/msr.png";</script>
     	</image>
 
   		<text align="right" redraw="yes" offsetXPC="2" offsetYPC="70" widthPC="94" heightPC="15" fontSize="12" backgroundColor="-1:-1:-1" foregroundColor="0:0:0">
@@ -311,7 +290,6 @@
     if (input == "enter")
 		{
 	    postMessage("video_play");
-      stream_status = 1;
       ret = "true";
 		}
 		ret;

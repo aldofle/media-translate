@@ -21,7 +21,7 @@
 # Translate CGI module
 # 'youtube.com' plug-in
 #
-# version: 2.0 09.12.2010 22:42
+# version: 1.0 13.08.2010 16:20
 #
 # http://www.youtube.com/v/JZtcw6GIxTY
 # http://www.youtube.com/watch?v=JZtcw6GIxTY
@@ -39,7 +39,6 @@ case $opt in
   ;;
   *)
     hdc=''
-  ;;
 esac
 
 local video_id=`echo "$arg_url" | sed -e 's/.*v=//;s/.*\///;s/&.*//'`
@@ -51,14 +50,14 @@ server_type='youtube'
 protocol='http'
 
 local tsttime=
-local fmt_url_map=
+local t_param=
 local hd_param=
 
 let tsttime=`date +%s`-$TIMELIFE
 
 if [ -f $CACHEFILE ]; then
   if [ `date +%s -r $CACHEFILE` -gt $tsttime ]; then
-    fmt_url_map=`sed -ne "1p" $CACHEFILE`
+    t_param=`sed -ne "1p" $CACHEFILE`
     hd_param=`sed -ne "2p" $CACHEFILE`
     icy_name=`sed -ne "3p" $CACHEFILE`
   fi
@@ -67,27 +66,27 @@ fi
 if [ -z "$t_param" ]; then   
     host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" http://www.youtube.com/watch?v=$video_id 2>&1`
     if [ -f ${TMPFILE} ]; then
-      fmt_url_map=`grep -i 'clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' ${TMPFILE} | awk '{match($0, /&fmt_url_map=([^&]*)&/, arr);print arr[1];}' | urldecode`
+      t_param=`grep -i 'clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' ${TMPFILE} | awk '{match($0, /&t=([^&]*)&/, arr);print arr[1];}'`
       hd_param=`sed -ne "/'IS_HD_AVAILABLE': /p" ${TMPFILE} | sed -e "s/.*'IS_HD_AVAILABLE': //;s/,.*//"`
       icy_name=`grep 'meta name="title"' ${TMPFILE} | sed 's/.*t="//;s/".*//'`
       icy_name=`unescapeXML "$icy_name"`
       icy_name=`unescapeXML "$icy_name"`
-      echo $fmt_url_map > $CACHEFILE
+      echo $t_param > $CACHEFILE
       echo $hd_param >> $CACHEFILE
       echo $icy_name >> $CACHEFILE
       rm -f $TMPFILE
     fi
 fi
 
+# MP4 by default
+local suffix="&fmt=18"
+
 if [ -n "$hdc" -a "$hd_param" = "true" ]; then
-  #22
-  stream_url=`echo $fmt_url_map | awk '{match($0,/.*22\|([^,]+),?/,arr);print arr[1]}'`
-else
-  #18
-  stream_url=`echo $fmt_url_map | awk '{match($0,/.*18\|([^,]+),?/,arr);print arr[1]}'`
+    suffix="&fmt=22"
 fi
 
-if [ -n "$fmt_url_map" ]; then
+if [ -n "$t_param" ]; then
+  stream_url="http://www.youtube.com/get_video?video_id=${video_id}&t=${t_param}&asv=${suffix}"
   return $RC_OK
 fi
 

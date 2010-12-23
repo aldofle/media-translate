@@ -56,11 +56,12 @@
     request_image   = getStringArrayAt(arr, 10);
     no_renderer     = getStringArrayAt(arr, 11);
     
-    track_image = request_image;
-  
     if(stream_current_song != "" &amp;&amp; stream_current_song != null)
       track_image = translate_base_url + "app,Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
       
+    if(stream_status_url == "_empty_")
+      track_image = request_image;
+    
     stream_soft     = "";
   }
   else
@@ -333,7 +334,7 @@
 	</text>
 
   <image redraw="yes" offsetXPC="87" offsetYPC="66" widthPC="7" heightPC="6">
-    <script>if(no_renderer != 1) "../etc/translate/rss/image/msr.png"; else "../etc/translate/rss/image/empty.png";</script>
+    <script>if(no_renderer != 1) "../etc/translate/rss/image/msr.png";</script>
 	</image>
 
 	<text redraw="yes" offsetXPC="6" offsetYPC="74" widthPC="60" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="255:255:150">
