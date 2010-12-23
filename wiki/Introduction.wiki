@@ -116,5 +116,13 @@ http://www.zoomby.ru/watch/4396-kamenskaya-3
 {{{
 http://www.cinema.mosfilm.ru/PrivateVideo.aspx?id=f61c564b-0653-4a23-b6fd-02253cdda615
 }}}
+  * [http://www.zoomby.ru/ Zoomby]
+{{{
+http://www.zoomby.ru/watch/4396-kamenskaya-3
+}}}
+  * [http://cinema.mosfilm.ru/ Золотая коллекция киностудии Мосфильм]
+{{{
+http://www.cinema.mosfilm.ru/PrivateVideo.aspx?id=f61c564b-0653-4a23-b6fd-02253cdda615
+}}}
   * [http://www.last.fm/api Last.FM]
   Получение картинки с исполнителем для текущего проигрываемого трека.
