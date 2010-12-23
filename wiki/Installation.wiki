@@ -39,8 +39,8 @@ mount -o remount,rw /
 {{{
 <item>
   <title>Дополнительные сервисы</title>
-  <link>rss_file://./rss/menuEx.rss</link>
-  <media:thumbnail url="rss/image/menuEx.png" width="120" height="90" />
+  <link>rss_file://../etc/translate/rss/menuEx.rss</link>
+  <media:thumbnail url="../etc/translate/rss/image/menuEx.png" width="120" height="90" />
   <mediaDisplay name=photoView />
 </item>
 }}}
