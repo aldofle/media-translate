@@ -1211,7 +1211,7 @@ case ${arg_cmd} in
     if [ "$protocol" == "rtmp" ]; then
       get_opt "Rtmp-options"
       killall -q $RTMPDUMP 2>&1
-      exec nice $RTMPDUMP -q -o - -v -b 60000 -r "$stream_url" $opt
+      exec nice $RTMPDUMP -q -o - -b 60000 -r "$stream_url" $opt
     elif [ "$charset" == "CP1251" ]; then
       $MSDL $msdlopt -q -o - "$stream_url" | $TOUTF8 # | sed 's/windows-125./utf-8/'
     else
