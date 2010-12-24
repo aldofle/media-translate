@@ -48,7 +48,7 @@ BEGIN {
       else
       if(XITEM == "video")
       {
-        br = XATTR["system-bitrate"];
+        br = sprintf("%010d", strtonum(XATTR["system-bitrate"]));
         VIDEO[br] = base XATTR["src"];
       }
     }
@@ -56,6 +56,9 @@ BEGIN {
 }
 END {
   print title;
-  for(br in VIDEO)
-    print br " " VIDEO[br];
+  n = asorti(VIDEO, KEY)
+  for(i=1; i<=n; i++)
+  {
+    print KEY[i] " " VIDEO[KEY[i]];
+  } 
 }
