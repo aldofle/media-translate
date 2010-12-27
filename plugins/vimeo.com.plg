@@ -29,7 +29,7 @@
 # options:
 #   HD:[0|1]
 
-local TIMELIFE=1
+local TIMELIFE=60
 
 stream_type=''
 stream_url=''
