@@ -61,7 +61,7 @@
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
-      <link>rss/radio-profm.rss</link>
+      <link>rss_file://../etc/translate/rss/radio-profm.rss</link>
       <title>ProFM</title>
       <annotation>http://www.profm.ro - Romania</annotation>
       <image>../etc/translate/rss/image/menu/internetradio.png</image>
