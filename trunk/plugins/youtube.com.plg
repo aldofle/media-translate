@@ -32,8 +32,8 @@
 local TIMELIFE=60
 
 get_opt "HD"
-  [ -z "$opt" ] && opt=`sed -n '3p' $RSSCONF`
-[ -z "$opt" ] && opt=$YOUTUBE_HD
+  [ -z "$opt" ] && opt=`sed -n '3p' $RSSCONF 2>/dev/null`
+  [ -z "$opt" ] && opt=$YOUTUBE_HD
 case $opt in
   yes|Yes|YES|1)
     hdc=$opt
