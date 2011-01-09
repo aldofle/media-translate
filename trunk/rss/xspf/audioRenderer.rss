@@ -21,7 +21,7 @@
 #
 -->
 
-<script>
+<onEnter>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
   cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
   if(cgiconf != null)
@@ -33,6 +33,21 @@
       print("cgi.conf=",value);
     }
   }
+
+  screenXp = 4;
+  screenYp = 3;
+  rssconf = readStringFromFile("/usr/local/etc/translate/etc/rss.conf");
+  print("rssconf:",rssconf);
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 0);
+    if(value != null &amp;&amp; value != "")
+      screenXp = Integer(value);
+    value = getStringArrayAt(rssconf, 1);
+    if(value != null &amp;&amp; value != "")
+      screenYp = Integer(value);
+  }
+  print("rssconf:",screenXp,screenYp);
 
   renderer_cmd_file   = "/tmp/xspf_renderer.dat";
   renderer_status_file= "/tmp/xspf_renderer.status";
@@ -59,7 +74,7 @@
     track_image = request_image;
   
     if(stream_current_song != "" &amp;&amp; stream_current_song != null)
-      track_image = translate_base_url + "app,Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
+      track_image = translate_base_url + "app,Def:AR;Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
       
     stream_soft     = "";
   }
@@ -70,9 +85,7 @@
   
   check_info_time     = 40;  
   refresh_time        = 100;
-</script>
 
-<onEnter>
   renderer_status = "tuneing";
   if(no_renderer != 1)
   {
@@ -215,7 +228,7 @@
       	    if(value != null)
       	    {
         		  stream_current_song = value;
-          		track_image = translate_base_url + "app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
+          		track_image = translate_base_url + "app,Def:AR;Title:"+urlEncode(value)+",lastfm/trackimage.png";
         		}
         		else
         		{
@@ -236,7 +249,7 @@
     	      if(stream_current_song != value)
     	      {
         		  stream_current_song = value;
-        		  track_image = translate_base_url + "app,Title:"+urlEncode(value)+",lastfm/trackimage.png";
+        		  track_image = translate_base_url + "app,Def:AR;Title:"+urlEncode(value)+",lastfm/trackimage.png";
         		}
       		}
       		else
@@ -301,14 +314,14 @@
   backgroundColor="0:0:0"
   >
 
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
 
 <!--
 	<text align="center" redraw="no" offsetXPC="5" offsetYPC="5" widthPC="90" heightPC="15" fontSize="34" backgroundColor="10:105:150" foregroundColor="100:200:255">
@@ -316,12 +329,32 @@
 	</text>
 -->
 
-  <image redraw="yes" offsetXPC="15" offsetYPC="12" widthPC="30" heightPC="41">
+  <image redraw="yes" offsetXPC="5" offsetYPC="10" widthPC="45" heightPC="45">
     <script>track_image;</script>
-	</image>
+    <widthPC>
+      <script>
+        45 * screenYp / screenXp;
+      </script>
+    </widthPC>
+    <offsetXPC>
+      <script>
+        5 + 45 * (1 - screenYp / screenXp) / 2;
+      </script>
+    </offsetXPC>
+  </image>
 	
-  <image redraw="yes" offsetXPC="55" offsetYPC="10" widthPC="40" heightPC="45">
+  <image redraw="yes" offsetXPC="55" offsetYPC="10" widthPC="45" heightPC="45">
     <script>stream_image;</script>
+    <widthPC>
+      <script>
+        45 * screenYp / screenXp;
+      </script>
+    </widthPC>
+    <offsetXPC>
+      <script>
+        55 + 45 * (1 - screenYp / screenXp) / 2;
+      </script>
+    </offsetXPC>
 	</image>
 
   <previewWindow windowColor="0:0:0" offsetXPC="99" widthPC="1" offsetYPC="99" heightPC="1"></previewWindow>	
@@ -332,8 +365,18 @@
 		<script>stream_title;</script>
 	</text>
 
-  <image redraw="yes" offsetXPC="87" offsetYPC="66" widthPC="7" heightPC="6">
+  <image redraw="yes" offsetXPC="87" offsetYPC="66" widthPC="9" heightPC="6">
     <script>if(no_renderer != 1) "../etc/translate/rss/image/msr.png"; else "../etc/translate/rss/image/empty.png";</script>
+    <widthPC>
+      <script>
+        9 * screenYp / screenXp;
+      </script>
+    </widthPC>
+    <offsetXPC>
+      <script>
+        96 - 9 * screenYp / screenXp;
+      </script>
+    </offsetXPC>
 	</image>
 
 	<text redraw="yes" offsetXPC="6" offsetYPC="74" widthPC="60" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="255:255:150">
@@ -387,6 +430,47 @@
     if (input == "enter")
 		{
 	    postMessage("video_play");
+      ret = "true";
+		}
+		else
+    if ((input == "zero" || input == "down") &amp;&amp; stream_current_song != "")
+		{
+		  showIdle();
+    	playItemURL(-1, 1);
+    	setRefreshTime(-1);
+      renderer_status = "waiting";
+      if(no_renderer != 1)
+      {
+        arr = null;
+        arr = pushBackStringArray(arr, renderer_status);
+        arr = pushBackStringArray(arr, request_url);
+        writeStringToFile(renderer_status_file, arr);
+      }
+      storagePath = getStoragePath("tmp") + "youtubeRSS.dat";
+      arr = null;
+      arr = pushBackStringArray(arr, "http://gdata.youtube.com/feeds/api/videos?");
+      arr = pushBackStringArray(arr, stream_current_song);
+      arr = pushBackStringArray(arr, stream_current_song);
+      
+      writeStringToFile(storagePath, arr);
+	    doModalRss("rss_file://../etc/translate/rss/youtube/yt_search_feed.rss");
+      check_info_time     = 40;  
+      refresh_time        = 100;
+    
+      renderer_status = "tuneing";
+      if(no_renderer != 1)
+      {
+        arr = null;
+        arr = pushBackStringArray(arr, renderer_status);
+        arr = pushBackStringArray(arr, request_url);
+        writeStringToFile(renderer_status_file, arr);
+      }
+      playItemURL(url, 0, "mediaDisplay", "previewWindow");
+      stream_elapsed = "Wait...";
+      setRefreshTime(100);
+      refresh_time = 100;
+      check_info = 3;
+      cancelIdle();
       ret = "true";
 		}
 		ret;

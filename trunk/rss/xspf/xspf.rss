@@ -21,14 +21,6 @@
 #
 -->
 
-<script>
-	pageTitle = getPageInfo("pageTitle");
-  storagePath = getStoragePath("tmp");
-  storagePath_xspf       = storagePath + "xspfPath.dat";
-  storagePath_status     = storagePath + "streamStatus.dat";
-  writeStringToFile(storagePath_status, "enter");
-</script>
-
 <mediaDisplay name=onePartView
 	sideLeftWidthPC = 15
 	sideRightWidthPC = 0
@@ -183,7 +175,13 @@
 	</item_template>
 <!--
 !-->
-	<script>
+	<onEnter>
+  	pageTitle = getPageInfo("pageTitle");
+    storagePath = getStoragePath("tmp");
+    storagePath_xspf       = storagePath + "xspfPath.dat";
+    storagePath_status     = storagePath + "streamStatus.dat";
+    writeStringToFile(storagePath_status, "enter");
+
 		contentArray  = null;
 		itemTitleArray = null;
 
@@ -229,7 +227,7 @@
 				redrawDisplay();
 			}
 		}
-	</script>
+	</onEnter>
 
 	<channel>
 		<title>XSPF Playlists</title>

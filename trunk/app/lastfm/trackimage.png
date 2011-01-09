@@ -53,26 +53,54 @@ case $opt in
     ;;
 esac
 
-$MSDL -q -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$request"
-
+local imageurl=
 local type=
+local buf=
+local defaultimage=
+
+get_opt "Def"
+if [ "$opt" == "AR" ]; then
+  defaultimage=`sed -n '11p' $CACHEPATH/stream.dat`
+fi
+
+trackimage_loadImage()
+{
+  local imageurl="$1"
+  if expr "$imageurl" : '\..*' > /dev/null; then
+    imageurl="/usr/local/bin/$imageurl"
+  fi
+  if [ -f "$imageurl" ]; then
+    cp "$imageurl" "$LASTFMFILE"
+    local ext=`echo "$imageurl" | sed 's/\./\n/g' | sed -n '$p'`
+    type=image/$ext
+  else
+    buf=`$MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$1" 2>&1`
+    if [ -f "$LASTFMFILE" ]; then
+      type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
+    else
+      cp "empty.png" "$LASTFMFILE"
+      type="image/png"
+    fi
+  fi
+}
+
+$MSDL -q -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$request"
 
 if [ -f "$LASTFMFILE" ]; then
 
 #  [ -n "$clear" ] && rm -f /tmp/cached/*_trackimage.png 2>&1 > /dev/null
   
-  local imageurl=`grep LFM.set\(\"Par "$LASTFMFILE" | sed "s/.*image\":{//;s/},.*//;s/.*\"$size\":\"//;s/\".*//;" | sed 's/\\\//g'`
+  imageurl=`grep LFM.set\(\"Par "$LASTFMFILE" | sed "s/.*image\":{//;s/},.*//;s/.*\"$size\":\"//;s/\".*//;" | sed 's/\\\//g'`
   rm -f "$LASTFMFILE"
-  local buf=`$MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$imageurl" 2>&1`
+  
+  buf=`$MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$imageurl" 2>&1`
   if [ -f "$LASTFMFILE" ]; then
     type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
   else
-    type="image/png"
-    cp "empty.png" "$LASTFMFILE"
+    trackimage_loadImage "$defaultimage"
   fi
 else
-  type="image/png"
-  cp "empty.png" "$LASTFMFILE"
+  trackimage_loadImage "$defaultimage"
 fi
 
 printContent "$type" "$LASTFMFILE"

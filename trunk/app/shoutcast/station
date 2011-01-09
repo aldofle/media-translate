@@ -35,7 +35,7 @@ STATION_PLS="$CACHEPATH/shoutcast.$STATION_ID.cache.pls"
 
 CHANNELFILE=$TMPFILE.channel
 
-TIMELIFE=3600
+TIMELIFE=1200
 
 let tsttime=`date +%s`-$TIMELIFE
 

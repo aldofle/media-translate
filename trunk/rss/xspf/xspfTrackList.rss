@@ -26,7 +26,7 @@
     0:repeat: <None|One|All|Random>
 -->
 
-  <script>
+  <onEnter>
     auto = 0;
     translateBaseURL    = "http://127.0.0.1/cgi-bin/translate";
     cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
@@ -39,7 +39,89 @@
         print("cgi.conf=",value);
       }
     }
+
+
+  	titleArray = null;
+  	contentArray = null;
+  	imageArray = null;
+  	metaArray = null;
   
+    xspfPath = readStringFromFile(storagePath_xspf);
+    
+    print("Playlist path: "+xspfPath);
+    dlok = loadXMLFile(translateBaseURL+"?playlist,,"+urlEncode(xspfPath));
+    if (dlok != null)
+    {
+    	itemSize = getXMLElementCount("playlist","trackList","track");
+    	
+    	playlistTitle = getXMLText("playlist","title");
+    
+    	count=0;
+    	while(itemSize != 0)
+    	{
+    		location = getXMLText("playlist","trackList","track",count,"location");
+    		
+    		title = getXMLText("playlist","trackList","track",count,"title");
+    		if(title == null)
+    		{
+      		annotation = getXMLText("playlist","trackList","track",count,"annotation");
+      		if(annotation != null)
+      		{
+      		  title = annotation;
+      		}
+      	  else
+      	  {
+      		  title = location;
+        	}
+    		}
+    		else
+    		{ 
+      		creator = getXMLText("playlist","trackList","track",count,"creator");
+    		  if (creator != null)
+    		  {
+    		    title = creator + " - " + title;
+    		  }
+    		}
+      		
+    		image = getXMLText("playlist","trackList","track",count,"image");
+    		meta = "";
+
+        metaCounter = getXMLElementCount("playlist","trackList","track",count,"meta");
+    	  while(metaCounter &gt; 0)
+    	  {
+    	    metaIndex = metaCounter-1;
+    	    metaRel = getXMLAttribute("playlist","trackList","track",count,"meta",metaIndex,"rel");
+    	    if(metaRel == "translate")
+    	    {
+    	      meta = getXMLText("playlist","trackList","track",count,"meta",metaIndex);
+    	    }
+    	    metaCounter -= 1;
+    	  }
+
+  	  	titleArray  = pushBackStringArray(titleArray, title);
+  	  	contentArray  = pushBackStringArray(contentArray, location);
+  	  	imageArray  = pushBackStringArray(imageArray, image);
+  	  	metaArray  = pushBackStringArray(metaArray, meta);
+  
+  	  	count += 1;
+  	  	if (count == itemSize)
+    		{
+  			  break;
+  	  	}
+    	}
+  
+    	print("title array =", titleArray);
+    	setFocusItemIndex(0);
+    	setItemFocus(0);
+    	redrawDisplay();
+    
+    }
+    else
+    {
+      postMessage("return");
+    }
+  
+
     storagePath         = getStoragePath("tmp");
     storagePath_xspf    = storagePath + "xspfPath.dat";
     storagePath_stream  = storagePath + "stream.dat";
@@ -59,9 +141,7 @@
     {
       repeat = getStringArrayAt(playlistOptions , 0);
     }
- </script>
 
-  <onEnter>
     playingStatus = readStringFromFile(storagePath_status);
     print("playingStatus=",playingStatus);
     idx = Integer(getFocusItemIndex());
@@ -305,88 +385,6 @@
 		<link>rss_file://../etc/translate/rss/xspf/streamPlayer.rss</link>
 		<title><script>getStringArrayAt(contentArray , -1);</script></title>
 	</item_template>
-
-	<script>
-  	titleArray = null;
-  	contentArray = null;
-  	imageArray = null;
-  	metaArray = null;
-  
-    xspfPath = readStringFromFile(storagePath_xspf);
-    
-    print("Playlist path: "+xspfPath);
-    dlok = loadXMLFile(translateBaseURL+"?playlist,,"+urlEncode(xspfPath));
-    if (dlok != null)
-    {
-    	itemSize = getXMLElementCount("playlist","trackList","track");
-    	
-    	playlistTitle = getXMLText("playlist","title");
-    
-    	count=0;
-    	while(itemSize != 0)
-    	{
-    		location = getXMLText("playlist","trackList","track",count,"location");
-    		
-    		title = getXMLText("playlist","trackList","track",count,"title");
-    		if(title == null)
-    		{
-      		annotation = getXMLText("playlist","trackList","track",count,"annotation");
-      		if(annotation != null)
-      		{
-      		  title = annotation;
-      		}
-      	  else
-      	  {
-      		  title = location;
-        	}
-    		}
-    		else
-    		{ 
-      		creator = getXMLText("playlist","trackList","track",count,"creator");
-    		  if (creator != null)
-    		  {
-    		    title = creator + " - " + title;
-    		  }
-    		}
-      		
-    		image = getXMLText("playlist","trackList","track",count,"image");
-    		meta = "";
-
-        metaCounter = getXMLElementCount("playlist","trackList","track",count,"meta");
-    	  while(metaCounter &gt; 0)
-    	  {
-    	    metaIndex = metaCounter-1;
-    	    metaRel = getXMLAttribute("playlist","trackList","track",count,"meta",metaIndex,"rel");
-    	    if(metaRel == "translate")
-    	    {
-    	      meta = getXMLText("playlist","trackList","track",count,"meta",metaIndex);
-    	    }
-    	    metaCounter -= 1;
-    	  }
-
-  	  	titleArray  = pushBackStringArray(titleArray, title);
-  	  	contentArray  = pushBackStringArray(contentArray, location);
-  	  	imageArray  = pushBackStringArray(imageArray, image);
-  	  	metaArray  = pushBackStringArray(metaArray, meta);
-  
-  	  	count += 1;
-  	  	if (count == itemSize)
-    		{
-  			  break;
-  	  	}
-    	}
-  
-    	print("title array =", titleArray);
-    	setFocusItemIndex(0);
-    	setItemFocus(0);
-    	redrawDisplay();
-    
-    }
-    else
-    {
-      postMessage("return");
-    }
-	</script>
 
 <channel>
 	<title>

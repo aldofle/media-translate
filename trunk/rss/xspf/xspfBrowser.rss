@@ -21,80 +21,6 @@
 #
 -->
 
-<script>
-  storagePath             = getStoragePath("tmp");
-  storagePath_playlist    = storagePath + "playlist.dat";
-  storagePath_stream      = storagePath + "stream.dat";
-  storagePath_streamInfo  = storagePath + "streamInfo.dat";
-
-  translateBaseURL = "http://127.0.0.1/cgi-bin/translate?";
-  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
-  if(cgiconf != null)
-  {
-    value = getStringArrayAt(cgiconf, 0);
-    if(value != null &amp;&amp; value != "")
-    {
-      translate_base_url = value;
-      print("cgi.conf=",value);
-    }
-  }
-
-  arr = readStringFromFile(storagePath_playlist);
-  
-  if(arr != null)
-  {
-    root    = getStringArrayAt(arr, 0);
-    title   = getStringArrayAt(arr, 1);
-    image   = getStringArrayAt(arr, 2);
-    options = getStringArrayAt(arr, 3);
-    command = getStringArrayAt(arr, 4);
-    if(command == null)
-    {
-      command = "playlist";
-    }
-    autoplay = getStringArrayAt(arr, 5);
-    if(autoplay == null)
-    {
-      autoplay = 0;
-    }
-    writeStringToFile(storagePath_playlist, "");
-  }
-  else
-  {
-    root    = "";
-    title   = "XSPF Browser starting point";
-    image   = "../etc/translate/rss/image/start_playlist.jpg";
-    options = "";
-    command = "startpoint";
-    autoplay = 0;
-  }
-  
-  repeat            = "None";
-  playStatus        = 0;
-  playIndex         = -1;
-  playContext       = "";
-  streamInfoTimeout = 30;
-
-  historyPwd      = null;
-  historyTitle    = null;
-  historyOptions  = null;
-  historyImage    = null;
-  historyCommand  = null;
-  historyIndex    = null;
-  historyProtocol = null;
-  
-  currentPwd      = root;
-  currentTitle    = title;
-  currentOptions  = options;
-  currentImage    = image;
-  currentCommand  = command;
-  currentIndex    = 0;
-  currentProtocol = "";
-  
-  randomArray = null;
-  randomIndex = -1;
-</script>
-
 <mediaDisplay name="threePartsView"
 	sideLeftWidthPC="0"
 	sideRightWidthPC="0"
@@ -125,14 +51,14 @@
 	imageFocus=""
 	sliding="no"
 >
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
 
 	<previewWindow windowColor="0:0:0" offsetXPC="99" offsetYPC="99" widthPC="1" heightPC="1"></previewWindow>	
 
@@ -148,6 +74,16 @@
 
   <image redraw="no" offsetXPC="72" offsetYPC="15" widthPC="23" heightPC="30">
 		<script>pageLogo;</script>
+    <widthPC>
+      <script>
+        30 * screenYp / screenXp;
+      </script>
+    </widthPC>
+    <offsetXPC>
+      <script>
+        95 - 30 * screenYp / screenXp;
+      </script>
+    </offsetXPC>
 	</image>
   <text redraw="yes" offsetXPC="72" offsetYPC="47" widthPC="7" heightPC="4" fontSize="13" backgroundColor="0:0:0" foregroundColor="40:200:200">
     <script>title_1;</script>
@@ -196,6 +132,18 @@
 				}
 			</script>
 		</image>
+		<script>
+		    him = 60 * 7 * screenXp / screenYp / 7;
+		    if(him>100)
+		    {
+		      him = 100;
+		      wim = him * 7 / 60 * screenYp / screenXp;
+		    }
+		    else
+		    {
+		      wim = 7;
+		    }
+		</script>
 		<image offsetXPC="0" offsetYPC="0" widthPC="7" heightPC="100">
 			<script>
 				class = getStringArrayAt(classArray, -1);
@@ -217,6 +165,18 @@
 					"";
 				}
 			</script>
+  		 <heightPC>
+  		   <script>him;</script>
+  		 </heightPC>
+  		 <widthPC>
+  		   <script>wim;</script>
+  		 </widthPC>
+  		 <offsetYPC>
+  		   <script>(100 - him)/2;</script>
+  		 </offsetYPC>
+  		 <offsetXPC>
+  		   <script>(7 - wim)/2;</script>
+  		 </offsetXPC>
 		</image>
 		<text offsetXPC="6" offsetYPC="0" widthPC="94" heightPC="100" fontSize="15" backgroundColor="-1:-1:-1" foregroundColor="160:160:160">
 			<script>
@@ -380,6 +340,93 @@
 </onExit>
 
 <onEnter>
+  storagePath             = getStoragePath("tmp");
+  storagePath_playlist    = storagePath + "playlist.dat";
+  storagePath_stream      = storagePath + "stream.dat";
+  storagePath_streamInfo  = storagePath + "streamInfo.dat";
+
+  translateBaseURL = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translate_base_url = value;
+      print("cgi.conf=",value);
+    }
+  }
+
+  screenXp = 4;
+  screenYp = 3;
+  rssconf = readStringFromFile("/usr/local/etc/translate/etc/rss.conf");
+  print("rssconf:",rssconf);
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 0);
+    if(value != null &amp;&amp; value != "")
+      screenXp = Integer(value);
+    value = getStringArrayAt(rssconf, 1);
+    if(value != null &amp;&amp; value != "")
+      screenYp = Integer(value);
+  }
+  print("rssconf:",screenXp,screenYp);
+
+  arr = readStringFromFile(storagePath_playlist);
+  
+  if(arr != null)
+  {
+    root    = getStringArrayAt(arr, 0);
+    title   = getStringArrayAt(arr, 1);
+    image   = getStringArrayAt(arr, 2);
+    options = getStringArrayAt(arr, 3);
+    command = getStringArrayAt(arr, 4);
+    if(command == null)
+    {
+      command = "playlist";
+    }
+    autoplay = getStringArrayAt(arr, 5);
+    if(autoplay == null)
+    {
+      autoplay = 0;
+    }
+    writeStringToFile(storagePath_playlist, "");
+  }
+  else
+  {
+    root    = "";
+    title   = "XSPF Browser starting point";
+    image   = "../etc/translate/rss/image/start_playlist.jpg";
+    options = "";
+    command = "startpoint";
+    autoplay = 0;
+  }
+  
+  repeat            = "None";
+  playStatus        = 0;
+  playIndex         = -1;
+  playContext       = "";
+  streamInfoTimeout = 30;
+
+  historyPwd      = null;
+  historyTitle    = null;
+  historyOptions  = null;
+  historyImage    = null;
+  historyCommand  = null;
+  historyIndex    = null;
+  historyProtocol = null;
+  
+  currentPwd      = root;
+  currentTitle    = title;
+  currentOptions  = options;
+  currentImage    = image;
+  currentCommand  = command;
+  currentIndex    = 0;
+  currentProtocol = "";
+  
+  randomArray = null;
+  randomIndex = -1;
+
   history = -1;
   executeScript("sub_refreshList");
 </onEnter>
@@ -1115,14 +1162,14 @@
 
 <item_template>
 	<mediaDisplay name="threePartsView">
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   </mediaDisplay>
 	<onClick>
     idx   = getFocusItemIndex();
@@ -1133,14 +1180,14 @@
 
 <playerLink>
 	<mediaDisplay name="threePartsView">
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-  	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   </mediaDisplay>
   <link>
     <script>gotoUrl;</script>

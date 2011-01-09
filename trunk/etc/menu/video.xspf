@@ -8,14 +8,14 @@
       <link>rss_file://../etc/translate/rss/youtube/yt_index.rss</link>
       <title>YouTube</title>
       <annotation>Founded in February 2005, YouTube is the world's most popular online video community, allowing millions of people to discover, watch and share originally-created videos.</annotation>
-      <image>../etc/translate/rss/image/menu/youtube.jpg</image>
+      <image>../etc/translate/rss/image/menu/youtube.png</image>
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Start:first;File:etc/menu/tvigle-index.xspf,collection/simplemenu</link>
       <title>Tvigle</title>
       <annotation>Tvigle Media — медиакомпания нового поколения, производитель и дистрибьютор профессионального развлекательного видеоконтента для New Media: интернета, мобильных сетей, цифровых телеканалов.</annotation>
-      <image>../etc/translate/rss/image/tvigle.png</image>
+      <image>../etc/translate/rss/image/menu/tvigle.png</image>
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>

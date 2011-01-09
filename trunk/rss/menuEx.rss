@@ -21,7 +21,7 @@
 #
 -->
 
-<script>
+<onEnter>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
   cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
   if(cgiconf != null)
@@ -33,14 +33,31 @@
       print("cgi.conf=",value);
     }
   }
-</script>
 
-<onEnter>
+  screenXp = 4;
+  screenYp = 3;
+  rssconf = readStringFromFile("/usr/local/etc/translate/etc/rss.conf");
+  print("rssconf:",rssconf);
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 0);
+    if(value != null &amp;&amp; value != "")
+      screenXp = Integer(value);
+    value = getStringArrayAt(rssconf, 1);
+    if(value != null &amp;&amp; value != "")
+      screenYp = Integer(value);
+  }
+  print("rssconf:",screenXp,screenYp);
+
     startitem = "middle";
 		
-  setRefreshTime(1);
   columnCount=3;
+  print(getFocusItemIndex());
 </onEnter>
+
+<script>
+  setRefreshTime(1);
+</script>
 
 <onRefresh>
   setRefreshTime(-1);
@@ -56,7 +73,7 @@
 
 	<mediaDisplay name=photoView 
 	  centerXPC=7 
-		centerYPC=30
+		centerYPC=25
 		centerHeightPC=50
     columnCount=3
 		
@@ -70,38 +87,64 @@
 		itemGapXPC=0
 		itemGapYPC=1
 		sideTopHeightPC=22
-		bottomYPC=85
+		bottomYPC=95
 		sliding=yes
 		showHeader=no
 		showDefaultInfo=no
+  	imageFocus=""
+  	imageUnFocus=""
+  	imageParentFocus=""
 		>
 		
   	<text align="center" offsetXPC="0" offsetYPC="0" widthPC="100" heightPC="20" fontSize="30" backgroundColor="10:105:150" foregroundColor="100:200:255">
 		  <script>getPageInfo("pageTitle");</script>
 		</text>
 
-		<image offsetXPC=5 offsetYPC=2 widthPC=20 heightPC=16>
+		<image offsetXPC=5 offsetYPC=2 widthPC=21 heightPC=16>
 		  <script>channelImage;</script>
+      <widthPC>
+        <script>
+          21 * screenYp / screenXp;
+        </script>
+      </widthPC>
+      <offsetXPC>
+        <script>
+          5 + 21 * (1 - screenYp / screenXp) / 2;
+        </script>
+      </offsetXPC>
 		</image>
 
   	<text redraw="yes" offsetXPC="82" offsetYPC="12" widthPC="13" heightPC="6" fontSize="20" backgroundColor="10:105:150" foregroundColor="60:160:205">
 		  <script>sprintf("%s / ", focus-(-1))+itemCount;</script>
 		</text>
 
-		<text align="center" redraw="yes" lines="4" offsetXPC=10 offsetYPC=80 widthPC=75 heightPC=15 fontSize=15 backgroundColor=0:0:0 foregroundColor=120:120:120>
+		<text align="center" redraw="yes" lines="4" offsetXPC=10 offsetYPC=80 widthPC=80 heightPC=15 fontSize=16 backgroundColor=0:0:0 foregroundColor=120:120:120>
 			<script>print(annotation); annotation;</script>
 		</text>
 		
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-		<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
 
 		<itemDisplay>
+			<script>
+				imageW = 90/columnCount;
+				imageH = imageW * 3 / 4 * screenXp / screenYp * 100 / 50;
+				if(imageH > 86)
+				{
+				  imageH = 86;
+				  imageW = imageH * 4 / 3 * screenYp / screenXp * 50 / imageW;
+				}
+			  else
+			  {
+			    imageW = 100;
+        }
+			</script>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -112,34 +155,34 @@
 					}
 					getItemInfo(idx, "image");
 				</script>
-			 <offsetXPC>
-			   <script>
-					idx = getQueryItemIndex();
-					focus = getFocusItemIndex();
-			    if(focus==idx) 50 * (1 - columnCount/3); else 12 + 37 * (1 - columnCount/3);
-			   </script>
-			 </offsetXPC>
-			 <offsetYPC>
-			   <script>
-					idx = getQueryItemIndex();
-					focus = getFocusItemIndex();
-			    if(focus==idx) 0; else 6;
-			   </script>
-			 </offsetYPC>
 			 <widthPC>
 			   <script>
 					idx = getQueryItemIndex();
 					focus = getFocusItemIndex();
-			    if(focus==idx) 100 * columnCount/3; else 75 * columnCount/3;
+			    if(focus==idx) imageW; else imageW * 3 / 4;
 			   </script>
 			 </widthPC>
 			 <heightPC>
 			   <script>
 					idx = getQueryItemIndex();
 					focus = getFocusItemIndex();
-			    if(focus==idx) 50; else 37;
+			    if(focus==idx) imageH; else imageH * 3 / 4;
 			   </script>
 			 </heightPC>
+			 <offsetXPC>
+			   <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+			    if(focus==idx) 50 - imageW/2; else 50 - imageW * 3 / 8;
+			   </script>
+			 </offsetXPC>
+			 <offsetYPC>
+			   <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+			    if(focus==idx) 0; else imageH / 8;
+			   </script>
+			 </offsetYPC>
 			</image>
 			
 			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
@@ -147,6 +190,15 @@
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
 				</script>
+        <lines>
+          <script>Integer((100 - imageH - 2) / 12);</script>
+        </lines>
+        <offsetYPC>
+          <script>imageH + 2;</script>
+        </offsetYPC>
+        <heightPC>
+          <script>100 - imageH - 2;</script>
+        </heightPC>
 				<fontSize>
   				<script>
   					idx = getQueryItemIndex();
@@ -181,16 +233,6 @@
 	</mediaDisplay>
 	
 	<item_template>
-		<mediaDisplay  name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
-		</mediaDisplay>
 		<link>
 		  <script>getItemInfo(getQueryItemIndex(), "location");</script>
 		</link>
@@ -205,21 +247,21 @@
 <link>rss_file://../etc/translate/rss/etc-menu-video.rss</link>
     <title>Internet Video</title>
     <annotation>YouTube, Tvigle, Internet TV</annotation>
-    <image>../etc/translate/rss/image/menu/video.jpg</image>
+    <image>../etc/translate/rss/image/menu/video.png</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link>rss_file://../etc/translate/rss/etc-menu-radio.rss</link>
     <title>Internet Radio</title>
     <annotation>SHOUTcast, RadioTime, SKY.fm, Digitally Imported, SomaFM, Radioio, Bluemars, 1.FM, Moskva.FM, Station.ru and other</annotation>
-    <image>../etc/translate/rss/image/menu/radio.jpg</image>
+    <image>../etc/translate/rss/image/menu/radio.png</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link>rss_file://../etc/translate/rss/etc-menu-app.rss</link>
     <title>Applications</title>
     <annotation>Media Stream Renderer, XSPF Browser</annotation>
-    <image>../etc/translate/rss/image/menu/app.jpg</image>
+    <image>../etc/translate/rss/image/menu/app.png</image>
     <mediaDisplay name="photoView"/>
   </item>
 </channel>

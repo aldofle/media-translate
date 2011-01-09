@@ -29,7 +29,7 @@ local LIMIT="$arg_opt"
 CHANNELFILE="$CACHEPATH/shoutcast.`echo -n \"$LIMIT\" | sed 's/\//_/g'`.cache"
 TEMPDL=$TMPFILE.dl
 
-TIMELIFE=3600
+TIMELIFE=600
 
 let tsttime=`date +%s`-$TIMELIFE
 

@@ -43,21 +43,21 @@
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/radio-nullwave.xspf,collection/medialist</link>
       <title>Nullwave.ru</title>
       <annotation>Nullwave.ru единственное в своем роде радио в Новосибирске. Тут есть, что послушать.</annotation>
-      <image>../etc/translate/rss/image/menu/nulwave.gif</image>
+      <image>../etc/translate/rss/image/menu/nulwave.png</image>
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Font:14;Lines:5;Start:left;Size:5;File:etc/playlists/radio-sampo.xspf,collection/media</link>
       <title>Sampo.ru</title>
       <annotation>Городская компьютерная сеть «Сампо.ру» - Петрозаводск.</annotation>
-      <image>../etc/translate/rss/image/menu/sampo.jpg</image>
+      <image>../etc/translate/rss/image/menu/sampo.png</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radiogrom-index.xspf,collection/menulist</link>
       <title>Radiogrom.com</title>
       <annotation>Radiogrom - о РАДИО ГРОМко! Сборник ссылок на онлайн радиостанции от radiogrom.com</annotation>
-      <image>../etc/translate/rss/image/menu/radiogrom.gif</image>
+      <image>../etc/translate/rss/image/menu/radiogrom.png</image>
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
