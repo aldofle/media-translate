@@ -374,7 +374,7 @@
     </widthPC>
     <offsetXPC>
       <script>
-        96 - 9 * screenYp / screenXp;
+        94 - 9 * screenYp / screenXp;
       </script>
     </offsetXPC>
 	</image>
