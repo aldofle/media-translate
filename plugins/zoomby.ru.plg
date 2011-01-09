@@ -36,7 +36,7 @@ local SMILINFO=$TMPFILE.smilinfo
 if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then 
 
   get_opt "HD"
-  [ -z "$opt" ] && opt=`sed -n '7p' $RSSCONF`
+  [ -z "$opt" ] && opt=`sed -n '7p' $RSSCONF 2>/dev/null`
   [ -z "$opt" ] && opt=$ZOOMBY_HD
   case $opt in
     yes|Yes|YES|1)

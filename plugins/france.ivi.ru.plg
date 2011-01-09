@@ -39,7 +39,7 @@ if echo "${arg_url}" | grep -q -s '\(www\.\|france\.\)*ivi\.ru/\(video/view/\|mo
   
 
   get_opt "HD"
-  [ -z "$opt" ] && opt=`sed -n '6p' $RSSCONF`
+  [ -z "$opt" ] && opt=`sed -n '6p' $RSSCONF 2>/dev/null`
   [ -z "$opt" ] && opt=$IVI_HD
   case $opt in
     yes|Yes|YES|1)
