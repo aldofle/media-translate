@@ -31,7 +31,7 @@
 	headerWidthPC="0"
 	itemImageXPC="22"
 	itemImageYPC="18"
-	itemXPC="29"
+	itemXPC="35"
 	itemYPC="18"
 	capXPC="88"
 	capYPC="17"
@@ -133,7 +133,12 @@
   
 </mediaDisplay>
 
-<script>
+<onExit>
+  playItemURL(-1, 1);
+  setRefreshTime(-1);
+</onExit>
+
+<onEnter>
   cachePath = getStoragePath("key");
   optionsArray = readStringFromFile(cachePath + "youtubeOptions.dat");
   if(optionsArray == null)
@@ -170,14 +175,7 @@
   feedUrl = getStringArrayAt(arr, 0);
   pageTitle = getStringArrayAt(arr, 1);
   print("feedUrl=",feedUrl);
-</script>
 
-<onExit>
-  playItemURL(-1, 1);
-  setRefreshTime(-1);
-</onExit>
-
-<onEnter>
   mode = 1;
   setRefreshTime(1);
 </onEnter>

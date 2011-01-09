@@ -25,9 +25,9 @@
 # http://www.cinema.mosfilm.ru/PrivateVideo.aspx?id=f61c564b-0653-4a23-b6fd-02253cdda615
 #
 
-stream_type='video/x-msvideo'
+stream_type='video/x-ms-wmv'
 stream_url=''
-server_type='_translate_'
+server_type=''
 
 if echo "${arg_url}" | grep -q -s '\(www\.\)*cinema\.mosfilm\.ru/PrivateVideo.aspx?id=.*$'; then 
 

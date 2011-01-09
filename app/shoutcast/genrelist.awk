@@ -34,7 +34,7 @@ BEGIN {
           print "<" attrName ">" XATTR[attrName] "</" attrName ">"
         genre = XATTR["name"];
         gsub(" ", "%20", genre)
-        print "<link>http://127.0.0.1/cgi-bin/translate?app," genre ",shoutcast/genre</link>"
+        print "<link>" translate_base_url "app," genre ",shoutcast/genre</link>"
         print "</item>"
       }
     }

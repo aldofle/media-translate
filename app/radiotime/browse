@@ -40,12 +40,10 @@ local TYPE=`escapeXML "$opt"`
 $WGET -q -O "$OPML" "$LINK"
 
 if [ -f "$OPML" ]; then
-  echo "<script>" > $INITSCRIPT
-  echo "  opmlType = \"$TYPE\";" >> $INITSCRIPT
+  echo "  opmlType = \"$TYPE\";" > $INITSCRIPT
   echo "  opmlKey = \"$KEY\";" >> $INITSCRIPT
   echo "  opmlText = \"$TEXT\";" >> $INITSCRIPT
   echo "  opmlUrl = \"$LINK\";" >> $INITSCRIPT
-  echo "</script>" >> $INITSCRIPT
 
   (
     export INITSCRIPT;

@@ -25,7 +25,7 @@ cd $DATAPATH
 local CHANNELFILE="$CACHEPATH/shoutcast.genrelist.cache"
 local TEMPDL=$TMPFILE.dl
 
-local TIMELIFE=3600
+local TIMELIFE=1200
 
 let tsttime=`date +%s`-$TIMELIFE
 
@@ -41,9 +41,14 @@ if [ $REFRESHCACHE ]; then
   if [ -f "$TEMPDL" ]; then
     if [ "`ls -s "$TEMPDL" | awk '{print $1}'`" != "0" ]; then
       if [ -x "$XSLTPROC" ]; then
-        $XSLTPROC genrelist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE
+        $XSLTPROC --stringparam translate_base_url "$TRANSLATE_CGI" genrelist.xslt "$TEMPDL" | sed '1d' > $CHANNELFILE.tmp
       else
-        awk -f getxml.awk  -f genrelist.awk "$TEMPDL" > $CHANNELFILE
+        awk -v translate_base_url="$TRANSLATE_CGI" -f getxml.awk  -f genrelist.awk "$TEMPDL" > $CHANNELFILE.tmp
+      fi
+      if [ "`ls -s "$CHANNELFILE.tmp" | awk '{print $1}'`" != "0" ]; then 
+        mv -f $CHANNELFILE.tmp $CHANNELFILE
+      else
+        rm -f $CHANNELFILE.tmp
       fi
     fi
     rm -f "$TEMPDL"

@@ -21,7 +21,7 @@
 #
 -->
 
-<script>
+<onEnter>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
   cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
   if(cgiconf != null)
@@ -38,9 +38,7 @@
   storagePath_stream      = storagePath + "stream.dat";
   
   error_info          = "";
-</script>
 
-<onEnter>
   startitem = "middle";
   setRefreshTime(1);
 </onEnter>

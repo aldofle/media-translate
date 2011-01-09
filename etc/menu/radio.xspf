@@ -8,7 +8,7 @@
       <link>rss_file://../etc/translate/rss/shoutcast_index.rss</link>
       <title>SHOUTcast Radio Directory</title>
       <annotation>Listing thousands of radio channels worldwide...</annotation>
-      <image>../etc/translate/rss/image/menu/shoutcast.jpg</image>
+      <image>../etc/translate/rss/image/menu/shoutcast.png</image>
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
@@ -17,7 +17,7 @@
       <annotation>Welcome to Bluemars, we will shortly transition into synchronous orbit around Phobos where you will be able to board a shuttle down the inertial tether.
 Upon arrival, please consult the display in the hall for transportation to one of the three continents on the planet.
 Thank you for travelling with Bluemars Spaceways.</annotation>
-      <image>../etc/translate/rss/image/menu/bluemars.jpg</image>
+      <image>../etc/translate/rss/image/menu/bluemars.png</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
@@ -59,14 +59,14 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
       <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:etc/playlists/radio-somafm.xspf,collection/media</link>
       <title>SomaFM</title>
       <annotation>SomaFM is 20 unique channels of listener-supported, commercial-free, underground/alternative radio broadcasting from San Francisco. All music hand-picked by SomaFM's award-winning DJs and music directors.</annotation>
-      <image>../etc/translate/rss/image/menu/somafm.gif</image>
+      <image>../etc/translate/rss/image/menu/somafm.png</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Size:5;File:etc/playlists/radio-radioio.xspf,collection/media</link>
       <title>RadioIO</title>
       <annotation>It's all about the music</annotation>
-      <image>../etc/translate/rss/image/menu/radioio.jpg</image>
+      <image>../etc/translate/rss/image/menu/radioio.png</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>

@@ -4,8 +4,36 @@
 
 TRANSLATE=${TRANSLATE:-/usr/local/etc/translate}
 
+RSSCONF=$TRANSLATE/etc/rss.conf
+
+printhdflag2conf()
+{
+  case $1 in
+    no|No|NO|0)
+      echo 0 >> $RSSCONF
+    ;;
+    yes|Yes|YES|1)
+      echo 1 >> $RSSCONF
+    ;;
+    *)
+      echo 2 >> $RSSCONF
+    ;;
+  esac
+}
+
 if [ -f $TRANSLATE/etc/translate.conf ]; then
   . $TRANSLATE/etc/translate.conf
+  if [ -f $RSSCONF ]; then
+    :
+  else
+    echo 4 > $RSSCONF
+    echo 3 >> $RSSCONF
+    printhdflag2conf $YOUTUBE_HD
+    printhdflag2conf $VIMEO_HD
+    printhdflag2conf $TVIGLE_HD
+    printhdflag2conf $IVI_HD
+    printhdflag2conf $ZOOMBY_HD
+  fi
 fi
 
 BASEPATH=${BASEPATH:-$TRANSLATE}

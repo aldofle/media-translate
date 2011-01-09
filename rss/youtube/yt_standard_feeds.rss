@@ -21,38 +21,6 @@
 #
 -->
 
-<script>
-  youtubeApiBaseURL = "http://gdata.youtube.com/feeds/api/standardfeeds/";
-  cachePath = getStoragePath("key");
-  optionsArray = readStringFromFile(cachePath + "youtubeOptions.dat");
-  if(optionsArray == null)
-  {
-    youtubeRegion = readStringFromFile(cachePath + "youtubeRegion.dat");
-    if(youtubeRegion == null)
-      youtubeRegion = "RU";
-    hd = 1;
-    username = " ";
-  }
-  else
-  {
-    youtubeRegion = getStringArrayAt(optionsArray, 0);
-    hd = getStringArrayAt(optionsArray, 1);
-    username = getStringArrayAt(optionsArray, 2);
-  }
-  if(youtubeRegion != null &amp;&amp; youtubeRegion != " " &amp;&amp; youtubeRegion != "")
-  {
-    youtubeApiBaseURL += youtubeRegion + "/";
-  }
-  
-  print("youtubeApiBaseURL=",youtubeApiBaseURL);
-  
-  storagePath = getStoragePath("tmp") + "youtubeRSS.dat";
-
-	feedArray = getItemInfoArray("feed_name"); 
-	titleArray = getItemInfoArray("title"); 
-	pageTitle = "Стандартные каналы";
-</script>
-
 <mediaDisplay name=onePartView
 	sideLeftWidthPC = 15
 	sideRightWidthPC = 0
@@ -92,20 +60,30 @@
 	</image>
   <image offsetXPC=80 offsetYPC=1 widthPC=15 heightPC=10>
     ../etc/translate/rss/image/YouTubeLogo.jpg
+    <widthPC>
+      <script>
+        300 / 152 * 10 * screenYp / screenXp;
+      </script>
+    </widthPC>
+    <offsetXPC>
+      <script>
+        95 - 300 / 152 * 10 * screenYp / screenXp;
+      </script>
+    </offsetXPC>
 	</image>
 
   <text offsetXPC=80 offsetYPC=90 widthPC=5 heightPC=5 fontSize=14 backgroundColor=8:8:16 foregroundColor=100:100:100>
     <script>youtubeRegion;</script>
   </text>
 
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
 
 	<!--
 	-->
@@ -135,21 +113,21 @@
 </mediaDisplay>
 
 	<item_template>	
-	  	<mediaDisplay name="threePartsView">
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-			<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
+  	<mediaDisplay name="threePartsView">
+    	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+    	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+    	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+    	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+    	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+    	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+    	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+    	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
 		</mediaDisplay>
   	<onClick>
   	  <script>
-  	     idx = Integer(getFocusItemIndex());
-	       url = youtubeApiBaseURL + getStringArrayAt(feedArray, idx);
-	       title = getStringArrayAt(titleArray, idx);
+  	     idx = getFocusItemIndex();
+	       url = youtubeApiBaseURL + getItemInfo(idx, "feed_name");
+	       title = getItemInfo(idx, "title");
 	       
 	       arr = null;
          arr = pushBackStringArray(arr, url);
@@ -164,7 +142,50 @@
 	</item_template>
 <!--
 !-->
-	<script>
+	<onEnter>
+    screenXp = 4;
+    screenYp = 3;
+    rssconf = readStringFromFile("/usr/local/etc/translate/etc/rss.conf");
+    print("rssconf:",rssconf);
+    if(rssconf != null)
+    {
+      value = getStringArrayAt(rssconf, 0);
+      if(value != null &amp;&amp; value != "")
+        screenXp = Integer(value);
+      value = getStringArrayAt(rssconf, 1);
+      if(value != null &amp;&amp; value != "")
+        screenYp = Integer(value);
+    }
+    print("rssconf:",screenXp,screenYp);
+  
+    youtubeApiBaseURL = "http://gdata.youtube.com/feeds/api/standardfeeds/";
+    cachePath = getStoragePath("key");
+    optionsArray = readStringFromFile(cachePath + "youtubeOptions.dat");
+    if(optionsArray == null)
+    {
+      youtubeRegion = readStringFromFile(cachePath + "youtubeRegion.dat");
+      if(youtubeRegion == null)
+        youtubeRegion = "RU";
+      hd = 1;
+      username = " ";
+    }
+    else
+    {
+      youtubeRegion = getStringArrayAt(optionsArray, 0);
+      hd = getStringArrayAt(optionsArray, 1);
+      username = getStringArrayAt(optionsArray, 2);
+    }
+    if(youtubeRegion != null &amp;&amp; youtubeRegion != " " &amp;&amp; youtubeRegion != "")
+    {
+      youtubeApiBaseURL += youtubeRegion + "/";
+    }
+    
+    print("youtubeApiBaseURL=",youtubeApiBaseURL);
+    
+    storagePath = getStoragePath("tmp") + "youtubeRSS.dat";
+  
+  	pageTitle = "Стандартные каналы";
+
 		itemTitleArray = null;
 
 		topUrl="../etc/translate/rss/youtube/yt_standard_feeds.rss";
@@ -195,7 +216,7 @@
 				redrawDisplay();
 			}
 		}
-	</script>
+	</onEnter>
 
 	<channel>
 		<title>YouTube: Стандартные каналы</title>

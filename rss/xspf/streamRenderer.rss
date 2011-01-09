@@ -21,7 +21,7 @@
 #
 -->
 
-<script>
+<onEnter>
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
   cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
   if(cgiconf != null)
@@ -33,6 +33,21 @@
       print("cgi.conf=",value);
     }
   }
+
+  screenXp = 4;
+  screenYp = 3;
+  rssconf = readStringFromFile("/usr/local/etc/translate/etc/rss.conf");
+  print("rssconf:",rssconf);
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 0);
+    if(value != null &amp;&amp; value != "")
+      screenXp = Integer(value);
+    value = getStringArrayAt(rssconf, 1);
+    if(value != null &amp;&amp; value != "")
+      screenYp = Integer(value);
+  }
+  print("rssconf:",screenXp,screenYp);
 
   renderer_cmd_file   = "/tmp/xspf_renderer.dat";
   renderer_status_file= "/tmp/xspf_renderer.status";
@@ -50,9 +65,7 @@
   
   renderer_status     = "waiting";
   renderer_url        = "";
-</script>
 
-<onEnter>
   setRefreshTime(250);
 </onEnter>
 
@@ -330,7 +343,7 @@
 	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
 	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 
-	<text align="center" redraw="no" offsetXPC="5" offsetYPC="5" widthPC="90" heightPC="15" fontSize="34" backgroundColor="10:105:150" foregroundColor="100:200:255">
+	<text align="center" redraw="no" offsetXPC="0" offsetYPC="2" widthPC="100" heightPC="15" fontSize="34" backgroundColor="10:105:150" foregroundColor="100:200:255">
 		Media Stream Renderer
 	</text>
 
@@ -344,6 +357,16 @@
 
   <image redraw="yes" offsetXPC="35" offsetYPC="37" widthPC="30" heightPC="26">
     ../etc/translate/rss/image/msr.png
+    <widthPC>
+      <script>
+        181 / 114 * 26 * screenYp / screenXp;
+      </script>
+    </widthPC>
+    <offsetXPC>
+      <script>
+        (100 - 181 / 114 * 26 * screenYp / screenXp)/2;
+      </script>
+    </offsetXPC>
 	</image>
 
 	<onUserInput>

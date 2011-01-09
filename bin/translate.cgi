@@ -47,7 +47,7 @@ UDPXY_URL=`echo "$UDPXY_URL" | awk '{sub(/\/$/, ""); gsub(/\//, "\\\/"); gsub(/\
 #RTMPGW_URL=${RTMPGW_URL:-'http://127.0.0.1:88'}
 RTMPGW_URL=`echo "$RTMPGW_URL" | awk '{sub(/\/$/, ""); print}'`
 
-USERAGENT="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; InfoPath.2)"
+USERAGENT="Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13"
 
 TMPFILE=$TEMP/$$.tmp
 
@@ -166,8 +166,8 @@ print_status_item()
 #}
 
 test_stream()
-{  
-  $MSDL $2 --debug -o ${TMPFILE} --stream-timeout 1 --no-treat-metafile "$3" 2>${TMPFILE}.log &
+{ 
+  $MSDL $2 --debug -o ${TMPFILE} --stream-timeout 1 --no-treat-metafile $3 2>${TMPFILE}.log &
   
   local timeout=$1
   while /bin/ps | grep -q -s "^ *$! "; do

@@ -55,15 +55,15 @@
   forceFocusOnMenu=no
 	showDefaultInfo=no
 >
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
-	
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+
   <text offsetXPC=5 offsetYPC=0 widthPC=100 heightPC=15 fontSize=20 backgroundColor=8:8:16 foregroundColor=200:200:200>
     <script>pageTitle;</script>
   </text>
@@ -72,10 +72,30 @@
 	</image>
   <image offsetXPC=80 offsetYPC=1 widthPC=15 heightPC=10>
     ../etc/translate/rss/image/YouTubeLogo.jpg
+    <widthPC>
+      <script>
+        300 / 152 * 10 * screenYp / screenXp;
+      </script>
+    </widthPC>
+    <offsetXPC>
+      <script>
+        95 - 300 / 152 * 10 * screenYp / screenXp;
+      </script>
+    </offsetXPC>
 	</image>
 
   <image offsetXPC=30 offsetYPC=18 widthPC=25 heightPC=25>
     <script>thumbnail;</script>
+    <widthPC>
+      <script>
+        4 / 3 * 25 * screenYp / screenXp;
+      </script>
+    </widthPC>
+    <offsetXPC>
+      <script>
+        30 + 25 * (1 - 4 / 3 * screenYp / screenXp) / 2;
+      </script>
+    </offsetXPC>
 	</image>
 
   <text offsetXPC=58 offsetYPC=17 widthPC=10 heightPC=5 fontSize=17 backgroundColor=8:8:16 foregroundColor=100:200:200>
@@ -129,65 +149,6 @@
     </script>
   </onUserInput>
 </mediaDisplay>
-
-<script>
-  cachePath = getStoragePath("key");
-  optionsArray = readStringFromFile(cachePath + "youtubeOptions.dat");
-  if(optionsArray == null)
-  {
-    youtubeRegion = readStringFromFile(cachePath + "youtubeRegion.dat");
-    if(youtubeRegion == null)
-      youtubeRegion = "RU";
-    hd = 1;
-    username = " ";
-  }
-  else
-  {
-    youtubeRegion = getStringArrayAt(optionsArray, 0);
-    hd = getStringArrayAt(optionsArray, 1);
-    username = getStringArrayAt(optionsArray, 2);
-  }
-
-  if(youtubeRegion=="AU") lr="en"; else
-  if(youtubeRegion=="BR") lr="pt"; else
-  if(youtubeRegion=="GB") lr="en"; else
-  if(youtubeRegion=="DE") lr="de"; else
-  if(youtubeRegion=="NL") lr="nl"; else
-  if(youtubeRegion=="HK") lr="zh-Hans"; else
-  if(youtubeRegion=="IE") lr="ga"; else
-  if(youtubeRegion=="ES") lr="es"; else
-  if(youtubeRegion=="IT") lr="it"; else
-  if(youtubeRegion=="CA") lr="en"; else
-  if(youtubeRegion=="MX") lr="es"; else
-  if(youtubeRegion=="NZ") lr="en"; else
-  if(youtubeRegion=="PL") lr="pl"; else
-  if(youtubeRegion=="RU") lr="ru"; else
-  if(youtubeRegion=="US") lr="en"; else
-  if(youtubeRegion=="TW") lr="zh-Hans"; else
-  if(youtubeRegion=="FR") lr="fr"; else
-  if(youtubeRegion=="KR") lr="ko"; else
-  if(youtubeRegion=="JP") lr="ja"; else
-    lr=null;
-  
-  translateBaseURL = "http://127.0.0.1/cgi-bin/translate?";
-  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
-  if(cgiconf != null)
-  {
-    value = getStringArrayAt(cgiconf, 0);
-    if(value != null &amp;&amp; value != "")
-    {
-      translateBaseURL = value;
-      print("cgi.conf=",value);
-    }
-  }
-
-  storagePath = getStoragePath("tmp");
-  storagePath = storagePath + "youtubeRSS.dat";
-  arr = readStringFromFile(storagePath);
-  feedUrl = getStringArrayAt(arr, 0);
-  pageTitle = getStringArrayAt(arr, 1);
-  setReturnString("");
-</script>
 
 <onExit>
     playItemURL(-1, 1);
@@ -301,6 +262,78 @@
 </onRefresh>
 
 <onEnter>
+  screenXp = 4;
+  screenYp = 3;
+  rssconf = readStringFromFile("/usr/local/etc/translate/etc/rss.conf");
+  print("rssconf:",rssconf);
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 0);
+    if(value != null &amp;&amp; value != "")
+      screenXp = Integer(value);
+    value = getStringArrayAt(rssconf, 1);
+    if(value != null &amp;&amp; value != "")
+      screenYp = Integer(value);
+  }
+  print("rssconf:",screenXp,screenYp);
+
+  cachePath = getStoragePath("key");
+  optionsArray = readStringFromFile(cachePath + "youtubeOptions.dat");
+  if(optionsArray == null)
+  {
+    youtubeRegion = readStringFromFile(cachePath + "youtubeRegion.dat");
+    if(youtubeRegion == null)
+      youtubeRegion = "RU";
+    hd = 1;
+    username = " ";
+  }
+  else
+  {
+    youtubeRegion = getStringArrayAt(optionsArray, 0);
+    hd = getStringArrayAt(optionsArray, 1);
+    username = getStringArrayAt(optionsArray, 2);
+  }
+
+  if(youtubeRegion=="AU") lr="en"; else
+  if(youtubeRegion=="BR") lr="pt"; else
+  if(youtubeRegion=="GB") lr="en"; else
+  if(youtubeRegion=="DE") lr="de"; else
+  if(youtubeRegion=="NL") lr="nl"; else
+  if(youtubeRegion=="HK") lr="zh-Hans"; else
+  if(youtubeRegion=="IE") lr="ga"; else
+  if(youtubeRegion=="ES") lr="es"; else
+  if(youtubeRegion=="IT") lr="it"; else
+  if(youtubeRegion=="CA") lr="en"; else
+  if(youtubeRegion=="MX") lr="es"; else
+  if(youtubeRegion=="NZ") lr="en"; else
+  if(youtubeRegion=="PL") lr="pl"; else
+  if(youtubeRegion=="RU") lr="ru"; else
+  if(youtubeRegion=="US") lr="en"; else
+  if(youtubeRegion=="TW") lr="zh-Hans"; else
+  if(youtubeRegion=="FR") lr="fr"; else
+  if(youtubeRegion=="KR") lr="ko"; else
+  if(youtubeRegion=="JP") lr="ja"; else
+    lr=null;
+  
+  translateBaseURL = "http://127.0.0.1/cgi-bin/translate?";
+  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
+  if(cgiconf != null)
+  {
+    value = getStringArrayAt(cgiconf, 0);
+    if(value != null &amp;&amp; value != "")
+    {
+      translateBaseURL = value;
+      print("cgi.conf=",value);
+    }
+  }
+
+  storagePath = getStoragePath("tmp");
+  storagePath = storagePath + "youtubeRSS.dat";
+  arr = readStringFromFile(storagePath);
+  feedUrl = getStringArrayAt(arr, 0);
+  pageTitle = getStringArrayAt(arr, 1);
+  setReturnString("");
+
   mode = 0;
   setRefreshTime(1);
 </onEnter>

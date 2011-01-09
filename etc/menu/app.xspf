@@ -18,6 +18,13 @@
       <image>../etc/translate/rss/image/menu/xspfbrowser.png</image>
       <meta rel="mediaDisplay">threePartsView</meta>
     </track>
+    <track>
+      <link>rss_file://../etc/translate/rss/xspf/settings.rss</link>
+      <title>Settings</title>
+      <annotation>RSS Ex Settings</annotation>
+      <image>../etc/translate/rss/image/menu/settings.jpg</image>
+      <meta rel="mediaDisplay">onePartView</meta>
+    </track>
   </trackList>
 
 </playlist>
