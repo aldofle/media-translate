@@ -505,7 +505,7 @@
 <meta rel="stream_bitrate">96</meta>
 </track>
     <track>
-      <location>http://217.29.51.162:8000/radio-64k.aac</location>
+      <location>http://radiogrom.com/online/moskva_fm/detskoe_online_2.m3u</location>
       <title>Детское радио</title>
       <annotation>Спасибо Газпрому за наше счастливое детство!</annotation>
       <image>http://img.moskva.fm/img/stations/msk/96_8.gif</image>
@@ -514,13 +514,12 @@
       <meta rel="fm">96.8</meta>
       <meta rel="name">96_8</meta>
     
-<meta rel="stream_url">http://217.29.51.162:8000/radio-64k.aac</meta>
+<meta rel="stream_url">http://w01-cn01.akadostream.ru:8114/detifm192.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_type">audio/aacp</meta>
+<meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">For kids</meta>
-<meta rel="stream_bitrate">64</meta>
+<meta rel="stream_genre">various</meta>
 </track>
     <track>
       <location>http://radio.kp.ru:8000/stream</location>
