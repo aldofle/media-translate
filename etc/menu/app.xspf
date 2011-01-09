@@ -22,7 +22,7 @@
       <link>rss_file://../etc/translate/rss/xspf/settings.rss</link>
       <title>Settings</title>
       <annotation>RSS Ex Settings</annotation>
-      <image>../etc/translate/rss/image/menu/settings.jpg</image>
+      <image>../etc/translate/rss/image/menu/settings.png</image>
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
   </trackList>

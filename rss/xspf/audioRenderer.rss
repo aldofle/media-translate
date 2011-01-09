@@ -147,7 +147,7 @@
       }
   		if (play_total == 0 || play_total &gt; 1000000)
   		{
-         stream_image = "../etc/translate/rss/image/radio_online.jpg";
+         stream_image = "../etc/translate/rss/image/radio_online.png";
     	   redrawDisplay();
     	}
     	else

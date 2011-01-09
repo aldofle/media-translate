@@ -919,7 +919,7 @@
         if(image == "")
         {
           if(soft == "icecast" || soft == "shoutcast" || protocol == "rtsp" || protocol == "mms" || protocol == "mmsh" || protocol == "mmst")
-            image = "../etc/translate/rss/image/radio_online.jpg";
+            image = "../etc/translate/rss/image/radio_online.png";
           else
             image = playlistLogo;
         }

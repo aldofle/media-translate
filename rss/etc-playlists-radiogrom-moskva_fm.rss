@@ -490,6 +490,13 @@
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/city_fm_online.html</location>
     <title>- 87,9 FM - Сити-FM </title>
+    <stream_url>http://79.143.70.114:8000/cityfm-32k.aac</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/aacp</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>CityFM news</stream_genre>
+    <stream_bitrate>32</stream_bitrate>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/retro_fm_online.html</location>

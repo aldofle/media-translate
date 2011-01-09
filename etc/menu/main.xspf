@@ -21,7 +21,7 @@
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Start:middle;Size:3;File:etc/menu/app.xspf,collection/menu</link>
       <title>Applications</title>
-      <annotation>Media Stream Renderer, XSPF Browser</annotation>
+      <annotation>Media Stream Renderer, XSPF Browser, Settings</annotation>
       <image>../etc/translate/rss/image/menu/app.png</image>
       <meta rel="mediaDisplay">photoView</meta>
     </track>
