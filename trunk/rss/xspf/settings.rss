@@ -154,6 +154,12 @@
           {
             if(screenXp == 4)
             {
+              screenXp = 14;
+              screenYp = 9;
+            }
+            else
+            if(screenXp == 14)
+            {
               screenXp = 16;
               screenYp = 9;
             }
