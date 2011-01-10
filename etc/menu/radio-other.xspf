@@ -61,11 +61,11 @@
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
-      <link>rss_file://../etc/translate/rss/radio-profm.rss</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/radio-profm.xspf,collection/medialist</link>
       <title>ProFM</title>
-      <annotation>http://www.profm.ro - Romania</annotation>
+      <annotation>http://www.profm.ro/ - Online Radio - Romania</annotation>
       <image>../etc/translate/rss/image/menu/internetradio.png</image>
-      <meta rel="mediaDisplay">threePartsView</meta>
+      <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/audio-kazki-unicef-by.xspf,collection/medialist</link>

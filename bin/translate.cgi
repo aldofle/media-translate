@@ -1203,7 +1203,7 @@ case ${arg_cmd} in
     
     get_opt "Charset"
     charset=$opt
-  
+
     [ -z "$stream_type" ] && check_stream
 
     echo "Content-type: $stream_type"
