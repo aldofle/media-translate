@@ -252,11 +252,11 @@
     <mediaDisplay name="onePartView"/>
   </item>
   <item>
-    <link>rss_file://../etc/translate/rss/radio-profm.rss</link>
+<link>rss_file://../etc/translate/rss/etc-playlists-radio-profm.rss</link>
     <title>ProFM</title>
-    <annotation>http://www.profm.ro - Romania</annotation>
+    <annotation>http://www.profm.ro/ - Online Radio - Romania</annotation>
     <image>../etc/translate/rss/image/menu/internetradio.png</image>
-    <mediaDisplay name="threePartsView"/>
+    <mediaDisplay name="onePartView"/>
   </item>
   <item>
 <link>rss_file://../etc/translate/rss/etc-playlists-audio-kazki-unicef-by.rss</link>
