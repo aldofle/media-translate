@@ -203,13 +203,6 @@
     <mediaDisplay name="onePartView"/>
   </item>
   <item>
-<link>rss_file://../etc/translate/rss/etc-playlists-video-prahovahd.rss</link>
-    <title>OneHD</title>
-    <annotation>ONE HD - Online Network Entertainment - Romania. Качественные концертные записи на любой вкус.</annotation>
-    <image>../etc/translate/rss/image/menu/internettv.png</image>
-    <mediaDisplay name="onePartView"/>
-  </item>
-  <item>
 <link>rss_file://../etc/translate/rss/etc-playlists-tv-my_favorites.rss</link>
     <title>my favorites</title>
     <annotation/>
