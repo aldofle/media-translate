@@ -99,6 +99,23 @@ sed -i '/^XSLTPROC=/d' ../etc/translate.conf
 echo -e '\nXSLTPROC=$BASEPATH/bin/xsltproc' >> ../etc/translate.conf
 }}}
 
+=== [http://rtmpdump.mplayerhq.hu/ RTMPDUMP] ===
+
+  Альтернативная утилита для загрузки RTMP потока (вместо используемой по умолчанию *[Introduction#%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82 flvstreamer]*).
+
+  Путь к утилите *rtmpdump* прописывается в переменной RTMPDUMP в *translate.conf*:
+{{{
+RTMPDUMP=/opt/bin/rtmpdump
+}}}
+
+  Можно воспользоваться статически слинкованной утилитой *[http://code.google.com/p/eboda-hd-for-all-500/downloads/detail?name=rtmpdump rtmpdump]*. Пример установки в */usr/local/etc/translate/bin*:
+{{{
+cd /usr/local/etc/translate/bin
+wget -O - http://media-translate.googlecode.com/files/rtmpdump.tar.bz2 | tar -xj
+sed -i '/^RTMPDUMP=/d' ../etc/translate.conf
+echo -e '\RTMPDUMP=$BASEPATH/bin/rtmpdump' >> ../etc/translate.conf
+}}}
+
 = Настройка =
 
   * Основной конфигурационный файл */usr/local/etc/translate/etc/translate.conf*:
