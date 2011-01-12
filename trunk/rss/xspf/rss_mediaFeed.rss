@@ -42,9 +42,9 @@
 	backgroundColor="0:0:0"
 	itemBackgroundColor="0:0:0"
 	showHeader=no
-  selectMenuOnRight=no
-  forceFocusOnItem=yes
-  forceFocusOnMenu=no
+    selectMenuOnRight=no
+    forceFocusOnItem=yes
+    forceFocusOnMenu=no
 	showDefaultInfo=yes
 	infoYPC=90
 >
@@ -215,8 +215,23 @@
     	  {
     	    url   = getXMLAttribute("rss","channel","item",count,"enclosure","url");
     	    type  = getXMLAttribute("rss","channel","item",count,"enclosure","type");
+    	    
+    	    if(type == "application/x-bittorrent" || url == null || url == "")
+    	    {
+        	  type  = "";
+    	      url = getXMLText("rss","channel","item",count,"link");
+    	    }
     	  }
-    	  thumbnail = getXMLAttribute("rss","channel","item",count,"media:content","media:thumbnail",0,"url");
+    	  
+    	  thumbnail = getXMLAttribute("rss","channel","item",count,"media:thumbnail","url");
+    	  if(thumbnail == null || thumbnail == "")
+    	  {
+            thumbnail = getXMLAttribute("rss","channel","item",count,"media:content","media:thumbnail",0,"url");
+            if(thumbnail == null || thumbnail == "")
+            {
+                thumbnail = getXMLAttribute("rss","channel","item",count,"image","url");
+            }
+    	  }
     	  
     	  titleArray  = pushBackStringArray(titleArray, title);
     	  urlArray    = pushBackStringArray(urlArray, url);
