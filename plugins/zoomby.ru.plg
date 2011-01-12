@@ -27,9 +27,6 @@
 # options:
 #   HD:[0|1]
 
-stream_url=''
-stream_type='video/mp4'
-server_type='zoomby'
 
 local SMILINFO=$TMPFILE.smilinfo
 
@@ -56,18 +53,20 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
     local smil_file="http://www.zoomby.ru`grep -i "video=" ${TMPFILE} | sed -n '1p' | awk '{match($0,/video=([^&"]+)[&"]/,arr);print arr[1];}'`"
     host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${smil_file}" 2>&1`
     if [ -f ${TMPFILE} ]; then
+      stream_type='video/mp4'
+      server_type='zoomby'
       awk -f getxml.awk -f ${PLUGINS_DIR}zoomby.ru.smil.awk "$TMPFILE" > $SMILINFO
       stream_url=`sed -n "${hdc}p" $SMILINFO | awk '{print $2;}'`
       if echo "$RTMPDUMP" | grep -qs flvstreamer; then
         stream_url="${stream_url}.f4v"
       fi
-      protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
+      protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
       icy_name=`sed -n '1p' $SMILINFO`
       rm -f $SMILINFO
       rm -f $TMPFILE
     fi
-    return $RC_OK
   fi  
+  return $RC_OK
 fi
 
 return $RC_FAIL

@@ -29,10 +29,6 @@
 # http://guzei.com/online_tv/watch.php?online_tv_id=1781
 #
 
-stream_type=''
-stream_url=''
-server_type=''
-
 if echo "${arg_url}" | grep -q -s '\(www\.\)*guzei\.com/online_radio/listen.php?online_radio_id=[0-9].*$'; then 
 
   local host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
@@ -44,8 +40,8 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*guzei\.com/online_radio/listen.php?
     check_av_stream
     ms_title="$station_title"
     icy_name="$station_title"
-    return $RC_OK
   fi
+  return $RC_OK
 
 elif echo "${arg_url}" | grep -q -s '\(www\.\)*guzei\.com/online_tv/watch.php?online_tv_id=[0-9].*$'; then 
 
@@ -61,23 +57,22 @@ elif echo "${arg_url}" | grep -q -s '\(www\.\)*guzei\.com/online_tv/watch.php?on
     elif [ "$player_type" == "flash" ]; then
       stream_type='video/x-flv'
       stream_url=`echo "${arg_url}" | sed 's/.*file=//;s/&.*//'`
-      if echo "${arg_url}" | grep -q -s 'type=rtmp'; then 
+      if echo "${arg_url}" | grep -qs 'type=rtmp'; then 
         local streamer=`echo "${arg_url}" | sed 's/.*streamer=//;s/&.*//'`
         stream_url="$streamer/$stream_url"
         protocol='rtmp'
-      elif echo "${arg_url}" | grep -q -s 'rtmp=rtmp:'; then 
+      elif echo "${arg_url}" | grep -qs 'rtmp=rtmp:'; then 
         stream_url=`echo "${arg_url}" | sed 's/.*rtmp=//;s/&.*//'`
         protocol='rtmp'
       else
         arg_url="$stream_url"
-        stream_url=
         check_av_stream
       fi
     fi
     ms_title="$station_title"
     icy_name="$station_title"
-    return $RC_OK
   fi
+  return $RC_OK
 
 fi
 

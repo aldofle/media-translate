@@ -31,10 +31,6 @@
 
 if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; then 
 
-  stream_type='video/mp4'
-  stream_url=''
-  server_type='tvigle'
-
   get_opt "HD"
   [ -z "$opt" ] && opt=`sed -n '5p' $RSSCONF 2>/dev/null`
   [ -z "$opt" ] && opt=$TVIGLE_HD
@@ -52,6 +48,9 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; t
   host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" http://www.tvigle.ru/xml/single.php?obj=$video_id 2>&1`
   
   if [ -f ${TMPFILE} ]; then
+    stream_type='video/mp4'
+    stream_url=''
+    server_type='tvigle'
     if grep -qs 'low="1"' ${TMPFILE}; then
       :
     else
@@ -75,11 +74,7 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; t
     protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
     icy_name=`grep "name=" ${TMPFILE} | sed 's/.* name="//;s/".*//g'`
     rm -f $TMPFILE
-    return $RC_OK
   fi
-
-else
-  check_av_stream
   return $RC_OK
 fi
 

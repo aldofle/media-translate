@@ -28,10 +28,6 @@
 # http://www.radiogrom.com/online/great_britain/capital_fm_london_95_8_online.html
 #
 
-stream_type=''
-stream_url=''
-server_type=''
-
 if echo "${arg_url}" | grep -q -s '\(www\.\)*radiogrom\.com/online/.*\.html$'; then 
 
   local host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
@@ -50,10 +46,8 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*radiogrom\.com/online/.*\.html$'; t
     [ -z "$ms_title" ] && ms_title="$station_title"
     [ -z "$icy_name" ] && icy_name="$station_title"
     [ -z "$icy_description" ] && icy_description="$station_title"
-    return $RC_OK
   fi
-else
-  check_av_stream
+  return $RC_OK
 fi
 
 return $RC_FAIL

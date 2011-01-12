@@ -440,21 +440,27 @@ check_av_stream()
     # try to define stream server type
     host=`echo "$buf" | sed -n '/^Host: \[/p' | sed -n '$p' | awk '{print $3}'`
     
-    if [ "$arg_cmd" == "info" ]; then
-      buf=`$MSDL --debug -o /dev/null -p http --useragent "${USERAGENT}" --stream-timeout 1 "http://${host}" 2>&1`
-      host_content_type=`echo "$buf" | sed -n '/^[Cc]ontent\-[Tt]ype:/p' | sed -n '$p'`
-    else
-      host_content_type='text/html'
-    fi
+    case $arg_cmd in
+      info)
+        buf=`$MSDL --debug -o /dev/null -p http --useragent "${USERAGENT}" --stream-timeout 1 "http://${host}" 2>&1`
+        host_content_type=`echo "$buf" | sed -n '/^[Cc]ontent\-[Tt]ype:/p' | sed -n '$p'`
+      ;;
+      status)
+        host_content_type='text/html'
+      ;;
+      *)
+        host_content_type=
+      ;;
+    esac
     
-    if echo "$host_content_type" | grep -q -s "text\/html"; then
+    if echo "$host_content_type" | grep -qs "text\/html"; then
       host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" --stream-timeout 30 "http://${host}" 2>&1`
       if [ -f ${TMPFILE} ]; then
-        if grep -q -s -i "[^a-z]icecast[^a-z]" ${TMPFILE}; then
+        if grep -qsi "[^a-z]icecast[^a-z]" ${TMPFILE}; then
           stream_status_url="http://${host}"
           server_type='icecast'
           host_response=`cat ${TMPFILE}`
-        elif grep -q -s -i "[^a-z]shoutcast[^a-z]" ${TMPFILE}; then
+        elif grep -qsi "[^a-z]shoutcast[^a-z]" ${TMPFILE}; then
           stream_status_url="http://${host}"
           server_type='shoutcast'
           host_response=`cat ${TMPFILE}`
@@ -498,6 +504,18 @@ check_av_stream()
   fi
 }
 
+call_url_plugin()
+{
+  local url_plugin=
+  find_plugin "'$arg_url'" url_plugin
+  if [ -z "$url_plugin" ]; then
+    check_av_stream
+    return $RC_OK
+  else
+    . $PLUGINS_DIR"$url_plugin" "'$arg_url'"
+  fi
+}
+
 check_stream()
 {
   if echo "${arg_url}" | grep -q -s "^ftp:\/\/.*\/$"; then 
@@ -506,14 +524,10 @@ check_stream()
   elif echo "${arg_url}" | grep -q -s "^\(/.*/\|/\)$"; then 
     # fictional file browser content type
     stream_type=application/x-file-browser
+  elif call_url_plugin; then
+    :
   else
-    local url_plugin=''
-    find_plugin "'$arg_url'" url_plugin
-    if [ -z "$url_plugin" ]; then
-      check_av_stream
-    else
-      . $PLUGINS_DIR"$url_plugin" "'$arg_url'"
-    fi
+    check_av_stream
   fi
   
   [ "$stream_type" == "audio/x-shoutcast-stream" ] && stream_type=audio/x-scpls
@@ -765,7 +779,7 @@ command_info()
       esac
     fi
 
-	  if echo "$stream_status_url" | grep -q -s -i "^icyx://"; then
+	  if echo "$stream_status_url" | grep -qsi "^icyx://"; then
 	    meta_current_song=`awk -v streamurl="$stream_url" -v statusurl="$stream_status_url" '
 	      BEGIN {
 	        match(statusurl, /^icyx:\/\/(.*):(.*)$/, arr);
@@ -806,7 +820,7 @@ command_info()
 	      }
 	    '`
 	    if echo "$meta_current_song" | $TOUTF8 -t; then
-		meta_current_song=`echo "$meta_current_song" | $XCODE -s | $TOUTF8`
+		    meta_current_song=`echo "$meta_current_song" | $XCODE -s | $TOUTF8`
 	    fi
 	  fi
 

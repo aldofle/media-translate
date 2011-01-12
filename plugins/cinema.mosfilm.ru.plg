@@ -25,10 +25,6 @@
 # http://www.cinema.mosfilm.ru/PrivateVideo.aspx?id=f61c564b-0653-4a23-b6fd-02253cdda615
 #
 
-stream_type='video/x-ms-wmv'
-stream_url=''
-server_type=''
-
 if echo "${arg_url}" | grep -q -s '\(www\.\)*cinema\.mosfilm\.ru/PrivateVideo.aspx?id=.*$'; then 
 
   local video_id=`echo "$arg_url" | sed -e 's/.*[&?]id=//;s/&.*//'`
@@ -41,13 +37,14 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*cinema\.mosfilm\.ru/PrivateVideo.as
     if [ -f ${TMPFILE} ]; then
       film_title=`grep 'class="movieName"' ${TMPFILE} | sed 's/.*class=[^>]*>//;s/<\/.*//g'`
     fi
+    stream_type='video/x-ms-wmv'
     stream_url="http://www.cinema.mosfilm.ru/MovieWithOutSessionState.ashx?code=${code}"
     #stream_url="http://81.29.132.170/DataStorageService.asmx/GetOnline?code=${code}"
     protocol='http'
     icy_name="$film_title"
     rm -f $TMPFILE
-    return $RC_OK
   fi  
+  return $RC_OK
 fi
 
 return $RC_FAIL

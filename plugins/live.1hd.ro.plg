@@ -41,8 +41,8 @@ if echo "${arg_url}" | grep -q -s 'live\.*\(1hd\|prahovahd\)\.ro/playlist.*\.php
     stream_type='application/xspf+xml'
     stream_url=$PLAYLISTFILE
     protocol='file'
-    return $RC_OK
   fi
+  return $RC_OK
 fi
 
 return $RC_FAIL
