@@ -41,8 +41,8 @@ if echo "${arg_url}" | grep -q -s 'video\.google\.com/.*docid=..*$'; then
     protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
     icy_name=`sed 's/.*"short_title":"//;s/","short_.*//;s/\\\"/"/g' ${TMPFILE}`
     rm -f $TMPFILE
-    return $RC_OK
   fi
+  return $RC_OK
 
 fi
 

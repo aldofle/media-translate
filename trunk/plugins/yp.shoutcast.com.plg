@@ -26,10 +26,6 @@
 # http://yp.shoutcast.com/sbin/tunein-station.pls?id=1116397
 #
 
-stream_type=''
-stream_url=''
-server_type='shoutcast'
-
 if echo "${arg_url}" | grep -q -s '\.*shoutcast\.com/.*?id=[0-9].*$'; then 
 
   local station_id=`echo "$arg_url" | sed -e 's/.*[?&]id=//;s/&.*//`
@@ -51,15 +47,20 @@ if echo "${arg_url}" | grep -q -s '\.*shoutcast\.com/.*?id=[0-9].*$'; then
         let index=$index-1
         stream_url=`sed -ne "/File$index=/p" $TMPFILE | sed -e "s/File$index=//"`
     fi
+
+    rm -f $TMPFILE
     
     if [ -n "$stream_url" ]; then
-      arg_url=$stream_url
-      check_av_stream
-      return $RC_OK
-    else
-      rm -f $TMPFILE
+      server_type='shoutcast'
+      protocol='http'
+      #host_response=`$MSDL --debug --stream-timeout 1 -o /dev/null -p http "$stream_url" 2>&1`
+      #stream_type=`echo "$host_response" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
+      arg_url="$stream_url"
+      arg_cmd='icyonly'
+      return $RC_FAIL
     fi
   fi
+  return $RC_OK
 fi
 
 return $RC_FAIL

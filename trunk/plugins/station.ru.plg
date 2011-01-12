@@ -48,9 +48,8 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*station\.ru/RadioStation.aspx?id=[0
     icy_name="$station_title"
     stream_status_url="http://station.ru/GetSongJS.aspx?id=$station_id"
     $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${stream_status_url}" 2>&1
-    return $RC_OK
   fi
-  
+  return $RC_OK
 fi
 
 return $RC_FAIL
