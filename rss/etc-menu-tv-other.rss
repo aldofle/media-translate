@@ -210,6 +210,13 @@
     <mediaDisplay name="onePartView"/>
   </item>
   <item>
+<link>rss_file://../etc/translate/rss/etc-playlists-video-rss_collections.rss</link>
+    <title>RSS Media Feeds</title>
+    <annotation>RSS-ленты - ivi.ru, tvigle.ru, mults.spb.ru, vimeo.com</annotation>
+    <image>../etc/translate/rss/image/menu/rss.png</image>
+    <mediaDisplay name="onePartView"/>
+  </item>
+  <item>
 <link>rss_file://../etc/translate/rss/etc-playlists-tv-my_favorites.rss</link>
     <title>my favorites</title>
     <annotation/>

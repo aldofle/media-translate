@@ -19,6 +19,13 @@
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/video-rss_collections.xspf,collection/medialist</link>
+      <title>RSS Media Feeds</title>
+      <annotation>RSS-ленты - ivi.ru, tvigle.ru, mults.spb.ru, vimeo.com</annotation>
+      <image>../etc/translate/rss/image/menu/rss.png</image>
+      <meta rel="mediaDisplay">onePartView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/tv-my_favorites.xspf,collection/medialist</link>
       <title>my favorites</title>
       <annotation></annotation>

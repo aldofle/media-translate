@@ -1227,7 +1227,7 @@ case ${arg_cmd} in
       killall -q $RTMPDUMP 2>&1
       exec nice $RTMPDUMP -q -o - -b 60000 -r "$stream_url" $opt
     elif [ "$charset" == "CP1251" ]; then
-      $MSDL $msdlopt -q -o - "$stream_url" | $TOUTF8 # | sed 's/windows-125./utf-8/'
+      $MSDL $msdlopt -q -o - "$stream_url" | $TOUTF8 | sed 's/windows-125./utf-8/'
     else
       exec $MSDL $msdlopt -q -o - "$stream_url"
     fi
@@ -1293,7 +1293,12 @@ case ${arg_cmd} in
   ;;
   app)
     if [ -f $TRANSLATE/app/$arg_url ]; then
-	    . $TRANSLATE/app/$arg_url
+        . $TRANSLATE/app/$arg_url
+    fi
+  ;;
+  app/*)
+    if [ -f $TRANSLATE/$arg_cmd ]; then
+	    . $TRANSLATE/$arg_cmd
     fi
   ;;
   scan|*)
