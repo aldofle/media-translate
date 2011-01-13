@@ -24,7 +24,11 @@ TEMPFEED=$CACHEPATH/mediafeed.rss
 
 rm -f $TEMPFEED
 
-$CURL --compressed -s -o $TEMPFEED "$stream_url"
+if [ -x "$CURL" ]; then
+    $CURL --compressed -s -o $TEMPFEED "$stream_url"
+elif [ -x "$GZIP" ]; then
+    $MSDL -q -p http -o - "$stream_url" | $GZIP -df > $TEMPFEED
+fi
 
 if [ -f $TEMPFEED ]; then
     echo "Content-type: application/rss+xml"
