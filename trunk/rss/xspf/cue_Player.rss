@@ -55,14 +55,14 @@
 	showHeader="no"
 	showDefaultInfo="no"
 >
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_01.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_02.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_03.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_04.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_05.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_06.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
-	<idleImage idleImageWidthPC="10" idleImageHeightPC="10"> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
 
   <text redraw="no" offsetXPC="5" offsetYPC="0" widthPC="80" heightPC="15" fontSize="20" backgroundColor="8:8:16" foregroundColor="200:200:200">
     <script>pageTitle;</script>
