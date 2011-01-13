@@ -460,8 +460,8 @@
     <annotation>На этом сайте вы можете абсолютно бесплатно загрузить мультфильмы для вас и ваших детей. На сайте собрана коллекция мультфильмов советских времен и не только. Самые лучшие мультики из вашего детства! Коллекция постоянно пополняется новыми мультфильмами.</annotation>
     <title>Мультики от mults.spb.ru</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
-    <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://mults.spb.ru/rss.php</location>
-    <stream_url>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://mults.spb.ru/rss.php</stream_url>
+    <location>http://127.0.0.1/cgi-bin/translate?app/rss/mults.spb.ru,http://mults.spb.ru/rss.php</location>
+    <stream_url>http://127.0.0.1/cgi-bin/translate?app/rss/mults.spb.ru,http://mults.spb.ru/rss.php</stream_url>
     <stream_class>rss</stream_class>
     <stream_type>application/rss</stream_type>
     <stream_protocol>http</stream_protocol>
@@ -470,38 +470,38 @@
     <annotation>Все видео: бесплатно смотреть кино, сериалы, программы, мультфильмы и клипы в хорошем качестве без регистрации: Новое видео</annotation>
     <title>Новое видео от ivi.ru</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
-    <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://www.ivi.ru/rss/new</location>
-    <stream_url>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://www.ivi.ru/rss/new</stream_url>
+    <location>http://www.ivi.ru/rss/new</location>
+    <stream_url>http://www.ivi.ru/rss/new</stream_url>
     <stream_class>rss</stream_class>
-    <stream_type>application/rss</stream_type>
+    <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <annotation>Все видео: бесплатно смотреть кино, сериалы, программы, мультфильмы и клипы в хорошем качестве без регистрации: Популярное видео</annotation>
     <title>Самое популярное видео от ivi.ru</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
-    <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://www.ivi.ru/rss/best</location>
-    <stream_url>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://www.ivi.ru/rss/best</stream_url>
+    <location>http://www.ivi.ru/rss/best</location>
+    <stream_url>http://www.ivi.ru/rss/best</stream_url>
     <stream_class>rss</stream_class>
-    <stream_type>application/rss</stream_type>
+    <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <annotation>Все видео: бесплатно смотреть кино, сериалы, программы, мультфильмы и клипы в хорошем качестве без регистрации: Рекомендуемое видео</annotation>
     <title>Рекомендованное видео от ivi.ru</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
-    <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://www.ivi.ru/rss/recommend</location>
-    <stream_url>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://www.ivi.ru/rss/recommend</stream_url>
+    <location>http://www.ivi.ru/rss/recommend</location>
+    <stream_url>http://www.ivi.ru/rss/recommend</stream_url>
     <stream_class>rss</stream_class>
-    <stream_type>application/rss</stream_type>
+    <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <annotation>RSS-лента Tvigle Media</annotation>
     <title>Tvigle Media</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
-    <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://www.tvigle.ru/rss/</location>
-    <stream_url>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://www.tvigle.ru/rss/</stream_url>
+    <location>http://127.0.0.1/cgi-bin/translate?app/rss/tvigle.ru,http://www.tvigle.ru/rss/</location>
+    <stream_url>http://127.0.0.1/cgi-bin/translate?app/rss/tvigle.ru,http://www.tvigle.ru/rss/</stream_url>
     <stream_class>rss</stream_class>
     <stream_type>application/rss</stream_type>
     <stream_protocol>http</stream_protocol>
@@ -510,20 +510,20 @@
     <annotation>Welcome to the Vimeo HD Channel, home to the web's most creative and inspiring HD videos.  Here we feature HD videos that  are super awesome. Sit back and enjoy! This channel is moderated by the staff of Vimeo. If you want your HD video added to this channel, put a link in the shoutbox and we'll check it out.</annotation>
     <title>Vimeo / The Vimeo HD Channel</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
-    <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://vimeo.com/channels/hd/videos/rss</location>
-    <stream_url>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://vimeo.com/channels/hd/videos/rss</stream_url>
+    <location>http://vimeo.com/channels/hd/videos/rss</location>
+    <stream_url>http://vimeo.com/channels/hd/videos/rss</stream_url>
     <stream_class>rss</stream_class>
-    <stream_type>application/rss</stream_type>
+    <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <annotation>We are the Staff. These are the videos we like the bestest. Check em out!</annotation>
     <title>Vimeo / Vimeo Staff Picks</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
-    <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://vimeo.com/channels/staffpicks/videos/rss</location>
-    <stream_url>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://vimeo.com/channels/staffpicks/videos/rss</stream_url>
+    <location>http://vimeo.com/channels/staffpicks/videos/rss</location>
+    <stream_url>http://vimeo.com/channels/staffpicks/videos/rss</stream_url>
     <stream_class>rss</stream_class>
-    <stream_type>application/rss</stream_type>
+    <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
 </channel>

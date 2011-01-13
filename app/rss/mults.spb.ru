@@ -28,18 +28,14 @@ $MSDL -p http -q -o $TEMPFEED "$stream_url"
 if [ -f $TEMPFEED ]; then
     echo "Content-type: application/rss+xml"
     echo
-    if sed -n '/<?xml/p' $TEMPFEED | grep -qs windows-125; then
-        cat $TEMPFEED | $TOUTF8 | sed 's/windows-125./utf-8/'
-    else
-        cat $TEMPFEED
-    fi
+    call_convert()
+    {
+      if sed -n '/<?xml/p' $TEMPFEED | grep -qs windows-125; then
+          cat $TEMPFEED | $TOUTF8 | sed 's/windows-125./utf-8/'
+      else
+          cat $TEMPFEED
+      fi
+    }
+    call_convert | awk '{print $0;} /<enclosure/ {match($0, /url="http:\/\/mults\.spb\.ru\/torrents\/([^"]+)\.torrent"/, arr); print "<image url=\"http://mults.spb.ru/screen/mini/" arr[1] ".jpg\"/>";}'
 fi
 
-  mkdir -p /tmp/cached
-  STREAMDAT=/tmp/cached/stream.dat
-  echo "$stream_url" > $STREAMDAT          # request_url
-  echo "$stream_url" >> $STREAMDAT         # stream_url
-  echo "" >> $STREAMDAT                 # 
-  echo "" >> $STREAMDAT                 # 
-  
-#  cat $BASEPATH/rss/xspf/rss_mediaFeed.rss | printContent "application/rss+xml"

@@ -23,7 +23,8 @@ cd $DATAPATH
 TEMPFEED=$CACHEPATH/mediafeed.rss
 
 rm -f $TEMPFEED
-$MSDL -p http -q -o $TEMPFEED "$stream_url"
+
+$CURL --compressed -s -o $TEMPFEED "$stream_url"
 
 if [ -f $TEMPFEED ]; then
     echo "Content-type: application/rss+xml"
@@ -34,12 +35,3 @@ if [ -f $TEMPFEED ]; then
         cat $TEMPFEED
     fi
 fi
-
-  mkdir -p /tmp/cached
-  STREAMDAT=/tmp/cached/stream.dat
-  echo "$stream_url" > $STREAMDAT          # request_url
-  echo "$stream_url" >> $STREAMDAT         # stream_url
-  echo "" >> $STREAMDAT                 # 
-  echo "" >> $STREAMDAT                 # 
-  
-#  cat $BASEPATH/rss/xspf/rss_mediaFeed.rss | printContent "application/rss+xml"
