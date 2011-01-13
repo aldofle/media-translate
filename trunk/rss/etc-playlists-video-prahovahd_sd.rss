@@ -455,47 +455,47 @@
 <script>
     channelImage = "http://live.1hd.ro/logo.png";
   </script><channel>
-  <title>OneHD / HD</title>
+  <title>OneHD / SD</title>
   <item>
     <annotation>Prima televiziune online HD</annotation>
     <title>OneHD - Live! Concert</title>
     <image>../etc/translate/rss/image/menu/internettv.png</image>
-    <location>http://live.1hd.ro/playlist.php</location>
+    <location>http://live.1hd.ro/playlistsd.php</location>
     <autoplay>0</autoplay>
   </item>
   <item>
     <annotation>Jazz</annotation>
     <title>OneHD - Live! Jazz</title>
     <image>../etc/translate/rss/image/menu/internettv.png</image>
-    <location>http://live.1hd.ro/playlistj.php</location>
+    <location>http://live.1hd.ro/playlistjsd.php</location>
     <autoplay>0</autoplay>
   </item>
   <item>
     <annotation>Classics</annotation>
     <title>OneHD - Live! Classics</title>
     <image>../etc/translate/rss/image/menu/internettv.png</image>
-    <location>http://live.1hd.ro/playlistc.php</location>
+    <location>http://live.1hd.ro/playlistcsd.php</location>
     <autoplay>0</autoplay>
   </item>
   <item>
     <annotation>Dance</annotation>
     <title>OneHD - Live! Dance</title>
     <image>../etc/translate/rss/image/menu/internettv.png</image>
-    <location>http://live.1hd.ro/playlistd.php</location>
+    <location>http://live.1hd.ro/playlistdsd.php</location>
     <autoplay>0</autoplay>
   </item>
   <item>
     <annotation>Rock</annotation>
     <title>OneHD - Live! Rock</title>
     <image>../etc/translate/rss/image/menu/internettv.png</image>
-    <location>http://live.1hd.ro/playlistr.php</location>
+    <location>http://live.1hd.ro/playlistrsd.php</location>
     <autoplay>0</autoplay>
   </item>
   <item>
     <annotation>Pop</annotation>
     <title>OneHD - Live! Pop</title>
     <image>../etc/translate/rss/image/menu/internettv.png</image>
-    <location>http://live.1hd.ro/playlistp.php</location>
+    <location>http://live.1hd.ro/playlistpsd.php</location>
     <autoplay>0</autoplay>
   </item>
 </channel>

@@ -12,7 +12,7 @@
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/video-prahovahd.xspf,collection/medialist</link>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/video-prahovahd_sd.xspf,collection/medialist</link>
       <title>OneHD / SD</title>
       <annotation>ONE HD - Online Network Entertainment - Romania. Prima televiziune online HD. Качественные концертные записи на любой вкус. (SD качество, min 0.5Mbit/sec)</annotation>
       <image>http://www.1hd.ro/images/sd.png</image>
