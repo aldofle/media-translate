@@ -16,7 +16,7 @@ wget -q -O  - $1 | awk -v basepath="$BASEPATH" -v translate_cgi="$TRANSLATE_CGI"
     if(match($0, /<link>(.*)<\/link>/, arr))
     {
       url=arr[1];
-      if(match(url, /.*,(collection|moskvafm)\//))
+      if(match(url, /.*,(collection|moskvafm)\//) || match(url, /translate\?app\/ivi\/index/, arr))
       {
         file="";
         if(match(url, /File:([^,;]*)[,;]/, arr))
@@ -27,9 +27,14 @@ wget -q -O  - $1 | awk -v basepath="$BASEPATH" -v translate_cgi="$TRANSLATE_CGI"
         {
           file=arr[1];
         }
+        else if(match(url, /translate\?app\/ivi\/index/, arr))
+        {
+          file="app/ivi/index";
+        }
         file_rss=file;
         gsub(/\//, "-",file_rss);
-        sub(/\.xspf/, ".rss", file_rss);
+        sub(/\.xspf/, "", file_rss);
+        file_rss = file_rss ".rss";
         print "<link>rss_file://../etc/translate/rss/" file_rss "</link>";
         cmd=basepath "/util/scripts/build_menu.sh \"" url "\" \"" basepath "/rss/" file_rss "\"";
         print file_rss > "/dev/stderr" 

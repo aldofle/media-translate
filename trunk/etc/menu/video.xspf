@@ -19,6 +19,13 @@
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app/ivi/index</link>
+      <title>Ivi</title>
+      <annotation>ivi.ru - первый в России бесплатный видеосервис с лицензионным полнометражным контентом. ivi.ru - это, пожалуй, самая большая коллекция лицензионного видео российского интернета.</annotation>
+      <image>../etc/translate/rss/image/menu/ivi.png</image>
+      <meta rel="mediaDisplay">onePartView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/tv-other.xspf,collection/menulist</link>
       <title>Other</title>
       <annotation>Разные списки интернет-телевидения</annotation>
