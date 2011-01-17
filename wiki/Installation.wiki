@@ -113,7 +113,7 @@ RTMPDUMP=/opt/bin/rtmpdump
 cd /usr/local/etc/translate/bin
 wget -O - http://media-translate.googlecode.com/files/rtmpdump.tar.bz2 | tar -xj
 sed -i '/^RTMPDUMP=/d' ../etc/translate.conf
-echo -e '\RTMPDUMP=$BASEPATH/bin/rtmpdump' >> ../etc/translate.conf
+echo -e '\nRTMPDUMP=$BASEPATH/bin/rtmpdump' >> ../etc/translate.conf
 }}}
 
 = Настройка =
