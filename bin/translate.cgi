@@ -554,7 +554,7 @@ check_stream()
       stream_class='rss'
     ;;
     *)
-      stream_class=`echo "$stream_type" | sed 's/\/.*//'`
+      stream_class=${stream_class:-`echo "$stream_type" | sed 's/\/.*//'`}
     ;;
   esac
   
