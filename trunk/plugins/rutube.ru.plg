@@ -35,6 +35,7 @@ if echo "${arg_url}" | grep -q -s "\(www\.\)*rutube\.ru.*[&?]v=[0-9a-f]*$"; then
   			stream_url=$arg_url
   			stream_type=
   			server_type='_translate_'
+  			stream_class='video'
   		;;
   		*)
 		  video_id=`echo "$arg_url" | sed -e 's/.*[?&]v=//;s/&.*//`
