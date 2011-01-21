@@ -44,7 +44,10 @@ if echo "${arg_url}" | grep -q -s "\(www\.\)*rutube\.ru.*[&?]v=[0-9a-f]*$"; then
 		    server_type='rutube'
 		    stream_url=`awk -f getxml.awk -f ${PLUGINS_DIR}rutube.ru.response.awk "$TMPFILE" | sed -n '1p'`
 		    protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
-		    arg_opt="Rtmp-options:-s http://rutube.ru/player.swf;$arg_opt"
+		    local rtmp_swfurl="http://rutube.ru/player.swf"
+		    local rtmp_tcurl=`echo "$stream_url" | sed 's/\/mp4:.*$//'`
+		    local rtmp_playpath=`echo "$stream_url" | sed 's/^.*\/mp4:/mp4:/;s/&.*$//'`
+		    arg_opt="Rtmp-options:-v -s $rtmp_swfurl -t $rtmp_tcurl -y $rtmp_playpath;$arg_opt"
 		    rm -f $TMPFILE
 		  fi
   		;;
