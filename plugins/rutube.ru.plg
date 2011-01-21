@@ -21,7 +21,7 @@
 # Translate CGI module
 # 'rutube.ru' plug-in
 #
-# version: 1.0 13.08.2010 16:41
+# version: 1.1 21.01.2011 11:30:30
 #
 # http://rutube.ru/tv/o2tv.html
 # http://rutube.ru/tracks/1088305.html?v=1c21315933044e39fdd57808ac5e3958
@@ -30,15 +30,25 @@
 local video_id=
 
 if echo "${arg_url}" | grep -q -s "\(www\.\)*rutube\.ru.*[&?]v=[0-9a-f]*$"; then 
-  video_id=`echo "$arg_url" | sed -e 's/.*[?&]v=//;s/&.*//`
-  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" http://bl.rutube.ru/${video_id}.xml 2>&1`
-  if [ -f ${TMPFILE} ]; then
-    stream_type='video/x-flv'
-    server_type='rutube'
-    stream_url=`awk -f getxml.awk -f ${PLUGINS_DIR}rutube.ru.response.awk "$TMPFILE" | sed -n '1p'`
-    protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
-    rm -f $TMPFILE
-  fi
+  	case $arg_cmd in
+  		info)
+  			stream_url=$arg_url
+  			stream_type=
+  			server_type='_translate_'
+  		;;
+  		*)
+		  video_id=`echo "$arg_url" | sed -e 's/.*[?&]v=//;s/&.*//`
+		  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" http://bl.rutube.ru/${video_id}.xml 2>&1`
+		  if [ -f ${TMPFILE} ]; then
+		    stream_type='video/x-flv'
+		    server_type='rutube'
+		    stream_url=`awk -f getxml.awk -f ${PLUGINS_DIR}rutube.ru.response.awk "$TMPFILE" | sed -n '1p'`
+		    protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//`
+		    arg_opt="Rtmp-options:-s http://rutube.ru/player.swf;$arg_opt"
+		    rm -f $TMPFILE
+		  fi
+  		;;
+  	esac
   return $RC_OK
 elif echo "${arg_url}" | grep -q -s "\(www\.\)*rutube\.ru/tv/.*$"; then 
   host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" $arg_url 2>&1`
