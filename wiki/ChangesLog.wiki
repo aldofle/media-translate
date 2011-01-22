@@ -2,13 +2,15 @@
 
 = История версий =
 
-== 2.0.7 (`pre3`) ==
+== 2.0.7 (`pre4`) ==
   * обновлен радио сервис SHOUTcast - выбор радиостанции по жанру сделан с использованием иерархического меню;
   * добавлена возможность поиска роликов в Youtube из аудио проигрывателя по исполнителю и названию композиции - по кнопке *0* или *Down* на пульте;
   * добавлена страница выбора настроек RSS Ex в меню Application;
   * весь интерфейс доработан для отображения на обычных и широкоформатных экранах;
-  * в Internet Video добавлены RSS-ленты ivi.ru, tvigle.ru, mults.spb.ru, vimeo.com (Internet Video / Other / RSS Media Feeds);
-  * добавленны плейлисты [http://live.1hd.ro/ OneHD] (для корректного проигрывания видео рекомендуется использовать *[http://code.google.com/p/media-translate/wiki/Installation#%D0%92%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D1%83%D1%82%D0%B8%D0%BB%D0%B8%D1%82%D1%8B rtmpdump]*).
+  * в Internet Video добавлены RSS-ленты ivi.ru, tvigle.ru, mults.spb.ru, vimeo.com, телеканалы на Rutube (Internet Video / Other / RSS Media Feeds);
+  * добавленны плейлисты [http://live.1hd.ro/ OneHD] (для корректного проигрывания видео рекомендуется использовать *[http://code.google.com/p/media-translate/wiki/Installation#%D0%92%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D1%83%D1%82%D0%B8%D0%BB%D0%B8%D1%82%D1%8B rtmpdump]*);
+  * в Internet Video добавлен интерфейсный модуль к *[http://ivi.ru Ivi]* (управление стандартное, детальная информация о видео по кнопке *Right* в списке видео);
+  * исправлен плагин для rutube.ru.
 
 == 2.0.6 (`r4`) ==
   * исправлена ошибка, приводившая на прошивках на базе Realtek SDK 3 и выше, к падению при просмотре видео;
