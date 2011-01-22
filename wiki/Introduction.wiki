@@ -10,6 +10,7 @@
   == Internet Video ==
   * Youtube (http://www.youtube.com)
   * Tvigle (http://www.tvigle.ru)
+  * Ivi (http://www.ivi.ru)
 
   == Internet Radio ==
   === Сервисы ===
