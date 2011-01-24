@@ -46,7 +46,7 @@ rutube_video()
       rm -f $TMPFILE
 		;;
 		*)
-  	  $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" http://bl.rutube.ru/${video_id}.xml 2>/dev/null
+  	  $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://bl.rutube.ru/${video_id}.xml?schema=rtmp" 2>/dev/null
   	  if [ -f ${TMPFILE} ]; then
   	    stream_type='video/x-flv'
   	    server_type='rutube'
