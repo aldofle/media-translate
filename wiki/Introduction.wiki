@@ -9,6 +9,7 @@
 
   == Internet Video ==
   * Youtube (http://www.youtube.com)
+  * Rutube (http://www.rutube.ru)
   * Tvigle (http://www.tvigle.ru)
   * IVI (http://www.ivi.ru)
 
