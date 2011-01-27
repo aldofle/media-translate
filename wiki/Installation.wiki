@@ -99,6 +99,19 @@ sed -i '/^XSLTPROC=/d' ../etc/translate.conf
 echo -e '\nXSLTPROC=$BASEPATH/bin/xsltproc' >> ../etc/translate.conf
 }}}
 
+=== [http://www.gnu.org/software/gawk/gawk.html AWK] ===
+
+  Требуется для нормальной работоспособности пакета. В случае, если интерпретатор отсутствует в прошивке необходимо установить его из *[http://www.nslu2-linux.org/wiki/Optware/HomePage optware]*: 
+{{{
+ipkg install gawk
+}}}
+
+  Можно также воспользоваться статически слинкованной утилитой *[http://media-translate.googlecode.com/files/awk.tar.bz2 awk]*. Пример установки в */usr/local/etc/translate/bin*:
+{{{
+cd /usr/local/etc/translate/bin
+wget -O - http://media-translate.googlecode.com/files/awk.tar.bz2 | tar -xj
+}}}
+
 === [http://rtmpdump.mplayerhq.hu/ RTMPDUMP] ===
 
   Альтернативная утилита для загрузки RTMP потока (вместо используемой по умолчанию *[Introduction#%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82 flvstreamer]*).
