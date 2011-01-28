@@ -8,10 +8,15 @@
 = Интегрированные online-сервисы и плейлисты =
 
   == Internet Video ==
+  === Сервисы ===
   * Youtube (http://www.youtube.com)
   * Rutube (http://www.rutube.ru)
+  === RSS-ленты и плейлисты ===
   * Tvigle (http://www.tvigle.ru)
   * IVI (http://www.ivi.ru)
+  * OneHD (http://live.1hd.ro)
+  * Мультики (http://mults.spb.ru)
+  * Rutube трансляции (http://rutube.ru/channels.html)
 
   == Internet Radio ==
   === Сервисы ===
