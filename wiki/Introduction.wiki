@@ -9,28 +9,29 @@
 
   == Internet Video ==
   === Сервисы ===
-  * Youtube (http://www.youtube.com)
-  * Rutube (http://www.rutube.ru)
+  * Youtube (http://youtube.com)
+  * Rutube (http://rutube.ru)
   === RSS-ленты и плейлисты ===
-  * Tvigle (http://www.tvigle.ru)
-  * IVI (http://www.ivi.ru)
+  * Tvigle (http://tvigle.ru)
+  * IVI (http://ivi.ru)
+  * Vimeo (http://vimeo.com)
   * OneHD (http://live.1hd.ro)
   * Мультики (http://mults.spb.ru)
   * Rutube трансляции (http://rutube.ru/channels.html)
 
   == Internet Radio ==
   === Сервисы ===
-  * SHOUTcast Directory (http://www.shoutcast.com)
+  * SHOUTcast Directory (http://shoutcast.com)
   * RadioTime (http://radiotime.com/)
   === Интернет радиостанции ===
   * SomaFM (http://somafm.com/)
-  * Digitally Imported (http://www.di.fm/)
-  * SKY.fm (http://www.sky.fm/)
-  * 1.FM (http://www.1.fm/)
-  * 181.FM (http://www.181.fm/)
+  * Digitally Imported (http://di.fm/)
+  * SKY.fm (http://sky.fm/)
+  * 1.FM (http://1.fm/)
+  * 181.FM (http://181.fm/)
   * Radioio (http://radioio.com/)
   * Bluemars (http://www.bluemars.org/)
-  * RauteMusik (http://www.rautemusik.fm/)
+  * RauteMusik (http://rautemusik.fm/)
   * Station.ru (http://station.ru/StationsList.aspx?type=online)
   * Nullwave.ru (http://nullwave.ru/)
   * Sampo.ru (http://radio.sampo.ru/)
