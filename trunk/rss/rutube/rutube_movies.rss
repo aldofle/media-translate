@@ -45,9 +45,10 @@
 	itemBackgroundColor="0:0:0"
 	showHeader=no
 menuXPC=5
-menuYPC=20
+menuYPC=15
 menuWidthPC=15
 menuHeightPC=8
+menuPerPage=9
     selectMenuOnRight=no
     forceFocusOnItem=yes
     forceFocusOnMenu=no
@@ -394,57 +395,87 @@ menuHeightPC=8
   </item_template>
 
 <submenu>
+ <title>Вперед</title>
+ <onClick>
+   print("rt_page=",rt_page);
+   if( rt_page &lt; numberOfPages )
+   {
+    rt_page = 1 + Integer(rt_page);
+    mode = 1;
+    setRefreshTime(1);
+   }
+   print("rt_page=",rt_page);
+   null;
+ </onClick>
+</submenu>
+
+<submenu>
+ <title>Назад</title>
+ <onClick>
+   print("rt_page=",rt_page);
+   if( rt_page &gt; 0 )
+   {
+    rt_page -= 1;
+    mode = 1;
+    setRefreshTime(1);
+   }
+   print("rt_page=",rt_page);
+   null;
+ </onClick>
+</submenu>
+
+ <submenu>
  <title>Последние</title>
-  <onClick>
+ <onClick>
     sort_by = "date";
     mode = 1;
     setRefreshTime(1);
-  </onClick>
+ </onClick>
 </submenu>
 
 <submenu>
  <title>Популярные</title>
-  <onClick>
+ <onClick>
     sort_by = "views";
     mode = 1;
     setRefreshTime(1);
-  </onClick>
+ </onClick>
 </submenu>
 
 <submenu>
  <title>Лучшие</title>
-  <onClick>
+ <onClick>
    sort_by = "rating";
    mode = 1;
    setRefreshTime(1);
-</onClick>
+ </onClick>
 </submenu>
 
 <submenu>
  <title>За сегодня</title>
-  <onClick>
+ <onClick>
    rt_term = "today";
    mode = 1;
    setRefreshTime(1);
-</onClick>
+ </onClick>
 </submenu>
 
 <submenu>
  <title>За неделю</title>
-  <onClick>
+ <onClick>
    rt_term = "this_week";
    mode = 1;
    setRefreshTime(1);
-</onClick>
+ </onClick>
 </submenu>
 
 <submenu>
  <title>За месяц</title>
-  <onClick>
+ <onClick>
    rt_term = "this_month";
    mode = 1;
    setRefreshTime(1);
-</onClick>
+ </onClick>
 </submenu>
 
 <submenu>
