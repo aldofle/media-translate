@@ -234,7 +234,7 @@
 	print("Item Size = ", itemS);
 
 	title = "Все категории";
-	url = url = translateBaseURL + "app/rss/rutube.ru," + "http://rutube.ru/cgi-bin/xmlapi.cgi?utf=1&amp;rt_mode=movies&amp;rt_page=0&amp;rt_category=0";
+	url = url = translateBaseURL + "app/rss/rutube.ru," + "http://rutube.ru/cgi-bin/xmlapi.cgi?utf=1&amp;rt_mode=movies&amp;rt_category=0";
     	titleArray  = pushBackStringArray(titleArray, title);
     	urlArray    = pushBackStringArray(urlArray, url);
 	itemSize = 1 + itemS;
@@ -245,7 +245,7 @@
     	{
     	  title = getXMLText("response","categories","category",count);
     	  cat_id = getXMLAttribute("response","categories","category",count,"id");
-	  url = translateBaseURL + "app/rss/rutube.ru," + "http://rutube.ru/cgi-bin/xmlapi.cgi?utf=1&amp;rt_mode=movies&amp;rt_page=0&amp;rt_category=" + cat_id;
+	  url = translateBaseURL + "app/rss/rutube.ru," + "http://rutube.ru/cgi-bin/xmlapi.cgi?utf=1&amp;rt_mode=movies&amp;rt_category=" + cat_id;
 
     	  titleArray  = pushBackStringArray(titleArray, title);
     	  urlArray    = pushBackStringArray(urlArray, url);
