@@ -140,7 +140,7 @@
   {
     setRefreshTime(-1);
 
-    dlok = loadXMLFile(translateBaseURL+"app/rss/rutube.ru,,http://rutube.ru/cgi-bin/xmlapi.cgi?utf=1&amp;rt_mode=movie&amp;rt_movie_id="+rt_movie_id);
+    dlok = loadXMLFile(translate_base_url+"app/rss/rutube.ru,,http://rutube.ru/cgi-bin/xmlapi.cgi?utf=1&amp;rt_mode=movie&amp;rt_movie_id="+rt_movie_id);
     if (dlok != null)
     {
 	  pageTitle    = getXMLText("response","movie","title");
@@ -170,34 +170,26 @@
 </onRefresh>
 
 <onEnter>
+  translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
   screenXp = 4;
   screenYp = 3;
-  rssconf = readStringFromFile("/usr/local/etc/translate/etc/rss.conf");
+  rssconf = readStringFromFile(getStoragePath("key")+"translate.dat");
   print("rssconf:",rssconf);
   if(rssconf != null)
   {
     value = getStringArrayAt(rssconf, 0);
     if(value != null &amp;&amp; value != "")
-      screenXp = Integer(value);
+      translate_base_url = value;
     value = getStringArrayAt(rssconf, 1);
+    if(value != null &amp;&amp; value != "")
+      screenXp = Integer(value);
+    value = getStringArrayAt(rssconf, 2);
     if(value != null &amp;&amp; value != "")
       screenYp = Integer(value);
   }
-  print("rssconf:",screenXp,screenYp);
+  print("rssconf:",translate_base_url,screenXp,screenYp);
 
   cachePath = getStoragePath("key");
-
-  translateBaseURL = "http://127.0.0.1/cgi-bin/translate?";
-  cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
-  if(cgiconf != null)
-  {
-    value = getStringArrayAt(cgiconf, 0);
-    if(value != null &amp;&amp; value != "")
-    {
-      translateBaseURL = value;
-      print("cgi.conf=",value);
-    }
-  }
 
   storagePath = getStoragePath("tmp");
   storagePath = storagePath + "rutube.dat";
@@ -223,7 +215,7 @@
     mode = 1;
 
     playItemURL(-1, 1);
-    urlToPlay = translateBaseURL+"info,,"+url;
+    urlToPlay = translate_base_url+"info,,"+url;
     dlok = loadXMLFile(urlToPlay);
     if(dlok != null)
     {
@@ -237,7 +229,7 @@
   	{
           showIdle();
           setRefreshTime(1000);
-          playItemURL(translateBaseURL+"stream,,"+value, 0);
+          playItemURL(translate_base_url+"stream,,"+value, 0);
           cancelIdle();
         }
       }
@@ -250,7 +242,7 @@
  <title>Связанные ролики</title>
  <onClick>
     arr = null;
-    arr = pushBackStringArray(arr, translateBaseURL + "app/rss/rutube.ru,http://rutube.ru/cgi-bin/xmlapi.cgi?utf=1&amp;rt_mode=related&amp;rt_movie_id="+rt_movie_id);
+    arr = pushBackStringArray(arr, translate_base_url + "app/rss/rutube.ru,http://rutube.ru/cgi-bin/xmlapi.cgi?utf=1&amp;rt_mode=related&amp;rt_movie_id="+rt_movie_id);
     arr = pushBackStringArray(arr, "Связанное видео: "+pageTitle);
     arr = pushBackStringArray(arr, rt_page);
     arr = pushBackStringArray(arr, sort_by);

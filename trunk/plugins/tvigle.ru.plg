@@ -32,7 +32,7 @@
 if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; then 
 
   get_opt "HD"
-  [ -z "$opt" ] && opt=`sed -n '5p' $RSSCONF 2>/dev/null`
+  [ -z "$opt" ] && opt=`sed -n '6p' $RSSCONF 2>/dev/null`
   [ -z "$opt" ] && opt=$TVIGLE_HD
   case $opt in
     yes|Yes|YES|1)

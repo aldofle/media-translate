@@ -33,7 +33,7 @@
 if echo "${arg_url}" | grep -q -s '\(www\.\|france\.\)*ivi\.ru/\(video/view/\|movie\.php\)?id=.*$'; then 
 
   get_opt "HD"
-  [ -z "$opt" ] && opt=`sed -n '6p' $RSSCONF 2>/dev/null`
+  [ -z "$opt" ] && opt=`sed -n '7p' $RSSCONF 2>/dev/null`
   [ -z "$opt" ] && opt=$IVI_HD
   case $opt in
     yes|Yes|YES|1)
