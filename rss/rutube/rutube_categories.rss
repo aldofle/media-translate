@@ -329,6 +329,14 @@
 		  arr = null;
 		  arr = pushBackStringArray(arr, url);
 		  arr = pushBackStringArray(arr, title);
+		  rt_page = 0;
+		  sort_by = "date";
+		  rt_term = "today";
+		  rt_count = 20;
+		  arr = pushBackStringArray(arr, rt_page);
+		  arr = pushBackStringArray(arr, sort_by);
+		  arr = pushBackStringArray(arr, rt_term);
+		  arr = pushBackStringArray(arr, rt_count);
 		  print("arr=",arr);
 		  print("storagePath=",storagePath);
 		  writeStringToFile(storagePath, arr);

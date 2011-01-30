@@ -104,10 +104,10 @@ menuPerPage=9
   <onUserInput>
     <script>
       ret = "false";
-      
+
       userInput = currentUserInput();
       majorContext = getPageInfo("majorContext");
-      
+
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
 
@@ -133,25 +133,32 @@ menuPerPage=9
       }
       else if(majorContext == "items" &amp;&amp; userInput == "right")
       {
-/*
         idx = getFocusItemIndex();
-        url = feedUrl;
-        title = getStringArrayAt(titleArray, idx);
 
         arr = null;
-        arr = pushBackStringArray(arr, url);
-        arr = pushBackStringArray(arr, title);
-        arr = pushBackStringArray(arr, "");
-        arr = pushBackStringArray(arr, "");
-        arr = pushBackStringArray(arr, idx);
+        arr = pushBackStringArray(arr, feedUrl);
+        arr = pushBackStringArray(arr, pageTitle);
+        arr = pushBackStringArray(arr, rt_page);
+        arr = pushBackStringArray(arr, sort_by);
+        arr = pushBackStringArray(arr, rt_term);
+        arr = pushBackStringArray(arr, rt_count);
+        arr = pushBackStringArray(arr, getStringArrayAt(idArray, idx));
         print("arr=",arr);
         print("storagePath=",storagePath);
 
         writeStringToFile(storagePath, arr);
 
-        print("act = doModalRss('../etc/translate/rss/rss_mediaEntry.rss');");
+/*
+        print("act = doModalRss('../etc/translate/rss/rutube/rutube_entry.rss');");
         print("********** doModalRss=",act);
 */
+        act = doModalRss("rss_file://../etc/translate/rss/rutube/rutube_entry.rss");
+        if(act != null &amp;&amp; act == "related")
+        {
+         print("related");
+         executeScript("onEnter");
+        }
+
         ret = "true";
       }
       ret;
@@ -166,6 +173,7 @@ menuPerPage=9
 </onExit>
 
 <onEnter>
+  print("rutube_movies.rss::onEnter start");
   translateBaseURL = "http://127.0.0.1/cgi-bin/translate?";
   cgiconf = readStringFromFile("/usr/local/etc/translate/etc/cgi.conf");
   if(cgiconf != null)
@@ -199,11 +207,11 @@ menuPerPage=9
   print("******* Initialize: "+arr);
   feedUrl = getStringArrayAt(arr, 0);
   pageTitle = getStringArrayAt(arr, 1);
+  rt_page = getStringArrayAt(arr, 2);
+  sort_by = getStringArrayAt(arr, 3);
+  rt_term = getStringArrayAt(arr, 4);
+  rt_count = getStringArrayAt(arr, 5);
 
-  rt_page = 0;
-  sort_by = "date";
-  rt_term = "today";
-  rt_count = 20;
 /*
   pageLogo = "http://rutube.ru/i/logo.png";
 */
@@ -224,11 +232,11 @@ menuPerPage=9
   if(mode == 1)
   {
     setRefreshTime(-1);
-    
+
     url = feedUrl + "&amp;rt_count=" + rt_count +"&amp;rt_sort_by=" + sort_by + "&amp;rt_term=" + rt_term + "&amp;rt_page=" + rt_page;
 
     print("Start to load feed:",url);
-    
+
     dlok = loadXMLFile(url);
     if (dlok != null)
     {
@@ -240,7 +248,11 @@ menuPerPage=9
       numberOfPages = getXMLText("response","pager","numberOfPages");
       rt_page = getXMLText("response","pager","currentPage");
 
-	pageTitle = getXMLText("response","pageTitle");
+	title = getXMLText("response","pageTitle");
+        if (title != null &amp;&amp; title != "")
+        {
+         pageTitle = title;
+        }
 
 	itemSize = getXMLElementCount("response","movie");
 	if(itemSize == 0)
