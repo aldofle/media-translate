@@ -203,6 +203,7 @@
 <onExit>
   arr = null;
   
+  arr = pushBackStringArray(arr, translate_base_url);
   arr = pushBackStringArray(arr, screenXp);
   arr = pushBackStringArray(arr, screenYp);
   arr = pushBackStringArray(arr, youtubeHD);
@@ -211,7 +212,7 @@
   arr = pushBackStringArray(arr, iviHD);
   arr = pushBackStringArray(arr, zoombyHD);
 
-  writeStringToFile("/usr/local/etc/translate/etc/rss.conf", arr);
+  writeStringToFile(getStoragePath("key")+"translate.dat", arr);
 
   cachePath = getStoragePath("key");
   optionsPath = cachePath + "youtubeOptions.dat";
@@ -234,6 +235,7 @@
   hdArr = pushBackStringArray(hdArr, "HD");
   hdArr = pushBackStringArray(hdArr, "MD");
   
+  translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
   screenXp = 4;
   screenYp = 3;
   youtubeHD = 1;
@@ -241,29 +243,32 @@
   tvigleHD = 1;
   iviHD = 1;
   zoombyHD = 1;
-  rssconf = readStringFromFile("/usr/local/etc/translate/etc/rss.conf");
+  rssconf = readStringFromFile(getStoragePath("key")+"translate.dat");
   print("rssconf:",rssconf);
   if(rssconf != null)
   {
     value = getStringArrayAt(rssconf, 0);
     if(value != null &amp;&amp; value != "")
-      screenXp = value;
+      translate_base_url = value;
     value = getStringArrayAt(rssconf, 1);
     if(value != null &amp;&amp; value != "")
-      screenYp = value;
+      screenXp = value;
     value = getStringArrayAt(rssconf, 2);
     if(value != null &amp;&amp; value != "")
-      youtubeHD = value;
+      screenYp = value;
     value = getStringArrayAt(rssconf, 3);
     if(value != null &amp;&amp; value != "")
-      vimeoHD = value;
+      youtubeHD = value;
     value = getStringArrayAt(rssconf, 4);
     if(value != null &amp;&amp; value != "")
-      tvigleHD = value;
+      vimeoHD = value;
     value = getStringArrayAt(rssconf, 5);
     if(value != null &amp;&amp; value != "")
-      iviHD = value;
+      tvigleHD = value;
     value = getStringArrayAt(rssconf, 6);
+    if(value != null &amp;&amp; value != "")
+      iviHD = value;
+    value = getStringArrayAt(rssconf, 7);
     if(value != null &amp;&amp; value != "")
       zoombyHD = value;
   }
