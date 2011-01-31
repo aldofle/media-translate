@@ -265,6 +265,13 @@
     <mediaDisplay name="onePartView"/>
   </item>
   <item>
+<link><script>translate_base_url+"app/onehd/index";</script></link>
+    <title>OneHD</title>
+    <annotation>ONE HD - Online Network Entertainment - Romania. Bun venit pe site-ul ONE HD! - Prima televiziune online HD. Качественные концертные записи на любой вкус.</annotation>
+    <image>../etc/translate/rss/image/menu/onehd.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link>rss_file://../etc/translate/rss/etc-menu-tv-other.rss</link>
     <title>Other</title>
     <annotation>Разные списки интернет-телевидения</annotation>
