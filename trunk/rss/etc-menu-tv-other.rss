@@ -196,6 +196,20 @@
     <mediaDisplay name="onePartView"/>
   </item>
   <item>
+<link>rss_file://../etc/translate/rss/etc-playlists-video-prahovahd_sd.rss</link>
+    <title>OneHD / SD</title>
+    <annotation>ONE HD - Online Network Entertainment - Romania. Prima televiziune online HD. Качественные концертные записи на любой вкус. (SD качество, min 0.5Mbit/sec)</annotation>
+    <image>http://www.1hd.ro/images/sd.png</image>
+    <mediaDisplay name="onePartView"/>
+  </item>
+  <item>
+<link>rss_file://../etc/translate/rss/etc-playlists-video-prahovahd.rss</link>
+    <title>OneHD</title>
+    <annotation>ONE HD - Online Network Entertainment - Romania. Prima televiziune online HD. Качественные концертные записи на любой вкус. (HD качество, min 2Mbit/sec)</annotation>
+    <image>http://www.1hd.ro/images/hd.png</image>
+    <mediaDisplay name="onePartView"/>
+  </item>
+  <item>
 <link>rss_file://../etc/translate/rss/etc-playlists-video-rss_collections.rss</link>
     <title>RSS Media Feeds</title>
     <annotation>RSS-ленты - ivi.ru, tvigle.ru, mults.spb.ru, vimeo.com, трансляции rutube.ru</annotation>

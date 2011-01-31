@@ -25,7 +25,7 @@ local CHANNELFILE=$TMPFILE.channel
 local TITLE=$arg_opt
 local PLAYLIST_URL=$arg_url
 
-STARTITEM="  startitem = \"middle\";"
+STARTITEM="  startitem = \"first\";"
 
 local channel_key=$arg_opt
 
