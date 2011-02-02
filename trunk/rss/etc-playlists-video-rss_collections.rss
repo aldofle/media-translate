@@ -519,6 +519,36 @@
     <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
+  <item>
+    <annotation>Все сериалы мира онлайн! - Kino-Dom.tv</annotation>
+    <title>Kino-Dom.tv</title>
+    <image>../etc/translate/rss/image/menu/rss.png</image>
+<location><script>translate_base_url+"app/rss/mediafeed,http://kino-dom.tv/rss.xml";</script></location>
+<stream_url><script>translate_base_url+"app/rss/mediafeed,http://kino-dom.tv/rss.xml";</script></stream_url>
+    <stream_class>rss</stream_class>
+    <stream_type>application/xml</stream_type>
+    <stream_protocol>http</stream_protocol>
+  </item>
+  <item>
+    <annotation>Смотреть аниме онлайн, мультфильмы онлайн, смотреть бесплатно - AniMult.tv</annotation>
+    <title>AniMult.tv</title>
+    <image>../etc/translate/rss/image/menu/rss.png</image>
+<location><script>translate_base_url+"app/rss/mediafeed,http://animult.tv/rss.xml";</script></location>
+<stream_url><script>translate_base_url+"app/rss/mediafeed,http://animult.tv/rss.xml";</script></stream_url>
+    <stream_class>rss</stream_class>
+    <stream_type>application/xml</stream_type>
+    <stream_protocol>http</stream_protocol>
+  </item>
+  <item>
+    <annotation>Фильмы онлайн | Filmix</annotation>
+    <title>Filmix.net</title>
+    <image>../etc/translate/rss/image/menu/rss.png</image>
+<location><script>translate_base_url+"app/rss/mediafeed,http://filmix.net/rss.xml";</script></location>
+<stream_url><script>translate_base_url+"app/rss/mediafeed,http://filmix.net/rss.xml";</script></stream_url>
+    <stream_class>rss</stream_class>
+    <stream_type>application/xml</stream_type>
+    <stream_protocol>http</stream_protocol>
+  </item>
 </channel>
 
 
