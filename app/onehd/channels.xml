@@ -41,7 +41,7 @@
 
 	<mediaDisplay name=photoView 
 	  centerXPC=5 
-		centerYPC=18
+		centerYPC=22
 		centerHeightPC=25
     columnCount=6		
 	  rowCount=1
@@ -75,7 +75,16 @@
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
 
 		<itemDisplay>
-			<text align="center" lines="1" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100 backgroundColor=-1:-1:-1>
+
+			<text align="center" lines="1" offsetXPC=5 offsetYPC=15 widthPC=100 heightPC=50 fontSize=30 backgroundColor=-1:-1:-1 foregroundColor=93:64:149>
+				<script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+			    if(focus==idx) getItemInfo(idx, "title"); else "";
+				</script>
+			</text>
+
+			<text align="center" lines="1" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=50 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -94,6 +103,13 @@
   			    if(focus==idx) "255:255:255"; else "93:64:149";
   				</script>
 			  </foregroundColor>
+			  <offsetYPC>
+  				<script>
+  					idx = getQueryItemIndex();
+  					focus = getFocusItemIndex();
+  			    if(focus==idx) "10"; else "0";
+  				</script>
+			  </offsetYPC>
 			</text>
 
 		</itemDisplay>

@@ -99,5 +99,35 @@
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
+      <track>
+         <annotation>Все сериалы мира онлайн! - Kino-Dom.tv</annotation>
+         <title>Kino-Dom.tv</title>
+         <image>../etc/translate/rss/image/menu/rss.png</image>
+         <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://kino-dom.tv/rss.xml</location>
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://kino-dom.tv/rss.xml</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+      <track>
+         <annotation>Смотреть аниме онлайн, мультфильмы онлайн, смотреть бесплатно - AniMult.tv</annotation>
+         <title>AniMult.tv</title>
+         <image>../etc/translate/rss/image/menu/rss.png</image>
+         <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://animult.tv/rss.xml</location>
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://animult.tv/rss.xml</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+      <track>
+         <annotation>Фильмы онлайн | Filmix</annotation>
+         <title>Filmix.net</title>
+         <image>../etc/translate/rss/image/menu/rss.png</image>
+         <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://filmix.net/rss.xml</location>
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://filmix.net/rss.xml</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
    </trackList>
 </playlist>

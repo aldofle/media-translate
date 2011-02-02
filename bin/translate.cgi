@@ -550,7 +550,7 @@ check_stream()
       protocol='file'
       stream_class='directory'
     ;;
-    text/xml|application/xml|application/rss|application/rss+xml)
+    text/xml|application/xml|application/rss*)
       stream_class='rss'
     ;;
     *)
@@ -569,18 +569,20 @@ check_playlist()
   local resolve=$opt
   local playlist_file="$TEMP/temp.track"
   arg_url=$stream_url
-  command_playlist > $playlist_file
+  command_playlist | sed '1,2d;s/<track>/\n<track>/g;s/></>\n</g' > $playlist_file
   local count=`sed -n '/<track>/p' $playlist_file | sed -n '$='`
   if [ "$count" == "1" -o "$resolve" == "1" ]; then
-    local location=`sed -n '/<location>/p' $playlist_file | sed -n '1p' | sed 's/^.*<location><!\[CDATA\[//;s/\]\]><\/location>.*$//'`
-    local title=`sed -n '/<title>/p' $playlist_file | sed -n '1p' | sed 's/^.*<title><!\[CDATA\[//;s/\]\]><\/title>.*$//'`
-    local creator=`sed -n '/<creator>/p' $playlist_file | sed -n '1p' | sed 's/^.*<creator><!\[CDATA\[//;s/\]\]><\/creator>.*$//'`
+    local buf=`awk -f getxml.awk -f getfirstitem.awk "$playlist_file"`
+    local location=`echo "$buf" | sed -n '1p'`
+    local title=`echo "$buf" | sed -n '2p'`
+    local creator=`echo "$buf" | sed -n '3p'`
     if [ "$location" != "$stream_url" ]; then
       stream_url=''
       stream_type=''
       arg_url=$location
       check_stream
       icy_name=${icy_name:-"$title"}
+      [ -n "$creator" ] && icy_name="$creator - $icy_name"
       ms_title=${ms_title:-"$title"}
       ms_author=${ms_author:-"$creator"}
     fi
