@@ -22,31 +22,22 @@
 -->
 
 <mediaDisplay name=threePartsView
-	sideColorLeft="0:0:0"
 	sideLeftWidthPC="0"
 	sideColorRight="0:0:0"
 	headerImageWidthPC="0"
-	headerXPC="16"
-	headerYPC="3"
 	headerWidthPC="0"
-	itemImageXPC="22"
+	itemImageXPC="17"
 	itemImageYPC="18"
-	itemXPC="35"
+	itemXPC="30"
 	itemYPC="18"
-	capXPC="88"
-	capYPC="17"
-	capHeightPC="10"
-	headerCapXPC="90"
-	headerCapYPC="10"
+	itemWidthPC="55"
 	headerCapWidthPC="0"
 	backgroundColor="0:0:0"
 	itemBackgroundColor="0:0:0"
 	showHeader=no
-    selectMenuOnRight=no
-    forceFocusOnItem=yes
-    forceFocusOnMenu=no
 	showDefaultInfo=yes
 	infoYPC=90
+	fontSize=16
 >
 	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
 	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
@@ -355,6 +346,10 @@
     	    if(value != null)
     	     protocol = value;
 
+          value = getXMLText("info","status","stream-title");
+    	    if(value != null)
+    	     stream_title = value;
+    	     
           meta  = "";
           if(type != null &amp;&amp; type != "")
             meta = "Content-type:"+type;
@@ -362,20 +357,34 @@
           
           if(class == "video")
           {
-            if(protocol == "http")
+            if(protocol == "file" || (protocol == "http" &amp;&amp; soft != "_translate_"))
               playItemURL(url, 0);
             else
               playItemURL(translateStreamURL, 0);
           }
           else if(class == "audio")
           {
-            if(protocol == "http" &amp;&amp; soft != "shoutcast")
+            if(protocol == "file" || (protocol == "http" &amp;&amp; (soft != "shoutcast" || soft != "_translate_")))
               playItemURL(url, 0, "mediaDisplay", "previewWindow");
             else
               playItemURL(translateStreamURL, 0, "mediaDisplay", "previewWindow");
+            mode = 0;
+            setRefreshTime(1000);
           }
-          mode = 0;
-          setRefreshTime(1000);
+          else if(class == "playlist")
+          {
+            streamArray = null;
+            streamArray = pushBackStringArray(streamArray, url);
+            if(stream_title == "" || stream_title == null)
+              stream_title = url;
+            streamArray = pushBackStringArray(streamArray, title);
+            streamArray = pushBackStringArray(streamArray, "");
+            streamArray = pushBackStringArray(streamArray, "");
+            streamArray = pushBackStringArray(streamArray, "playlist");
+            streamArray = pushBackStringArray(streamArray, "1");
+            writeStringToFile(getStoragePath("tmp")+"playlist.dat", streamArray);
+            doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
+          }
   		  }
   		  else
   		  {
