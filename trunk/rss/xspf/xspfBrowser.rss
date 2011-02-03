@@ -910,7 +910,7 @@
           {
             pageLogo = image;
           }
-          if(protocol == "file" || protocol == "http")
+          if(protocol == "file" || (protocol == "http" &amp;&amp; soft != "_translate_"))
           {
             urlToPlay = url;
           }
@@ -930,7 +930,7 @@
         {
           executeScript("sub_stopPlayback");
         
-          if(protocol == "file" || (protocol == "http" &amp;&amp; soft != "shoutcast"))
+          if(protocol == "file" || (protocol == "http" &amp;&amp; (soft != "shoutcast" || soft != "_translate_")))
           {
             urlToPlay = url;
           }

@@ -266,7 +266,9 @@
 <sub_Load_playlist>
   streamArray = null;
   streamArray = pushBackStringArray(streamArray, stream_url);
-  streamArray = pushBackStringArray(streamArray, stream_url);
+  if(stream_title == "" || stream_title == null)
+    stream_title = stream_url;
+  streamArray = pushBackStringArray(streamArray, stream_title);
   streamArray = pushBackStringArray(streamArray, "");
   streamArray = pushBackStringArray(streamArray, "");
   streamArray = pushBackStringArray(streamArray, "playlist");
