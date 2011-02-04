@@ -125,5 +125,20 @@ http://www.zoomby.ru/watch/4396-kamenskaya-3
 {{{
 http://www.cinema.mosfilm.ru/PrivateVideo.aspx?id=f61c564b-0653-4a23-b6fd-02253cdda615
 }}}
+  * [http://filmix.net/ filmix.net]
+{{{
+http://filmix.net/anime/15038-golos-dalekoy-zvezdy-hoshi-no-koe-2003.html
+}}}
+  * [http://linecinema.org/ linecinema.org], [http://kino-dom.tv/ kino-dom.tv], [http://filin.tv/ filin.tv], [http://animult.tv/ animult.tv]
+{{{
+http://www.linecinema.org/newsz/komedyya-online/504343-ya-vse-esche-zdes-poteryannyy-god-hoakina-feniksa-2010eng.html
+http://kino-dom.tv/comedi/735-yepizody-episodes-1-sezon-1-seriya-onlajn.html
+http://www.filin.tv/otechestvennue/561-marusya-smotret-onlajn.html
+http://animult.tv/anime/animeser/725-magicheskij-indeks-to-aru-majutsu-no-index-1-24-serii-iz-24-onlajn.html
+}}}
+  * [http://zaycev.net/ zaycev.net (preview)]
+{{{
+http://zaycev.net/pages/8628/862805.shtml
+}}}
   * [http://www.last.fm/api Last.FM]
   Получение картинки с исполнителем для текущего проигрываемого трека.
