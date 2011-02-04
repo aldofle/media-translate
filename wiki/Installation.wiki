@@ -154,20 +154,15 @@ NET_BANDWIDTH=
 
 UDPXY_URL=http://127.0.0.1:8080/
 
-TRANSLATE_CGI=`sed -n '1p' $BASEPATH/etc/cgi.conf`
+TRANSLATE_CGI=http://127.0.0.1/cgi-bin/translate?
 }}}
 
   Управление HD контентом для Youtube, Vimeo, Tvigle, Zoomby и IVI осуществляется с помощью переменных YOUTUBE_HD, VIMEO_HD, TVIGLE_HD, ZOOMBY_HD и IVI_HD соответственно. 
   По умолчанию используется HD качество.
 
-  TRANSLATE_CGI содержит url на CGI-модуль *translate*. Путь должен заканчиваться символом '?'. По умолчанию берется из файла *cgi.conf*.
+  TRANSLATE_CGI содержит url на CGI-модуль *translate*. Путь должен заканчиваться символом '?'.
 
   STARTPOINT - содержит путь к стартовому файлу [ModuleXSPFBrowser XSPF Browser].
-
-  * Файл с настройкой url на CGI-модуль *translate* для RSS-модулей */usr/local/etc/translate/etc/cgi.conf*:
-{{{
-http://127.0.0.1/cgi-bin/translate?
-}}}
 
   * Стартовый файл для [ModuleXSPFBrowser XSPF Browser] */usr/local/etc/translate/etc/index.m3u*:
 {{{
