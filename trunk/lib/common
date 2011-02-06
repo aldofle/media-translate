@@ -253,7 +253,7 @@ printContent()
 
 get_xml_text()
 {
-  sed -n "/$1/p" $TMPFILE | sed -n '1p' | sed "s/.*<$1>\(.*\)<\/$1>.*/\1/"
+  sed -n "/$1/p" $TMPFILE | sed -n '1p' | sed "s/.*<$1>\(.*\)<\/$1>.*/\1/" | sed 's/<!\[CDATA\[//g;s/\]\]>//g;'
   return 0
 }
 

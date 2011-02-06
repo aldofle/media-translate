@@ -67,6 +67,14 @@
   
     if(stream_current_song != "" &amp;&amp; stream_current_song != null)
       track_image = translate_base_url + "app,Def:AR;Title:"+urlEncode(stream_current_song)+",lastfm/trackimage.png";
+
+    historyPath = getStoragePath("key")+"translate.history_audio.m3u";
+    historydat = readStringFromFile(historyPath);
+    if(historydat == null)
+      historydat = pushBackStringArray(historydat, "#EXTM3U");
+    historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+stream_title);
+    historydat = pushBackStringArray(historydat, request_url);
+    writeStringToFile(historyPath, historydat);
       
     stream_soft     = "";
   }

@@ -25,6 +25,7 @@
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
   screenXp = 4;
   screenYp = 3;
+  fullscreen = 0;
   rssconf = readStringFromFile(getStoragePath("key")+"translate.dat");
   print("rssconf:",rssconf);
   if(rssconf != null)
@@ -38,6 +39,9 @@
     value = getStringArrayAt(rssconf, 2);
     if(value != null &amp;&amp; value != "")
       screenYp = Integer(value);
+    value = getStringArrayAt(rssconf, 8);
+    if(value != null &amp;&amp; value != "")
+      fullscreen = Integer(value);
   }
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
@@ -57,6 +61,14 @@
     stream_type     = getStringArrayAt(arr, 4);
     stream_title    = getStringArrayAt(arr, 5);
     no_renderer     = getStringArrayAt(arr, 6);
+
+    historyPath = getStoragePath("key")+"translate.history_video.m3u";
+    historydat = readStringFromFile(historyPath);
+    if(historydat == null)
+      historydat = pushBackStringArray(historydat, "#EXTM3U");
+    historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+stream_title);
+    historydat = pushBackStringArray(historydat, request_url);
+    writeStringToFile(historyPath, historydat);
   }
   else
   {
@@ -76,7 +88,10 @@
     arr = pushBackStringArray(arr, request_url);
     writeStringToFile(renderer_status_file, arr);
   }
-  playItemURL(url, 0, "mediaDisplay", "previewWindow");
+  if(fullscreen == 0)
+    playItemURL(url, 0, "mediaDisplay", "previewWindow");
+  else
+    playItemURL(url, 0);
   stream_elapsed = "Wait...";
   check_counter = 15;
   refresh_time = 100;

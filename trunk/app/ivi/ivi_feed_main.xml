@@ -290,6 +290,8 @@
         
         if(error == 0)
         {
+<!--`cat "$BASEPATH/app/include/add.history_video.script"`-->
+
     	    value = getXMLAttribute("info","stream","url");
     	    if(value != null)
     	     url = value;
