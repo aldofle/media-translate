@@ -224,6 +224,14 @@
 
       if(error == 0)
       {
+        historyPath = getStoragePath("key")+"translate.history_video.m3u";
+        historydat = readStringFromFile(historyPath);
+        if(historydat == null)
+          historydat = pushBackStringArray(historydat, "#EXTM3U");
+        historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+pageTitle);
+        historydat = pushBackStringArray(historydat, url);
+        writeStringToFile(historyPath, historydat);
+
   	value = getXMLAttribute("info","stream","url");
   	if(value != null)
   	{

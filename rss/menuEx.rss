@@ -67,8 +67,8 @@
   if(startitem == "middle")
     setFocusItemIndex(middleItem);
   else
-  if(startitem == "right")
-    setFocusItemIndex(middleItem);
+  if(startitem == "last")
+    setFocusItemIndex(itemCount);
   redrawDisplay();
 </onRefresh>
 
@@ -226,6 +226,12 @@
       
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
+      
+      if(userInput == "down")
+      {
+          doModalRSS(translate_base_url+"app,Start:first;File:etc/menu/recent-index.xspf,collection/simplemenu");
+          ret = "true";
+      }
       
       ret;
     </script>
