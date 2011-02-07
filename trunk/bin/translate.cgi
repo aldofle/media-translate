@@ -278,7 +278,7 @@ check_av_stream()
           if [ "$type" == "text/html" -o -z "$type" ]; then
             if echo "${stream_url}" | grep -q -s ".*[^a-zA-Z0-9]rss[^a-zA-Z0-9]*.*"; then
               type=application/xml
-            elif echo "${stream_url}" | grep -q -s "^http://.*/udp/[0-9\.:]*$"; then
+            elif echo "${stream_url}" | grep -q -s "^http://.*/\(udp\|rtp\)/[0-9\.:]*$"; then
               type=video/x-msvideo
             fi
           fi
