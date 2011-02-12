@@ -47,8 +47,8 @@
 menuXPC=10
 menuYPC=15
 menuWidthPC=15
-menuHeightPC=8
-menuPerPage=9
+menuHeightPC=7
+menuPerPage=10
     selectMenuOnRight=no
     forceFocusOnItem=yes
     forceFocusOnMenu=no
@@ -436,7 +436,30 @@ menuPerPage=9
  </onClick>
 </submenu>
 
- <submenu>
+<submenu>
+ <title>На страницу</title>
+ <onClick>
+  get_input="";
+  get_input = getInput();
+  if( get_input != null &amp;&amp; get_input != "" &amp;&amp; get_input != " " )
+  {
+   page_get = get_input;
+   if( page_get &lt;= numberOfPages )
+   {
+    rt_page = page_get;
+    if( rt_page &gt; 0 )
+    {
+     rt_page -= 1;
+     mode = 1;
+     setRefreshTime(1);
+    }
+   }
+  }
+  get_input = null;
+ </onClick>
+</submenu>
+
+<submenu>
  <title>Последние</title>
  <onClick>
     sort_by = "date";
@@ -491,25 +514,11 @@ menuPerPage=9
 </submenu>
 
 <submenu>
- <title>На страницу</title>
+ <title>За все время</title>
  <onClick>
-  get_input="";
-  get_input = getInput();
-  if( get_input != null &amp;&amp; get_input != "" &amp;&amp; get_input != " " )
-  {
-   page_get = get_input;
-   if( page_get &lt;= numberOfPages )
-   {
-    rt_page = page_get;
-    if( rt_page &gt; 0 )
-    {
-     rt_page -= 1;
-     mode = 1;
-     setRefreshTime(1);
-    }
-   }
-  }
-  get_input = null;
+   rt_term = "";
+   mode = 1;
+   setRefreshTime(1);
  </onClick>
 </submenu>
 
