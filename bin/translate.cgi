@@ -606,7 +606,7 @@ command_playlist()
   if echo "${arg_url}" | grep -q -s ".*://"; then
     playlist_file="$TEMP/temp.playlist"
     rm -f $playlist_file
-    protocol=`echo "$arg_url" | sed -e 's/:\/\/.*$//`
+    protocol=`echo "$arg_url" | sed -e 's/:\/\/.*$//'`
     buf="`$MSDL --debug --useragent "${USERAGENT}" -o "$playlist_file" -p "$protocol" --no-treat-metafile "${arg_url}" 2>&1`"
 #    type=`echo "$buf" | sed -n '/^content type/p' | sed -n '$p' | awk '{print $3}'`
     type=${stream_type:-`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`}
