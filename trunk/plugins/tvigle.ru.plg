@@ -43,7 +43,7 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; t
     ;;
   esac
   
-  local video_id=`echo "$arg_url" | sed -e 's/.*[?&]video=//;s/&.*//`
+  local video_id=`echo "$arg_url" | sed -e 's/.*[?&]video=//;s/&.*//'`
   
   host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" http://www.tvigle.ru/xml/single.php?obj=$video_id 2>&1`
   
