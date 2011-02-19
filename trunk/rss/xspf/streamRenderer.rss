@@ -367,7 +367,7 @@
 		input = currentUserInput();
 		print("**** input=",input);
 		ret = "false";
-    if (input == "enter")
+    if (input == "enter" || userInput == "ENTR")
 		{
 		  if(arr_url != "" &amp;&amp; arr_url != null)
 		  {
@@ -384,7 +384,7 @@
       ret = "true";
 		}
 		else
-    if (input == "right")
+    if (input == "right" || userInput == "R")
 		{
       ret = "true";
 		}

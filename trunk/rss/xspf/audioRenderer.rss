@@ -420,20 +420,20 @@
 		input = currentUserInput();
 		print("**** input=",input);
 		ret = "false";
-    if (input == "display")
+    if (input == "display" || userInput == "DISPLAY")
 		{
 		  check_info -= check_info_time;
 		  setRefreshTime(10);
 		  refresh_time = 10;
 		}
 		else
-    if (input == "enter")
+    if (input == "enter" || userInput == "ENTR")
 		{
 	    postMessage("video_play");
       ret = "true";
 		}
 		else
-    if ((input == "zero" || input == "down") &amp;&amp; stream_current_song != "")
+    if ((input == "zero" || input == "down" || userInput == "0" || userInput == "D") &amp;&amp; stream_current_song != "")
 		{
 		  showIdle();
     	playItemURL(-1, 1);

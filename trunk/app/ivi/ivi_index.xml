@@ -75,26 +75,19 @@
 		</text>
 	
 	<itemDisplay>
-		<image offsetXPC="0" offsetYPC="0" widthPC="100" heightPC="100">
-			<script>
-				focus = getFocusItemIndex();
-				idx = getQueryItemIndex();
-				if (focus == idx)
-				{
-					"../etc/translate/rss/image/IMAGE_NEWRSS_MENU_BTFOC.bmp";
-				}
-				else
-				{
-					"";
-				}
-			</script>
-		</image>
-		<text offsetXPC="0" offsetYPC="25" widthPC="100" heightPC="50" fontSize="17" backgroundColor="-1:-1:-1" foregroundColor="200:200:200">
+		<text offsetXPC="0" offsetYPC="0" widthPC="100" heightPC="100" fontSize="17" backgroundColor="0:0:0" foregroundColor="250:250:250">
 			<script>
 			  idx = getQueryItemIndex();
 			  focus = getFocusItemIndex();
 		    getItemInfo(idx, "title");
 			</script>
+		  <backgroundColor>
+  			<script>
+  			  idx = getQueryItemIndex();
+  			  focus = getFocusItemIndex();
+  		    if(idx==focus) "200:0:63"; else "0:0:0";
+  			</script>
+		  </backgroundColor>
 		  <offsetXPC>
 		    <script>
 		      idx = getQueryItemIndex();
@@ -122,11 +115,11 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
 
-      if (userInput == "pagedown" || userInput == "pageup")
+      if (userInput == "pagedown" || userInput == "pageup" || userInput == "PG" || userInput == "PD")
       {
         itemSize = getPageInfo("itemCount");
         idx = Integer(getFocusItemIndex());
-        if (userInput == "pagedown")
+        if (userInput == "pagedown" || userInput == "PD")
         {
           idx -= -9;
           if(idx &gt;= itemSize)

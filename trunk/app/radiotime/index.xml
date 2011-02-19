@@ -315,6 +315,7 @@
         jumpToLink("itemLink");
       }
     </onClick>
+    <media:thumbnail>"";</media:thumbnail>
   </item_template>	
 
   <videoDispatcher>

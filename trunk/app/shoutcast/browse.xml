@@ -175,11 +175,11 @@
     <script>
     ret = "false";
     userInput = currentUserInput();
-    if(userInput == "right")
+    if(userInput == "right" || userInput == "R")
     {
       ret = "true";
     }
-    else if (userInput == "return" || userInput == "left")
+    else if (userInput == "return" || userInput == "left" || userInput == "L" || userInput == "RET")
     {
       if(history &gt;= 0)
       {

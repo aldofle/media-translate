@@ -84,10 +84,10 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
 
-      if (userInput == "pagedown" || userInput == "pageup")
+      if (userInput == "pagedown" || userInput == "pageup" || userInput == "PG" || userInput == "PD")
       {
         idx = Integer(getFocusItemIndex());
-        if (userInput == "pagedown")
+        if (userInput == "pagedown" || userInput == "PD")
         {
           idx -= -5;
           if(idx &gt;= itemSize)
@@ -104,7 +104,7 @@
         redrawDisplay();
         ret = "true";
       }
-      else if(majorContext == "items" &amp;&amp; userInput == "right")
+      else if(majorContext == "items" &amp;&amp; (userInput == "right" || userInput == "R"))
       {
         idx = getFocusItemIndex();
         url = getStringArrayAt(urlArray, idx);

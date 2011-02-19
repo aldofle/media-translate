@@ -60,8 +60,11 @@
   if(startitem == "middle")
     setFocusItemIndex(middleItem);
   else
-  if(startitem == "right")
+  if(startitem == "last")
     setFocusItemIndex(middleItem);
+  else
+  if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
+    setFocusItemIndex(startitem-1);
   redrawDisplay();
 </onRefresh>
 
@@ -229,7 +232,7 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
       
-      if(userInput == "enter")
+      if(userInput == "enter" || userInput == "ENTR")
       {
         showIdle();
         focus = getFocusItemIndex();

@@ -169,12 +169,12 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
 
-      if (userInput == "pagedown" || userInput == "pageup")
+      if (userInput == "pagedown" || userInput == "pageup" || userInput == "PG" || userInput == "PD")
       {
         if(status == 1 || currentIndex != -1)
         {
           idx   = currentIndex;
-          if(userInput == "pagedown")
+          if(userInput == "pagedown" || userInput == "PD")
           {
             
             idx -= -1;
@@ -223,6 +223,14 @@
           {
             postMessage("down");
           }
+          else if(userInput == "PD")
+          {
+            postMessage("D");
+          }
+          else if(userInput == "PG")
+          {
+            postMessage("U");
+          }
           else
           {
             postMessage("up");
@@ -230,7 +238,7 @@
         }
         ret = "true";
       }
-      else if(majorContext == "items" &amp;&amp; userInput == "right")
+      else if(majorContext == "items" &amp;&amp; (userInput == "right" || userInput == "R"))
       {
         ret = "true";
       }

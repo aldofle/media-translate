@@ -144,11 +144,11 @@
     minorContext = getPageInfo("minorContext");
     userInput = currentUserInput();
     
-    if (userInput == "pagedown" || userInput == "pageup")
+    if (userInput == "pagedown" || userInput == "pageup" || userInput == "PG" || userInput == "PD")
     {
       itemSize = getPageInfo("itemCount");
       idx = Integer(getFocusItemIndex());
-      if (userInput == "pagedown")
+      if (userInput == "pagedown" || userInput == "PD")
       {
         idx -= -9;
         if(idx &gt;= itemSize)
@@ -165,7 +165,7 @@
       redrawDisplay();
       ret = "true";
     }
-    else if (majorContext == "items" &amp;&amp; userInput == "enter") {
+    else if (userInput == "enter" || userInput == "ENTR") {
       idx = getFocusItemIndex();
       station_id = getItemInfo(idx, "id");
       executeScript("sub_Play");

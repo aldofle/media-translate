@@ -50,7 +50,7 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
-    startitem = "middle";
+    startitem = "";
 		
   columnCount=3;
   print(getFocusItemIndex());
@@ -227,10 +227,82 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
       
-      if(userInput == "down")
+      if(userInput == "down" || userInput == "D")
       {
           doModalRSS(translate_base_url+"app,Start:first;File:etc/menu/recent-index.xspf,collection/simplemenu");
           ret = "true";
+      }
+      else if(userInput == "one" || userInput == "1")
+      {
+        if(itemCount &gt;= 1)
+        {
+          setFocusItemIndex(0);
+          redrawDisplay();
+        }
+      }
+      else if(userInput == "two" || userInput == "2")
+      {
+        if(itemCount &gt;= 2)
+        {
+          setFocusItemIndex(1);
+          redrawDisplay();
+        }
+      }
+      else if(userInput == "three" || userInput == "3")
+      {
+        if(itemCount &gt;= 3)
+        {
+          setFocusItemIndex(2);
+          redrawDisplay();
+        }
+      }
+      else if(userInput == "four" || userInput == "4")
+      {
+        if(itemCount &gt;= 4)
+        {
+          setFocusItemIndex(3);
+          redrawDisplay();
+        }
+      }
+      else if(userInput == "five" || userInput == "5")
+      {
+        if(itemCount &gt;= 5)
+        {
+          setFocusItemIndex(4);
+          redrawDisplay();
+        }
+      }
+      else if(userInput == "six" || userInput == "6")
+      {
+        if(itemCount &gt;= 6)
+        {
+          setFocusItemIndex(5);
+          redrawDisplay();
+        }
+      }
+      else if(userInput == "seven" || userInput == "7")
+      {
+        if(itemCount &gt;= 7)
+        {
+          setFocusItemIndex(6);
+          redrawDisplay();
+        }
+      }
+      else if(userInput == "eight" || userInput == "8")
+      {
+        if(itemCount &gt;= 8)
+        {
+          setFocusItemIndex(7);
+          redrawDisplay();
+        }
+      }
+      else if(userInput == "nine" || userInput == "9")
+      {
+        if(itemCount &gt;= 9)
+        {
+          setFocusItemIndex(8);
+          redrawDisplay();
+        }
       }
       
       ret;
@@ -267,7 +339,7 @@
   <item>
 <link>rss_file://../etc/translate/rss/etc-menu-app.rss</link>
     <title>Applications</title>
-    <annotation>Media Stream Renderer, XSPF Browser, Settings</annotation>
+    <annotation>Media Stream Renderer, XSPF Browser, Most Recent Links, Settings</annotation>
     <image>../etc/translate/rss/image/menu/app.png</image>
     <mediaDisplay name="photoView"/>
   </item>

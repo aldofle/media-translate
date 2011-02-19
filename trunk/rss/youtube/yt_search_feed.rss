@@ -352,8 +352,9 @@
 <submenu>
   <title>Поиск</title>
   <onClick>
-		keyword = getInput();
-		if (keyword!=null)
+		keyword = doModalRss("rss_file://../etc/translate/rss/youtube/key/keyboard.rss");
+	  /* keyword= getInput(); */
+		if (keyword!=null &amp;&amp; keyword!="")
 		{
       history += 1;
       historyUrl = pushBackStringArray(historyUrl, feedUrl);

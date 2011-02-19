@@ -198,12 +198,12 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
 
-      if (userInput == "pagedown" || userInput == "pageup")
+      if (userInput == "pagedown" || userInput == "pageup" || userInput == "PD" || userInput == "PG")
       {
         if(playIndex == -1 || playContext != currentPwd)
         {
           idx = getFocusItemIndex();
-          if (userInput == "pagedown")
+          if (userInput == "pagedown" || userInput == "PD")
           {
             idx -= -10;
             if(idx &gt;= itemSize)
@@ -226,7 +226,7 @@
           {
             while(1)
             {
-              if (userInput == "pagedown")
+              if (userInput == "pagedown" || userInput == "PD")
               {
                 idx -= -1;
                 if(idx &gt;= itemSize)
@@ -251,7 +251,7 @@
             }
             while(1)
             {
-              if (userInput == "pagedown")
+              if (userInput == "pagedown" || userInput == "PD")
               {
                 randomIndex -= -1;
                 if(randomIndex &gt;= itemSize)
@@ -277,11 +277,11 @@
         }
         ret = "true";
       }
-      else if(majorContext == "items" &amp;&amp; userInput == "right")
+      else if(majorContext == "items" &amp;&amp; (userInput == "right" || userInput == "R"))
       {
         ret = "true";
       }
-      else if (userInput == "return" || userInput == "left")
+      else if (userInput == "return" || userInput == "left" || userInput == "RET" || userInput == "L")
       {
         if(history &gt;= 0)
         {
@@ -1225,6 +1225,7 @@
 	  executeScript("sub_clickItem");
     null;
 	</onClick>
+  <media:thumbnail>"";</media:thumbnail>
 </item_template>
 
 <playerLink>
