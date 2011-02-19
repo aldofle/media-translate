@@ -152,7 +152,7 @@
 
       if (majorContext == "items")
       {
-        if( userInput == "right" || userInput == "enter" )
+        if( userInput == "right" || userInput == "enter" || userInput == "R" || userInput == "ENTR")
         {
           if(idx == 0)
           {

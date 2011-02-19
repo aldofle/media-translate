@@ -44,8 +44,11 @@
   if(startitem == "middle")
     setFocusItemIndex(middleItem);
   else
-  if(startitem == "right")
+  if(startitem == "last")
     setFocusItemIndex(middleItem);
+  else
+  if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
+    setFocusItemIndex(startitem-1);
   redrawDisplay();
 </onRefresh>
 
@@ -143,10 +146,10 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
       
-      if (userInput == "pagedown" || userInput == "pageup")
+      if (userInput == "pagedown" || userInput == "pageup" || userInput == "PG" || userInput == "PD")
       {
         idx = Integer(getFocusItemIndex());
-        if (userInput == "pagedown")
+        if (userInput == "pagedown" || userInput == "PD")
         {
           idx -= -8;
           if(idx &gt;= itemCount)
@@ -163,7 +166,7 @@
         redrawDisplay();
         ret = "true";
       }
-      else if(userInput == "enter")
+      else if(userInput == "enter" || userInput == "ENTR")
       {
         showIdle();
         focus = getFocusItemIndex();

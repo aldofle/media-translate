@@ -46,6 +46,9 @@
   else
   if(startitem == "last")
     setFocusItemIndex(itemCount);
+  else
+  if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
+    setFocusItemIndex(startitem-1);
   redrawDisplay();
 </onRefresh>
 
@@ -175,7 +178,7 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
       
-      if(userInput == "enter")
+      if(userInput == "enter" || userInput == "ENTR")
       {
         showIdle();
         focus = getFocusItemIndex();
@@ -232,6 +235,31 @@
         }
         
         cancelIdle();
+        ret = "true";
+      }
+      else if(userInput == "right" || userInput == "R") 
+      {
+        ret = "true";
+      }
+      else if (userInput == "pagedown" || userInput == "pageup" || userInput == "PD" || userInput == "PG")
+      {
+        itemSize = getPageInfo("itemCount");
+        idx = Integer(getFocusItemIndex());
+        if (userInput == "pagedown")
+        {
+          idx -= -8;
+          if(idx &gt;= itemSize)
+            idx = itemSize-1;
+        }
+        else
+        {
+          idx -= 8;
+          if(idx &lt; 0)
+            idx = 0;
+        }
+        setFocusItemIndex(idx);
+        setItemFocus(idx);
+        redrawDisplay();
         ret = "true";
       }
 

@@ -263,10 +263,50 @@
 		</item>
 
 		<item>
+			<title>Подписки</title>
+			<onClick>
+        optionsPath = getStoragePath("key") + "youtubeOptions.dat";
+        optionsArray = readStringFromFile(optionsPath);
+        if(optionsArray == null)
+        {
+          hd = 1;
+          username = " ";
+        }
+        else
+        {
+          youtubeRegion = getStringArrayAt(optionsArray, 0);
+          hd = getStringArrayAt(optionsArray, 1);
+          username = getStringArrayAt(optionsArray, 2);
+        }
+			 s = sprintf("'%s'",username);
+			 print(s);
+				if (username != null &amp;&amp; username != " ")
+				{
+	       url = "http://gdata.youtube.com/feeds/api/users/" + urlEncode(username)+"/newsubscriptionvideos?";
+	       title = "Подписки: "+username;
+	       
+	       arr = null;
+         arr = pushBackStringArray(arr, url);
+         arr = pushBackStringArray(arr, title);
+         print("arr=",arr);
+         print("storagePath=",storagePath);
+	       
+	       writeStringToFile(storagePath, arr);
+	       jumpToLink("searchLink");
+				}
+				else
+				{
+				  null;
+				}
+			</onClick>
+		</item>
+
+		<item>
 			<title>Поиск видео</title>
 			<onClick>
-				keyword= getInput();
-				if (keyword!=null)
+				keyword = doModalRss("rss_file://../etc/translate/rss/youtube/key/keyboard.rss");
+			  /* keyword= getInput(); */
+				if (keyword!=null &amp;&amp; keyword!="")
 				{
           optionsPath = getStoragePath("key") + "youtubeOptions.dat";
           optionsArray = readStringFromFile(optionsPath);
