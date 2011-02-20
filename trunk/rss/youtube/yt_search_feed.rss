@@ -350,10 +350,14 @@
   </onClick>
 </submenu>
 
+<search>
+ <mediaDisplay name=photoView />
+</search>
+
 <submenu>
   <title>Поиск</title>
   <onClick>
-		keyword = doModalRss("rss_file://../etc/translate/rss/youtube/key/keyboard.rss");
+		keyword = doModalRss("rss_file://../etc/translate/rss/youtube/key/keyboard.rss","mediaDisplay","search",0);
 	  /* keyword= getInput(); */
 		if (keyword!=null &amp;&amp; keyword!="")
 		{
