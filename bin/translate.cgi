@@ -572,7 +572,7 @@ check_playlist()
   command_playlist | sed '1,2d;s/<track>/\n<track>/g;s/></>\n</g' > $playlist_file
   local count=`sed -n '/<track>/p' $playlist_file | sed -n '$='`
   if [ "$count" == "1" -o "$resolve" == "1" ]; then
-    local buf=`awk -f getxml.awk -f getfirstitem.awk "$playlist_file"`
+    local buf=`awk -f getxml.awk -f getfirstitem.awk "$playlist_file" | sed '/^$/d'`
     local location=`echo "$buf" | sed -n '1p'`
     local title=`echo "$buf" | sed -n '2p'`
     local creator=`echo "$buf" | sed -n '3p'`
@@ -777,7 +777,7 @@ command_info()
           	fi
           ;;
           station.ru)
-            meta_current_song=`echo "$host_response" | sed 's/<[^<>]*>//g;s/|/-/'`
+            meta_current_song=`echo "$host_response" | awk '/"Artist"/{match($0, /"Artist":"([^"]+)".*"Song":"([^"]+)"/, arr);print arr[1] " - " arr[2];}'`
           ;;
         esac
       fi
