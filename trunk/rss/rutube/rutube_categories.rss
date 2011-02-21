@@ -291,6 +291,7 @@
 </onRefresh>
 
   <item_template>
+   <media:thumbnail>"";</media:thumbnail>
    <displayTitle>
       <script>
 	getStringArrayAt(titleArray , -1);
