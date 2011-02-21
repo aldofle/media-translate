@@ -30,7 +30,7 @@ BEGIN {
     {
       if(XITEM == "switch")
       {
-      	base = XATTR["rtmp"];
+      	base = XATTR["rtmp"] XATTR["content_id"] "/";
       	title = XATTR["title"];
       	if(XATTR["descr"] != "")
       	{
