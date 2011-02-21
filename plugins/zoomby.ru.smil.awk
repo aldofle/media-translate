@@ -28,18 +28,14 @@ BEGIN {
   {
     if(XTYPE == "TAG")
     {
-      if(XITEM == "meta")
+      if(XITEM == "switch")
       {
-        if(XATTR["base"] != "")
-        {
-          base = XATTR["base"];
-        }
-        else
-        if(XATTR["name"] == "vid")
-        {
-          base = base XATTR["content"] "/";
-        }
-        else
+      	base = XATTR["rtmp"];
+      	title = XATTR["title"];
+      	if(XATTR["descr"] != "")
+      	{
+      		title = title " / " XATTR["descr"];
+      	}
         if(XATTR["name"] == "title")
         {
           title = XATTR["content"];
@@ -49,7 +45,10 @@ BEGIN {
       if(XITEM == "video")
       {
         br = sprintf("%010d", strtonum(XATTR["system-bitrate"]));
-        VIDEO[br] = base XATTR["src"];
+      	if(XATTR["pd"] != "")
+        	VIDEO[br] = XATTR["pd"];
+       	else if(XATTR["src"] != "")
+       		VIDEO[br] = base XATTR["src"];
       }
     }
   }
@@ -57,8 +56,14 @@ BEGIN {
 END {
   print title;
   n = asorti(VIDEO, KEY)
+  str = "";
   for(i=1; i<=n; i++)
   {
-    print KEY[i] " " VIDEO[KEY[i]];
+    str = KEY[i] " " VIDEO[KEY[i]];
+    print str;
   } 
+  for(;i<=3; i++)
+  {
+  	print str;
+  }
 }
