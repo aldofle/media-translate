@@ -57,11 +57,13 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
       server_type='zoomby'
       awk -f getxml.awk -f ${PLUGINS_DIR}zoomby.ru.smil.awk "$TMPFILE" > $SMILINFO
       stream_url=`sed -n "${hdc}p" $SMILINFO | awk '{print $2;}'`
-      if echo "$RTMPDUMP" | grep -qs flvstreamer; then
-        stream_url="${stream_url}.f4v"
-      fi
       protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
       icy_name=`sed -n '1p' $SMILINFO`
+      if [ "$protocol" == "rtmp" ]; then
+	      if echo "$RTMPDUMP" | grep -qs flvstreamer; then
+	        stream_url="${stream_url}.f4v"
+	      fi
+	    fi
       rm -f $SMILINFO
       rm -f $TMPFILE
     fi
