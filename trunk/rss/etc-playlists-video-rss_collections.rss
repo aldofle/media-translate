@@ -498,6 +498,26 @@
     <stream_protocol>http</stream_protocol>
   </item>
   <item>
+    <annotation>Смотрите онлайн новые видеоклипы популярных российских и зарубежных исполнителей бесплатно и без регистрации. Все музыкальные новинки на music.ivi.ru!</annotation>
+    <title>music.ivi.ru - Лидеры дня</title>
+    <image>../etc/translate/rss/image/menu/rss.png</image>
+<location><script>translate_base_url+"app/rss/music.ivi.ru,http://music.ivi.ru/static/rss/lead.xml";</script></location>
+<stream_url><script>translate_base_url+"app/rss/music.ivi.ru,http://music.ivi.ru/static/rss/lead.xml";</script></stream_url>
+    <stream_class>rss</stream_class>
+    <stream_type>application/xml</stream_type>
+    <stream_protocol>http</stream_protocol>
+  </item>
+  <item>
+    <annotation>Смотрите онлайн новые видеоклипы популярных российских и зарубежных исполнителей бесплатно и без регистрации. Все музыкальные новинки на music.ivi.ru!</annotation>
+    <title>music.ivi.ru - Новинки</title>
+    <image>../etc/translate/rss/image/menu/rss.png</image>
+<location><script>translate_base_url+"app/rss/music.ivi.ru,http://music.ivi.ru/static/rss/novetly.xml";</script></location>
+<stream_url><script>translate_base_url+"app/rss/music.ivi.ru,http://music.ivi.ru/static/rss/novetly.xml";</script></stream_url>
+    <stream_class>rss</stream_class>
+    <stream_type>application/xml</stream_type>
+    <stream_protocol>http</stream_protocol>
+  </item>
+  <item>
     <annotation>RSS-лента Tvigle Media</annotation>
     <title>Tvigle Media</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>

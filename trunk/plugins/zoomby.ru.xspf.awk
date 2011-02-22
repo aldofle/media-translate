@@ -21,10 +21,13 @@
 
 BEGIN {
   UNESCAPEXML = 0;
-  base = "";
-  title = "";
+  Q = QUALITY-1;
 
-  while ( getXML(ARGV[1],1) ) 
+	print "<?xml version='1.0' encoding='UTF-8'?>"
+	print "<playlist version='1' xmlns='http://xspf.org/ns/0/'>"
+	print "<trackList>"
+
+  while( getXML(ARGV[1],1) ) 
   {
     if(XTYPE == "TAG")
     {
@@ -35,8 +38,7 @@ BEGIN {
       	if(XATTR["descr"] != "")
       		title = title " / " XATTR["descr"];
       }
-      else
-      if(XITEM == "video")
+      else if(XITEM == "video")
       {
         br = sprintf("%010d", strtonum(XATTR["system-bitrate"]));
       	if(XATTR["pd"] != "")
@@ -45,19 +47,29 @@ BEGIN {
        		VIDEO[br] = base XATTR["src"];
       }
     }
+    else if(XTYPE == "END")
+    {
+    	if(XITEM == "switch")
+    	{
+			  n = asorti(VIDEO, KEY)
+			  if(Q > n)
+			  	url = VIDEO[KEY[n]];
+			  else
+			  	url = VIDEO[KEY[Q]];
+			  if(url ~ /^rtmp:/)
+			  	url = url EXT;
+				print "<track>"
+	  		print "<title>" title "</title>"
+	  		print "<location>" url "</location>"
+	  		print "<meta rel='translate'>Content-type:video/mp4</meta>"
+				print "</track>"
+		  	delete VIDEO;
+		  	delete KEY;
+			}
+    }
   }
 }
 END {
-  print title;
-  n = asorti(VIDEO, KEY)
-  str = "";
-  for(i=1; i<=n; i++)
-  {
-    str = KEY[i] " " VIDEO[KEY[i]];
-    print str;
-  } 
-  for(;i<=3; i++)
-  {
-  	print str;
-  }
+	print "</trackList>"
+	print "</playlist>"
 }
