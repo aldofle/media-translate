@@ -25,6 +25,28 @@
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
+      <track>
+         <annotation>Смотрите онлайн новые видеоклипы популярных российских и зарубежных исполнителей бесплатно и без регистрации. Все музыкальные новинки на music.ivi.ru!</annotation>
+         <title>music.ivi.ru - Лидеры дня</title>
+         <image>../etc/translate/rss/image/menu/rss.png</image>
+         <location>http://127.0.0.1/cgi-bin/translate?app/rss/music.ivi.ru,http://music.ivi.ru/static/rss/lead.xml</location>
+      
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/music.ivi.ru,http://music.ivi.ru/static/rss/lead.xml</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+      <track>
+         <annotation>Смотрите онлайн новые видеоклипы популярных российских и зарубежных исполнителей бесплатно и без регистрации. Все музыкальные новинки на music.ivi.ru!</annotation>
+         <title>music.ivi.ru - Новинки</title>
+         <image>../etc/translate/rss/image/menu/rss.png</image>
+         <location>http://127.0.0.1/cgi-bin/translate?app/rss/music.ivi.ru,http://music.ivi.ru/static/rss/novetly.xml</location>
+      
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/music.ivi.ru,http://music.ivi.ru/static/rss/novetly.xml</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
 <!--
       <track>
          <annotation>Все видео: бесплатно смотреть кино, сериалы, программы, мультфильмы и клипы в хорошем качестве без регистрации: Популярное видео</annotation>

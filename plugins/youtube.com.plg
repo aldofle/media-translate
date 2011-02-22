@@ -21,16 +21,17 @@
 # Translate CGI module
 # 'youtube.com' plug-in
 #
-# version: 2.0 09.12.2010 22:42
+# version: 2.1 22.02.2011 18:53:32
 #
 # http://www.youtube.com/v/JZtcw6GIxTY
 # http://www.youtube.com/watch?v=JZtcw6GIxTY
+# http://m.youtube.com/watch?gl=RU&client=mv-google&hl=ru&v=V-_YxX94cQ8
 #
 # options:
 #   HD:[0|1]
 
 
-if echo "${arg_url}" | grep -qs '\(www\.\)*youtube\.com/\(v/\|watch?\).*$'; then 
+if echo "${arg_url}" | grep -qs 'youtube\.com/\(v/\|watch?\).*$'; then 
 
   local TIMELIFE=60
   
