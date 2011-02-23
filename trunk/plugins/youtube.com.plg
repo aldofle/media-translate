@@ -31,7 +31,7 @@
 #   HD:[0|1]
 
 
-if echo "${arg_url}" | grep -qs 'youtube\.com/\(v/\|watch?\).*$'; then 
+if echo "${arg_url}" | grep -qs 'youtube\.com.*\(/v/\|/watch?\).*$'; then 
 
   local TIMELIFE=60
   
