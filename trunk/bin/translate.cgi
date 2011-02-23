@@ -567,6 +567,7 @@ check_playlist()
 {
   get_opt "Resolve-playlist"
   local resolve=$opt
+  [ "$resolve" == "0" ] && return 0;
   local playlist_file="$TEMP/temp.track"
   arg_url=$stream_url
   command_playlist | sed '1,2d;s/<track>/\n<track>/g;s/></>\n</g' > $playlist_file
