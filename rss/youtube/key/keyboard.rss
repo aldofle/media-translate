@@ -273,7 +273,7 @@
 		  }
 			inputText += itemTitle;
 			inputTextArray  = pushBackStringArray(inputTextArray, itemTitle);
-			inputTextCount += 1;
+			inputTextCount -= -1;
 			redrawDisplay();
 		}
 		null;
