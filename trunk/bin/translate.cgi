@@ -272,6 +272,10 @@ check_av_stream()
     
     # autodetect stream type
     
+    if echo $buf | grep -qs "FINISHED"; then
+      type=${type:-'application/octet-stream'}
+    fi
+    
     case $protocol in
       http|ftp|file)
         if [ "$protocol" == "http" ]; then
