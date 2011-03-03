@@ -168,5 +168,9 @@
    <title>Исполнители</title>
    <link>rss_file://../etc/translate/rss/music_ivi/artists.rss</link>
   </item>
+  <item>
+   <title>Плейлисты</title>
+   <link>rss_file://../etc/translate/rss/music_ivi/playlists.rss</link>
+  </item>
 </channel>
 </rss>
