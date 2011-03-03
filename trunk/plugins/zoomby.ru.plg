@@ -20,7 +20,7 @@
 # Translate CGI module
 # 'zoomby.ru' plug-in
 #
-# version: 1.0 18.12.2010 16:03
+# version: 2.0 03.03.2011 15:27:14
 #
 # http://www.zoomby.ru/watch/4396-kamenskaya-3
 #
@@ -49,12 +49,125 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
     ;;
   esac
 
-  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
+  $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>/dev/null
 
   if [ -f ${TMPFILE} ]; then
-    local smil_file="http://www.zoomby.ru`grep -i "video=" ${TMPFILE} | sed -n '1p' | awk '{match($0,/video=([^&"]+)[&"]/,arr);print arr[1];}'`"
-    host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${smil_file}" 2>&1`
+  	local smil_path="`grep -i "video *=" ${TMPFILE} | sed -n '1p' | awk '{match($0,/video *=[ "]*([^&"]+)[&"]/,arr);print arr[1];}'`"
+    $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://www.zoomby.ru${smil_path}" 2>/dev/null
     if [ -f ${TMPFILE} ]; then
+    	if grep -qs "<smil" ${TMPFILE}; then
+    		:
+    	else
+    		awk -v key="${smil_path}" '
+					function charCodeAt(s,n)
+					{
+					  return chmap[substr(s, n+1, 1)];
+					}
+					
+					function join(array, start, end, sep,    			result,i)
+					{
+					   if (sep == "")
+					      sep = " ";
+					   else if (sep == SUBSEP) # magic value
+					      sep = "";
+					   result = array[start];
+					   for (i = start + 1; i <= end; i++)
+					       result = result sep array[i];
+					   return result;
+					}
+					
+					function binstrtonum(s,				n,ret,i,c)
+					{
+						n = length(s);
+						ret = 0;
+						for (i=1; i<=n; i++) 
+						{
+							c = chmap[substr(s, i, 1)] - 48;
+							ret = ret * 2 + c;
+						}
+						return ret;
+					}
+					
+					function unpack_B8(bits, 				data, mask)
+					{
+						if (bits == 0)
+						   return "00000000";
+					
+						mask = 1
+						for (; bits != 0; bits = rshift(bits, 1))
+						   data = (and(bits, mask) ? "1" : "0") data
+						
+						while ((length(data) % 8) != 0)
+						   data = "0" data
+						
+						return data
+					}
+					
+					function atob(s,				res,i)
+					{
+						res = "";
+						for(i=0; i<length(s); i++)
+						{
+							res = res unpack_B8(charCodeAt(s, i));
+							loc3++;
+						}
+						return res;
+					}
+					
+					function htob(s,					res,i)
+					{
+						res = "";
+						for(i=0; i<length(s); i+=2)
+						{
+							res = res unpack_B8(strtonum("0x" substr(s, i+1, 2)));
+						}
+						return res;
+					}
+					
+					function bin_add(s1,s2,n,						res,i,loc6,loc4,loc5,loc4_len,loc5_len)
+					{
+						loc6 = 0;
+						loc4_len = split(s1, loc4, "");
+						loc5_len = split(s2, loc5, "");
+						for(i=0; i<loc4_len; i++)
+						{
+							loc4[i+1] = (strtonum(loc4[i+1]) + strtonum(loc5[loc6+1])) % 2;
+							if(++loc6 > n)
+							{
+								loc6 = 0;
+							}
+						}
+						return join(loc4, 1, loc4_len, SUBSEP);
+					}
+					
+					BEGIN {
+					  for(i=0; i < 256; i++) 
+					    chmap[sprintf("%c", i)] = i
+					}
+					
+					{
+						param1 = $0;
+						split(key, arr, "/");
+						param2 = arr[4];
+						sLoc1 = "";
+						sLoc3 = atob(param2);
+						sLoc5 = htob(param1);
+						sLoc7 = bin_add(sLoc5, sLoc3, length(param2));
+						sLoc5 = "";
+						nLoc6 = 0;
+						for(i=0; i<length(sLoc7); i+=8)
+						{
+							sLoc1 = substr(sLoc7, i+1, 8);
+							sLoc5 = sLoc5 sprintf("%c", binstrtonum(sLoc1));
+						}
+						aLoc8_len = split(sLoc5, aLoc8, "\t");
+						delete aLoc8[aLoc8_len];
+						aLoc8_len--;
+						print join(aLoc8, 2, aLoc8_len, "\t");
+					}    		
+				' $TMPFILE > $TMPFILE.smil
+				mv -f $TMPFILE.smil $TMPFILE
+    	fi
     	local swcount=`grep "</switch>" $TMPFILE | wc -l`
     	if [ $swcount -eq 1 ]; then
 	      stream_type='video/mp4'
