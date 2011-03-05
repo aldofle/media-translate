@@ -1237,11 +1237,29 @@ case ${arg_cmd} in
     get_opt "Charset"
     charset=$opt
 
-    [ -z "$stream_type" ] && check_stream
-
+    if [ -z "$stream_type" ]; then
+    	local TIMELIFE=${STREAM_INFO_TIMELIFE:-60}
+		  local CACHEFILE=$CACHEPATH/stream.`echo $arg_url | sed 's/[^0-9a-zA-Z]/_/g'`
+		  local tsttime
+		  let tsttime=`date +%s`-$TIMELIFE
+		  if [ -f $CACHEFILE ]; then
+		    if [ `date +%s -r $CACHEFILE` -gt $tsttime ]; then
+		      stream_url=`sed -ne "1p" $CACHEFILE`
+		      stream_type=`sed -ne "2p" $CACHEFILE`
+		      arg_opt=`sed -ne "3p" $CACHEFILE`
+		    fi
+		  fi
+		  if [ -z "$stream_type" ]; then
+		  	check_stream
+        echo $stream_url > $CACHEFILE
+        echo $stream_type >> $CACHEFILE
+        echo $arg_opt >> $CACHEFILE
+		  fi
+    fi
+    
     echo "Content-type: $stream_type"
     echo
-    if [ "$protocol" == "rtmp" ]; then
+    if echo "$stream_url" | grep -qs "^rtmp"; then
       get_opt "Rtmp-options"
       killall -q $RTMPDUMP 2>&1
       exec nice $RTMPDUMP -q -o - -b 60000 -r "$stream_url" $opt
@@ -1317,7 +1335,7 @@ case ${arg_cmd} in
   ;;
   app/*)
     if [ -f $TRANSLATE/$arg_cmd ]; then
-	. $TRANSLATE/$arg_cmd
+        . $TRANSLATE/$arg_cmd
     fi
   ;;
   scan|*)
