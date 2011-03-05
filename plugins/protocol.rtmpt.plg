@@ -18,11 +18,11 @@
 #
 
 # Translate CGI module
-# 'rtmp' protocol plug-in
+# 'rtmpt' protocol plug-in
 #
 # version: 1.0 08.10.2010 22:22:53
 #
-# rtmp://100.100.100.100/path/stream
+# rtmpt://100.100.100.100/path/stream
 #
 
 if [ -n "${RTMPGW_URL}" ]; then
@@ -31,5 +31,5 @@ if [ -n "${RTMPGW_URL}" ]; then
 else
   protocol='rtmp'
 fi
-stream_type=${stream_type:-'video/x-flv'}
+stream_type=${stream_type:-'video/mp4'}
 check_stream_flag=no

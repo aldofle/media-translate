@@ -72,8 +72,11 @@ elif echo "${arg_url}" | grep -q -s '\(www\.\)*guzei\.com/online_tv/watch.php?on
 	        local streamer=`echo "${arg_url}" | sed 's/.*streamer=//;s/&.*//'`
 	        stream_url="$streamer/$stream_url"
 	        protocol='rtmp'
-	      elif echo "${arg_url}" | grep -qs 'rtmp=rtmp:'; then 
+	      elif echo "${arg_url}" | grep -qs 'rtmp=rtmp'; then 
 	        stream_url=`echo "${arg_url}" | sed 's/.*rtmp=//;s/&.*//'`
+	        protocol='rtmp'
+	      elif echo "${arg_url}" | grep -qs '__streamurl__=rtmp'; then 
+	        stream_url=`echo "${arg_url}" | sed 's/.*__streamurl__=//;s/&.*//'`
 	        protocol='rtmp'
 	      else
 	        arg_url="$stream_url"
