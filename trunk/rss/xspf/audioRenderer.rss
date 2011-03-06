@@ -152,6 +152,7 @@
     	}
     	else
     	{
+    	 stream_image = "../etc/translate/rss/image/sound_wave.jpg";
     	 stream_status_url = "_empty_";
     	 track_image = request_image;
     	}
