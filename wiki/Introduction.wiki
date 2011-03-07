@@ -11,6 +11,7 @@
   === Сервисы ===
   * Youtube (http://youtube.com)
   * Rutube (http://rutube.ru)
+  * IVI Music (http://music.ivi.ru)
   === RSS-ленты и плейлисты ===
   * Tvigle (http://tvigle.ru)
   * IVI (http://ivi.ru)
