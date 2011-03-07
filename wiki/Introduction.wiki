@@ -136,9 +136,17 @@ http://kino-dom.tv/comedi/735-yepizody-episodes-1-sezon-1-seriya-onlajn.html
 http://www.filin.tv/otechestvennue/561-marusya-smotret-onlajn.html
 http://animult.tv/anime/animeser/725-magicheskij-indeks-to-aru-majutsu-no-index-1-24-serii-iz-24-onlajn.html
 }}}
-  * [http://zaycev.net/ zaycev.net (preview)]
+  * [http://zaycev.net/ zaycev.net]
 {{{
 http://zaycev.net/pages/8628/862805.shtml
+}}}
+  * [http://cultandrare.rocktelevision.com/ Rock Television - Cult & Rare]
+{{{
+http://cultandrare.rocktelevision.com/Player/TabId/58/VideoId/233/DIRE-STRAITS-Sultans-Of-Swing.aspx
+}}}
+  * [http://yourock.rocktelevision.com/ YouRock by Rocktelevision]
+{{{
+http://yourock.rocktelevision.com/VideoPlayer/TabId/56/VideoId/508/ORANGE-LEM--Geometric-Woman.aspx
 }}}
   * [http://www.last.fm/api Last.FM]
   Получение картинки с исполнителем для текущего проигрываемого трека.
