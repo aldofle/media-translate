@@ -62,8 +62,8 @@ echo "</pages>" >>$PAGEXML
 #echo pages=$pages >>$debugfile
 
    if [ -x $XSLTPROC ]; then
-     echo XSLTPROC=$XSLTPROC >>$debugfile
-     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+#     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+     $XSLTPROC --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
    fi
 
 cat >> $PAGEXML <<EOF

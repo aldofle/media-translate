@@ -175,8 +175,10 @@ menuPerPage=9
 
   arr = readStringFromFile(storagePath);
   if ( arr != null &amp;&amp; arr != "" )
+  {
    title = getStringArrayAt(arr, 0);
    baseUrl = getStringArrayAt(arr, 1);
+  }
   else
    postMessage("return");
 
@@ -198,7 +200,7 @@ menuPerPage=9
   {
     setRefreshTime(-1);
 
-    url = translate_base_url + "app," + baseUrl + "?page=" + page + ",zoomby/getpage_music_videos";
+    url = translate_base_url + "app," + urlEncode(baseUrl) + "?page=" + page + ",zoomby/getpage_music_videos";
 
     print("Start to load feed:",url);
 
