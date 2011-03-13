@@ -12,6 +12,7 @@
   * Youtube (http://youtube.com)
   * Rutube (http://rutube.ru)
   * IVI Music (http://music.ivi.ru)
+  * Zoomby Music (http://www.zoomby.ru/music)
   === RSS-ленты и плейлисты ===
   * Tvigle (http://tvigle.ru)
   * IVI (http://ivi.ru)
@@ -28,6 +29,7 @@
   * SomaFM (http://somafm.com/)
   * Digitally Imported (http://di.fm/)
   * SKY.fm (http://sky.fm/)
+  * JAZZRADIO (http://www.jazzradio.com/)
   * 1.FM (http://1.fm/)
   * 181.FM (http://181.fm/)
   * Radioio (http://radioio.com/)
