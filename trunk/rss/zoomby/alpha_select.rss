@@ -41,12 +41,12 @@
      ../etc/translate/rss/image/zoomby.jpg
        <widthPC>
          <script>
-           205 * 6 / 26 * screenYp / screenXp;
+           185 * 6 / 24 * screenYp / screenXp;
          </script>
        </widthPC>
        <offsetXPC>
          <script>
-           95 - 205 * 6 / 26 * screenYp / screenXp;
+           95 - 185 * 6 / 24 * screenYp / screenXp;
          </script>
        </offsetXPC>
   </image>
