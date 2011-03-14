@@ -175,11 +175,6 @@
   }
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
-  storagePath = getStoragePath("tmp");
-  storagePath  = storagePath + "zoomby.dat";
-  arr = null;
-  writeStringToFile(storagePath, arr);
-
   pageLogo = "../etc/translate/rss/image/zoomby.jpg";
   pageTitle = "ZOOMBY.RU/MUSIC"
 
