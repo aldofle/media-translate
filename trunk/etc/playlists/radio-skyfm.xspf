@@ -10,7 +10,7 @@
          <meta rel="genre">Electronic Chillout Dream</meta>
          <meta rel="url">http://www.sky.fm/dreamscapes</meta>
       
-<meta rel="stream_url">http://u15c.sky.fm:80/sky_dreamscapes_aacplus</meta>
+<meta rel="stream_url">http://u15.sky.fm:80/sky_dreamscapes_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -61,7 +61,7 @@
          <meta rel="genre">Indie Rock Alternative</meta>
          <meta rel="url">http://www.sky.fm/indierock/</meta>
       
-<meta rel="stream_url">http://u15c.sky.fm:80/sky_indierock_aacplus</meta>
+<meta rel="stream_url">http://u15.sky.fm:80/sky_indierock_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -151,7 +151,7 @@
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Top Hits Music - S K Y . F M - who cares about the chart order, less rap &amp; more hits!</meta>
+<meta rel="stream_title">Top Hits Music - S K Y . F M - who cares about the chart order, less rap & more hits!</meta>
 <meta rel="stream_genre">Pop Top 40 Dance Rock</meta>
 <meta rel="stream_bitrate">40</meta>
 </track>
@@ -163,7 +163,7 @@
          <meta rel="genre">80s Pop Rock Decades</meta>
          <meta rel="url">http://www.sky.fm/the80s/</meta>
       
-<meta rel="stream_url">http://u15bc.sky.fm:80/sky_the80s_aacplus</meta>
+<meta rel="stream_url">http://u15b.sky.fm:80/sky_the80s_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -180,7 +180,7 @@
          <meta rel="genre">70s Hits Oldies Decades</meta>
          <meta rel="url">http://www.sky.fm/hit70s/</meta>
       
-<meta rel="stream_url">http://u15bc.sky.fm:80/sky_hit70s_aacplus</meta>
+<meta rel="stream_url">http://u15b.sky.fm:80/sky_hit70s_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -202,7 +202,7 @@
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Oldies - The 50s, 60s, &amp; 70s - S K Y . F M - three decades of great oldies on www.sky.fm</meta>
+<meta rel="stream_title">Oldies - The 50s, 60s, & 70s - S K Y . F M - three decades of great oldies on www.sky.fm</meta>
 <meta rel="stream_genre">Decades Oldies 60s 70s</meta>
 <meta rel="stream_bitrate">40</meta>
 </track>
@@ -231,12 +231,12 @@
          <meta rel="genre">Flamenco Classical Guitar</meta>
          <meta rel="url">http://www.sky.fm/guitar/</meta>
       
-<meta rel="stream_url">http://u15c.sky.fm:80/sky_guitar_aacplus</meta>
+<meta rel="stream_url">http://u15.sky.fm:80/sky_guitar_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Classical &amp; Flamenco Guitar - S K Y . F M - a mix of classical, spanish, and flamenco guitar</meta>
+<meta rel="stream_title">Classical & Flamenco Guitar - S K Y . F M - a mix of classical, spanish, and flamenco guitar</meta>
 <meta rel="stream_genre">Flamenco Classical Guitar</meta>
 <meta rel="stream_bitrate">40</meta>
 </track>
@@ -316,7 +316,7 @@
          <meta rel="genre">Lounge Downtempo Eclectic</meta>
          <meta rel="url">http://www.sky.fm/datempolounge/</meta>
       
-<meta rel="stream_url">http://u15bc.sky.fm:80/sky_datempolounge_aacplus</meta>
+<meta rel="stream_url">http://u15b.sky.fm:80/sky_datempolounge_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -350,7 +350,7 @@
          <meta rel="genre">Country New Country Top 40</meta>
          <meta rel="url">http://www.sky.fm/country/</meta>
       
-<meta rel="stream_url">http://u15c.sky.fm:80/sky_country_aacplus</meta>
+<meta rel="stream_url">http://u15.sky.fm:80/sky_country_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -367,7 +367,7 @@
          <meta rel="genre">Bossa Nova Jazz</meta>
          <meta rel="url">http://www.sky.fm/bossanova/</meta>
       
-<meta rel="stream_url">http://u15bc.sky.fm:80/sky_bossanova_aacplus</meta>
+<meta rel="stream_url">http://u15b.sky.fm:80/sky_bossanova_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -384,7 +384,7 @@
          <meta rel="genre">Alternative Rock Adult Hits</meta>
          <meta rel="url">http://www.sky.fm/altrock/</meta>
       
-<meta rel="stream_url">http://u15c.sky.fm:80/sky_altrock_aacplus</meta>
+<meta rel="stream_url">http://u15.sky.fm:80/sky_altrock_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -401,7 +401,7 @@
          <meta rel="genre">Classic Rock 70s 80s</meta>
          <meta rel="url">http://www.sky.fm/classicrock/</meta>
       
-<meta rel="stream_url">http://u15c.sky.fm:80/sky_classicrock_aacplus</meta>
+<meta rel="stream_url">http://u15.sky.fm:80/sky_classicrock_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -418,7 +418,7 @@
          <meta rel="genre">Jazz Bebop Swing</meta>
          <meta rel="url">http://www.sky.fm/bebop</meta>
       
-<meta rel="stream_url">http://u15c.sky.fm:80/sky_bebop_aacplus</meta>
+<meta rel="stream_url">http://u15.sky.fm:80/sky_bebop_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -440,7 +440,7 @@
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Simply Soundtracks - S K Y . F M - a wide variety of Soundtracks from Movies, show themes, &amp; more!</meta>
+<meta rel="stream_title">Simply Soundtracks - S K Y . F M - a wide variety of Soundtracks from Movies, show themes, & more!</meta>
 <meta rel="stream_genre">Soundtracks Film Classical</meta>
 <meta rel="stream_bitrate">40</meta>
 </track>
@@ -452,7 +452,7 @@
          <meta rel="genre">Christian Pop Spiritual</meta>
          <meta rel="url">http://www.sky.fm/christian/</meta>
       
-<meta rel="stream_url">http://u15c.sky.fm:80/sky_christian_aacplus</meta>
+<meta rel="stream_url">http://u15.sky.fm:80/sky_christian_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -469,12 +469,12 @@
          <meta rel="genre">Hip Hop Rap Old School</meta>
          <meta rel="url">http://www.sky.fm/classicrap</meta>
       
-<meta rel="stream_url">http://u15c.sky.fm:80/sky_classicrap_aacplus</meta>
+<meta rel="stream_url">http://u15.sky.fm:80/sky_classicrap_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
 <meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Classic Rap &amp; Hip Hop - S K Y . F M - thanks for listening, check us out at www.sky.fm</meta>
+<meta rel="stream_title">Classic Rap & Hip Hop - S K Y . F M - thanks for listening, check us out at www.sky.fm</meta>
 <meta rel="stream_genre">Hip Hop Rap Old School</meta>
 <meta rel="stream_bitrate">40</meta>
 </track>
@@ -503,7 +503,7 @@
          <meta rel="genre">Dance Club Pop</meta>
          <meta rel="url">http://www.sky.fm/dance</meta>
       
-<meta rel="stream_url">http://u15bc.sky.fm:80/sky_dancehits_aacplus</meta>
+<meta rel="stream_url">http://u15b.sky.fm:80/sky_dancehits_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
