@@ -4,6 +4,18 @@
   <image>../etc/translate/rss/image/tvigle.png</image>
   <trackList>
 <track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2200,tvigle/multi</link>
+  <title>Говорящая с призраками. Первый сезон</title>
+  <annotation>Мелинда Гордон помогает призракам обрести покой и уйти в другой мир, будучи посредником, между живыми и мертвыми.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2200/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2201,tvigle/multi</link>
+  <title>Университет</title>
+  <annotation>Университет это красивые девчонки, горячие парни, самые веселые братства, упоительные гулянки с ночи до утра!</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2201/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2167,tvigle/multi</link>
   <title>Город Хищниц</title>
   <annotation>Комедийный сериал о жизни сорокалетней женщины после развода.</annotation>
@@ -28,6 +40,30 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/2171/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2206,tvigle/multi</link>
+  <title>Отчаянные Домохозяйки. Четвертый сезон</title>
+  <annotation>Четвертый сезон многосерийной комедийной драмы о жизни подруг-домохозяек, проживающих на улице Вистерия-Лэйн в выдуманном американском городе Фэйрвью.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2206/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2189,tvigle/multi</link>
+  <title>Предлагаемые обстоятельства</title>
+  <annotation>Главная героиня фильма актриса. По просьбе своего друга-следователя она входит в предлагаемые обстоятельства и помогает ему находить преступников.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2189/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2198,tvigle/multi</link>
+  <title>Место встречи изменить нельзя</title>
+  <annotation>Сотрудники МУРа против таинственной и неуловимой банды Черная кошка .</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2198/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2204,tvigle/multi</link>
+  <title>Черкизона. Одноразовые люди</title>
+  <annotation>После трагической гибели жены у Сергея Виноградова не остается человека ближе, чем Даша десятилетняя дочь покойной. Втайне от близких Сергей увозит девочку в Москву. Полные надежды на счастливую жизнь, герои случайно попадают на печально известный Черкизон, где девочка бесследно исчезает...</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2204/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2162,tvigle/multi</link>
   <title>Атлантида</title>
   <annotation>Любая семья это маленькая страна, загадочная и непознанная Атлантида...</annotation>
@@ -38,6 +74,13 @@
   <title>Antiсказка</title>
   <annotation>Герои детских сказок преследуют тебя на улицах Москвы!</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2103/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track>
+<track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2196,tvigle/multi</link>
+  <title>Своя чужая жизнь</title>
+  <annotation>Настоящий кинороман, в котором переплетается множество сюжетных линий и присутствуют элементы самых разных киножанров.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2196/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2091,tvigle/multi</link>
@@ -58,10 +101,34 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/2176/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2184,tvigle/multi</link>
+  <title>Любовные авантюры</title>
+  <annotation>Эротический Декамерон, или мужские откровения.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2184/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2190,tvigle/multi</link>
+  <title>Неудача Пуаро</title>
+  <annotation>Экранизация самого популярного романа Агаты Кристи Убийство Роджера Экройда .</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2190/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2199,tvigle/multi</link>
+  <title>Рыжая</title>
+  <annotation>Трогательная и увлекательная молодежная история об ослепшей девочке, влюбленной в музыку.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2199/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2177,tvigle/multi</link>
   <title>Иван Подушкин: Джентльмен сыска</title>
   <annotation>Иван Подушкин - личный секретарь пожилой миллионерши, вообразившей себя Ниро Вульфом. И бедный Подушкин вынужден стать ее Арчи Гудвином.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2177/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2205,tvigle/multi</link>
+  <title>Зона</title>
+  <annotation>Вся правда о тюремной жизни без прикрас.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2205/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2178,tvigle/multi</link>
@@ -75,12 +142,18 @@
   <annotation>Детективная история по мотивам романа Татьяны Устиновой.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2181/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2182,tvigle/multi</link>
   <title>Новый русский романс</title>
   <annotation>Фильм о взрослой любви.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2182/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track>
+<track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2207,tvigle/multi</link>
+  <title>Такси для ангела</title>
+  <annotation>Экранизация одноименного романа Виктории Платовой.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2207/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1828,tvigle/multi</link>
@@ -214,6 +287,12 @@
   <title>МаршROOTы</title>
   <annotation>Реалити-сериал о молодых и талантливых музыкантах.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1420/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2005,tvigle/multi</link>
+  <title>Дети Ванюхина</title>
+  <annotation>Полная тайн и неожиданностей история зарождения и становления семьи, рассказанная на фоне смены исторических эпох в России конца 20 века.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2005/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track>
   </trackList>

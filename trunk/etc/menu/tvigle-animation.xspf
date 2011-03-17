@@ -10,6 +10,12 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/2175/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2202,tvigle/multi</link>
+  <title>Маша и медведь</title>
+  <annotation>Новое прочтение любимой детской сказки про Машу и Медведя.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2202/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2093,tvigle/multi</link>
   <title>Flash-игра Охрустенный квест</title>
   <annotation>Мега-охрустенный квест от создателей мульта Тетрис против Контры . Зажигай вместе с популярными героями охрустенного сериала Versus! Играй бесплатно прямо сейчас!</annotation>
@@ -52,6 +58,12 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/2122/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2185,tvigle/multi</link>
+  <title>Приключения Алисы</title>
+  <annotation>Мультипликационные фильмы по мотивам сказки Льюиса Кэрролла Алиса в Стране Чудес и Алиса в Зазеркалье .</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2185/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2154,tvigle/multi</link>
   <title>Спорт. Спорт. Спорт.</title>
   <annotation>Забавные истории из жизни спортсменов.</annotation>
@@ -63,7 +75,8 @@
   <annotation>Легендарные фильмы самого известного художника-мультипликатора и режиссера анимационного кино Юрия Норштейна.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2097/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2118,tvigle/multi</link>
   <title>Aqua Teen Hunger Force</title>
   <annotation>Легендарный мультипликационный сериал о приключениях говорящих продуктов.</annotation>
@@ -75,8 +88,13 @@
   <annotation>Карусель, карусель начинает рассказ. Это сказки, песни и веселье! Карусель, карусель это радость для нас, прокатись на нашей карусели!</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2114/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2187,tvigle/multi</link>
+  <title>Приключения капитана Врунгеля</title>
+  <annotation>Мультипликационный сериал по одноименному роману Андрея Некрасова.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2187/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2120,tvigle/multi</link>
   <title>Металлопокалипсис</title>
   <annotation>Мультипликационная история о похождениях скандинаво-американской группы Dethklok.</annotation>
@@ -87,6 +105,12 @@
   <title>38 попугаев</title>
   <annotation>Забавные истории четырех друзей болтливой Мартышки, застенчивого Слоненка, эксцентричного Попугая и задумчивого Удава.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2098/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2188,tvigle/multi</link>
+  <title>Доктор Айболит</title>
+  <annotation>Серия мультфильмов о докторе Айболите по сказке и стихам Корнея Чуковского.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2188/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2119,tvigle/multi</link>
@@ -124,7 +148,8 @@
   <annotation>Первый советский мультфильм-экранизация по одноименной сказке Алана Александра Милна.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2101/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2102,tvigle/multi</link>
   <title>Крокодил Гена и Чебурашка</title>
   <annotation>Мультфильмы о приключениях крокодила Гены, Чебурашки и их друзьей.</annotation>
@@ -148,8 +173,7 @@
   <annotation>Популярный мультипликационный фильм о приключениях очень современного попугая.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2115/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1785,tvigle/multi</link>
   <title>UmaNetto</title>
   <annotation>Компании UmaNetto на работу требуется новая секретарша. После длительного кастинга, который проводят Андрей Падлыч и Казановский, на работу принимают Катю Очкарёву.</annotation>
@@ -180,18 +204,6 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/663/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1789,tvigle/multi</link>
-  <title>Х [Икс]</title>
-  <annotation>Популярный аниме-сериал в жанре драмы и мистики. Главный герой Камуи должен сделать непростой выбор: выступить либо на стороне Драконов Земли, которые стремятся разрушить мир, либо на стороне Драконов Небес защитников людей.</annotation>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/1789/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1791,tvigle/multi</link>
-  <title>Смирительная рубашка</title>
-  <annotation>Смирительные рубашки уникальные боевые маги, призванные уничтожить монстров обратную сторону успешной разработки ученых.</annotation>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/1791/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:49,tvigle/multi</link>
   <title>Снежики</title>
   <annotation>Веселые Снежики всегда вместе и всегда в хорошем настроении!</annotation>
@@ -209,7 +221,8 @@
   <annotation>Безбашенные утки никого не оставят равнодушным.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/52/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:47,tvigle/multi</link>
   <title>Сказки</title>
   <annotation>Сказки никогда не теряют своей актуальности.</annotation>
@@ -221,8 +234,7 @@
   <annotation>Абсурд и сюрреальность, ужас и эйфория.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/51/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1445,tvigle/multi</link>
   <title>Футбол по-украински</title>
   <annotation>Особенности национального футбола.</annotation>

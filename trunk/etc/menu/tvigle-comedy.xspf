@@ -46,16 +46,16 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/1200/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1827,tvigle/multi</link>
-  <title>Вся правда о Еве</title>
-  <annotation>Новый модный интернет сериал в духе черной комедии, снятый специально для женщин.</annotation>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/1827/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1354,tvigle/multi</link>
   <title>Ах, женщины</title>
   <annotation>Две подруги постоянно попадают в смешные, нелепые ситуации.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1354/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2209,tvigle/multi</link>
+  <title>Маски-Шоу</title>
+  <annotation>Юмористический сериал в стиле немого кино.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2209/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2028,tvigle/multi</link>
@@ -87,6 +87,12 @@
   <title>Lobanov Show</title>
   <annotation>Колкие пародии и злободневные шутки.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/11/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1827,tvigle/multi</link>
+  <title>Вся правда о Еве</title>
+  <annotation>Новый модный интернет сериал в духе черной комедии, снятый специально для женщин.</annotation>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/1827/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:14,tvigle/multi</link>
@@ -142,14 +148,14 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/100/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:17,tvigle/multi</link>
   <title>Crazy Хата</title>
   <annotation>Самые скандальные звезды и самые неоднозначные события светской жизни.</annotation>
   <image>http://photo.tvigle.ru/resource/rf/cnl/17/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:16,tvigle/multi</link>
   <title>За кадром</title>
   <annotation>Вся правда о съемках современных передач.</annotation>
