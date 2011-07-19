@@ -37,6 +37,7 @@ local PAGEXML=$CACHEPATH/zoomby.xml
 #echo $PAGEFILE >>$debugfile
 #echo $PAGEXML >>$debugfile
 #echo $arg_opt >>$debugfile
+#echo $MSDL >>$debugfile
 
 $MSDL -q -o "$PAGEFILE" -p http "$arg_opt"
 if [ -f "$PAGEFILE" ]; then
@@ -62,8 +63,8 @@ echo "</pages>" >>$PAGEXML
 #echo pages=$pages >>$debugfile
 
    if [ -x $XSLTPROC ]; then
-#     echo XSLTPROC=$XSLTPROC >>$debugfile
-     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+#     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+     $XSLTPROC --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
    fi
 
 cat >> $PAGEXML <<EOF
@@ -75,6 +76,8 @@ EOF
 fi
 
 if [ -f "$PAGEXML" ]; then
+ echo "Content-type: text/xml"
+ echo
  cat $PAGEXML
  rm -f $PAGEXML
 fi

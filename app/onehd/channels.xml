@@ -40,7 +40,7 @@
 </onRefresh>
 
 	<mediaDisplay name=photoView 
-	  centerXPC=5 
+	  centerXPC=6
 		centerYPC=22
 		centerHeightPC=25
     columnCount=6		

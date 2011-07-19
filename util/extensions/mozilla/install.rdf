@@ -9,7 +9,7 @@
 		<em:type>2</em:type>
 		<em:creator>timduck</em:creator>
 		<em:description>Play media stream from the current page on the player</em:description>
-		<em:homepageURL>http://forum.iconbit.ru/</em:homepageURL>
+		<em:homepageURL>http://code.google.com/p/media-translate/</em:homepageURL>
 		<em:optionsURL>chrome://playonplayer/content/options.xul</em:optionsURL>
 
 		<em:targetApplication>
