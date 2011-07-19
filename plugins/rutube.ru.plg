@@ -21,7 +21,7 @@
 # Translate CGI module
 # 'rutube.ru' plug-in
 #
-# version: 1.2 26.01.2011 10:39:26
+# version: 1.3 19.07.2011 11:39
 #
 # http://rutube.ru/tv/o2tv.html
 # http://rutube.ru/tracks/1088305.html?v=1c21315933044e39fdd57808ac5e3958
@@ -55,11 +55,15 @@ rutube_video()
             protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
             # http://tradiz.org/Rutube/Skachivanie-s-rutuberu-po-rtmp-ssylkam
             local rtmp_swfurl="http://rutube.ru/player.swf"
+            local rtmp_playpath=`echo "$stream_url" | sed 's/^.*\/mp4:/mp4:/'`
+            local rtmp_tcUrl=`echo "$stream_url" | sed 's/\/mp4:.*/\//'`
+
             if echo "$stream_url" | grep -qs "_definst_"; then
-                arg_opt="Rtmp-options:-s $rtmp_swfurl;$arg_opt"
+                arg_opt="Rtmp-options:-s $rtmp_swfurl;"$arg_opt
+            elif echo "$stream_url" | grep -qs "rutube_vod_"; then
+                arg_opt="Rtmp-options:-s $rtmp_swfurl -y $rtmp_playpath -t $rtmp_tcUrl;"$arg_opt
             else
-                local rtmp_playpath=`echo "$stream_url" | sed 's/^.*\/mp4:/mp4:/;s/&.*$//'`
-                arg_opt="Rtmp-options:-s $rtmp_swfurl -v -y $rtmp_playpath;$arg_opt"
+                arg_opt="Rtmp-options:-s $rtmp_swfurl -v -y $rtmp_playpath;"$arg_opt
             fi
             rm -f $TMPFILE
           fi
