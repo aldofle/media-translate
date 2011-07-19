@@ -32,7 +32,7 @@ local SMILINFO=$TMPFILE.smilinfo
 local PLAYLISTFILE=$CACHEPATH/temp.xspf
 rm -f $PLAYLISTFILE
 
-if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then 
+if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 
   get_opt "HD"
   [ -z "$opt" ] && opt=`sed -n '8p' $RSSCONF 2>/dev/null`
@@ -52,7 +52,10 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
   $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>/dev/null
 
   if [ -f ${TMPFILE} ]; then
-  	local smil_path="`grep -i "video *=" ${TMPFILE} | sed -n '1p' | awk '{match($0,/video *=[ "]*([^&"]+)[&"]/,arr);print arr[1];}'`"
+    local smil_path="`grep -i "video *=" ${TMPFILE} | sed -n '1p' | awk '{match($0,/video *=[ "]*([^&"]+)[&"]/,arr);print arr[1];}'`"
+    if [ -n ${smil_path} ]; then
+     local smil_path="`grep -i "video:" ${TMPFILE} | sed -n '1p' | awk '{match($0,/video:[ "]*([^&"]+)[&"]/,arr);print arr[1];}'`"
+    fi
     $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://www.zoomby.ru${smil_path}" 2>/dev/null
     if [ -f ${TMPFILE} ]; then
     	if grep -qs "<smil" ${TMPFILE}; then
@@ -64,7 +67,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 					  return chmap[substr(s, n+1, 1)];
 					}
 					
-					function join(array, start, end, sep,    			result,i)
+					function join(array, start, end, sep, result,i)
 					{
 					   if (sep == "")
 					      sep = " ";
@@ -76,7 +79,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 					   return result;
 					}
 					
-					function binstrtonum(s,				n,ret,i,c)
+					function binstrtonum(s,n,ret,i,c)
 					{
 						n = length(s);
 						ret = 0;
@@ -88,7 +91,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 						return ret;
 					}
 					
-					function unpack_B8(bits, 				data, mask)
+					function unpack_B8(bits, data, mask)
 					{
 						if (bits == 0)
 						   return "00000000";
@@ -100,7 +103,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 						return data
 					}
 					
-					function atob(s,				res,i,n)
+					function atob(s,res,i,n)
 					{
 						res = "";
 						n = length(s);
@@ -109,7 +112,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 						return res;
 					}
 					
-					function htob(s,					res,i,n)
+					function htob(s,res,i,n)
 					{
 						res = "";
 						n = length(s);
@@ -118,7 +121,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 						return res;
 					}
 					
-					function bin_add(s1,s2,n,						res,i,j,loc4,loc5,loc4_len,loc5_len,XOR,n1)
+					function bin_add(s1,s2,n,res,i,j,loc4,loc5,loc4_len,loc5_len,XOR,n1)
 					{
 						XOR["00"] = 0;
 						XOR["01"] = 1;
@@ -153,15 +156,19 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 							s = s sprintf("%c", binstrtonum(substr(res, i, 8)));
 						a_len = split(s, a, "\t");
 						print join(a, 2, a_len-1, "\t");
-					}    		
+					}
 				' $TMPFILE > $TMPFILE.smil
 				mv -f $TMPFILE.smil $TMPFILE
-  	fi
-    	local swcount=`grep "</switch>" $TMPFILE | wc -l`
-    	if [ $swcount -eq 1 ]; then
+	fi
+cat $TMPFILE | sed 's/>/>\n/g' >$TMPFILE.smil
+mv -f $TMPFILE.smil $TMPFILE
+#cp $TMPFILE /tmp/nnb.smil
+	local swcount=`grep "</switch>" $TMPFILE | wc -l`
+	if [ $swcount -eq 1 ]; then
 	      stream_type='video/mp4'
 	      server_type='zoomby'
 	      awk -f getxml.awk -f ${PLUGINS_DIR}zoomby.ru.smil.awk "$TMPFILE" > $SMILINFO
+#cp $SMILINFO /tmp/nnb.smilinfo
 	      stream_url=`sed -n "${hdc}p" $SMILINFO | awk '{print $2;}'`
 	      protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
 	      icy_name=`sed -n '1p' $SMILINFO`
@@ -171,19 +178,19 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 		      fi
 		    fi
 	      rm -f $SMILINFO
-		  elif [ $swcount -gt 1 ]; then
-		    local f4v=
+	elif [ $swcount -gt 1 ]; then
+	      local f4v=
 	      if echo "$RTMPDUMP" | grep -qs flvstreamer; then
 	        f4v=".f4v"
 	      fi
 	      awk -f getxml.awk -v QUALITY="$hdc" -v EXT="$f4v" -f ${PLUGINS_DIR}zoomby.ru.xspf.awk "$TMPFILE" > $PLAYLISTFILE
-		    stream_type='application/xspf+xml'
-		    stream_url=$PLAYLISTFILE
-		    protocol='file'
-		  fi
+	      stream_type='application/xspf+xml'
+	      stream_url=$PLAYLISTFILE
+	      protocol='file'
+	fi
       rm -f $TMPFILE
     fi
-  fi  
+  fi
   return $RC_OK
 fi
 

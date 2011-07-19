@@ -19,49 +19,17 @@
 
 # @include getxml.awk
 
-BEGIN {
+BEGIN{
   UNESCAPEXML = 0;
-  base = "";
-  title = "";
 
   while ( getXML(ARGV[1],1) ) 
   {
     if(XTYPE == "TAG")
     {
-      if(XITEM == "switch")
-      {
-      	base = XATTR["rtmp"];
-      	if(XATTR["content_id"] != "")
-      	  base = base XATTR["content_id"] "/";
-      	title = XATTR["title"];
-      	if(XATTR["descr"] != "")
-      		title = title " / " XATTR["descr"];
-      }
-      else
       if(XITEM == "video")
       {
-        br = sprintf("%010d", strtonum(XATTR["system-bitrate"]));
-      	if(XATTR["pd"] != "")
-        	VIDEO[br] = XATTR["pd"];
-       	else if(XATTR["src"] != "")
-       		VIDEO[br] = base XATTR["src"];
-       	else if(XATTR["stream"] != "")
-       		VIDEO[br] = XATTR["stream"];
+       print XATTR["url"];
       }
     }
-  }
-}
-END {
-  print title;
-  n = asorti(VIDEO, KEY)
-  str = "";
-  for(i=1; i<=n; i++)
-  {
-    str = KEY[i] " " VIDEO[KEY[i]];
-    print str;
-  } 
-  for(;i<=3; i++)
-  {
-  	print str;
   }
 }
