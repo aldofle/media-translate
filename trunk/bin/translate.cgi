@@ -60,7 +60,7 @@ arg_url=`echo "$QUERY_STRING" | awk -F, '{for(i=3; i<NF; i++) printf "%s,", $(i)
 arg_url=`urldecode_s "$arg_url"`
 arg_opt=`urldecode_s "$arg_opt"`
 
-arg_url=`echo $arg_url | sed "s/'/%27/"`
+arg_url=`echo $arg_url | sed "s/'/%27/g"`
 # http://127.0.0.1/translate[?<scan|*>]
 # http://127.0.0.1/translate?stream,[<option1;...optionN>],<url>
 
@@ -1265,7 +1265,7 @@ case ${arg_cmd} in
       killall -q $RTMPDUMP 2>&1
 #      echo $RTMPDUMP -q -o - -b 60000 -r \"$stream_url\" $opt >/tmp/nnb.log
       exec nice $RTMPDUMP -q -o - -b 60000 -r "$stream_url" $opt
-#     exec nice $RTMPDUMP -V -o - -b 60000 -r "$stream_url" $opt 2>/tmp/rtmpdump.log
+#      exec nice $RTMPDUMP -V -o - -b 60000 -r "$stream_url" $opt 2>/tmp/rtmpdump.log
     elif [ "$charset" == "CP1251" ]; then
       $MSDL $msdlopt -q -o - "$stream_url" | $TOUTF8 | sed 's/windows-125./utf-8/'
     else
