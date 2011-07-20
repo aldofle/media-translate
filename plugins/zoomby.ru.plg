@@ -27,6 +27,7 @@
 # options:
 #   HD:[0|1]
 
+#echo "zoomby.ru.plg started" > /tmp/zoomby.log
 
 local SMILINFO=$TMPFILE.smilinfo
 local PLAYLISTFILE=$CACHEPATH/temp.xspf
@@ -178,6 +179,15 @@ mv -f $TMPFILE.smil $TMPFILE
 		      fi
 		    fi
 	      rm -f $SMILINFO
+              local rtmp_playpath=`echo "$stream_url" | sed 's/^.*\/mp4:/mp4:/;s/?.*//'`
+              arg_opt="Rtmp-options:-y $rtmp_playpath;"$arg_opt
+              if [ $arg_cmd == "info" -a  $protocol == "rtmp" ]; then
+               stream_url=$arg_url
+               stream_type=
+               server_type='_translate_'
+               protocol='http'
+               stream_class='video'
+              fi
 	elif [ $swcount -gt 1 ]; then
 	      local f4v=
 	      if echo "$RTMPDUMP" | grep -qs flvstreamer; then
