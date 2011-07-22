@@ -36,7 +36,7 @@ if echo "${arg_url}" | grep -qs 'www\.24video\.net\/video\/view\/[0-9]*'; then
 
   host_response=`$WGET -q -O ${TMPFILE} "$xmlurl?mode=init" 2>&1`
   if [ -f ${TMPFILE} ]; then
-    icy_name=`awk -f getxml.awk -f ${PLUGINS_DIR}24video.net.name.awk "$TMPFILE"`
+    icy_name=`awk -f getxml.awk -f ${PLUGINS_DIR}24video.net.name.awk "$TMPFILE" | $XCODE -s -l | $TOUTF8`
     rm -f $TMPFILE
   fi
 
