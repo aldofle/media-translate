@@ -20,15 +20,17 @@
 # Translate CGI module
 # 'cinema.mosfilm.ru' plug-in
 #
-# version: 1.0 21.12.2010 14:46:53
+# version: 1.1 20.07.2011 20:59:41
 #
-# http://www.cinema.mosfilm.ru/PrivateVideo.aspx?id=f61c564b-0653-4a23-b6fd-02253cdda615
+# http://www.cinema.mosfilm.ru/Film.aspx?id=ee914026-6828-4327-9f31-a3a63623dbd1
 #
 
-if echo "${arg_url}" | grep -q -s '\(www\.\)*cinema\.mosfilm\.ru/PrivateVideo.aspx?id=.*$'; then 
+if echo "${arg_url}" | grep -q -s '\(www\.\)*cinema\.mosfilm\.ru/Film.aspx?id=.*$'; then 
 
-  local video_id=`echo "$arg_url" | sed -e 's/.*[&?]id=//;s/&.*//'`
-
+	$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "$arg_url&autoplay=true" 2>&1
+	
+	local video_id=`grep 'movieType=privateOnline' ${TMPFILE} | sed -n '1p' | sed 's/^.*,id=//;s/,.*$//g'`
+	
   host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://www.cinema.mosfilm.ru/GetMovieCode.ashx?purchaseID=${video_id}" 2>&1`
   if [ -f ${TMPFILE} ]; then
     local code=`sed -n '1p' ${TMPFILE}`
