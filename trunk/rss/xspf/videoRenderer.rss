@@ -39,7 +39,7 @@
     value = getStringArrayAt(rssconf, 2);
     if(value != null &amp;&amp; value != "")
       screenYp = Integer(value);
-    value = getStringArrayAt(rssconf, 8);
+    value = getStringArrayAt(rssconf, 9);
     if(value != null &amp;&amp; value != "")
       fullscreen = Integer(value);
   }
