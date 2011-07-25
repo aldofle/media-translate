@@ -41,6 +41,13 @@
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Size:3;File:etc/menu/tvigle-seemovie.xspf,collection/menu</link>
+      <title>Смотрите в кино</title>
+      <annotation></annotation>
+      <image>../etc/translate/rss/image/tvigle.png</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Size:3;File:etc/menu/tvigle-comedy.xspf,collection/menu</link>
       <title>Юмор</title>
       <annotation></annotation>

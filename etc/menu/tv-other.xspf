@@ -5,6 +5,13 @@
 
   <trackList>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app/sovoktv/mainframe</link>
+      <title>Совок ТВ</title>
+      <annotation>Всем кто любит русское телевидение! Только здесь множество каналов на русском языке совершенно бесплатно!</annotation>
+      <image>../etc/translate/rss/image/menu/internettv.png</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/tv-ras_list.xspf,collection/medialist</link>
       <title>ras playlist</title>
       <annotation>Небольшой список в основном с российскими интернет-телевизионными каналами от пользователя ras@forum.iconbit.ru</annotation>

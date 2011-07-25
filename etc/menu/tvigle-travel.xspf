@@ -6,37 +6,43 @@
 <track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1493,tvigle/multi</link>
   <title>Первый туристический канал</title>
-  <annotation>Виртуальное путешествие по миру: всё о зарубежных странах, городах, музеях, гостиницах.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1493/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:76,tvigle/multi</link>
   <title>Diving</title>
-  <annotation>Тайны подводных глубин.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/76/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1370,tvigle/multi</link>
   <title>Trip по жизни</title>
-  <annotation>Города и страны мира.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1370/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:508644,tvigle/multi</link>
+  <title>Наша география</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/508644/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:77,tvigle/multi</link>
   <title>Затонувшие корабли</title>
-  <annotation>Подводные съемки затонувших кораблей.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/77/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:78,tvigle/multi</link>
   <title>manta</title>
-  <annotation>Подводное видео.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/78/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:618,tvigle/multi</link>
   <title>andynelf</title>
-  <annotation>Программы о подводном мире.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/618/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track>

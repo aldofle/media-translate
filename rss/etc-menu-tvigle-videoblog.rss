@@ -141,6 +141,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -181,7 +191,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -338,154 +348,154 @@
   <item>
 <link><script>translate_base_url+"app,Channel:1496,tvigle/multi";</script></link>
     <title>Голая правда от Алены Водонаевой</title>
-    <annotation>Секс, ложь и видео.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1496/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2065,tvigle/multi";</script></link>
     <title>30 секунд о...</title>
-    <annotation>Persona Grata: Я расскажу о мире за 30 секунд!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2065/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:58,tvigle/multi";</script></link>
     <title>Biggi s Blog</title>
-    <annotation>Неожиданные комментарии о самых ярких событиях столичной жизни!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/58/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2067,tvigle/multi";</script></link>
     <title>Свои тараканы</title>
-    <annotation>Persona Grata: Если бы все тараканы в моей голове превратились в светлячков, то я был бы лампочкой!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2067/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1800,tvigle/multi";</script></link>
     <title>Киноляпы</title>
-    <annotation>Смешные ошибки в самых известных фильмах.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1800/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1506,tvigle/multi";</script></link>
     <title>Банзай</title>
-    <annotation>Познавательная программа об аниме и современной японской поп-культуре.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1506/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1516,tvigle/multi";</script></link>
     <title>Зарубеж</title>
-    <annotation>Русские студенты на учебе заграницей.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1516/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:64,tvigle/multi";</script></link>
     <title>Маша Полякова</title>
-    <annotation>Блондинка с широким взглядом на мир.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/64/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:811,tvigle/multi";</script></link>
     <title>ART-SLUZA</title>
-    <annotation>Культурная жизнь столицы.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/811/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:644,tvigle/multi";</script></link>
     <title>Homepage.ru: Видеомосква</title>
-    <annotation>Архив самых интересных культурных событий столицы.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/644/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:652,tvigle/multi";</script></link>
     <title>Электра</title>
-    <annotation>Видео блог певицы Электры.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/652/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1511,tvigle/multi";</script></link>
     <title>Невод</title>
-    <annotation>Новости сети в игровой форме.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1511/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1392,tvigle/multi";</script></link>
     <title>ЖТВ</title>
-    <annotation>ЖТВ В закладки!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1392/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1592,tvigle/multi";</script></link>
     <title>Ты   предприниматель</title>
-    <annotation>От идеи до результата!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1592/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1092,tvigle/multi";</script></link>
     <title>Zадело TV</title>
-    <annotation>Проект Льва Новоженова.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1092/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:60,tvigle/multi";</script></link>
     <title>Cheneration 90</title>
-    <annotation>Лихие 90 е вспоминает Роман Керимов.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/60/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2002,tvigle/multi";</script></link>
     <title>Internet. Измени сознание</title>
-    <annotation>Видеоблог V международной конференции Internet. Измени сознание . В Пекине с 26 по 30 мая 2010 года были замечены все создатели последних трендов в области интернет-рекламы. Что они все здесь делали? Мы покажем!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2002/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:59,tvigle/multi";</script></link>
     <title>Юля Чичерина</title>
-    <annotation>Музыкант Юля Чичерина строит дом и пересекает страну исключительно на автомобиле.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/59/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:812,tvigle/multi";</script></link>
     <title>Инфоромантики</title>
-    <annotation>Творческое объединение поэтов.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/812/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1359,tvigle/multi";</script></link>
     <title>A ONE. Большая рыба</title>
-    <annotation>Большая рыба с Юрием Грымовым.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1359/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1845,tvigle/multi";</script></link>
     <title>Ekstrakt</title>
-    <annotation>Лаборатория актуальных искусств. Мир дизайна, живописи, визуального искусства, фотографии и других проявлений современного искусства.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1845/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:706,tvigle/multi";</script></link>
     <title>Эм Джи</title>
-    <annotation>Жизнь простых студенток в большом городе.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/706/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>

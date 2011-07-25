@@ -141,6 +141,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -181,7 +191,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -336,16 +346,23 @@
   </script><channel>
   <title>Tvigle - Другое</title>
   <item>
+<link><script>translate_base_url+"app,Channel:2215,tvigle/multi";</script></link>
+    <title>TviglePad   первый отечественный планшетный компьютер!</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2215/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link><script>translate_base_url+"app,Channel:2161,tvigle/multi";</script></link>
     <title> Brand Online   All about the money  2010</title>
-    <annotation>Ведущие игроки рынка онлайн-рекламы Яндекс, MSN, IMHO VI, Gameland, Tvigle Media и другие приглашают Вас принять участие в конференции Brand Online All about the money!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2161/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2084,tvigle/multi";</script></link>
     <title>Спецпроекты Tvigle.ru</title>
-    <annotation>Примеры работ компании Tvigle Media: сериалы, мультфильмы, вирусное видео, рекламные ролики.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2084/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
@@ -359,14 +376,14 @@
   <item>
 <link><script>translate_base_url+"app,Channel:1367,tvigle/multi";</script></link>
     <title>Видеохроника</title>
-    <annotation>Уникальные кадры архивной хроники.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1367/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1481,tvigle/multi";</script></link>
     <title>Zомби ТВ</title>
-    <annotation>Halloween на Tvigle.ru! Смотри и устрашайся!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1481/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>

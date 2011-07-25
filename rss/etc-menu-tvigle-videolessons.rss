@@ -141,6 +141,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -181,7 +191,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -338,63 +348,63 @@
   <item>
 <link><script>translate_base_url+"app,Channel:2096,tvigle/multi";</script></link>
     <title>Фотошкола Lumix G</title>
-    <annotation>Фотошкола Lumix G для тех, кто давно мечтает освоить основы фотографии. Мастер-классы по основам фотографического искусства проводит Дмитрий Чистопрудов самый известный фотограф блогосферы.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2096/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2191,tvigle/multi";</script></link>
     <title>Уроки декора</title>
-    <annotation>Предлагаем вашему вниманию уроки по реставрации и декорированию предметов интерьера, мебели и многого другого.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2191/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1864,tvigle/multi";</script></link>
     <title>Учимся вязать спицами</title>
-    <annotation>Видеоуроки вязания спицами для начинающих.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1864/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2195,tvigle/multi";</script></link>
     <title>Ремонт велосипеда</title>
-    <annotation>25 советов, которые нужно знать для самостоятельного ремонта велосипеда.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2195/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2211,tvigle/multi";</script></link>
+    <title>Садоводство. Вопросы и ответы</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2211/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:72,tvigle/multi";</script></link>
     <title>PROделки</title>
-    <annotation>Дизайнеры научат вас делать подарки, украшения и многое другое своими руками!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/72/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1872,tvigle/multi";</script></link>
     <title>Техника йоги</title>
-    <annotation>Йога древняя практика достижения гармонии с собой и окружающим миром.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1872/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
-<link><script>translate_base_url+"app,Channel:1822,tvigle/multi";</script></link>
-    <title>Уроки бокса</title>
-    <annotation>Уроки бокса с 7-ми кратным Чемпионом Европы, Чемпионом Мира по версии IBF и IBC среди профессионалов Борисом Синицыным.</annotation>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/1822/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1656,tvigle/multi";</script></link>
     <title>MAD Sports TV</title>
-    <annotation>Баскетбольный фристайл это зрелищное спортивное действо, сложные трюки в сочетании с красотой баскетбола.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1656/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1248,tvigle/multi";</script></link>
     <title>Volnorez</title>
-    <annotation>Обучающее видео по брейк дансу.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1248/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>

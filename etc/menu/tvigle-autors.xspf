@@ -12,31 +12,31 @@
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:650,tvigle/multi</link>
   <title>hipov</title>
-  <annotation>Анимация для взрослых.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/650/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:605,tvigle/multi</link>
   <title>phat_papa</title>
-  <annotation>Видео-арт.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/605/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:606,tvigle/multi</link>
   <title>satim</title>
-  <annotation>Дизайнер и аниматор Александр Тимофеев.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/606/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:636,tvigle/multi</link>
   <title>salitus</title>
-  <annotation>Эксперименты и пародии на известные тв программы.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/636/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:715,tvigle/multi</link>
   <title>gamisonia</title>
-  <annotation>Авторское кино.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/715/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
@@ -133,13 +133,13 @@
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1369,tvigle/multi</link>
   <title>Soloway</title>
-  <annotation>Видеоклипы и концертные выступления группы Zband .</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1369/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1371,tvigle/multi</link>
   <title>HellRaiseR</title>
-  <annotation>Уральский паркур.</annotation>
+  <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1371/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>

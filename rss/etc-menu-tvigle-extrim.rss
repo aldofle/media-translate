@@ -141,6 +141,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -181,7 +191,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -336,86 +346,93 @@
   </script><channel>
   <title>Tvigle - Спорт</title>
   <item>
-<link><script>translate_base_url+"app,Channel:1819,tvigle/multi";</script></link>
-    <title>Уроки бокса</title>
-    <annotation>Уроки бокса с 7-ми кратным Чемпионом Европы, Чемпионом Мира по версии IBF и IBC среди профессионалов Борисом Синицыным.</annotation>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/1819/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
 <link><script>translate_base_url+"app,Channel:1318,tvigle/multi";</script></link>
     <title>Мотокросс</title>
-    <annotation>Спортивный мотоцикл на бездорожье.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1318/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1716,tvigle/multi";</script></link>
     <title>Чемпионат.ру</title>
-    <annotation>Всё видео о футболе, хоккее, теннисе, баскетболе, боксе, автоспорте, мотоспорте, мини-футболе и других видах спорта.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1716/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2235,tvigle/multi";</script></link>
+    <title>Фитнес со звездами</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2235/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2226,tvigle/multi";</script></link>
+    <title>Атмосфера</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2226/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1345,tvigle/multi";</script></link>
     <title>Crash Boom Bang</title>
-    <annotation>Взрывные трюки и взрывные падения.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1345/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1244,tvigle/multi";</script></link>
     <title>Сноуборд</title>
-    <annotation>Горячий зимний вид спорта.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1244/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1228,tvigle/multi";</script></link>
     <title>Серфинг</title>
-    <annotation>Экстремальный серф.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1228/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1231,tvigle/multi";</script></link>
     <title>BMX</title>
-    <annotation>Экстремальный велоспорт.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1231/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1321,tvigle/multi";</script></link>
     <title>Скейтборд</title>
-    <annotation>Мир скейтбординга.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1321/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1352,tvigle/multi";</script></link>
     <title>A-ONE. Экстрим</title>
-    <annotation>Программа FIZRA на первом альтернативном.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1352/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1289,tvigle/multi";</script></link>
     <title>1. Red Bull Flugtag 2009.</title>
-    <annotation>1. Red Bull Flugtag 2009. особый день в году, когда любому по плечу взлететь и эффектно упасть в воду с шестиметровой высоты.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1289/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:79,tvigle/multi";</script></link>
     <title>GUNter</title>
-    <annotation>Экстремальный спорт.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/79/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1715,tvigle/multi";</script></link>
     <title>Олимпиада</title>
-    <annotation>Комментарии из первых рук о спортивных соревнованиях в Ванкувере.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1715/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>

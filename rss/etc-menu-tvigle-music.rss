@@ -141,6 +141,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -181,7 +191,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -338,336 +348,371 @@
   <item>
 <link><script>translate_base_url+"app,Channel:2123,tvigle/multi";</script></link>
     <title>Остров 312</title>
-    <annotation>Премьера первого российского 3-D клипа группы Город 312 на композицию Помоги мне . Скоро на Tvigle.ru</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2123/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1406,tvigle/multi";</script></link>
     <title>Би-2</title>
-    <annotation>Видеоклипы и концертные выступления группы Би-2 .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1406/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1885,tvigle/multi";</script></link>
     <title>Каста</title>
-    <annotation>Клипы, интервью и живые выступления группы Каста.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1885/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1153,tvigle/multi";</script></link>
     <title>Смысловые Галлюцинации</title>
-    <annotation>Видеоклипы и концертные выступления.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1153/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509653,tvigle/multi";</script></link>
+    <title>Кубана 2011</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509653/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2210,tvigle/multi";</script></link>
+    <title>Ария</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2210/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1829,tvigle/multi";</script></link>
     <title>Кто здесь?</title>
-    <annotation>Программа о самых крупных и значимых событиях альтернативной культуры: концертах, фестивалях, презентациях, премиях, крупных выставках и многом другом.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1829/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2216,tvigle/multi";</script></link>
+    <title>ROTOFF</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2216/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2212,tvigle/multi";</script></link>
+    <title>Кипелов V лет</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2212/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1884,tvigle/multi";</script></link>
     <title>AMATORY</title>
-    <annotation>Концерт популярной альт метал группы [AMATORY].</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1884/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1984,tvigle/multi";</script></link>
     <title>Noize MC</title>
-    <annotation>Видеоклипы Noize MC.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1984/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1522,tvigle/multi";</script></link>
     <title>СЛОТ</title>
-    <annotation>Клипы, интервью и живые выступления группы СЛОТ.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1522/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2245,tvigle/multi";</script></link>
+    <title>Алена Винницкая</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2245/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1846,tvigle/multi";</script></link>
     <title>Делаем группу!</title>
-    <annotation>Мы делаем новую музыкальную группу. Специальный проект продюссерского центра Мегалайнер, журнала Браво и Tvigle.ru.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1846/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1111,tvigle/multi";</script></link>
     <title>Ночные Снайперы</title>
-    <annotation>Диана Арбенина. Клипы и концертные выступления.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1111/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1887,tvigle/multi";</script></link>
     <title>Ляпис Трубецкой</title>
-    <annotation>Клипы и живые выступления группы Ляпис Трубецкой .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1887/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1108,tvigle/multi";</script></link>
     <title>Тараканы</title>
-    <annotation>Клипы и концертные выступления группы Тараканы .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1108/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1769,tvigle/multi";</script></link>
     <title>Ранетки</title>
-    <annotation>Интервью, клипы и живые выступления группы Ранетки .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1769/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1888,tvigle/multi";</script></link>
     <title>Звездный Live</title>
-    <annotation>Концертные выступления.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1888/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1326,tvigle/multi";</script></link>
     <title>Сурганова и Оркестр</title>
-    <annotation>Клипы и концертные выступления группы Сурганова и Оркестр .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1326/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1969,tvigle/multi";</script></link>
     <title>Amber Music</title>
-    <annotation>Современная финская музыка.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1969/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:807,tvigle/multi";</script></link>
     <title>СиЛя</title>
-    <annotation>Легенда питерского и русского рока.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/807/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1158,tvigle/multi";</script></link>
     <title>Танцы Минус</title>
-    <annotation>Видеоклипы и концертные выступления группы Танцы Минус .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1158/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2157,tvigle/multi";</script></link>
     <title>Нежный возраст</title>
-    <annotation>Приключения группы Нежный возраст в Европе.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2157/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1823,tvigle/multi";</script></link>
     <title>BUNNY</title>
-    <annotation>Группа BUNNY канадско московский рок тонкой выделки.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1823/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:816,tvigle/multi";</script></link>
     <title>DJ Smash</title>
-    <annotation>Видеоклипы на треки DJ Smash.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/816/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1655,tvigle/multi";</script></link>
     <title>Разыскиваются</title>
-    <annotation>OnMusicStage.com дает возможность музыкантам проявить себя живьем настоящие эмоции и неподдельный драйв в концертном бункере .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1655/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:679,tvigle/multi";</script></link>
     <title>ВИАГРА</title>
-    <annotation>Видеоклипы и концертные выступления группы ВИАГРА .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/679/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1794,tvigle/multi";</script></link>
     <title>Кристина Орбакайте</title>
-    <annotation>Клипы популярной певицы Кристины Орбакайте.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1794/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:677,tvigle/multi";</script></link>
     <title>Линда</title>
-    <annotation>Видеоклипы самой загадочной певицы современности Линды.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/677/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1687,tvigle/multi";</script></link>
     <title>Песни про любовь</title>
-    <annotation>Саундтрек праздничного вечера.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1687/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:320,tvigle/multi";</script></link>
     <title>Валерия</title>
-    <annotation>Клипы популярной певицы Валерии.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/320/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1978,tvigle/multi";</script></link>
     <title>Михаил Круг</title>
-    <annotation>Один из самых известных и почетаемых авторов и исполнителей русского шансона.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1978/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1981,tvigle/multi";</script></link>
     <title>Кукрыниксы</title>
-    <annotation>Клипы и живые выступления популярной русской рок группы Кукрыниксы .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1981/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1803,tvigle/multi";</script></link>
     <title>Ботаника</title>
-    <annotation>Клипы и живые выступления группы Ботаника .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1803/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:722,tvigle/multi";</script></link>
     <title>Дельфин</title>
-    <annotation>Клипы, интервью и живые выступления Дельфина.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/722/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1886,tvigle/multi";</script></link>
     <title>Юля Чичерина</title>
-    <annotation>Музыкант Юля Чичерина строит дом, путешествует и поет свои песни.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1886/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:655,tvigle/multi";</script></link>
     <title>Сергей Кот</title>
-    <annotation>Видео-блог композитора и исполнителя Сергея Кота.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/655/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1541,tvigle/multi";</script></link>
     <title>BIOPSYHOZ</title>
-    <annotation>Видеоклипы и концертные выступления группы BIOPSYHOZ .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1541/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1982,tvigle/multi";</script></link>
     <title>Бутырка</title>
-    <annotation>Видеоклипы и живые выступления группы Бутырка .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1982/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1983,tvigle/multi";</script></link>
     <title>Тутси</title>
-    <annotation>Видеоклипы популярной группы Тутси .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1983/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1847,tvigle/multi";</script></link>
     <title>PODIUM</title>
-    <annotation>Клипы, интервью и живые выступления группы PODIUM .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1847/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:38,tvigle/multi";</script></link>
     <title>Muzinst</title>
-    <annotation>Зажигательные репортажи с клубных вечеринок.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/38/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1282,tvigle/multi";</script></link>
     <title>Kondor</title>
-    <annotation>Коллекция металлический музыки.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1282/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:806,tvigle/multi";</script></link>
     <title>World music</title>
-    <annotation>Школа перкуссии Артура Газарова.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/806/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:810,tvigle/multi";</script></link>
     <title>Hoba live</title>
-    <annotation>Михаил Владимиров и Hoba live .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/810/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1147,tvigle/multi";</script></link>
     <title>Слайд</title>
-    <annotation>Группа Слайд . Клипы и концертные видео.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1147/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1986,tvigle/multi";</script></link>
     <title>Наташа Королева</title>
-    <annotation>Видеоклипы и концертные выступления Наташи Королевой.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1986/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1312,tvigle/multi";</script></link>
     <title>ZNAKI</title>
-    <annotation>Видеоклипы и концертные выступления молодой группы ZNAKI .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1312/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1985,tvigle/multi";</script></link>
     <title>Александр Новиков</title>
-    <annotation>Видеоклипы и концертные выступления Александра Новикова.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1985/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1332,tvigle/multi";</script></link>
     <title>Тихий Джа</title>
-    <annotation>Видеоклипы и концертные выступления группы Тихий Джа .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1332/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1368,tvigle/multi";</script></link>
     <title>Soloway</title>
-    <annotation>Видеоклипы и концертные выступления группы Zband .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1368/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1306,tvigle/multi";</script></link>
     <title>Notstar</title>
-    <annotation>Видеоклипы и концертные выступления группы Амели .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1306/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>

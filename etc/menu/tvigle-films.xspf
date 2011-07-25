@@ -13,13 +13,6 @@
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1664,tvigle/multi</link>
-      <title>Трейлеры</title>
-      <annotation></annotation>
-      <image>../etc/translate/rss/image/tvigle.png</image>
-      <meta rel="mediaDisplay">photoView</meta>
-    </track>
-    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1609,tvigle/multi</link>
       <title>Советское кино</title>
       <annotation></annotation>
@@ -92,13 +85,6 @@
     <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1616,tvigle/multi</link>
       <title>Детектив</title>
-      <annotation></annotation>
-      <image>../etc/translate/rss/image/tvigle.png</image>
-      <meta rel="mediaDisplay">photoView</meta>
-    </track>
-    <track>
-      <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2056,tvigle/multi</link>
-      <title>Боевые искусства</title>
       <annotation></annotation>
       <image>../etc/translate/rss/image/tvigle.png</image>
       <meta rel="mediaDisplay">photoView</meta>

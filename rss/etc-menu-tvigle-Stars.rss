@@ -141,6 +141,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -181,7 +191,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -338,91 +348,91 @@
   <item>
 <link><script>translate_base_url+"app,Channel:2124,tvigle/multi";</script></link>
     <title>Остров 312</title>
-    <annotation>Премьера первого российского 3-D клипа группы Город 312 на композицию Помоги мне . Скоро на Tvigle.ru</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2124/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:189,tvigle/multi";</script></link>
     <title>Новости звезд</title>
-    <annotation>Звезды шоу биза поделятся с вами тем, что их волнует здесь и сейчас.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/189/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:237,tvigle/multi";</script></link>
     <title>Анекдот от звезды</title>
-    <annotation>Звезды рассказывают любимые анекдоты.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/237/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1495,tvigle/multi";</script></link>
     <title>Голая правда от Алены Водонаевой</title>
-    <annotation>Секс, ложь и видео.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1495/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:206,tvigle/multi";</script></link>
     <title>Звездные блоги</title>
-    <annotation>Видео блоги звезд шоу бизнеса.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/206/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:190,tvigle/multi";</script></link>
     <title>Тусовки</title>
-    <annotation>Бурная жизнь шоу биза в репортажах и отчетах.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/190/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:210,tvigle/multi";</script></link>
     <title>No comments</title>
-    <annotation>Без комментариев.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/210/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1129,tvigle/multi";</script></link>
     <title>Звездный Live</title>
-    <annotation>Концертные выступления.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1129/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1408,tvigle/multi";</script></link>
     <title>Ранетки</title>
-    <annotation>Интервью, клипы и живые выступления группы Ранетки .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1408/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1373,tvigle/multi";</script></link>
     <title>Star Fashion</title>
-    <annotation>Самые свежие новинки из звездного мира моды.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1373/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:213,tvigle/multi";</script></link>
     <title>Звездное досье</title>
-    <annotation>Успешные кинозвезды, выдающиеся артисты и популярные музыканты.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/213/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1305,tvigle/multi";</script></link>
     <title>Звездное авто</title>
-    <annotation>Звезды шоу бизнеса расскажут о своих авто.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1305/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1442,tvigle/multi";</script></link>
     <title>In Style</title>
-    <annotation>Всё о звездах, вещах и красивой жизни.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1442/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
@@ -443,21 +453,21 @@
   <item>
 <link><script>translate_base_url+"app,Channel:1692,tvigle/multi";</script></link>
     <title>Звездные страсти</title>
-    <annotation>Звезды шоу бизнеса расскажут о своих традициях на День Святого Валентина.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1692/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1709,tvigle/multi";</script></link>
     <title>Звездный десант </title>
-    <annotation>Звезды шоу бизнеса поздравляют мужчин.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1709/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1775,tvigle/multi";</script></link>
     <title>Счастья вам, женщины!</title>
-    <annotation>Желают звезды российской эстрады.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1775/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
@@ -471,21 +481,21 @@
   <item>
 <link><script>translate_base_url+"app,Channel:643,tvigle/multi";</script></link>
     <title> С Новым годом  от звезды</title>
-    <annotation>Новогодние поздравления от звезд шоу бизнеса.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/643/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1566,tvigle/multi";</script></link>
     <title>Звездные истории</title>
-    <annotation>Забавные истории из новогодней жизни звезд.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1566/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1693,tvigle/multi";</script></link>
     <title>От звезды с любовью</title>
-    <annotation>Звездные поздравления с Днем Святого Валентина.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1693/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>

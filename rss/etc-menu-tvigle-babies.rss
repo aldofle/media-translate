@@ -141,6 +141,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -181,7 +191,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -345,14 +355,21 @@
   <item>
 <link><script>translate_base_url+"app,Channel:2203,tvigle/multi";</script></link>
     <title>Маша и медведь</title>
-    <annotation>Новое прочтение любимой детской сказки про Машу и Медведя.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2203/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2213,tvigle/multi";</script></link>
+    <title>Куми-Куми</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2213/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2134,tvigle/multi";</script></link>
     <title>Ну, погоди!</title>
-    <annotation>Самый популярный мультсериал. Веселые погони волка за зайцем.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2134/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
@@ -366,168 +383,189 @@
   <item>
 <link><script>translate_base_url+"app,Channel:2160,tvigle/multi";</script></link>
     <title>Лунтик</title>
-    <annotation>Приключения Лунтика и его друзей.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2160/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2232,tvigle/multi";</script></link>
+    <title>Три богатыря</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2232/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2126,tvigle/multi";</script></link>
     <title>Любимые мультики нашего детства</title>
-    <annotation>Сборник самых веселых и интересных мультипликационных фильмов.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2126/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link><script>translate_base_url+"app,Channel:2138,tvigle/multi";</script></link>
-    <title>Tex Avery</title>
-    <annotation>Озорной мир Тэкса Авери.</annotation>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/2138/list.jpg?2</image>
+<link><script>translate_base_url+"app,Channel:2230,tvigle/multi";</script></link>
+    <title>Детская йога</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2230/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2132,tvigle/multi";</script></link>
     <title>Весёлая карусель</title>
-    <annotation>Карусель, карусель начинает рассказ. Это сказки, песни и веселье! Карусель, карусель это радость для нас, прокатись на нашей карусели!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2132/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2146,tvigle/multi";</script></link>
     <title>Ералаш</title>
-    <annotation>Детский юмористический киножурнал Ералаш .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2146/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2237,tvigle/multi";</script></link>
+    <title>Танцы для детей</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2237/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2133,tvigle/multi";</script></link>
     <title>Трое из Простоквашино</title>
-    <annotation>Трилогия по мотивам повести Эдуарда Успенского Дядя Фёдор, пёс и кот .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2133/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2194,tvigle/multi";</script></link>
     <title>Приключения капитана Врунгеля</title>
-    <annotation>Мультипликационный сериал по одноименному роману Андрея Некрасова.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2194/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2138,tvigle/multi";</script></link>
+    <title>Tex Avery</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2138/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2130,tvigle/multi";</script></link>
     <title>Винни-Пух</title>
-    <annotation>Первый советский мультфильм-экранизация по одноименной сказке Алана Александра Милна.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2130/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2144,tvigle/multi";</script></link>
     <title>Сказки</title>
-    <annotation>Сказки никогда не теряют своей актуальности.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2144/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2135,tvigle/multi";</script></link>
     <title>38 попугаев</title>
-    <annotation>Забавные истории четырех друзей болтливой Мартышки, застенчивого Слоненка, эксцентричного Попугая и задумчивого Удава.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2135/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2141,tvigle/multi";</script></link>
     <title>Белка и Стрелка</title>
-    <annotation>Спасут ли мир две дворняги?</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2141/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2192,tvigle/multi";</script></link>
     <title>Доктор Айболит</title>
-    <annotation>Серия мультфильмов о докторе Айболите по сказке и стихам Корнея Чуковского.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2192/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2128,tvigle/multi";</script></link>
     <title>Маугли</title>
-    <annotation>Экранизация сказки Редьяра Киплинга.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2128/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2131,tvigle/multi";</script></link>
     <title>Крокодил Гена и Чебурашка</title>
-    <annotation>Мультфильмы о приключениях крокодила Гены, Чебурашки и их друзьей.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2131/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2137,tvigle/multi";</script></link>
     <title>Не все дома</title>
-    <annotation>Юмористический сериал о жизни веселой семейки.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2137/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2129,tvigle/multi";</script></link>
     <title>Возвращение блудного попугая</title>
-    <annotation>Популярный мультипликационный фильм о приключениях очень современного попугая.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2129/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2140,tvigle/multi";</script></link>
     <title>Рома Олимпийский</title>
-    <annotation>Спортивные рекорды неунывающего Ромы Олимпийского.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2140/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2143,tvigle/multi";</script></link>
     <title>Снежики</title>
-    <annotation>Веселые Снежики всегда вместе и всегда в хорошем настроении!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2143/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2127,tvigle/multi";</script></link>
     <title>Фильмы Юрия Норштейна</title>
-    <annotation>Легендарные фильмы самого известного художника-мультипликатора и режиссера анимационного кино Юрия Норштейна.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2127/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2193,tvigle/multi";</script></link>
     <title>Приключения Алисы</title>
-    <annotation>Мультипликационные фильмы по мотивам сказки Льюиса Кэрролла Алиса в Стране Чудес и Алиса в Зазеркалье .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2193/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2142,tvigle/multi";</script></link>
     <title>Три брата акробата</title>
-    <annotation>Мульт победитель в номинации Мультипликация на престижном flash-конкурсе Flash Awards 2009.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2142/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2145,tvigle/multi";</script></link>
     <title>ToonGuru</title>
-    <annotation>Мультипликационные фильмы студии ToonGuru.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2145/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2139,tvigle/multi";</script></link>
     <title>Klootz</title>
-    <annotation>Юморные приключения неугомонных груш.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2139/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2136,tvigle/multi";</script></link>
     <title>Крок   Мир детства</title>
-    <annotation>Международный фестиваль анимационного кино КРОК .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2136/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
