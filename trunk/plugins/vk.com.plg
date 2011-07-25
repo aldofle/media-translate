@@ -23,11 +23,12 @@
 # version: 1.0 25.07.2011 16:01:07
 #
 # http://vk.com/video_ext.php?oid=92898632&id=160253092&hash=37757274d849df4a&hd=1
+# http://vkontakte.ru/video_ext.php?oid=8386018&id=158808447&hash=50976b98544a296c&hd=1
 #
 # options:
 #   HD:[0|1|2]
 
-if echo "${arg_url}" | grep -qs 'vk\.com/video_ext\.php?.*$'; then 
+if echo "${arg_url}" | grep -qs '\(vk\.com\|vkontakte\.ru\)/video_ext\.php?.*$'; then 
 
   get_opt "HD"
   [ -z "$opt" ] && opt=`sed -n '9p' $RSSCONF 2>/dev/null`
