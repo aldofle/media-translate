@@ -126,6 +126,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -166,7 +176,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");

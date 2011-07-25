@@ -141,6 +141,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -181,7 +191,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -338,70 +348,77 @@
   <item>
 <link><script>translate_base_url+"app,Channel:1393,tvigle/multi";</script></link>
     <title>Вкусно и быстро</title>
-    <annotation>Лучшее руководство, как для новичков, так и для блистательных шеф-поваров по созданию изумительных шедевров кулинарии в условиях одной кухни и минимального количества времени.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1393/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1381,tvigle/multi";</script></link>
     <title>Горячие блюда</title>
-    <annotation>Более ста интересных и оригинальных рецептов приготовления мяса, рыбы, овощей и многих других продуктов на ужин.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1381/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1378,tvigle/multi";</script></link>
     <title>Закуски</title>
-    <annotation>Видеорецепты холодных и горячих закусок идеально подойдут как для легкого завтрака или обеда, так и для банкетного стола: от сложносочиненных бутербродов до изысканных рулетиков из буженины с Пармезаном .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1378/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1382,tvigle/multi";</script></link>
     <title>Десерты</title>
-    <annotation>Восхитительное завершение любой трапезы вкуснейший десерт. Множество рецептов для сладкоежек.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1382/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1379,tvigle/multi";</script></link>
     <title>Салаты</title>
-    <annotation>Большая коллекция видео о том, как приготовить салат на любой вкус: от классического Оливье до изысканного Сурими с апельсинами .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1379/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1380,tvigle/multi";</script></link>
     <title>Супы</title>
-    <annotation>Рецепты традиционных и оригинальных первых блюд, а также секреты создания вкуснейших супов на самый взыскательный вкус из самых разнообразных ингредиентов.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1380/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1450,tvigle/multi";</script></link>
+    <title>Talerka</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1450/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1435,tvigle/multi";</script></link>
     <title>От шеф-повара</title>
-    <annotation>Шеф повара раскрывают свои секреты видеорецепты классических блюд ресторанов.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1435/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1387,tvigle/multi";</script></link>
     <title>Рецепты на каждый день</title>
-    <annotation>Надоели полуфабрикаты? Разнообразные рецепты приготовления простых, но вкусных блюд из доступных продуктов.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1387/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1431,tvigle/multi";</script></link>
     <title>Ярмарка на Tvigle.ru</title>
-    <annotation>Блюда из бобовых вкусны и благоприятны для здоровья. Пятьдесят видео разнообразных рецептов.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1431/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1389,tvigle/multi";</script></link>
     <title>Шейкер Шоу</title>
-    <annotation>Профессиональные бармены покажут, как готовить коктейли по-настоящему.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1389/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>

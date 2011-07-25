@@ -22,14 +22,6 @@
 -->
 
 <onEnter>
-  rssconf = readStringFromFile(getStoragePath("key")+"translate.dat");
-  if(rssconf == null)
-  {
-    arr = null;
-    arr = pushBackStringArray(arr, "http://127.0.0.1/cgi-bin/translate?");
-    writeStringToFile(getStoragePath("key")+"translate.dat", arr);
-  }
-
     translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
   screenXp = 4;
   screenYp = 3;
@@ -69,6 +61,9 @@
   else
   if(startitem == "last")
     setFocusItemIndex(itemCount);
+  else
+  if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
+    setFocusItemIndex(startitem-1);
   redrawDisplay();
 </onRefresh>
 
@@ -237,13 +232,7 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
       
-      if(userInput == "down" || userInput == "D")
-      {
-          showIdle();
-          doModalRSS(translate_base_url+"app,Start:first;File:etc/menu/recent-index.xspf,collection/simplemenu");
-          ret = "true";
-      }
-      else if(userInput == "one" || userInput == "1")
+      if(userInput == "one" || userInput == "1")
       {
         if(itemCount &gt;= 1)
         {
@@ -315,7 +304,27 @@
           redrawDisplay();
         }
       }
-      
+      else if (userInput == "pagedown" || userInput == "pageup" || userInput == "PD" || userInput == "PG")
+      {
+        itemSize = getPageInfo("itemCount");
+        idx = Integer(getFocusItemIndex());
+        if (userInput == "pagedown")
+        {
+          idx -= -columnCount;
+          if(idx &gt;= itemSize)
+            idx = itemSize-1;
+        }
+        else
+        {
+          idx -= columnCount;
+          if(idx &lt; 0)
+            idx = 0;
+        }
+        setFocusItemIndex(idx);
+        setItemFocus(idx);
+        redrawDisplay();
+        ret = "true";
+      }
       ret;
     </script>
   </onUserInput>
@@ -333,28 +342,91 @@
 
 
 <script>
-    channelImage = "";
+    channelImage = "../etc/translate/rss/image/tvigle.png";
   </script><channel>
-  <title>Дополнительные сервисы</title>
+  <title>Tvigle - Смотрите в кино</title>
   <item>
-<link>rss_file://../etc/translate/rss/etc-menu-video.rss</link>
-    <title>Internet Video</title>
-    <annotation>RuTube, YouTube, Tvigle, Ivi, OneHD, Internet TV</annotation>
-    <image>../etc/translate/rss/image/menu/video.png</image>
+<link><script>translate_base_url+"app,Channel:1850,tvigle/multi";</script></link>
+    <title>Сегодня в кинотеатрах</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1850/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link>rss_file://../etc/translate/rss/etc-menu-radio.rss</link>
-    <title>Internet Radio</title>
-    <annotation>SHOUTcast, RadioTime, SKY.fm, Digitally Imported, SomaFM, Radioio, Bluemars, 1.FM, Moskva.FM, Station.ru and other</annotation>
-    <image>../etc/translate/rss/image/menu/radio.png</image>
+<link><script>translate_base_url+"app,Channel:84,tvigle/multi";</script></link>
+    <title>Трейлеры</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/84/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link>rss_file://../etc/translate/rss/etc-menu-app.rss</link>
-    <title>Applications</title>
-    <annotation>Media Stream Renderer, XSPF Browser, Most Recent Links, Settings</annotation>
-    <image>../etc/translate/rss/image/menu/app.png</image>
+<link><script>translate_base_url+"app,Channel:2095,tvigle/multi";</script></link>
+    <title>Настоящее  кино</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2095/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1397,tvigle/multi";</script></link>
+    <title>Трейлеры Walt Disney</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1397/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1419,tvigle/multi";</script></link>
+    <title>Трейлеры от Афиша.ru</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1419/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1797,tvigle/multi";</script></link>
+    <title>Киноляпы</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1797/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:86,tvigle/multi";</script></link>
+    <title>Киноперсона</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/86/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:1505,tvigle/multi";</script></link>
+    <title>Все кино</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/1505/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2068,tvigle/multi";</script></link>
+    <title>Неудержимые</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2068/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:2087,tvigle/multi";</script></link>
+    <title>Про любoff</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2087/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:87,tvigle/multi";</script></link>
+    <title>Кухня</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/87/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:83,tvigle/multi";</script></link>
+    <title>Киноблог Милослава Чемоданова</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/83/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
 </channel>

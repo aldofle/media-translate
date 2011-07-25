@@ -141,6 +141,16 @@
 			    imageW = 100;
         }
 			</script>
+  		<image offsetXPC=0 offsetYPC=95 widthPC=100 heightPC=5>
+  		  <script>
+					idx = getQueryItemIndex();
+					focus = getFocusItemIndex();
+					if(focus==idx) 
+  		      "../etc/translate/rss/image/gradient_line.bmp";
+  		    else
+  		      "";
+  		  </script>
+  		</image>
 			<image>
 				<script>
 					idx = getQueryItemIndex();
@@ -181,7 +191,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=45 backgroundColor=-1:-1:-1>
+			<text align="center" lines="3" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=40 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -338,148 +348,134 @@
   <item>
 <link><script>translate_base_url+"app,Channel:2092,tvigle/multi";</script></link>
     <title>Flash-игра Охрустенный квест</title>
-    <annotation>Мега-охрустенный квест от создателей мульта Тетрис против Контры . Зажигай вместе с популярными героями охрустенного сериала Versus! Играй бесплатно прямо сейчас!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2092/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2172,tvigle/multi";</script></link>
     <title>Город Хищниц</title>
-    <annotation>Комедийный сериал о жизни сорокалетней женщины после развода.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2172/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2105,tvigle/multi";</script></link>
     <title>Antiсказка</title>
-    <annotation>Герои детских сказок преследуют тебя на улицах Москвы!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2105/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2054,tvigle/multi";</script></link>
     <title>Smile TV</title>
-    <annotation>Забавные миниатюры с непредсказуемым финалом.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2054/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2038,tvigle/multi";</script></link>
     <title>Ералаш</title>
-    <annotation>Детский юмористический киножурнал Ералаш .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2038/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1376,tvigle/multi";</script></link>
     <title>VERSUS. Хруст без правил</title>
-    <annotation>Мультипликационный сериал VERSUS.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1376/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1200,tvigle/multi";</script></link>
     <title>ДаЁшь МолодЁжь</title>
-    <annotation>Сериал про молодежь и для молодежи! Эксклюзивно на Tvigle.ru</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1200/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1354,tvigle/multi";</script></link>
     <title>Ах, женщины</title>
-    <annotation>Две подруги постоянно попадают в смешные, нелепые ситуации.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1354/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2209,tvigle/multi";</script></link>
     <title>Маски-Шоу</title>
-    <annotation>Юмористический сериал в стиле немого кино.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2209/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:2028,tvigle/multi";</script></link>
     <title>ГопСтоп</title>
-    <annotation>Лучшие пародии на гопников от ДаЁшь МолодЁжь .</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2028/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1786,tvigle/multi";</script></link>
     <title>UmaNetto</title>
-    <annotation>Компании UmaNetto на работу требуется новая секретарша. После длительного кастинга, который проводят Андрей Падлыч и Казановский, на работу принимают Катю Очкарёву.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1786/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1388,tvigle/multi";</script></link>
     <title>Правда хочешь знать?</title>
-    <annotation>Что мы думаем на самом деле.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1388/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:12,tvigle/multi";</script></link>
     <title>В контакте с одноклассниками</title>
-    <annotation>Интернет сериал о долгожданных встречах бывших одноклассников.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/12/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:11,tvigle/multi";</script></link>
     <title>Lobanov Show</title>
-    <annotation>Колкие пародии и злободневные шутки.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/11/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1827,tvigle/multi";</script></link>
     <title>Вся правда о Еве</title>
-    <annotation>Новый модный интернет сериал в духе черной комедии, снятый специально для женщин.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1827/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:14,tvigle/multi";</script></link>
     <title>Маленький человек большого офиса</title>
-    <annotation>Жизнь Васи Пупкина в большом офисе.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/14/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:15,tvigle/multi";</script></link>
     <title>Вася Пупкин. Начало</title>
-    <annotation>Вася Пупкин стал менеджером низшего звена и теперь работает в офисе.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/15/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:742,tvigle/multi";</script></link>
     <title>Монологи Папы Новака</title>
-    <annotation>Страшилки и байки из... городской жизни.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/742/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:99,tvigle/multi";</script></link>
     <title>Белка и Стрелка</title>
-    <annotation>Спасут ли мир две дворняги?</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/99/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
-<link><script>translate_base_url+"app,Channel:1843,tvigle/multi";</script></link>
-    <title>Учительская</title>
-    <annotation>Веселые истории из жизни учителей и их подопечных.</annotation>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/1843/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
-<link><script>translate_base_url+"app,Channel:1844,tvigle/multi";</script></link>
-    <title>СмехZavod</title>
-    <annotation>Юморные истории про тех, кто умеет смеяться и веселить других!</annotation>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/1844/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
@@ -492,7 +488,7 @@
   <item>
 <link><script>translate_base_url+"app,Channel:204,tvigle/multi";</script></link>
     <title>Biggi's Blog</title>
-    <annotation>Неожиданные комментарии о самых ярких событиях столичной жизни!</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/204/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
@@ -506,35 +502,35 @@
   <item>
 <link><script>translate_base_url+"app,Channel:17,tvigle/multi";</script></link>
     <title>Crazy Хата</title>
-    <annotation>Самые скандальные звезды и самые неоднозначные события светской жизни.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/17/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:16,tvigle/multi";</script></link>
     <title>За кадром</title>
-    <annotation>Вся правда о съемках современных передач.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/16/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:18,tvigle/multi";</script></link>
     <title>Мульти ТВ</title>
-    <annotation>Репортажи обо всем на свете.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/18/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1292,tvigle/multi";</script></link>
     <title>12 недель позитива</title>
-    <annotation>Сборник смешных анекдотов.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1292/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
 <link><script>translate_base_url+"app,Channel:1874,tvigle/multi";</script></link>
     <title>Пятница! Время приколов</title>
-    <annotation>Полчаса безделья и смеха никому не помешают, тем более в пятницу! Специальная подборка коротких видеоприколов для позитивной настройки на выходные. Обновления каждую пятницу.</annotation>
+    <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1874/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>

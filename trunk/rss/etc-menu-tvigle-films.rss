@@ -290,13 +290,6 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link><script>translate_base_url+"app,Channel:1664,tvigle/multi";</script></link>
-    <title>Трейлеры</title>
-    <annotation/>
-    <image>../etc/translate/rss/image/tvigle.png</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
 <link><script>translate_base_url+"app,Channel:1609,tvigle/multi";</script></link>
     <title>Советское кино</title>
     <annotation/>
@@ -369,13 +362,6 @@
   <item>
 <link><script>translate_base_url+"app,Channel:1616,tvigle/multi";</script></link>
     <title>Детектив</title>
-    <annotation/>
-    <image>../etc/translate/rss/image/tvigle.png</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
-<link><script>translate_base_url+"app,Channel:2056,tvigle/multi";</script></link>
-    <title>Боевые искусства</title>
     <annotation/>
     <image>../etc/translate/rss/image/tvigle.png</image>
     <mediaDisplay name="photoView"/>

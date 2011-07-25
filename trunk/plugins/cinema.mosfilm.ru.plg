@@ -20,7 +20,7 @@
 # Translate CGI module
 # 'cinema.mosfilm.ru' plug-in
 #
-# version: 1.1 20.07.2011 20:59:41
+# version: 1.1 23.07.2011 14:14
 #
 # http://www.cinema.mosfilm.ru/Film.aspx?id=ee914026-6828-4327-9f31-a3a63623dbd1
 #
@@ -30,18 +30,19 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*cinema\.mosfilm\.ru/Film.aspx?id=.*
 	$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "$arg_url&autoplay=true" 2>&1
 	
 	local video_id=`grep 'movieType=privateOnline' ${TMPFILE} | sed -n '1p' | sed 's/^.*,id=//;s/,.*$//g'`
+	local film_title=`grep '<h1' ${TMPFILE} | sed 's/.*id=[^>]*>//;s/<\/.*//g'`
 	
-  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://www.cinema.mosfilm.ru/GetMovieCode.ashx?purchaseID=${video_id}" 2>&1`
+  $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://www.cinema.mosfilm.ru/GetMovieCode.ashx?purchaseID=${video_id}" 2>&1
   if [ -f ${TMPFILE} ]; then
     local code=`sed -n '1p' ${TMPFILE}`
-    host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
-    local film_title=
-    if [ -f ${TMPFILE} ]; then
-      film_title=`grep 'class="movieName"' ${TMPFILE} | sed 's/.*class=[^>]*>//;s/<\/.*//g'`
-    fi
+
+    #stream_url="http://www.cinema.mosfilm.ru/MovieWithOutSessionState.ashx?code=${code}"
+
+    $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://cinema.mosfilm.ru/MovieWithOutSessionState.ashx?getserver=${code}" 2>&1
+
     stream_type='video/x-ms-wmv'
-    stream_url="http://www.cinema.mosfilm.ru/MovieWithOutSessionState.ashx?code=${code}"
-    #stream_url="http://81.29.132.170/DataStorageService.asmx/GetOnline?code=${code}"
+    stream_url=`sed -n '1p' ${TMPFILE}`
+    
     protocol='http'
     icy_name="$film_title"
     rm -f $TMPFILE
