@@ -25,9 +25,17 @@
 # http://www.cinema.mosfilm.ru/Film.aspx?id=ee914026-6828-4327-9f31-a3a63623dbd1
 #
 
-if echo "${arg_url}" | grep -q -s '\(www\.\)*cinema\.mosfilm\.ru/Film.aspx?id=.*$'; then 
+if echo "${arg_url}" | grep -qs '\(www\.\)*cinema\.mosfilm\.ru/Film.aspx?id=.*$'; then 
 
-	$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "$arg_url&autoplay=true" 2>&1
+  local url
+
+  if echo "${arg_url}" | grep -qs 'autoplay=true'; then 
+    url="${arg_url}"
+  else
+    url="${arg_url}&autoplay=true"
+  fi
+
+	$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "$url" 2>&1
 	
 	local video_id=`grep 'movieType=privateOnline' ${TMPFILE} | sed -n '1p' | sed 's/^.*,id=//;s/,.*$//g'`
 	local film_title=`grep '<h1' ${TMPFILE} | sed 's/.*id=[^>]*>//;s/<\/.*//g'`
@@ -36,13 +44,12 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*cinema\.mosfilm\.ru/Film.aspx?id=.*
   if [ -f ${TMPFILE} ]; then
     local code=`sed -n '1p' ${TMPFILE}`
 
-    #stream_url="http://www.cinema.mosfilm.ru/MovieWithOutSessionState.ashx?code=${code}"
-
     $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://cinema.mosfilm.ru/MovieWithOutSessionState.ashx?getserver=${code}" 2>&1
 
-    stream_type='video/x-ms-wmv'
     stream_url=`sed -n '1p' ${TMPFILE}`
+    stream_url=${stream_url:-"http://www.cinema.mosfilm.ru/MovieWithOutSessionState.ashx?code=${code}"}
     
+    stream_type='video/x-ms-wmv'
     protocol='http'
     icy_name="$film_title"
     rm -f $TMPFILE

@@ -618,6 +618,16 @@
     <stream_protocol>http</stream_protocol>
   </item>
   <item>
+    <annotation>Фильмы онлайн | HD Kinomir</annotation>
+    <title>HD KINOMIR</title>
+    <image>../etc/translate/rss/image/menu/rss.png</image>
+<location><script>translate_base_url+"app/rss/mediafeed,http://hdkinomir.com/rss.xml";</script></location>
+<stream_url><script>translate_base_url+"app/rss/mediafeed,http://hdkinomir.com/rss.xml";</script></stream_url>
+    <stream_class>rss</stream_class>
+    <stream_type>application/xml</stream_type>
+    <stream_protocol>http</stream_protocol>
+  </item>
+  <item>
     <annotation>Rock Television - Cult&amp;Rare: Recent Video</annotation>
     <title>Rock Television - Recent Video</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
