@@ -54,6 +54,13 @@
       <meta rel="mediaDisplay">photoView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app/mosfilm/mainframe</link>
+      <title>Золотая коллекция</title>
+      <annotation>Официальный информационный портал ФГУП «Киноконцерн «Мосфильм». 1999-2011 Mosfilm © просмотр онлайн фильмов</annotation>
+      <image>../etc/translate/rss/image/menu/mosfilm.jpg</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/tv-other.xspf,collection/menulist</link>
       <title>Other</title>
       <annotation>Разные списки интернет-телевидения</annotation>
