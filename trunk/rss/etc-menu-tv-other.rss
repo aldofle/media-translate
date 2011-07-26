@@ -303,9 +303,9 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link>rss_file://../etc/translate/rss/etc-playlists-tv-ras_list.rss</link>
-    <title>ras playlist</title>
-    <annotation>Небольшой список в основном с российскими интернет-телевизионными каналами от пользователя ras@forum.iconbit.ru</annotation>
+<link>rss_file://../etc/translate/rss/etc-playlists-tv-mozhay.rss</link>
+    <title>Можай ТВ</title>
+    <annotation>Открытые каналы онлайн телевидения с портала Можай! (www.mozhay.net)</annotation>
     <image>../etc/translate/rss/image/menu/internettv.png</image>
     <mediaDisplay name="onePartView"/>
   </item>
@@ -321,13 +321,6 @@
     <title>OneHD / SD</title>
     <annotation>ONE HD - Online Network Entertainment - Romania. Prima televiziune online HD. Качественные концертные записи на любой вкус. (SD качество, min 0.5Mbit/sec)</annotation>
     <image>http://www.1hd.ro/images/sd.png</image>
-    <mediaDisplay name="onePartView"/>
-  </item>
-  <item>
-<link>rss_file://../etc/translate/rss/etc-playlists-video-prahovahd.rss</link>
-    <title>OneHD</title>
-    <annotation>ONE HD - Online Network Entertainment - Romania. Prima televiziune online HD. Качественные концертные записи на любой вкус. (HD качество, min 2Mbit/sec)</annotation>
-    <image>http://www.1hd.ro/images/hd.png</image>
     <mediaDisplay name="onePartView"/>
   </item>
   <item>

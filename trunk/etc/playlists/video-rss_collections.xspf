@@ -209,5 +209,33 @@
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
-   </trackList>
+
+<track>
+   <annotation>kiwi.kz</annotation>
+   <title>kiwi.kz | Популярное видео</title>
+   <location>http://kiwi.kz/rss/popular/</location>
+<meta rel="stream_url">http://kiwi.kz/rss/popular/</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+<track>
+   <annotation>kiwi.kz</annotation>
+   <title>kiwi.kz | Новости</title>
+   <location>http://kiwi.kz/rss/news/</location>
+<meta rel="stream_url">http://kiwi.kz/rss/news/</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+<track>
+   <annotation>kiwi.kz</annotation>
+   <title>kiwi.kz Видео | Категория "Все"</title>
+   <location>http://kiwi.kz/rss/tracks/</location>
+<meta rel="stream_url">http://kiwi.kz/rss/tracks/</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+  </trackList>
 </playlist>
