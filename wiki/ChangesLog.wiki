@@ -2,6 +2,13 @@
 
 = История версий =
 
+== 2.0.8 ==
+  * в *Internet Video* добавлен интерфейсный модуль к коллекции фильмов студии *[http://cinema.mosfilm.ru/ Мосфильм]*;
+  * в модуле *Tvigle* обновлен каталог;
+  * в плейлисты добавлены списки интернет-телевидения *[http://sovok.tv/ Совок ТВ]* и портала *[http://mozhay.net/ Можай!]*;
+  * добавлены плагины к *vk.com, hdkinomir.com, 24video.net, sovok.tv, kiwi.kz, youtube.com/movie*;
+  * исправлены плагины *cinema.mosfilm.ru, zoomby.ru, ivi.ru, rutube.ru, mults.spb.ru, tvigle.ru*. 
+
 == 2.0.7 ==
   * в меню Applications добавлен модуль просмотра последних наиболее часто проигрываемых ссылок *Most Recent Links*;
   * в модуль *Youtube* вставлен интерфейс для поиска на русском языке;
