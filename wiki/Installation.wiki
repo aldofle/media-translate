@@ -157,7 +157,7 @@ UDPXY_URL=http://127.0.0.1:8080/
 TRANSLATE_CGI=http://127.0.0.1/cgi-bin/translate?
 }}}
 
-  Управление HD контентом для Youtube, Vimeo, Tvigle, Zoomby и IVI осуществляется с помощью переменных YOUTUBE_HD, VIMEO_HD, TVIGLE_HD, ZOOMBY_HD и IVI_HD соответственно. 
+  Управление HD контентом для Youtube, Vimeo, Tvigle, Zoomby, ВКонтакте и IVI осуществляется с помощью переменных YOUTUBE_HD, VIMEO_HD, TVIGLE_HD, ZOOMBY_HD, VK_HD и IVI_HD соответственно. 
   По умолчанию используется HD качество.
 
   TRANSLATE_CGI содержит url на CGI-модуль *translate*. Путь должен заканчиваться символом '?'.
