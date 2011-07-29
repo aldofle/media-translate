@@ -13,13 +13,22 @@
   * Rutube (http://rutube.ru)
   * IVI Music (http://music.ivi.ru)
   * Zoomby Music (http://www.zoomby.ru/music)
+  * Мосфильм (http://cinema.mosfilm.ru)
   === RSS-ленты и плейлисты ===
+  * Sovok TV (http://sovok.tv)
   * Tvigle (http://tvigle.ru)
   * IVI (http://ivi.ru)
   * Vimeo (http://vimeo.com)
   * OneHD (http://live.1hd.ro)
   * Мультики (http://mults.spb.ru)
   * Rutube трансляции (http://rutube.ru/channels.html)
+  * Kiwi.kz (http://kiwi.kz)
+  * HD Kinomir (http://hdkinomir.com)
+  * Filmix.net (http://filmix.net)
+  * AniMult.tv (http://animult.tv)
+  * Kino-Dom.tv (http://kino-dom.tv)
+  * LineCinema.ru (http://www.linecinema.org)
+  * Rock Television (http://rocktelevision.com)
 
   == Internet Radio ==
   === Сервисы ===
@@ -126,7 +135,7 @@ http://www.zoomby.ru/watch/4396-kamenskaya-3
 }}}
   * [http://cinema.mosfilm.ru/ Золотая коллекция киностудии Мосфильм]
 {{{
-http://www.cinema.mosfilm.ru/PrivateVideo.aspx?id=f61c564b-0653-4a23-b6fd-02253cdda615
+http://www.cinema.mosfilm.ru/Film.aspx?id=ee914026-6828-4327-9f31-a3a63623dbd1
 }}}
   * [http://filmix.net/ filmix.net]
 {{{
@@ -150,6 +159,23 @@ http://cultandrare.rocktelevision.com/Player/TabId/58/VideoId/233/DIRE-STRAITS-S
   * [http://yourock.rocktelevision.com/ YouRock by Rocktelevision]
 {{{
 http://yourock.rocktelevision.com/VideoPlayer/TabId/56/VideoId/508/ORANGE-LEM--Geometric-Woman.aspx
+}}}
+  * [http://vk.com/ ВКонтакте]
+{{{
+http://vk.com/video_ext.php?oid=92898632&id=160253092&hash=37757274d849df4a&hd=1
+http://vkontakte.ru/video_ext.php?oid=8386018&id=158808447&hash=50976b98544a296c&hd=1
+}}}
+  * [http://hdkinomir.com/ HD Киномир]
+{{{
+http://hdkinomir.com/comedy/1465-madagaskar-madagascar-2005-onlayn.html
+}}}
+  * [http://24video.net/ 24video.net]
+{{{
+http://www.24video.net/video/view/1229075?feature=indexfreshfilter2
+}}}
+  * [http://sovok.tv/ Совок ТВ]
+{{{
+http://sovok.tv/api.php?channel=33
 }}}
   * [http://www.last.fm/api Last.FM]
   Получение картинки с исполнителем для текущего проигрываемого трека.
