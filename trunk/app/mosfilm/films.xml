@@ -4,7 +4,7 @@
 <!--
 #
 #   http://code.google.com/media-translate/
-#   Copyright (C) 2010  Serge A. Timchenko
+#   Copyright (C) 2011  Serge A. Timchenko
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -54,8 +54,8 @@
 
 	<mediaDisplay name=photoView 
 	  centerXPC=7 
-		centerYPC=25
-		centerHeightPC=65
+		centerYPC=23
+		centerHeightPC=57
 		columnCount=5
 	  rowCount=1
 		menuBorderColor="55:55:55"
@@ -67,7 +67,7 @@
 		itemGapXPC=0
 		itemGapYPC=1
 		sideTopHeightPC=22
-		bottomYPC=85
+		bottomYPC=80
 		sliding=yes
 		showHeader=no
 		showDefaultInfo=no
@@ -81,7 +81,7 @@
 		  ../etc/translate/rss/image/mosfilm.png
       <widthPC>
         <script>
-         21 * screenYp / screenXp;
+          21 * screenYp / screenXp;
         </script>
       </widthPC>
       <offsetXPC>
@@ -95,8 +95,8 @@
 		  <script>sprintf("%s / ", focus-(-1))+itemCount;</script>
 		</text>
 
-  	<text align="right" redraw="yes" offsetXPC="7" offsetYPC="91" widthPC="86" heightPC="5" fontSize="12" backgroundColor="0:0:0" foregroundColor="150:150:150">
-  		<script>tips;</script>
+  	<text align="center" lines="4" redraw="yes" offsetXPC="7" offsetYPC="80" widthPC="86" heightPC="15" fontSize="12" backgroundColor="0:0:0" foregroundColor="150:150:150">
+  		<script>annotation;</script>
   	</text>
 
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
@@ -111,11 +111,11 @@
 		<itemDisplay>
       <script>
 				imageW = 90/5;
-				imageH = imageW * 400 / 300 * screenXp / screenYp * 100 / 65;
+				imageH = imageW * 400 / 300 * screenXp / screenYp * 100 / 57;
 				if(imageH > 50)
 				{
 				  imageH = 50;
-				  imageW = imageH * 300 / 400 * screenYp / screenXp * 65 / imageW;
+				  imageW = imageH * 300 / 400 * screenYp / screenXp * 57 / imageW;
 				}
 			  else
 			  {
@@ -140,8 +140,7 @@
 					{
 					  location = getItemInfo(idx, "location");
 					  annotation = getItemInfo(idx, "annotation");
-					  if(annotation == "" || annotation == null)
-					    annotation = getItemInfo(idx, "stream_genre");
+					  year = getItemInfo(idx, "year");
 					}
 				  getItemInfo(idx, "image");
 				</script>
@@ -175,7 +174,7 @@
 			 </offsetYPC>
 			</image>
 			
-			<text align="center" lines="4" fontSize="16" offsetXPC=0 offsetYPC=55 widthPC=100 heightPC=35 backgroundColor=-1:-1:-1>
+			<text align="center" lines="4" fontSize="16" offsetXPC=0 offsetYPC=53 widthPC=100 heightPC=35 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
 					getItemInfo(idx, "title");
@@ -192,7 +191,7 @@
 			<text align="center" lines="1" fontSize="13" offsetXPC=0 offsetYPC=90 widthPC=100 heightPC=5 backgroundColor=-1:-1:-1>
 				<script>
 					idx = getQueryItemIndex();
-					getItemInfo(idx, "genre");
+					getItemInfo(idx, "year");
 				</script>
 			  <foregroundColor>
   				<script>
