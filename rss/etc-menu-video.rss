@@ -395,11 +395,11 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link><script>translate_base_url+"app/mosfilm/mainframe";</script></link>
+<link>rss_file://../etc/translate/rss/etc-menu-mosfilm-index.rss</link>
     <title>Золотая коллекция</title>
     <annotation>Официальный информационный портал ФГУП «Киноконцерн «Мосфильм». 1999-2011 Mosfilm © просмотр онлайн фильмов</annotation>
     <image>../etc/translate/rss/image/menu/mosfilm.jpg</image>
-    <mediaDisplay name="photoView"/>
+    <mediaDisplay name="onePartView"/>
   </item>
   <item>
 <link>rss_file://../etc/translate/rss/etc-menu-tv-other.rss</link>
