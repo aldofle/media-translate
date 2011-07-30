@@ -3,7 +3,7 @@
 = История версий =
 
 == 2.0.8 ==
-  * в *Internet Video* добавлен интерфейсный модуль к коллекции фильмов студии *[http://cinema.mosfilm.ru/ Мосфильм]*;
+  * в *Internet Video* добавлен интерфейсный модуль к коллекции фильмов студии *[http://cinema.mosfilm.ru/ Мосфильм]* (для работы требуется *[http://code.google.com/p/media-translate/wiki/Installation#%D0%92%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D1%83%D1%82%D0%B8%D0%BB%D0%B8%D1%82%D1%8B xsltproc]*);
   * в модуле *Tvigle* обновлен каталог;
   * в плейлисты добавлены списки интернет-телевидения *[http://sovok.tv/ Совок ТВ]* и портала *[http://mozhay.net/ Можай!]*;
   * добавлены плагины к *vk.com, hdkinomir.com, 24video.net, sovok.tv, kiwi.kz, youtube.com/movie*;
