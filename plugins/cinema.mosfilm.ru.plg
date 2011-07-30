@@ -39,6 +39,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*cinema\.mosfilm\.ru/Film.aspx?id=.*$'
 	
 	local video_id=`grep 'movieType=privateOnline' ${TMPFILE} | sed -n '1p' | sed 's/^.*,id=//;s/,.*$//g'`
 	local film_title=`grep '<h1' ${TMPFILE} | sed 's/.*id=[^>]*>//;s/<\/.*//g'`
+	local film_year=`grep '_yearLabel"' ${TMPFILE} | sed 's/.*_yearLabel"[^>]*>//;s/<\/.*//g'`
 	
   $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "http://www.cinema.mosfilm.ru/GetMovieCode.ashx?purchaseID=${video_id}" 2>&1
   if [ -f ${TMPFILE} ]; then
@@ -51,7 +52,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*cinema\.mosfilm\.ru/Film.aspx?id=.*$'
     
     stream_type='video/x-ms-wmv'
     protocol='http'
-    icy_name="$film_title"
+    icy_name="${film_title}${film_year:+" ($film_year)"}"
     rm -f $TMPFILE
   fi  
   return $RC_OK
