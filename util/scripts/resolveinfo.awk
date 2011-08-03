@@ -26,6 +26,15 @@
 #.H2 Example 
 #.PRE
 
+function escapeXML( text ) {
+  gsub( "\\&",  "&amp;",  text );
+  gsub( "'", "&apos;",  text );
+  gsub( "\"", "&quot;", text );
+  gsub( ">",   "&gt;",  text );
+  gsub( "<",   "&lt;",  text );
+  return text
+}
+
 function getInfo(url)
 {
   print "Resolve url: " url > "/dev/stderr"
@@ -74,22 +83,31 @@ function getInfo(url)
       if(XITEM == "stream-genre")
       {
         getXML(info_file,0);
-        if(XTYPE == "CDA" || XTYPE == "DAT")
+        if(XTYPE == "DAT")
           print "<meta rel=\"stream_genre\">" XITEM "</meta>";
+        else
+        if(XTYPE == "CDA")
+          print "<meta rel=\"stream_genre\">" escapeXML(XITEM) "</meta>";
       }
       else
       if(XITEM == "stream-bitrate")
       {
         getXML(info_file,0);
-        if(XTYPE == "CDA" || XTYPE == "DAT")
+        if(XTYPE == "DAT")
           print "<meta rel=\"stream_bitrate\">" XITEM "</meta>";
+        else
+        if(XTYPE == "CDA")
+          print "<meta rel=\"stream_bitrate\">" escapeXML(XITEM) "</meta>";
       }
       else
       if(SKIPTITLE != 1 && XITEM == "stream-title")
       {
         getXML(info_file,0);
-        if(XTYPE == "CDA" || XTYPE == "DAT")
+        if(XTYPE == "DAT")
           print "<meta rel=\"stream_title\">" XITEM "</meta>";
+        else
+        if(XTYPE == "CDA")
+          print "<meta rel=\"stream_title\">" escapeXML(XITEM) "</meta>";
       }
     }
   }

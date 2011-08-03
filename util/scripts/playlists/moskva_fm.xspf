@@ -168,13 +168,6 @@
       <meta rel="fm">89.5</meta>
       <meta rel="name">89_5</meta>
     
-<meta rel="stream_url">http://w01-cn01.akadostream.ru:8108/megapolisfm128.mp3</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">DANCE</meta>
-<meta rel="stream_bitrate">200</meta>
 </track>
     <track>
       <location>http://webcast2.emg.fm:55655/keks128.mp3</location>
@@ -272,7 +265,7 @@
       <meta rel="fm">92.0</meta>
       <meta rel="name">92_0</meta>
     
-<meta rel="stream_url">http://stream04.rambler.ru:80/govoritmoskva64.mp3</meta>
+<meta rel="stream_url">http://stream09.rambler.ru:80/govoritmoskva64.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/mpeg</meta>
@@ -341,11 +334,6 @@
       <meta rel="fm">93.6</meta>
       <meta rel="name">93_6</meta>
     
-<meta rel="stream_url">mmsh://stream03.rambler.ru:80/komersant?WMContentBitrate=150000</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_server">_empty_</meta>
-<meta rel="stream_type">audio/x-ms-wma</meta>
-<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location></location>
@@ -490,13 +478,6 @@
       <meta rel="fm">96.4</meta>
       <meta rel="name">96_4</meta>
     
-<meta rel="stream_url">http://stream.mradio.fm:8000/mradio_high.mp3</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">Various</meta>
-<meta rel="stream_bitrate">96</meta>
 </track>
     <track>
       <location>http://radiogrom.com/online/moskva_fm/detskoe_online_2.m3u</location>
@@ -570,6 +551,13 @@
       <meta rel="fm">98.0</meta>
       <meta rel="name">98_0</meta>
     
+<meta rel="stream_url">http://92.243.67.124:10010/fm</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">icecast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_genre">TOP-100</meta>
+<meta rel="stream_bitrate">131</meta>
 </track>
     <track>
       <location>http://webcast2.emg.fm:55655/fresh128.mp3</location>
@@ -610,11 +598,6 @@
       <meta rel="fm">98.8</meta>
       <meta rel="name">98_8</meta>
     
-<meta rel="stream_url">mmsh://mms.online.ru/v4_1_22?st=018489700123667805420090310</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_server">_empty_</meta>
-<meta rel="stream_type">audio/x-ms-wma</meta>
-<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>mmsh://live.rfn.ru/orfey/</location>
@@ -660,12 +643,6 @@
       <meta rel="fm">100.1</meta>
       <meta rel="name">100_1</meta>
     
-<meta rel="stream_url">http://w01-cn01.akadostream.ru:8000/silverrain128.mp3</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_type">audio/mpeg</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_genre">various</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/moskva_fm/best_fm_online.m3u</location>
@@ -706,7 +683,7 @@
       <meta rel="fm">101.2</meta>
       <meta rel="name">101_2</meta>
     
-<meta rel="stream_url">mmsh://broadcast03.station.ru/dfm</meta>
+<meta rel="stream_url">mmsh://broadcast05.station.ru/dfm</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">station.ru</meta>
 <meta rel="stream_server">http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=dfm</meta>
@@ -741,7 +718,7 @@
       <meta rel="fm">102.1</meta>
       <meta rel="name">102_1</meta>
     
-<meta rel="stream_url">mmsh://broadcast03.station.ru/montecarlo</meta>
+<meta rel="stream_url">mmsh://broadcast05.station.ru/montecarlo</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">station.ru</meta>
 <meta rel="stream_server">http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=montecarlo</meta>
@@ -758,7 +735,7 @@
       <meta rel="fm">102.5</meta>
       <meta rel="name">102_5</meta>
     
-<meta rel="stream_url">http://stream09.rambler.ru:80/popsa64.mp3</meta>
+<meta rel="stream_url">http://stream06.rambler.ru:80/popsa64.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/mpeg</meta>
@@ -809,7 +786,7 @@
       <meta rel="fm">103.7</meta>
       <meta rel="name">103_7</meta>
     
-<meta rel="stream_url">mmsh://broadcast03.station.ru/maximum</meta>
+<meta rel="stream_url">mmsh://broadcast05.station.ru/maximum</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">station.ru</meta>
 <meta rel="stream_server">http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=maximum</meta>
@@ -826,11 +803,6 @@
       <meta rel="fm">104.2</meta>
       <meta rel="name">104_2</meta>
     
-<meta rel="stream_url">mmsh://89.20.132.26/v1_1_128</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_server">_empty_</meta>
-<meta rel="stream_type">audio/x-ms-wma</meta>
-<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>http://webcast.emg.fm:55655/radiosept128.mp3</location>
@@ -861,7 +833,7 @@
       <meta rel="fm">105.2</meta>
       <meta rel="name">105_2</meta>
     
-<meta rel="stream_url">http://stream08.rambler.ru:80/next64.mp3</meta>
+<meta rel="stream_url">http://stream01.rambler.ru:80/next64.mp3</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/mpeg</meta>
@@ -877,7 +849,7 @@
       <meta rel="id">4000</meta>
       <meta rel="fm">105.7</meta>
       <meta rel="name">105_7</meta>
-<meta rel="stream_url">mmsh://broadcast03.station.ru/rusradio</meta>
+<meta rel="stream_url">mmsh://broadcast05.station.ru/rusradio</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">station.ru</meta>
 <meta rel="stream_server">http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=rusradio</meta>
@@ -930,7 +902,7 @@
       <meta rel="fm">107.0</meta>
       <meta rel="name">107_0</meta>
     
-<meta rel="stream_url">mmsh://broadcast03.station.ru/rsn</meta>
+<meta rel="stream_url">mmsh://broadcast05.station.ru/rsn</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">station.ru</meta>
 <meta rel="stream_server">http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=rsn</meta>
@@ -947,7 +919,7 @@
       <meta rel="fm">107.4</meta>
       <meta rel="name">107_4</meta>
     
-<meta rel="stream_url">mmsh://broadcast03.station.ru/hitfm</meta>
+<meta rel="stream_url">mmsh://broadcast05.station.ru/hitfm</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">station.ru</meta>
 <meta rel="stream_server">http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=hitfm</meta>

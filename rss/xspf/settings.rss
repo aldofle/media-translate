@@ -150,6 +150,10 @@
 			  {
 			   getStringArrayAt(ynArr, fullscreen);
 			  }
+			  else if(idx == 9)
+			  {
+			   getStringArrayAt(tsArr, testStream);
+			  }
 			  else
 			   "";
 			</script>
@@ -223,6 +227,10 @@
           {
             fullscreen = 1 - fullscreen;
           }
+          else if(idx == 9)
+          {
+            testStream = 1 - testStream;
+          }
           ret = "true";
           redrawDisplay();
         }
@@ -245,6 +253,7 @@
   arr = pushBackStringArray(arr, zoombyHD);
   arr = pushBackStringArray(arr, vkHD);
   arr = pushBackStringArray(arr, fullscreen);
+  arr = pushBackStringArray(arr, testStream);
 
   writeStringToFile(getStoragePath("key")+"translate.dat", arr);
 
@@ -272,6 +281,10 @@
   ynArr = null;
   ynArr = pushBackStringArray(ynArr, "Нет");
   ynArr = pushBackStringArray(ynArr, "Да");
+
+  tsArr = null;
+  tsArr = pushBackStringArray(tsArr, "Авто");
+  tsArr = pushBackStringArray(tsArr, "Всегда");
   
   translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
   screenXp = 4;
@@ -283,6 +296,7 @@
   zoombyHD = 1;
   vkHD = 1;
   fullscreen = 0;
+  testStream = 0;
   rssconf = readStringFromFile(getStoragePath("key")+"translate.dat");
   print("rssconf:",rssconf);
   if(rssconf != null)
@@ -317,6 +331,9 @@
     value = getStringArrayAt(rssconf, 9);
     if(value != null &amp;&amp; value != "")
       fullscreen = value;
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = value;
   }
   
   channelImage = "../etc/translate/rss/image/menu/settings.png";
@@ -366,6 +383,10 @@
 
   <item>
     <title>Полноэкранное видео:</title>
+  </item>
+
+  <item>
+    <title>Тестировать поток:</title>
   </item>
 
 <!--

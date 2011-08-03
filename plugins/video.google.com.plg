@@ -30,6 +30,8 @@ stream_type='video/x-flv'
 stream_url=''
 server_type='google'
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -q -s 'video\.google\.com/.*docid=..*$'; then 
 
   local video_id=`echo "$arg_url" | sed -e 's/.*[?&]docid=//;s/[&#].*//g'`

@@ -25,6 +25,8 @@
 # http://live.1hd.ro/playlist.php
 #
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -q -s 'live\.*\(1hd\|prahovahd\)\.ro/playlist.*\.php$'; then 
 
   local PLAYLISTFILE=$CACHEPATH/temp.xspf

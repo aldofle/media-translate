@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -223,7 +231,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -355,6 +363,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -485,21 +495,23 @@
     <stream_url>http://stream.rtfm.fm</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
-    <stream_type>audio/x-mpeg</stream_type>
+    <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
+    <stream_title>RTFM.fm</stream_title>
+    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://station.ru/RadioStation.aspx?id=1743</location>
     <title>Хит FM Italy</title>
     <annotation>Итальянская эстрада, поп-музыка</annotation>
     <image>../etc/translate/rss/image/stationru/hit_italy.gif</image>
-    <stream_url>mmsh://broadcast03.station.ru/station15</stream_url>
+    <stream_url>mmsh://broadcast05.station.ru/station15</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
-    <stream_server>http://station.ru/GetSongJS.aspx?id=station15</stream_server>
+    <stream_server>http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=station15</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
-    <stream_title>station.ru</stream_title>
+    <stream_title>Хит FM Italy / station.ru</stream_title>
   </item>
   <item>
     <location>http://voxsc1.somafm.com:8700</location>
@@ -536,14 +548,6 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic Chillout Ambient</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u11b.di.fm:80/di_chillout_aacplus</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_type>audio/aacp</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>Chillout - D I G I T A L L Y - I M P O R T E D - ambient psy chillout, check out our trippy flavors!</stream_title>
-    <stream_genre>Electronic Chillout Ambient</stream_genre>
-    <stream_bitrate>40</stream_bitrate>
   </item>
 </channel>
 

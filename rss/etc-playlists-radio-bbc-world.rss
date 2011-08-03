@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -223,7 +231,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -355,6 +363,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -486,7 +496,7 @@
     <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
     <stream_protocol>mmsh</stream_protocol>
-    <stream_title>BBC World Service</stream_title>
+    <stream_title>BBC World Service - EIEUK network. / BBC World Service</stream_title>
   </item>
   <item>
     <title>English News</title>

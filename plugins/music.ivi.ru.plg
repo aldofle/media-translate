@@ -31,6 +31,8 @@
 #
 # required CURL
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -q -s 'music\.ivi\.ru/watch/.*$'; then 
 
   get_opt "HD"

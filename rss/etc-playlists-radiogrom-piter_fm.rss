@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -223,7 +231,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -355,6 +363,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -479,7 +489,17 @@
   <title>Radiogrom.com - piter_fm</title>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/dorozhnoe_radio_online.html</location>
-    <title>- 87,5 FM - Дорожное радио </title>
+    <title>- 96,0 FM - Дорожное радио слушать онлайн</title>
+    <stream_url>http://radio.mv.ru:8080/Dorojnoe_Radio</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_bitrate>64</stream_bitrate>
+  </item>
+  <item>
+    <location>http://www.radiogrom.com/online/piter_fm/dorozhnoe_radio_online.html</location>
+    <title>- 87,5 FM - Дорожное радио слушать онлайн</title>
     <stream_url>http://radio.mv.ru:8080/Dorojnoe_Radio</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -489,7 +509,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/avtoradio_online.html</location>
-    <title>- 88,4 FM - Авторадио </title>
+    <title>- 88,4 FM - Авторадио слушать онлайн</title>
     <stream_url>mmsh://213.172.6.133:8844/</stream_url>
     <stream_class>audio</stream_class>
     <stream_server>_empty_</stream_server>
@@ -498,7 +518,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_zenit_online.html</location>
-    <title>- 89,7 FM - Радио Зенит </title>
+    <title>- 89,7 FM - Радио Зенит слушать онлайн</title>
     <stream_url>mms://217.170.65.66/zenit</stream_url>
     <stream_class>audio</stream_class>
     <stream_server>_empty_</stream_server>
@@ -507,11 +527,14 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_ermitazh_online.html</location>
-    <title>- 90,1 FM - Радио Эрмитаж </title>
+    <title>- 90,1 FM - Радио Эрмитаж слушать онлайн</title>
+    <stream_url>http://www.radiogrom.com/online/piter_fm/radio_ermitazh_online.html</stream_url>
+    <stream_server>_empty_</stream_server>
+    <stream_protocol>file</stream_protocol>
   </item>
   <item>
-    <location>http://www.radiogrom.com/online/piter_fm/radio_hit_online.html</location>
-    <title>- 90,6 FM - Радио Хит </title>
+    <location>http://www.radiogrom.com/online/piter_fm/radio_dlya_dvoih.html</location>
+    <title>- 90,6 FM - Радио для двоих слушать онлайн</title>
     <stream_url>http://217.170.67.77/radiohit</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -522,18 +545,20 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_vanya_online.html</location>
-    <title>- 100,1 FM - Радио Ваня </title>
+    <title>- 100,1 FM - Радио Ваня слушать онлайн</title>
     <stream_url>http://online.radiovanya.ru/radiovanya</stream_url>
     <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>Radio Vanya</stream_genre>
     <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
+    <location>http://www.radiogrom.com/online/piter_fm/radio_piter_fm_online.html</location>
+    <title>- 100,9 FM - Радио Питер ФМ слушать онлайн</title>
+  </item>
+  <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_eldoradio_online.html</location>
-    <title>- 101,4 FM - Радио Эльдорадио </title>
+    <title>- 101,4 FM - Радио Эльдорадио слушать онлайн</title>
     <stream_url>http://onair.eltel.net/eldoradio-128k</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -544,11 +569,11 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_roks_online.html</location>
-    <title>- 102,0 FM - Радио Рокс </title>
+    <title>- 102,0 FM - Радио Рокс слушать онлайн</title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_metro_online.html</location>
-    <title>- 102,4 FM - Радио Metro </title>
+    <title>- 102,4 FM - Радио Metro слушать онлайн</title>
     <stream_url>http://195.182.132.18:8230/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -559,11 +584,11 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_baltika_online.html</location>
-    <title>- 104,8 FM - Радио Балтика </title>
+    <title>- 104,8 FM - Радио Балтика слушать онлайн</title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/monte_carlo_online.html</location>
-    <title>- 105,9 FM - Радио Монте-Карло </title>
+    <title>- 105,9 FM - Радио Монте-Карло слушать онлайн</title>
     <stream_url>http://stream4.radiostyle.ru:8004/rmc</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -574,14 +599,10 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/piter_fm/radio_record_online.html</location>
-    <title>- 106,3 FM - Радио Рекорд </title>
-    <stream_url>http://radio.11one.ru/record192.mp3?u=6SQsq8V9</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Dance</stream_genre>
-    <stream_bitrate>192</stream_bitrate>
+    <title>- 106,3 FM - Радио Рекорд слушать онлайн</title>
+    <stream_url>http://www.radiogrom.com/online/piter_fm/radio_record_online.html</stream_url>
+    <stream_server>_empty_</stream_server>
+    <stream_protocol>file</stream_protocol>
   </item>
 </channel>
 

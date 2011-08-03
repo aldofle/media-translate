@@ -365,7 +365,7 @@
 
         request_title = text;
         request_url = getStringArrayAt(opmlArrayURL, focus);
-        request_options = "";
+        request_options = "Resolve-playlist:1";
         request_image = getStringArrayAt(opmlArrayImage, focus);
 
 

@@ -47,7 +47,6 @@
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
-<!--
       <track>
          <annotation>Все видео: бесплатно смотреть кино, сериалы, программы, мультфильмы и клипы в хорошем качестве без регистрации: Популярное видео</annotation>
          <title>Самое популярное видео от ivi.ru</title>
@@ -69,7 +68,6 @@
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
--->
       <track>
          <annotation>RSS-лента Tvigle Media</annotation>
          <title>Tvigle Media</title>
@@ -152,6 +150,16 @@
 <meta rel="stream_protocol">http</meta>
 </track>
       <track>
+         <annotation>Фильмы онлайн | HD Kinomir</annotation>
+         <title>HD KINOMIR</title>
+         <image>../etc/translate/rss/image/menu/rss.png</image>
+         <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://hdkinomir.com/rss.xml</location>
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://hdkinomir.com/rss.xml</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+      <track>
          <annotation>Rock Television - Cult&amp;Rare: Recent Video</annotation>
          <title>Rock Television - Recent Video</title>
          <image>../etc/translate/rss/image/menu/rss.png</image>
@@ -201,5 +209,33 @@
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
-   </trackList>
+
+<track>
+   <annotation>kiwi.kz</annotation>
+   <title>kiwi.kz | Популярное видео</title>
+   <location>http://kiwi.kz/rss/popular/</location>
+<meta rel="stream_url">http://kiwi.kz/rss/popular/</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+<track>
+   <annotation>kiwi.kz</annotation>
+   <title>kiwi.kz | Новости</title>
+   <location>http://kiwi.kz/rss/news/</location>
+<meta rel="stream_url">http://kiwi.kz/rss/news/</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+<track>
+   <annotation>kiwi.kz</annotation>
+   <title>kiwi.kz Видео | Категория "Все"</title>
+   <location>http://kiwi.kz/rss/tracks/</location>
+<meta rel="stream_url">http://kiwi.kz/rss/tracks/</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
+  </trackList>
 </playlist>

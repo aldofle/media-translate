@@ -25,6 +25,8 @@
 # http://sovok.tv/api.php?channel=33
 #
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -qs 'sovok\.tv/api.php?channel=[0-9]*$'; then 
 
   host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`

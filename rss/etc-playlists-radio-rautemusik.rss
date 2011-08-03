@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -223,7 +231,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -355,6 +363,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -481,7 +491,7 @@
     <location>http://main-aacp.rautemusik.fm/listen.pls</location>
     <title>Main</title>
     <annotation>80s, Pop, Rock, Charts und mehr neue Hits  </annotation>
-    <stream_url>http://91.121.88.186:8100/</stream_url>
+    <stream_url>http://91.121.77.64:8100</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -494,7 +504,7 @@
     <location>http://club-aacp.rautemusik.fm/listen.pls</location>
     <title>Club</title>
     <annotation>Dance, HandsUp, Techno und Trance</annotation>
-    <stream_url>http://80.237.157.12:7000/</stream_url>
+    <stream_url>http://91.121.77.64:9100</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -507,7 +517,7 @@
     <location>http://extreme-aacp.rautemusik.fm/listen.pls</location>
     <title>eXTreMe</title>
     <annotation>Rock, Metal, Punk, Ska, Alternative</annotation>
-    <stream_url>http://80.237.157.12:7100/</stream_url>
+    <stream_url>http://80.237.157.12:7100</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -520,7 +530,7 @@
     <location>http://jam-aacp.rautemusik.fm/listen.pls</location>
     <title>JaM</title>
     <annotation>HipHop, R.n.B, Rap, Soul, Reggae, Dancehall</annotation>
-    <stream_url>http://80.237.157.12:7300/</stream_url>
+    <stream_url>http://80.237.157.30:7300</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -533,20 +543,20 @@
     <location>http://funky-aacp.rautemusik.fm/listen.pls</location>
     <title>FunkY</title>
     <annotation>House, Dance, Funk, Electro</annotation>
-    <stream_url>http://80.237.157.12:7200/</stream_url>
+    <stream_url>http://80.237.157.15:14000</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>#MUSIK.FUNKY - WWW.RAUTEMUSIK.FM - 24H MIXED HOUSE ELECTRO FUNK DANCE MINIMAL AND MORE!</stream_title>
-    <stream_genre>HOUSE ELECTRO FUNK DANCE</stream_genre>
+    <stream_title>#MUSIK.HOUSE - WWW.RAUTEMUSIK.FM - HOUSE DANCE</stream_title>
+    <stream_genre>HOUSE DANCE</stream_genre>
     <stream_bitrate>48</stream_bitrate>
   </item>
   <item>
     <location>http://lounge-aacp.rautemusik.fm/listen.pls</location>
     <title>Lounge</title>
     <annotation> Ambient, (Nu)Jazz, Downtempo, Latin, Chillout &amp; Music for Lounge-Lovers</annotation>
-    <stream_url>http://91.121.77.64:14100/</stream_url>
+    <stream_url>http://91.121.77.64:14100</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -559,7 +569,7 @@
     <location>http://goldies-aacp.rautemusik.fm/listen.pls</location>
     <title>Goldies</title>
     <annotation>60s, 70s, 80s, Oldies</annotation>
-    <stream_url>http://91.121.77.64:11100/</stream_url>
+    <stream_url>http://91.121.77.64:11100</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -572,7 +582,7 @@
     <location>http://harder-aacp.rautemusik.fm/listen.pls</location>
     <title>HardeR</title>
     <annotation>Hardstyle, Hardcore, Techno, Schranz</annotation>
-    <stream_url>http://87.106.71.142:15100/</stream_url>
+    <stream_url>http://178.77.93.185:10000</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -585,7 +595,7 @@
     <location>http://oriental-aacp.rautemusik.fm/listen.pls</location>
     <title>Oriental</title>
     <annotation>Arabische Musik</annotation>
-    <stream_url>http://91.121.77.64:17100/</stream_url>
+    <stream_url>http://80.237.157.30:10000</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -598,7 +608,7 @@
     <location>http://bcb-aacp.rautemusik.fm/listen.pls</location>
     <title>BigCityBeats</title>
     <annotation>Electronic, House, Dance</annotation>
-    <stream_url>http://80.237.157.30:11000/</stream_url>
+    <stream_url>http://91.121.77.64:16100</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/aacp</stream_type>

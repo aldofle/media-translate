@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -223,7 +231,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -355,6 +363,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -616,10 +626,6 @@
   <item>
     <title>Press TV</title>
     <location>http://181.tv.mozhay.net</location>
-    <stream_url>http://181.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>НТВ</title>
@@ -736,10 +742,6 @@
   <item>
     <title>Мультимания</title>
     <location>http://118.tv.mozhay.net</location>
-    <stream_url>http://118.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>Disney</title>
@@ -776,18 +778,10 @@
   <item>
     <title>Улыбка ребёнка</title>
     <location>http://148.tv.mozhay.net</location>
-    <stream_url>http://148.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>HOD HOD</title>
     <location>http://144.tv.mozhay.net</location>
-    <stream_url>http://144.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>Русский иллюзион</title>
@@ -832,10 +826,6 @@
   <item>
     <title>Феникс+кино</title>
     <location>http://053.tv.mozhay.net</location>
-    <stream_url>http://053.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>SET</title>
@@ -928,10 +918,6 @@
   <item>
     <title>ВТВ</title>
     <location>http://131.tv.mozhay.net</location>
-    <stream_url>http://131.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>7ТВ</title>
@@ -984,10 +970,6 @@
   <item>
     <title>МузТВ</title>
     <location>http://131.tv.mozhay.net</location>
-    <stream_url>http://131.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>Европа + ТВ</title>
@@ -1000,10 +982,6 @@
   <item>
     <title>Шансон ТВ</title>
     <location>http://138.tv.mozhay.net</location>
-    <stream_url>http://138.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>Спорт 1</title>
@@ -1064,10 +1042,6 @@
   <item>
     <title>JSC Sport Global</title>
     <location>http://146.tv.mozhay.net</location>
-    <stream_url>http://146.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>Непонятный канал</title>
@@ -1128,10 +1102,6 @@
   <item>
     <title>Моя планета</title>
     <location>http://126.tv.mozhay.net</location>
-    <stream_url>http://126.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>Da Vinci learning</title>
@@ -1224,10 +1194,6 @@
   <item>
     <title>TV Sale</title>
     <location>http://127.tv.mozhay.net</location>
-    <stream_url>http://127.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>TV Club</title>
@@ -1256,10 +1222,6 @@
   <item>
     <title>Телекафе</title>
     <location>http://118.tv.mozhay.net</location>
-    <stream_url>http://118.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>Ретро</title>
@@ -1296,10 +1258,6 @@
   <item>
     <title>Живи</title>
     <location>http://118.tv.mozhay.net</location>
-    <stream_url>http://118.tv.mozhay.net</stream_url>
-    <stream_class>video</stream_class>
-    <stream_type>video/x-msvideo</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <title>Загородная жизнь</title>

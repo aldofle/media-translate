@@ -77,6 +77,8 @@ do_work()
   return $RC_FAIL
 }
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -q -s '\(www\.\)*linecinema\.org/.*\.html$'; then
   do_work
   return $?

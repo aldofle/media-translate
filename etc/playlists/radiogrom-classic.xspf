@@ -18,18 +18,13 @@
       <title>Радио BBC Radio 3</title>
       <annotation>Одна из самых популярных радиостанций Великобритании, вещающая классическую музыку. Формат BBC Radio 3: классическая музыка, джаз, драматическая музыка и национальная музыка мира.</annotation>
     
-<meta rel="stream_url">mmsh://wmlive.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_eq1_sl0</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_server">_empty_</meta>
-<meta rel="stream_type">audio/x-ms-wma</meta>
-<meta rel="stream_protocol">mmsh</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_wqxr_fm_online.html</location>
       <title>Радио WQXR FM</title>
       <annotation>WQXR FM - это старейшая радиостанция США (работает с 1939 года), вещающая классическую музыку. </annotation>
     
-<meta rel="stream_url">mmsh://wnyc.streamguys.com/wqxr</meta>
+<meta rel="stream_url">mmsh://wnycwm.streamguys.com/bumpers/wnycam-fm.wma</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_server">_empty_</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
@@ -51,10 +46,6 @@
       <title>Radio Suisse Classique</title>
       <annotation>Radio Suisse Classique - швейцарская радиостанция, передающая классическую музыку без перерыва с анонсами на французском языке. В плейлисте Radio Suisse Classique чаще всего встречаются такие имена как Giuseppe Verdi, Vincenzo Bellini, Edvard Grieg, Wolfgang Amadeus Mozart, Niccolo Paganini.</annotation>
     
-<meta rel="stream_url">http://stream.srg-ssr.ch/rsc_fr/mp3_128.asx</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_type">audio/x-ms-asx</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
     <track>
       <location>http://www.radiogrom.com/online/classic/radio_Pop_Classical_Music_online.html</location>

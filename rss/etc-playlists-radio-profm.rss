@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -223,7 +231,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -355,6 +363,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -486,9 +496,9 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM Live</stream_title>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>0</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8032/dancefm.mp3</location>
@@ -499,8 +509,8 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM Dance</stream_title>
-    <stream_genre>LIVE</stream_genre>
+    <stream_title>DanceFM Live</stream_title>
+    <stream_genre>live</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
@@ -512,9 +522,8 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM Guns'n'Roses</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM</stream_title>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8332/profmrogen.mp3</location>
@@ -525,9 +534,8 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM Romania, Gen</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM RO Gen</stream_title>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8360/profmmichaeljackson.mp3</location>
@@ -539,8 +547,7 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Michael Jackson</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8042/alternativ.mp3</location>
@@ -552,8 +559,7 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Alternative</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8052/black.mp3</location>
@@ -565,7 +571,6 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Black</stream_title>
-    <stream_genre>LIVE</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
@@ -577,9 +582,9 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM Classic</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM Clasic</stream_title>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>224</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8112/gold.mp3</location>
@@ -591,8 +596,8 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Gold</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8062/reggae.mp3</location>
@@ -604,8 +609,7 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Reggae</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8122/80s.mp3</location>
@@ -616,9 +620,9 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM `80s</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM 80s</stream_title>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8092/90s.mp3</location>
@@ -629,9 +633,9 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM `90s</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM 90s</stream_title>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8072/love.mp3</location>
@@ -643,8 +647,8 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Love</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8132/sofa.mp3</location>
@@ -656,8 +660,8 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Sofa</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8142/rock.mp3</location>
@@ -669,8 +673,8 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Rock</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8152/blues.mp3</location>
@@ -681,9 +685,9 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM Rhythm&amp;Blues</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM Rhythm and Blues</stream_title>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8162/latino.mp3</location>
@@ -695,8 +699,8 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Latino</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8212/jazz.mp3</location>
@@ -708,8 +712,7 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Jazz</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8222/oldies.mp3</location>
@@ -721,8 +724,7 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Oldies</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8232/chillout.mp3</location>
@@ -733,9 +735,8 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM ChillOut</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM Chillout</stream_title>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8242/profmro.mp3</location>
@@ -747,8 +748,7 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM RO</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8252/hot.mp3</location>
@@ -759,9 +759,9 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM HOT</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM Hot</stream_title>
+    <stream_genre>live</stream_genre>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8312/house.mp3</location>
@@ -772,9 +772,8 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM HOUSE</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM House</stream_title>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8322/classicrock.mp3</location>
@@ -785,9 +784,8 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM Classic Rock</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_title>ProFM ClassicRock</stream_title>
+    <stream_bitrate>112</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8410/campus.mp3</location>
@@ -798,35 +796,19 @@
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM Campus Bucuresti</stream_title>
-    <stream_genre>LIVE</stream_genre>
+    <stream_title>Music-FM Bucuresti</stream_title>
+    <stream_genre>live</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://82.77.127.233:80/campus.mp3</location>
     <title>ProFM Campus Cluj</title>
     <image/>
-    <stream_url>http://82.77.127.233:80/campus.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM Campus Cluj</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://193.226.19.85:80/campus.mp3</location>
     <title>ProFM Campus Tg. Mures</title>
     <image/>
-    <stream_url>http://193.226.19.85:80/campus.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>ProFM Campus Tg. Mures</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://stream.profm.ro:8262/kids.mp3</location>
@@ -838,8 +820,7 @@
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>ProFM Kids</stream_title>
-    <stream_genre>LIVE</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <stream_bitrate>112</stream_bitrate>
   </item>
 </channel>
 

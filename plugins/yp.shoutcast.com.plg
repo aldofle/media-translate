@@ -26,6 +26,8 @@
 # http://yp.shoutcast.com/sbin/tunein-station.pls?id=1116397
 #
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -q -s '\.*shoutcast\.com/.*?id=[0-9].*$'; then 
 
   local station_id=`echo "$arg_url" | sed -e 's/.*[?&]id=//;s/&.*//'`

@@ -11,21 +11,23 @@
 <meta rel="stream_url">http://stream.rtfm.fm</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
-<meta rel="stream_type">audio/x-mpeg</meta>
+<meta rel="stream_type">audio/mpeg</meta>
 <meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">RTFM.fm</meta>
+<meta rel="stream_bitrate">128</meta>
 </track>
 <track>
   <location>http://station.ru/RadioStation.aspx?id=1743</location>
   <title>Хит FM Italy</title>
   <annotation>Итальянская эстрада, поп-музыка</annotation>
   <image>../etc/translate/rss/image/stationru/hit_italy.gif</image>
-<meta rel="stream_url">mmsh://broadcast03.station.ru/station15</meta>
+<meta rel="stream_url">mmsh://broadcast05.station.ru/station15</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">station.ru</meta>
-<meta rel="stream_server">http://station.ru/GetSongJS.aspx?id=station15</meta>
+<meta rel="stream_server">http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=station15</meta>
 <meta rel="stream_type">audio/x-ms-wma</meta>
 <meta rel="stream_protocol">mmsh</meta>
-<meta rel="stream_title">station.ru</meta>
+<meta rel="stream_title">Хит FM Italy / station.ru</meta>
 </track>
       <track>
          <location>http://voxsc1.somafm.com:8700</location>
@@ -66,14 +68,6 @@
          <meta rel="genre">Electronic Chillout Ambient</meta>
          <meta rel="url">http://www.di.fm</meta>
       
-<meta rel="stream_url">http://u11b.di.fm:80/di_chillout_aacplus</meta>
-<meta rel="stream_class">audio</meta>
-<meta rel="stream_soft">icecast</meta>
-<meta rel="stream_type">audio/aacp</meta>
-<meta rel="stream_protocol">http</meta>
-<meta rel="stream_title">Chillout - D I G I T A L L Y - I M P O R T E D - ambient psy chillout, check out our trippy flavors!</meta>
-<meta rel="stream_genre">Electronic Chillout Ambient</meta>
-<meta rel="stream_bitrate">40</meta>
 </track>
    </trackList>
 </playlist>

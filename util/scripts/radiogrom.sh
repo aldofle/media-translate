@@ -41,6 +41,7 @@ process "russia"
 process "belarus_fm"
 process "ua_fm"
 process "radio_france"
+process "great_britain"
 process "internet_europe"
 
 rm -f $TMPFILE.*
