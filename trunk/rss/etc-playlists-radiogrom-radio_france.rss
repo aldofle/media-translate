@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -223,7 +231,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -355,6 +363,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -479,7 +489,7 @@
   <title>Radiogrom.com - radio_france</title>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/radio_maxlaradio_fr_online.html</location>
-    <title> - Радио MAXLARADIO </title>
+    <title> - Радио MAXLARADIO слушать онлайн</title>
     <stream_url>http://91.121.62.121:9410</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -490,23 +500,23 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/radio_48fm_fr_online.html</location>
-    <title> - Радио 48FM </title>
+    <title> - Радио 48FM слушать онлайн</title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/radio_pulsar_fr_online.html</location>
-    <title>- Радио Pulsar </title>
+    <title>- Радио Pulsar слушать онлайн</title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/one_station_fr_online.html</location>
-    <title>- Радио One Station </title>
+    <title>- Радио One Station слушать онлайн</title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/maxx_france_online.html</location>
-    <title>- Радио MaxxHits </title>
+    <title>- Радио MaxxHits слушать онлайн</title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/radio_france/virgin_radio_france_online.html</location>
-    <title>- Радио Virgin Radio - Scene Francaise </title>
+    <title>- Радио Virgin Radio - Scene Francaise слушать онлайн</title>
   </item>
 </channel>
 

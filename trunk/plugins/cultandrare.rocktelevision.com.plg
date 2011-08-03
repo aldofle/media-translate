@@ -28,7 +28,8 @@
 local UVGINFO=$TMPFILE.uvginfo
 
 if echo "${arg_url}" | grep -q -s 'cultandrare\.rocktelevision\.com/.*/VideoId/[0-9][0-9]*/.*$'; then 
-	
+
+	unset RESOLVE_CACHE_ENABLED
 	local video_id=`echo "${arg_url}" | sed 's/.*VideoId\///;s/\/.*//g'`
 
 #http://cultandrare.rocktelevision.com/DesktopModules/UltraVideoGallery/vId.aspx?vId=84&portalId=0&timeStamp=6201117&baseUrl=/DesktopModules/UltraVideoGallery/

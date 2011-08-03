@@ -30,6 +30,8 @@
 #
 # required CURL
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -q -s '\(www\.\|france\.\)*ivi\.ru/\(video/view/\|movie\.php\)?id=.*$'; then 
 
   get_opt "HD"

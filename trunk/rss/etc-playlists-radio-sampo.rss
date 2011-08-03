@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -268,7 +276,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -468,6 +476,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -595,12 +605,13 @@
     <title>Радио Импульс</title>
     <image>../etc/translate/rss/image/sampo/impulse.png</image>
     <location>http://radio.sampo.ru/impulse.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/impulse.mp3</stream_url>
+    <stream_url>http://radio.sampo.ru:8001/impulse.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Radio Impulse</stream_title>
+    <stream_genre>Dance</stream_genre>
     <stream_bitrate>192</stream_bitrate>
   </item>
   <item>
@@ -608,9 +619,9 @@
     <title>НАШЕ радио - Петрозаводск</title>
     <image>../etc/translate/rss/image/sampo/nashe-ptz.png</image>
     <location>http://radio.sampo.ru/nashe-ptz.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/nashe-ptz.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_type>audio/mpeg</stream_type>
+    <stream_url>http://radio.sampo.ru:8000/nashe-ptz.mp3</stream_url>
+    <stream_class>video</stream_class>
+    <stream_type>video/x-msvideo</stream_type>
     <stream_protocol>http</stream_protocol>
   </item>
   <item>
@@ -618,13 +629,13 @@
     <title>Teodor</title>
     <image>../etc/translate/rss/image/sampo/teodor.png</image>
     <location>http://radio.sampo.ru/teodor.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/teodor-radio.mp3</stream_url>
+    <stream_url>http://radio.sampo.ru:8000/teodor-radio.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>Teodor radio</stream_title>
-    <stream_genre>Various</stream_genre>
+    <stream_title>Teodor Radio</stream_title>
+    <stream_genre>Hardstyle</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
@@ -650,21 +661,13 @@
     <title>Rock Radio 1</title>
     <image>../etc/translate/rss/image/sampo/rockradio1.png</image>
     <location>http://radio.sampo.ru/rockradio1.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/rockradio1.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>RockRadio1.Com - Classic Hard Rock &amp; Heavy Metal Mix, 24/7 Live Requests / www.rockradio1.com</stream_title>
-    <stream_genre>Classic Rock Metal</stream_genre>
-    <stream_bitrate>192</stream_bitrate>
   </item>
   <item>
     <annotation>BassDrive is a 24/7 drum and bass radio station featuring live shows with guest DJs, as well as broadcasts from venues all over the world representing the best of drum and bass &amp; jungle music. BassDrive is also a new record label promoting US drum and bass. BassDrive internet radio offers superior sound quality in comparison to other online drum n bass and techno radio stations. Please tune in by clicking one of the tune-in buttons in the top right corner. Please refer to our help section if you experience problems listening to our online radio.</annotation>
     <title>Bassdrive radio</title>
     <image>../etc/translate/rss/image/sampo/bassdrive.png</image>
     <location>http://radio.sampo.ru/bassdrive.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/bassdrive.mp3</stream_url>
+    <stream_url>http://radio.sampo.ru:8000/bassdrive.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -692,21 +695,21 @@
     <title>DeepBassNine</title>
     <image>../etc/translate/rss/image/sampo/deepbassnine.png</image>
     <location>http://radio.sampo.ru/deepbassnine.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/deepbassnine.mp3</stream_url>
+    <stream_url>http://radio.sampo.ru:8001/deepbassnine.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>DB9 Radio - db9radio.com</stream_title>
     <stream_genre>Electronic, Drum and Bass, Breaks, Dubstep, Oldschool Hardcore</stream_genre>
-    <stream_bitrate>160</stream_bitrate>
+    <stream_bitrate>192</stream_bitrate>
   </item>
   <item>
     <annotation>Европа Плюс - это современное радио для молодых и активных людей! Первая коммерческая радиостанция в российском эфире начала вещание 30 апреля 1990 года в Москве на частоте 106,2 FM. Входит в Европейскую медиа группу. Европа Плюс - это лучшая популярная музыка в актуальном стиле в исполнении отечественных и зарубежных звезд.</annotation>
     <title>Европа Плюс</title>
     <image>../etc/translate/rss/image/sampo/europaplus.png</image>
     <location>http://radio.sampo.ru/europaplus.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/europaplus.mp3</stream_url>
+    <stream_url>http://radio.sampo.ru:8001/europaplus.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -720,7 +723,7 @@
     <title>Aggression</title>
     <image>../etc/translate/rss/image/sampo/chronix_aggression.png</image>
     <location>http://radio.sampo.ru/chronix_aggression.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/chronix_aggression.mp3</stream_url>
+    <stream_url>http://radio.sampo.ru:8000/chronix_aggression.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -734,13 +737,12 @@
     <title>Радио Ваня</title>
     <image>../etc/translate/rss/image/sampo/vanya.png</image>
     <location>http://radio.sampo.ru/vanya.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/vanya.mp3</stream_url>
+    <stream_url>http://radio.sampo.ru:8001/vanya.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Radio Vanya</stream_title>
-    <stream_genre>Radio Vanya</stream_genre>
     <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
@@ -748,21 +750,13 @@
     <title>Радио Юность</title>
     <image>../etc/translate/rss/image/sampo/unost.png</image>
     <location>http://radio.sampo.ru/unost.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/unost.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>ЮFM ТОМСК УКВ 68.0 MHz</stream_title>
-    <stream_genre>live</stream_genre>
-    <stream_bitrate>192</stream_bitrate>
   </item>
   <item>
     <annotation>Автолюбителям, а также любителям хорошей музыки «Первое автомобильное радио» предлагает слушать музыку, которую узнают с первых тактов и напевают, развлекательные программы с участием суперзвезд, актуальную, интересную, оперативную информацию, увлекательные, динамичные игры в эфире.</annotation>
     <title>Авторадио</title>
     <image>../etc/translate/rss/image/sampo/avtoradio.png</image>
     <location>http://radio.sampo.ru/avtoradio.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/avtoradio.mp3</stream_url>
+    <stream_url>http://radio.sampo.ru:8001/avtoradio.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -776,12 +770,12 @@
     <title>Радио Модерн</title>
     <image>../etc/translate/rss/image/sampo/modern.png</image>
     <location>http://radio.sampo.ru/modern.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/modern.mp3</stream_url>
+    <stream_url>http://radio.sampo.ru:8001/modern.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>РАDИО МОDЕРН</stream_title>
+    <stream_title>Radio Modern</stream_title>
     <stream_genre>Various</stream_genre>
     <stream_bitrate>160</stream_bitrate>
   </item>
@@ -790,11 +784,6 @@
     <title>Радио Эхо Москвы</title>
     <image>../etc/translate/rss/image/sampo/echo-moskvy.png</image>
     <location>http://radio.sampo.ru/echo-moskvy.mp3</location>
-    <stream_url>http://radio.sampo.ru:8088/echo-moskvy.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <annotation>Радио Рекорд — первая танцевальная радиостанция России с самой развитой структурой: помимо радио, это одна из крупнейших в Европе event-компаний с собственным record-лейблом.</annotation>
@@ -808,7 +797,7 @@
     <stream_protocol>http</stream_protocol>
     <stream_title>Radio Record</stream_title>
     <stream_genre>Dance</stream_genre>
-    <stream_bitrate>32</stream_bitrate>
+    <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <annotation>Все, кто любит и любим – вот слушатели LOVE RADIO. Песни, звучащие на этой волне на разных языках – только о любви. В программах этой волнующей радиостанции - признания и любовные истории обычных людей, а также романтические воспоминания знаменитых артистов. </annotation>

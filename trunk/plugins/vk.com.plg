@@ -28,6 +28,8 @@
 # options:
 #   HD:[0|1|2]
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -qs '\(vk\.com\|vkontakte\.ru\)/video_ext\.php?.*$'; then 
 
   get_opt "HD"

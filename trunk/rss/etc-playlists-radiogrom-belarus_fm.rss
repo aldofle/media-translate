@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -223,7 +231,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -355,6 +363,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -478,8 +488,23 @@
   </script><channel>
   <title>Radiogrom.com - belarus_fm</title>
   <item>
+    <location>http://www.radiogrom.com/online/belarus_fm/radio_minsk_92_4_fm.html</location>
+    <title>- Радио Минск слушать онлайн</title>
+    <stream_url>http://93.84.113.142:8000/radio</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>Latina</stream_genre>
+    <stream_bitrate>128</stream_bitrate>
+  </item>
+  <item>
+    <location>http://www.radiogrom.com/online/belarus_fm/radio_minskaya_volna_97_4_fm.html</location>
+    <title>- Радио Минская Волна слушать онлайн</title>
+  </item>
+  <item>
     <location>http://www.radiogrom.com/online/belarus_fm/russkoe_radio_minsk_online.html</location>
-    <title>- Русское радио Минск </title>
+    <title>- Русское радио Минск слушать онлайн</title>
     <stream_url>http://live.rusradio.by:8000/live</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -490,7 +515,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/radio_gomel_online.html</location>
-    <title>- Радио Гомель </title>
+    <title>- Радио Гомель слушать онлайн</title>
     <stream_url>http://skycast.su:2007/998</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -501,8 +526,8 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/pilot_fm_online.html</location>
-    <title>- Пилот FM </title>
-    <stream_url>http://radio.solo.by:8002/pilotfm</stream_url>
+    <title>- Пилот FM слушать онлайн</title>
+    <stream_url>http://www.live.bn.by:8000/pilotfm_128</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -511,18 +536,11 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/evroradio_online.html</location>
-    <title>- Еврорадио </title>
-    <stream_url>http://212.69.72.6:8100/</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Modern Rock</stream_genre>
-    <stream_bitrate>128</stream_bitrate>
+    <title>- Еврорадио слушать онлайн</title>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/radius_fm_online.html</location>
-    <title>- Радиус FM </title>
+    <title>- Радиус FM слушать онлайн</title>
     <stream_url>mms://livecast.tvr.by/radio4</stream_url>
     <stream_class>audio</stream_class>
     <stream_server>_empty_</stream_server>
@@ -531,18 +549,18 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/unistar_fm_online.html</location>
-    <title>- Радио Unistar </title>
+    <title>- Радио Unistar слушать онлайн</title>
     <stream_url>http://213.184.232.36:8000/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_genre>radio</stream_genre>
+    <stream_genre>Various</stream_genre>
     <stream_bitrate>128</stream_bitrate>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/alfa_radio_online.html</location>
-    <title>- Альфа Радио </title>
+    <title>- Альфа Радио слушать онлайн</title>
     <stream_url>http://86.57.151.4:8009/</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -553,7 +571,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/novoe_radio_online.html</location>
-    <title>- Новое Радио </title>
+    <title>- Новое Радио слушать онлайн</title>
     <stream_url>http://streaming.telecom.by:8001/novoeradio-128kb</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
@@ -564,7 +582,7 @@
   </item>
   <item>
     <location>http://www.radiogrom.com/online/belarus_fm/ba_radio_online.html</location>
-    <title>- Радио Би Эй </title>
+    <title>- Радио Би Эй слушать онлайн</title>
     <stream_url>http://radio.solo.by:8002/radioba</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>

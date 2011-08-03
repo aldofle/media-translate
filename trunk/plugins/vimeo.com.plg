@@ -29,6 +29,8 @@
 # options:
 #   HD:[0|1]
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -q -s '\(www\.\)*vimeo\.com.*/\(moogaloop.swf?clip_id=\)*[0-9][0-9]*$'; then 
 
   local TIMELIFE=60

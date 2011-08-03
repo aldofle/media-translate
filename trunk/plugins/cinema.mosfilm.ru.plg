@@ -25,6 +25,8 @@
 # http://www.cinema.mosfilm.ru/Film.aspx?id=ee914026-6828-4327-9f31-a3a63623dbd1
 #
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -qs '\(www\.\)*cinema\.mosfilm\.ru/Film.aspx?id=.*$'; then 
 
   local url

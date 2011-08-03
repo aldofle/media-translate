@@ -10,7 +10,7 @@
          <meta rel="genre">Electronic Chillout Dream</meta>
          <meta rel="url">http://www.sky.fm/dreamscapes</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_dreamscapes_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_dreamscapes_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -27,7 +27,7 @@
          <meta rel="genre">Jazz Smooth Vocals</meta>
          <meta rel="url">http://www.sky.fm/vocalsmoothjazz/</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_vocalsmoothjazz_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_vocalsmoothjazz_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -44,7 +44,7 @@
          <meta rel="genre">Opera Classical Pop</meta>
          <meta rel="url">http://www.sky.fm/romantica/</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_romantica_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_romantica_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -61,7 +61,7 @@
          <meta rel="genre">Indie Rock Alternative</meta>
          <meta rel="url">http://www.sky.fm/indierock/</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_indierock_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_indierock_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -78,7 +78,7 @@
          <meta rel="genre">Punk Rock Pop</meta>
          <meta rel="url">http://www.sky.fm/poppunk/</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_poppunk_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_poppunk_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -95,7 +95,7 @@
          <meta rel="genre">Jpop Japan Pop</meta>
          <meta rel="url">http://www.sky.fm/jpop/</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_jpop_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_jpop_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -112,7 +112,7 @@
          <meta rel="genre">Soft Smooth Jazz</meta>
          <meta rel="url">http://www.sky.fm/smoothjazz/</meta>
       
-<meta rel="stream_url">http://u14b.sky.fm:80/sky_smoothjazz_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_smoothjazz_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -129,7 +129,7 @@
          <meta rel="genre">Uptempo Smooth Jazz</meta>
          <meta rel="url">http://www.sky.fm/uptemposmoothjazz/</meta>
       
-<meta rel="stream_url">http://u14b.sky.fm:80/sky_uptemposmoothjazz_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_uptemposmoothjazz_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -146,7 +146,7 @@
          <meta rel="genre">Pop Top 40 Dance Rock</meta>
          <meta rel="url">http://www.sky.fm/tophits/</meta>
       
-<meta rel="stream_url">http://u14b.sky.fm:80/sky_tophits_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_tophits_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -163,7 +163,7 @@
          <meta rel="genre">80s Pop Rock Decades</meta>
          <meta rel="url">http://www.sky.fm/the80s/</meta>
       
-<meta rel="stream_url">http://u15b.sky.fm:80/sky_the80s_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_the80s_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -180,7 +180,7 @@
          <meta rel="genre">70s Hits Oldies Decades</meta>
          <meta rel="url">http://www.sky.fm/hit70s/</meta>
       
-<meta rel="stream_url">http://u15b.sky.fm:80/sky_hit70s_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_hit70s_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -197,7 +197,7 @@
          <meta rel="genre">Decades Oldies 60s 70s</meta>
          <meta rel="url">http://www.sky.fm/oldies</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_oldies_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_oldies_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -214,7 +214,7 @@
          <meta rel="genre">classical easy symphonic</meta>
          <meta rel="url">http://www.sky.fm</meta>
       
-<meta rel="stream_url">http://u15b.sky.fm:80/sky_classical_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_classical_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -231,7 +231,7 @@
          <meta rel="genre">Flamenco Classical Guitar</meta>
          <meta rel="url">http://www.sky.fm/guitar/</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_guitar_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_guitar_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -248,7 +248,7 @@
          <meta rel="genre">Piano Classical New Age</meta>
          <meta rel="url">http://www.sky.fm/piano/</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_solopiano_aacplus</meta>
+<meta rel="stream_url">http://u16.sky.fm:80/sky_solopiano_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -265,7 +265,7 @@
          <meta rel="genre">New Age World</meta>
          <meta rel="url">http://www.sky.fm/newage/</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_newage_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_newage_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -282,7 +282,7 @@
          <meta rel="genre">World New Age Newage</meta>
          <meta rel="url">http://www.sky.fm/world</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_world_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_world_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -299,7 +299,7 @@
          <meta rel="genre">Roots Reggae Island World</meta>
          <meta rel="url">http://www.sky.fm/rootsreggae/</meta>
       
-<meta rel="stream_url">http://u14b.sky.fm:80/sky_rootsreggae_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_rootsreggae_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -316,7 +316,7 @@
          <meta rel="genre">Lounge Downtempo Eclectic</meta>
          <meta rel="url">http://www.sky.fm/datempolounge/</meta>
       
-<meta rel="stream_url">http://u15b.sky.fm:80/sky_datempolounge_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_datempolounge_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -333,7 +333,7 @@
          <meta rel="genre">Jazz Piano Classical</meta>
          <meta rel="url">http://www.sky.fm/pianojazz/</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_pianojazz_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_pianojazz_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -350,7 +350,7 @@
          <meta rel="genre">Country New Country Top 40</meta>
          <meta rel="url">http://www.sky.fm/country/</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_country_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_country_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -367,7 +367,7 @@
          <meta rel="genre">Bossa Nova Jazz</meta>
          <meta rel="url">http://www.sky.fm/bossanova/</meta>
       
-<meta rel="stream_url">http://u15b.sky.fm:80/sky_bossanova_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_bossanova_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -384,7 +384,7 @@
          <meta rel="genre">Alternative Rock Adult Hits</meta>
          <meta rel="url">http://www.sky.fm/altrock/</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_altrock_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_altrock_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -401,7 +401,7 @@
          <meta rel="genre">Classic Rock 70s 80s</meta>
          <meta rel="url">http://www.sky.fm/classicrock/</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_classicrock_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_classicrock_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -418,7 +418,7 @@
          <meta rel="genre">Jazz Bebop Swing</meta>
          <meta rel="url">http://www.sky.fm/bebop</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_bebop_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_bebop_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -435,7 +435,7 @@
          <meta rel="genre">Soundtracks Film Classical</meta>
          <meta rel="url">http://www.sky.fm/soundtracks/</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_soundtracks_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_soundtracks_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -452,7 +452,7 @@
          <meta rel="genre">Christian Pop Spiritual</meta>
          <meta rel="url">http://www.sky.fm/christian/</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_christian_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_christian_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -469,7 +469,7 @@
          <meta rel="genre">Hip Hop Rap Old School</meta>
          <meta rel="url">http://www.sky.fm/classicrap</meta>
       
-<meta rel="stream_url">http://u15.sky.fm:80/sky_classicrap_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_classicrap_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -486,7 +486,7 @@
          <meta rel="genre">Latin Salsa</meta>
          <meta rel="url">http://www.sky.fm/salsa/</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_salsa_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_salsa_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -503,7 +503,7 @@
          <meta rel="genre">Dance Club Pop</meta>
          <meta rel="url">http://www.sky.fm/dance</meta>
       
-<meta rel="stream_url">http://u15b.sky.fm:80/sky_dancehits_aacplus</meta>
+<meta rel="stream_url">http://u17b.sky.fm:80/sky_dancehits_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>
@@ -520,7 +520,7 @@
          <meta rel="genre">Urban RnB Hip Hop Rap</meta>
          <meta rel="url">http://www.sky.fm/urbanjamz</meta>
       
-<meta rel="stream_url">http://u14.sky.fm:80/sky_urbanjamz_aacplus</meta>
+<meta rel="stream_url">http://u17.sky.fm:80/sky_urbanjamz_aacplus</meta>
 <meta rel="stream_class">audio</meta>
 <meta rel="stream_soft">icecast</meta>
 <meta rel="stream_type">audio/aacp</meta>

@@ -36,6 +36,8 @@ if [ ! -f $RSSCONF ]; then
     printhdflag2conf $IVI_HD
     printhdflag2conf $ZOOMBY_HD
     printhdflag2conf $VK_HD
+    echo 0 >> $RSSCONF
+    echo 0 >> $RSSCONF
 fi
 
 BASEPATH=${BASEPATH:-$TRANSLATE}
@@ -43,6 +45,7 @@ FLAC=${FLAC:-$BASEPATH/bin/flac}
 MSDL=${MSDL:-$BASEPATH/bin/msdl}
 TOUTF8=${TOUTF8:-$BASEPATH/bin/toutf8}
 XCODE=${XCODE:-$BASEPATH/bin/xcode}
+MD5=${MD5:-$BASEPATH/bin/md5}
 RTMPDUMP=${RTMPDUMP:-$BASEPATH/bin/flvstreamer}
 
 WGET=${WGET:-/usr/bin/wget}

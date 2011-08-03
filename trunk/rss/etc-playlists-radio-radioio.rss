@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -268,7 +276,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -468,6 +476,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -609,14 +619,6 @@
     <title>70s Rock</title>
     <annotation>Mix of 70s rock hits, popular album tracks, b-sides, and forgotten gems to bring back the sense of discovery and eclectic sound of early FM radio.</annotation>
     <image>../etc/translate/rss/image/radioio/70s_rock_thumb.jpg</image>
-    <stream_url>http://76.76.18.101:8018</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : 70s Rock</stream_title>
-    <stream_genre>70s Rock</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1276885</location>
@@ -637,7 +639,7 @@
     <title>Blues</title>
     <annotation>Blues music that started in the 20s and that keeps making an impact today. It's a musical and geographic journey, from the Mississippi Delta, to Chicago, Texas and beyond.</annotation>
     <image>../etc/translate/rss/image/radioio/blues_thumb.jpg</image>
-    <stream_url>http://76.76.18.101:8034</stream_url>
+    <stream_url>http://76.76.15.147:9008</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -665,7 +667,7 @@
     <title>70s Pop</title>
     <annotation>Pure retro-pop, with all the 70s hits, one hit wonders, and forgotten guilty pleasures - all the music that used to make listening to the radio really fun and exciting.</annotation>
     <image>../etc/translate/rss/image/radioio/70s_pop_thumb.jpg</image>
-    <stream_url>http://76.76.18.103:8250</stream_url>
+    <stream_url>http://76.76.15.147:9018</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -693,7 +695,7 @@
     <title>Love Songs</title>
     <annotation>This selection of feel-good love songs and easy, heartfelt favorites from the 70s to the present is not just relaxing, it's mood enhancing - and great for romancing.</annotation>
     <image>../etc/translate/rss/image/radioio/lovesongs_thumb.jpg</image>
-    <stream_url>http://76.76.18.109:8650</stream_url>
+    <stream_url>http://76.76.15.147:9038</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -707,14 +709,6 @@
     <title>Classic Rock</title>
     <annotation>Hard-rockin' favorites from the golden age of guitar rock - the songs and artists from the 60s and 70s that define classic ROCK (not pop).</annotation>
     <image>../etc/translate/rss/image/radioio/classic_rock_thumb.jpg</image>
-    <stream_url>http://76.76.18.109:8674</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Classic Rock</stream_title>
-    <stream_genre>Classic Rock</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=526477</location>
@@ -791,21 +785,13 @@
     <title>Eclectic</title>
     <annotation>Always familiar and friendly, but never mainstream, Eclectic features artists who feel like old friends, played alongside the newest adult alternative artists and bands.</annotation>
     <image>../etc/translate/rss/image/radioio/eclectic_thumb.jpg</image>
-    <stream_url>http://76.76.18.107:8466</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Eclectic</stream_title>
-    <stream_genre>Eclectic</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1276074</location>
     <title>Real Jazz</title>
     <annotation>A balanced blend of the artists and styles that comprise contemporary jazz today: bop, standards, fusion and swing, along with some classics from the past.</annotation>
     <image>../etc/translate/rss/image/radioio/real_jazz_thumb.jpg</image>
-    <stream_url>http://76.76.18.107:8884</stream_url>
+    <stream_url>http://76.76.18.109:8886</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -819,14 +805,6 @@
     <title>Smooth Jazz</title>
     <annotation>The smooth jazz instrumentals and vocals you enjoy and use to enhance the atmosphere at work, at home or at leisure, featuring all the shining stars of the smooth jazz world.</annotation>
     <image>../etc/translate/rss/image/radioio/smooth_jazz_thumb.jpg</image>
-    <stream_url>http://76.76.18.107:8866</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Smooth Jazz</stream_title>
-    <stream_genre>Smooth Jazz</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1267130</location>
@@ -847,28 +825,12 @@
     <title>Classic RnB</title>
     <annotation>Classic RnB from the 50s, 60s, 70s and early 80s - the heart &amp; soul of the best music America has ever produced. Motown, Stax, Philly Soul, Chicago Soul, doo wop, funk and more.</annotation>
     <image>../etc/translate/rss/image/radioio/classic_rnb_thumb.jpg</image>
-    <stream_url>http://76.76.18.107:8474</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Classic RnB</stream_title>
-    <stream_genre>Classic RnB</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1274888</location>
     <title>Dead</title>
     <annotation>We dig deeply into personal collections, various hidden stashes, and official releases to create a station that makes any Deadhead's dream come true and keeps it alive.</annotation>
     <image>../etc/translate/rss/image/radioio/dead_thumb.jpg</image>
-    <stream_url>http://76.76.18.109:8682</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Dead</stream_title>
-    <stream_genre>Dead</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=22661</location>
@@ -889,140 +851,60 @@
     <title>Classical</title>
     <annotation>Full, significant compositions by today's most respected conductors, artists and organizations. Symphonic/orchestral works, chamber music, vocal music, instrumentals and opera.</annotation>
     <image>../etc/translate/rss/image/radioio/classical_thumb.jpg</image>
-    <stream_url>http://76.76.18.103:8234</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Classical</stream_title>
-    <stream_genre>Classical</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275328</location>
     <title>Grunge</title>
     <annotation>The angst-guitar-rock rebellion that roared out of the Pacific Northwest in the early '90s, represented here by its originators and best-known practitioners.</annotation>
     <image>../etc/translate/rss/image/radioio/grunge_thumb.jpg</image>
-    <stream_url>http://76.76.18.109:8714</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Grunge</stream_title>
-    <stream_genre>Grunge</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1267760</location>
     <title>Todays Pop</title>
     <annotation>A fresh blend of the best releases from pop, top 40, adult contemporary, dance, RnB, hip-hop, and adult top 40, with no hard rap or hard rock.</annotation>
     <image>../etc/translate/rss/image/radioio/todays_pop_thumb.jpg</image>
-    <stream_url>http://76.76.18.107:8450</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Todays Pop</stream_title>
-    <stream_genre>Todays Pop</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1279644</location>
     <title>Indie Rock</title>
     <annotation>For discovering brand-new independent music and hearing stuff you may have missed, by emerging and established college and indie rock artists that don't fit into the mainstream.</annotation>
     <image>../etc/translate/rss/image/radioio/indie_rock_thumb.jpg</image>
-    <stream_url>http://76.76.18.103:8314</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Indie Rock</stream_title>
-    <stream_genre>Indie Rock</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1272807</location>
     <title>80s Pop</title>
     <annotation>80s pop hits from the musically transitional decade, which saw synthesizers, funk and the influence of music television creating a whole new pop era.</annotation>
     <image>../etc/translate/rss/image/radioio/80s_pop_thumb.jpg</image>
-    <stream_url>http://76.76.18.103:8266</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : 80s Pop</stream_title>
-    <stream_genre>80s Pop</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1280589</location>
     <title>80s Rock</title>
     <annotation>Mix of hitmakers and trendsetters whose sound and influence carried us from the 70s and solidified in the 80s, leading to a decade of powerful FM hits.</annotation>
     <image>../etc/translate/rss/image/radioio/80s_rock_thumb.jpg</image>
-    <stream_url>http://76.76.18.109:8698</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : 80s Rock</stream_title>
-    <stream_genre>80s Rock</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1267510</location>
     <title>Progressive Rock</title>
     <annotation>Extraordinary, experimental 60s and 70s rock that blends instrumental epics, art rock, jazz-rock fusion and psychedelia, from well-known artists as well as underground icons.</annotation>
     <image>../etc/translate/rss/image/radioio/progressive_rock_thumb.jpg</image>
-    <stream_url>http://76.76.18.109:8706</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Progressive Rock</stream_title>
-    <stream_genre>Progressive Rock</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1278130</location>
     <title>50s 60s Rock</title>
     <annotation>The birth of rock and roll in the 50s and its evolution during the 60s, as demonstrated by the legendary artists that changed our culture and the world.</annotation>
     <image>../etc/translate/rss/image/radioio/50s_60s_rock_thumb.jpg</image>
-    <stream_url>http://76.76.18.107:8506</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : 50s 60s Rock</stream_title>
-    <stream_genre>50s 60s Rock</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1272635</location>
     <title>Todays Rock</title>
     <annotation>All the best rock, all the time. Rock out to the pure, high-powered sounds of today's masters of rock, and discover the next generation of rock gods.</annotation>
     <image>../etc/translate/rss/image/radioio/todays_rock_thumb.jpg</image>
-    <stream_url>http://76.76.18.101:8042</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Todays Rock</stream_title>
-    <stream_genre>Todays Rock</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1273016</location>
     <title>Todays Country</title>
     <annotation>A complete selection of today's biggest and brightest country music stars, and all the great hits that make up the current country music landscape.</annotation>
     <image>../etc/translate/rss/image/radioio/todays_country_thumb.jpg</image>
-    <stream_url>http://76.76.18.107:8482</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Todays Country</stream_title>
-    <stream_genre>Todays Country</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1268190</location>
@@ -1085,24 +967,14 @@
     <title>RnB Mix</title>
     <annotation>Continuous RnB mix featuring music from the early 1980s to today, and all the hit-making RnB artists and songs from then and now. Perfect for listening to at work or at home.</annotation>
     <image>../etc/translate/rss/image/radioio/rnb_mix_thumb.jpg</image>
-    <stream_soft>shoutcast</stream_soft>
+    <stream_url>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1279770</stream_url>
     <stream_server>_empty_</stream_server>
-    <stream_url>http://76.76.18.109:8690</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : RnB Mix</stream_title>
-    <stream_genre>RnB Mix</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1268635</location>
     <title>Country Mix</title>
     <annotation>The ultimate country music radio station, covering the best from the 70s right up to today. Classics, career-spanning hits, and current favorites from top country artists.</annotation>
     <image>../etc/translate/rss/image/radioio/country_mix_thumb.jpg</image>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>_empty_</stream_server>
     <stream_url>http://76.76.18.101:8082</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -1131,8 +1003,6 @@
     <title>Chill</title>
     <annotation>Unique and soothing mix of down-tempo electronica, lazy trip-hop, smooth vocals and deep grooves produces the ultimate chillout.</annotation>
     <image>../etc/translate/rss/image/radioio/chill_thumb.jpg</image>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_server>_empty_</stream_server>
     <stream_url>http://76.76.18.103:8258</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>shoutcast</stream_soft>
@@ -1175,14 +1045,6 @@
     <title>Disco Hits</title>
     <annotation>All the top 40 disco hits along with the nightclub anthems you love from the mid-70s and early '80s, with no need to stay up or dress up. Put on the party mood any time!</annotation>
     <image>../etc/translate/rss/image/radioio/disco_hits_thumb.jpg</image>
-    <stream_url>http://76.76.18.103:8242</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Disco Hits</stream_title>
-    <stream_genre>Disco Hits</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275583</location>
@@ -1231,14 +1093,8 @@
     <title>Pop Mix</title>
     <annotation>The ultimate pop radio station plays the best pop music from the 70s right up to this week's chart-toppers, spanning the decades and spinning the best pop artists.</annotation>
     <image>../etc/translate/rss/image/radioio/pop_mix_thumb.jpg</image>
-    <stream_url>http://76.76.18.107:8498</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Pop Mix</stream_title>
-    <stream_genre>Pop Mix</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
+    <stream_url>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1274886</stream_url>
+    <stream_server>_empty_</stream_server>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1266278</location>
@@ -1273,28 +1129,12 @@
     <title>Dance Hits</title>
     <annotation>The best dance hits, club hits, and the hottest pop crossovers and remixes. Get the party started and keep the beat going with all these dance favorites.</annotation>
     <image>../etc/translate/rss/image/radioio/dance_hits_thumb.jpg</image>
-    <stream_url>http://76.76.18.101:8090</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Dance Hits</stream_title>
-    <stream_genre>Dance Hits</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275815</location>
     <title>60s Pop</title>
     <annotation>An exciting mix of pop music from the 60s, the decade of change: Beatles and Brits, surf sounds, the top singers and songs, hot soul and great harmonies.</annotation>
     <image>../etc/translate/rss/image/radioio/60s_pop_thumb.jpg</image>
-    <stream_url>http://76.76.18.109:8754</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : 60s Pop</stream_title>
-    <stream_genre>60s Pop</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://yp.shoutcast.com/sbin/tunein-station.pls?id=1274835</location>
@@ -1315,14 +1155,6 @@
     <title>Idols</title>
     <annotation>A showcase of new talent and captivating vocals from hot TV music competitions from around the world, taking on classic songs, chart hits and their own original tunes.</annotation>
     <image>../etc/translate/rss/image/radioio/idols_thumb.jpg</image>
-    <stream_url>http://76.76.18.109:8730</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>shoutcast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_title>radioio.com : Idols</stream_title>
-    <stream_genre>Idols</stream_genre>
-    <stream_bitrate>64</stream_bitrate>
   </item>
 </channel>
 

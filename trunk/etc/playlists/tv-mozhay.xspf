@@ -159,10 +159,6 @@
          <title>Press TV</title>
          <location>http://181.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://181.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>НТВ</title>
@@ -294,10 +290,6 @@
          <title>Мультимания</title>
          <location>http://118.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://118.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>Disney</title>
@@ -339,19 +331,11 @@
          <title>Улыбка ребёнка</title>
          <location>http://148.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://148.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>HOD HOD</title>
          <location>http://144.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://144.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>Русский иллюзион</title>
@@ -402,10 +386,6 @@
          <title>Феникс+кино</title>
          <location>http://053.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://053.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>SET</title>
@@ -510,10 +490,6 @@
          <title>ВТВ</title>
          <location>http://131.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://131.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>7ТВ</title>
@@ -573,10 +549,6 @@
          <title>МузТВ</title>
          <location>http://131.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://131.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>Европа + ТВ</title>
@@ -591,10 +563,6 @@
          <title>Шансон ТВ</title>
          <location>http://138.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://138.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>Спорт 1</title>
@@ -663,10 +631,6 @@
          <title>JSC Sport Global</title>
          <location>http://146.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://146.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>Непонятный канал</title>
@@ -735,10 +699,6 @@
          <title>Моя планета</title>
          <location>http://126.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://126.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>Da Vinci learning</title>
@@ -843,10 +803,6 @@
          <title>TV Sale</title>
          <location>http://127.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://127.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>TV Club</title>
@@ -879,10 +835,6 @@
          <title>Телекафе</title>
          <location>http://118.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://118.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>Ретро</title>
@@ -924,10 +876,6 @@
          <title>Живи</title>
          <location>http://118.tv.mozhay.net</location>
       
-<meta rel="stream_url">http://118.tv.mozhay.net</meta>
-<meta rel="stream_class">video</meta>
-<meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
 </track>
       <track>
          <title>Загородная жизнь</title>

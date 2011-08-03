@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -268,7 +276,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -468,6 +476,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -597,7 +607,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic Chillout Ambient</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15b.di.fm:80/di_chillout_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_chillout_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -613,7 +623,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm/futuresynthpop/</url>
-    <stream_url>http://u15c.di.fm:80/di_futuresynthpop_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_futuresynthpop_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -629,7 +639,7 @@
     <image>../etc/translate/rss/image/di/liquiddnb.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15.di.fm:80/di_liquiddnb_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_liquiddnb_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -645,7 +655,7 @@
     <image>../etc/translate/rss/image/di/oldschoolhouse.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15.di.fm:80/di_oldschoolhouse_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_oldschoolhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -661,7 +671,7 @@
     <image>../etc/translate/rss/image/di/chiptunes.gif</image>
     <genre>Chiptunes Video Game</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_chiptunes_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_chiptunes_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -677,7 +687,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u14.di.fm:80/di_trance_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_trance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -693,7 +703,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u14b.di.fm:80/di_vocaltrance_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_vocaltrance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -709,7 +719,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_classictrance_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_classictrance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -725,7 +735,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u14b.di.fm:80/di_techhouse_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_techhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -741,7 +751,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u14.di.fm:80/di_psychill_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_psychill_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -757,7 +767,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_chilloutdreams_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_chilloutdreams_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -773,7 +783,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_eurodance_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_eurodance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -789,7 +799,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_clubsounds_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_clubsounds_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -805,7 +815,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_discohouse_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_discohouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -821,7 +831,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15b.di.fm:80/di_dubstep_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_dubstep_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -837,7 +847,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm/electro</url>
-    <stream_url>http://u15b.di.fm:80/di_electrohouse_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_electrohouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -853,7 +863,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_classiceurodance_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_classiceurodance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -869,7 +879,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15.di.fm:80/di_house_aacplus</stream_url>
+    <stream_url>http://u16.di.fm:80/di_house_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -885,7 +895,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u14.di.fm:80/di_soulfulhouse_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_soulfulhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -901,7 +911,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm/funkyhouse/</url>
-    <stream_url>http://u15c.di.fm:80/di_funkyhouse_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_funkyhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -917,7 +927,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm/tribalhouse/</url>
-    <stream_url>http://u14.di.fm:80/di_tribalhouse_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_tribalhouse_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -933,7 +943,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15.di.fm:80/di_harddance_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_harddance_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -949,7 +959,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm/minimal</url>
-    <stream_url>http://u15.di.fm:80/di_minimal_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_minimal_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -965,7 +975,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u14.di.fm:80/di_techno_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_techno_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -981,7 +991,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u14b.di.fm:80/di_progressive_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_progressive_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -997,7 +1007,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_goapsy_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_goapsy_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1013,7 +1023,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm/hardstyle</url>
-    <stream_url>http://u15.di.fm:80/di_hardstyle_aacplus</stream_url>
+    <stream_url>http://u16.di.fm:80/di_hardstyle_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1029,7 +1039,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15.di.fm:80/di_hardcore_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_hardcore_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1045,7 +1055,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15b.di.fm:80/di_lounge_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_lounge_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1061,7 +1071,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm/exposurenyc/</url>
-    <stream_url>http://u15c.di.fm:80/di_exposurenyc_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_exposurenyc_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1077,7 +1087,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_djmixes_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_djmixes_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1093,7 +1103,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15b.di.fm:80/di_drumandbass_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_drumandbass_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1109,7 +1119,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_oldschoolelectronica_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_oldschoolelectronica_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1125,7 +1135,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15b.di.fm:80/di_breaks_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_breaks_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1141,7 +1151,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15b.di.fm:80/di_ambient_aacplus</stream_url>
+    <stream_url>http://u17b.di.fm:80/di_ambient_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -1157,12 +1167,12 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm/spacemusic/</url>
-    <stream_url>http://u14.di.fm:80/di_spacemusic_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_spacemusic_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>Space Music - D I G I T A L L Y - I M P O R T E D - ambient space music for expanding minds</stream_title>
+    <stream_title>Space Dreams - D I G I T A L L Y - I M P O R T E D - ambient space music for expanding minds</stream_title>
     <stream_genre>Electronic Space Music Ambient</stream_genre>
     <stream_bitrate>40</stream_bitrate>
   </item>
@@ -1173,7 +1183,7 @@
     <image>../etc/translate/rss/image/di/radio_di.gif</image>
     <genre>Electronic</genre>
     <url>http://www.di.fm</url>
-    <stream_url>http://u15c.di.fm:80/di_gabber_aacplus</stream_url>
+    <stream_url>http://u17.di.fm:80/di_gabber_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>

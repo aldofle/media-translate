@@ -28,6 +28,10 @@ STARTPOINT=${STARTPOINT:-''}
 CACHEPATH=${CACHEPATH:-/opt/tmp}
 TEMP=${TEMP:-/tmp}
 
+RESOLVE_CACHE_ENABLED=${RESOLVE_CACHE_ENABLED:-'yes'}
+RESOLVE_CACHE_MAX_AGE=${RESOLVE_CACHE_MAX_AGE:-259200}
+RESOLVE_CACHE_EXCLUSION_FILE=${RESOLVE_CACHE_EXCLUSION_FILE:-$BASEPATH/etc/cache.exclusion}
+
 YOUTUBE_HD=${YOUTUBE_HD:-'yes'}
 VIMEO_HD=${VIMEO_HD:-'yes'}
 IVI_HD=${IVI_HD:-'yes'}
@@ -714,8 +718,60 @@ command_info()
 {
   if [ "$arg_cmd" == "status" ]; then
     check_server
-  else
-    check_stream
+  else 
+		if [ -f "$RESOLVE_CACHE_EXCLUSION_FILE" ]; then
+			if (export arg_url; while read pattern; do if echo "$arg_url" | grep -qsi "$pattern"; then return 0; fi done; return 1) < "$RESOLVE_CACHE_EXCLUSION_FILE"; then
+				unset RESOLVE_CACHE_ENABLED
+			fi
+		fi
+  	case $RESOLVE_CACHE_ENABLED in
+  		yes|YES|Yes|1)
+  			RESOLVE_CACHE_ENABLED=1
+		  	local tsttime
+				let tsttime=`date +%s`-$RESOLVE_CACHE_MAX_AGE
+				
+				local RESOLVECACHE=$CACHEPATH/`$MD5 "$arg_url"`.resolve
+				
+				local REFRESHCACHE=yes
+				if [ -f "$RESOLVECACHE" ]; then
+				  [ `date +%s -r "$RESOLVECACHE"` -gt $tsttime ] && REFRESHCACHE=
+				fi
+				
+				if [ -n "$REFRESHCACHE" ]; then
+			    check_stream
+			    if [ "$RESOLVE_CACHE_ENABLED" == "1" -a -n "$stream_url" ]; then
+				    echo "$stream_url" > $RESOLVECACHE
+				    echo "$stream_type" >> $RESOLVECACHE
+				    echo "$stream_class" >> $RESOLVECACHE
+				    echo "$protocol" >> $RESOLVECACHE
+				    echo "$server_type" >> $RESOLVECACHE
+				    echo "$stream_status_url" >> $RESOLVECACHE
+	          echo "$icy_name" >> $RESOLVECACHE
+	          echo "$icy_genre" >> $RESOLVECACHE
+	          echo "$icy_br" >> $RESOLVECACHE
+	          echo "$icy_description" >> $RESOLVECACHE
+	          echo "$ms_author" >> $RESOLVECACHE
+	          echo "$ms_title" >> $RESOLVECACHE
+	        fi
+			  else
+		      stream_url=`sed -ne "1p" $RESOLVECACHE`
+		      stream_type=`sed -ne "2p" $RESOLVECACHE`
+		      stream_class=`sed -ne "3p" $RESOLVECACHE`
+		      protocol=`sed -ne "4p" $RESOLVECACHE`
+		      server_type=`sed -ne "5p" $RESOLVECACHE`
+		      stream_status_url=`sed -ne "6p" $RESOLVECACHE`
+		      icy_name=`sed -ne "7p" $RESOLVECACHE`
+		      icy_genre=`sed -ne "8p" $RESOLVECACHE`
+		      icy_br=`sed -ne "9p" $RESOLVECACHE`
+		      icy_description=`sed -ne "10p" $RESOLVECACHE`
+		      ms_author=`sed -ne "11p" $RESOLVECACHE`
+		      ms_title=`sed -ne "12p" $RESOLVECACHE`
+				fi
+			;;
+			*)
+				check_stream
+			;;
+		esac
   fi
   echo "Content-type: text/xml"
   echo
@@ -819,7 +875,7 @@ command_info()
               if(metaint != counter + 1)
               {
                 split($0, a, "\x27;"); 
-                if(match(a[1], /^.*StreamTitle=\x27(.*)/, arr))
+                if(match(a[1], /.*StreamTitle=\x27(.*)/, arr))
                 {
                   print arr[1];
                 }
@@ -854,16 +910,16 @@ command_info()
       esac
   
       if echo "$meta_stream_title" | $TOUTF8 -t; then
-  	meta_stream_title=`echo "$meta_stream_title" | $XCODE -s | $TOUTF8`
+				meta_stream_title=`echo "$meta_stream_title" | $XCODE -s | $TOUTF8`
       fi
       if echo "$meta_stream_genre" | $TOUTF8 -t; then
-  	meta_stream_genre=`echo "$meta_stream_genre" | $XCODE -s | $TOUTF8`
+				meta_stream_genre=`echo "$meta_stream_genre" | $XCODE -s | $TOUTF8`
       fi
       if echo "$meta_stream_description" | $TOUTF8 -t; then
-  	meta_stream_description=`echo "$meta_stream_description" | $XCODE -s | $TOUTF8`
+				meta_stream_description=`echo "$meta_stream_description" | $XCODE -s | $TOUTF8`
       fi
       
-      	  print_status_item 'server-status' "${meta_server_status}"
+			print_status_item 'server-status' "${meta_server_status}"
   	  print_status_item 'stream-status' "$meta_stream_status"
   	  print_status_item 'listener-peak' "$meta_listener_peak"
   	  print_status_item 'average-listener-time' "$meta_average_listener_time"

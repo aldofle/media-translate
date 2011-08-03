@@ -29,6 +29,8 @@
 #   HD:[0|1]
 #
 
+unset RESOLVE_CACHE_ENABLED
+
 if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; then 
 
   get_opt "HD"

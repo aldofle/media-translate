@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   
@@ -254,7 +262,7 @@
         stream_genre = getItemInfo(focus, "stream_genre");
         stream_bitrate = getItemInfo(focus, "stream_bitrate");
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -365,6 +373,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -643,13 +653,6 @@
     <id>2013</id>
     <fm>89.5</fm>
     <name>89_5</name>
-    <stream_url>http://w01-cn01.akadostream.ru:8108/megapolisfm128.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>DANCE</stream_genre>
-    <stream_bitrate>200</stream_bitrate>
   </item>
   <item>
     <location>http://webcast2.emg.fm:55655/keks128.mp3</location>
@@ -741,7 +744,7 @@
     <id>4016</id>
     <fm>92.0</fm>
     <name>92_0</name>
-    <stream_url>http://stream04.rambler.ru:80/govoritmoskva64.mp3</stream_url>
+    <stream_url>http://stream09.rambler.ru:80/govoritmoskva64.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -806,11 +809,6 @@
     <id>2020</id>
     <fm>93.6</fm>
     <name>93_6</name>
-    <stream_url>mmsh://stream03.rambler.ru:80/komersant?WMContentBitrate=150000</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_server>_empty_</stream_server>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location/>
@@ -944,13 +942,6 @@
     <id>4022</id>
     <fm>96.4</fm>
     <name>96_4</name>
-    <stream_url>http://stream.mradio.fm:8000/mradio_high.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>Various</stream_genre>
-    <stream_bitrate>96</stream_bitrate>
   </item>
   <item>
     <location>http://radiogrom.com/online/moskva_fm/detskoe_online_2.m3u</location>
@@ -1019,6 +1010,13 @@
     <id>2022</id>
     <fm>98.0</fm>
     <name>98_0</name>
+    <stream_url>http://92.243.67.124:10010/fm</stream_url>
+    <stream_class>audio</stream_class>
+    <stream_soft>icecast</stream_soft>
+    <stream_type>audio/mpeg</stream_type>
+    <stream_protocol>http</stream_protocol>
+    <stream_genre>TOP-100</stream_genre>
+    <stream_bitrate>131</stream_bitrate>
   </item>
   <item>
     <location>http://webcast2.emg.fm:55655/fresh128.mp3</location>
@@ -1057,11 +1055,6 @@
     <id>4026</id>
     <fm>98.8</fm>
     <name>98_8</name>
-    <stream_url>mmsh://mms.online.ru/v4_1_22?st=018489700123667805420090310</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_server>_empty_</stream_server>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>mmsh://live.rfn.ru/orfey/</location>
@@ -1104,12 +1097,6 @@
     <id>2000</id>
     <fm>100.1</fm>
     <name>100_1</name>
-    <stream_url>http://w01-cn01.akadostream.ru:8000/silverrain128.mp3</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_soft>icecast</stream_soft>
-    <stream_type>audio/mpeg</stream_type>
-    <stream_protocol>http</stream_protocol>
-    <stream_genre>various</stream_genre>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/moskva_fm/best_fm_online.m3u</location>
@@ -1147,7 +1134,7 @@
     <id>2002</id>
     <fm>101.2</fm>
     <name>101_2</name>
-    <stream_url>mmsh://broadcast03.station.ru/dfm</stream_url>
+    <stream_url>mmsh://broadcast05.station.ru/dfm</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
     <stream_server>http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=dfm</stream_server>
@@ -1180,7 +1167,7 @@
     <id>2004</id>
     <fm>102.1</fm>
     <name>102_1</name>
-    <stream_url>mmsh://broadcast03.station.ru/montecarlo</stream_url>
+    <stream_url>mmsh://broadcast05.station.ru/montecarlo</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
     <stream_server>http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=montecarlo</stream_server>
@@ -1196,7 +1183,7 @@
     <id>2005</id>
     <fm>102.5</fm>
     <name>102_5</name>
-    <stream_url>http://stream09.rambler.ru:80/popsa64.mp3</stream_url>
+    <stream_url>http://stream06.rambler.ru:80/popsa64.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -1244,7 +1231,7 @@
     <id>2007</id>
     <fm>103.7</fm>
     <name>103_7</name>
-    <stream_url>mmsh://broadcast03.station.ru/maximum</stream_url>
+    <stream_url>mmsh://broadcast05.station.ru/maximum</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
     <stream_server>http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=maximum</stream_server>
@@ -1260,11 +1247,6 @@
     <id>2008</id>
     <fm>104.2</fm>
     <name>104_2</name>
-    <stream_url>mmsh://89.20.132.26/v1_1_128</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_server>_empty_</stream_server>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>http://webcast.emg.fm:55655/radiosept128.mp3</location>
@@ -1293,7 +1275,7 @@
     <id>2010</id>
     <fm>105.2</fm>
     <name>105_2</name>
-    <stream_url>http://stream08.rambler.ru:80/next64.mp3</stream_url>
+    <stream_url>http://stream01.rambler.ru:80/next64.mp3</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/mpeg</stream_type>
@@ -1309,7 +1291,7 @@
     <id>4000</id>
     <fm>105.7</fm>
     <name>105_7</name>
-    <stream_url>mmsh://broadcast03.station.ru/rusradio</stream_url>
+    <stream_url>mmsh://broadcast05.station.ru/rusradio</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
     <stream_server>http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=rusradio</stream_server>
@@ -1359,7 +1341,7 @@
     <id>4003</id>
     <fm>107.0</fm>
     <name>107_0</name>
-    <stream_url>mmsh://broadcast03.station.ru/rsn</stream_url>
+    <stream_url>mmsh://broadcast05.station.ru/rsn</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
     <stream_server>http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=rsn</stream_server>
@@ -1375,7 +1357,7 @@
     <id>4008</id>
     <fm>107.4</fm>
     <name>107_4</name>
-    <stream_url>mmsh://broadcast03.station.ru/hitfm</stream_url>
+    <stream_url>mmsh://broadcast05.station.ru/hitfm</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>station.ru</stream_soft>
     <stream_server>http://station.ru/services/StationService.svc/json/GetCurrentStationTrack?stationId=hitfm</stream_server>

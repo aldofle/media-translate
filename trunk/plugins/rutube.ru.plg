@@ -71,6 +71,8 @@ rutube_video()
     esac
 }
 
+unset RESOLVE_CACHE_ENABLED
+	
 if echo "${arg_url}" | grep -q -s "video\.rutube\.ru/[0-9a-f]*$"; then 
   video_id=`echo "$arg_url" | sed -e 's/.*\///;s/&.*//'`
   rutube_video

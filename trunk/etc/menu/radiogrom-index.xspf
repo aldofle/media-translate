@@ -54,6 +54,13 @@
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/radiogrom-great_britain.xspf,collection/medialist</link>
+      <title>Радио Британии</title>
+      <annotation>Английские радиостанции. Вещание через интернет. Радио Лондона слушать онлайн online</annotation>
+      <image>../etc/translate/rss/image/menu/internetradio.png</image>
+      <meta rel="mediaDisplay">onePartView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/playlists/radiogrom-internet_europe.xspf,collection/medialist</link>
       <title>Радио Европы</title>
       <annotation>Зарубежные интернет радиостанции. Вещание через интернет. Радио онлайн</annotation>

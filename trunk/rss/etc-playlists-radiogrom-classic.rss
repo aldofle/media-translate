@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -223,7 +231,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -355,6 +363,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -491,17 +501,12 @@
     <location>http://www.radiogrom.com/online/classic/radio_bbc_3_online.html</location>
     <title>Радио BBC Radio 3</title>
     <annotation>Одна из самых популярных радиостанций Великобритании, вещающая классическую музыку. Формат BBC Radio 3: классическая музыка, джаз, драматическая музыка и национальная музыка мира.</annotation>
-    <stream_url>mmsh://wmlive.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_eq1_sl0</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_server>_empty_</stream_server>
-    <stream_type>audio/x-ms-wma</stream_type>
-    <stream_protocol>mmsh</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/classic/radio_wqxr_fm_online.html</location>
     <title>Радио WQXR FM</title>
     <annotation>WQXR FM - это старейшая радиостанция США (работает с 1939 года), вещающая классическую музыку. </annotation>
-    <stream_url>mmsh://wnyc.streamguys.com/wqxr</stream_url>
+    <stream_url>mmsh://wnycwm.streamguys.com/bumpers/wnycam-fm.wma</stream_url>
     <stream_class>audio</stream_class>
     <stream_server>_empty_</stream_server>
     <stream_type>audio/x-ms-wma</stream_type>
@@ -521,10 +526,6 @@
     <location>http://www.radiogrom.com/online/classic/radio_Suisse_Classique_online.html</location>
     <title>Radio Suisse Classique</title>
     <annotation>Radio Suisse Classique - швейцарская радиостанция, передающая классическую музыку без перерыва с анонсами на французском языке. В плейлисте Radio Suisse Classique чаще всего встречаются такие имена как Giuseppe Verdi, Vincenzo Bellini, Edvard Grieg, Wolfgang Amadeus Mozart, Niccolo Paganini.</annotation>
-    <stream_url>http://stream.srg-ssr.ch/rsc_fr/mp3_128.asx</stream_url>
-    <stream_class>audio</stream_class>
-    <stream_type>audio/x-ms-asx</stream_type>
-    <stream_protocol>http</stream_protocol>
   </item>
   <item>
     <location>http://www.radiogrom.com/online/classic/radio_Pop_Classical_Music_online.html</location>

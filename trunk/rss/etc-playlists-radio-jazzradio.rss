@@ -42,6 +42,14 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
 
+  testStream = 0;
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 10);
+    if(value != null &amp;&amp; value != "")
+      testStream = Integer(value);
+  }
+
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
   storagePath_playlist    = storagePath + "playlist.dat";
@@ -268,7 +276,7 @@
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
         
-        if(stream_class == "" || stream_class == null)
+        if(stream_class == "" || stream_class == null || testStream == 1)
           stream_class = "unknown";
 
         if(stream_url == "" || stream_url == null)
@@ -468,6 +476,8 @@
   </rssDispatcher>
 
   <unknownDispatcher>
+    if(testStream == 1 &amp;&amp; playlist_autoplay == 1)
+      request_options = "Resolve-playlist:1";
     info_url    = translate_base_url + "info," + request_options + "," + urlEncode(request_url);
     error_info  = "";
 
@@ -595,7 +605,7 @@
     <title>Trumpet Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/trumpetjazz.png</image>
     <annotation>Jazz from the genre's best trumpeters.</annotation>
-    <stream_url>http://u14.jazzradio.com:80/jr_trumpetjazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_trumpetjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -609,7 +619,7 @@
     <title>Saxophone Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/saxophonejazz.png</image>
     <annotation>One of jazz's most popular instruments, from bebop to today.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_saxophonejazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_saxophonejazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -623,7 +633,7 @@
     <title>Cool Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/cooljazz.png</image>
     <annotation>Chilled sounds from the West Coast including Brubeck, Davis, &amp; Konitz.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_cooljazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_cooljazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -637,12 +647,12 @@
     <title>Straight-Ahead</title>
     <image>../etc/translate/rss/image/jazzradio/straightahead.png</image>
     <annotation>Today's best artists keep the classics alive and push the boundaries.</annotation>
-    <stream_url>http://u14.jazzradio.com:80/jr_straightahead_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_straightahead_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
-    <stream_title>Modern Mainstream - JAZZRADIO.com</stream_title>
+    <stream_title>Straight-Ahead - JAZZRADIO.com</stream_title>
     <stream_genre>Jazz Modern Mainstream</stream_genre>
     <stream_bitrate>40</stream_bitrate>
   </item>
@@ -651,7 +661,7 @@
     <title>Classic Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/classicjazz.png</image>
     <annotation>Jazz from where it began. Hot jazz, early swing, and the solo greats.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_classicjazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_classicjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -665,7 +675,7 @@
     <title>Jazz Piano Trios</title>
     <image>../etc/translate/rss/image/jazzradio/pianotrios.png</image>
     <annotation>Jazz pianist, bassist and drummer - a perfect recipe for great jazz.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_pianotrios_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_pianotrios_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -679,7 +689,7 @@
     <title>Bebop</title>
     <image>../etc/translate/rss/image/jazzradio/bebop.png</image>
     <annotation>Swinging to the sounds of bebop and straight-ahead jazz.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_bebop_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_bebop_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -693,7 +703,7 @@
     <title>Hard Bop</title>
     <image>../etc/translate/rss/image/jazzradio/hardbop.png</image>
     <annotation>Serious head-bobbing charts from Art Blakey, Miles Davis, and more.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_hardbop_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_hardbop_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -707,7 +717,7 @@
     <title>Sinatra Style</title>
     <image>../etc/translate/rss/image/jazzradio/sinatrastyle.png</image>
     <annotation>For fans of Frank Sinatra, this channel is full of great American standards.</annotation>
-    <stream_url>http://u14.jazzradio.com:80/jr_sinatrastyle_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_sinatrastyle_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -721,7 +731,7 @@
     <title>Gypsy Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/gypsyjazz.png</image>
     <annotation>Celebrating the sounds made popular by the likes of Django Reinhardt.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_gypsyjazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_gypsyjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -735,7 +745,7 @@
     <title>Mellow Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/mellowjazz.png</image>
     <annotation>Our special mix of jazz, from classics to contemporary.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_mellowjazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_mellowjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -749,7 +759,7 @@
     <title>Piano Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/pianojazz.png</image>
     <annotation>Enjoy these historic and contemporary piano jazz masters.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_pianojazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_pianojazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -763,7 +773,7 @@
     <title>Guitar Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/guitarjazz.png</image>
     <annotation>Hear guitar jazz legends such as Wes Montgomery, Jim Hall, &amp; Les Paul.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_guitarjazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_guitarjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -777,7 +787,7 @@
     <title>Bossa Nova</title>
     <image>../etc/translate/rss/image/jazzradio/bossanova.png</image>
     <annotation>Sweet sounds of bossa nova and the flavors of Brazil.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_bossanova_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_bossanova_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -791,7 +801,7 @@
     <title>Contemporary Vocals</title>
     <image>../etc/translate/rss/image/jazzradio/vocaljazz.png</image>
     <annotation>Hear today's jazz singers reinvent and create new standards.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_vocaljazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_vocaljazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -805,7 +815,7 @@
     <title>Vocal Legends</title>
     <image>../etc/translate/rss/image/jazzradio/vocallegends.png</image>
     <annotation>Vocal legends like Ella Fitzgerald, Frank Sinatra, Billie Holiday &amp; more.</annotation>
-    <stream_url>http://u14.jazzradio.com:80/jr_vocallegends_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_vocallegends_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -819,21 +829,21 @@
     <title>Timeless Classics</title>
     <image>../etc/translate/rss/image/jazzradio/timelessclassics.png</image>
     <annotation>A unique mix of early jazz, swing, big band, and other classic tunes.</annotation>
-    <stream_url>http://u14.jazzradio.com:80/jr_timelessclassics_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_timelessclassics_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
     <stream_protocol>http</stream_protocol>
     <stream_title>Timeless Classics - JAZZRADIO.com</stream_title>
     <stream_genre>Jazz Classic</stream_genre>
-    <stream_bitrate>40</stream_bitrate>
+    <stream_bitrate>64</stream_bitrate>
   </item>
   <item>
     <location>http://listen.jazzradio.com/public1/blues.pls</location>
     <title>Blues</title>
     <image>../etc/translate/rss/image/jazzradio/blues.png</image>
     <annotation>Select picks of the very best of blues.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_blues_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_blues_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -847,7 +857,7 @@
     <title>Paris Cafe</title>
     <image>../etc/translate/rss/image/jazzradio/pariscafe.png</image>
     <annotation>Sit on the patio, enjoy the music, and watch the people go by.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_pariscafe_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_pariscafe_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -861,7 +871,7 @@
     <title>Smooth Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/smoothjazz.png</image>
     <annotation>The smoothest jazz of its kind you'll ever hear, really.</annotation>
-    <stream_url>http://u14.jazzradio.com:80/jr_smoothjazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_smoothjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -875,7 +885,7 @@
     <title>Fusion Lounge</title>
     <image>../etc/translate/rss/image/jazzradio/fusionlounge.png</image>
     <annotation>Amazing combination of jazz, lounge, bossa nova, and more.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_fusionlounge_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_fusionlounge_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -889,7 +899,7 @@
     <title>Smooth Vocals</title>
     <image>../etc/translate/rss/image/jazzradio/smoothvocals.png</image>
     <annotation>When only the best of vocal smooth jazz will do.</annotation>
-    <stream_url>http://u14.jazzradio.com:80/jr_smoothvocals_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_smoothvocals_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -903,7 +913,7 @@
     <title>Smooth Uptempo</title>
     <image>../etc/translate/rss/image/jazzradio/smoothuptempo.png</image>
     <annotation>Upbeat smooth jazz grooves from your favorite artists.</annotation>
-    <stream_url>http://u14.jazzradio.com:80/jr_smoothuptempo_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_smoothuptempo_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -917,7 +927,7 @@
     <title>Latin Jazz</title>
     <image>../etc/translate/rss/image/jazzradio/latinjazz.png</image>
     <annotation>Paquito D'Rivera, Mongo Santamaria, &amp; many other Latin legends.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_latinjazz_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_latinjazz_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -931,7 +941,7 @@
     <title>Avant-Garde</title>
     <image>../etc/translate/rss/image/jazzradio/avantgarde.png</image>
     <annotation>The shape of jazz from Ornette Coleman, Sun-Ra, and many others.</annotation>
-    <stream_url>http://u15.jazzradio.com:80/jr_avantgarde_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_avantgarde_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
@@ -945,7 +955,7 @@
     <title>Swing &amp; Big Band</title>
     <image>../etc/translate/rss/image/jazzradio/swingnbigband.png</image>
     <annotation>The best sounds of the swing era of the 30s &amp; 40s.</annotation>
-    <stream_url>http://u14.jazzradio.com:80/jr_swingnbigband_aacplus</stream_url>
+    <stream_url>http://u16.jazzradio.com:80/jr_swingnbigband_aacplus</stream_url>
     <stream_class>audio</stream_class>
     <stream_soft>icecast</stream_soft>
     <stream_type>audio/aacp</stream_type>
