@@ -153,9 +153,9 @@
       <script>
 				imageW = 90/columnCount;
 				imageH = imageW * screenXp / screenYp * 100 / 40;
-				if(imageH > 89)
+				if(imageH > 84)
 				{
-				  imageH = 89;
+				  imageH = 84;
 				  imageW = imageH * screenYp / screenXp * 40 / imageW;
 				}
 			  else
