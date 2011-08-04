@@ -777,9 +777,9 @@ command_info()
   echo
   echo "<?xml version='1.0' encoding='UTF-8'?>"
   echo "<info>"
-  escaped_url="`echo $stream_url | sed 's/&/&amp;/g'`"
+  escaped_url=`escapeXML $stream_url`
   if [ "$protocol" == "http" -o "$protocol" == "mms" -o "$protocol" == "mmsh" -o "$protocol" == "rtsp" ]; then
-    escaped_url="`echo $escaped_url | sed 's/ /%20/g'`"
+    escaped_url="`echo $escaped_url | sed 's/ /%20/g;s/"/%22/g'`"
   fi 
   echo "<stream url=\"$escaped_url\" type=\"$stream_type\" class=\"$stream_class\" protocol=\"$protocol\" server=\"$server_type\" server_url=\"$stream_status_url\" />"
   case $stream_class in
@@ -1296,7 +1296,7 @@ case ${arg_cmd} in
 
     if [ -z "$stream_type" ]; then
     	local TIMELIFE=${STREAM_INFO_TIMELIFE:-60}
-		  local CACHEFILE=$CACHEPATH/stream.`echo $arg_url | sed 's/[^0-9a-zA-Z]/_/g'`
+		  local CACHEFILE=$CACHEPATH/stream.`$MD5 "$arg_url"`
 		  local tsttime
 		  let tsttime=`date +%s`-$TIMELIFE
 		  if [ -f $CACHEFILE ]; then
