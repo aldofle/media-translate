@@ -131,9 +131,9 @@
 			<script>
 				imageW = 90/columnCount;
 				imageH = imageW * 3 / 4 * screenXp / screenYp * 100 / 50;
-				if(imageH > 86)
+				if(imageH > 81)
 				{
-				  imageH = 86;
+				  imageH = 81;
 				  imageW = imageH * 4 / 3 * screenYp / screenXp * 50 / imageW;
 				}
 			  else
@@ -197,13 +197,13 @@
 					getItemInfo(idx, "title");
 				</script>
         <lines>
-          <script>Integer((100 - imageH - 2) / 12);</script>
+          <script>Integer((95 - imageH - 2) / 12);</script>
         </lines>
         <offsetYPC>
           <script>imageH + 2;</script>
         </offsetYPC>
         <heightPC>
-          <script>100 - imageH - 2;</script>
+          <script>95 - imageH - 2;</script>
         </heightPC>
 				<fontSize>
   				<script>
