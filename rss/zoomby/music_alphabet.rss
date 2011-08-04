@@ -199,7 +199,7 @@ menuPerPage=9
   {
     setRefreshTime(-1);
 
-    url = translate_base_url + "app," + baseUrl + "?page=" + page + ",zoomby/getpage_music_videos";
+    url = translate_base_url + "app," + baseUrl + "?page=" + page + ",zoomby/getpage_artists";
 
     print("Start to load feed:",url);
 
