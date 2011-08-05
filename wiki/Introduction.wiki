@@ -177,5 +177,11 @@ http://www.24video.net/video/view/1229075?feature=indexfreshfilter2
 {{{
 http://sovok.tv/api.php?channel=33
 }}}
+  * [http://uravo.tv/ Интернет-кинотеатр URAVO.TV]
+{{{
+http://www.uravo.tv/cartoon/389/
+http://www.uravo.tv/documentary/656/
+http://www.uravo.tv/movie/215/
+}}}
   * [http://www.last.fm/api Last.FM]
   Получение картинки с исполнителем для текущего проигрываемого трека.
