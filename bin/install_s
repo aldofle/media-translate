@@ -22,3 +22,4 @@ ln -s ex_module xcode
 ln -s ex_module toutf8
 ln -s ex_module flvstreamer
 ln -s ex_module md5
+ln -s ex_module sha2
