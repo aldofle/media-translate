@@ -213,9 +213,9 @@ menuPerPage=9
 	  title = getXMLText("rss","channel","item",count,"title");
 	  url = getXMLText("rss","channel","item",count,"link");
 	  img_url = getXMLAttribute("rss","channel","item",count,"image","url");
-	  if ( n1 == "channels" )
+	  if ( n1 != "topplaylists")
 	  {
-	   thumbnail = "http://music.ivi.ru/" + img_url;
+	   thumbnail = "http://music.ivi.ru/channels/" + img_url;
 	  }
 	  else
 	  {
@@ -400,6 +400,18 @@ menuPerPage=9
  <onClick>
     n1 = "topplaylists";
     n1_title = "Пользовательские плейлисты";
+
+    page = 1;
+    mode = 1;
+    setRefreshTime(1);
+ </onClick>
+</submenu>
+
+<submenu>
+ <title>От артистов</title>
+ <onClick>
+    n1 = "comments";
+    n1_title = "Комментарии артистов";
 
     page = 1;
     mode = 1;
