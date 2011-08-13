@@ -307,6 +307,7 @@ menuPerPage=14
        setRefreshTime(-1);
        elapsedTime = "";
        playTitle = "";
+       mode = 1;
        redrawDisplay();
     }
     else
