@@ -167,7 +167,7 @@ menuPerPage=14
 */
         ret = "true";
       }
-      else if(userInput == "display" || userInput == "DISPLAY")
+      else if( (userInput == "display" || userInput == "DISPLAY") &amp;&amp; mode == 1 )
       {
         act = doModalRss("rss_file://../etc/translate/rss/24video/category.rss");
         if(( act != null )&amp;&amp;( act != "" ))
