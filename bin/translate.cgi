@@ -1272,6 +1272,26 @@ case ${arg_cmd} in
     command_info
   ;;
   stream|audio|video|image)
+    if [ -z "$stream_type" ]; then
+    	local TIMELIFE=${STREAM_INFO_TIMELIFE:-60}
+		  local CACHEFILE=$CACHEPATH/stream.`$MD5 "$arg_url"`
+		  local tsttime
+		  let tsttime=`date +%s`-$TIMELIFE
+		  if [ -f $CACHEFILE ]; then
+		    if [ `date +%s -r $CACHEFILE` -gt $tsttime ]; then
+		      stream_url=`sed -ne "1p" $CACHEFILE`
+		      stream_type=`sed -ne "2p" $CACHEFILE`
+		      arg_opt=`sed -ne "3p" $CACHEFILE`
+		    fi
+		  fi
+		  if [ -z "$stream_type" ]; then
+		  	check_stream
+        echo $stream_url > $CACHEFILE
+        echo $stream_type >> $CACHEFILE
+        echo $arg_opt >> $CACHEFILE
+		  fi
+    fi
+
     get_opt "Protocol"
     case $opt in
       mms|mmst|mmsh|http|rtsp|ftp)
@@ -1293,26 +1313,6 @@ case ${arg_cmd} in
     
     get_opt "Charset"
     charset=$opt
-
-    if [ -z "$stream_type" ]; then
-    	local TIMELIFE=${STREAM_INFO_TIMELIFE:-60}
-		  local CACHEFILE=$CACHEPATH/stream.`$MD5 "$arg_url"`
-		  local tsttime
-		  let tsttime=`date +%s`-$TIMELIFE
-		  if [ -f $CACHEFILE ]; then
-		    if [ `date +%s -r $CACHEFILE` -gt $tsttime ]; then
-		      stream_url=`sed -ne "1p" $CACHEFILE`
-		      stream_type=`sed -ne "2p" $CACHEFILE`
-		      arg_opt=`sed -ne "3p" $CACHEFILE`
-		    fi
-		  fi
-		  if [ -z "$stream_type" ]; then
-		  	check_stream
-        echo $stream_url > $CACHEFILE
-        echo $stream_type >> $CACHEFILE
-        echo $arg_opt >> $CACHEFILE
-		  fi
-    fi
     
     echo "Content-type: $stream_type"
     echo
