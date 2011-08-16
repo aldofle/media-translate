@@ -1295,7 +1295,7 @@ case ${arg_cmd} in
     get_opt "Protocol"
     case $opt in
       mms|mmst|mmsh|http|rtsp|ftp)
-        msdlopt='-p $opt'
+        msdlopt="-p $opt"
       ;;
       *)
         msdlopt=''
