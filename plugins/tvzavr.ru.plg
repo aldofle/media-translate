@@ -36,11 +36,12 @@ if echo $arg_url | grep -qs 'tvzavr\.ru/online-kino/[0-9]*$' ;  then
 
  if [ -f ${TMPFILE} ]; then
 
+  icy_name=`cat $TMPFILE | grep '<div class="title .*</h1>' | sed 's/<\/h1>.*$//;s/.*>//'`
+
 #  clip_id=`echo $arg_url | sed 's/.*\///'`
   clip_id=`cat $TMPFILE | grep 'clip_id =' | sed 's/.*clip_id = //;s/;//' `
+  clip_position=`cat $TMPFILE | grep 'clip_position =' | sed 's/.*clip_position = //;s/;//' `
   playlist_queue=`cat $TMPFILE | grep playlist_queue | sed 's/.*playlist_queue = //;s/;//'`
-
-  icy_name=`cat $TMPFILE | grep '<div class="title .*</h1>' | sed 's/<\/h1>.*$//;s/.*>//'`
 
   src_url=`$CURL -s -o - http://www.tvzavr.ru/action/get-clip-url/$clip_id?media=http 2>&1`
   repl=`$CURL -s -o - --data-ascii id=$clip_id http://www.tvzavr.ru/action/watch-video/ 2>&1`
@@ -71,9 +72,8 @@ if echo $arg_url | grep -qs 'tvzavr\.ru/online-kino/[0-9]*$' ;  then
   session=`$CURL -s -o - $url2/session`
 
   t_digest=`echo -n $session$src_url$random$arg_url |$BASEPATH/bin/sha2 -q -256 | awk '{ print substr($0, 0, 32)}'`
-  token=$random$t_digest
 
-  stream_url="$url1$clip?usessionid=$session&pageurl=$arg_url&token=$token&aid=null"
+  stream_url="$url1$clip?usessionid=$session&pageurl=$arg_url&token=$random$t_digest&aid=null"
   stream_type='video/mp4'
   server_type='tvzavr'
   protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
