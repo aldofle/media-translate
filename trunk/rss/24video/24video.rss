@@ -402,14 +402,14 @@ menuPerPage=14
     	    if(value != null)
     	     protocol = value;
 
-          translateStreamURL = translate_base_url+"stream,,"+url;
-
           print(translateStreamURL);
           print(url);
           print(type);
           print(class);
           print(protocol);
           print(soft);
+
+          translateStreamURL = url;
 
           playItemURL(translateStreamURL, 0);
           mode = 0;
