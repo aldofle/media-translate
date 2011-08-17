@@ -9,7 +9,8 @@
 <meta rel="stream_url">http://001.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Россия 1</title>
@@ -18,7 +19,8 @@
 <meta rel="stream_url">http://002.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Россия 24</title>
@@ -27,7 +29,8 @@
 <meta rel="stream_url">http://030.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Россия РТР</title>
@@ -36,7 +39,8 @@
 <meta rel="stream_url">http://027.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>ТВЦ</title>
@@ -45,7 +49,8 @@
 <meta rel="stream_url">http://003.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>TVCI</title>
@@ -54,7 +59,8 @@
 <meta rel="stream_url">http://169.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Пятый канал</title>
@@ -63,7 +69,8 @@
 <meta rel="stream_url">http://017.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Культура</title>
@@ -72,7 +79,8 @@
 <meta rel="stream_url">http://005.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>РБК</title>
@@ -81,7 +89,8 @@
 <meta rel="stream_url">http://024.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Эксперт ТВ</title>
@@ -90,7 +99,8 @@
 <meta rel="stream_url">http://026.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Мир</title>
@@ -99,7 +109,8 @@
 <meta rel="stream_url">http://021.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>EuroNews</title>
@@ -108,7 +119,8 @@
 <meta rel="stream_url">http://034.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Russia Today</title>
@@ -117,7 +129,8 @@
 <meta rel="stream_url">http://031.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Russia Today Doc</title>
@@ -126,7 +139,8 @@
 <meta rel="stream_url">http://045.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>BBC World News</title>
@@ -135,7 +149,8 @@
 <meta rel="stream_url">http://033.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Aljazira</title>
@@ -144,7 +159,8 @@
 <meta rel="stream_url">http://032.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>NHK World</title>
@@ -153,7 +169,8 @@
 <meta rel="stream_url">http://035.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Press TV</title>
@@ -167,7 +184,8 @@
 <meta rel="stream_url">http://004.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>СТС</title>
@@ -176,7 +194,8 @@
 <meta rel="stream_url">http://010.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>ТНТ</title>
@@ -185,7 +204,8 @@
 <meta rel="stream_url">http://012.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>REN TV</title>
@@ -194,7 +214,8 @@
 <meta rel="stream_url">http://011.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>ТВ3</title>
@@ -203,7 +224,8 @@
 <meta rel="stream_url">http://015.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>ДТВ</title>
@@ -212,7 +234,8 @@
 <meta rel="stream_url">http://140.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Fashion TV</title>
@@ -221,7 +244,8 @@
 <meta rel="stream_url">http://104.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>NHK World</title>
@@ -230,7 +254,8 @@
 <meta rel="stream_url">http://035.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>XXI</title>
@@ -239,7 +264,8 @@
 <meta rel="stream_url">http://057.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Домашний</title>
@@ -248,7 +274,8 @@
 <meta rel="stream_url">http://013.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Звезда</title>
@@ -257,7 +284,8 @@
 <meta rel="stream_url">http://016.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>1K-TV</title>
@@ -266,7 +294,8 @@
 <meta rel="stream_url">http://180.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Детский</title>
@@ -275,7 +304,8 @@
 <meta rel="stream_url">http://077.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Карусель</title>
@@ -284,7 +314,8 @@
 <meta rel="stream_url">http://074.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Мультимания</title>
@@ -298,7 +329,8 @@
 <meta rel="stream_url">http://075.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Nikelodeon</title>
@@ -307,7 +339,8 @@
 <meta rel="stream_url">http://076.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>2X2</title>
@@ -316,7 +349,8 @@
 <meta rel="stream_url">http://020.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Мать и Дитя</title>
@@ -325,7 +359,8 @@
 <meta rel="stream_url">http://107.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Улыбка ребёнка</title>
@@ -344,7 +379,8 @@
 <meta rel="stream_url">http://062.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Иллюзион+</title>
@@ -353,7 +389,8 @@
 <meta rel="stream_url">http://063.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>MTV Премьера</title>
@@ -362,7 +399,8 @@
 <meta rel="stream_url">http://108.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Fox Crime</title>
@@ -371,7 +409,8 @@
 <meta rel="stream_url">http://064.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Fox Life</title>
@@ -380,7 +419,8 @@
 <meta rel="stream_url">http://065.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Феникс+кино</title>
@@ -394,7 +434,8 @@
 <meta rel="stream_url">http://051.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>XXI Век</title>
@@ -403,7 +444,8 @@
 <meta rel="stream_url">http://057.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Какое-то кино</title>
@@ -412,7 +454,8 @@
 <meta rel="stream_url">http://066.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>AXN Sci-fi</title>
@@ -421,7 +464,8 @@
 <meta rel="stream_url">http://052.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Universal channel</title>
@@ -430,7 +474,8 @@
 <meta rel="stream_url">http://050.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>TV1000</title>
@@ -439,7 +484,8 @@
 <meta rel="stream_url">http://054.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>TV1000 Action</title>
@@ -448,7 +494,8 @@
 <meta rel="stream_url">http://055.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>TV1000 Русское кино</title>
@@ -457,7 +504,8 @@
 <meta rel="stream_url">http://056.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Страшное ТВ</title>
@@ -466,7 +514,8 @@
 <meta rel="stream_url">http://060.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Смешное ТВ</title>
@@ -475,7 +524,8 @@
 <meta rel="stream_url">http://067.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Еврокино</title>
@@ -484,7 +534,8 @@
 <meta rel="stream_url">http://061.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>ВТВ</title>
@@ -498,7 +549,8 @@
 <meta rel="stream_url">http://007.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>8 канал</title>
@@ -507,7 +559,8 @@
 <meta rel="stream_url">http://173.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Сарафан</title>
@@ -516,7 +569,8 @@
 <meta rel="stream_url">http://054.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>A-ONE</title>
@@ -525,7 +579,8 @@
 <meta rel="stream_url">http://113.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Музыка первого</title>
@@ -534,7 +589,8 @@
 <meta rel="stream_url">http://115.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>MTV</title>
@@ -543,7 +599,8 @@
 <meta rel="stream_url">http://105.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>МузТВ</title>
@@ -557,7 +614,8 @@
 <meta rel="stream_url">http://143.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Шансон ТВ</title>
@@ -571,7 +629,8 @@
 <meta rel="stream_url">http://041.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Россия 2</title>
@@ -580,7 +639,8 @@
 <meta rel="stream_url">http://006.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Русский экстрим</title>
@@ -589,7 +649,8 @@
 <meta rel="stream_url">http://037.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Viasat Sport</title>
@@ -598,7 +659,8 @@
 <meta rel="stream_url">http://040.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Eurosport Live</title>
@@ -607,7 +669,8 @@
 <meta rel="stream_url">http://042.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Eurosport 2</title>
@@ -616,7 +679,8 @@
 <meta rel="stream_url">http://043.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>КХЛ</title>
@@ -625,7 +689,8 @@
 <meta rel="stream_url">http://036.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>JSC Sport Global</title>
@@ -639,7 +704,8 @@
 <meta rel="stream_url">http://044.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Viasat Nature</title>
@@ -648,7 +714,8 @@
 <meta rel="stream_url">http://101.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Viasat Explorer</title>
@@ -657,7 +724,8 @@
 <meta rel="stream_url">http://102.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Viasat History</title>
@@ -666,7 +734,8 @@
 <meta rel="stream_url">http://103.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>National Geographic</title>
@@ -675,7 +744,8 @@
 <meta rel="stream_url">http://111.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Animal Planet</title>
@@ -684,7 +754,8 @@
 <meta rel="stream_url">http://112.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Discovery</title>
@@ -693,7 +764,8 @@
 <meta rel="stream_url">http://100.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Моя планета</title>
@@ -707,7 +779,8 @@
 <meta rel="stream_url">http://104.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>24 Техно</title>
@@ -716,7 +789,8 @@
 <meta rel="stream_url">http://105.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>ZooПарк</title>
@@ -725,7 +799,8 @@
 <meta rel="stream_url">http://106.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Домашние животные</title>
@@ -734,7 +809,8 @@
 <meta rel="stream_url">http://107.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Загородная жизнь</title>
@@ -743,7 +819,8 @@
 <meta rel="stream_url">http://110.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Психология 21</title>
@@ -752,7 +829,8 @@
 <meta rel="stream_url">http://113.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Вопросы и ответы</title>
@@ -761,7 +839,8 @@
 <meta rel="stream_url">http://113.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Ретро</title>
@@ -770,7 +849,8 @@
 <meta rel="stream_url">http://121.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Русский Экстрим</title>
@@ -779,7 +859,8 @@
 <meta rel="stream_url">http://037.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>RTG</title>
@@ -788,7 +869,8 @@
 <meta rel="stream_url">http://113.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>TV Sale</title>
@@ -797,7 +879,8 @@
 <meta rel="stream_url">http://110.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>TV Sale</title>
@@ -811,7 +894,8 @@
 <meta rel="stream_url">http://152.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Драйв</title>
@@ -820,7 +904,8 @@
 <meta rel="stream_url">http://122.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Мужской</title>
@@ -829,7 +914,8 @@
 <meta rel="stream_url">http://120.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Телекафе</title>
@@ -843,7 +929,8 @@
 <meta rel="stream_url">http://121.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Усадьба ТВ</title>
@@ -852,7 +939,8 @@
 <meta rel="stream_url">http://125.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Охота и рыбалка</title>
@@ -861,7 +949,8 @@
 <meta rel="stream_url">http://123.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Здоровое ТВ</title>
@@ -870,7 +959,8 @@
 <meta rel="stream_url">http://124.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Живи</title>
@@ -884,7 +974,8 @@
 <meta rel="stream_url">http://101.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>НТК Орбита</title>
@@ -893,7 +984,8 @@
 <meta rel="stream_url">http://174.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Italia Channel</title>
@@ -902,7 +994,8 @@
 <meta rel="stream_url">http://176.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>Pentagon Channel</title>
@@ -911,7 +1004,8 @@
 <meta rel="stream_url">http://114.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
       <track>
          <title>TBN Russia</title>
@@ -920,7 +1014,8 @@
 <meta rel="stream_url">http://182.tv.mozhay.net</meta>
 <meta rel="stream_class">video</meta>
 <meta rel="stream_type">video/x-msvideo</meta>
-<meta rel="stream_protocol">http</meta>
+<meta rel="stream_protocol">xhttp</meta>
+<meta rel="options">User-agent:vlc/1.1.11;Protocol:http</meta>
 </track>
    </trackList>
 </playlist>

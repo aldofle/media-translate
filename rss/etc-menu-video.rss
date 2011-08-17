@@ -360,6 +360,13 @@
     <mediaDisplay name="onePartView"/>
   </item>
   <item>
+    <link>rss_file://../etc/translate/rss/24video/24video.rss</link>
+    <title>24video.net</title>
+    <annotation>24video.net - видеоролики на любой вкус.</annotation>
+    <image>../etc/translate/rss/image/menu/24video.jpg</image>
+    <mediaDisplay name="threePartsView"/>
+  </item>
+  <item>
 <link>rss_file://../etc/translate/rss/etc-menu-tvigle-index.rss</link>
     <title>Tvigle</title>
     <annotation>Tvigle Media — медиакомпания нового поколения, производитель и дистрибьютор профессионального развлекательного видеоконтента для New Media: интернета, мобильных сетей, цифровых телеканалов.</annotation>
