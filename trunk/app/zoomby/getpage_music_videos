@@ -56,15 +56,20 @@ cat > $PAGEXML <<EOF
   <link>http://zoomby.ru</link>
   <description>ZOOMBY.RU</description>
   <language>ru</language>
+  <pages>$pages</pages>
 EOF
-echo -n "  <pages>"$pages >>$PAGEXML
-echo "</pages>" >>$PAGEXML
+#echo -n "  <pages>"$pages >>$PAGEXML
+#echo "</pages>" >>$PAGEXML
 
 #echo pages=$pages >>$debugfile
 
    if [ -x $XSLTPROC ]; then
 #     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+    if echo $arg_opt | grep -qs 'genres\|collections' ; then
      $XSLTPROC --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+    else
+     $XSLTPROC --html $DATAPATH/music_videos_old.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+    fi
    fi
 
 cat >> $PAGEXML <<EOF
@@ -78,7 +83,11 @@ fi
 if [ -f "$PAGEXML" ]; then
  echo "Content-type: text/xml"
  echo
- cat $PAGEXML
+# if echo $arg_opt | grep -qs 'search'; then
+  cat $PAGEXML
+# else
+#  cat $PAGEXML | sed -r 's/(.*)\/.*<\/link>/\1<\/link>/g'
+# fi
  rm -f $PAGEXML
 fi
 

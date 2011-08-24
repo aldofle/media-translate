@@ -7,13 +7,13 @@
 <xsl:output method="xml" encoding="utf-8" indent="yes"/>
 
 <xsl:template match="/">
-    <xsl:apply-templates select="//ul[@class='listbyjanre listbyjanremod01']//li"/>
+    <xsl:apply-templates select="//ul[@class='muslist']//li"/>
 </xsl:template>
 
 <xsl:template match="li">
-  <xsl:variable name="img" select="a[1]/img" />
-  <xsl:variable name="title" select="a[1]/img/@alt" />
-  <xsl:variable name="link" select="concat('http://zoomby.ru',a[1]/@href)" />
+  <xsl:variable name="img" select="div/a[1]/img" />
+  <xsl:variable name="title" select="div/a[1]/img/@alt" />
+  <xsl:variable name="link" select="concat('http://zoomby.ru',div/a[1]/@href)" />
 
 	 <item>
 	  <title><xsl:value-of select="$title" /></title>
