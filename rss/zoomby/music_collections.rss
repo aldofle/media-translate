@@ -203,7 +203,7 @@
 	arr = pushBackStringArray(arr, url);
 	writeStringToFile(storagePath, arr);
     </onClick>
-    <link>rss_file://../etc/translate/rss/zoomby/music_videos.rss</link>
+    <link>rss_file://../etc/translate/rss/zoomby/music_alphabet.rss</link>
   </item_template>
 
 <channel>
