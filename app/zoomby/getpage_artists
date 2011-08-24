@@ -78,7 +78,7 @@ fi
 if [ -f "$PAGEXML" ]; then
  echo "Content-type: text/xml"
  echo
- cat $PAGEXML
+ cat $PAGEXML | sed -r 's/(.*)\/.*<\/link>/\1<\/link>/g'
  rm -f $PAGEXML
 fi
 
