@@ -51,7 +51,7 @@ rutube_video()
           if [ -f ${TMPFILE} ]; then
             stream_type='video/x-flv'
             server_type='rutube'
-            stream_url=`awk -f getxml.awk -f ${PLUGINS_DIR}rutube.ru.response.awk "$TMPFILE" | sed -n '1p'`
+            stream_url=`awk -f getxml.awk -f ${PLUGINS_DIR}rutube.ru.response.awk "$TMPFILE" | sed -n '1p' | unescapeXML`
             protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
             # http://tradiz.org/Rutube/Skachivanie-s-rutuberu-po-rtmp-ssylkam
             local rtmp_swfurl="http://rutube.ru/player.swf"
