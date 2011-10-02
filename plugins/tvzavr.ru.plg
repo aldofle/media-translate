@@ -30,7 +30,7 @@ unset RESOLVE_CACHE_ENABLED
 
 icy_name=""
 
-if echo $arg_url | grep -qs 'tvzavr\.ru/online-kino/[0-9]*$' ;  then
+if echo $arg_url | grep -qs 'tvzavr\.ru/filmy/.*$' ;  then
 
  $CURL -s -o $TMPFILE $arg_url 2>&1
 
