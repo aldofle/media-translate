@@ -20,7 +20,7 @@
 # Translate CGI module
 # 'ivi.ru' plug-in
 #
-# version: 1.3 19.07.2011 11:39
+# version: 1.4 02.11.2011 5:27
 #
 # http://www.ivi.ru/video/view/?id=2756
 # http://france.ivi.ru/movie.php?id=2490
@@ -51,12 +51,17 @@ if echo "${arg_url}" | grep -q -s '\(www\.\|france\.\)*ivi\.ru/\(video/view/\|mo
     local video_id=`grep -i "video_src" ${TMPFILE} | awk '{match($0, /videoId=([0-9]+)/, arr);print arr[1];}' | urldecode`
     rm -f $TMPFILE
     
-    host_response=`$CURL -s -o "${TMPFILE}" --user-agent "${USERAGENT}" --data-ascii "{\"method\":\"da.content.get\",\"params\":[\"${video_id}\",{\"site\":1}]}" --referer "http://www.ivi.ru/images/da/skin1.64.swf?" --header "FlashAuth: Basic Zmxhc2hfcGxheWVyOmZsYXNoX3BsYXllcg=="  http://api.digitalaccess.ru/api/json/ 2>&1`
+    host_response=`$CURL -s -o "${TMPFILE}" --user-agent "${USERAGENT}" --data-ascii "{\"method\":\"da.content.get\",\"params\":[\"${video_id}\",{\"site\":1}]}" --referer "http://www.ivi.ru/video/player?_isB2C=1" --header "FlashAuth: Basic Zmxhc2hfcGxheWVyOmZsYXNoX3BsYXllcg=="  http://api.digitalaccess.ru/api/json/ 2>&1`
     
     if [ -f ${TMPFILE} ]; then
-      stream_type='video/x-flv'
       server_type='ivi'
-      stream_url=`sed "s/.*files\": \[//;s/\].*//;s/}, *{/}\n{/g" ${TMPFILE} | awk "/FLV-${hdc}/"' {match($2, /\"(.*)\".*$/, arr); print arr[1];}'`
+      stream_url=`sed "s/.*files\": \[//;s/\].*//;s/}, *{/}\n{/g" ${TMPFILE} | awk "/MP4-${hdc}/"' {match($2, /\"(.*)\".*$/, arr); print arr[1];}'`
+      if [ -n "$stream_url" ]; then
+        stream_type='video/mp4'
+      else
+        stream_url=`sed "s/.*files\": \[//;s/\].*//;s/}, *{/}\n{/g" ${TMPFILE} | awk "/FLV-${hdc}/"' {match($2, /\"(.*)\".*$/, arr); print arr[1];}'`
+        stream_type='video/x-flv'
+      fi
       protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
       icy_name=`sed 's/.*"title": "//;s/".*//g' ${TMPFILE} | unitohtml | $XCODE -s -l | $TOUTF8`
       rm -f $TMPFILE
