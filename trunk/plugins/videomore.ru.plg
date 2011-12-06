@@ -21,9 +21,10 @@
 # Translate CGI module
 # 'tvzavr.ru' plug-in
 #
-# version: 1.0 16.08.2011 18:27
+# version: 1.02 06.12.2011 14:25
 #
-# http://videomore.ru/video/tracks/8569?auto=true
+# was     http://videomore.ru/video/tracks/8569?auto=true
+# current http://videomore.ru/tracks/inostrannaia_kuhnia/40-seriya?auto=true
 #
 
 unset RESOLVE_CACHE_ENABLED
@@ -35,7 +36,7 @@ unset RESOLVE_CACHE_ENABLED
 
 icy_name=""
 
-if echo $arg_url | grep -qs 'videomore\.ru/video/tracks/[0-9]' ;  then
+if echo $arg_url | grep -qs 'videomore\.ru/tracks/.*' ;  then
 
  $CURL -s -o $TMPFILE $arg_url 2>&1
 
