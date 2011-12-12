@@ -184,7 +184,14 @@ menuPerPage=9
 
   pageLogo = "../etc/translate/rss/image/zoomby.jpg";
 
-  search_text=doModalRss("rss_file://../etc/translate/rss/youtube/key/keyboard.rss","mediaDisplay","search",0);
+  keyboard = null;
+  keyboard = pushBackStringArray(keyboard, "zoomby");
+  keyboard = pushBackStringArray(keyboard, "");
+  keyboard = pushBackStringArray(keyboard, "ru");
+  writeStringToFile(getStoragePath("key")+"keyboard.dat", keyboard);
+  
+	search_text = doModalRss("rss_file://../etc/translate/rss/key/keyboard.rss","mediaDisplay","search",0);
+
   if (search_text != null &amp;&amp; search_text != "")
   {
     feedURL="search?q="+urlEncode(search_text);

@@ -1,6 +1,82 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
+<onEnter>
+  translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
+  screenXp = 4;
+  screenYp = 3;
+  rssconf = readStringFromFile(getStoragePath("key")+"translate.dat");
+  print("rssconf:",rssconf);
+  if(rssconf != null)
+  {
+    value = getStringArrayAt(rssconf, 0);
+    if(value != null &amp;&amp; value != "")
+      translate_base_url = value;
+    value = getStringArrayAt(rssconf, 1);
+    if(value != null &amp;&amp; value != "")
+      screenXp = Integer(value);
+    value = getStringArrayAt(rssconf, 2);
+    if(value != null &amp;&amp; value != "")
+      screenYp = Integer(value);
+  }
+  print("rssconf:",translate_base_url,screenXp,screenYp);
+
+  optionsPath = getStoragePath("key") + "keyboard.dat";
+  optionsArray = readStringFromFile(optionsPath);
+  if(optionsArray == null)
+  {
+    key = "";
+    logo = "";
+    lr = "en";
+    /* ../etc/translate/rss/image/YouTubeLogo.jpg */
+  }
+  else
+  {
+    key = getStringArrayAt(optionsArray, 0);
+    logo = getStringArrayAt(optionsArray, 1);
+    lr = getStringArrayAt(optionsArray, 2);
+  }
+  
+  pageTitle = getPageInfo("pageTitle");
+  pageHint1 = "";
+  pageHint2 = "";
+
+	itemLocale = lr;
+	itemTitleArray = readStringFromFile("../etc/translate/rss/key/dictionary_"+itemLocale+".str");
+	if(itemTitleArray == null)
+	{
+	 itemLocale = "en";
+	 itemTitleArray = readStringFromFile("../etc/translate/rss/key/dictionary_"+itemLocale+".str");
+	}
+  pageTitle = getStringArrayAt(itemTitleArray, 0);
+  pageHint1 = getStringArrayAt(itemTitleArray, 1);
+  pageHint2 = getStringArrayAt(itemTitleArray, 2);
+  itemSize  = getStringArrayAt(itemTitleArray, 3);
+	inputTextCount = 0;
+	inputTextArray = null;
+  inputText = "";
+  saveString = readStringFromFile(getStoragePath("key")+key+"_search.dat");
+  if(saveString != null)
+  {
+    inputTextCount = getStringArrayAt(saveString, 0);
+		counter = 0;
+		while(1)
+		{
+			if(counter &gt;= inputTextCount)
+				break;
+		  ch = getStringArrayAt(saveString, counter+1);
+			inputText += ch;
+			inputTextArray = pushBackStringArray(inputTextArray, ch);
+			counter += 1;
+		}
+  }
+  firstUse = 0;
+  if(inputText != "")
+    firstUse = 1;
+	setFocusItemIndex(0);
+	redrawDisplay();
+</onEnter>
+
 <mediaDisplay name=photoView 
   rowCount=4 
   columnCount=12 
@@ -33,10 +109,10 @@
 	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_07.png </idleImage>
 	<idleImage idleImageWidthPC=10 idleImageHeightPC=10> ../etc/translate/rss/image/POPUP_LOADING_08.png </idleImage>
 	<text redraw="no" align="left" offsetXPC="5" offsetYPC="0" widthPC="90" heightPC="15" fontSize="30" backgroundColor="-1:-1:-1" foregroundColor="200:200:200">
-		<script>getPageInfo("pageTitle");</script>
+		<script>pageTitle;</script>
 	</text>
   <image offsetXPC=82 offsetYPC=3 widthPC=15 heightPC=10>
-    ../etc/translate/rss/image/YouTubeLogo.jpg
+    <script>logo;</script>
     <widthPC>
       <script>
         300 / 152 * 10 * screenYp / screenXp;
@@ -54,13 +130,13 @@
 		  <script>if(firstUse == 1) "80:80:80"; else "200:200:200";</script>
 		</foregroundColor>
 	</text>
-	<text redraw="no" align="center" offsetXPC="10" offsetYPC="80" widthPC="80" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="140:140:140">&gt;&gt;| - пробел, |&lt;&lt; - стереть, # или play или stop - завершение набора</text>
-	<text redraw="no" align="center" offsetXPC="10" offsetYPC="85" widthPC="80" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="140:140:140">info - раскладка клавиатуры. Также работают цифровые кнопки</text>
+	<text redraw="no" align="center" offsetXPC="10" offsetYPC="80" widthPC="80" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="140:140:140"><script>pageHint1;</script></text>
+	<text redraw="no" align="center" offsetXPC="10" offsetYPC="85" widthPC="80" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="140:140:140"><script>pageHint2;</script></text>
 	<itemDisplay>
 		<text align="center" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100 fontSize=22 backgroundColor=33:40:58 foregroundColor=200:200:200>
 			<script>
 			  idx = getQueryItemIndex();
-				getStringArrayAt(itemTitleArray, idx-(-1));
+				getStringArrayAt(itemTitleArray, idx-(-4));
 			</script>
 		</text>
 	</itemDisplay>
@@ -121,7 +197,7 @@
 			  saveString = null;
 			  saveString  = pushBackStringArray(saveString, inputTextCount);
 			  saveString  = pushBackStringArray(saveString, inputTextArray);
-        writeStringToFile(getStoragePath("key")+"youtube_search.dat", saveString);
+        writeStringToFile(getStoragePath("key")+key+"_search.dat", saveString);
 				setReturnString(inputText);
 				postMessage("return");
 				ret = "true";
@@ -132,10 +208,13 @@
 					itemLocale = "en";
 				else
 					itemLocale = lr;
-				itemTitleArray = readStringFromFile("../etc/translate/rss/youtube/key/dictionary_"+itemLocale+".str");
-				itemSize = getStringArrayAt(itemTitleArray, 0);
+				itemTitleArray = readStringFromFile("../etc/translate/rss/key/dictionary_"+itemLocale+".str");
+        pageTitle = getStringArrayAt(itemTitleArray, 0);
+        pageHint1 = getStringArrayAt(itemTitleArray, 1);
+        pageHint2 = getStringArrayAt(itemTitleArray, 2);
+        itemSize  = getStringArrayAt(itemTitleArray, 3);
 				setFocusItemIndex(0);
-				redrawDisplay("item");
+				redrawDisplay();
 				ret = "true";
 			}
 				
@@ -168,97 +247,16 @@
 	</onUserInput>
 </mediaDisplay>
 
-<onEnter>
-  translate_base_url  = "http://127.0.0.1/cgi-bin/translate?";
-  screenXp = 4;
-  screenYp = 3;
-  rssconf = readStringFromFile(getStoragePath("key")+"translate.dat");
-  print("rssconf:",rssconf);
-  if(rssconf != null)
-  {
-    value = getStringArrayAt(rssconf, 0);
-    if(value != null &amp;&amp; value != "")
-      translate_base_url = value;
-    value = getStringArrayAt(rssconf, 1);
-    if(value != null &amp;&amp; value != "")
-      screenXp = Integer(value);
-    value = getStringArrayAt(rssconf, 2);
-    if(value != null &amp;&amp; value != "")
-      screenYp = Integer(value);
-  }
-  print("rssconf:",translate_base_url,screenXp,screenYp);
-
-  optionsPath = getStoragePath("key") + "youtubeOptions.dat";
-  optionsArray = readStringFromFile(optionsPath);
-  if(optionsArray == null)
-  {
-    youtubeRegion = "RU";
-  }
-  else
-  {
-    youtubeRegion = getStringArrayAt(optionsArray, 0);
-  }
-  if(youtubeRegion=="AU") lr="en"; else
-  if(youtubeRegion=="BR") lr="pt"; else
-  if(youtubeRegion=="GB") lr="en"; else
-  if(youtubeRegion=="DE") lr="de"; else
-  if(youtubeRegion=="NL") lr="nl"; else
-  if(youtubeRegion=="HK") lr="zh-Hans"; else
-  if(youtubeRegion=="IE") lr="ga"; else
-  if(youtubeRegion=="ES") lr="es"; else
-  if(youtubeRegion=="IT") lr="it"; else
-  if(youtubeRegion=="CA") lr="en"; else
-  if(youtubeRegion=="MX") lr="es"; else
-  if(youtubeRegion=="NZ") lr="en"; else
-  if(youtubeRegion=="PL") lr="pl"; else
-  if(youtubeRegion=="RU") lr="ru"; else
-  if(youtubeRegion=="US") lr="en"; else
-  if(youtubeRegion=="TW") lr="zh-Hans"; else
-  if(youtubeRegion=="FR") lr="fr"; else
-  if(youtubeRegion=="KR") lr="ko"; else
-  if(youtubeRegion=="JP") lr="ja"; else
-    lr="en";
-
-	itemLocale = lr;
-	itemTitleArray = readStringFromFile("../etc/translate/rss/youtube/key/dictionary_"+itemLocale+".str");
-	if(itemTitleArray == null)
-	{
-	 itemLocale = "en";
-	 itemTitleArray = readStringFromFile("../etc/translate/rss/youtube/key/dictionary_"+itemLocale+".str");
-	}
-  itemSize = getStringArrayAt(itemTitleArray, 0);
-	inputTextCount = 0;
-	inputTextArray = null;
-  inputText = "";
-  saveString = readStringFromFile(getStoragePath("key")+"youtube_search.dat");
-  if(saveString != null)
-  {
-    inputTextCount = getStringArrayAt(saveString, 0);
-		counter = 0;
-		while(1)
-		{
-			if(counter &gt;= inputTextCount)
-				break;
-		  ch = getStringArrayAt(saveString, counter+1);
-			inputText += ch;
-			inputTextArray = pushBackStringArray(inputTextArray, ch);
-			counter += 1;
-		}
-  }
-  firstUse = 0;
-  if(inputText != "")
-    firstUse = 1;
-	setFocusItemIndex(0);
-	redrawDisplay();
-</onEnter>
-
 <item_template>
 	<onClick>
 		idx = getFocusItemIndex();
-		itemTitle = getStringArrayAt(itemTitleArray, idx-(-1));
+		itemTitle = getStringArrayAt(itemTitleArray, idx-(-4));
 		if (itemTitle == "#" )
 		{
-      writeStringToFile(getStoragePath("key")+"youtube_search.dat", inputText);
+		  saveString = null;
+		  saveString  = pushBackStringArray(saveString, inputTextCount);
+		  saveString  = pushBackStringArray(saveString, inputTextArray);
+      writeStringToFile(getStoragePath("key")+key+"_search.dat", saveString);
 			setReturnString(inputText);
 			postMessage("return");
 		}
@@ -281,7 +279,7 @@
 </item_template>
 
 <channel>
-  <title>Клавиатура</title>
+  <title>Keyboard</title>
   <itemSize>
     <script>
 		itemSize;

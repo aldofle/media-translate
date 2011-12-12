@@ -53,7 +53,7 @@
 </script>
 
 <onRefresh>
-  setRefreshTime(-1);
+    setRefreshTime(-1);
   itemCount = getPageInfo("itemCount");
   middleItem = Integer(itemCount / 2);
   if(startitem == "middle")
@@ -65,6 +65,7 @@
   if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
     setFocusItemIndex(startitem-1);
   redrawDisplay();
+
 </onRefresh>
 
 	<mediaDisplay name=photoView 
@@ -126,6 +127,7 @@
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+
 
 		<itemDisplay>
 			<script>
@@ -326,6 +328,7 @@
         ret = "true";
       }
       ret;
+      
     </script>
   </onUserInput>
 		
@@ -406,6 +409,13 @@
     <title>Золотая коллекция</title>
     <annotation>Официальный информационный портал ФГУП «Киноконцерн «Мосфильм». 1999-2011 Mosfilm © просмотр онлайн фильмов</annotation>
     <image>../etc/translate/rss/image/menu/mosfilm.jpg</image>
+    <mediaDisplay name="onePartView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app/uravo/index";</script></link>
+    <title>URAVO.TV</title>
+    <annotation>Интернет-кинотеатр. 2008–2011 © URAVO Group</annotation>
+    <image>../etc/translate/rss/image/menu/uravo.png</image>
     <mediaDisplay name="onePartView"/>
   </item>
   <item>

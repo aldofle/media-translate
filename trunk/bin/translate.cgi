@@ -43,7 +43,7 @@ RC_FAIL=1
 
 STREAM_TEST_TIMEOUT=15
 
-DEFAULTFILTER="(mp3|mp2|mpga|ogg|wav|wma|wax|m4a|mp4a|avi|mpeg|mpg|mpe|wmv|wvx|wm|wmx|flv|qt|mov|asf|asx|mp4|m4v|mp4v|mpg4|xspf|m3u|pls|cue|txt|flac|jpg|jpeg|jpe|png|gif|bmp)"
+DEFAULTFILTER="(mp3|mp2|mpga|ogg|wav|wma|wax|m4a|mp4a|avi|mpeg|mpg|mpe|mkv|wmv|wvx|wm|wmx|flv|qt|mov|asf|asx|mp4|m4v|mp4v|mpg4|xspf|m3u|pls|cue|txt|flac|jpg|jpeg|jpe|png|gif|bmp)"
 
 UDPXY_URL=${UDPXY_URL:-'http://127.0.0.1:8080'}
 UDPXY_URL=`echo "$UDPXY_URL" | awk '{sub(/\/$/, ""); gsub(/\//, "\\\/"); gsub(/\./, "\\\."); print}'`
@@ -333,6 +333,9 @@ check_av_stream()
             ;;
             avi|AVI|mpeg|MPEG|mpg|MPG|mpe|MPE)
               type=video/mpeg
+            ;;
+            mkv|MKV)
+              type=video/x-matroska
             ;;
             qt|QT|mov|MOV)
               type=video/quicktime

@@ -53,7 +53,7 @@
 </script>
 
 <onRefresh>
-  setRefreshTime(-1);
+    setRefreshTime(-1);
   itemCount = getPageInfo("itemCount");
   middleItem = Integer(itemCount / 2);
   if(startitem == "middle")
@@ -65,6 +65,7 @@
   if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
     setFocusItemIndex(startitem-1);
   redrawDisplay();
+
 </onRefresh>
 
 	<mediaDisplay name=photoView 
@@ -126,6 +127,7 @@
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+
 
 		<itemDisplay>
 			<script>
@@ -326,6 +328,7 @@
         ret = "true";
       }
       ret;
+      
     </script>
   </onUserInput>
 		
@@ -346,6 +349,34 @@
   </script><channel>
   <title>Tvigle - Сериалы</title>
   <item>
+<link><script>translate_base_url+"app,Channel:511974,tvigle/multi";</script></link>
+    <title>Ходячие мертвецы. Первый сезон</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/511974/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:536218,tvigle/multi";</script></link>
+    <title>Ходячие мертвецы. Второй сезон</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/536218/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509663,tvigle/multi";</script></link>
+    <title>Адмиралъ</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509663/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:511971,tvigle/multi";</script></link>
+    <title>Отчаянные Домохозяйки. Шестой сезон</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/511971/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link><script>translate_base_url+"app,Channel:2227,tvigle/multi";</script></link>
     <title>Баллада о Бомбере</title>
     <annotation/>
@@ -353,10 +384,24 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
+<link><script>translate_base_url+"app,Channel:509669,tvigle/multi";</script></link>
+    <title>Исчезнувшие</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509669/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link><script>translate_base_url+"app,Channel:2224,tvigle/multi";</script></link>
     <title>Закрытая школа</title>
     <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2224/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509666,tvigle/multi";</script></link>
+    <title>Громовы. Дом надежды</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509666/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
@@ -402,6 +447,20 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
+<link><script>translate_base_url+"app,Channel:509664,tvigle/multi";</script></link>
+    <title>Десантура</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509664/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509672,tvigle/multi";</script></link>
+    <title>Две судьбы. Новая жизнь</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509672/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link><script>translate_base_url+"app,Channel:509660,tvigle/multi";</script></link>
     <title>Даша Васильева. Любительница частного сыска</title>
     <annotation/>
@@ -409,10 +468,24 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
+<link><script>translate_base_url+"app,Channel:509670,tvigle/multi";</script></link>
+    <title>На пути к сердцу</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509670/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link><script>translate_base_url+"app,Channel:2167,tvigle/multi";</script></link>
     <title>Город Хищниц</title>
     <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2167/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509671,tvigle/multi";</script></link>
+    <title>Дом на Озерной</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509671/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
@@ -448,6 +521,13 @@
     <title>Отчаянные Домохозяйки. Пятый сезон</title>
     <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/508648/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509665,tvigle/multi";</script></link>
+    <title>Диверсант. Конец войны</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509665/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
@@ -574,13 +654,6 @@
     <title>Молоды и счастливы</title>
     <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2178/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
-<link><script>translate_base_url+"app,Channel:2208,tvigle/multi";</script></link>
-    <title>Одержимый</title>
-    <annotation/>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/2208/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>

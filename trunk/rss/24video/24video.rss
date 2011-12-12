@@ -556,7 +556,14 @@ menuPerPage=14
 <submenu>
  <title>Поиск</title>
  <onClick>
-   search_text=doModalRss("rss_file://../etc/translate/rss/youtube/key/keyboard.rss","mediaDisplay","search",0);
+    keyboard = null;
+    keyboard = pushBackStringArray(keyboard, "24video");
+    keyboard = pushBackStringArray(keyboard, pageLogo);
+    keyboard = pushBackStringArray(keyboard, "ru");
+    writeStringToFile(getStoragePath("key")+"keyboard.dat", keyboard);
+    
+    search_text = doModalRss("rss_file://../etc/translate/rss/key/keyboard.rss","mediaDisplay","search",0);
+
    if (search_text != null &amp;&amp; search_text != "")
    {
     searchtext="&amp;searchText="+urlEncode(search_text);

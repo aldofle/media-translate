@@ -29,15 +29,36 @@ cd $DATAPATH
 local LASTFMFILE=$TMPFILE.lastfm
 
 get_opt "Title"
-local tracktitle="$opt"
+local tracktitle=$opt
 
-local artist=`expr "$tracktitle" : '\(.*\) - .*' \| ""`
-[ -z "$artist" ] && artist=`expr "$tracktitle" : '\([^-]*\)-.*' \| ""`
-[ -z "$artist" ] && artist=`expr "$tracktitle" : '[^(]* *(\([^)]*\))' \| "$tracktitle"`
-local track=`expr "$tracktitle" : '.* - \(.*\)' \| ""`
-[ -z "$track" ] && track=`expr "$tracktitle" : '.*-\([^-]*\)$' \| ""` 
-[ -z "$track" ] && track=`expr "$tracktitle" : '\([^(]*\) (' \| "_"` 
-local request=`echo "http://www.last.fm/music/$artist/_/$track" | sed 's/ /+/g'`
+gettracktitle() 
+{
+  echo -n $tracktitle | awk '{
+      if(match($0, /(^[^-—(]+) *[-—]+ *(.+)/, arr)) {
+        gsub(/(^ +| +$)/, "", arr[1]);
+        gsub(/(^ +| +$)/, "", arr[2]);
+      	print arr[1];
+      	print arr[2];
+      }
+      else
+      if(match($0, /(^[^(]+) *\(([^)]+) */, arr)) {
+        gsub(/(^ +| +$)/, "", arr[1]);
+        gsub(/(^ +| +$)/, "", arr[2]);
+      	print arr[1];
+      	print arr[2];
+      }
+      else {
+        gsub(/(^ +| +$)/, "", $0);
+      	print;
+      	print "";
+      }
+  }' | sed 's/ /+/g;s/\//%5C/g'
+}
+
+local artist=`gettracktitle | sed -n '1p'`
+local track=`gettracktitle | sed -n '2p'`
+
+local request=`echo "http://www.last.fm/music/$artist/_/$track"`
 
 get_opt "Size"
 local size=largesquare
@@ -89,7 +110,7 @@ trackimage_loadImage()
   fi
 }
 
-$MSDL -q -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$request"
+buf=`$MSDL -q -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$request" 2>&1`
 
 if [ -f "$LASTFMFILE" ]; then
 

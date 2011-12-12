@@ -43,8 +43,9 @@
 	backgroundColor="0:0:0"
 	showHeader="no"
 	showDefaultInfo="no"
-	imageFocus=""
 	sliding="no"
+	imageFocus=""
+	imageUnFocus=""
 >
 	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
 	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
@@ -116,15 +117,37 @@
     <script>repeat;</script>
   </text>
 
-  <text redraw="yes" offsetXPC="10" offsetYPC="92" heightPC="2" fontSize="10" backgroundColor="0:100:155" foregroundColor="0:100:155">
-    <script>sprintf("%s",playingProgress);</script>
+	<text redraw="yes" offsetXPC="10" offsetYPC="92" widthPC="10" heightPC="2" backgroundColor="0:0:0">
+	  <script>progress;</script>
+	</text>
+  <text redraw="yes" offsetXPC="10" offsetYPC="92.5" widthPC="10" heightPC="1" backgroundColor="0:20:25">
+    <script>progress;</script>
+	</text>
+  <text redraw="yes" offsetXPC="10" offsetYPC="92" heightPC="2" backgroundColor="0:100:155">
+    <script>progress;</script>
 		<widthPC><script>print(playingProgress); playingProgress*10/100;</script></widthPC>
 	</text>
 
-  <text redraw="yes" offsetXPC="10" offsetYPC="92.5" heightPC="1" fontSize="10" backgroundColor="0:20:25" foregroundColor="0:20:25">
-    <script>sprintf("%s",playingProgress);</script>
-		<offsetXPC><script>10+playingProgress*10/100;</script></offsetXPC>
-		<widthPC><script>10-playingProgress*10/100;</script></widthPC>
+
+	<text redraw="yes" offsetXPC=70.5 offsetYPC=13 widthPC=1 heightPC=70 backgroundColor=0:0:0>
+	  <script>bar;</script>
+	</text>
+	<text redraw="yes" offsetXPC=70.75 offsetYPC=13 widthPC=.5 heightPC=70 backgroundColor=30:30:30>
+	  <script>bar;</script>
+	</text>
+	<text redraw="yes" offsetXPC=70.5 offsetYPC=13 widthPC=1 heightPC=70 backgroundColor=130:130:30>
+	  <script>bar;</script>
+	  <heightPC>
+	    <script>
+	      70 / itemSize;
+	    </script>
+	  </heightPC>
+	  <offsetYPC>
+	    <script>
+	      focus = getFocusItemIndex();
+	      13 + 70 * focus / itemSize;
+	    </script>
+	  </offsetYPC>
 	</text>
 
 	<itemDisplay>
@@ -157,24 +180,46 @@
 		</script>
 		<image offsetXPC="0" offsetYPC="0" widthPC="7" heightPC="100">
 			<script>
-				class = getStringArrayAt(classArray, -1);
-				protocol = getStringArrayAt(protocolArray, -1);
-				if (class == "directory")
-				{
-				  if(protocol == "ftp")
-					  "../etc/translate/rss/image/folder_download.png";
-					else
-					  "../etc/translate/rss/image/folder.png";
-				}
-				else
-				if (class == "playlist")
-				{
-					"../etc/translate/rss/image/playlist128x128.png";
-				}
-			  else
-				{
-					"";
-				}
+			  if(playContext == currentPwd &amp;&amp; getQueryItemIndex() == playIndex) 
+			  {
+			   "../etc/translate/rss/image/Play-1-Pressed-256x256.png";
+			  }
+			  else 
+			  {
+  				class = getStringArrayAt(classArray, -1);
+  				protocol = getStringArrayAt(protocolArray, -1);
+  				if (class == "directory")
+  				{
+  				  if(protocol == "ftp")
+  					  "../etc/translate/rss/image/folder_download.png";
+  					else
+  					  "../etc/translate/rss/image/folder.png";
+  				}
+  				else
+  				if (class == "playlist")
+  				{
+  					"../etc/translate/rss/image/playlist128x128.png";
+  				}
+  				else
+  				if (class == "video")
+  				{
+  					"../etc/translate/rss/image/video128x128.png";
+  				}
+  				else
+  				if (class == "audio")
+  				{
+  					"../etc/translate/rss/image/audio128x128.png";
+  				}
+  			  else
+  				if (class == "image")
+  				{
+  					"../etc/translate/rss/image/picture128x128.png";
+  				}
+  			  else
+  				{
+  					"";
+  				}
+  			}
 			</script>
   		 <heightPC>
   		   <script>him;</script>
@@ -191,6 +236,7 @@
 		</image>
 		<text offsetXPC="6" offsetYPC="0" widthPC="94" heightPC="100" fontSize="15" backgroundColor="-1:-1:-1" foregroundColor="160:160:160">
 			<script>
+			  bar = "";
 			  getStringArrayAt(titleArray , -1);
 			</script>
 		</text>
@@ -208,12 +254,12 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
 
-      if (userInput == "pagedown" || userInput == "pageup" || userInput == "PD" || userInput == "PG")
+      if (userInput == "pagedown" || userInput == "pageup" || userInput == "PD" || userInput == "PG" || userInput == "left" || userInput == "L"  || userInput == "right" || userInput == "R")
       {
-        if(playIndex == -1 || playContext != currentPwd)
+        if(playIndex == -1 || playContext != currentPwd || userInput == "left" || userInput == "L"  || userInput == "right" || userInput == "R")
         {
           idx = getFocusItemIndex();
-          if (userInput == "pagedown" || userInput == "PD")
+          if (userInput == "pagedown" || userInput == "PD" || userInput == "right" || userInput == "R")
           {
             idx -= -10;
             if(idx &gt;= itemSize)
@@ -287,11 +333,7 @@
         }
         ret = "true";
       }
-      else if(majorContext == "items" &amp;&amp; (userInput == "right" || userInput == "R"))
-      {
-        ret = "true";
-      }
-      else if (userInput == "return" || userInput == "left" || userInput == "RET" || userInput == "L")
+      else if (userInput == "return" || userInput == "RET")
       {
         if(history &gt;= 0)
         {
@@ -337,6 +379,16 @@
         }
         redrawDisplay();
         print(repeat);
+      }
+      else if (userInput == "display" || userInput == "DISPLAY")
+      {
+        if(playIndex != -1 &amp;&amp; playContext == currentPwd) 
+        {
+        	setFocusItemIndex(playIndex);
+        	setItemFocus(playIndex);
+        	redrawDisplay();
+        }
+        ret = "true";
       }
       ret;
     </script>
@@ -433,6 +485,7 @@
   history = -1;
   loadingProgress = 0;
   playingProgress = 0;
+  progress = "";
   executeScript("sub_refreshList");
 </onEnter>
 
@@ -481,11 +534,7 @@
   	{
 	    meta = getXMLText("playlist","trackList","track",count,"meta", metaSize);
   	  rel = getXMLAttribute("playlist","trackList","track",count,"meta",metaSize,"rel");
-  	  if(rel == "class") 
-  	  {
-  	    class = meta;  
-  	  }
-  	  else if (rel == "ext")
+  	  if (rel == "ext")
   	  {
 	      if(meta == "mp3" || meta == "mp2" || meta == "mpga")
 	      {
@@ -526,7 +575,7 @@
 	      else if (meta == "mkv")
 	      {
   	      class = "video";
-	        type = "";
+	        type = "video/x-matroska";
 	      }
 	      else if (meta == "wmv" || meta == "wvx" || meta == "wm" || meta == "wmx")
 	      {
@@ -599,13 +648,25 @@
   	  {
   	    option = meta;  
   	  }
-  	  else if(rel == "protocol")
-  	  {
-  	    protocol = meta;  
-  	  }
   	  else if(rel == "streamer")
   	  {
   	    url = meta + location;
+  	  }
+  	  else if(rel == "class" || rel == "stream_class") 
+  	  {
+  	    class = meta;  
+  	  }
+  	  else if(rel == "protocol" || rel == "stream_protocol")
+  	  {
+  	    protocol = meta;  
+  	  }
+  	  else if(rel == "stream_type")
+  	  {
+  	    type = meta;  
+  	  }
+  	  else if(rel == "stream_url") 
+  	  {
+  	    url = meta;  
   	  }
   	  metaSize = metaSize - 1;
   	}
@@ -621,7 +682,7 @@
       	  option = type + ";" + option;
       }
     }
-    else
+    else if(type == "")
     {
       class = "";
     }
@@ -768,7 +829,7 @@
       streamBitrate = "";
       currentSong = "";
       
-      if(class == "auto" || class == "" || (protocol != "file" &amp;&amp; protocol != "ftp"))
+      if(class == "auto" || class == "")
       {
         infoUrl = translate_base_url + "info," + options + "," + urlEncode(url);
         
@@ -1093,6 +1154,7 @@
   info_2      = "";
   statusCheck = 0;
   playingProgress = 0;
+  progress = "";
 </sub_onStop>
 
 <sub_initRandom>
@@ -1128,8 +1190,10 @@
     playElapsed     = getStringArrayAt(playbackStatus, 0);
     playStatus      = getStringArrayAt(playbackStatus, 3);
     playTime        = getStringArrayAt(playbackStatus, 1);
-    if(playTime &gt; 0)
+    if(playTime &gt; 0) {
       playingProgress = playElapsed * 100 / playTime;
+      progress = "";
+    }
   
     print("playbackStatus: ",playbackStatus);
   
@@ -1143,38 +1207,45 @@
       
       idx = -1;
       
-      if(playContext == currentPwd &amp;&amp; userInput != "video_stop")
+      if(playContext == currentPwd)
       {
-        if(repeat == "One")
+        if(userInput != "video_stop")
         {
-          idx = playIndex;
-        }
-        else if(repeat == "All")
-        {
-          idx = playIndex;
-          idx -= -1;
-          if(idx &gt;= itemSize)
-            idx = 0;
-        }
-        else if (repeat == "Random")
-        {
-          if(randomArray != null &amp;&amp; playIndex == getStringArrayAt(randomArray, randomIndex))
+          if(repeat == "One")
           {
-            randomIndex -= -1;
-            if(randomIndex &gt;= itemSize)
+            idx = playIndex;
+          }
+          else if(repeat == "All")
+          {
+            idx = playIndex;
+            idx -= -1;
+            if(idx &gt;= itemSize)
+              idx = 0;
+          }
+          else if (repeat == "Random")
+          {
+            if(randomArray != null &amp;&amp; playIndex == getStringArrayAt(randomArray, randomIndex))
             {
-              randomArray = null;
+              randomIndex -= -1;
+              if(randomIndex &gt;= itemSize)
+              {
+                randomArray = null;
+              }
             }
+            if(randomArray == null)
+            {
+              executeScript("sub_initRandom");
+              if(itemSize == 1)
+                randomIndex = 0;
+              else
+                randomIndex = 1;
+            }
+            idx = getStringArrayAt(randomArray, randomIndex);
           }
-          if(randomArray == null)
-          {
-            executeScript("sub_initRandom");
-            if(itemSize == 1)
-              randomIndex = 0;
-            else
-              randomIndex = 1;
-          }
-          idx = getStringArrayAt(randomArray, randomIndex);
+        }
+        else {
+        	setFocusItemIndex(playIndex);
+        	setItemFocus(playIndex);
         }
       }
   

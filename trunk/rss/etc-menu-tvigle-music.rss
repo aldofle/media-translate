@@ -53,7 +53,7 @@
 </script>
 
 <onRefresh>
-  setRefreshTime(-1);
+    setRefreshTime(-1);
   itemCount = getPageInfo("itemCount");
   middleItem = Integer(itemCount / 2);
   if(startitem == "middle")
@@ -65,6 +65,7 @@
   if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
     setFocusItemIndex(startitem-1);
   redrawDisplay();
+
 </onRefresh>
 
 	<mediaDisplay name=photoView 
@@ -126,6 +127,7 @@
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+
 
 		<itemDisplay>
 			<script>
@@ -326,6 +328,7 @@
         ret = "true";
       }
       ret;
+      
     </script>
   </onUserInput>
 		
@@ -374,10 +377,10 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link><script>translate_base_url+"app,Channel:509653,tvigle/multi";</script></link>
-    <title>Кубана 2011</title>
+<link><script>translate_base_url+"app,Channel:511972,tvigle/multi";</script></link>
+    <title>Ландыши</title>
     <annotation/>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/509653/list.jpg?2</image>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/511972/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
@@ -462,6 +465,13 @@
     <title>Тараканы</title>
     <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/1108/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509676,tvigle/multi";</script></link>
+    <title>InWhite</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509676/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
@@ -609,6 +619,13 @@
     <title>Сергей Кот</title>
     <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/655/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509653,tvigle/multi";</script></link>
+    <title>Кубана 2011</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509653/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
