@@ -14,6 +14,8 @@
   * IVI Music (http://music.ivi.ru)
   * Zoomby Music (http://www.zoomby.ru/music)
   * Мосфильм (http://cinema.mosfilm.ru)
+  * URAVO.TV (http://uravo.tv/)
+  * 24video.net (http://www.24video.net/)
   === RSS-ленты и плейлисты ===
   * Sovok TV (http://sovok.tv)
   * Tvigle (http://tvigle.ru)
@@ -34,6 +36,7 @@
   === Сервисы ===
   * SHOUTcast Directory (http://shoutcast.com)
   * RadioTime (http://radiotime.com/)
+  * Poiskm.ru (http://poiskm.ru/)
   === Интернет радиостанции ===
   * SomaFM (http://somafm.com/)
   * Digitally Imported (http://di.fm/)
@@ -57,7 +60,7 @@
 
   == XSPF Browser ==
 
-    Браузер и проигрыватель медиаконтента с локальных дисков и ftp-серверов.
+    Браузер списков воспроизведения и проигрыватель медиаконтента с локальных дисков, http- и ftp-серверов.
 
 = Поддерживаемый контент =
 
@@ -183,5 +186,18 @@ http://www.uravo.tv/cartoon/389/
 http://www.uravo.tv/documentary/656/
 http://www.uravo.tv/movie/215/
 }}}
+  * [http://videomore.ru/ Videomore]
+{{{
+http://videomore.ru/tracks/inostrannaia_kuhnia/40-seriya?auto=true
+}}}
+  * [http://www.tvzavr.ru/ tvzavr.ru]
+{{{
+http://www.tvzavr.ru/online-kino/5060
+}}}
+  * [http://www.my-hit.ru/ MY-HIT.RU]
+{{{
+http://my-hit.ru/film/8330/online
+http://my-hit.org/film/8330/online
+}}}
   * [http://www.last.fm/api Last.FM]
-  Получение картинки с исполнителем для текущего проигрываемого трека.
+  Получение изображения с исполнителем для текущего проигрываемого трека.
