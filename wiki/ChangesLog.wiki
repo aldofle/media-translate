@@ -3,7 +3,7 @@
 = История версий =
 
 == 2.0.10 ==
-  * в *Internet Video* добавлен интерфейсные модули к интернет-кинотеатру *[http://uravo.tv/ URAVO.TV]* и видео-порталу *[http://www.24video.net/ 24video.net]*
+  * в *Internet Video* добавлены интерфейсные модули к интернет-кинотеатру *[http://uravo.tv/ URAVO.TV]* и видео-порталу *[http://www.24video.net/ 24video.net]*
   * в *Internet Radio* добавлен интерфейсный модуль к сервису поиска музыкального контента *[http://poiskm.ru/ Poiskm.ru]*
   * добавлены плагины к *videomore.ru, my-hit.ru, tvzavr.ru, namba.kz*
   * исправлены плагины *youtube.com, ivi.ru, rutube.ru, zoomby.ru, linecinema.org* 
