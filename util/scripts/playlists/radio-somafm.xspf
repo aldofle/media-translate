@@ -282,5 +282,47 @@
 <meta rel="stream_genre">Misc Electronic</meta>
 <meta rel="stream_bitrate">128</meta>
 </track>
+      <track>
+         <location>http://somafm.com/xmasinfrisko.pls</location>
+         <title>Xmas in Frisko</title>
+         <annotation>It's back! Our annual eclectic, irreverent holiday broadcast. May not be suitable for all ages! </annotation>
+         <image>../etc/translate/rss/image/somafm/sfxmas.jpg</image>
+<meta rel="stream_url">http://voxsc1.somafm.com:2100</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">Xmas in Frisko: SomaFM's eclectic holiday mix. Not for the easily offended. [SomaFM]</meta>
+<meta rel="stream_genre">Christmas Holiday</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
+      <track>
+         <location>http://somafm.com/480min.pls</location>
+         <title>480 Minutes</title>
+         <annotation>Live Every Friday: What alternative rock radio would sound like had Nirvana never happened.</annotation>
+         <image>../etc/translate/rss/image/somafm/480min120.png</image>
+<meta rel="stream_url">http://mp1.somafm.com:8080</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">480 Minutes from Bagel Radio [SomaFM]</meta>
+<meta rel="stream_genre">Alternative</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
+      <track>
+         <location>http://somafm.com/christmas.pls</location>
+         <title>Christmas Lounge</title>
+         <annotation>Chilled holiday grooves and classic winter lounge tracks. (Kid and Parent safe!)</annotation>
+         <image>../etc/translate/rss/image/somafm/christmaslounge120.png</image>
+<meta rel="stream_url">http://sgsc.somafm.com:8100</meta>
+<meta rel="stream_class">audio</meta>
+<meta rel="stream_soft">shoutcast</meta>
+<meta rel="stream_type">audio/mpeg</meta>
+<meta rel="stream_protocol">http</meta>
+<meta rel="stream_title">The Christmas Lounge. Chilled holiday grooves and classic winter lounge tracks. [SomaFM]</meta>
+<meta rel="stream_genre">Christmas Holiday Xmas</meta>
+<meta rel="stream_bitrate">128</meta>
+</track>
    </trackList>
 </playlist>

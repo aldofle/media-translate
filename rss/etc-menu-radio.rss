@@ -53,7 +53,7 @@
 </script>
 
 <onRefresh>
-  setRefreshTime(-1);
+    setRefreshTime(-1);
   itemCount = getPageInfo("itemCount");
   middleItem = Integer(itemCount / 2);
   if(startitem == "middle")
@@ -65,6 +65,7 @@
   if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
     setFocusItemIndex(startitem-1);
   redrawDisplay();
+
 </onRefresh>
 
 	<mediaDisplay name=photoView 
@@ -126,6 +127,7 @@
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+
 
 		<itemDisplay>
 			<script>
@@ -326,6 +328,7 @@
         ret = "true";
       }
       ret;
+      
     </script>
   </onUserInput>
 		
@@ -416,6 +419,13 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
     <annotation>Enjoy great jazz music</annotation>
     <image>../etc/translate/rss/image/menu/jazzradio.png</image>
     <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app/poiskm/index";</script></link>
+    <title>Poiskm.ru</title>
+    <annotation>Poiskm.ru - это поисковая система, которая ищет mp3 файлы в открытом доступе в интернете и позволяет слушать их онлайн.</annotation>
+    <image>../etc/translate/rss/image/menu/poiskm.png</image>
+    <mediaDisplay name="onePartView"/>
   </item>
   <item>
 <link>rss_file://../etc/translate/rss/etc-menu-radio-other.rss</link>

@@ -4,6 +4,12 @@
   <image>../etc/translate/rss/image/tvigle.png</image>
   <trackList>
 <track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:511967,tvigle/multi</link>
+  <title>FUNаты</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/511967/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:5,tvigle/multi</link>
   <title>Звездная эротика</title>
   <annotation/>

@@ -53,7 +53,7 @@
 </script>
 
 <onRefresh>
-  setRefreshTime(-1);
+    setRefreshTime(-1);
   itemCount = getPageInfo("itemCount");
   middleItem = Integer(itemCount / 2);
   if(startitem == "middle")
@@ -65,6 +65,7 @@
   if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
     setFocusItemIndex(startitem-1);
   redrawDisplay();
+
 </onRefresh>
 
 	<mediaDisplay name=photoView 
@@ -126,6 +127,7 @@
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+
 
 		<itemDisplay>
 			<script>
@@ -326,6 +328,7 @@
         ret = "true";
       }
       ret;
+      
     </script>
   </onUserInput>
 		
@@ -381,10 +384,10 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link><script>translate_base_url+"app,Channel:2225,tvigle/multi";</script></link>
-    <title>Звездные войны: Война клонов</title>
+<link><script>translate_base_url+"app,Channel:47,tvigle/multi";</script></link>
+    <title>Сказки</title>
     <annotation/>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/2225/list.jpg?2</image>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/47/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
@@ -591,10 +594,10 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link><script>translate_base_url+"app,Channel:47,tvigle/multi";</script></link>
-    <title>Сказки</title>
+<link><script>translate_base_url+"app,Channel:2225,tvigle/multi";</script></link>
+    <title>Звездные войны: Война клонов</title>
     <annotation/>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/47/list.jpg?2</image>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/2225/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>

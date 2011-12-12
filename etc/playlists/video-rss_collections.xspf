@@ -237,5 +237,15 @@
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
+<track>
+   <annotation>TEDGlobal - ideas worth spreading. New ideas every weekday TED.com</annotation>
+   <title>TED Talks Video</title>
+   <location>http://feeds.feedburner.com/tedtalks_video</location>
+<meta rel="stream_url">http://feeds.feedburner.com/tedtalks_video</meta>
+<meta rel="stream_class">rss</meta>
+<meta rel="stream_type">application/xml</meta>
+<meta rel="stream_protocol">http</meta>
+</track>
   </trackList>
 </playlist>
+

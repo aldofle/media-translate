@@ -28,10 +28,10 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/1153/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:509653,tvigle/multi</link>
-  <title>Кубана 2011</title>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:511972,tvigle/multi</link>
+  <title>Ландыши</title>
   <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/509653/list.jpg?2</image>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/511972/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2210,tvigle/multi</link>
@@ -107,6 +107,12 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/1108/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:509676,tvigle/multi</link>
+  <title>InWhite</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/509676/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1769,tvigle/multi</link>
   <title>Ранетки</title>
   <annotation/>
@@ -142,14 +148,14 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1158/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2157,tvigle/multi</link>
   <title>Нежный возраст</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2157/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1823,tvigle/multi</link>
   <title>BUNNY</title>
   <annotation/>
@@ -215,14 +221,14 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1803/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:722,tvigle/multi</link>
   <title>Дельфин</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/722/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1886,tvigle/multi</link>
   <title>Юля Чичерина</title>
   <annotation/>
@@ -233,6 +239,12 @@
   <title>Сергей Кот</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/655/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:509653,tvigle/multi</link>
+  <title>Кубана 2011</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/509653/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1541,tvigle/multi</link>
@@ -282,7 +294,8 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/810/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1147,tvigle/multi</link>
   <title>Слайд</title>
   <annotation/>
@@ -294,8 +307,7 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1986/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1312,tvigle/multi</link>
   <title>ZNAKI</title>
   <annotation/>

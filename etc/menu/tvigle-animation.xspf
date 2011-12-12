@@ -34,10 +34,10 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/2159/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2225,tvigle/multi</link>
-  <title>Звездные войны: Война клонов</title>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:47,tvigle/multi</link>
+  <title>Сказки</title>
   <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/2225/list.jpg?2</image>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/47/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2111,tvigle/multi</link>
@@ -216,10 +216,10 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/52/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:47,tvigle/multi</link>
-  <title>Сказки</title>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2225,tvigle/multi</link>
+  <title>Звездные войны: Война клонов</title>
   <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/47/list.jpg?2</image>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2225/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track>
 <track>

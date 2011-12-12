@@ -357,7 +357,35 @@
 <submenu>
   <title>Поиск</title>
   <onClick>
-		keyword = doModalRss("rss_file://../etc/translate/rss/youtube/key/keyboard.rss","mediaDisplay","search",0);
+    if(youtubeRegion=="AU") lr="en"; else
+    if(youtubeRegion=="BR") lr="pt"; else
+    if(youtubeRegion=="GB") lr="en"; else
+    if(youtubeRegion=="DE") lr="de"; else
+    if(youtubeRegion=="NL") lr="nl"; else
+    if(youtubeRegion=="HK") lr="zh-Hans"; else
+    if(youtubeRegion=="IE") lr="ga"; else
+    if(youtubeRegion=="ES") lr="es"; else
+    if(youtubeRegion=="IT") lr="it"; else
+    if(youtubeRegion=="CA") lr="en"; else
+    if(youtubeRegion=="MX") lr="es"; else
+    if(youtubeRegion=="NZ") lr="en"; else
+    if(youtubeRegion=="PL") lr="pl"; else
+    if(youtubeRegion=="RU") lr="ru"; else
+    if(youtubeRegion=="US") lr="en"; else
+    if(youtubeRegion=="TW") lr="zh-Hant"; else
+    if(youtubeRegion=="FR") lr="fr"; else
+    if(youtubeRegion=="KR") lr="ko"; else
+    if(youtubeRegion=="JP") lr="ja"; else
+      lr=null;
+
+	  keyboard = null;
+	  keyboard = pushBackStringArray(keyboard, "youtube");
+	  keyboard = pushBackStringArray(keyboard, "../etc/translate/rss/image/YouTubeLogo.jpg");
+	  keyboard = pushBackStringArray(keyboard, lr);
+    writeStringToFile(getStoragePath("key")+"keyboard.dat", keyboard);
+    
+		keyword = doModalRss("rss_file://../etc/translate/rss/key/keyboard.rss","mediaDisplay","search",0);
+
 	  /* keyword= getInput(); */
 		if (keyword!=null &amp;&amp; keyword!="")
 		{

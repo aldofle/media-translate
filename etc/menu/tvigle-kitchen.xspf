@@ -40,12 +40,6 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/1380/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1450,tvigle/multi</link>
-  <title>Talerka</title>
-  <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/1450/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1435,tvigle/multi</link>
   <title>От шеф-повара</title>
   <annotation/>

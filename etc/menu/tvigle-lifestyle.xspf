@@ -4,22 +4,28 @@
   <image>../etc/translate/rss/image/tvigle.png</image>
   <trackList>
 <track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2229,tvigle/multi</link>
-  <title>Детская йога</title>
-  <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/2229/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:509658,tvigle/multi</link>
   <title>Йога для всех</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/509658/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:509662,tvigle/multi</link>
+  <title>Glamour</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/509662/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2247,tvigle/multi</link>
   <title>Belly Dance с Валерией Путицкой. Курс для начинающих</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2247/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:511968,tvigle/multi</link>
+  <title>Glam - йога</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/511968/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:509656,tvigle/multi</link>
@@ -69,14 +75,14 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/508637/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:509659,tvigle/multi</link>
   <title>Йога для женщин. Курс: Для продвинутых</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/509659/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:508642,tvigle/multi</link>
   <title>Латина-соло с Екатериной Ганджеловой</title>
   <annotation/>
@@ -119,41 +125,16 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/71/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2242,tvigle/multi</link>
-  <title>Хип-хоп шоу</title>
-  <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/2242/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2234,tvigle/multi</link>
-  <title>Фитнес со звездами</title>
-  <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/2234/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2150,tvigle/multi</link>
   <title>Shine show</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2150/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2236,tvigle/multi</link>
-  <title>Танцы для детей</title>
-  <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/2236/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:70,tvigle/multi</link>
   <title>Звездные прически</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/70/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2241,tvigle/multi</link>
-  <title>Хип-хоп</title>
-  <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/2241/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:73,tvigle/multi</link>
@@ -167,7 +148,8 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1375/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2238,tvigle/multi</link>
   <title>Дога-йога</title>
   <annotation/>

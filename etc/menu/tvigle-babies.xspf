@@ -46,6 +46,12 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/2232/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2144,tvigle/multi</link>
+  <title>Сказки</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/2144/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2126,tvigle/multi</link>
   <title>Любимые мультики нашего детства</title>
   <annotation/>
@@ -69,14 +75,14 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2146/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2237,tvigle/multi</link>
   <title>Танцы для детей</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2237/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2133,tvigle/multi</link>
   <title>Трое из Простоквашино</title>
   <annotation/>
@@ -99,12 +105,6 @@
   <title>Винни-Пух</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2130/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2144,tvigle/multi</link>
-  <title>Сказки</title>
-  <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/2144/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2135,tvigle/multi</link>

@@ -53,7 +53,7 @@
 </script>
 
 <onRefresh>
-  setRefreshTime(-1);
+    setRefreshTime(-1);
   itemCount = getPageInfo("itemCount");
   middleItem = Integer(itemCount / 2);
   if(startitem == "middle")
@@ -65,6 +65,7 @@
   if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
     setFocusItemIndex(startitem-1);
   redrawDisplay();
+
 </onRefresh>
 
 	<mediaDisplay name=photoView 
@@ -126,6 +127,7 @@
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+
 
 		<itemDisplay>
 			<script>
@@ -326,6 +328,7 @@
         ret = "true";
       }
       ret;
+      
     </script>
   </onUserInput>
 		
@@ -346,13 +349,6 @@
   </script><channel>
   <title>Tvigle - Lifestyle</title>
   <item>
-<link><script>translate_base_url+"app,Channel:2229,tvigle/multi";</script></link>
-    <title>Детская йога</title>
-    <annotation/>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/2229/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
 <link><script>translate_base_url+"app,Channel:509658,tvigle/multi";</script></link>
     <title>Йога для всех</title>
     <annotation/>
@@ -360,10 +356,24 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
+<link><script>translate_base_url+"app,Channel:509662,tvigle/multi";</script></link>
+    <title>Glamour</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509662/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link><script>translate_base_url+"app,Channel:2247,tvigle/multi";</script></link>
     <title>Belly Dance с Валерией Путицкой. Курс для начинающих</title>
     <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/2247/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:511968,tvigle/multi";</script></link>
+    <title>Glam - йога</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/511968/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>
@@ -479,20 +489,6 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link><script>translate_base_url+"app,Channel:2242,tvigle/multi";</script></link>
-    <title>Хип-хоп шоу</title>
-    <annotation/>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/2242/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
-<link><script>translate_base_url+"app,Channel:2234,tvigle/multi";</script></link>
-    <title>Фитнес со звездами</title>
-    <annotation/>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/2234/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
 <link><script>translate_base_url+"app,Channel:2150,tvigle/multi";</script></link>
     <title>Shine show</title>
     <annotation/>
@@ -500,24 +496,10 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
-<link><script>translate_base_url+"app,Channel:2236,tvigle/multi";</script></link>
-    <title>Танцы для детей</title>
-    <annotation/>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/2236/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
 <link><script>translate_base_url+"app,Channel:70,tvigle/multi";</script></link>
     <title>Звездные прически</title>
     <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/70/list.jpg?2</image>
-    <mediaDisplay name="photoView"/>
-  </item>
-  <item>
-<link><script>translate_base_url+"app,Channel:2241,tvigle/multi";</script></link>
-    <title>Хип-хоп</title>
-    <annotation/>
-    <image>http://photo.tvigle.ru/resource/rf/cnl/2241/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>

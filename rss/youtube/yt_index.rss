@@ -305,10 +305,6 @@
 		<item>
 			<title>Поиск видео</title>
 			<onClick>
-				keyword = doModalRss("rss_file://../etc/translate/rss/youtube/key/keyboard.rss");
-			  /* keyword= getInput(); */
-				if (keyword!=null &amp;&amp; keyword!="")
-				{
           optionsPath = getStoragePath("key") + "youtubeOptions.dat";
           optionsArray = readStringFromFile(optionsPath);
           if(optionsArray == null)
@@ -339,6 +335,17 @@
           if(youtubeRegion=="KR") lr="ko"; else
           if(youtubeRegion=="JP") lr="ja"; else
             lr=null;
+
+			  keyboard = null;
+			  keyboard = pushBackStringArray(keyboard, "youtube");
+			  keyboard = pushBackStringArray(keyboard, "../etc/translate/rss/image/YouTubeLogo.jpg");
+			  keyboard = pushBackStringArray(keyboard, lr);
+        writeStringToFile(getStoragePath("key")+"keyboard.dat", keyboard);
+        
+				keyword = doModalRss("rss_file://../etc/translate/rss/key/keyboard.rss");
+			  /* keyword= getInput(); */
+				if (keyword!=null &amp;&amp; keyword!="")
+				{
 
           regionKeyword = keyword;
     

@@ -4,6 +4,12 @@
   <image>../etc/translate/rss/image/tvigle.png</image>
   <trackList>
 <track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:511966,tvigle/multi</link>
+  <title>FUNаты</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/511966/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1318,tvigle/multi</link>
   <title>Мотокросс</title>
   <annotation/>
@@ -69,14 +75,14 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1289/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:79,tvigle/multi</link>
   <title>GUNter</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/79/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1715,tvigle/multi</link>
   <title>Олимпиада</title>
   <annotation/>

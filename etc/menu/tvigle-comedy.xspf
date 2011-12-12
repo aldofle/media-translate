@@ -4,6 +4,24 @@
   <image>../etc/translate/rss/image/tvigle.png</image>
   <trackList>
 <track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:509675,tvigle/multi</link>
+  <title>FUNаты</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/509675/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1200,tvigle/multi</link>
+  <title>ДаЁшь МолодЁжь</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/1200/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:536219,tvigle/multi</link>
+  <title>Кристина Асмус в Гонконге</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/536219/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2092,tvigle/multi</link>
   <title>Flash-игра Охрустенный квест</title>
   <annotation/>
@@ -14,6 +32,12 @@
   <title>Город Хищниц</title>
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2172/list.jpg?2</image>
+  <meta rel="mediaDisplay">photoView</meta>
+</track><track>
+  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:536220,tvigle/multi</link>
+  <title>Одна за всех</title>
+  <annotation/>
+  <image>http://photo.tvigle.ru/resource/rf/cnl/536220/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2105,tvigle/multi</link>
@@ -40,12 +64,6 @@
   <image>http://photo.tvigle.ru/resource/rf/cnl/1376/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
 </track><track>
-  <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1200,tvigle/multi</link>
-  <title>ДаЁшь МолодЁжь</title>
-  <annotation/>
-  <image>http://photo.tvigle.ru/resource/rf/cnl/1200/list.jpg?2</image>
-  <meta rel="mediaDisplay">photoView</meta>
-</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:1354,tvigle/multi</link>
   <title>Ах, женщины</title>
   <annotation/>
@@ -57,7 +75,8 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/2209/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:2028,tvigle/multi</link>
   <title>ГопСтоп</title>
   <annotation/>
@@ -75,8 +94,7 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/1388/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:12,tvigle/multi</link>
   <title>В контакте с одноклассниками</title>
   <annotation/>
@@ -130,7 +148,8 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/204/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track><track>
+</track>
+<track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:100,tvigle/multi</link>
   <title>Анекдот от звезды</title>
   <annotation/>
@@ -148,8 +167,7 @@
   <annotation/>
   <image>http://photo.tvigle.ru/resource/rf/cnl/16/list.jpg?2</image>
   <meta rel="mediaDisplay">photoView</meta>
-</track>
-<track>
+</track><track>
   <link>http://127.0.0.1/cgi-bin/translate?app,Channel:18,tvigle/multi</link>
   <title>Мульти ТВ</title>
   <annotation/>

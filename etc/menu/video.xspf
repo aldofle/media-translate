@@ -68,6 +68,13 @@
       <meta rel="mediaDisplay">onePartView</meta>
     </track>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app/uravo/index</link>
+      <title>URAVO.TV</title>
+      <annotation>Интернет-кинотеатр. 2008–2011 © URAVO Group</annotation>
+      <image>../etc/translate/rss/image/menu/uravo.png</image>
+      <meta rel="mediaDisplay">onePartView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/tv-other.xspf,collection/menulist</link>
       <title>Other</title>
       <annotation>Разные списки интернет-телевидения</annotation>

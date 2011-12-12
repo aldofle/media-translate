@@ -62,17 +62,40 @@ BEGIN {
 			RS = ORS = "\r\n"
 			HttpService |& getline
 			if($1 == "GET") {
-				Location = resolveUrl( substr($2, 3) );
-				RS = ORS = "\r\n"
-				if( Location != "" ) {
-			    print "HTTP/1.0 301 Moved Permanently"	|& HttpService
-			    print "Location: " Location 						|& HttpService
-					print "Connection: Close"              	|& HttpService
-					print "Pragma: no-cache" ORS           	|& HttpService
+				printf "%s\n", $0 > "/dev/stderr"
+				command = match($2, /^\/([^?]*)\?(.*)/, arr) ? arr[1] : "unknown";
+				url = arr[2];
+				if(command == "")	command = "stream";
+				printf "%s: %s\n", command, url > "/dev/stderr"
+				if(command == "stream")
+				{
+					Location = resolveUrl( url );
+					printf "Redirect to: %s\n", Location > "/dev/stderr"
+					RS = ORS = "\r\n"
+					if( Location != "" ) {
+				    print "HTTP/1.0 301 Moved Permanently"	|& HttpService
+				    print "Location: " Location 						|& HttpService
+					}
+					else {
+				    print "HTTP/1.0 404 Not Found"					|& HttpService
+					}
 				}
+				else if(command == "info") {
+					Location = "http://" HOSTNAME "/cgi-bin/translate?info,," url;
+			    printf "Redirect to: %s\n", Location > "/dev/stderr"
+			    print "HTTP/1.0 301 Moved Permanently"		|& HttpService
+			    print "Location: " Location 							|& HttpService
+				}
+				else {
+					printf "Unknown command: %s\n", command > "/dev/stderr"
+			    print "HTTP/1.0 400 Bad Request"					|& HttpService
+				}
+				print "Pragma: no-cache" 		         				|& HttpService
+				print "Connection: Close" ORS          			|& HttpService
 			}
 	    while ((HttpService |& getline) > 0) continue;
 	    close(HttpService)
+			printf "Closed\n" > "/dev/stderr"
     }
 }
 

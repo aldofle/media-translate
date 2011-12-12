@@ -53,7 +53,7 @@
 </script>
 
 <onRefresh>
-  setRefreshTime(-1);
+    setRefreshTime(-1);
   itemCount = getPageInfo("itemCount");
   middleItem = Integer(itemCount / 2);
   if(startitem == "middle")
@@ -65,6 +65,7 @@
   if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
     setFocusItemIndex(startitem-1);
   redrawDisplay();
+
 </onRefresh>
 
 	<mediaDisplay name=photoView 
@@ -126,6 +127,7 @@
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
   	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+
 
 		<itemDisplay>
 			<script>
@@ -326,6 +328,7 @@
         ret = "true";
       }
       ret;
+      
     </script>
   </onUserInput>
 		
@@ -353,6 +356,20 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
+<link><script>translate_base_url+"app,Channel:509673,tvigle/multi";</script></link>
+    <title>Человек и Море</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509673/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509667,tvigle/multi";</script></link>
+    <title>Армения. Живые камни</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509667/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link><script>translate_base_url+"app,Channel:76,tvigle/multi";</script></link>
     <title>Diving</title>
     <annotation/>
@@ -367,6 +384,13 @@
     <mediaDisplay name="photoView"/>
   </item>
   <item>
+<link><script>translate_base_url+"app,Channel:509668,tvigle/multi";</script></link>
+    <title>Синяя дыра</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509668/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link><script>translate_base_url+"app,Channel:508644,tvigle/multi";</script></link>
     <title>Наша география</title>
     <annotation/>
@@ -378,6 +402,13 @@
     <title>Затонувшие корабли</title>
     <annotation/>
     <image>http://photo.tvigle.ru/resource/rf/cnl/77/list.jpg?2</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
+<link><script>translate_base_url+"app,Channel:509674,tvigle/multi";</script></link>
+    <title>Дахаб. Красное море</title>
+    <annotation/>
+    <image>http://photo.tvigle.ru/resource/rf/cnl/509674/list.jpg?2</image>
     <mediaDisplay name="photoView"/>
   </item>
   <item>

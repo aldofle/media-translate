@@ -34,18 +34,7 @@
 </script>
 
 <onRefresh>
-  setRefreshTime(-1);
-  itemCount = getPageInfo("itemCount");
-  middleItem = Integer(itemCount / 2);
-  if(startitem == "middle")
-    setFocusItemIndex(middleItem);
-  else
-  if(startitem == "last")
-    setFocusItemIndex(itemCount);
-  else
-  if(startitem &gt; 0 &amp;&amp; startitem &lt;= itemCount)
-    setFocusItemIndex(startitem-1);
-  redrawDisplay();
+  <!--`cat "$BASEPATH/app/include/media_onrefresh.script"`-->
 </onRefresh>
 
 	<mediaDisplay name=photoView 
@@ -98,14 +87,7 @@
 			<script>print(annotation); annotation;</script>
 		</text>
 		
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
+<!--`cat "$BASEPATH/app/include/media_idleimage.inc"`-->
 
 		<itemDisplay>
 			<script>
@@ -205,107 +187,7 @@
 		
   <onUserInput>
     <script>
-      ret = "false";
-      userInput = currentUserInput();
-      majorContext = getPageInfo("majorContext");
-      
-      print("*** majorContext=",majorContext);
-      print("*** userInput=",userInput);
-      
-      if(userInput == "one" || userInput == "1")
-      {
-        if(itemCount &gt;= 1)
-        {
-          setFocusItemIndex(0);
-          redrawDisplay();
-        }
-      }
-      else if(userInput == "two" || userInput == "2")
-      {
-        if(itemCount &gt;= 2)
-        {
-          setFocusItemIndex(1);
-          redrawDisplay();
-        }
-      }
-      else if(userInput == "three" || userInput == "3")
-      {
-        if(itemCount &gt;= 3)
-        {
-          setFocusItemIndex(2);
-          redrawDisplay();
-        }
-      }
-      else if(userInput == "four" || userInput == "4")
-      {
-        if(itemCount &gt;= 4)
-        {
-          setFocusItemIndex(3);
-          redrawDisplay();
-        }
-      }
-      else if(userInput == "five" || userInput == "5")
-      {
-        if(itemCount &gt;= 5)
-        {
-          setFocusItemIndex(4);
-          redrawDisplay();
-        }
-      }
-      else if(userInput == "six" || userInput == "6")
-      {
-        if(itemCount &gt;= 6)
-        {
-          setFocusItemIndex(5);
-          redrawDisplay();
-        }
-      }
-      else if(userInput == "seven" || userInput == "7")
-      {
-        if(itemCount &gt;= 7)
-        {
-          setFocusItemIndex(6);
-          redrawDisplay();
-        }
-      }
-      else if(userInput == "eight" || userInput == "8")
-      {
-        if(itemCount &gt;= 8)
-        {
-          setFocusItemIndex(7);
-          redrawDisplay();
-        }
-      }
-      else if(userInput == "nine" || userInput == "9")
-      {
-        if(itemCount &gt;= 9)
-        {
-          setFocusItemIndex(8);
-          redrawDisplay();
-        }
-      }
-      else if (userInput == "pagedown" || userInput == "pageup" || userInput == "PD" || userInput == "PG")
-      {
-        itemSize = getPageInfo("itemCount");
-        idx = Integer(getFocusItemIndex());
-        if (userInput == "pagedown")
-        {
-          idx -= -columnCount;
-          if(idx &gt;= itemSize)
-            idx = itemSize-1;
-        }
-        else
-        {
-          idx -= columnCount;
-          if(idx &lt; 0)
-            idx = 0;
-        }
-        setFocusItemIndex(idx);
-        setItemFocus(idx);
-        redrawDisplay();
-        ret = "true";
-      }
-      ret;
+<!--`cat "$BASEPATH/app/include/menu_onuserinput.script"`-->
     </script>
   </onUserInput>
 		
