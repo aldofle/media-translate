@@ -2,7 +2,6 @@
 #
 #   http://code.google.com/media-translate/
 #   Copyright (C) 2010  Serge A. Timchenko
-#   Copyright (C) 2011  nnb
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -18,26 +17,31 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-# Translate CGI module
-# 'mults.spb.ru' plug-in
-#
-# version: 1.1 13.12.2011 11:30:39
-#
-# http://kiwi.kz/watch/hijx5nx5jitq/
-#
+DATAPATH=$BASEPATH/app/rss
+cd $DATAPATH
 
-if echo "${arg_url}" | grep -qs 'kiwi\.kz\/watch\/.*'; then
+TEMPFEED=$CACHEPATH/mediafeed.rss
 
-  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
+rm -f $TEMPFEED
+$MSDL -p http -q -o $TEMPFEED "$stream_url"
 
-  if [ -f ${TMPFILE} ]; then
-    stream_type='video/mp4'
-    stream_url=`awk '/<param name="movie"/{ match($0, /value="([^"]+)"/, arr); print arr[1]; }' ${TMPFILE} | unescapeXML | urldecode | sed 's/^.*\(url\|file\)=//;s/&.*$//'`
-    protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
-    icy_name=`grep "<title>" ${TMPFILE} | sed 's/^.*<title>//;s/<\/title>.*$//' | unescapeXML`
-    rm -f $TMPFILE
-  fi
-  return $RC_OK
+if [ -f $TEMPFEED ]; then
+    echo "Content-type: application/rss+xml"
+    echo
+    call_convert()
+    {
+      if sed -n '/<?xml/p' $TEMPFEED | grep -qs windows-125; then
+          cat $TEMPFEED | $TOUTF8 | sed 's/windows-125./utf-8/'
+      else
+          cat $TEMPFEED
+      fi
+    }
+    call_convert | awk '
+    { print; } 
+    /<description/ {
+        if(match($0, /<img.*src="([^"]+)"/, arr)) {
+            print "<image url=\"" arr[1] "\"/>";
+        }
+    }'
 fi
 
-return $RC_FAIL

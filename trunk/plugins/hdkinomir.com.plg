@@ -20,23 +20,23 @@
 # Translate CGI module
 # 'hdkinomir.com' plug-in
 #
-# version: 1.0 25.07.2011 16:35:56
+# version: 1.1 13.12.2011 10:24:41
 #
 # http://hdkinomir.com/comedy/1465-madagaskar-madagascar-2005-onlayn.html
-#
+# http://hdkinomir.com/drama/2957-elena-2011-onlayn.html
 
 if echo "${arg_url}" | grep -qs 'hdkinomir\.com/.*-onlayn\.html$'; then 
 
-  $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1
-  
-  local stream_title=`grep "<title>" ${TMPFILE} | sed 's/^.*<title>//;s/&raquo;.*<\/title>//'`
-  
-  if [ -f ${TMPFILE} ]; then
-    arg_url=`grep -i "vk.com" ${TMPFILE} | sed 's/.*src="//;s/".*//' | unescapeXML`
-		check_stream
-		icy_name=$stream_title
-  fi  
-  return $RC_OK
+    $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1
+    
+    local stream_title=`grep "<title>" ${TMPFILE} | sed 's/^.*<title>//;s/&raquo;.*<\/title>//'`
+    
+    if [ -f ${TMPFILE} ]; then
+        arg_url=`awk '/iframe/ { match($0, /src="([^"]+)"/, arr); print arr[1]; }' ${TMPFILE} | unescapeXML`
+        check_stream
+        icy_name=$stream_title
+    fi  
+    return $RC_OK
 fi
 
 return $RC_FAIL

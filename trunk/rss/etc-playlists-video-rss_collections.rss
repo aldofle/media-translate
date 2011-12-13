@@ -583,16 +583,6 @@
     <stream_protocol>http</stream_protocol>
   </item>
   <item>
-    <annotation>Телеканалы на RuTube - В эфире</annotation>
-    <title>Телеканалы на RuTube</title>
-    <image>../etc/translate/rss/image/menu/rss.png</image>
-<location><script>translate_base_url+"app/rss/channels.rutube.ru";</script></location>
-<stream_url><script>translate_base_url+"app/rss/channels.rutube.ru";</script></stream_url>
-    <stream_class>rss</stream_class>
-    <stream_type>application/xml</stream_type>
-    <stream_protocol>http</stream_protocol>
-  </item>
-  <item>
     <annotation>Смотреть фильмы онлайн, фильмы онлайн без регистрации, хорошие фильмы онлайн (бесплатно) - LineCinema.ru</annotation>
     <title>LineCinema.ru</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
@@ -636,8 +626,8 @@
     <annotation>Фильмы онлайн | HD Kinomir</annotation>
     <title>HD KINOMIR</title>
     <image>../etc/translate/rss/image/menu/rss.png</image>
-<location><script>translate_base_url+"app/rss/mediafeed,http://hdkinomir.com/rss.xml";</script></location>
-<stream_url><script>translate_base_url+"app/rss/mediafeed,http://hdkinomir.com/rss.xml";</script></stream_url>
+<location><script>translate_base_url+"app/rss/hdkinomir.com,http://hdkinomir.com/rss.xml";</script></location>
+<stream_url><script>translate_base_url+"app/rss/hdkinomir.com,http://hdkinomir.com/rss.xml";</script></stream_url>
     <stream_class>rss</stream_class>
     <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
@@ -695,8 +685,8 @@
   <item>
     <annotation>kiwi.kz</annotation>
     <title>kiwi.kz | Популярное видео</title>
-    <location>http://kiwi.kz/rss/popular/</location>
-    <stream_url>http://kiwi.kz/rss/popular/</stream_url>
+<location><script>translate_base_url+"app/rss/kiwi.kz,http://kiwi.kz/rss/popular/";</script></location>
+<stream_url><script>translate_base_url+"app/rss/kiwi.kz,http://kiwi.kz/rss/popular/";</script></stream_url>
     <stream_class>rss</stream_class>
     <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
@@ -704,8 +694,8 @@
   <item>
     <annotation>kiwi.kz</annotation>
     <title>kiwi.kz | Новости</title>
-    <location>http://kiwi.kz/rss/news/</location>
-    <stream_url>http://kiwi.kz/rss/news/</stream_url>
+<location><script>translate_base_url+"app/rss/kiwi.kz,http://kiwi.kz/rss/news/";</script></location>
+<stream_url><script>translate_base_url+"app/rss/kiwi.kz,http://kiwi.kz/rss/news/";</script></stream_url>
     <stream_class>rss</stream_class>
     <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
@@ -713,8 +703,8 @@
   <item>
     <annotation>kiwi.kz</annotation>
     <title>kiwi.kz Видео | Категория "Все"</title>
-    <location>http://kiwi.kz/rss/tracks/</location>
-    <stream_url>http://kiwi.kz/rss/tracks/</stream_url>
+<location><script>translate_base_url+"app/rss/kiwi.kz,http://kiwi.kz/rss/tracks/";</script></location>
+<stream_url><script>translate_base_url+"app/rss/kiwi.kz,http://kiwi.kz/rss/tracks/";</script></stream_url>
     <stream_class>rss</stream_class>
     <stream_type>application/xml</stream_type>
     <stream_protocol>http</stream_protocol>
