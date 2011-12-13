@@ -99,6 +99,7 @@
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
+<!--
       <track>
     <annotation>Телеканалы на RuTube - В эфире</annotation>
     <title>Телеканалы на RuTube</title>
@@ -109,6 +110,7 @@
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
 </track>
+-->
       <track>
          <annotation>Смотреть фильмы онлайн, фильмы онлайн без регистрации, хорошие фильмы онлайн (бесплатно) - LineCinema.ru</annotation>
          <title>LineCinema.ru</title>
@@ -153,8 +155,8 @@
          <annotation>Фильмы онлайн | HD Kinomir</annotation>
          <title>HD KINOMIR</title>
          <image>../etc/translate/rss/image/menu/rss.png</image>
-         <location>http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://hdkinomir.com/rss.xml</location>
-<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/mediafeed,http://hdkinomir.com/rss.xml</meta>
+         <location>http://127.0.0.1/cgi-bin/translate?app/rss/hdkinomir.com,http://hdkinomir.com/rss.xml</location>
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/hdkinomir.com,http://hdkinomir.com/rss.xml</meta>
 <meta rel="stream_class">rss</meta>
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
@@ -213,8 +215,8 @@
 <track>
    <annotation>kiwi.kz</annotation>
    <title>kiwi.kz | Популярное видео</title>
-   <location>http://kiwi.kz/rss/popular/</location>
-<meta rel="stream_url">http://kiwi.kz/rss/popular/</meta>
+   <location>http://127.0.0.1/cgi-bin/translate?app/rss/kiwi.kz,http://kiwi.kz/rss/popular/</location>
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/kiwi.kz,http://kiwi.kz/rss/popular/</meta>
 <meta rel="stream_class">rss</meta>
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
@@ -222,8 +224,8 @@
 <track>
    <annotation>kiwi.kz</annotation>
    <title>kiwi.kz | Новости</title>
-   <location>http://kiwi.kz/rss/news/</location>
-<meta rel="stream_url">http://kiwi.kz/rss/news/</meta>
+   <location>http://127.0.0.1/cgi-bin/translate?app/rss/kiwi.kz,http://kiwi.kz/rss/news/</location>
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/kiwi.kz,http://kiwi.kz/rss/news/</meta>
 <meta rel="stream_class">rss</meta>
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
@@ -231,8 +233,8 @@
 <track>
    <annotation>kiwi.kz</annotation>
    <title>kiwi.kz Видео | Категория "Все"</title>
-   <location>http://kiwi.kz/rss/tracks/</location>
-<meta rel="stream_url">http://kiwi.kz/rss/tracks/</meta>
+   <location>http://127.0.0.1/cgi-bin/translate?app/rss/kiwi.kz,http://kiwi.kz/rss/tracks/</location>
+<meta rel="stream_url">http://127.0.0.1/cgi-bin/translate?app/rss/kiwi.kz,http://kiwi.kz/rss/tracks/</meta>
 <meta rel="stream_class">rss</meta>
 <meta rel="stream_type">application/xml</meta>
 <meta rel="stream_protocol">http</meta>
