@@ -27,6 +27,10 @@
         stream_genre = getItemInfo(focus, "stream_genre");
         stream_bitrate = getItemInfo(focus, "stream_bitrate");
         playlist_autoplay = getItemInfo(focus, "autoplay");
+        playlist_repeat = getItemInfo(focus, "repeat");
+
+        if(playlist_repeat == "" || playlist_repeat == null)
+          playlist_repeat = "None";
 
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;

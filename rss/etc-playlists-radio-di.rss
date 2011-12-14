@@ -276,6 +276,10 @@
         stream_genre = getItemInfo(focus, "stream_genre");
         stream_bitrate = getItemInfo(focus, "stream_bitrate");
         playlist_autoplay = getItemInfo(focus, "autoplay");
+        playlist_repeat = getItemInfo(focus, "repeat");
+
+        if(playlist_repeat == "" || playlist_repeat == null)
+          playlist_repeat = "None";
 
         if(playlist_autoplay == "" || playlist_autoplay == null)
           playlist_autoplay = 1;
@@ -471,6 +475,7 @@
     streamArray = pushBackStringArray(streamArray, "");
     streamArray = pushBackStringArray(streamArray, "playlist");
     streamArray = pushBackStringArray(streamArray, playlist_autoplay);
+    streamArray = pushBackStringArray(streamArray, playlist_repeat);
     writeStringToFile(storagePath_playlist, streamArray);
     doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
   </playlistDispatcher>

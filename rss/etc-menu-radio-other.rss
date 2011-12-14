@@ -300,6 +300,13 @@
   </script><channel>
   <title>Other Internet Radio Lists</title>
   <item>
+<link>rss_file://../etc/translate/rss/etc-playlists-radio-radiorss.rss</link>
+    <title>Radio RSS</title>
+    <annotation>Все новости главных российских порталов, озвученные синтезом речи Центра речевых технологий.</annotation>
+    <image>http://rssradio.ru/img/logo.png</image>
+    <mediaDisplay name="photoView"/>
+  </item>
+  <item>
 <link>rss_file://../etc/translate/rss/etc-menu-radio-bbc-index.rss</link>
     <title>BBC Radio</title>
     <annotation>BBC Radio Online</annotation>
