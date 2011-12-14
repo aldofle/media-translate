@@ -5,6 +5,13 @@
 
   <trackList>
     <track>
+      <link>http://127.0.0.1/cgi-bin/translate?app,Font:22;Lines:1;Start:middle;Size:7;File:etc/playlists/radio-radiorss.xspf,collection/media</link>
+      <title>Radio RSS</title>
+      <annotation>Все новости главных российских порталов, озвученные синтезом речи Центра речевых технологий.</annotation>
+      <image>http://rssradio.ru/img/logo.png</image>
+      <meta rel="mediaDisplay">photoView</meta>
+    </track>
+    <track>
       <link>http://127.0.0.1/cgi-bin/translate?app,File:etc/menu/radio-bbc-index.xspf,collection/menulist</link>
       <title>BBC Radio</title>
       <annotation>BBC Radio Online</annotation>

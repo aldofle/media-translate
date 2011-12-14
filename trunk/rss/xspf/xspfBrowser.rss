@@ -363,13 +363,13 @@
         ret = "true";
         if(repeat == "None")
         {
-          repeat = "One";
-        }
-        else if(repeat == "One")
-        {
           repeat = "All";
         }
         else if(repeat == "All")
+        {
+          repeat = "One";
+        }
+        else if(repeat == "One")
         {
           repeat = "Random";
         }
@@ -445,6 +445,11 @@
     {
       autoplay = 0;
     }
+    repeat = getStringArrayAt(arr, 6);
+    if(repeat == null)
+    {
+      repeat = "None";
+    }
     writeStringToFile(storagePath_playlist, "");
   }
   else
@@ -455,9 +460,10 @@
     options = "";
     command = "startpoint";
     autoplay = 0;
+    repeat = "None";
   }
   
-  repeat            = "None";
+  
   playStatus        = 0;
   playIndex         = -1;
   playContext       = "";
