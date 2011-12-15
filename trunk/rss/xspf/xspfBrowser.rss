@@ -95,6 +95,7 @@
   </text>
   <text redraw="yes" offsetXPC="72" offsetYPC="65" widthPC="23" heightPC="20" fontSize="14" backgroundColor="0:0:0" foregroundColor="200:80:80" lines="4">
     <script>errorInfo;</script>
+    <foregroundColor><script>errorInfoColor;</script></foregroundColor>
   </text>
 
   <text redraw="yes" offsetXPC="0" offsetYPC="84" heightPC="2" fontSize="10" backgroundColor="0:100:155" foregroundColor="0:100:155">
@@ -247,6 +248,7 @@
       ret = "false";
       
       errorInfo = "";
+      errorInfoColor = "200:80:80";
       
       userInput = currentUserInput();
       majorContext = getPageInfo("majorContext");
@@ -390,6 +392,26 @@
         }
         ret = "true";
       }
+      else if (userInput == "zero" || userInput == "0")
+  		{
+        search_text = playSong;
+        if(search_text == "" || search_text == null)
+          search_text = playTitle;
+        if(search_text != "" &amp;&amp; search_text != null) 
+        {
+  		    showIdle();
+        	executeScript("sub_stopPlayback");
+          storagePath = getStoragePath("tmp") + "youtubeRSS.dat";
+          arr = null;
+          arr = pushBackStringArray(arr, "http://gdata.youtube.com/feeds/api/videos?");
+          arr = pushBackStringArray(arr, search_text);
+          arr = pushBackStringArray(arr, search_text);
+          
+          writeStringToFile(storagePath, arr);
+    	    doModalRss("rss_file://../etc/translate/rss/youtube/yt_search_feed.rss");
+    	  }
+  	    ret = "true";
+  	  }
       ret;
     </script>
   </onUserInput>
@@ -500,6 +522,7 @@
 	if(length == 0)
 	{
     errorInfo = "Empty list!";
+    errorInfoColor = "200:80:80";
 	  postMessage("return");
 	}
 	count=startItem;
@@ -799,6 +822,7 @@
     else
     {
       errorInfo = "Loading error!";
+      errorInfoColor = "200:80:80";
       postMessage("return");
     }
   print("sub_refreshList end");
@@ -823,6 +847,7 @@
       
       error = 0;
       errorInfo = "";
+      errorInfoColor = "200:80:80";
       
       translateUrl = translate_base_url + "stream," + options + "," + urlEncode(url);
       
@@ -854,6 +879,7 @@
       	    if(value != null)
       	    {
       	     errorInfo = value;
+      	     errorInfoColor = "200:80:80";
       	    }
           }
           else
@@ -1057,6 +1083,13 @@
           playIndex   = idx;
           playContext = currentPwd;
           
+          if((playTitle != "" &amp;&amp; playTitle != null) || (playSong != "" &amp;&amp; playSong != null))
+          {
+            errorInfo = "Press '0' to search related video on Youtube";
+            errorInfoColor = "200:200:200";
+          }
+
+          
   		    if(streamBitrate != "")
     	    {
     	      title_1 = "Bitrate:";
@@ -1119,6 +1152,7 @@
           {
             gotoUrl = "";
             errorInfo = "Unsupported content type (" + type + ")!";
+            errorInfoColor = "200:80:80";
           }
           if(gotoUrl != "")
           {
@@ -1161,6 +1195,7 @@
   statusCheck = 0;
   playingProgress = 0;
   progress = "";
+  errorInfo = "";
 </sub_onStop>
 
 <sub_initRandom>
