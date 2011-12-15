@@ -52,6 +52,7 @@
       streamArray = pushBackStringArray(streamArray, "");
       streamArray = pushBackStringArray(streamArray, "playlist");
       streamArray = pushBackStringArray(streamArray, playlist_autoplay);
+      streamArray = pushBackStringArray(streamArray, "All");
       writeStringToFile(storagePath_playlist, streamArray);
       doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
       setRefreshTime(1);
