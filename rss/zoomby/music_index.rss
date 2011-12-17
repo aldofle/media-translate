@@ -230,11 +230,13 @@
    <link>rss_file://../etc/translate/rss/zoomby/music_alphabet.rss</link>
    <mediaDisplay name=threePartsView />
   </item>
+<!--
   <item>
    <title>Жанры</title>
    <link>rss_file://../etc/translate/rss/zoomby/music_genres.rss</link>
    <mediaDisplay name=onePartView />
   </item>
+-->
   <item>
    <title>Коллекции</title>
    <link>rss_file://../etc/translate/rss/zoomby/music_collections.rss</link>

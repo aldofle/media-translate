@@ -207,152 +207,136 @@
   </item_template>
 
 <channel>
-  <title>ZOOMBY.RU/MUSIC/COLLECTIONS</title>
-  <item>
-   <title>Популярные</title>
-   <location>http://www.zoomby.ru/music/collections/popular</location>
-  </item>
-  <item>
-   <title>Zoomby рекомендует</title>
-   <location>http://www.zoomby.ru/music/collections/featured</location>
-  </item>
-  <item>
-   <title>Бой бенды</title>
-   <location>http://www.zoomby.ru/music/collections/boybands</location>
-  </item>
-  <item>
-   <title>Диско музыка</title>
-   <location>http://www.zoomby.ru/music/collections/disco</location>
-  </item>
-  <item>
-   <title>Итальянская музыка</title>
-   <location>http://www.zoomby.ru/music/collections/italian</location>
-  </item>
-  <item>
-   <title>Мексиканская музыка</title>
-   <location>http://www.zoomby.ru/music/collections/mexican</location>
-  </item>
-  <item>
-   <title>Музыка Болливуда</title>
-   <location>http://www.zoomby.ru/music/collections/bollywood</location>
-  </item>
-  <item>
-   <title>Немецкая музыка</title>
-   <location>http://www.zoomby.ru/music/collections/german</location>
-  </item>
-  <item>
-   <title>Финская музыка</title>
-   <location>http://www.zoomby.ru/music/collections/finnish</location>
-  </item>
-  <item>
-   <title>Французская музыка</title>
-   <location>http://www.zoomby.ru/music/collections/french</location>
-  </item>
-  <item>
-   <title>Хиты 70-х</title>
-   <location>http://www.zoomby.ru/music/collections/70s</location>
-  </item>
-  <item>
-   <title>Хиты 80-х</title>
-   <location>http://www.zoomby.ru/music/collections/80s</location>
-  </item>
-  <item>
-   <title>Хиты 90-х</title>
-   <location>http://www.zoomby.ru/music/collections/90s</location>
-  </item>
-  <item>
-   <title>Хиты Евровидения</title>
-   <location>http://www.zoomby.ru/music/collections/eurovision</location>
-  </item>
-  <item>
-   <title>Хиты Тайваня</title>
-   <location>http://www.zoomby.ru/music/collections/tw-pop</location>
-  </item>
-  <item>
-   <title>Шведская музыка</title>
-   <location>http://www.zoomby.ru/music/collections/swedish</location>
-  </item>
-  <item>
-   <title>Норвежские хиты</title>
-   <location>http://www.zoomby.ru/music/collections/norwegian</location>
-  </item>
-  <item>
-   <title>Поп</title>
-   <location>http://www.zoomby.ru/music/collections/pop</location>
-  </item>
-  <item>
-   <title>Техно</title>
-   <location>http://www.zoomby.ru/music/collections/techno</location>
-  </item>
-  <item>
-   <title>Транс</title>
-   <location>http://www.zoomby.ru/music/collections/trance</location>
-  </item>
-  <item>
-   <title>Регги</title>
-   <location>http://www.zoomby.ru/music/collections/reggae</location>
-  </item>
-  <item>
-   <title>Соул</title>
-   <location>http://www.zoomby.ru/music/collections/soul</location>
-  </item>
-  <item>
-   <title>Электроника</title>
-   <location>http://www.zoomby.ru/music/collections/electronic</location>
-  </item>
-  <item>
-   <title>Турецкая музыка</title>
-   <location>http://www.zoomby.ru/music/collections/turkish</location>
-  </item>
-  <item>
-   <title>Психоделика</title>
-   <location>http://www.zoomby.ru/music/collections/psychedelic</location>
-  </item>
-  <item>
-   <title>Метал</title>
-   <location>http://www.zoomby.ru/music/collections/metal</location>
-  </item>
-  <item>
-   <title>Рок</title>
-   <location>http://www.zoomby.ru/music/collections/rock</location>
-  </item>
-  <item>
-   <title>Джаз</title>
-   <location>http://www.zoomby.ru/music/collections/jazz</location>
-  </item>
-  <item>
-   <title>Электроника</title>
-   <location>http://www.zoomby.ru/music/collections/electronic</location>
-  </item>
-  <item>
-   <title>Панк</title>
-   <location>http://www.zoomby.ru/music/collections/punk</location>
-  </item>
-  <item>
-   <title>Свинг</title>
-   <location>http://www.zoomby.ru/music/collections/swing</location>
-  </item>
-  <item>
-   <title>Испанская музыка</title>
-   <location>http://www.zoomby.ru/music/collections/spanish</location>
-  </item>
-  <item>
-   <title>Альтернатива</title>
-   <location>http://www.zoomby.ru/music/collections/alternative</location>
-  </item>
-  <item>
-   <title>Саксофон</title>
-   <location>http://www.zoomby.ru/music/collections/saxophone</location>
-  </item>
-  <item>
-   <title>Блюз</title>
-   <location>http://www.zoomby.ru/music/collections/blues</location>
-  </item>
-<!--
-  <item>
-   <title></title>
-   <location></location>
-  </item>
--->
+<title>ZOOMBY.RU/MUSIC/COLLECTIONS</title>
+<item>
+  <title>   acoustic  </title>
+  <location>http://zoomby.ru/music/collections/acoustic</location>
+</item><item>
+  <title>   alternative  </title>
+  <location>http://zoomby.ru/music/collections/alternative</location>
+</item><item>
+  <title>   american  </title>
+  <location>http://zoomby.ru/music/collections/american</location>
+</item><item>
+  <title>   blues  </title>
+  <location>http://zoomby.ru/music/collections/blues</location>
+</item><item>
+  <title>   bollywood  </title>
+  <location>http://zoomby.ru/music/collections/bollywood</location>
+</item><item>
+  <title>   british  </title>
+  <location>http://zoomby.ru/music/collections/british</location>
+</item><item>
+  <title>   britpop  </title>
+  <location>http://zoomby.ru/music/collections/britpop</location>
+</item><item>
+  <title>   chanson  </title>
+  <location>http://zoomby.ru/music/collections/chanson</location>
+</item><item>
+  <title>   chillout  </title>
+  <location>http://zoomby.ru/music/collections/chillout</location>
+</item><item>
+  <title>   chinese  </title>
+  <location>http://zoomby.ru/music/collections/chinese</location>
+</item><item>
+  <title>   country  </title>
+  <location>http://zoomby.ru/music/collections/country</location>
+</item><item>
+  <title>   dance  </title>
+  <location>http://zoomby.ru/music/collections/dance</location>
+</item><item>
+  <title>   electronica  </title>
+  <location>http://zoomby.ru/music/collections/electronica</location>
+</item><item>
+  <title>   emo  </title>
+  <location>http://zoomby.ru/music/collections/emo</location>
+</item><item>
+  <title>   finnish  </title>
+  <location>http://zoomby.ru/music/collections/finnish</location>
+</item><item>
+  <title>   folk  </title>
+  <location>http://zoomby.ru/music/collections/folk</location>
+</item><item>
+  <title>   french  </title>
+  <location>http://zoomby.ru/music/collections/french</location>
+</item><item>
+  <title>   funk  </title>
+  <location>http://zoomby.ru/music/collections/funk</location>
+</item><item>
+  <title>   german  </title>
+  <location>http://zoomby.ru/music/collections/german</location>
+</item><item>
+  <title>   hardcore  </title>
+  <location>http://zoomby.ru/music/collections/hardcore</location>
+</item><item>
+  <title>   indie  </title>
+  <location>http://zoomby.ru/music/collections/indie</location>
+</item><item>
+  <title>   industrial  </title>
+  <location>http://zoomby.ru/music/collections/industrial</location>
+</item><item>
+  <title>   instrumental  </title>
+  <location>http://zoomby.ru/music/collections/instrumental</location>
+</item><item>
+  <title>   japanese  </title>
+  <location>http://zoomby.ru/music/collections/japanese</location>
+</item><item>
+  <title>   jazz  </title>
+  <location>http://zoomby.ru/music/collections/jazz</location>
+</item><item>
+  <title>   latin  </title>
+  <location>http://zoomby.ru/music/collections/latin</location>
+</item><item>
+  <title>   metal  </title>
+  <location>http://zoomby.ru/music/collections/metal</location>
+</item><item>
+  <title>   pop  </title>
+  <location>http://zoomby.ru/music/collections/pop</location>
+</item><item>
+  <title>   psychedelic  </title>
+  <location>http://zoomby.ru/music/collections/psychedelic</location>
+</item><item>
+  <title>   punk  </title>
+  <location>http://zoomby.ru/music/collections/punk</location>
+</item><item>
+  <title>   rap  </title>
+  <location>http://zoomby.ru/music/collections/rap</location>
+</item><item>
+  <title>   reggae  </title>
+  <location>http://zoomby.ru/music/collections/reggae</location>
+</item><item>
+  <title>   rnb  </title>
+  <location>http://zoomby.ru/music/collections/rnb</location>
+</item><item>
+  <title>   rock  </title>
+  <location>http://zoomby.ru/music/collections/rock</location>
+</item><item>
+  <title>   russian  </title>
+  <location>http://zoomby.ru/music/collections/russian</location>
+</item><item>
+  <title>   salsa  </title>
+  <location>http://zoomby.ru/music/collections/salsa</location>
+</item><item>
+  <title>   ska  </title>
+  <location>http://zoomby.ru/music/collections/ska</location>
+</item><item>
+  <title>   soul  </title>
+  <location>http://zoomby.ru/music/collections/soul</location>
+</item><item>
+  <title>   spanish  </title>
+  <location>http://zoomby.ru/music/collections/spanish</location>
+</item><item>
+  <title>   swedish  </title>
+  <location>http://zoomby.ru/music/collections/swedish</location>
+</item><item>
+  <title>   synthpop  </title>
+  <location>http://zoomby.ru/music/collections/synthpop</location>
+</item><item>
+  <title>   techno  </title>
+  <location>http://zoomby.ru/music/collections/techno</location>
+</item><item>
+  <title>   turkish  </title>
+  <location>http://zoomby.ru/music/collections/turkish</location>
+</item>
 </channel>
 </rss>
