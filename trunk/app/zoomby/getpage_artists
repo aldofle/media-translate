@@ -41,7 +41,7 @@ local PAGEXML=$CACHEPATH/zoomby.xml
 
 $MSDL -q -o "$PAGEFILE" -p http "$arg_opt"
 if [ -f "$PAGEFILE" ]; then
-   local pages=`grep '<td valign="top"><div onClick="window.location.href=' $PAGEFILE | sed -r 's/^.*>([0-9]*)<\/div><\/td>/\1/'`
+   local pages=`grep 'class="navi__a".*onClick="window.location.href=' $PAGEFILE | sed -r 's/^.*>([0-9]*)<\/a><\/li>.*/\1/'`
 #   echo pages=$pages >>$debugfile
 
    if [ "$pages" = "" ]; then
@@ -64,7 +64,11 @@ echo "</pages>" >>$PAGEXML
 
    if [ -x $XSLTPROC ]; then
 #     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+    if echo $arg_opt | grep "collections" ; then
+     $XSLTPROC --html $DATAPATH/collection.xslt $PAGEFILE 2>/dev/null | sed '1d' | sed 's/background-image: url(//g;s/);//g'>> $PAGEXML
+    else
      $XSLTPROC --html $DATAPATH/artists.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+    fi
    fi
 
 cat >> $PAGEXML <<EOF
