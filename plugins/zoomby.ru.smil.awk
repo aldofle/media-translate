@@ -23,6 +23,7 @@ BEGIN {
   UNESCAPEXML = 0;
   base = "";
   title = "";
+  content_id = "";
 
   while ( getXML(ARGV[1],1) ) 
   {
@@ -31,8 +32,9 @@ BEGIN {
       if(XITEM == "switch")
       {
       	base = XATTR["rtmp"];
-      	if(XATTR["content_id"] != "")
-      	  base = base XATTR["content_id"] "/";
+        content_id = XATTR["content_id"];
+      	if(content_id != "")
+      	  base = base content_id "/";
       	title = XATTR["title"];
       	if(XATTR["descr"] != "")
       		title = title " / " XATTR["descr"];
@@ -47,6 +49,12 @@ BEGIN {
        		VIDEO[br] = base XATTR["src"];
        	else if(XATTR["stream"] != "")
        		VIDEO[br] = XATTR["stream"];
+        else if(XATTR["streamer"] != "") {
+          VIDEO[br] = XATTR["streamer"];
+          if(content_id != "")
+            VIDEO[br] = VIDEO[br] "/" content_id;
+          VIDEO[br] = VIDEO[br] "/" XATTR["file"];
+        }
       }
     }
   }

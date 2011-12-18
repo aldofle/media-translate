@@ -33,7 +33,10 @@ BEGIN {
     {
       if(XITEM == "switch")
       {
-      	base = XATTR["rtmp"] XATTR["content_id"] "/";
+      	base = XATTR["rtmp"];
+        content_id = XATTR["content_id"];
+      	if(content_id != "")
+      	  base = base content_id "/";
       	title = XATTR["title"];
       	if(XATTR["descr"] != "")
       		title = title " / " XATTR["descr"];
@@ -45,6 +48,13 @@ BEGIN {
         	VIDEO[br] = XATTR["pd"];
        	else if(XATTR["src"] != "")
        		VIDEO[br] = base XATTR["src"];
+       	else if(XATTR["stream"] != "")
+       		VIDEO[br] = XATTR["stream"];
+        else if(XATTR["streamer"] != "") {
+          VIDEO[br] = XATTR["streamer"];
+          if(content_id != "")
+            VIDEO[br] = VIDEO[br] "/" content_id;
+          VIDEO[br] = VIDEO[br] "/" XATTR["file"];
       }
     }
     else if(XTYPE == "END")
@@ -56,8 +66,8 @@ BEGIN {
 			  	url = VIDEO[KEY[n]];
 			  else
 			  	url = VIDEO[KEY[Q]];
-			  if(url ~ /^rtmp:/)
-			  	url = url EXT;
+			  if(url ~ /^rtmp:/ && url ~ EXT)
+			    gsub(EXT, EXT EXT, url);
 				print "<track>"
 	  		print "<title>" title "</title>"
 	  		print "<location>" url "</location>"
