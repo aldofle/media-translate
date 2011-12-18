@@ -711,6 +711,7 @@ command_text()
   echo "Host: $host"
   echo "Host response: $host_response"
   echo "Server type: $server_type"
+  echo "Options: $arg_opt"
   echo
   echo "$buf"
   echo
@@ -780,9 +781,9 @@ command_info()
   echo
   echo "<?xml version='1.0' encoding='UTF-8'?>"
   echo "<info>"
-  escaped_url=`escapeXML $stream_url`
+  escaped_url=`escapeXML "$stream_url"`
   if [ "$protocol" == "http" -o "$protocol" == "mms" -o "$protocol" == "mmsh" -o "$protocol" == "rtsp" ]; then
-    escaped_url="`echo $escaped_url | sed 's/ /%20/g;s/"/%22/g'`"
+    escaped_url="`echo $escaped_url | sed 's/ /+/g;s/"/%22/g'`"
   fi 
   echo "<stream url=\"$escaped_url\" type=\"$stream_type\" class=\"$stream_class\" protocol=\"$protocol\" server=\"$server_type\" server_url=\"$stream_status_url\" />"
   case $stream_class in
