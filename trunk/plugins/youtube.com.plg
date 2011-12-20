@@ -21,19 +21,20 @@
 # Translate CGI module
 # 'youtube.com' plug-in
 #
-# version: 2.4 04.08.2011 17:00:34
+# version: 2.5 20.12.2011 12:00:45
 #
 # http://www.youtube.com/v/JZtcw6GIxTY
 # http://www.youtube.com/watch?v=JZtcw6GIxTY
 # http://www.youtube.com/movie?v=xO19ipsCxfI
 # http://m.youtube.com/watch?gl=RU&client=mv-google&hl=ru&v=V-_YxX94cQ8
+# http://www.youtube.com/embed/0v1ijbQocqo
 #
 # options:
 #   HD:[0|1]
 
 unset RESOLVE_CACHE_ENABLED
 
-if echo "${arg_url}" | grep -qs 'youtube\.com.*\(/v/\|/watch?\|movie?\).*$'; then 
+if echo "${arg_url}" | grep -qs 'youtube\.com.*\(/embed/\|/v/\|/watch?\|movie?\).*$'; then 
 
   local TIMELIFE=60
   
