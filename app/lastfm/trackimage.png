@@ -87,6 +87,8 @@ local defaultimage=
 get_opt "Def"
 if [ "$opt" == "AR" ]; then
   defaultimage=`sed -n '11p' $CACHEPATH/stream.dat`
+else
+  defaultimage=$opt
 fi
 
 trackimage_loadImage()

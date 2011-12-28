@@ -78,6 +78,7 @@ Content-type: text/html
 <meta http-equiv="Pragma" content="no-cache">
 <title>Media Stream Renderer - Control</title>
 <style>
+  body { background-color: #FFFFFF; color: #000000; }
   .btn { width:60px; }
   li { padding-top:5px; }
 </style>

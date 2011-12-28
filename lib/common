@@ -36,7 +36,7 @@ if [ ! -f $RSSCONF ]; then
     printhdflag2conf $IVI_HD
     printhdflag2conf $ZOOMBY_HD
     printhdflag2conf $VK_HD
-    echo 0 >> $RSSCONF
+    echo 1 >> $RSSCONF
     echo 0 >> $RSSCONF
 fi
 

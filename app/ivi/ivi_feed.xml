@@ -144,63 +144,61 @@
 
   storagePath = getStoragePath("tmp");
   arr = readStringFromFile(storagePath + "stream.dat");
-  feedPath = getStringArrayAt(arr, 0);
-  feedTitle = getStringArrayAt(arr, 1);
+  feedTitle = getStringArrayAt(arr, 0);
+  feedNew = getStringArrayAt(arr, 1);
+  feedBest = getStringArrayAt(arr, 2);
 
-	feedType = "new";
+	feedType = 1;
 	
-  mode = 1;
   setRefreshTime(1);
 </onEnter>
 
 <onRefresh>
-  if(mode == 1)
-  {
-    setRefreshTime(-1);
-    
-  	pageTitle = feedTitle + " - ";
-  	if(feedType == "new")
-  	 pageTitle += "новое видео"; 
-    else
-  	if(feedType == "best")
-  	 pageTitle += "популярное видео"; 
+  setRefreshTime(-1);
   
-    url = "http://www.ivi.ru/rss/"+feedType+feedPath;
+	pageTitle = feedTitle + " - ";
+	if(feedType == 1)
+	 pageTitle += "новое видео"; 
+  else
+	if(feedType == 2)
+	 pageTitle += "популярное видео"; 
 
-    print("Start to load feed:",url);
+  arr = readStringFromFile(storagePath + "stream.dat");
+  url = getStringArrayAt(arr, feedType)
+  
+  print("Start to load feed:",url);
+  
+  dlok = loadXMLFile(url);
+  if (dlok != null)
+  {
+    titleArray = null;
+    thumbnailArray = null;
+    urlArray = null;
     
-    dlok = loadXMLFile(url);
-    if (dlok != null)
-    {
-      titleArray = null;
-      thumbnailArray = null;
-      urlArray = null;
-      
-    	itemSize = getXMLElementCount("rss","channel","item");
-    	if(itemSize == 0)
-    	  postMessage("return");
-    	print("Item Size = ", itemSize);
-    	
-    	count=0;
-    	while(itemSize != 0)
-    	{
-    	  title = getXMLText("rss","channel","item",count,"title");
-	      url = getXMLText("rss","channel","item",count,"link");
-        thumbnail = getXMLAttribute("rss","channel","item",count,"image","url");
-    	  
-    	  titleArray  = pushBackStringArray(titleArray, title);
-    	  urlArray    = pushBackStringArray(urlArray, url);
-    	  thumbnailArray = pushBackStringArray(thumbnailArray, thumbnail);
-      
-    	  count += 1;
-    	  if (count == itemSize)
-    	  {
-    		  break;
-    	  }
-    	}
-    	setFocusItemIndex(0);
-    	redrawDisplay();
-    }
+  	itemSize = getXMLElementCount("rss","channel","item");
+  	if(itemSize == 0)
+  	  postMessage("return");
+  	print("Item Size = ", itemSize);
+  	
+  	count=0;
+  	while(itemSize != 0)
+  	{
+  	  title = getXMLText("rss","channel","item",count,"title");
+      url = getXMLText("rss","channel","item",count,"link");
+      thumbnail = getXMLAttribute("rss","channel","item",count,"image","url");
+  	  
+  	  titleArray  = pushBackStringArray(titleArray, title);
+  	  urlArray    = pushBackStringArray(urlArray, url);
+  	  thumbnailArray = pushBackStringArray(thumbnailArray, thumbnail);
+    
+  	  count += 1;
+  	  if (count == itemSize)
+  	  {
+  		  break;
+  	  }
+  	}
+  	setFocusItemIndex(0);
+  	redrawDisplay();
   }
 </onRefresh>
 
@@ -211,7 +209,7 @@
     thumbnailArray = null;
     urlArray = null;
     idArray = null;
-    feedType = "new";
+    feedType = 1;
     setRefreshTime(1);
   </onClick>
 </submenu>
@@ -223,7 +221,7 @@
     thumbnailArray = null;
     urlArray = null;
     idArray = null;
-    feedType = "best";
+    feedType = 2;
     setRefreshTime(1);
   </onClick>
 </submenu>
@@ -252,27 +250,12 @@
       idx   = getFocusItemIndex();
       url   = getStringArrayAt(urlArray, idx);
       playTitle = url;
-      urlToPlay = translate_base_url+"info,,"+url;
-      dlok = loadXMLFile(urlToPlay);
-      if(dlok != null)
-      {
-        error = getXMLElementCount("info","error");
-        print("error=",error);
-        
-        if(error == 0)
-        {
+      urlToPlay = translate_base_url+"stream,,"+urlEncode(url);
 <!--`cat "$BASEPATH/app/include/add.history_video.script"`-->
-
-    	    value = getXMLAttribute("info","stream","url");
-    	    if(value != null)
-    	     url = value;
-          playItemURL(url, 0);
-  		  }
-  		  else
-  		  {
-  		    null;
-  		  }
-      }
+      showIdle();
+      playItemURL(urlToPlay, 0);
+      cancelIdle();
+      null;
 		</onClick>
   </item_template>
 

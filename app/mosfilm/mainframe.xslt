@@ -39,6 +39,7 @@
     <genre><xsl:value-of select="string(.//span[@class='genres']/a)"/></genre>
     <image>http://cinema.mosfilm.ru/<xsl:value-of select="img[1]/@src"/></image>
     <location>http://cinema.mosfilm.ru/<xsl:value-of select=".//span[@class='name']/a/@href"/></location>
+    <stream_class>video</stream_class>
   </item>
 </xsl:template>
 

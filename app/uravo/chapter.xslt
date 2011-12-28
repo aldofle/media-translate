@@ -38,6 +38,7 @@
     <title><xsl:value-of select="string(div[1]/a)"/></title>
     <image><xsl:value-of select="substring-before(substring-after(a/div/@style,'background-image:url('),')')"/></image>
     <location>http://uravo.tv<xsl:value-of select="a/@href"/></location>
+    <stream_class>video</stream_class>
     <year><xsl:value-of select="string(div[3]/a[2])"/></year>
     <country><xsl:value-of select="string(div[3]/a[1])"/></country>
     <annotation><xsl:value-of select="normalize-space(div[2]/p)"/></annotation>

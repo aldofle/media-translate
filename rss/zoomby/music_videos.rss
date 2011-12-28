@@ -44,11 +44,11 @@
 	backgroundColor="0:0:0"
 	itemBackgroundColor="0:0:0"
 	showHeader=no
-menuXPC=7
-menuYPC=15
-menuWidthPC=15
-menuHeightPC=8
-menuPerPage=9
+    menuXPC=7
+    menuYPC=15
+    menuWidthPC=15
+    menuHeightPC=8
+    menuPerPage=9
     selectMenuOnRight=no
     forceFocusOnItem=yes
     forceFocusOnMenu=no
@@ -187,7 +187,6 @@ menuPerPage=9
 
   pageLogo = "../etc/translate/rss/image/zoomby.jpg";
 
-  mode = 1;
   setRefreshTime(1);
 </onEnter>
 
@@ -196,8 +195,6 @@ menuPerPage=9
 </search>
 
 <onRefresh>
-  if(mode == 1)
-  {
     setRefreshTime(-1);
 
     url = translate_base_url + "app," + urlEncode(baseUrl) + "?page=" + page + ",zoomby/getpage_music_videos";
@@ -244,40 +241,6 @@ menuPerPage=9
     	setFocusItemIndex(0);
     	redrawDisplay();
     }
-  }
-  else if(mode == 0)
-  {
-    print("Wait for movie stop");
-    vidProgress = getPlaybackStatus();
-    playElapsed = getStringArrayAt(vidProgress, 0);
-    playStatus = getStringArrayAt(vidProgress, 3);
-
-    if (playStatus == 0) 
-    {
-       setRefreshTime(-1);
-       elapsedTime = "";
-       playTitle = "";
-       redrawDisplay();
-    }
-    else
-    {
-      if (playElapsed != 0) 
-      {
-        x = Integer(playElapsed / 60);
-        h = Integer(playElapsed / 3600);
-        s = playElapsed - (x * 60);
-        m = x - (h * 60);
-        elapsedTime = sprintf("%s:", h);
-        if(m &lt; 10)  elapsedTime += "0";
-        elapsedTime += sprintf("%s:", m);
-        if(s &lt; 10)  elapsedTime += "0";
-        elapsedTime += sprintf("%s", s);
-        print("elapsedTime =", elapsedTime);
-
-        redrawDisplay();
-      }
-    }
-  }
 </onRefresh>
 
   <item_template>
@@ -310,93 +273,28 @@ menuPerPage=9
 		<link>rss_file://../etc/translate/rss/xspf/streamPlayer.rss</link>
 		 -->
     <onClick>
-      playItemURL(-1, 1);
-      idx   = getFocusItemIndex();
-      url   = getStringArrayAt(urlArray, idx);
-      playTitle = url;
-      urlToPlay = translate_base_url+"info,,"+urlEncode(url);
-      print("url=",url);
-      print("urlToPlay=",urlToPlay);
-
-      dlok = loadXMLFile(urlToPlay);
-      if(dlok != null)
-      {
-        error = getXMLElementCount("info","error");
-        print("error=",error);
-
-        if(error == 0)
-        {
-          historyPath = getStoragePath("key")+"translate.history_video.m3u";
-          historydat = readStringFromFile(historyPath);
-          if(historydat == null)
-            historydat = pushBackStringArray(historydat, "#EXTM3U");
-          historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+getStringArrayAt(titleArray, idx));
-          historydat = pushBackStringArray(historydat, url);
-          writeStringToFile(historyPath, historydat);
-
-    	    value = getXMLAttribute("info","stream","type");
-    	    if(value != null)
-    	     type = value;
-
-    	    value = getXMLAttribute("info","stream","url");
-    	    if(value != null)
-    	     url = value;
-
-    	    value = getXMLAttribute("info","stream","class");
-    	    if(value != null)
-    	     class = value;
-
-    	    value = getXMLAttribute("info","stream","server");
-    	    if(value != null)
-    	     soft = value;
-
-    	    value = getXMLAttribute("info","stream","protocol");
-    	    if(value != null)
-    	     protocol = value;
-
-	  if ( class == "playlist" )
-	  {
-	   dlok = loadXMLFile(url);
-	   if(dlok != null)
-	   {
-	    print("read data from xspf");
-	    value = getXMLText("playlist","trackList","track",0,"location");
-	    if(value != null)
-	     url = value;
-	    value = getXMLAttribute("playlist","trackList","track",0,"meta","rel");
-	    print("rel=",value);
-	    if(value == "translate")
-	    {
-	     soft = "_translate_";
-	     protocol = "";
-	     value = getXMLText("playlist","trackList","track",0,"meta");
-	     if(value != null)
-	      meta = value;
-	    }
-	    print("url=",url);
-	    print("soft=",soft);
-	    print("meta=",meta);
-	   }
-          }
-
-          translateStreamURL = translate_base_url+"stream,,"+url;
-
-          if(protocol == "file" || (protocol == "http" &amp;&amp; soft != "_translate_"))
-            playItemURL(url, 0);
-          else
-          {
-            print("translateStreamURL=",translateStreamURL);
-            playItemURL(translateStreamURL, 0);
-          }
-          mode = 0;
-          setRefreshTime(1000);
-        }
-        else
-        {
-         null;
-        }
-      }
-   </onClick>
+        playItemURL(-1, 1);
+        idx   = getFocusItemIndex();
+        url   = getStringArrayAt(urlArray, idx);
+        playTitle = url;
+        urlToPlay = translate_base_url+"stream,,"+urlEncode(url);
+        print("url=",url);
+        print("urlToPlay=",urlToPlay);
+        
+        historyPath = getStoragePath("key")+"translate.history_video.m3u";
+        historydat = readStringFromFile(historyPath);
+        if(historydat == null)
+        historydat = pushBackStringArray(historydat, "#EXTM3U");
+        historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+getStringArrayAt(titleArray, idx));
+        historydat = pushBackStringArray(historydat, url);
+        writeStringToFile(historyPath, historydat);
+        
+        showIdle();
+        playItemURL(urlToPlay, 0);
+        cancelIdle();
+        
+        null;
+    </onClick>
   </item_template>
 
 <submenu>
@@ -406,7 +304,6 @@ menuPerPage=9
    if( page &lt; numberOfPages )
    {
     page = (page - (-1));
-    mode = 1;
     setRefreshTime(1);
    }
    print("page=",page);
@@ -421,7 +318,6 @@ menuPerPage=9
    if( page &gt; 1 )
    {
     page -= 1;
-    mode = 1;
     setRefreshTime(1);
    }
    print("page=",page);
@@ -440,83 +336,12 @@ menuPerPage=9
    if( page_get &lt;= numberOfPages &amp;&amp; page_get &gt; 0 )
    {
     page = Integer(page_get);
-    mode = 1;
     setRefreshTime(1);
    }
   }
   get_input = null;
  </onClick>
 </submenu>
-
-<!--
-<submenu>
- <title>Жанр</title>
- <onClick>
-  act = doModalRss("rss_file://../etc/translate/rss/music_ivi/genres.rss","mediaDisplay","genres",0);
-  if(act != null &amp;&amp; act != "")
-  {
-   genre = act;
-   mode = 1;
-   setRefreshTime(1);
-  }
-  null;
- </onClick>
-</submenu>
-
- <submenu>
- <title>Последние</title>
- <onClick>
-    sort_by = "date";
-    mode = 1;
-    setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>Популярные</title>
- <onClick>
-    sort_by = "views";
-    mode = 1;
-    setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>Лучшие</title>
- <onClick>
-   sort_by = "rating";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За сегодня</title>
- <onClick>
-   rt_term = "today";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За неделю</title>
- <onClick>
-   rt_term = "this_week";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За месяц</title>
- <onClick>
-   rt_term = "this_month";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
--->
 
 <channel>
 

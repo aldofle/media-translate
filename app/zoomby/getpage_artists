@@ -1,7 +1,8 @@
 #!/bin/sh
 #
 #   http://code.google.com/media-translate/
-#   Copyright (C) 2010  Serge A. Timchenko
+#   Copyright (C) 2010-2011  Serge A. Timchenko
+#   Copyright (C) 2011  nnb
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -17,32 +18,15 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-local debugfile=/tmp/nnb.log
-#echo -n >$debugfile
-
-#local CACHEPATH=/tmp
-#local MSDL=/usr/local/etc/translate/bin/msdl
-#local arg_url=http://www.zoomby.ru/music/search?q=Serebro
-#local arg_url=http://www.zoomby.ru/music/search?q=Alice
-#local arg_url=http://www.zoomby.ru/music/collections/featured?page=26
-#local XSLTPROC=/usr/local/bin/xsltproc
 
 local DATAPATH=$BASEPATH/app/zoomby
-#local DATAPATH=/tmp
 
 local PAGEFILE=$CACHEPATH/zoomby.page
 local PAGEXML=$CACHEPATH/zoomby.xml
 
-#echo $DATAPATH >$debugfile
-#echo $PAGEFILE >>$debugfile
-#echo $PAGEXML >>$debugfile
-#echo $arg_opt >>$debugfile
-#echo $MSDL >>$debugfile
-
 $MSDL -q -o "$PAGEFILE" -p http "$arg_opt"
 if [ -f "$PAGEFILE" ]; then
    local pages=`grep 'class="navi__a".*onClick="window.location.href=' $PAGEFILE | sed -r 's/^.*>([0-9]*)<\/a><\/li>.*/\1/'`
-#   echo pages=$pages >>$debugfile
 
    if [ "$pages" = "" ]; then
     pages=1
@@ -60,15 +44,12 @@ EOF
 echo -n "  <pages>"$pages >>$PAGEXML
 echo "</pages>" >>$PAGEXML
 
-#echo pages=$pages >>$debugfile
-
    if [ -x $XSLTPROC ]; then
-#     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
-    if echo $arg_opt | grep "collections" ; then
-     $XSLTPROC --html $DATAPATH/collection.xslt $PAGEFILE 2>/dev/null | sed '1d' | sed 's/background-image: url(//g;s/);//g'>> $PAGEXML
-    else
-     $XSLTPROC --html $DATAPATH/artists.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+    local page_type=artists
+    if echo $arg_opt | grep -qs "collections" ; then
+      page_type=music_videos
     fi
+    $XSLTPROC --encoding utf-8 --html $DATAPATH/${page_type}.xslt $PAGEFILE 2>/dev/null | sed '1d' | sed -r 's/(.*)\/.*<\/link>/\1<\/link>/g' >> $PAGEXML
    fi
 
 cat >> $PAGEXML <<EOF
@@ -79,10 +60,5 @@ EOF
    rm -f $PAGEFILE
 fi
 
-if [ -f "$PAGEXML" ]; then
- echo "Content-type: text/xml"
- echo
- cat $PAGEXML | sed -r 's/(.*)\/.*<\/link>/\1<\/link>/g'
- rm -f $PAGEXML
-fi
+[ -f "$PAGEXML" ] && printContent "text/xml" $PAGEXML
 

@@ -24,13 +24,24 @@ BEGIN {
   location = "";
   title = "";
   creator = "";
+  
+  if(position == "")
+    position = 1;
+    
+  counter = 0;
 
   while ( getXML(ARGV[1],1) ) 
   {
     if(XTYPE == "TAG")
     {
+      if(XITEM == "track")
+      {
+        counter += 1;
+      }
+      else
       if(XITEM == "location")
       {
+        location = "";
         while( getXML(ARGV[1],0) )
         {
             if(XTYPE == "DAT" || XTYPE == "CDA")
@@ -42,6 +53,7 @@ BEGIN {
       else
       if(XITEM == "title")
       {
+        title = "";
         while( getXML(ARGV[1],0) )
         {
             if(XTYPE == "DAT" || XTYPE == "CDA")
@@ -53,6 +65,7 @@ BEGIN {
       else
       if(XITEM == "creator")
       {
+        creator = "";
         while( getXML(ARGV[1],0) )
         {
             if(XTYPE == "DAT" || XTYPE == "CDA")
@@ -66,11 +79,14 @@ BEGIN {
     {
         if(XITEM == "track")
         {
-          print location;
-          print title;
-          print creator;
-          exit;
+          if(counter == position)
+            break;
         }
     }
   }
+  
+  print location;
+  print title;
+  print creator;
+  exit;
 }

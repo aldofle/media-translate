@@ -1,7 +1,8 @@
 #!/bin/sh
 #
 #   http://code.google.com/media-translate/
-#   Copyright (C) 2010  Serge A. Timchenko
+#   Copyright (C) 2010-2011  Serge A. Timchenko
+#   Copyright (C) 2011  nnb
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -17,32 +18,15 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-local debugfile=/tmp/nnb.log
-#echo -n >$debugfile
-
-#local CACHEPATH=/tmp
-#local MSDL=/usr/local/etc/translate/bin/msdl
-#local arg_url=http://www.zoomby.ru/music/search?q=Serebro
-#local arg_url=http://www.zoomby.ru/music/search?q=Alice
-#local arg_url=http://www.zoomby.ru/music/collections/featured?page=26
-#local XSLTPROC=/usr/local/bin/xsltproc
 
 local DATAPATH=$BASEPATH/app/zoomby
-#local DATAPATH=/tmp
 
 local PAGEFILE=$CACHEPATH/zoomby.page
 local PAGEXML=$CACHEPATH/zoomby.xml
 
-#echo $DATAPATH >$debugfile
-#echo $PAGEFILE >>$debugfile
-#echo $PAGEXML >>$debugfile
-#echo $arg_opt >>$debugfile
-#echo $MSDL >>$debugfile
-
 $MSDL -q -o "$PAGEFILE" -p http "$arg_opt"
 if [ -f "$PAGEFILE" ]; then
-   local pages=`grep '<td valign="top"><div onClick="window.location.href=' $PAGEFILE | sed -r 's/^.*>([0-9]*)<\/div><\/td>/\1/'`
-#   echo pages=$pages >>$debugfile
+   local pages=$(awk '/window.location.href=.\?/{len = split($0, arr, /window.location.href=.\?page=/); match(arr[len], /^([0-9]+)/, a); pages=a[1];}END {print pages;}' $PAGEFILE)
 
    if [ "$pages" = "" ]; then
     pages=1
@@ -58,19 +42,14 @@ cat > $PAGEXML <<EOF
   <language>ru</language>
   <pages>$pages</pages>
 EOF
-#echo -n "  <pages>"$pages >>$PAGEXML
-#echo "</pages>" >>$PAGEXML
-
-#echo pages=$pages >>$debugfile
 
    if [ -x $XSLTPROC ]; then
-#     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
     if echo $arg_opt | grep -qs 'genres\|collections' ; then
-     $XSLTPROC --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
     elif echo $arg_opt | grep -qs 'search?q=' ; then
-     $XSLTPROC --html $DATAPATH/search.xslt $PAGEFILE 2>/dev/null | sed '1d' | sed 's/background-image: url(//g;s/);//g' >> $PAGEXML
+     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
     else
-     $XSLTPROC --html $DATAPATH/music_videos_old.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
+     $XSLTPROC --encoding utf-8 --html $DATAPATH/music_videos_old.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
     fi
    fi
 
@@ -82,14 +61,5 @@ EOF
    rm -f $PAGEFILE
 fi
 
-if [ -f "$PAGEXML" ]; then
- echo "Content-type: text/xml"
- echo
-# if echo $arg_opt | grep -qs 'search'; then
-  cat $PAGEXML
-# else
-#  cat $PAGEXML | sed -r 's/(.*)\/.*<\/link>/\1<\/link>/g'
-# fi
- rm -f $PAGEXML
-fi
+[ -f "$PAGEXML" ] && printContent "text/xml" $PAGEXML
 
