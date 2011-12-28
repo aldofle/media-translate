@@ -859,6 +859,7 @@
       streamGenre = "";
       streamBitrate = "";
       currentSong = "";
+      defImage = "";
       
       if(class == "auto" || class == "")
       {
@@ -1063,12 +1064,12 @@
             urlToPlay = translateUrl;
           }
           
+          if(playlistLogo != "")
+            defImage = playlistLogo;
+
           if(image == "")
           {
-            if(soft == "icecast" || soft == "shoutcast" || protocol == "rtsp" || protocol == "mms" || protocol == "mmsh" || protocol == "mmst")
-              image = "../etc/translate/rss/image/radio_online.png";
-            else
-              image = playlistLogo;
+            image = defImage;
           }
             
           print("!!!!!!!!!! image:",image);
@@ -1088,8 +1089,12 @@
             errorInfo = "Press '0' to search related video on Youtube";
             errorInfoColor = "200:200:200";
           }
-
           
+          if(playSong != "" &amp;&amp; playSong != null)
+            playArtistImage = translate_base_url + "app,Def:AR;Title:"+urlEncode(playSong)+",lastfm/trackimage.png";
+          else
+            playArtistImage = "";
+    
   		    if(streamBitrate != "")
     	    {
     	      title_1 = "Bitrate:";
@@ -1236,6 +1241,10 @@
       progress = "";
     }
   
+    if(defImage == "")
+      if (playTime == 0 || playTime &gt; 1000000)
+        defImage = "../etc/translate/rss/image/radio_online.png";
+      
     print("playbackStatus: ",playbackStatus);
   
     cancelIdle();

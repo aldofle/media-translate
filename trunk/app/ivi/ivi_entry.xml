@@ -130,36 +130,21 @@
 </onExit>
 
 <onRefresh>
-  if(mode == 0)
+  setRefreshTime(-1);
+  
+  dlok = loadXMLFile(translate_base_url+"app/ivi/entry,"+storagePath+"entry.htm");
+  if (dlok != null)
   {
-    setRefreshTime(-1);
-    
-    dlok = loadXMLFile(translate_base_url+"app/ivi/entry,"+storagePath+"entry.htm");
-    if (dlok != null)
-    {
-  	  description  = getXMLText("entry","content");
-  	  date         = getXMLText("entry","date");
-  	  category     = getXMLText("entry","category");
-  	  genre        = getXMLText("entry","genre");
-  	  duration     = getXMLText("entry","duration");
-  	  tags         = getXMLText("entry","tags");
-  	  id           = getXMLText("entry","id");
-  	  title        = getXMLText("entry","title");
+	  description  = getXMLText("entry","content");
+	  date         = getXMLText("entry","date");
+	  category     = getXMLText("entry","category");
+	  genre        = getXMLText("entry","genre");
+	  duration     = getXMLText("entry","duration");
+	  tags         = getXMLText("entry","tags");
+	  id           = getXMLText("entry","id");
+	  title        = getXMLText("entry","title");
 
-    	redrawDisplay();
-    }
-  }
-  else if(mode == 1)
-  {
-    print("Wait for movie stop");
-    vidProgress = getPlaybackStatus();
-    playStatus = getStringArrayAt(vidProgress, 3);
-    if(playStatus == 0)
-    {
-       cancelIdle();
-       setRefreshTime(-1);
-       mode = 0;
-    }
+  	redrawDisplay();
   }
 </onRefresh>
 
@@ -178,37 +163,18 @@
   pageTitle = title;
   pageLogo = "../etc/translate/rss/image/menu/ivi.png";
 
-  mode = 0;
   setRefreshTime(1);
 </onEnter>
 
 <submenu>
   <title>Проиграть</title>
   <onClick>
-    mode = 1;
-
 	  playItemURL(-1, 1);
-    urlToPlay = translate_base_url+"info,,"+url;
-    dlok = loadXMLFile(urlToPlay);
-    if(dlok != null)
-    {
-      error = getXMLElementCount("info","error");
-      print("error=",error);
-      
-      if(error == 0)
-      {
+    urlToPlay = translate_base_url+"stream,,"+urlEncode(url);
 <!--`cat "$BASEPATH/app/include/add.history_video.script" | sed 's/getStringArrayAt(titleArray, idx)/pageTitle/'`-->
-
-  	    value = getXMLAttribute("info","stream","url");
-  	    if(value != null)
-  	    {
-          showIdle();
-          setRefreshTime(100);
-          playItemURL(value, 0);
-          cancelIdle();
-        }
-		  }
-    }
+    showIdle();
+    playItemURL(urlToPlay, 0);
+    cancelIdle();
     null;
   </onClick>
 </submenu>

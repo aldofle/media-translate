@@ -572,6 +572,8 @@ check_stream()
   
   [ "$stream_class" == "playlist" ] && check_playlist
   
+  [ -z "$stream_url" ] && stream_type=''
+  
   return 0
 }
 
@@ -1277,23 +1279,40 @@ case ${arg_cmd} in
   ;;
   stream|audio|video|image)
     if [ -z "$stream_type" ]; then
-	local TIMELIFE=${STREAM_INFO_TIMELIFE:-60}
-	local CACHEFILE=$CACHEPATH/stream.`$MD5 "$arg_url"`
-	local tsttime
-	let tsttime=`date +%s`-$TIMELIFE
-	if [ -f $CACHEFILE ]; then
-	 if [ `date +%s -r $CACHEFILE` -gt $tsttime ]; then
-	  stream_url=`sed -ne "1p" $CACHEFILE`
-	  stream_type=`sed -ne "2p" $CACHEFILE`
-	  arg_opt=`sed -ne "3p" $CACHEFILE`
-	 fi
-	fi
-	if [ -z "$stream_type" ]; then
-	 check_stream
-         echo $stream_url > $CACHEFILE
-         echo $stream_type >> $CACHEFILE
-         echo $arg_opt >> $CACHEFILE
-	fi
+    	local TIMELIFE=${STREAM_INFO_TIMELIFE:-60}
+    	local CACHEFILE=$CACHEPATH/stream.`$MD5 "$arg_url"`
+    	local tsttime
+    	let tsttime=`date +%s`-$TIMELIFE
+    	if [ -f $CACHEFILE ]; then
+    	 if [ `date +%s -r $CACHEFILE` -gt $tsttime ]; then
+    	  readstreamcache()
+    	  {
+    	    read stream_url   
+      	  read stream_type  
+      	  read arg_opt      
+      	  read server_type  
+      	  read protocol
+      	}
+      	readstreamcache <$CACHEFILE
+    	 fi
+    	fi
+    	if [ -z "$stream_type" ]; then
+    	 rm -f $CACHEFILE
+    	 local sav_opt=$arg_opt
+       arg_opt="Resolve-playlist:1;${arg_opt}"
+    	 check_stream
+    	 if [ -n "$stream_type" ]; then
+    	  writestreamcache()
+    	  {
+          echo $stream_url   
+          echo $stream_type  
+          echo $sav_opt      
+          echo $server_type  
+          echo $protocol
+        }
+        writestreamcache >$CACHEFILE
+       fi
+    	fi
     fi
 
     get_opt "Protocol"
@@ -1318,18 +1337,45 @@ case ${arg_cmd} in
     get_opt "Charset"
     charset=$opt
     
-    echo "Content-type: $stream_type"
-    echo
-    if echo "$stream_url" | grep -qs "^rtmp"; then
-      get_opt "Rtmp-options"
-      killall -q $RTMPDUMP 2>&1
-#      echo $RTMPDUMP -q -o - -b 60000 -r \"$stream_url\" $opt >/tmp/nnb.log
-      exec nice $RTMPDUMP -q -o - -b 60000 -r "$stream_url" $opt
-#      exec nice $RTMPDUMP -V -o - -b 60000 -r "$stream_url" $opt 2>/tmp/rtmpdump.log
-    elif [ "$charset" == "CP1251" ]; then
-      $MSDL $msdlopt -q -o - "$stream_url" | $TOUTF8 | sed 's/windows-125./utf-8/'
+    if [ -n "$stream_type" ]; then
+        if echo "$stream_url" | grep -qs "^rtmp"; then
+          echo "Content-type: $stream_type"
+          echo
+          get_opt "Rtmp-options"
+          killall -q $RTMPDUMP 2>&1
+          exec nice $RTMPDUMP -q -o - -b 60000 -r "$stream_url" $opt
+        elif [ "$charset" == "CP1251" ]; then
+          echo "Content-type: $stream_type"
+          echo
+          $MSDL $msdlopt -q -o - "$stream_url" | $TOUTF8 | sed 's/windows-125./utf-8/'
+        elif [ "$protocol" == "http" -a "$server_type" != "shoutcast" ]; then
+          head301()
+          {
+            echo "HTTP/1.0 301 Moved permanently"
+            echo "Content-type: $stream_type"
+            echo "Location: $stream_url"
+            echo "Pragma: no-cache"
+            echo "Connection: close"
+            echo
+          }
+          head301 >$TMPFILE
+          exec nph-translate $TMPFILE
+        else
+          echo "Content-type: $stream_type"
+          echo
+          exec $MSDL $msdlopt -q -o - "$stream_url"
+        fi
     else
-      exec $MSDL $msdlopt -q -o - "$stream_url"
+      head404()
+      {    
+        echo "HTTP/1.0 404 Not found"
+        echo "Content-type: audio/mpeg"
+        echo "Pragma: no-cache"
+        echo "Connection: close"
+        echo
+      }
+      head404 >$TMPFILE
+      exec nph-translate $TMPFILE
     fi
   ;;
   random)

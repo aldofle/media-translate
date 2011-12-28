@@ -2,7 +2,7 @@
 
 cd ..
 
-rm -r /usr/local/etc/translate
+rm -rf /usr/local/etc/translate
 mkdir -p /usr/local/etc/translate/bin
 
 ln -s `pwd`/app /usr/local/etc/translate/app
@@ -16,10 +16,10 @@ cd bin
 for f in *; do ln -s `pwd`/$f /usr/local/etc/translate/bin/$f; done
 
 cd /usr/local/etc/translate/bin
-ln -s ex_module msdl
-ln -s ex_module flac
-ln -s ex_module xcode
-ln -s ex_module toutf8
-ln -s ex_module flvstreamer
-ln -s ex_module md5
-ln -s ex_module sha2
+ln -sf ex_module msdl
+ln -sf ex_module flac
+ln -sf ex_module xcode
+ln -sf ex_module toutf8
+ln -sf ex_module flvstreamer
+ln -sf ex_module md5
+ln -sf ex_module sha2

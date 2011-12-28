@@ -47,9 +47,9 @@
 	menuYPC=20
 	menuWidthPC=15
 	menuHeightPC=10
-  selectMenuOnRight=no
-  forceFocusOnItem=yes
-  forceFocusOnMenu=no
+    selectMenuOnRight=no
+    forceFocusOnItem=yes
+    forceFocusOnMenu=no
 	showDefaultInfo=yes
 	infoYPC=90
 	fontSize=18
@@ -160,7 +160,7 @@
   storagePath  = storagePath + "zoomby.dat";
 
   pageLogo = "../etc/translate/rss/image/zoomby.jpg";
-  pageTitle = "ZOOMBY.RU/MUSIC"
+  pageTitle = "ZOOMBY.RU / MUSIC"
 
 </onEnter>
 
@@ -175,8 +175,7 @@
       </script>
    </displayTitle>
 <!--
-   <media:thumbnail>
-   </media:thumbnail>
+   <media:thumbnail></media:thumbnail>
 -->
     <mediaDisplay name=theePartsView
 		    sideLeftWidthPC = 0

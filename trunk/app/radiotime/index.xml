@@ -305,6 +305,8 @@
         stream_genre = "";
         stream_bitrate = getItemInfo(focus, "bitrate");
         
+        url = translate_base_url + "stream,," + urlEncode(request_url);
+        
         executeScript(stream_class+"Dispatcher");
         
         cancelIdle();

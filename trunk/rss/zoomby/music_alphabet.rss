@@ -44,11 +44,11 @@
 	backgroundColor="0:0:0"
 	itemBackgroundColor="0:0:0"
 	showHeader=no
-menuXPC=7
-menuYPC=15
-menuWidthPC=15
-menuHeightPC=8
-menuPerPage=9
+    menuXPC=7
+    menuYPC=15
+    menuWidthPC=15
+    menuHeightPC=8
+    menuPerPage=9
     selectMenuOnRight=no
     forceFocusOnItem=yes
     forceFocusOnMenu=no
@@ -185,18 +185,15 @@ menuPerPage=9
    baseUrl = "http://www.zoomby.ru/music/alphabet/a";
   }
 
-  pageTitle = "ZOOMBY.RU/MUSIC" + " - " + title;
+  pageTitle = "ZOOMBY.RU / MUSIC" + " - " + title;
   page = 1;
 
   pageLogo = "../etc/translate/rss/image/zoomby.jpg";
 
-  mode = 1;
   setRefreshTime(1);
 </onEnter>
 
 <onRefresh>
-  if(mode == 1)
-  {
     setRefreshTime(-1);
 
     url = translate_base_url + "app," + baseUrl + "?page=" + page + ",zoomby/getpage_artists";
@@ -243,40 +240,6 @@ menuPerPage=9
     	setFocusItemIndex(0);
     	redrawDisplay();
     }
-  }
-  else if(mode == 0)
-  {
-    print("Wait for movie stop");
-    vidProgress = getPlaybackStatus();
-    playElapsed = getStringArrayAt(vidProgress, 0);
-    playStatus = getStringArrayAt(vidProgress, 3);
-
-    if (playStatus == 0) 
-    {
-       setRefreshTime(-1);
-       elapsedTime = "";
-       playTitle = "";
-       redrawDisplay();
-    }
-    else
-    {
-      if (playElapsed != 0) 
-      {
-        x = Integer(playElapsed / 60);
-        h = Integer(playElapsed / 3600);
-        s = playElapsed - (x * 60);
-        m = x - (h * 60);
-        elapsedTime = sprintf("%s:", h);
-        if(m &lt; 10)  elapsedTime += "0";
-        elapsedTime += sprintf("%s:", m);
-        if(s &lt; 10)  elapsedTime += "0";
-        elapsedTime += sprintf("%s", s);
-        print("elapsedTime =", elapsedTime);
-
-        redrawDisplay();
-      }
-    }
-  }
 </onRefresh>
 
   <item_template>
@@ -330,7 +293,6 @@ menuPerPage=9
    if( page &lt; numberOfPages )
    {
     page = (page - (-1));
-    mode = 1;
     setRefreshTime(1);
    }
    print("page=",page);
@@ -345,7 +307,6 @@ menuPerPage=9
    if( page &gt; 1 )
    {
     page -= 1;
-    mode = 1;
     setRefreshTime(1);
    }
    print("page=",page);
@@ -364,7 +325,6 @@ menuPerPage=9
    if( page_get &lt;= numberOfPages &amp;&amp; page_get &gt; 0 )
    {
     page = Integer(page_get);
-    mode = 1;
     setRefreshTime(1);
    }
   }
@@ -383,76 +343,6 @@ menuPerPage=9
    executeScript("onEnter");
  </onClick>
 </submenu>
-
-<!--
-<submenu>
- <title>Жанр</title>
- <onClick>
-  act = doModalRss("rss_file://../etc/translate/rss/music_ivi/genres.rss","mediaDisplay","genres",0);
-  if(act != null &amp;&amp; act != "")
-  {
-   genre = act;
-   mode = 1;
-   setRefreshTime(1);
-  }
-  null;
- </onClick>
-</submenu>
-
- <submenu>
- <title>Последние</title>
- <onClick>
-    sort_by = "date";
-    mode = 1;
-    setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>Популярные</title>
- <onClick>
-    sort_by = "views";
-    mode = 1;
-    setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>Лучшие</title>
- <onClick>
-   sort_by = "rating";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За сегодня</title>
- <onClick>
-   rt_term = "today";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За неделю</title>
- <onClick>
-   rt_term = "this_week";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За месяц</title>
- <onClick>
-   rt_term = "this_month";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
--->
 
 <channel>
 

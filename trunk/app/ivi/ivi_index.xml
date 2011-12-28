@@ -153,14 +153,12 @@
 	  <script>
 	     focus = getFocusItemIndex();
        arr = null;
-       arr = pushBackStringArray(arr, getItemInfo(focus, "feedPath"));
        arr = pushBackStringArray(arr, getItemInfo(focus, "feedTitle"));
+       arr = pushBackStringArray(arr, getItemInfo(focus, "new"));
+       arr = pushBackStringArray(arr, getItemInfo(focus, "best"));
        writeStringToFile(storagePath + "stream.dat", arr);
 	     focus = getFocusItemIndex();
-	     if(getItemInfo(focus, "feedPath") == "/")
-	       linkurl = translate_base_url + "app/ivi/index,feed_main";
-	     else
-	       linkurl = translate_base_url + "app/ivi/index,feed";
+	     linkurl = translate_base_url + "app/ivi/index," + getItemInfo(focus, "type");
        doModalRss(linkurl);
 	  </script>
 	</onClick> 

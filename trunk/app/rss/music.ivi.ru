@@ -36,6 +36,6 @@ if [ -f $TEMPFEED ]; then
           cat $TEMPFEED
       fi
     }
-    call_convert | awk '{print $0;} /<description/ {match($0, /<img width="250" src="([^"]+)"/, arr); print "<image url=\"" arr[1] "\"/>";}'
+    call_convert | awk '{print $0;} /<description/ {match($0, /<img width="250" src="([^"]+)"/, arr); if(arr[1] != "") print "<image url=\"" arr[1] "\"/>";}'
 fi
 

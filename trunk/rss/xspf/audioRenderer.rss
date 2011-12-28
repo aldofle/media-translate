@@ -392,7 +392,7 @@
 	<text redraw="yes" offsetXPC="6" offsetYPC="79" widthPC="60" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
 		<script>stream_genre;</script>
 	</text>
-	<text redraw="yes" offsetXPC="6" offsetYPC="84" widthPC="60" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
+	<text redraw="yes" offsetXPC="6" offsetYPC="84" widthPC="50" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="255:255:255">
 	<script>
 	 out = "";
 	 if(stream_bitrate != null &amp;&amp; stream_bitrate != "") 
@@ -412,7 +412,7 @@
 	</script>
 	</text>
 	
-	<text align="right" redraw="yes" offsetXPC="6" offsetYPC="85" widthPC="86" heightPC="5" fontSize="12" backgroundColor="-1:-1:-1" foregroundColor="0:0:0">
+	<text align="right" redraw="yes" offsetXPC="25" offsetYPC="85" widthPC="69" heightPC="5" fontSize="12" backgroundColor="-1:-1:-1" foregroundColor="0:0:0">
 		<script>stream_url;</script>
 	</text>
 		

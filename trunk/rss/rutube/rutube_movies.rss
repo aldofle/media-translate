@@ -348,15 +348,8 @@ menuPerPage=10
       idx   = getFocusItemIndex();
       url   = getStringArrayAt(urlArray, idx);
       playTitle = url;
-      urlToPlay = translate_base_url+"info,,"+url;
-      dlok = loadXMLFile(urlToPlay);
-      if(dlok != null)
-      {
-        error = getXMLElementCount("info","error");
-        print("error=",error);
-
-        if(error == 0)
-        {
+      urlToPlay = translate_base_url+"stream,,"+urlEncode(url);
+      
           historyPath = getStoragePath("key")+"translate.history_video.m3u";
           historydat = readStringFromFile(historyPath);
           if(historydat == null)
@@ -365,44 +358,9 @@ menuPerPage=10
           historydat = pushBackStringArray(historydat, url);
           writeStringToFile(historyPath, historydat);
 
-    	    value = getXMLAttribute("info","stream","type");
-    	    if(value != null)
-    	     type = value;
-
-    	    value = getXMLAttribute("info","stream","url");
-    	    if(value != null)
-    	     url = value;
-
-    	    value = getXMLAttribute("info","stream","class");
-    	    if(value != null)
-    	     class = value;
-
-    	    value = getXMLAttribute("info","stream","server");
-    	    if(value != null)
-    	     soft = value;
-
-    	    value = getXMLAttribute("info","stream","protocol");
-    	    if(value != null)
-    	     protocol = value;
-
-          translateStreamURL = translate_base_url+"stream,,"+url;
-
-          print(translateStreamURL);
-          print(url);
-          print(type);
-          print(class);
-          print(protocol);
-          print(soft);
-
-          playItemURL(translateStreamURL, 0);
-          mode = 0;
-          setRefreshTime(1000);
-        }
-        else
-        {
-         null;
-        }
-      }
+      playItemURL(urlToPlay, 0);
+      mode = 0;
+      setRefreshTime(1000);
 		</onClick>
   </item_template>
 

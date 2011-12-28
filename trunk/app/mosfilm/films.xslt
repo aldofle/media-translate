@@ -45,6 +45,7 @@
     <title><xsl:value-of select="string(.//span[@class='name']/a)"/></title>
     <image>http://cinema.mosfilm.ru/<xsl:value-of select=".//div[@class='cover']/img[1]/@src"/></image>
     <location>http://cinema.mosfilm.ru/<xsl:value-of select=".//span[@class='name']/a/@href"/></location>
+    <stream_class>video</stream_class>
     <year><xsl:value-of select="normalize-space(.//span[@class='year'])"/></year>
     <annotation><xsl:value-of select="normalize-space(.//a[@class='description'])"/></annotation>
     <viewes><xsl:value-of select="normalize-space(.//b[@class='viewes'])"/></viewes>

@@ -61,6 +61,7 @@
   <location>
     <xsl:value-of select="concat('http://www.tvigle.ru',str:replace(string(.), 'http://www.tvigle.ru', ''))"/>
   </location>
+  <stream_class>video</stream_class>
 </xsl:template>
 
 <xsl:template match="@*" />

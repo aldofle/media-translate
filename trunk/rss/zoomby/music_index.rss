@@ -47,9 +47,9 @@
 	menuYPC=20
 	menuWidthPC=15
 	menuHeightPC=10
-  selectMenuOnRight=no
-  forceFocusOnItem=yes
-  forceFocusOnMenu=no
+    selectMenuOnRight=no
+    forceFocusOnItem=yes
+    forceFocusOnMenu=no
 	showDefaultInfo=yes
 	infoYPC=90
 	fontSize=18
@@ -122,25 +122,6 @@
       }
       else if(majorContext == "items" &amp;&amp; userInput == "right")
       {
-/*
-        idx = getFocusItemIndex();
-        url = feedUrl;
-        title = getStringArrayAt(titleArray, idx);
-
-        arr = null;
-        arr = pushBackStringArray(arr, url);
-        arr = pushBackStringArray(arr, title);
-        arr = pushBackStringArray(arr, "");
-        arr = pushBackStringArray(arr, "");
-        arr = pushBackStringArray(arr, idx);
-        print("arr=",arr);
-        print("storagePath=",storagePath);
-
-        writeStringToFile(storagePath, arr);
-
-        print("act = doModalRss('../etc/translate/rss/rss_mediaEntry.rss');");
-        print("********** doModalRss=",act);
-*/
         ret = "true";
       }
       ret;
@@ -181,7 +162,7 @@
   writeStringToFile(storagePath, arr);
 
   pageLogo = "../etc/translate/rss/image/zoomby.jpg";
-  pageTitle = "ZOOMBY.RU/MUSIC";
+  pageTitle = "ZOOMBY.RU / MUSIC";
 
 </onEnter>
 
@@ -196,8 +177,7 @@
       </script>
    </displayTitle>
 <!--
-   <media:thumbnail>
-   </media:thumbnail>
+   <media:thumbnail></media:thumbnail>
 -->
     <mediaDisplay name=onePartView
 		    sideLeftWidthPC = 0

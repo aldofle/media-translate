@@ -215,15 +215,7 @@
     mode = 1;
 
     playItemURL(-1, 1);
-    urlToPlay = translate_base_url+"info,,"+url;
-    dlok = loadXMLFile(urlToPlay);
-    if(dlok != null)
-    {
-      error = getXMLElementCount("info","error");
-      print("error=",error);
-
-      if(error == 0)
-      {
+    urlToPlay = translate_base_url+"stream,,"+urlEncode(url);
         historyPath = getStoragePath("key")+"translate.history_video.m3u";
         historydat = readStringFromFile(historyPath);
         if(historydat == null)
@@ -231,18 +223,11 @@
         historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+pageTitle);
         historydat = pushBackStringArray(historydat, url);
         writeStringToFile(historyPath, historydat);
-
-  	value = getXMLAttribute("info","stream","url");
-  	if(value != null)
-  	{
-          showIdle();
-          setRefreshTime(1000);
-          playItemURL(translate_base_url+"stream,,"+value, 0);
-          cancelIdle();
-        }
-      }
-    }
-    null;
+     showIdle();
+     setRefreshTime(1000);
+     playItemURL(urlToPlay, 0);
+     cancelIdle();
+     null;
   </onClick>
 </submenu>
 

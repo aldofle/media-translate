@@ -156,107 +156,92 @@
 </onExit>
 
 <onRefresh>
-  if(mode == 0)
-  {
-    setRefreshTime(-1);
-    
-    url = feedUrl;
+  setRefreshTime(-1);
+  
+  url = feedUrl;
 
-    print("Start to load feed:",url);
+  print("Start to load feed:",url);
+  
+  dlok = loadXMLFile(url);
+  if (dlok != null)
+  {
+  	itemSize = getXMLElementCount("entry");
+  	if(itemSize == 0)
+  	{
+  	  postMessage("return");
+  	}
+  	else
+  	{
+    	print("Item Size = ", itemSize);
     
-    dlok = loadXMLFile(url);
-    if (dlok != null)
-    {
-    	itemSize = getXMLElementCount("entry");
-    	if(itemSize == 0)
-    	{
-    	  postMessage("return");
-    	}
-    	else
-    	{
-      	print("Item Size = ", itemSize);
+  	  title       = getXMLText("entry","title");
+  	  description = getXMLText("entry","content");
+  	  author      = getXMLText("entry","author","name");
+  	  url         = getXMLAttribute("entry","media:group","media:player","url");
+  	  duration    = getXMLAttribute("entry","media:group","yt:duration","seconds");
+  	  rating      = getXMLAttribute("entry","gd:rating","average");
+  	  views       = getXMLAttribute("entry","yt:statistics","viewCount");
+  	  favor       = getXMLAttribute("entry","yt:statistics","favoriteCount");
+
+  	  pageTitle   = title;
+  	  
+  	  last_thumbnail = getXMLElementCount("entry","media:group","media:thumbnail")-1;
+  	  print("last_thumbnail=",last_thumbnail);
+  	  thumbnail = getXMLAttribute("entry","media:group","media:thumbnail",last_thumbnail,"url");
+  	  
+  	  relatedUrl = "";
+  	  responsesUrl = "";
+  	  
+  	  size = getXMLElementCount("entry","link");
+  	  count = 0;
+  	  while(1)
+  	  {
+  	    rel = getXMLAttribute("entry","link",count,"rel");
+  	    if(rel == "http://gdata.youtube.com/schemas/2007#video.related")
+  	    {
+  	      relatedUrl = getXMLAttribute("entry","link",count,"href");
+  	    }
+  	    else if(rel == "http://gdata.youtube.com/schemas/2007#video.responses")
+  	    {
+  	      responsesUrl = getXMLAttribute("entry","link",count,"href");
+  	    }
+  	    count += 1;
+  	    if(count == size)
+  	    {
+  	      break;
+  	    }
+  	  }
+  	  
+  	  tagsArray = null;
+
+  	  size = getXMLElementCount("entry","category");
+  	  count = 0;
+  	  while(1)
+  	  {
+  	    scheme = getXMLAttribute("entry","category",count,"scheme");
+  	    if(scheme == "http://gdata.youtube.com/schemas/2007/categories.cat" || scheme == "http://gdata.youtube.com/schemas/2007/keywords.cat")
+  	    {
+  	      term = getXMLAttribute("entry","category",count,"term");
+  	      tagsArray = pushBackStringArray(tagsArray, term);
+  	    }
+  	    count += 1;
+  	    if(count == size)
+  	    {
+  	      break;
+  	    }
+  	  }
+  	  
+  	  print("========",title);
+  	  print("========",description);
+  	  print("========",author);
+  	  print("========",url);
+  	  print("========",duration);
+  	  print("========",rating);
+  	  print("========",relatedUrl);
+  	  print("========",responsesUrl);
+  	  print("========",tagsArray);
       
-    	  title       = getXMLText("entry","title");
-    	  description = getXMLText("entry","content");
-    	  author      = getXMLText("entry","author","name");
-    	  url         = getXMLAttribute("entry","media:group","media:player","url");
-    	  duration    = getXMLAttribute("entry","media:group","yt:duration","seconds");
-    	  rating      = getXMLAttribute("entry","gd:rating","average");
-    	  views       = getXMLAttribute("entry","yt:statistics","viewCount");
-    	  favor       = getXMLAttribute("entry","yt:statistics","favoriteCount");
-
-    	  pageTitle   = title;
-    	  
-    	  last_thumbnail = getXMLElementCount("entry","media:group","media:thumbnail")-1;
-    	  print("last_thumbnail=",last_thumbnail);
-    	  thumbnail = getXMLAttribute("entry","media:group","media:thumbnail",last_thumbnail,"url");
-    	  
-    	  relatedUrl = "";
-    	  responsesUrl = "";
-    	  
-    	  size = getXMLElementCount("entry","link");
-    	  count = 0;
-    	  while(1)
-    	  {
-    	    rel = getXMLAttribute("entry","link",count,"rel");
-    	    if(rel == "http://gdata.youtube.com/schemas/2007#video.related")
-    	    {
-    	      relatedUrl = getXMLAttribute("entry","link",count,"href");
-    	    }
-    	    else if(rel == "http://gdata.youtube.com/schemas/2007#video.responses")
-    	    {
-    	      responsesUrl = getXMLAttribute("entry","link",count,"href");
-    	    }
-    	    count += 1;
-    	    if(count == size)
-    	    {
-    	      break;
-    	    }
-    	  }
-    	  
-    	  tagsArray = null;
-
-    	  size = getXMLElementCount("entry","category");
-    	  count = 0;
-    	  while(1)
-    	  {
-    	    scheme = getXMLAttribute("entry","category",count,"scheme");
-    	    if(scheme == "http://gdata.youtube.com/schemas/2007/categories.cat" || scheme == "http://gdata.youtube.com/schemas/2007/keywords.cat")
-    	    {
-    	      term = getXMLAttribute("entry","category",count,"term");
-    	      tagsArray = pushBackStringArray(tagsArray, term);
-    	    }
-    	    count += 1;
-    	    if(count == size)
-    	    {
-    	      break;
-    	    }
-    	  }
-    	  
-    	  print("========",title);
-    	  print("========",description);
-    	  print("========",author);
-    	  print("========",url);
-    	  print("========",duration);
-    	  print("========",rating);
-    	  print("========",relatedUrl);
-    	  print("========",responsesUrl);
-    	  print("========",tagsArray);
-        
-      	redrawDisplay();
-      }
-    }
-  }
-  else if(mode == 1)
-  {
-    print("Wait for movie stop");
-    vidProgress = getPlaybackStatus();
-    playStatus = getStringArrayAt(vidProgress, 3);
-    if(playStatus == 0)
-    {
-       cancelIdle();
-       setRefreshTime(-1);
-       mode = 0;
+    	redrawDisplay();
     }
   }
 </onRefresh>
@@ -326,42 +311,26 @@
   pageTitle = getStringArrayAt(arr, 1);
   setReturnString("");
 
-  mode = 0;
   setRefreshTime(1);
 </onEnter>
 
 <submenu>
   <title>Проиграть</title>
   <onClick>
-    mode = 1;
+    urlToPlay = translate_base_url+"stream,HD:"+hd+","+urlEncode(url);
 
-    infoUrl = translate_base_url+"info,HD:"+hd+","+urlEncode(url);
+    historyPath = getStoragePath("key")+"translate.history_video.m3u";
+    historydat = readStringFromFile(historyPath);
+    if(historydat == null)
+      historydat = pushBackStringArray(historydat, "#EXTM3U");
+    historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+pageTitle);
+    historydat = pushBackStringArray(historydat, url);
+    writeStringToFile(historyPath, historydat);
 
-    dlok = loadXMLFile(infoUrl);
-    if (dlok != null)
-    {
-      historyPath = getStoragePath("key")+"translate.history_video.m3u";
-      historydat = readStringFromFile(historyPath);
-      if(historydat == null)
-        historydat = pushBackStringArray(historydat, "#EXTM3U");
-      historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+pageTitle);
-      historydat = pushBackStringArray(historydat, url);
-      writeStringToFile(historyPath, historydat);
+    showIdle();
+    playItemURL(urlToPlay, 0);
+    cancelIdle();
 
-	    value = getXMLAttribute("info","stream","type");
-	    if(value != null)
-	     type = value;
-  	    
-	    value = getXMLAttribute("info","stream","url");
-	    if(value != null)
-	     url = value;
-	     
-      urlToPlay = url;
-      showIdle();
-      setRefreshTime(100);
-      playItemURL(urlToPlay, 0);
-      cancelIdle();
-	  }
   	null;
   </onClick>
 </submenu>

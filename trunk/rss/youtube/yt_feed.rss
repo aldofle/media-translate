@@ -155,65 +155,51 @@
 </onExit>
 
 <onRefresh>
-  if(mode == 1)
-  {
-    setRefreshTime(-1);
-    
-    startIndex = (page - 1) * maxResults + 1;
-    url = feedUrl+"?time="+time+"&amp;start-index="+startIndex+"&amp;max-results="+maxResults;
+  setRefreshTime(-1);
+  
+  startIndex = (page - 1) * maxResults + 1;
+  url = feedUrl+"?time="+time+"&amp;start-index="+startIndex+"&amp;max-results="+maxResults;
 
-    print("Start to load feed:",url);
-    
-    dlok = loadXMLFile(url);
-    if (dlok != null)
-    {
-    	itemSize = getXMLElementCount("feed","entry");
-    	if(itemSize == 0)
-    	  postMessage("return");
-    	print("Item Size = ", itemSize);
-    
-    	totalResults = getXMLText("feed", "openSearch:totalResults");
-    	startIndex = getXMLText("feed", "openSearch:startIndex");
-    	itemsPerPage = getXMLText("feed", "openSearch:itemsPerPage");
-    	
-    	print("totalResults=",totalResults);
-    	print("startIndex=",startIndex);
-    	print("itemsPerPage=",itemsPerPage);
-    
-    	count=0;
-    	while(itemSize != 0)
-    	{
-    	  title     = getXMLText("feed","entry",count,"title");
-    	  id        = getXMLText("feed","entry",count,"id");
-    	  url       = getXMLAttribute("feed","entry",count,"media:group","media:player","url");
-    	  thumbnail = getXMLAttribute("feed","entry",count,"media:group","media:thumbnail",0,"url");
-    	  
-    	  titleArray  = pushBackStringArray(titleArray, title);
-    	  urlArray    = pushBackStringArray(urlArray, url);
-    	  idArray     = pushBackStringArray(idArray, id);
-    	  thumbnailArray = pushBackStringArray(thumbnailArray, thumbnail);
-      
-    	  count += 1;
-    	  if (count == itemSize)
-    	  {
-    		  break;
-    	  }
-    	}
-    	print("title array =", titleArray);
-    	setFocusItemIndex(0);
-    	redrawDisplay();
-    }
-  }
-  else if(mode == 0)
+  print("Start to load feed:",url);
+  
+  dlok = loadXMLFile(url);
+  if (dlok != null)
   {
-    print("Wait for movie stop");
-    vidProgress = getPlaybackStatus();
-    playStatus = getStringArrayAt(vidProgress, 3);
-    if(playStatus == 0)
-    {
-       cancelIdle();
-       setRefreshTime(-1);
-    }
+  	itemSize = getXMLElementCount("feed","entry");
+  	if(itemSize == 0)
+  	  postMessage("return");
+  	print("Item Size = ", itemSize);
+  
+  	totalResults = getXMLText("feed", "openSearch:totalResults");
+  	startIndex = getXMLText("feed", "openSearch:startIndex");
+  	itemsPerPage = getXMLText("feed", "openSearch:itemsPerPage");
+  	
+  	print("totalResults=",totalResults);
+  	print("startIndex=",startIndex);
+  	print("itemsPerPage=",itemsPerPage);
+  
+  	count=0;
+  	while(itemSize != 0)
+  	{
+  	  title     = getXMLText("feed","entry",count,"title");
+  	  id        = getXMLText("feed","entry",count,"id");
+  	  url       = getXMLAttribute("feed","entry",count,"media:group","media:player","url");
+  	  thumbnail = getXMLAttribute("feed","entry",count,"media:group","media:thumbnail",0,"url");
+  	  
+  	  titleArray  = pushBackStringArray(titleArray, title);
+  	  urlArray    = pushBackStringArray(urlArray, url);
+  	  idArray     = pushBackStringArray(idArray, id);
+  	  thumbnailArray = pushBackStringArray(thumbnailArray, thumbnail);
+    
+  	  count += 1;
+  	  if (count == itemSize)
+  	  {
+  		  break;
+  	  }
+  	}
+  	print("title array =", titleArray);
+  	setFocusItemIndex(0);
+  	redrawDisplay();
   }
 </onRefresh>
 
@@ -270,7 +256,6 @@
   idArray = null;
   time = "today";
   page = 1;
-  mode = 1;
   setRefreshTime(1);
 </onEnter>
 
@@ -388,34 +373,21 @@
     idx = getFocusItemIndex();
     url = getStringArrayAt(urlArray, idx);
 
-    infoUrl = translate_base_url+"info,HD:"+hd+","+urlEncode(url);
+    urlToPlay = translate_base_url+"stream,HD:"+hd+","+urlEncode(url);
 
-    dlok = loadXMLFile(infoUrl);
-    if (dlok != null)
-    {
-      historyPath = getStoragePath("key")+"translate.history_video.m3u";
-      historydat = readStringFromFile(historyPath);
-      if(historydat == null)
-        historydat = pushBackStringArray(historydat, "#EXTM3U");
-      historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+getStringArrayAt(titleArray, idx));
-      historydat = pushBackStringArray(historydat, url);
-      writeStringToFile(historyPath, historydat);
+    historyPath = getStoragePath("key")+"translate.history_video.m3u";
+    historydat = readStringFromFile(historyPath);
+    if(historydat == null)
+      historydat = pushBackStringArray(historydat, "#EXTM3U");
+    historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+getStringArrayAt(titleArray, idx));
+    historydat = pushBackStringArray(historydat, url);
+    writeStringToFile(historyPath, historydat);
 
-	    value = getXMLAttribute("info","stream","type");
-	    if(value != null)
-	     type = value;
-  	    
-	    value = getXMLAttribute("info","stream","url");
-	    if(value != null)
-	     url = value;
-	     
-      urlToPlay = url;
-      showIdle();
-      mode = 0;
-      setRefreshTime(100);
-      playItemURL(urlToPlay, 0);
-      cancelIdle();
-	  }
+    showIdle();
+    playItemURL(urlToPlay, 0);
+    cancelIdle();
+    
+    null;
 	</onClick>
 </item_template>
 

@@ -43,6 +43,7 @@ BEGIN {
         location = XATTR["www"];
         sub(/^http:\/\/www\.tvigle\.ru/, "", location);
         print "<location>http://www.tvigle.ru" location "</location>"
+        print "<stream_class>video</stream_class>"
       }
     }
     else

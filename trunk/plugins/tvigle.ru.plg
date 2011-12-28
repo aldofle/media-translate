@@ -70,7 +70,9 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; t
         fi
       ;;
     esac
-    if echo $stream_url | grep -qs ".flv$"; then
+    if [ -z "$stream_url" ]; then
+      stream_type=''
+    elif echo $stream_url | grep -qs ".flv$"; then
       stream_type='video/x-flv'
     fi
     protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
