@@ -129,6 +129,29 @@ sed -i '/^RTMPDUMP=/d' ../etc/translate.conf
 echo -e '\nRTMPDUMP=$BASEPATH/bin/rtmpdump' >> ../etc/translate.conf
 }}}
 
+=== [http://www.ossp.org/pkg/lib/js/ JS] ===
+
+  Mozilla JavaScript Engine. Необходим для работы с некоторыми online-сервисами. 
+
+  Входит в состав пакета *ossp-js* для *[http://www.nslu2-linux.org/wiki/Optware/HomePage optware]*.
+{{{
+ipkg install ossp-js
+}}}
+
+  Путь к утилите *js* прописывается в переменной JS в *translate.conf*:
+{{{
+JS=/opt/bin/js
+}}}
+
+  Можно также воспользоваться статически слинкованной утилитой *[http://media-translate.googlecode.com/files/js.tar.bz2 js]*. Пример установки в */usr/local/etc/translate/bin*:
+{{{
+cd /usr/local/etc/translate/bin
+wget -O - http://media-translate.googlecode.com/files/js.tar.bz2 | tar -xj
+sed -i '/^JS=/d' ../etc/translate.conf
+echo -e '\nJS=$BASEPATH/bin/js' >> ../etc/translate.conf
+}}}
+
+
 = Настройка =
 
   * Основной конфигурационный файл */usr/local/etc/translate/etc/translate.conf*:
