@@ -38,7 +38,7 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*radiogrom\.com/online/.*\.html$'; t
     rm -f "$TMPFILE"
     check_av_stream
     local prev=
-    while [ "$prev" != "$stream_url" -a "$stream_class" == "playlist" ];
+    while [ "$prev" != "$stream_url" -a "$stream_class" = "playlist" ];
     do
       prev=$stream_url
       check_playlist

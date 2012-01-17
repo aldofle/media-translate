@@ -103,6 +103,10 @@
     </text>
 -->
 
+    <text redraw="no" align="right" offsetXPC=50 offsetYPC=92 widthPC=45 heightPC=5 fontSize=12 backgroundColor=0:0:0 foregroundColor=100:100:100>
+      Press 'Right' for get-tune.net
+    </text>
+
   <onUserInput>
     <script>
       ret = "false";
@@ -135,7 +139,26 @@
       }
       else if(majorContext == "items" &amp;&amp; (userInput == "right" || userInput == "R"))
       {
-        idx = getFocusItemIndex();
+        idx = Integer(getFocusItemIndex());
+        search_text = getStringArrayAt(titleArray, idx);
+    		search_url  = translate_base_url + "app/gettune/search," + urlEncode(search_text);
+        
+		    showIdle();
+    		playlist_autoplay = 0;
+        streamArray = null;
+        streamArray = pushBackStringArray(streamArray, search_url);
+        streamArray = pushBackStringArray(streamArray, search_text);
+        streamArray = pushBackStringArray(streamArray, getStringArrayAt(thumbnailArray, idx));
+        streamArray = pushBackStringArray(streamArray, "");
+        streamArray = pushBackStringArray(streamArray, "playlist");
+        streamArray = pushBackStringArray(streamArray, playlist_autoplay);
+        streamArray = pushBackStringArray(streamArray, "All");
+        writeStringToFile(storagePath_playlist, streamArray);
+        doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
+        ret = "true";
+      }
+      else if(majorContext != "items" &amp;&amp; (userInput == "left" || userInput == "L"))
+      {
         ret = "true";
       }
       ret;
@@ -171,9 +194,10 @@
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
   storagePath = getStoragePath("tmp");
-  storagePath  = storagePath + "zoomby.dat";
+  storagePath_zoomby  = storagePath + "zoomby.dat";
+  storagePath_playlist    = storagePath + "playlist.dat";
 
-  arr = readStringFromFile(storagePath);
+  arr = readStringFromFile(storagePath_zoomby);
   if ( arr != null &amp;&amp; arr != "" )
   {
    title = getStringArrayAt(arr, 0);

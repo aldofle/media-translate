@@ -428,6 +428,13 @@ Thank you for travelling with Bluemars Spaceways.</annotation>
     <mediaDisplay name="onePartView"/>
   </item>
   <item>
+<link><script>translate_base_url+"app/gettune/index";</script></link>
+    <title>get-tune.net</title>
+    <annotation>get-tune.net - Самый крупный музыкальный архив. Слушайте любую музыку онлайн абсолютно бесплатно!</annotation>
+    <image>../etc/translate/rss/image/menu/gettune.png</image>
+    <mediaDisplay name="onePartView"/>
+  </item>
+  <item>
 <link>rss_file://../etc/translate/rss/etc-menu-radio-other.rss</link>
     <title>Other</title>
     <annotation>Разные списки интернет-радиостанций</annotation>

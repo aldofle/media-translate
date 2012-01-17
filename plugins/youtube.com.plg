@@ -21,13 +21,15 @@
 # Translate CGI module
 # 'youtube.com' plug-in
 #
-# version: 2.5.21 30.12.2011 0:45
+# version: 2.6 04.01.2012 3:58
 #
 # http://www.youtube.com/v/JZtcw6GIxTY
 # http://www.youtube.com/watch?v=JZtcw6GIxTY
 # http://www.youtube.com/movie?v=xO19ipsCxfI
 # http://m.youtube.com/watch?gl=RU&client=mv-google&hl=ru&v=V-_YxX94cQ8
 # http://www.youtube.com/embed/0v1ijbQocqo
+#
+# http://www.youtube.com/watch?v=v--IqqusnNQ&feature=list_related&playnext=1&list=AVGxdCwVVULXeKBZbzNyDrXn1k_UU4pSf9
 #
 # options:
 #   HD:[0|1]
@@ -53,7 +55,42 @@ if echo "${arg_url}" | grep -qs 'youtube\.com.*\(/embed/\|/v/\|/watch?\|movie?\)
   local video_id=`echo "$arg_url" | sed -e 's/.*[?&]v=//;s/.*\///;s/&.*//'`
   local CACHEFILE=$CACHEPATH/yt.$video_id
   local USERAGENTG="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
-  
+
+  if echo "${arg_url}" | grep -qs '&list='; then
+    host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENTG}" ${arg_url} 2>&1`
+    if grep -qs "data-list-id=" ${TMPFILE}; then
+
+      local PLAYLISTFILE=$CACHEPATH/temp.xspf
+      rm -f $PLAYLISTFILE
+      
+      awk '/data-list-id=/{
+        match($0,/data-video-ids="([^"]*)"/,arr);
+        len = split(arr[1],vid,",");
+				print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+				print "<playlist version=\"1\" xmlns=\"http://xspf.org/ns/0/\">"
+	  		print "<title>YouTube playlist</title>"
+	  		print "<trackList>"
+        for(i=1; i<=len; i++) {
+  				print "<track>"
+		  		print "<title>" vid[i] "</title>"
+		  		print "<location>http://www.youtube.com/v/" vid[i] "</location>"
+		  		print "<image>http://i.ytimg.com/vi/" vid[i] "/default.jpg</image>"
+  				print "</track>"
+        }
+				print "</trackList>"
+				print "</playlist>"
+        exit;
+      }' ${TMPFILE} > $PLAYLISTFILE
+
+      stream_type='application/xspf+xml'
+      stream_url=$PLAYLISTFILE
+      protocol='file'
+      arg_opt='Resolve-playlist:0;Autoplay:1'
+
+      return $RC_OK
+    fi
+  fi 
+    
   local tsttime=
   local fmt_url_map=
   

@@ -34,7 +34,7 @@ local tracktitle=$opt
 gettracktitle() 
 {
   echo -n $tracktitle | awk '{
-      if(match($0, /(^[^-—(]+) *[-—]+ *(.+)/, arr)) {
+      if(match($0, /(^[^-—(]+) *[-—]+ *([^(]+)/, arr)) {
         gsub(/(^ +| +$)/, "", arr[1]);
         gsub(/(^ +| +$)/, "", arr[2]);
       	print arr[1];
@@ -55,10 +55,11 @@ gettracktitle()
   }' | sed 's/ /+/g;s/\//%5C/g'
 }
 
-local artist=`gettracktitle | sed -n '1p'`
-local track=`gettracktitle | sed -n '2p'`
+local artist=$(gettracktitle | sed -n '1p')
+local track=$(gettracktitle | sed -n '2p')
 
-local request=`echo "http://www.last.fm/music/$artist/_/$track"`
+local request="http://www.last.fm/music/$artist
+#/_/$track"
 
 get_opt "Size"
 local size=largesquare
@@ -85,8 +86,8 @@ local buf=
 local defaultimage=
 
 get_opt "Def"
-if [ "$opt" == "AR" ]; then
-  defaultimage=`sed -n '11p' $CACHEPATH/stream.dat`
+if [ "$opt" = "AR" ]; then
+  defaultimage=$(sed -n '11p' $CACHEPATH/stream.dat)
 else
   defaultimage=$opt
 fi
@@ -99,12 +100,12 @@ trackimage_loadImage()
   fi
   if [ -f "$imageurl" ]; then
     cp "$imageurl" "$LASTFMFILE"
-    local ext=`echo "$imageurl" | sed 's/\./\n/g' | sed -n '$p'`
+    local ext=$(echo "$imageurl" | sed 's/\./\n/g' | sed -n '$p')
     type=image/$ext
   else
-    buf=`$MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$1" 2>&1`
+    buf=$($MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$1" 2>&1)
     if [ -f "$LASTFMFILE" ]; then
-      type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
+      type=$(echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}')
     else
       cp "empty.png" "$LASTFMFILE"
       type="image/png"
@@ -112,7 +113,7 @@ trackimage_loadImage()
   fi
 }
 
-buf=`$MSDL -q -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$request" 2>&1`
+buf=$($MSDL -q -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$request" 2>&1)
 
 if [ -f "$LASTFMFILE" ]; then
 
@@ -121,9 +122,21 @@ if [ -f "$LASTFMFILE" ]; then
   imageurl=`grep LFM.set\(\"Par "$LASTFMFILE" | sed "s/.*image\":{//;s/},.*//;s/.*\"$size\":\"//;s/\".*//;" | sed 's/\\\//g'`
   rm -f "$LASTFMFILE"
   
-  buf=`$MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$imageurl" 2>&1`
+  buf=$($MSDL --debug -o "$LASTFMFILE" -p http --useragent "$USERAGENT" "$imageurl" 2>&1)
   if [ -f "$LASTFMFILE" ]; then
-    type=`echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}'`
+    type=$(echo "$buf" | sed -n '/^[cC]ontent[ -][tT]ype/p' | sed -n '$p' | awk '{ match($0, /[ ;:]+([a-z]+\/[a-z\-]+)[ ;]*.*$/, arr); print arr[1]}')
+    rm -f "$LASTFMFILE"
+    head301()
+    {
+      echo "HTTP/1.0 301 Moved permanently"
+      echo "Content-type: $type"
+      echo "Location: $imageurl"
+      echo "Pragma: no-cache"
+      echo "Connection: close"
+      echo
+    }
+    head301 >$TMPFILE
+    exec nph-translate $TMPFILE
   else
     trackimage_loadImage "$defaultimage"
   fi

@@ -285,3 +285,20 @@ find_protocol_plugin()
   eval $2="'$plugin'"
 }
 
+utf8toascii()
+{
+  local file=$TEMP/$$.conv
+  if [ -z "$1" ]; then
+    echo -n "<text>" > $file
+    cat >> $file
+    echo -n "</text>" >> $file
+  else
+    echo -n "<text>$1</text>" > $file
+  fi
+  if cat $file | $TOUTF8 -t; then
+    LC_ALL=C awk '{match($0,/<text>(.*)<\/text>/,arr);print arr[1]}' $file
+  else
+    $XSLTPROC $BASEPATH/lib/utf8toascii.xslt $file | $XCODE -l -s
+  fi
+  rm -f $file
+}

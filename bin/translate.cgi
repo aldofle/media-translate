@@ -198,7 +198,7 @@ test_stream()
 
 check_av_stream()
 {
-  if [ "$check_stream_flag" == "no" ]; then
+  if [ "$check_stream_flag" = "no" ]; then
     return 0
   fi
   
@@ -249,7 +249,7 @@ check_av_stream()
       
       stream_url=`echo "$buf" | sed -n '/^url:/p' | sed -n '$p' | sed 's/ *url: *//'`
       protocol=`echo "$buf" | sed -n '/^download protocol:/p' | sed -n '$p' | sed 's/.*: //'`
-      if [ "$protocol" == "rtsp - real" ]; then
+      if [ "$protocol" = "rtsp - real" ]; then
         protocol='real'
       else
         protocol=`echo "$protocol" | awk '{print $1}'`
@@ -262,7 +262,7 @@ check_av_stream()
       
       url_protocol=`echo $stream_url | sed 's/^\(.*\):\/\/.*$/\1/'`
       
-      if [ "$protocol" == "mmsh" ]; then 
+      if [ "$protocol" = "mmsh" ]; then 
         stream_url=`echo $stream_url | sed "s/^\(.*\)\(:\/\/.*\)/$protocol\2/"`
       fi 
       
@@ -283,8 +283,8 @@ check_av_stream()
     
     case $protocol in
       http|ftp|file)
-        if [ "$protocol" == "http" ]; then
-          if [ "$type" == "text/html" -o -z "$type" ]; then
+        if [ "$protocol" = "http" ]; then
+          if [ "$type" = "text/html" -o -z "$type" ]; then
             if echo "${stream_url}" | grep -q -s ".*[^a-zA-Z0-9]rss[^a-zA-Z0-9]*.*"; then
               type=application/xml
             elif echo "${stream_url}" | grep -q -s "^http://.*/\(udp\|rtp\)/[0-9\.:]*$"; then
@@ -292,7 +292,7 @@ check_av_stream()
             fi
           fi
         fi
-        if [ -z "$type" -o "$type" == "text/plain" -o "$type" == "text/html" ]; then
+        if [ -z "$type" -o "$type" = "text/plain" -o "$type" = "text/html" ]; then
           ext=`echo "${stream_url}" | sed 's/\./\n/g' | sed -n '$p'`
           case $ext in
             flv|FLV)
@@ -448,7 +448,7 @@ check_av_stream()
   host_response=''
   stream_class=`echo "$stream_type" | sed 's/\/.*//'`
   
-  if [ "$protocol" == "http" -a "$stream_class" == "audio" ]; then
+  if [ "$protocol" = "http" -a "$stream_class" = "audio" ]; then
     # try to define stream server type
     host=`echo "$buf" | sed -n '/^Host: \[/p' | sed -n '$p' | awk '{print $3}'`
     
@@ -542,7 +542,7 @@ check_stream()
     check_av_stream
   fi
   
-  [ "$stream_type" == "audio/x-shoutcast-stream" ] && stream_type=audio/x-scpls
+  [ "$stream_type" = "audio/x-shoutcast-stream" ] && stream_type=audio/x-scpls
   
   case $stream_type in
     audio/x-cue)
@@ -570,7 +570,7 @@ check_stream()
     ;;
   esac
   
-  [ "$stream_class" == "playlist" ] && check_playlist
+  [ "$stream_class" = "playlist" ] && check_playlist
   
   [ -z "$stream_url" ] && stream_type=''
   
@@ -581,12 +581,12 @@ check_playlist()
 {
   get_opt "Resolve-playlist"
   local resolve=$opt
-  [ "$resolve" == "0" ] && return 0;
+  [ "$resolve" = "0" ] && return 0;
   local playlist_file="$TEMP/temp.track"
   arg_url=$stream_url
   command_playlist | sed '1,2d;s/<track>/\n<track>/g;s/></>\n</g' > $playlist_file
   local count=`sed -n '/<track>/p' $playlist_file | sed -n '$='`
-  if [ "$count" == "1" -o "$resolve" == "1" ]; then
+  if [ "$count" = "1" -o "$resolve" = "1" ]; then
     local buf=`awk -f getxml.awk -f getfirstitem.awk "$playlist_file" | sed '/^$/d'`
     local location=`echo "$buf" | sed -n '1p'`
     local title=`echo "$buf" | sed -n '2p'`
@@ -722,7 +722,7 @@ command_text()
 
 command_info()
 {
-  if [ "$arg_cmd" == "status" ]; then
+  if [ "$arg_cmd" = "status" ]; then
     check_server
   else 
 		if [ -f "$RESOLVE_CACHE_EXCLUSION_FILE" ]; then
@@ -745,7 +745,7 @@ command_info()
 				
 				if [ -n "$REFRESHCACHE" ]; then
 			    check_stream
-			    if [ "$RESOLVE_CACHE_ENABLED" == "1" -a -n "$stream_url" ]; then
+			    if [ "$RESOLVE_CACHE_ENABLED" = "1" -a -n "$stream_url" ]; then
 				    echo "$stream_url" > $RESOLVECACHE
 				    echo "$stream_type" >> $RESOLVECACHE
 				    echo "$stream_class" >> $RESOLVECACHE
@@ -784,7 +784,7 @@ command_info()
   echo "<?xml version='1.0' encoding='UTF-8'?>"
   echo "<info>"
   escaped_url=`escapeXML "$stream_url"`
-  if [ "$protocol" == "http" -o "$protocol" == "mms" -o "$protocol" == "mmsh" -o "$protocol" == "rtsp" ]; then
+  if [ "$protocol" = "http" -o "$protocol" = "mms" -o "$protocol" = "mmsh" -o "$protocol" = "rtsp" ]; then
     escaped_url="`echo $escaped_url | sed 's/ /+/g;s/"/%22/g'`"
   fi 
   echo "<stream url=\"$escaped_url\" type=\"$stream_type\" class=\"$stream_class\" protocol=\"$protocol\" server=\"$server_type\" server_url=\"$stream_status_url\" />"
@@ -1129,7 +1129,7 @@ command_lsftp()
   $MSDL --ftp-list -q -o $TMPFILE "${arg_url}" 2>/dev/null 
   if [ -f $TMPFILE ]; then
     ICONV=
-    [ "$charset" == "CP1251" ] && ICONV=$TOUTF8
+    [ "$charset" = "CP1251" ] && ICONV=$TOUTF8
     awk -v path="${arg_url}" -v toutf8="$ICONV" -v charset="$charset" -v isroot="$isroot" '
       function iconv(s) {
         if(toutf8 == "") return s;
@@ -1344,11 +1344,11 @@ case ${arg_cmd} in
           get_opt "Rtmp-options"
           killall -q $RTMPDUMP 2>&1
           exec nice $RTMPDUMP -q -o - -b 60000 -r "$stream_url" $opt
-        elif [ "$charset" == "CP1251" ]; then
+        elif [ "$charset" = "CP1251" ]; then
           echo "Content-type: $stream_type"
           echo
           $MSDL $msdlopt -q -o - "$stream_url" | $TOUTF8 | sed 's/windows-125./utf-8/'
-        elif [ "$protocol" == "http" -a "$server_type" != "shoutcast" ]; then
+        elif [ "$protocol" = "http" -a "$server_type" != "shoutcast" ]; then
           head301()
           {
             echo "HTTP/1.0 301 Moved permanently"
@@ -1407,7 +1407,7 @@ case ${arg_cmd} in
     command_translit
   ;;
   playlist|startpoint)
-    if [ "$arg_cmd" == "startpoint" ]; then
+    if [ "$arg_cmd" = "startpoint" ]; then
       arg_url="$STARTPOINT"
     fi
     if echo "${arg_url}" | grep -q -s "^ftp:\/\/.*\/$"; then 

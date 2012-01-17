@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://purl.org/media/elements/1.1/">
+<rss version="2.0" xmlns:media="http://purl.org/media/elements/1.1/">
 
 <!--
 #
@@ -140,13 +140,15 @@
 	  <script>bar;</script>
 	  <heightPC>
 	    <script>
-	      70 / itemSize;
+	      if(itemSize != 0) 70 / itemSize;
+	      else              0;
 	    </script>
 	  </heightPC>
 	  <offsetYPC>
 	    <script>
 	      focus = getFocusItemIndex();
-	      13 + 70 * focus / itemSize;
+	      if(itemSize != 0) 13 + 70 * focus / itemSize;
+	      else              13;
 	    </script>
 	  </offsetYPC>
 	</text>
@@ -356,7 +358,11 @@
           history -= 1;
           print("from history: ",currentPwd);
           print("**************************** history: ",history,historyPwd);
-          executeScript("sub_refreshList");
+
+	waitForRefreshList = 2;
+	setRefreshTime(100);
+          
+/*          executeScript("sub_refreshList"); */
           ret = "true";
         }
       }
@@ -409,6 +415,51 @@
           
           writeStringToFile(storagePath, arr);
     	    doModalRss("rss_file://../etc/translate/rss/youtube/yt_search_feed.rss");
+    	  }
+  	    ret = "true";
+  	  }
+      else if (userInput == "one" || userInput == "1")
+  		{
+        search_text = playSong;
+        if(search_text == "" || search_text == null)
+          search_text = playTitle;
+        if(search_text != "" &amp;&amp; search_text != null) 
+        {
+        	executeScript("sub_stopPlayback");
+      		search_url  = translate_base_url + "app/gettune/search," + urlEncode(search_text);
+
+          history += 1;
+          historyPwd      = pushBackStringArray(historyPwd, currentPwd);
+          historyTitle    = pushBackStringArray(historyTitle, currentTitle);
+          historyImage    = pushBackStringArray(historyImage, currentImage);
+          historyOptions  = pushBackStringArray(historyOptions, currentOptions);
+          historyCommand  = pushBackStringArray(historyCommand, currentCommand);
+          historyIndex    = pushBackStringArray(historyIndex, currentIndex);
+          historyProtocol = pushBackStringArray(historyProtocol, currentProtocol);
+          
+          currentPwd = search_url;
+          currentTitle = search_text;
+          currentImage = pageLogo;
+          currentOptions = "";
+          currentCommand = "playlist";
+          currentIndex = 0;
+          currentProtocol = "http";
+          executeScript("sub_refreshList");
+          
+/*
+  		    showIdle();
+      		playlist_autoplay = 0;
+          streamArray = null;
+          streamArray = pushBackStringArray(streamArray, search_url);
+          streamArray = pushBackStringArray(streamArray, search_text);
+          streamArray = pushBackStringArray(streamArray, pageLogo);
+          streamArray = pushBackStringArray(streamArray, "");
+          streamArray = pushBackStringArray(streamArray, "playlist");
+          streamArray = pushBackStringArray(streamArray, playlist_autoplay);
+          streamArray = pushBackStringArray(streamArray, "All");
+          writeStringToFile(storagePath_playlist, streamArray);
+          doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
+*/          
     	  }
   	    ret = "true";
   	  }
@@ -514,6 +565,7 @@
   loadingProgress = 0;
   playingProgress = 0;
   progress = "";
+
   executeScript("sub_refreshList");
 </onEnter>
 
@@ -1086,7 +1138,7 @@
           
           if((playTitle != "" &amp;&amp; playTitle != null) || (playSong != "" &amp;&amp; playSong != null))
           {
-            errorInfo = "Press '0' to search related video on Youtube";
+            errorInfo = "Press '0' to search related video on Youtube; '1' - get-tune.net";
             errorInfoColor = "200:200:200";
           }
           
@@ -1229,6 +1281,12 @@
     setRefreshTime(-1);
     executeScript("sub_doRefreshList");
   	redrawDisplay();
+  }
+  else
+  if(waitForRefreshList == 2)
+  {
+    setRefreshTime(-1);
+    executeScript("sub_refreshList");
   }
   else
   {

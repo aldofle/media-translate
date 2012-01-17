@@ -21,36 +21,27 @@
 # Translate CGI module
 # 'linecinema.org' plug-in
 #
-# version: 1.0 02.02.2011 12:07:55
+# version: 1.1 03.01.2012 1:09
 #
 # http://www.linecinema.org/newsz/pryklyuchenyya-online/504294-poteryannoe-buduschee-the-lost-future-2010-dvdrip-onlayn.html
 #
 
-#debug_file=/tmp/nnb.log
-#echo linecinema.org >$debug_file
-#echo ${arg_cmd} >>$debug_file
-#echo ${arg_url} >>$debug_file
-
 do_work()
 {
-  #host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1`
   $WGET -q -O ${TMPFILE} "${arg_url}" 2>&1
   if [ -f ${TMPFILE} ]; then
-    local flashvars=`grep 'flashvars=' ${TMPFILE}`
-    local file=`echo $flashvars | sed -n '1p' | sed 's/^.*file=//;s/&.*$//'`
+    local file=$(awk '/flashvars=/{match($0,/file=([^&"]+)[&"]/,arr);print arr[1];exit;}' ${TMPFILE})
     if echo $file | grep -qs "http://"; then
         :
     else
         file="`echo "${arg_url}" | sed 's/\(http:\/\/[^/]*\)\/.*/\1/'`$file"
     fi
     
-#    echo $file >>$debug_file
-    
     if echo "${file}" | grep -qsi ".flv"; then
         stream_type='video/x-flv'
         case $1 in
           my-hit)
-            local id=`echo $flashvars | sed -n '1p' | sed 's/^.*&id=//;s/[&"].*$//'`
+            local id=$(awk '/flashvars=/{match($0,/id=([^&"]+)[&"]/,arr);print arr[1];exit;}' ${TMPFILE})
             stream_url="${file}?id=${id}"
           ;;
           *)
@@ -62,7 +53,6 @@ do_work()
         local PLAYLIST=$CACHEPATH/temp.xspf
         rm -f $PLAYLIST
         $MSDL -q -o - -p http --useragent "${USERAGENT}" "${file}" 2>/dev/null | sed 's/<track>/\n<track>/g;s/></>\n</g' > $PLAYLIST
-        #$WGET -q -O ${PLAYLIST} --header "User-Agent: ${USERAGENT}" "${file}" 2>/dev/null
         stream_url=${PLAYLIST}
         stream_type='application/xspf+xml'
         protocol='file'
@@ -72,14 +62,14 @@ do_work()
     
     case $1 in
         filmix)
-            icy_name=`grep "\<h1\>" ${TMPFILE} | sed 's/^.*<h1>//;s/<\/h1>.*$//'`
+            icy_name=$(awk '/<h1>/{match($0,/<h1>([^<]*)<\/h1>/,arr);print arr[1];exit;}' $TMPFILE)
             server_type=_translate_
             ;;
         my-hit)
-            icy_name=`grep "\<h1\>" ${TMPFILE} | sed 's/^.*<h1>//;s/<\/h1>.*$//'`
+            icy_name=$(awk '/<h1>/{match($0,/<h1>([^<]*)<\/h1>/,arr);print arr[1];exit;}' $TMPFILE)
             ;;
         *)
-            icy_name=`grep "<title>" ${TMPFILE} | sed 's/^.*<title>//;s/&raquo;.*<\/title>//'`
+            icy_name=$(awk '/<title>/{match($0,/<title>([^<]*)&raquo;[^<]*<\/title>/,arr);print arr[1];exit;}' $TMPFILE)
             ;;
     esac
     icy_name=`unescapeXML "$icy_name"`

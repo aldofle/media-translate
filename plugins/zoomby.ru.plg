@@ -77,7 +77,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 	      stream_url=`sed -n "${hdc}p" $SMILINFO | awk '{print $2;}'`
 	      protocol=`echo "$stream_url" | sed -e 's/:\/\/.*$//'`
 	      icy_name=`sed -n '1p' $SMILINFO`
-	      if [ "$protocol" == "rtmp" ]; then
+	      if [ "$protocol" = "rtmp" ]; then
 		      if echo "$RTMPDUMP" | grep -qs flvstreamer; then
 		        stream_url="`echo ${stream_url} | sed 's/\(.f4v\)/\1\1/'`"
 		      fi
@@ -85,7 +85,7 @@ if echo "${arg_url}" | grep -qs '\(www\.\)*zoomby\.ru/.*$'; then
 	      rm -f $SMILINFO
         local rtmp_playpath=`echo "$stream_url" | sed 's/^.*\/mp4:/mp4:/;s/?.*//'`
         arg_opt="Rtmp-options:-y $rtmp_playpath;"$arg_opt
-        if [ "$arg_cmd" == "info" -a  "$protocol" == "rtmp" ]; then
+        if [ "$arg_cmd" = "info" -a  "$protocol" = "rtmp" ]; then
           if echo "$arg_url" | $TOUTF8 -t; then
     				stream_url=`echo "$arg_url" | $XCODE -s | $TOUTF8`
     		  else

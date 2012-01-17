@@ -30,10 +30,6 @@ local PAGEXML=$CACHEPATH/music_ivi.xml
 
 $MSDL -q -o "$PAGEFILE" -p http --useragent "$USERAGENT" "$arg_opt"
 if [ -f "$PAGEFILE" ]; then
-   local pages=`grep "из \&nbsp;<strong>" $PAGEFILE | sed '1d' | sed 's/.*<strong>//;s/<\/strong>.*$//'`
-   if [ -z $pages ]; then
-    pages=1
-   fi
 
 #echo pages=$pages >>$debugfile
 
@@ -45,7 +41,6 @@ cat > $PAGEXML <<EOF
             <link>http://music.ivi.ru/artists</link>
             <description> MISUC.IVI.RU  </description>
             <language>ru</language>
-            <pages>$pages</pages>
 EOF
 
    if [ -x $XSLTPROC ]; then

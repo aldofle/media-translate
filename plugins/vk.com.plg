@@ -66,9 +66,9 @@ if echo "${arg_url}" | grep -qs '\(vk\.com\|vkontakte\.ru\)/video_ext\.php?.*$';
     local video_vtag=`grep -i "video_vtag" ${TMPFILE} | sed "s/[^']*'//;s/'.*//"`
     local video_max_hd=`grep -i "video_max_hd" ${TMPFILE} | sed "s/[^']*'//;s/'.*//"`
     
-    if [ $video_max_hd == "1" -a $hdc -gt 360 ]; then
+    if [ $video_max_hd = "1" -a $hdc -gt 360 ]; then
     	hdc=360
-    elif [ $video_max_hd == "2" -a $hdc -gt 480 ]; then
+    elif [ $video_max_hd = "2" -a $hdc -gt 480 ]; then
     	hdc=480
    	fi
 

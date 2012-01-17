@@ -44,11 +44,11 @@
 	backgroundColor="0:0:0"
 	itemBackgroundColor="0:0:0"
 	showHeader=no
-menuXPC=7
-menuYPC=15
-menuWidthPC=19
-menuHeightPC=8
-menuPerPage=9
+    menuXPC=7
+    menuYPC=15
+    menuWidthPC=19
+    menuHeightPC=8
+    menuPerPage=9
     selectMenuOnRight=no
     forceFocusOnItem=yes
     forceFocusOnMenu=no
@@ -133,33 +133,10 @@ menuPerPage=9
       }
       else if(majorContext == "items" &amp;&amp; (userInput == "right" || userInput == "R"))
       {
-        idx = getFocusItemIndex();
-/*
-        arr = null;
-        arr = pushBackStringArray(arr, feedUrl);
-        arr = pushBackStringArray(arr, pageTitle);
-        arr = pushBackStringArray(arr, rt_page);
-        arr = pushBackStringArray(arr, sort_by);
-        arr = pushBackStringArray(arr, rt_term);
-        arr = pushBackStringArray(arr, rt_count);
-        arr = pushBackStringArray(arr, getStringArrayAt(idArray, idx));
-        print("arr=",arr);
-        print("storagePath=",storagePath);
-
-        writeStringToFile(storagePath, arr);
-*/
-/*
-        print("act = doModalRss('../etc/translate/rss/rutube/rutube_entry.rss');");
-        print("********** doModalRss=",act);
-*/
-/*
-        act = doModalRss("rss_file://../etc/translate/rss/rutube/rutube_entry.rss");
-        if(act != null &amp;&amp; act == "related")
-        {
-         print("related");
-         executeScript("onEnter");
-        }
-*/
+        ret = "true";
+      }
+      else if(majorContext != "items" &amp;&amp; (userInput == "left" || userInput == "L"))
+      {
         ret = "true";
       }
       ret;
@@ -197,10 +174,6 @@ menuPerPage=9
   storagePath = getStoragePath("tmp");
   storagePath  = storagePath + "music_ivi.dat";
 
-/*
-  arr = readStringFromFile(storagePath);
-  print("******* Initialize: "+arr);
-*/
   baseUrl = "http://music.ivi.ru/artists";
   pageTitle = "MUSIC.IVI.RU - Исполнители";
   genre = "all";
@@ -213,19 +186,16 @@ menuPerPage=9
 
   n4_title = "По алфавиту";
 
-  mode = 1;
   setRefreshTime(1);
 </onEnter>
 
 <onRefresh>
-  if(mode == 1)
-  {
     setRefreshTime(-1);
-
+    
     url = translate_base_url + "app," + baseUrl + "/" + genre + "/" + lang + "/" + symbol + "/" + n4 + "/" + page + ",music_ivi/getpage_artists";
-
+    
     print("Start to load feed:",url);
-
+    
     dlok = loadXMLFile(url);
     if (dlok != null)
     {
@@ -233,24 +203,24 @@ menuPerPage=9
       thumbnailArray = null;
       urlArray = null;
       idArray = null;
-
+    
       numberOfPages = getXMLText("rss","channel","pages");
-
-	itemSize = getXMLElementCount("rss","channel","item");
-	if(itemSize == 0)
-	  postMessage("return");
-	print("Item Size = ", itemSize);
-
-	count=0;
-	while(itemSize != 0)
-	{
-	  title = getXMLText("rss","channel","item",count,"title");
-	  url = getXMLText("rss","channel","item",count,"link");
-	  thumbnail = "http://music.ivi.ru/" + getXMLAttribute("rss","channel","item",count,"image","url");
+    
+    itemSize = getXMLElementCount("rss","channel","item");
+    if(itemSize == 0)
+      postMessage("return");
+    print("Item Size = ", itemSize);
+    
+    count=0;
+    while(itemSize != 0)
+    {
+      title = getXMLText("rss","channel","item",count,"title");
+      url = getXMLText("rss","channel","item",count,"link");
+      thumbnail = "http://music.ivi.ru/" + getXMLAttribute("rss","channel","item",count,"image","url");
     	  titleArray  = pushBackStringArray(titleArray, title);
     	  urlArray    = pushBackStringArray(urlArray, url);
     	  thumbnailArray = pushBackStringArray(thumbnailArray, thumbnail);
-
+    
     	  count += 1;
     	  if (count == itemSize)
     	  {
@@ -260,44 +230,10 @@ menuPerPage=9
     	print("title array =", titleArray);
     	print("url array =", urlArray);
     	print("thumbnail array=", thumbnailArray);
-
+    
     	setFocusItemIndex(0);
     	redrawDisplay();
     }
-  }
-  else if(mode == 0)
-  {
-    print("Wait for movie stop");
-    vidProgress = getPlaybackStatus();
-    playElapsed = getStringArrayAt(vidProgress, 0);
-    playStatus = getStringArrayAt(vidProgress, 3);
-
-    if (playStatus == 0) 
-    {
-       setRefreshTime(-1);
-       elapsedTime = "";
-       playTitle = "";
-       redrawDisplay();
-    }
-    else
-    {
-      if (playElapsed != 0) 
-      {
-        x = Integer(playElapsed / 60);
-        h = Integer(playElapsed / 3600);
-        s = playElapsed - (x * 60);
-        m = x - (h * 60);
-        elapsedTime = sprintf("%s:", h);
-        if(m &lt; 10)  elapsedTime += "0";
-        elapsedTime += sprintf("%s:", m);
-        if(s &lt; 10)  elapsedTime += "0";
-        elapsedTime += sprintf("%s", s);
-        print("elapsedTime =", elapsedTime);
-
-        redrawDisplay();
-      }
-    }
-  }
 </onRefresh>
 
   <item_template>
@@ -326,9 +262,6 @@ menuPerPage=9
     	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
     	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
     </mediaDisplay>
-		<!--
-		<link>rss_file://../etc/translate/rss/xspf/streamPlayer.rss</link>
-		 -->
     <onClick>
       playItemURL(-1, 1);
       idx   = getFocusItemIndex();
@@ -338,7 +271,8 @@ menuPerPage=9
       arr = pushBackStringArray(arr, title);
       arr = pushBackStringArray(arr, url);
       writeStringToFile(storagePath, arr);
-      doModalRss("rss_file://../etc/translate/rss/music_ivi/artist_videos.rss");
+      showIdle();
+      doModalRss(translate_base_url + "app/music_ivi/playlist_player," + url);
     </onClick>
   </item_template>
 
@@ -353,7 +287,6 @@ menuPerPage=9
    if( page &lt; numberOfPages )
    {
     page = (page - (-1));
-    mode = 1;
     setRefreshTime(1);
    }
    print("page=",page);
@@ -368,7 +301,6 @@ menuPerPage=9
    if( page &gt; 1 )
    {
     page -= 1;
-    mode = 1;
     setRefreshTime(1);
    }
    print("page=",page);
@@ -387,7 +319,6 @@ menuPerPage=9
    if( page_get &lt;= numberOfPages &amp;&amp; page_get &gt; 0 )
    {
     page = Integer(page_get);
-    mode = 1;
     setRefreshTime(1);
    }
   }
@@ -414,7 +345,6 @@ menuPerPage=9
      n4_title = "По популярности";
      page = 1;
     }
-    mode = 1;
     setRefreshTime(1);
  </onClick>
 </submenu>
@@ -426,50 +356,11 @@ menuPerPage=9
   if(act != null &amp;&amp; act != "")
   {
    genre = act;
-   mode = 1;
    setRefreshTime(1);
   }
   null;
  </onClick>
 </submenu>
-
-<!--
-<submenu>
- <title>Лучшие</title>
- <onClick>
-   sort_by = "rating";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За сегодня</title>
- <onClick>
-   rt_term = "today";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За неделю</title>
- <onClick>
-   rt_term = "this_week";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За месяц</title>
- <onClick>
-   rt_term = "this_month";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
--->
 
 <channel>
 

@@ -46,6 +46,7 @@
 
   storagePath             = getStoragePath("tmp");
   storagePath_stream      = storagePath + "stream.dat";
+  storagePath_playlist    = storagePath + "playlist.dat";
 
   arr = readStringFromFile(storagePath_stream);
   if(arr != null)
@@ -383,7 +384,7 @@
 	<text redraw="yes" offsetXPC="6" offsetYPC="74" widthPC="60" heightPC="5" fontSize="16" backgroundColor="-1:-1:-1" foregroundColor="255:255:150">
 		<script>
 		  if(stream_current_song != "")
-		    tips = "Press '0' or 'Down' to search related videos on YouTube."; 
+		    tips = "Press '0' or 'Down' to search related videos on YouTube; '1' or 'Right' - get-tune.net"; 
 		  else
 		    tips = "";
 		  stream_current_song;
@@ -465,6 +466,54 @@
       
       writeStringToFile(storagePath, arr);
 	    doModalRss("rss_file://../etc/translate/rss/youtube/yt_search_feed.rss");
+      check_info_time     = 40;  
+      refresh_time        = 100;
+    
+      renderer_status = "tuneing";
+      if(no_renderer != 1)
+      {
+        arr = null;
+        arr = pushBackStringArray(arr, renderer_status);
+        arr = pushBackStringArray(arr, request_url);
+        writeStringToFile(renderer_status_file, arr);
+      }
+      playItemURL(url, 0, "mediaDisplay", "previewWindow");
+      stream_elapsed = "Wait...";
+      setRefreshTime(100);
+      refresh_time = 100;
+      check_info = 3;
+      cancelIdle();
+      ret = "true";
+		}
+		else
+    if ((input == "one" || input == "right" || userInput == "1" || userInput == "R") &amp;&amp; stream_current_song != "")
+		{
+		  showIdle();
+    	playItemURL(-1, 1);
+    	setRefreshTime(-1);
+      renderer_status = "waiting";
+      if(no_renderer != 1)
+      {
+        arr = null;
+        arr = pushBackStringArray(arr, renderer_status);
+        arr = pushBackStringArray(arr, request_url);
+        writeStringToFile(renderer_status_file, arr);
+      }
+
+  		search_url  = translate_base_url + "app/gettune/search," + urlEncode(stream_current_song);
+  		playlist_autoplay = 0;
+  		
+      streamArray = null;
+      streamArray = pushBackStringArray(streamArray, search_url);
+      streamArray = pushBackStringArray(streamArray, stream_current_song);
+      streamArray = pushBackStringArray(streamArray, track_image);
+      streamArray = pushBackStringArray(streamArray, "");
+      streamArray = pushBackStringArray(streamArray, "playlist");
+      streamArray = pushBackStringArray(streamArray, playlist_autoplay);
+      streamArray = pushBackStringArray(streamArray, "All");
+      writeStringToFile(storagePath_playlist, streamArray);
+      doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
+
       check_info_time     = 40;  
       refresh_time        = 100;
     
