@@ -44,14 +44,14 @@
 	backgroundColor="0:0:0"
 	itemBackgroundColor="0:0:0"
 	showHeader=no
-menuXPC=7
-menuYPC=15
-menuWidthPC=19
-menuHeightPC=8
-menuPerPage=9
-    selectMenuOnRight=no
-    forceFocusOnItem=yes
-    forceFocusOnMenu=no
+  menuXPC=7
+  menuYPC=15
+  menuWidthPC=19
+  menuHeightPC=8
+  menuPerPage=9
+  selectMenuOnRight=no
+  forceFocusOnItem=yes
+  forceFocusOnMenu=no
 	showDefaultInfo=yes
 	infoYPC=90
 	fontSize=16
@@ -133,7 +133,10 @@ menuPerPage=9
       }
       else if(majorContext == "items" &amp;&amp; (userInput == "right" || userInput == "R"))
       {
-        idx = getFocusItemIndex();
+        ret = "true";
+      }
+      else if(majorContext != "items" &amp;&amp; (userInput == "left" || userInput == "L"))
+      {
         ret = "true";
       }
       ret;
@@ -212,18 +215,10 @@ menuPerPage=9
 	{
 	  title = getXMLText("rss","channel","item",count,"title");
 	  url = getXMLText("rss","channel","item",count,"link");
-	  img_url = getXMLAttribute("rss","channel","item",count,"image","url");
-	  if ( n1 != "topplaylists")
-	  {
-	   thumbnail = "http://music.ivi.ru/channels/" + img_url;
-	  }
-	  else
-	  {
-	   thumbnail = img_url;
-	  }
-    	  titleArray  = pushBackStringArray(titleArray, title);
-    	  urlArray    = pushBackStringArray(urlArray, url);
-    	  thumbnailArray = pushBackStringArray(thumbnailArray, thumbnail);
+	  thumbnail = getXMLAttribute("rss","channel","item",count,"image","url");
+	  titleArray  = pushBackStringArray(titleArray, title);
+	  urlArray    = pushBackStringArray(urlArray, url);
+	  thumbnailArray = pushBackStringArray(thumbnailArray, thumbnail);
 
     	  count += 1;
     	  if (count == itemSize)
@@ -300,9 +295,6 @@ menuPerPage=9
     	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
     	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
     </mediaDisplay>
-		<!--
-		<link>rss_file://../etc/translate/rss/xspf/streamPlayer.rss</link>
-		 -->
     <onClick>
       playItemURL(-1, 1);
       idx   = getFocusItemIndex();
@@ -312,9 +304,8 @@ menuPerPage=9
       arr = pushBackStringArray(arr, title);
       arr = pushBackStringArray(arr, url);
       writeStringToFile(storagePath, arr);
-
-      doModalRss("rss_file://../etc/translate/rss/music_ivi/playlist_videos.rss");
-
+      showIdle();
+      doModalRss(translate_base_url + "app/music_ivi/playlist_player," + url);
     </onClick>
   </item_template>
 

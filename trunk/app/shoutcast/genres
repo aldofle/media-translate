@@ -47,8 +47,8 @@ if [ $REFRESHCACHE ]; then
   local RESPONSE=
   local COUNTER=25
   local REQUEST_URL="${SHOUTCAST_G}genre/secondary${SHOUTCAST_K}&parentid=${ID}&f=xml"
-  [ "$ID" == "0" ] && REQUEST_URL="${SHOUTCAST_G}genre/primary${SHOUTCAST_K}&f=xml"
-  until [ "$RESPONSE" == "200" -o $COUNTER -eq 0 ];
+  [ "$ID" = "0" ] && REQUEST_URL="${SHOUTCAST_G}genre/primary${SHOUTCAST_K}&f=xml"
+  until [ "$RESPONSE" = "200" -o $COUNTER -eq 0 ];
   do
     $WGET -q -O "$GENRESXML" --header "User-Agent: $USERAGENT" "${REQUEST_URL}"
     RESPONSE=`awk -f getxml.awk  -f checkresponse.awk "$GENRESXML"`

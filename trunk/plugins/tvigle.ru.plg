@@ -47,7 +47,10 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; t
   
   local video_id=`echo "$arg_url" | sed -e 's/.*[?&]video=//;s/&.*//'`
   
-  host_response=`$MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" http://www.tvigle.ru/xml/single.php?obj=$video_id 2>&1`
+  host_response=`$MSDL -o ${TMPFILE} -p http --useragent "${USERAGENT}" http://www.tvigle.ru/xml/single.php?obj=$video_id 2>&1`
+  
+#echo $host_response > /tmp/tvigle.tmp
+#cat ${TMPFILE} >> /tmp/tvigle.tmp
   
   if [ -f ${TMPFILE} ]; then
     stream_type='video/mp4'
@@ -70,6 +73,9 @@ if echo "${arg_url}" | grep -q -s '\(www\.\)*tvigle\.ru/.*[?&]video=[0-9].*$'; t
         fi
       ;;
     esac
+    
+#echo -e "\n$stream_url" >> /tmp/tvigle.tmp
+
     if [ -z "$stream_url" ]; then
       stream_type=''
     elif echo $stream_url | grep -qs ".flv$"; then

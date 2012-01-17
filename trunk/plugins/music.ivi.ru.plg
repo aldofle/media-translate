@@ -20,11 +20,11 @@
 # Translate CGI module
 # 'music.ivi.ru' plug-in
 #
-# version: 1.2 02.03.2011 13:54:25
+# version: 1.3 11.01.2012 19:27:37
 #
 # http://music.ivi.ru/watch/Enya-Only-Time-18248
 # http://music.ivi.ru/watch/YOlka-Provans-yt22
-# http://music.ivi.ru/playlist/jlLEapZuqdMn00gl
+# http://music.ivi.ru/playlist/jlLEapZuqdMn00gl/1
 #
 # options:
 #   HD:[0|1]
@@ -33,7 +33,7 @@
 
 unset RESOLVE_CACHE_ENABLED
 
-if echo "${arg_url}" | grep -q -s 'music\.ivi\.ru/watch/.*$'; then 
+if echo "${arg_url}" | grep -qs 'music\.ivi\.ru/.*$'; then 
 
   get_opt "HD"
   [ -z "$opt" ] && opt=`sed -n '7p' $RSSCONF 2>/dev/null`
@@ -73,76 +73,6 @@ if echo "${arg_url}" | grep -q -s 'music\.ivi\.ru/watch/.*$'; then
   		arg_url="http://youtube.com/v/$ytvideo_id"
   		check_stream
 	  fi
-  fi  
-  return $RC_OK
-elif echo "${arg_url}" | grep -q -s 'music\.ivi\.ru/playlist/.*$'; then 
-	local PLAYLISTFILE=$CACHEPATH/temp.xspf
-	rm -f $PLAYLISTFILE
-	$MSDL -q -o - -p http --useragent "${USERAGENT}" "http://music.ivi.ru/playlists/list?url=${arg_url}" 2>/dev/null | sed 's/,/,\n/g;s/\\\//\//g;s/{/{\n/g;s/\[/\[\n/g;s/}/\n}/g;s/\]/\n\]/g' > ${TMPFILE}
-  if [ -f ${TMPFILE} ]; then
-  	awk '
-  		BEGIN {
-				print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-				print "<playlist version=\"1\" xmlns=\"http://xspf.org/ns/0/\">"
-				active = 0;
-				title = "";
-				artist = "";
-				link = "";
-				preview = "";
-  		}
-  		/"current":\{/ {
-  			active = 1;
-  			next;
-  		}
-  		/^\]/ {
-  			active = 0;
-  			next;
-  		}
-  		/"videos":\[/ {
-  			print "<title>" title "</title>";
-				print "<trackList>"
-  			active = 2;
-  			next;
-  		}
-  		/"title":/ {
-  			match($0, /"title":"([^"]*)"/, arr);
-  			title = arr[1];
-  		}
-  		/"artist":/ {
-  			match($0, /"artist":"([^"]*)"/, arr);
-  			artist = arr[1];
-  		}
-  		/"link":/ {
-  			match($0, /"link":"([^"]*)"/, arr);
-  			link = arr[1];
-  		}
-  		/"preview":/ {
-  			match($0, /"preview":"([^"]*)"/, arr);
-  			preview = arr[1];
-  		}
-  		/^\{$/ {
-  			if(active == 2)
-  			{
-  				print "<track>"
-  			}
-  		}
-  		/^\}/ {
-  			if(active == 2)
-  			{
-		  		print "<title>" artist " - " title "</title>"
-		  		print "<location>http://music.ivi.ru" link "</location>"
-		  		print "<image>" preview "</image>"
-  				print "</track>"
-  			}
-  		}
-  		END {
-				print "</trackList>"
-				print "</playlist>"
-  		}
-  	' ${TMPFILE} | unitohtml | $XCODE -s -l +w | $TOUTF8 > $PLAYLISTFILE
-    stream_type='application/xspf+xml'
-    stream_url=$PLAYLISTFILE
-    protocol='file'
   fi  
   return $RC_OK
 fi

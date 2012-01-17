@@ -29,7 +29,7 @@
 	headerImageWidthPC="0"
 	headerWidthPC="0"
 	itemXPC="30"
-	itemYPC="25"
+	itemYPC="20"
 	itemWidthPC="40"
 	backgroundColor="0:0:0"
 	showHeader=no
@@ -103,10 +103,6 @@
       print("*** majorContext=",majorContext);
       print("*** userInput=",userInput);
 
-      if(majorContext == "items" &amp;&amp; userInput == "right")
-      {
-        ret = "true";
-      }
       ret;
     </script>
   </onUserInput>
@@ -136,6 +132,9 @@
 
   pageLogo = "../etc/translate/rss/image/ivi-music.png";
   pageTitle = "MUSIC.IVI.RU";
+
+  storagePath = getStoragePath("tmp");
+  storagePath_ivi  = storagePath + "music_ivi.dat";
 </onEnter>
 
   <item_template>
@@ -154,11 +153,24 @@
     </mediaDisplay>
   </item_template>
 
+<search>
+ <mediaDisplay name=photoView />
+</search>
+
 <channel>
   <title>MUSIC.IVI.RU</title>
   <item>
    <title>Новинки</title>
-   <link>rss_file://../etc/translate/rss/music_ivi/new_videos.rss</link>
+   <link>
+    <script>
+      url = translate_base_url + "app/music_ivi/playlist_player"; 
+      arr = null;
+      arr = pushBackStringArray(arr, "Новинки");
+      arr = pushBackStringArray(arr, url);
+      writeStringToFile(storagePath_ivi, arr);
+      url;
+    </script>
+  </link>
   </item>
   <item>
    <title>Клипы</title>
@@ -172,5 +184,29 @@
    <title>Плейлисты</title>
    <link>rss_file://../etc/translate/rss/music_ivi/playlists.rss</link>
   </item>
+	<item>
+		<title>Поиск &gt;</title>
+		<onClick>
+      keyboard = null;
+      keyboard = pushBackStringArray(keyboard, "music_ivi");
+      keyboard = pushBackStringArray(keyboard, "../etc/translate/rss/image/ivi-music-key.png");
+      keyboard = pushBackStringArray(keyboard, "ru");
+      writeStringToFile(getStoragePath("key")+"keyboard.dat", keyboard);
+    	keyword = doModalRss("rss_file://../etc/translate/rss/key/keyboard.rss","mediaDisplay","search",0);
+    	
+    	if(keyword != "" &amp;&amp; keyword != null)
+    	{
+        url = translate_base_url + "app/music_ivi/playlist_player,http://music.ivi.ru/search/?q="+urlEncode(keyword); 
+        arr = null;
+        arr = pushBackStringArray(arr, "Поиск - " + keyword);
+        arr = pushBackStringArray(arr, url);
+        writeStringToFile(storagePath_ivi, arr);
+        
+        showIdle();  
+        doModalRss(url);
+      }
+      null;
+		</onClick>
+	</item>
 </channel>
 </rss>

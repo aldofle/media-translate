@@ -44,14 +44,14 @@
 	backgroundColor="0:0:0"
 	itemBackgroundColor="0:0:0"
 	showHeader=no
-menuXPC=7
-menuYPC=15
-menuWidthPC=15
-menuHeightPC=8
-menuPerPage=9
-    selectMenuOnRight=no
-    forceFocusOnItem=yes
-    forceFocusOnMenu=no
+  menuXPC=7
+  menuYPC=15
+  menuWidthPC=15
+  menuHeightPC=8
+  menuPerPage=9
+  selectMenuOnRight=no
+  forceFocusOnItem=yes
+  forceFocusOnMenu=no
 	showDefaultInfo=yes
 	infoYPC=90
 	fontSize=16
@@ -133,33 +133,26 @@ menuPerPage=9
       }
       else if(majorContext == "items" &amp;&amp; (userInput == "right" || userInput == "R"))
       {
-        idx = getFocusItemIndex();
-/*
-        arr = null;
-        arr = pushBackStringArray(arr, feedUrl);
-        arr = pushBackStringArray(arr, pageTitle);
-        arr = pushBackStringArray(arr, rt_page);
-        arr = pushBackStringArray(arr, sort_by);
-        arr = pushBackStringArray(arr, rt_term);
-        arr = pushBackStringArray(arr, rt_count);
-        arr = pushBackStringArray(arr, getStringArrayAt(idArray, idx));
-        print("arr=",arr);
-        print("storagePath=",storagePath);
-
-        writeStringToFile(storagePath, arr);
-*/
-/*
-        print("act = doModalRss('../etc/translate/rss/rutube/rutube_entry.rss');");
-        print("********** doModalRss=",act);
-*/
-/*
-        act = doModalRss("rss_file://../etc/translate/rss/rutube/rutube_entry.rss");
-        if(act != null &amp;&amp; act == "related")
-        {
-         print("related");
-         executeScript("onEnter");
-        }
-*/
+        idx = Integer(getFocusItemIndex());
+        search_text = getStringArrayAt(titleArray, idx);
+    		search_url  = translate_base_url + "app/gettune/search," + urlEncode(search_text);
+        
+		    showIdle();
+    		playlist_autoplay = 0;
+        streamArray = null;
+        streamArray = pushBackStringArray(streamArray, search_url);
+        streamArray = pushBackStringArray(streamArray, search_text);
+        streamArray = pushBackStringArray(streamArray, getStringArrayAt(thumbnailArray, idx));
+        streamArray = pushBackStringArray(streamArray, "");
+        streamArray = pushBackStringArray(streamArray, "playlist");
+        streamArray = pushBackStringArray(streamArray, playlist_autoplay);
+        streamArray = pushBackStringArray(streamArray, "All");
+        writeStringToFile(storagePath_playlist, streamArray);
+        doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
+        ret = "true";
+      }
+      else if(majorContext != "items" &amp;&amp; (userInput == "left" || userInput == "L"))
+      {
         ret = "true";
       }
       ret;
@@ -195,16 +188,13 @@ menuPerPage=9
   print("rssconf:",translate_base_url,screenXp,screenYp);
 
   storagePath = getStoragePath("tmp");
-  storagePath  = storagePath + "misuc_ivi.dat";
+  storagePath_ivi  = storagePath + "misuc_ivi.dat";
+  storagePath_playlist    = storagePath + "playlist.dat";
 
-/*
-  arr = readStringFromFile(storagePath);
-  print("******* Initialize: "+arr);
-*/
   baseUrl = "http://music.ivi.ru/videos";
   pageTitle = "MUSIC.IVI.RU - Клипы";
-  n1 = "all";
-  period = "all";
+  sort = "top";
+  period = "day";
   genre = "all";
   region = "all";
   year_from = 60;
@@ -225,7 +215,7 @@ menuPerPage=9
   {
     setRefreshTime(-1);
 
-    url = translate_base_url + "app," + baseUrl + "/" + n1 + "/" + period + "/" + genre + "/" + region + "/" + years + "/" + mood + "/" + temp + "/" + page + ",music_ivi/getpage_videos";
+    url = translate_base_url + "app/music_ivi/getpage_videos," + baseUrl + "/" + sort + "/" + period + "/" + genre + "/" + region + "/" + years + "/" + mood + "/" + temp + "/" + page;
 
     print("Start to load feed:",url);
 
@@ -237,19 +227,19 @@ menuPerPage=9
       urlArray = null;
       idArray = null;
 
-      numberOfPages = getXMLText("rss","channel","pages");
+      numberOfPages = getXMLText("channel","pages");
 
-	itemSize = getXMLElementCount("rss","channel","item");
-	if(itemSize == 0)
-	  postMessage("return");
-	print("Item Size = ", itemSize);
-
-	count=0;
-	while(itemSize != 0)
-	{
-	  title = getXMLText("rss","channel","item",count,"title");
-	  url = getXMLText("rss","channel","item",count,"link");
-	  thumbnail = getXMLAttribute("rss","channel","item",count,"image","url");
+    	itemSize = getXMLElementCount("channel","item");
+    	if(itemSize == 0)
+    	  postMessage("return");
+    	print("Item Size = ", itemSize);
+    
+    	count=0;
+    	while(itemSize != 0)
+    	{
+    	  title = getXMLText("channel","item",count,"title");
+    	  url = getXMLText("channel","item",count,"link");
+	      thumbnail = getXMLAttribute("channel","item",count,"media:thumbnail","url");
     	  titleArray  = pushBackStringArray(titleArray, title);
     	  urlArray    = pushBackStringArray(urlArray, url);
     	  thumbnailArray = pushBackStringArray(thumbnailArray, thumbnail);
@@ -331,72 +321,29 @@ menuPerPage=9
     	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
     	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
     </mediaDisplay>
-		<!--
-		<link>rss_file://../etc/translate/rss/xspf/streamPlayer.rss</link>
-		 -->
     <onClick>
       playItemURL(-1, 1);
       idx   = getFocusItemIndex();
       url   = getStringArrayAt(urlArray, idx);
       playTitle = url;
-      urlToPlay = translate_base_url+"info,,"+url;
-      dlok = loadXMLFile(urlToPlay);
-      if(dlok != null)
-      {
-        error = getXMLElementCount("info","error");
-        print("error=",error);
+      urlToPlay = translate_base_url+"stream,,"+url;
 
-        if(error == 0)
-        {
-          historyPath = getStoragePath("key")+"translate.history_video.m3u";
-          historydat = readStringFromFile(historyPath);
-          if(historydat == null)
-            historydat = pushBackStringArray(historydat, "#EXTM3U");
-          historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+getStringArrayAt(titleArray, idx));
-          historydat = pushBackStringArray(historydat, url);
-          writeStringToFile(historyPath, historydat);
+      historyPath = getStoragePath("key")+"translate.history_video.m3u";
+      historydat = readStringFromFile(historyPath);
+      if(historydat == null)
+        historydat = pushBackStringArray(historydat, "#EXTM3U");
+      historydat = pushBackStringArray(historydat, "#EXTINF:-1,"+getStringArrayAt(titleArray, idx));
+      historydat = pushBackStringArray(historydat, url);
+      writeStringToFile(historyPath, historydat);
 
-    	    value = getXMLAttribute("info","stream","type");
-    	    if(value != null)
-    	     type = value;
+      showIdle();
+      playItemURL(urlToPlay, 0);
+      cancelIdle();
 
-    	    value = getXMLAttribute("info","stream","url");
-    	    if(value != null)
-    	     url = value;
-
-    	    value = getXMLAttribute("info","stream","class");
-    	    if(value != null)
-    	     class = value;
-
-    	    value = getXMLAttribute("info","stream","server");
-    	    if(value != null)
-    	     soft = value;
-
-    	    value = getXMLAttribute("info","stream","protocol");
-    	    if(value != null)
-    	     protocol = value;
-
-          translateStreamURL = translate_base_url+"stream,,"+url;
-
-          print(translateStreamURL);
-          print(url);
-          print(type);
-          print(class);
-          print(protocol);
-          print(soft);
-
-          if(protocol == "file" || (protocol == "http" &amp;&amp; soft != "_translate_"))
-            playItemURL(url, 0);
-          else
-            playItemURL(translateStreamURL, 0);
-          mode = 0;
-          setRefreshTime(1000);
-        }
-        else
-        {
-         null;
-        }
-      }
+      mode = 0;
+      setRefreshTime(1000);
+      
+      null;
 		</onClick>
   </item_template>
 
@@ -467,62 +414,6 @@ menuPerPage=9
   null;
  </onClick>
 </submenu>
-
-<!--
- <submenu>
- <title>Последние</title>
- <onClick>
-    sort_by = "date";
-    mode = 1;
-    setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>Популярные</title>
- <onClick>
-    sort_by = "views";
-    mode = 1;
-    setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>Лучшие</title>
- <onClick>
-   sort_by = "rating";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За сегодня</title>
- <onClick>
-   rt_term = "today";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За неделю</title>
- <onClick>
-   rt_term = "this_week";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
-
-<submenu>
- <title>За месяц</title>
- <onClick>
-   rt_term = "this_month";
-   mode = 1;
-   setRefreshTime(1);
- </onClick>
-</submenu>
--->
 
 <channel>
 

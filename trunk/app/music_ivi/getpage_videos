@@ -17,50 +17,37 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-local debugfile=/tmp/nnb.log
-
 local DATAPATH=$BASEPATH/app/music_ivi
+cd $DATAPATH
 
 local PAGEFILE=$CACHEPATH/music_ivi.page
-local PAGEXML=$CACHEPATH/music_ivi.xml
-#echo $DATAPATH >$debugfile
-#echo $PAGEFILE >>$debugfile
-#echo $PAGEXML >>$debugfile
-#echo $arg_url >>$debugfile
+local CHANNELXML=$CACHEPATH/music_ivi.xml
 
-$MSDL -q -o "$PAGEFILE" -p http --useragent "$USERAGENT" "$arg_opt"
-  if [ -f "$PAGEFILE" ]; then
-   local pages=`grep "из \&nbsp;<strong>" $PAGEFILE | sed '1d' | sed 's/.*<strong>//;s/<\/strong>.*$//'`
+local URL=${arg_opt:-'http://music.ivi.ru/videos/top/day/all/all/all/all/all/'}
+local TYPE=$(echo $URL | awk '{match($0,/music\.ivi\.ru\/([^/]+)\//,arr);print arr[1];}')
 
-#echo pages=$pages >>$debugfile
+echo "<channel>" > $CHANNELXML
+echo "  <title>MUSIC.IVI.RU</title>"    >> $CHANNELXML
+echo "  <link>$URL</link>"              >> $CHANNELXML
+echo "  <description></description>"    >> $CHANNELXML
 
-cat > $PAGEXML <<EOF
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
-        <channel>
-            <title> MISUC.IVI.RU - КЛИПЫ </title>
-            <link>http://music.ivi.ru/videos</link>
-            <description> MISUC.IVI.RU - КЛИПЫ </description>
-            <language>ru</language>
-            <pages>$pages</pages>
-EOF
+$MSDL -q -o "$PAGEFILE" -p http --useragent "$USERAGENT" "$URL"
 
-   if [ -x $XSLTPROC ]; then
-     $XSLTPROC --encoding utf-8 --html $DATAPATH/videos.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $PAGEXML
-   fi
-
-cat >> $PAGEXML <<EOF
-        </channel>
-</rss>
-EOF
-
-    rm -f $PAGEFILE
+if [ -f "$PAGEFILE" ]; then
+  if [ "$(ls -s "$PAGEFILE" | awk '{print $1}')" != "0" ]; then
+    [ -x $XSLTPROC ] && $XSLTPROC --encoding utf-8 --html --stringparam type "$TYPE" video_list.xslt "$PAGEFILE" 2>/dev/null | sed '1d' >> $CHANNELXML
   fi
-
-if [ -f "$PAGEXML" ]; then
- echo "Content-type: text/xml"
- echo
- cat $PAGEXML
- rm -f $PAGEXML
+  if [ "$TYPE" = "artist" ]; then
+    if grep -qs 'id="showMoreVideos"' $PAGEFILE; then
+        local artist_id=$(awk '/id="subscribe"/{match($0,/data="([^"]+)"/,arr);print arr[1];exit;}' $PAGEFILE)
+        $MSDL -q -o - -p http --useragent "$USERAGENT" "http://music.ivi.ru/artist/showmore?artistId=${artist_id}" | sed -e '1i\<div class="artist-all-video">' -e '$a\</div>' > $PAGEFILE
+        [ -x $XSLTPROC ] && $XSLTPROC --encoding utf-8 --html --stringparam type "$TYPE" video_list.xslt $PAGEFILE 2>/dev/null | sed '1d' >> $CHANNELXML
+    fi
+  fi
+  rm -f "$PAGEFILE"
 fi
+
+echo "</channel>" >> $CHANNELXML
+
+printContent "application/xml" $CHANNELXML
 

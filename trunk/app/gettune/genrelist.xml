@@ -23,13 +23,13 @@
 
 <onEnter>
   <!--`cat "$BASEPATH/app/include/rssconf.script"`-->
-
-  pageTitle = "Free Internet Radio Stations";
+  <!--`cat "$BASEPATH/app/include/media_onenter.script"`-->
+	playlist_autoplay = 0;
 </onEnter>
 
 	<mediaDisplay name=photoView 
-	  columnCount=5 
-	  rowCount=7
+	  columnCount=4 
+	  rowCount=5
 		sideColorBottom="0:0:0"
 		sideColorTop="0:0:0"
 		itemImageXPC="10"
@@ -49,37 +49,33 @@
   	imageUnFocus=""
   	imageParentFocus=""
 
-		sliding=yes
+		sliding=no
 		showHeader=no
-		showDefaultInfo=yes
+		showDefaultInfo=no
 		>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_01.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_02.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_03.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_04.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_05.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_06.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_07.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-  	<idleImage idleImageYPC="45" idleImageHeightPC="10">../etc/translate/rss/image/POPUP_LOADING_08.png<idleImageWidthPC><script>10 * screenYp / screenXp;</script></idleImageWidthPC><idleImageXPC><script>45 + 10 * (1 - screenYp / screenXp) / 2;</script></idleImageXPC></idleImage>
-		
+
     <text offsetXPC=5 offsetYPC=0 widthPC=100 heightPC=15 fontSize=26 backgroundColor=0:0:0 foregroundColor=200:200:200>
-      All Genres     
+      <script>getPageInfo("pageTitle");</script>
     </text>
-    <image offsetXPC=0 offsetYPC=15 widthPC=100 heightPC=1>../etc/translate/rss/image/gradient_line.bmp</image>
+    <image offsetXPC=0 offsetYPC=15 widthPC=100 heightPC=1>
+  		../etc/translate/rss/image/gradient_line.bmp
+  	</image>
     <image offsetXPC=65 offsetYPC=2 widthPC=30 heightPC=12>
-      ../etc/translate/rss/image/shoutcast.gif
+      ../etc/translate/rss/image/gettune.png
       <widthPC>
         <script>
-          546 / 154 * 12 * screenYp / screenXp;
+          123 / 42 * 12 * screenYp / screenXp;
         </script>
       </widthPC>
       <offsetXPC>
         <script>
-          95 - 546 / 154 * 12 * screenYp / screenXp;
+          95 - 123 / 42 * 12 * screenYp / screenXp;
         </script>
       </offsetXPC>
     </image>
 
+  <!--`cat "$BASEPATH/app/include/media_idleimage.inc"`-->
+		
     <onUserInput>
     <script>
     ret = "false";
@@ -113,10 +109,10 @@
     </onUserInput>
     
 		<itemDisplay>
-			<text align="center" lines="2" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100 fontSize=15>
+			<text align="center" lines="1" offsetXPC=0 offsetYPC=0 widthPC=100 heightPC=100 fontSize=20>
 				<script>
 					idx = getQueryItemIndex();
-					getItemInfo(idx, "name");
+					getItemInfo(idx, "title");
 				</script>
 			  <backgroundColor>
   				<script>
@@ -135,7 +131,92 @@
 			</text>
 		</itemDisplay>
 	</mediaDisplay>
+	
+	<item_template>
+    <mediaDisplay name="threePartsView">
+<!--`cat "$BASEPATH/app/include/media_idleimage.inc"`-->
+    </mediaDisplay>
+    <onClick>
+      <script>
+         focus = getFocusItemIndex();
+         style = getItemInfo(focus, "style");
+         if(style == null || style == "") {
+          style = getItemInfo(focus, "title");
+         }
+          stream_url  = translate_base_url + "app/gettune/genre,"+style;
+          
+          streamArray = null;
+          streamArray = pushBackStringArray(streamArray, stream_url);
+          streamArray = pushBackStringArray(streamArray, style);
+          streamArray = pushBackStringArray(streamArray, "");
+          streamArray = pushBackStringArray(streamArray, "");
+          streamArray = pushBackStringArray(streamArray, "playlist");
+          streamArray = pushBackStringArray(streamArray, playlist_autoplay);
+          streamArray = pushBackStringArray(streamArray, "All");
+          writeStringToFile(storagePath_playlist, streamArray);
+          doModalRss("rss_file://../etc/translate/rss/xspf/xspfBrowser.rss");
+          null;
+      </script>
+    </onClick>	
+	</item_template>
+	
+	<channel>
+ 		<title>Жанры</title>
 
-<!--`cat "$CHANNELFILE"`-->
+		<item>
+			<title>Поп</title><style>Pop</style>
+		</item>
+		<item>
+			<title>Реп</title><style>Rap</style>
+		</item>
+		<item>
+			<title>Club</title>
+		</item>
+		<item>
+			<title>Dance</title>
+		</item>
+		<item>
+			<title>House</title>
+		</item>
+		<item>
+			<title>Trance</title>
+		</item>
+		<item>
+			<title>Electro</title>
+		</item>
+		<item>
+			<title>Disco</title>
+		</item>
+		<item>
+			<title>Метал</title><style>Metal</style>
+		</item>
+		<item>
+			<title>Рок</title><style>Rock</style>
+		</item>
+		<item>
+			<title>Панк</title><style>Punk</style>
+		</item>
+		<item>
+			<title>Классика</title><style>Classical</style>
+		</item>
+		<item>
+			<title>Опера</title><style>Opera</style>
+		</item>
+		<item>
+			<title>Country</title>
+		</item>
+		<item>
+			<title>Jazz</title>
+		</item>
+		<item>
+			<title>Blues</title>
+		</item>
+		<item>
+			<title>Шансон</title><style>Chanson</style>
+		</item>
+		<item>
+			<title>Ретро</title><style>Retro</style>
+		</item>
+  </channel>
 
 </rss>

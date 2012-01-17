@@ -28,25 +28,37 @@
 
 <xsl:output method="xml" encoding="utf-8" indent="yes"/>
 
-<xsl:param name="title" select="'poiskm.ru'" />
+<xsl:param name="title" select="'get-tune.net'" />
 <xsl:param name="translate" select="'http://127.0.0.1/cgi-bin/translate?'" />
-<xsl:variable name="px" select="str:tokenize(substring-before(substring-after(//script[contains(.,'var px = [')], 'var px = ['), ']'), ',')" />
 
 <xsl:template match="/">
   <playlist version="1" xmlns="http://xspf.org/ns/0/">
     <title><xsl:value-of select="$title"/></title>
-    <image>http://poiskm.ru/i/poiskm-mini.png</image>
+    <image>http://get-tune.net/i/minilogo.png</image>
     <trackList>
-      <xsl:apply-templates select="//p[starts-with(b,'Предлагаем послушать')]/a"/>
-      <xsl:apply-templates select="//li[@class='track']"/>
+      <xsl:apply-templates select="//ul[@class='listalka']//li/a"/>
+      <xsl:apply-templates select="//div[@id='playlist']//div[@class='track']"/>
 	  </trackList>
 	</playlist>
 </xsl:template>
 
 <xsl:template match="a">
-  <xsl:variable name="url"><xsl:value-of select="$translate"/>app/poiskm/search,q:<xsl:value-of select="substring-before(substring-after(@href, '?q='), '&amp;')"/>;opt:<xsl:value-of select="substring-after(@href, '&amp;')"/></xsl:variable>
+  <xsl:variable name="q">
+    <xsl:variable name="s" select="substring-after(@href, '&amp;q=')" />
+    <xsl:choose>
+      <xsl:when test="contains($s, '&amp;')">
+        <xsl:value-of select="substring-before($s, '&amp;')"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$s"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+  <xsl:variable name="url"><xsl:value-of select="$translate"/>app/gettune/search,q:<xsl:value-of select="$q"/>
+    <xsl:if test="contains(@href,'&amp;p=')">;opt:a=music&amp;p=<xsl:value-of select="substring-after(@href, '&amp;p=')"/></xsl:if>
+  </xsl:variable>
 <track xmlns="http://xspf.org/ns/0/">
-  <title><xsl:value-of select="@title"/></title>
+  <title>Page <xsl:value-of select="."/></title>
   <location><xsl:value-of select="$url"/></location>
   <meta rel="stream_url"><xsl:value-of select="$url"/></meta>
   <meta rel="stream_class">playlist</meta>
@@ -55,13 +67,12 @@
 </track>
 </xsl:template>
 
-<xsl:template match="li">
-  <xsl:variable name="n" select="number(substring-after(string(span[@class='songnamebar']/@id), '-'))" />
+<xsl:template match="div[@class='track']">
 <track xmlns="http://xspf.org/ns/0/">
-  <title><xsl:value-of select="string(span[@class='songnamebar'])"/></title>
-  <location><xsl:value-of select="translate($px[$n], 'Ω&quot;', '/')"/></location>
-  <image><xsl:value-of select="$translate"/>app,Title:<xsl:value-of select="str:encode-uri(translate(span[@class='songnamebar'],'—','-'),true())"/>,lastfm/trackimage.png</image>
-  <meta rel="stream_url"><xsl:value-of select="translate($px[$n], 'Ω&quot;', '/')"/></meta>
+  <title><xsl:value-of select="*[@class='title']"/></title>
+  <location><xsl:value-of select="a[contains(@class,'download')]/@href"/></location>
+  <image><xsl:value-of select="$translate"/>app,Title:<xsl:value-of select="str:encode-uri(translate(*[@class='title'],'—','-'),true())"/>,lastfm/trackimage.png</image>
+  <meta rel="stream_url"><xsl:value-of select="a[contains(@class,'download')]/@href"/></meta>
   <meta rel="stream_class">audio</meta>
   <meta rel="stream_type">audio/mpeg</meta>
   <meta rel="stream_protocol">http</meta>

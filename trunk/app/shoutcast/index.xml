@@ -158,8 +158,13 @@
 		<item>
 			<title>Поиск радиостанций ></title>
 			<onClick>
-				keyword = getInput();
-				if (keyword != null)
+    	  keyboard = null;
+    	  keyboard = pushBackStringArray(keyboard, "shoutcast");
+    	  keyboard = pushBackStringArray(keyboard, "../etc/translate/rss/image/shoutcast.gif");
+    	  keyboard = pushBackStringArray(keyboard, "en");
+        writeStringToFile(getStoragePath("key")+"keyboard.dat", keyboard);
+    		keyword = doModalRss("rss_file://../etc/translate/rss/key/keyboard.rss");
+				if (keyword != null &amp;&amp; keyword != "")
 				{
 	       jumpToLink("searchLink");
 				}
