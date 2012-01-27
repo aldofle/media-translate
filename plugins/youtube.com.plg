@@ -21,7 +21,7 @@
 # Translate CGI module
 # 'youtube.com' plug-in
 #
-# version: 2.6 04.01.2012 3:58
+# version: 2.7 27.01.2012 23:40
 #
 # http://www.youtube.com/v/JZtcw6GIxTY
 # http://www.youtube.com/watch?v=JZtcw6GIxTY
@@ -109,9 +109,9 @@ if echo "${arg_url}" | grep -qs 'youtube\.com.*\(/embed/\|/v/\|/watch?\|movie?\)
         fmt_url_map=`grep -i 'url_encoded_fmt_stream_map=' ${TMPFILE} | sed -n '1p'`
         if [ -z "$fmt_url_map" ]; then
 	        fmt_url_map=`grep -i 'fmt_url_map=' ${TMPFILE} | sed '1p'`
-	        fmt_url_map=`unescapeXML "$fmt_url_map" | awk '{match($0, /&fmt_url_map=([^&]*)&/, arr);print arr[1];}' | urldecode`
+	        fmt_url_map=`echo "$fmt_url_map" | unidecode | unescapeXML | awk '{match($0, /&fmt_url_map=([^&]*)&/, arr);print arr[1];}' | urldecode`
 	      else
-        	fmt_url_map=`unescapeXML "$fmt_url_map" | awk '{match($0, /&url_encoded_fmt_stream_map=url%3D([^&]*)&/, arr);print arr[1];}' | urldecode | urldecode`
+        	fmt_url_map=`echo "$fmt_url_map" | unidecode | unescapeXML | awk '{match($0, /&url_encoded_fmt_stream_map=url%3D([^&]*)&/, arr);print arr[1];}' | urldecode | urldecode`
         fi
         icy_name=`grep 'meta name="title"' ${TMPFILE} | sed 's/.*t="//;s/".*//'`
         icy_name=`unescapeXML "$icy_name"`
