@@ -25,11 +25,11 @@
 # http://hdkinomir.com/comedy/1465-madagaskar-madagascar-2005-onlayn.html
 # http://hdkinomir.com/drama/2957-elena-2011-onlayn.html
 
-if echo "${arg_url}" | grep -qs 'hdkinomir\.com/.*-onlayn\.html$'; then 
+if echo "${arg_url}" | grep -qs 'hdkinomir\.com/.*\.html$'; then 
 
     $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1
     
-    local stream_title=`grep "<title>" ${TMPFILE} | sed 's/^.*<title>//;s/&raquo;.*<\/title>//'`
+    local stream_title=`grep "<title>" ${TMPFILE} | sed 's/^.*<title>//;s/<\/title>.*//'`
     
     if [ -f ${TMPFILE} ]; then
         arg_url=`awk '/iframe/ { match($0, /src="([^"]+)"/, arr); print arr[1]; }' ${TMPFILE} | unescapeXML`

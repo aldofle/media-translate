@@ -47,8 +47,9 @@ if echo "${arg_url}" | grep -qs '\(vk\.com\|vkontakte\.ru\)/video_ext\.php?.*$';
     ;;
   esac
   
-  $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1
-  
+#  $MSDL -q -o ${TMPFILE} -p http --useragent "${USERAGENT}" "${arg_url}" 2>&1
+   $WGET -q -O ${TMPFILE} --user-agent "${USERAGENT}" "${arg_url}" 2>&1
+
   if [ -f ${TMPFILE} ]; then
 
 #var video_host = 'http://cs13229.vk.com/';
@@ -70,13 +71,13 @@ if echo "${arg_url}" | grep -qs '\(vk\.com\|vkontakte\.ru\)/video_ext\.php?.*$';
     	hdc=360
     elif [ $video_max_hd = "2" -a $hdc -gt 480 ]; then
     	hdc=480
-   	fi
+    fi
 
     icy_name=`grep -i "video_title" ${TMPFILE} | sed "s/[^']*'//;s/'.*//" | urldecode | $XCODE -s -l | $TOUTF8`
     stream_type='video/mp4'
-    stream_url="${video_host}u${video_uid}/video/${video_vtag}.${hdc}.mp4"
+    stream_url="${video_host}u${video_uid}/videos/${video_vtag}.${hdc}.mp4"
     protocol='http'
-    rm -f $TMPFILE
+#    rm -f $TMPFILE
   fi  
   return $RC_OK
 fi
